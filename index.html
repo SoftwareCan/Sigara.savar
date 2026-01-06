@@ -4,102 +4,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="description"
-        content="Sigara Savar — sigarayı bırakma yolculuğunda modern, güvenli ve motive edici bir deneyim.">
-    <title>Sigara Savar</title>
+        content="Sigara Savar resmi sayfası — Gizlilik, Hizmet Şartları ve Veri Silme talimatları.">
+    <title>Sigara Savar | Legal</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- HEADER -->
     <header>
         <div class="brand">
             <img src="logo.png" class="logo" alt="Sigara Savar Logo">
             <div>
                 <h1>Sigara Savar</h1>
-                <p><span class="lang tr">Sigarayı bırakmanın modern yolu</span>
-                   <span class="lang en">The modern way to quit smoking</span></p>
+                <p><span class="lang tr">Yasal Bilgilendirme</span><span class="lang en">Legal information</span></p>
             </div>
         </div>
 
         <nav aria-label="Site navigation">
-            <a href="#features"><span class="lang tr">Özellikler</span><span class="lang en">Features</span></a>
-            <a href="#legal"><span class="lang tr">Yasal</span><span class="lang en">Legal</span></a>
+            <a href="privacy.html"><span class="lang tr">Gizlilik</span><span class="lang en">Privacy</span></a>
+            <a href="userDataDeletion.html"><span class="lang tr">Veri Silme</span><span class="lang en">Data
+                    Deletion</span></a>
+            <a href="terms.html"><span class="lang tr">Şartlar</span><span class="lang en">Terms</span></a>
         </nav>
 
-        <div class="lang-switch" role="tablist">
+        <div class="lang-switch" role="tablist" aria-label="Dil seçimi">
             <button data-lang="tr" class="active" onclick="setLang('tr')">TR</button>
             <button data-lang="en" onclick="setLang('en')">EN</button>
         </div>
     </header>
 
     <main>
+        <section class="hero">
+            <div class="lead"><span class="lang tr">Sigara Savar — Kullanıcı gizliliğine ve güvenliğine önem
+                    verir.</span><span class="lang en">Sigara Savar — we prioritise user privacy and security.</span>
+            </div>
+            <div class="muted"><span class="lang tr">Aşağıdaki bağlantılarda Gizlilik Politikası, Veri Silme talimatları
+                    ve Hizmet Şartları'nı
+                    bulabilirsiniz.</span><span class="lang en">Below you can find links to the Privacy Policy, Data
+                    Deletion guide and Terms of Service.</span></div>
 
-        <!-- HERO -->
-        <section class="hero hero-center">
-            <h2 class="hero-title">
-                <span class="lang tr">Bugün bırak.<br>Yarın nefes al.</span>
-                <span class="lang en">Quit today.<br>Breathe tomorrow.</span>
-            </h2>
+            <div class="legal-grid" role="list">
+                <article class="card" role="listitem">
+                    <h3><span class="lang tr">🔒 Gizlilik Politikası</span><span class="lang en">🔒 Privacy
+                            Policy</span></h3>
+                    <p><span class="lang tr">Uygulamanın topladığı veriler, kullanım amaçları ve haklarınız hakkında
+                            bilgi.</span><span class="lang en">Information about the data we collect, how we use it, and
+                            your rights.</span></p>
+                    <a class="cta" href="privacy.html"><span class="lang tr">Detaylar</span><span
+                            class="lang en">Details</span></a>
+                </article>
 
-            <p class="hero-sub">
-                <span class="lang tr">
-                    Sigara Savar, sigarayı bırakma sürecini sade, motive edici ve bilimsel olarak destekler.
-                </span>
-                <span class="lang en">
-                    Sigara Savar supports your quit-smoking journey with clarity, motivation and science.
-                </span>
-            </p>
+                <article class="card" role="listitem">
+                    <h3><span class="lang tr">🗑️ Veri Silme</span><span class="lang en">🗑️ Data Deletion</span></h3>
+                    <p><span class="lang tr">Kişisel verilerinizi nasıl silebileceğiniz ve talep süreçleri hakkında
+                            rehber.</span><span class="lang en">Guide on how to delete your personal data and the
+                            request process.</span></p>
+                    <a class="cta" href="userDataDeletion.html"><span class="lang tr">Veri Silme Talimatı</span><span
+                            class="lang en">Data Deletion Guide</span></a>
+                </article>
 
-            <div class="hero-actions">
-                <a class="primary-btn" href="#">
-                    <span class="lang tr">Hemen Başla</span>
-                    <span class="lang en">Get Started</span>
-                </a>
+                <article class="card" role="listitem">
+                    <h3><span class="lang tr">📄 Hizmet Şartları</span><span class="lang en">📄 Terms of Service</span>
+                    </h3>
+                    <p><span class="lang tr">Uygulamanın kullanım koşulları, sorumluluklar ve izinler.</span><span
+                            class="lang en">App usage terms, responsibilities and permissions.</span></p>
+                    <a class="cta" href="terms.html"><span class="lang tr">Şartları Gör</span><span class="lang en">View
+                            Terms</span></a>
+                </article>
             </div>
         </section>
-
-        <!-- FEATURES -->
-        <section id="features" class="features">
-            <article class="feature-card">
-                <h3>❤️ Sağlık Kazanımları</h3>
-                <p>Sigarayı bıraktıktan sonra vücudundaki olumlu değişimleri gün gün takip et.</p>
-            </article>
-
-            <article class="feature-card">
-                <h3>💰 Tasarruf</h3>
-                <p>Harcamadığın her sigarayı gerçek rakamlarla gör, motivasyonun artsın.</p>
-            </article>
-
-            <article class="feature-card">
-                <h3>📈 İlerleme Takibi</h3>
-                <p>Kaç gün oldu, ne kazandın, nerdesin? Hepsi tek ekranda.</p>
-            </article>
-        </section>
-
-        <!-- LEGAL -->
-        <section id="legal" class="legal">
-            <h3 class="legal-title">
-                <span class="lang tr">Yasal Bilgilendirme</span>
-                <span class="lang en">Legal Information</span>
-            </h3>
-
-            <div class="legal-links">
-                <a href="privacy.html">Gizlilik Politikası</a>
-                <a href="terms.html">Hizmet Şartları</a>
-                <a href="userDataDeletion.html">Veri Silme</a>
-            </div>
-        </section>
-
     </main>
 
     <footer>
-        <p>© 2025 Sigara Savar</p>
-        <p class="muted">sigarasavardestek@gmail.com</p>
+        <p>© 2025 Sigara Savar · <a href="mailto:sigarasavardestek@gmail.com">sigarasavardestek@gmail.com</a></p>
+        <p class="muted"><span class="lang tr">Bu sayfalar uygulama ve kullanıcılar için bilgilendirme sağlar — yasal
+                metinler resmi
+                politikaları temsil eder.</span><span class="lang en">These pages provide information for the app and
+                users — official full legal texts are provided within the app or official documents.</span></p>
     </footer>
 
     <script src="lang.js" defer></script>
+
 </body>
 
 </html>
