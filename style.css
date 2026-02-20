@@ -197,6 +197,31 @@ section {
     border: 1px solid var(--border)
 }
 
+.guide-section {
+    margin-top: 0;
+    margin-bottom: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.guide-title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.guide-desc {
+    margin: 0;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.cta-download {
+    align-self: flex-start;
+}
+
 footer {
     text-align: center;
     padding: 28px 20px;

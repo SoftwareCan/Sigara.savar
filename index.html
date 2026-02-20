@@ -35,6 +35,12 @@
     </header>
 
     <main>
+        <section class="hero guide-section">
+            <h2 class="guide-title"><span class="lang tr">🫀 Nikotin Krizi Rehberi</span><span class="lang en">🫀 Nicotine Crisis Guide</span></h2>
+            <p class="guide-desc"><span class="lang tr">Sigara / nikotin krizi belirtileri ve kriz anında uygulanabilecek yöntemler — bırakma sürecinde size yardımcı olacak pratik bilgiler.</span><span class="lang en">Cigarette / nicotine crisis symptoms and methods you can apply during a crisis — practical information to support you through quitting.</span></p>
+            <a class="cta cta-download" id="pdf-download" href="SigaraSavar.pdf" download="SigaraSavar.pdf"><span class="lang tr">Rehberi PDF olarak indir</span><span class="lang en">Download guide as PDF</span></a>
+        </section>
+
         <section class="hero">
             <div class="lead"><span class="lang tr">Sigara Savar — Kullanıcı gizliliğine ve güvenliğine önem
                     verir.</span><span class="lang en">Sigara Savar — we prioritise user privacy and security.</span>
@@ -72,15 +78,6 @@
                     <a class="cta" href="terms.html"><span class="lang tr">Şartları Gör</span><span class="lang en">View
                             Terms</span></a>
                 </article>
-
-                <article class="card" role="listitem">
-                    <h3><span class="lang tr">📥 Döküman İndir</span><span class="lang en">📥 Download Document</span>
-                    </h3>
-                    <p><span class="lang tr">Sigara Savar resmi dökümanını PDF olarak indirin.</span><span
-                            class="lang en">Download the official Sigara Savar document as PDF.</span></p>
-                    <a class="cta" href="SigaraSavar.pdf" download="SigaraSavar.pdf"><span class="lang tr">PDF
-                            İndir</span><span class="lang en">Download PDF</span></a>
-                </article>
             </div>
         </section>
     </main>
@@ -94,6 +91,24 @@
     </footer>
 
     <script src="lang.js" defer></script>
+    <script>
+        document.getElementById('pdf-download').addEventListener('click', function (e) {
+            e.preventDefault();
+            fetch('SigaraSavar.pdf')
+                .then(function (r) { return r.blob(); })
+                .then(function (blob) {
+                    var url = URL.createObjectURL(blob);
+                    var a = document.createElement('a');
+                    a.href = url;
+                    a.download = 'SigaraSavar.pdf';
+                    a.style.display = 'none';
+                    document.body.appendChild(a);
+                    a.click();
+                    document.body.removeChild(a);
+                    URL.revokeObjectURL(url);
+                });
+        });
+    </script>
 
 </body>
 
