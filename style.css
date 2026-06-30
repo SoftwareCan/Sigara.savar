@@ -92,6 +92,12 @@ nav {
     justify-content: center;
     gap: 8px;
     flex-wrap: wrap;
+    scrollbar-width: none;
+}
+
+.site-nav::-webkit-scrollbar,
+nav::-webkit-scrollbar {
+    display: none;
 }
 
 .site-nav a,
@@ -117,6 +123,7 @@ nav a:hover,
     align-items: center;
     gap: 10px;
     min-width: max-content;
+    position: relative;
 }
 
 .nav-cta,
@@ -133,6 +140,124 @@ nav a:hover,
     font-weight: 900;
     cursor: pointer;
     box-shadow: 0 10px 22px rgba(31, 168, 109, 0.22);
+}
+
+.store-menu {
+    position: relative;
+}
+
+.store-menu summary {
+    list-style: none;
+}
+
+.store-menu summary::-webkit-details-marker {
+    display: none;
+}
+
+.store-menu[open] .nav-cta {
+    background: var(--green-dark);
+}
+
+.store-popover {
+    position: absolute;
+    top: calc(100% + 12px);
+    right: 0;
+    width: 282px;
+    padding: 10px;
+    border: 1px solid rgba(230, 237, 243, 0.9);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.96);
+    box-shadow: 0 24px 70px rgba(20, 32, 51, 0.18);
+    backdrop-filter: blur(18px);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-8px) scale(0.98);
+    transform-origin: top right;
+    transition: opacity 0.18s ease, transform 0.18s ease;
+}
+
+.store-menu[open] .store-popover {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0) scale(1);
+    animation: storePopoverIn 0.24s ease both;
+}
+
+.store-option {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px;
+    border: 1px solid rgba(230, 237, 243, 0.9);
+    border-radius: 16px;
+    background: #fff;
+    color: var(--text);
+    transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+.store-option + .store-option {
+    margin-top: 10px;
+}
+
+.store-option:hover {
+    transform: translateY(-2px);
+    border-color: rgba(31, 168, 109, 0.32);
+    box-shadow: 0 12px 28px rgba(20, 32, 51, 0.1);
+}
+
+.store-option-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    flex: 0 0 auto;
+    border-radius: 13px;
+    background: #05080d;
+    color: #fff;
+    font-weight: 950;
+}
+
+.store-option.play .store-option-icon {
+    background: linear-gradient(135deg, var(--green) 0%, var(--blue-dark) 100%);
+}
+
+.store-option strong,
+.store-option small {
+    display: block;
+}
+
+.store-option strong {
+    color: var(--ink);
+    font-size: 16px;
+    line-height: 1.1;
+}
+
+.store-option small {
+    margin-top: 4px;
+    color: var(--muted);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.store-option em {
+    margin-left: auto;
+    color: var(--green);
+    font-style: normal;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+@keyframes storePopoverIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px) scale(0.97);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
 }
 
 .lang-switch button {
@@ -159,8 +284,8 @@ main {
     grid-template-columns: minmax(0, 0.95fr) minmax(420px, 1.05fr);
     align-items: center;
     gap: 42px;
-    min-height: 760px;
-    padding: 72px max(24px, calc((100vw - 1260px) / 2)) 86px;
+    min-height: 620px;
+    padding: 44px max(24px, calc((100vw - 1260px) / 2)) 58px;
     background:
         radial-gradient(circle at 14% 18%, rgba(255, 255, 255, 0.65), transparent 24%),
         linear-gradient(135deg, #5eb4f7 0%, #58aaf0 52%, #5fb7fb 100%);
@@ -178,6 +303,11 @@ main {
     font-weight: 900;
     letter-spacing: 0.04em;
     text-transform: uppercase;
+}
+
+.landing-hero .eyebrow {
+    color: #dfffe9;
+    text-shadow: 0 1px 18px rgba(7, 17, 37, 0.16);
 }
 
 .eyebrow.light {
@@ -261,7 +391,7 @@ main {
 
 .hero-visual {
     justify-self: center;
-    width: min(560px, 100%);
+    width: min(410px, 100%);
     border-radius: 42px;
     overflow: hidden;
     box-shadow: 0 34px 80px rgba(10, 35, 72, 0.24);
@@ -314,7 +444,7 @@ main {
     gap: 56px;
     max-width: 1260px;
     margin: 0 auto;
-    padding: 118px 24px 72px;
+    padding: 104px 24px 66px;
 }
 
 .feature-section.reverse {
@@ -704,6 +834,11 @@ section.lang.tr {
 
     .nav-link {
         display: none;
+    }
+
+    .store-popover {
+        right: 0;
+        width: min(282px, calc(100vw - 32px));
     }
 
     .site-nav,
