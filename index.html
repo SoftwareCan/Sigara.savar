@@ -4,111 +4,214 @@
 <head>
     <meta charset="UTF-8">
     <meta name="description"
-        content="Sigara Savar resmi sayfası — Gizlilik, Hizmet Şartları ve Veri Silme talimatları.">
-    <title>Sigara Savar | Legal</title>
+        content="Sigara Savar ile sigarayı bırakma yolculuğunu takip et, topluluktan destek al, kriz anlarını yönet ve sağlığındaki ilerlemeyi gör.">
+    <title>Sigara Savar | Sigaradan Özgürleş</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="home-page">
 
-    <header>
-        <div class="brand">
-            <img src="logo.png" class="logo" alt="Sigara Savar Logo">
-            <div>
-                <h1>Sigara Savar</h1>
-                <p><span class="lang tr">Yasal Bilgilendirme</span><span class="lang en">Legal information</span></p>
-            </div>
-        </div>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Sigara Savar ana sayfa">
+            <img src="assets/app-icon.png" class="brand-icon" alt="Sigara Savar">
+            <span class="brand-name">Sigara Savar</span>
+        </a>
 
-        <nav aria-label="Site navigation">
-            <a href="privacy.html"><span class="lang tr">Gizlilik</span><span class="lang en">Privacy</span></a>
-            <a href="userDataDeletion.html"><span class="lang tr">Veri Silme</span><span class="lang en">Data
-                    Deletion</span></a>
-            <a href="terms.html"><span class="lang tr">Şartlar</span><span class="lang en">Terms</span></a>
+        <nav class="site-nav" aria-label="Site navigation">
+            <a href="#top">Ana Sayfa</a>
+            <a href="#topluluk">Topluluk</a>
+            <a href="#araclar">Araçlar</a>
+            <a href="#gelisim">Gelişim</a>
+            <a href="#indir">İndir</a>
         </nav>
 
-        <div class="lang-switch" role="tablist" aria-label="Dil seçimi">
-            <button data-lang="tr" class="active" onclick="setLang('tr')">TR</button>
-            <button data-lang="en" onclick="setLang('en')">EN</button>
+        <div class="header-actions">
+            <a class="nav-link" href="terms.html">Yasal</a>
+            <a class="nav-cta" href="https://play.google.com/store/apps/details?id=com.quitsmoke.quit_smoke"
+                target="_blank" rel="noopener">Başla</a>
         </div>
     </header>
 
-    <main>
-        <section class="hero guide-section">
-            <h2 class="guide-title"><span class="lang tr">🫀 Nikotin Krizi Rehberi</span><span class="lang en">🫀 Nicotine Crisis Guide</span></h2>
-            <p class="guide-desc"><span class="lang tr">Sigara / nikotin krizi belirtileri ve kriz anında uygulanabilecek yöntemler — bırakma sürecinde size yardımcı olacak pratik bilgiler.</span><span class="lang en">Cigarette / nicotine crisis symptoms and methods you can apply during a crisis — practical information to support you through quitting.</span></p>
-            <a class="cta cta-download" id="pdf-download" href="SigaraSavar.pdf" download="SigaraSavar.pdf"><span class="lang tr">Rehberi PDF olarak indir</span><span class="lang en">Download guide as PDF</span></a>
+    <main id="top">
+        <section class="landing-hero">
+            <div class="hero-copy">
+                <p class="eyebrow">Sigarayı bırakma yolculuğunda yanında</p>
+                <h1>Sade bir adım at. Sigaradan özgürleş.</h1>
+                <p class="hero-text">Sigara Savar; ilerlemeni takip etmen, kriz anlarını yönetmen, nefes egzersizleri
+                    yapman ve topluluktan destek alman için tasarlandı.</p>
+
+                <div class="store-row" aria-label="Uygulama indirme bağlantıları">
+                    <a class="store-badge" href="https://apps.apple.com/tt/app/sigara-savar/id6757662325"
+                        target="_blank" rel="noopener">
+                        <span>App Store'dan</span>
+                        <strong>İndir</strong>
+                    </a>
+                    <a class="store-badge" href="https://play.google.com/store/apps/details?id=com.quitsmoke.quit_smoke"
+                        target="_blank" rel="noopener">
+                        <span>Google Play'den</span>
+                        <strong>İndir</strong>
+                    </a>
+                </div>
+
+                <div class="ratings" aria-label="Mağaza puanları">
+                    <div>
+                        <span class="stars">★★★★★</span>
+                        <span>App Store'da 5 yıldız</span>
+                    </div>
+                    <div>
+                        <span class="stars">★★★★★</span>
+                        <span>Google Play'de 5 yıldız</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual" aria-label="Sigara Savar uygulama önizlemesi">
+                <img src="assets/home.png" alt="Sigara Savar ana sayfa uygulama ekranı">
+            </div>
         </section>
 
-        <section class="hero">
-            <div class="lead"><span class="lang tr">Sigara Savar — Kullanıcı gizliliğine ve güvenliğine önem
-                    verir.</span><span class="lang en">Sigara Savar — we prioritise user privacy and security.</span>
+        <section class="intro-strip">
+            <div>
+                <strong>Takip et</strong>
+                <span>İçmediğin günleri, kazancını ve ilerlemeni gör.</span>
             </div>
-            <div class="muted"><span class="lang tr">Aşağıdaki bağlantılarda Gizlilik Politikası, Veri Silme talimatları
-                    ve Hizmet Şartları'nı
-                    bulabilirsiniz.</span><span class="lang en">Below you can find links to the Privacy Policy, Data
-                    Deletion guide and Terms of Service.</span></div>
+            <div>
+                <strong>Destek al</strong>
+                <span>Benzer hedefteki insanlarla deneyim paylaş.</span>
+            </div>
+            <div>
+                <strong>Kriz yönet</strong>
+                <span>Nefes, bekçi ve sakinleşme araçlarıyla yanında.</span>
+            </div>
+        </section>
 
-            <div class="legal-grid" role="list">
-                <article class="card" role="listitem">
-                    <h3><span class="lang tr">🔒 Gizlilik Politikası</span><span class="lang en">🔒 Privacy
-                            Policy</span></h3>
-                    <p><span class="lang tr">Uygulamanın topladığı veriler, kullanım amaçları ve haklarınız hakkında
-                            bilgi.</span><span class="lang en">Information about the data we collect, how we use it, and
-                            your rights.</span></p>
-                    <a class="cta" href="privacy.html"><span class="lang tr">Detaylar</span><span
-                            class="lang en">Details</span></a>
-                </article>
+        <section class="feature-section" id="topluluk">
+            <div class="section-copy">
+                <p class="eyebrow">Topluluk</p>
+                <h2>Yalnız bırakmak zorunda değilsin.</h2>
+                <p>Genel sohbet, rozetler ve profil çerçeveleriyle süreç daha canlı hale gelir. Deneyimlerini paylaş,
+                    destek al, başkalarının küçük zaferlerinden güç bul.</p>
+                <ul class="check-list">
+                    <li>Genel sohbet desteği</li>
+                    <li>Rozetler ve özel çerçeveler</li>
+                    <li>Saygılı ve destek odaklı topluluk</li>
+                </ul>
+            </div>
+            <div class="feature-art">
+                <img src="assets/chat.png" alt="Sigara Savar topluluk ve sohbet ekranları">
+            </div>
+        </section>
 
-                <article class="card" role="listitem">
-                    <h3><span class="lang tr">🗑️ Veri Silme</span><span class="lang en">🗑️ Data Deletion</span></h3>
-                    <p><span class="lang tr">Kişisel verilerinizi nasıl silebileceğiniz ve talep süreçleri hakkında
-                            rehber.</span><span class="lang en">Guide on how to delete your personal data and the
-                            request process.</span></p>
-                    <a class="cta" href="userDataDeletion.html"><span class="lang tr">Veri Silme Talimatı</span><span
-                            class="lang en">Data Deletion Guide</span></a>
+        <section class="blue-band" id="araclar">
+            <div class="band-copy">
+                <p class="eyebrow light">Ücretsiz araçlar</p>
+                <h2>Kriz anında nefes al, sakinleş, devam et.</h2>
+                <p>Kriz bekçisi, nefes egzersizleri, nefes gücü testi ve su hatırlatıcılarıyla zor anlarda basit ve
+                    uygulanabilir destek araçları yanında.</p>
+            </div>
+            <div class="band-grid">
+                <article>
+                    <span>Kriz Bekçisi</span>
+                    <p>Zihnini yavaşlat, kararını ertele, gücünü hatırla.</p>
                 </article>
+                <article>
+                    <span>Nefes Egzersizleri</span>
+                    <p>Kısa egzersizlerle stres ve kaygıyı azaltmaya odaklan.</p>
+                </article>
+                <article>
+                    <span>Tamamen Ücretsiz</span>
+                    <p>Temel destek araçlarını her an yanında taşı.</p>
+                </article>
+            </div>
+            <img class="band-image" src="assets/tools.png" alt="Sigara Savar rahatlatıcı araçlar ekranları">
+        </section>
 
-                <article class="card" role="listitem">
-                    <h3><span class="lang tr">📄 Hizmet Şartları</span><span class="lang en">📄 Terms of Service</span>
-                    </h3>
-                    <p><span class="lang tr">Uygulamanın kullanım koşulları, sorumluluklar ve izinler.</span><span
-                            class="lang en">App usage terms, responsibilities and permissions.</span></p>
-                    <a class="cta" href="terms.html"><span class="lang tr">Şartları Gör</span><span class="lang en">View
-                            Terms</span></a>
-                </article>
+        <section class="feature-section reverse">
+            <div class="section-copy">
+                <p class="eyebrow">Keşfet</p>
+                <h2>Bilgiye ulaş, topluluktan güç al.</h2>
+                <p>Bilgi merkezi, topluluk yazıları ve sesli içerik alanlarıyla bırakma sürecini daha bilinçli yönet.
+                    Her içerik, küçük bir farkındalık anı için tasarlandı.</p>
+                <a class="text-link" href="SigaraSavar.pdf" download="SigaraSavar.pdf">Nikotin Krizi Rehberi'ni indir</a>
+            </div>
+            <div class="feature-art">
+                <img src="assets/discover.png" alt="Sigara Savar keşfet ve topluluk yazıları ekranları">
+            </div>
+        </section>
+
+        <section class="feature-section" id="gelisim">
+            <div class="section-copy">
+                <p class="eyebrow">Gelişim</p>
+                <h2>Sağlığını ve başarılarını görünür kıl.</h2>
+                <p>Kupalar, sağlık gelişimleri ve özel koçluk kartlarıyla hangi aşamada olduğunu gör. Sürecini
+                    ölçülebilir, kutlanabilir ve sürdürülebilir hale getir.</p>
+                <ul class="check-list">
+                    <li>Kupa ve başarı sistemi</li>
+                    <li>Sağlık gelişimi takibi</li>
+                    <li>Kişisel yolculuk haritası</li>
+                </ul>
+            </div>
+            <div class="dual-art">
+                <img src="assets/trophies-health.png" alt="Sigara Savar kupa ve sağlık takibi ekranları">
+                <img src="assets/journey.png" alt="Sigara Savar gelişim ve yolculuk haritası ekranı">
+            </div>
+        </section>
+
+        <section class="download-section" id="indir">
+            <div class="download-card">
+                <img src="assets/app-icon.png" alt="" aria-hidden="true">
+                <p class="eyebrow light">Bugün başla</p>
+                <h2>Sigaradan bir savaş değil, sürdürülebilir bir yolculuk çıkar.</h2>
+                <p>Sigara Savar'ı indir, ilk hedefini belirle ve ilk temiz dakikanı takip etmeye başla.</p>
+                <div class="store-row center">
+                    <a class="store-badge" href="https://apps.apple.com/tt/app/sigara-savar/id6757662325"
+                        target="_blank" rel="noopener">
+                        <span>App Store'dan</span>
+                        <strong>İndir</strong>
+                    </a>
+                    <a class="store-badge" href="https://play.google.com/store/apps/details?id=com.quitsmoke.quit_smoke"
+                        target="_blank" rel="noopener">
+                        <span>Google Play'den</span>
+                        <strong>İndir</strong>
+                    </a>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>© 2026 Sigara Savar. Tüm hakları saklıdır. · <a href="mailto:sigarasavardestek@gmail.com">sigarasavardestek@gmail.com</a></p>
-        <p class="muted"><span class="lang tr">Bu sayfalar uygulama ve kullanıcılar için bilgilendirme sağlar — yasal
-                metinler resmi
-                politikaları temsil eder.</span><span class="lang en">These pages provide information for the app and
-                users — official full legal texts are provided within the app or official documents.</span></p>
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <img src="assets/app-icon.png" alt="Sigara Savar">
+                <strong>Sigara Savar</strong>
+                <p>Sigarayı bırakma yolculuğunda takip, topluluk ve kriz desteği.</p>
+            </div>
+            <div>
+                <h3>Hızlı bağlantılar</h3>
+                <a href="#top">Ana Sayfa</a>
+                <a href="#topluluk">Topluluk</a>
+                <a href="#araclar">Araçlar</a>
+                <a href="#gelisim">Gelişim</a>
+            </div>
+            <div>
+                <h3>Uygulama</h3>
+                <a href="https://apps.apple.com/tt/app/sigara-savar/id6757662325" target="_blank" rel="noopener">App
+                    Store</a>
+                <a href="https://play.google.com/store/apps/details?id=com.quitsmoke.quit_smoke" target="_blank"
+                    rel="noopener">Google Play</a>
+                <a href="SigaraSavar.pdf" download="SigaraSavar.pdf">Nikotin Krizi Rehberi</a>
+            </div>
+            <div>
+                <h3>Yasal</h3>
+                <a href="privacy.html">Gizlilik Politikası</a>
+                <a href="terms.html">Hizmet Şartları</a>
+                <a href="userDataDeletion.html">Veri Silme</a>
+                <a href="mailto:sigarasavardestek@gmail.com">Destek</a>
+            </div>
+        </div>
+        <p class="copyright">© 2026 Sigara Savar. Tüm hakları saklıdır.</p>
     </footer>
-
-    <script src="lang.js" defer></script>
-    <script>
-        document.getElementById('pdf-download').addEventListener('click', function (e) {
-            e.preventDefault();
-            fetch('SigaraSavar.pdf')
-                .then(function (r) { return r.blob(); })
-                .then(function (blob) {
-                    var url = URL.createObjectURL(blob);
-                    var a = document.createElement('a');
-                    a.href = url;
-                    a.download = 'SigaraSavar.pdf';
-                    a.style.display = 'none';
-                    document.body.appendChild(a);
-                    a.click();
-                    document.body.removeChild(a);
-                    URL.revokeObjectURL(url);
-                });
-        });
-    </script>
 
 </body>
 

@@ -1,12 +1,16 @@
 function setLang(lang) {
     document.querySelectorAll('.lang').forEach(el => el.style.display = 'none');
-    document.querySelectorAll('.lang.' + lang).forEach(el => el.style.display = 'block');
+    document.querySelectorAll('.lang.' + lang).forEach(el => {
+        el.style.display = el.tagName === 'SPAN' ? 'inline' : 'block';
+    });
 
     document.querySelectorAll('.lang-switch button')
         .forEach(btn => btn.classList.remove('active'));
 
-    document.querySelector(`.lang-switch button[data-lang="${lang}"]`)
-        .classList.add('active');
+    const activeButton = document.querySelector(`.lang-switch button[data-lang="${lang}"]`);
+    if (activeButton) {
+        activeButton.classList.add('active');
+    }
 }
 
 // Initialize language on page load (default TR)
