@@ -1,9 +1,9 @@
 :root {
     --green: #1fa86d;
     --green-dark: #0f7e54;
-    --blue: #786fff;
-    --blue-dark: #6c63ff;
-    --purple: #6c63ff;
+    --blue: #27b978;
+    --blue-dark: #1fa86d;
+    --purple: #1fa86d;
     --ink: #071125;
     --text: #142033;
     --muted: #667085;
@@ -27,6 +27,7 @@ body {
     background: #fff;
     color: var(--text);
     line-height: 1.6;
+    text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -252,7 +253,7 @@ nav a:hover,
 }
 
 .store-option.play .store-option-icon {
-    background: linear-gradient(135deg, var(--green) 0%, var(--blue-dark) 100%);
+    background: var(--green);
 }
 
 .store-option strong,
@@ -319,7 +320,7 @@ main {
     gap: 42px;
     min-height: 620px;
     padding: 44px max(24px, calc((100vw - 1260px) / 2)) 58px;
-    background: #786fff;
+    background: #27b978;
     color: #fff;
 }
 
@@ -337,7 +338,7 @@ main {
 }
 
 .landing-hero .eyebrow {
-    color: #dfffe9;
+    color: #eafff3;
     text-shadow: 0 1px 18px rgba(7, 17, 37, 0.16);
 }
 
@@ -575,7 +576,7 @@ main {
     position: relative;
     margin: 72px 0;
     padding: 96px max(24px, calc((100vw - 1260px) / 2));
-    background: #786fff;
+    background: #1fa86d;
     color: #fff;
     overflow: hidden;
 }
@@ -647,8 +648,8 @@ main {
     padding: 96px 24px 118px;
     background:
         radial-gradient(circle at 15% 18%, rgba(31, 168, 109, 0.12), transparent 24%),
-        radial-gradient(circle at 88% 80%, rgba(117, 98, 242, 0.14), transparent 24%),
-        #f7fbff;
+        radial-gradient(circle at 88% 80%, rgba(31, 168, 109, 0.1), transparent 24%),
+        #f3fbf7;
 }
 
 .download-card {
@@ -656,7 +657,7 @@ main {
     margin: 0 auto;
     padding: 64px 34px;
     border-radius: 30px;
-    background: #6c63ff;
+    background: #1fa86d;
     color: #fff;
     text-align: center;
     box-shadow: var(--shadow);
@@ -794,6 +795,17 @@ a:focus {
     outline-offset: 3px;
 }
 
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
 .lang {
     display: none;
 }
@@ -878,7 +890,6 @@ section.lang.tr {
     }
 
     .store-popover {
-        right: 0;
         right: -2px;
         width: min(318px, calc(100vw - 32px));
     }
