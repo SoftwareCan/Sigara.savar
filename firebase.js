@@ -29,7 +29,7 @@ const app = initializeApp(firebaseConfig);
 //   4. Firebase Console → App Check → "Enforce" butonuna tıklayın (zorunlu hale getir)
 //
 // NOT: Site key ayarlanana kadar App Check isteğe bağlı modda çalışır (bloklamaz).
-const RECAPTCHA_V3_SITE_KEY = "6LdzYIQtAAAAAOdTScU4YVGIJfdrWwq_pt62RGFz"; // ← Buraya kendi reCAPTCHA v3 site key'inizi yazın
+const RECAPTCHA_V3_SITE_KEY = "6LdzYIQtAAAAAOdTScU4YVGIJfdrWwq_pt62RGFz";
 
 if (RECAPTCHA_V3_SITE_KEY) {
   try {

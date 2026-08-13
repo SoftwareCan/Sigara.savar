@@ -74,8 +74,10 @@ function clearMsg() {
 // ─── Spinner yardımcıları ─────────────────────────────────────────────────────
 function setLoading(btn, loading) {
   btn.disabled = loading;
-  btn.querySelector("span").hidden = loading;
-  btn.querySelector(".btn-spinner").hidden = !loading;
+  const span    = btn.querySelector("span");
+  const spinner = btn.querySelector(".btn-spinner");
+  if (span)    span.hidden    = loading;
+  if (spinner) spinner.hidden = !loading;
 }
 
 // ─── Firebase hata → Türkçe mesaj ────────────────────────────────────────────
