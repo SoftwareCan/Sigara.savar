@@ -3,6 +3,26 @@
 
 <head>
     <meta charset="UTF-8">
+    <!-- ══ Güvenlik Başlıkları ══════════════════════════════════════════════════ -->
+    <!-- CSP: Yalnızca güvenilen kaynaklardan script/stil/bağlantı -->
+    <meta http-equiv="Content-Security-Policy" content="
+      default-src 'self';
+      script-src 'self' https://www.gstatic.com https://www.google.com https://www.recaptcha.net;
+      style-src 'self';
+      img-src 'self' data: blob: https://*.googleusercontent.com https://lh3.googleusercontent.com;
+      connect-src 'self' https://*.googleapis.com https://*.firebaseio.com wss://*.firebaseio.com https://firebaseinstallations.googleapis.com;
+      frame-src https://sigara-savar.firebaseapp.com https://www.google.com https://accounts.google.com https://appleid.apple.com;
+      object-src 'none';
+      base-uri 'self';
+      form-action 'self';
+      upgrade-insecure-requests;
+    ">
+    <!-- Clickjacking önleme -->
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <!-- MIME sniffing önleme -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <!-- Referrer politikası -->
+    <meta name="referrer" content="strict-origin-when-cross-origin">
     <meta name="description"
         content="Sigaradan Kurtul. Sigara Savar ile sigarayı bırakma yolculuğunu takip et, topluluktan destek al, kriz anlarını yönet ve sağlığındaki ilerlemeyi gör.">
     <meta name="title" content="Sigaradan Kurtul">
@@ -19,6 +39,7 @@
     <link rel="apple-touch-icon" href="assets/app-icon.png">
     <link rel="stylesheet" href="style.css">
     <script src="site.js" defer></script>
+    <script type="module" src="header-auth.js"></script>
 </head>
 
 <body class="home-page">
