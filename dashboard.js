@@ -122,7 +122,14 @@ function startCounter(quitDate) {
     const secs = totalSecs % 60;
 
     daysEl.textContent = days;
-    timeEl.textContent = `${pad(hrs)}s ${pad(mins)}d ${pad(secs)}s`;
+
+    // Yeni HTML: 3 ayrı <span> içinde saat:dakika:saniye
+    const spans = timeEl.querySelectorAll("span:not(.counter-time-sep)");
+    if (spans.length >= 3) {
+      spans[0].textContent = pad(hrs);
+      spans[1].textContent = pad(mins);
+      spans[2].textContent = pad(secs);
+    }
 
     const progress = Math.min(days / 100, 1);
     ringFill.style.strokeDasharray  = String(CIRC);
@@ -332,6 +339,9 @@ function showUnauth()    { document.getElementById("dash-unauthenticated").hidde
 
 // ─── Ana Auth State Handler ───────────────────────────────────────────────────
 onAuthStateChanged(auth, async (user) => {
+  // Her callback başında UI'yi sıfırla — eski state kalmasın
+  document.getElementById("dash-unauthenticated").hidden = true;
+  document.getElementById("dashboard-content").hidden    = true;
   showLoading(true);
 
   if (!user) {
@@ -383,11 +393,6 @@ onAuthStateChanged(auth, async (user) => {
   if (!userData) {
     showLoading(false);
     showDashboard();
-    [".counter-section", ".stats-section", ".health-section",
-      ".achievements-section", ".user-info-section"].forEach((sel) => {
-      const el = document.querySelector(sel);
-      if (el) el.style.display = "none";
-    });
     document.getElementById("profile-quit-since").textContent =
       "Mobil uygulamada henüz veri oluşturulmamış.";
     return;
@@ -402,8 +407,7 @@ onAuthStateChanged(auth, async (user) => {
   // ── Profil meta ────────────────────────────────────────────────────────────────
   if (quitDate) {
     document.getElementById("profile-quit-since").textContent =
-      `Bırakma Tarihi: ${quitDate.toLocaleDateString("tr-TR", { day: "numeric", month: "long", year: "numeric" })}`;
-    document.getElementById("profile-days-label").textContent  = `${days} Gün Sigarasız`;
+      `Bırakma: ${quitDate.toLocaleDateString("tr-TR", { day: "numeric", month: "long", year: "numeric" })}`;
     document.getElementById("profile-smoke-badge").textContent = days;
     startCounter(quitDate);
   }
@@ -443,9 +447,15 @@ onAuthStateChanged(auth, async (user) => {
 });
 
 // ─── Çıkış ───────────────────────────────────────────────────────────────────
-document.getElementById("btn-signout").addEventListener("click", async () => {
+async function doSignOut() {
   logSecEvent("manual_signout");
   if (_rafId) cancelAnimationFrame(_rafId);
   await signOut(auth);
   window.location.replace("index.html");
-});
+}
+
+document.getElementById("btn-signout").addEventListener("click", doSignOut);
+
+// Sidebar çıkış butonu
+const sidebarSignout = document.getElementById("btn-signout-sidebar");
+if (sidebarSignout) sidebarSignout.addEventListener("click", doSignOut);

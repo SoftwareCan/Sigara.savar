@@ -16,13 +16,12 @@
     form-action 'self';
     upgrade-insecure-requests;
   ">
-  <meta http-equiv="X-Frame-Options" content="DENY">
   <meta http-equiv="X-Content-Type-Options" content="nosniff">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Sigara Savar profil ve istatistiklerinizi görüntüleyin.">
   <title>Profilim — Sigara Savar</title>
-  <meta name="theme-color" content="#1FA86D">
+  <meta name="theme-color" content="#0d1117">
   <link rel="icon" type="image/png" href="assets/app-icon.png">
   <link rel="apple-touch-icon" href="assets/app-icon.png">
   <link rel="stylesheet" href="style.css">
@@ -31,24 +30,24 @@
 
 <body class="dashboard-page">
 
+  <!-- ── Header ─────────────────────────────────────────────── -->
   <header class="site-header">
     <a class="brand" href="index.html" aria-label="Sigara Savar ana sayfa">
       <img src="assets/app-icon.png" class="brand-icon" alt="Sigara Savar">
       <span class="brand-name">Sigara Savar</span>
     </a>
     <div class="header-actions">
-      <a class="nav-link" href="index.html">Ana Sayfa</a>
       <button class="nav-cta outline" id="btn-signout" type="button">Çıkış Yap</button>
     </div>
   </header>
 
-  <!-- Yükleniyor ekranı -->
-  <div class="dash-loading" id="dash-loading" aria-label="Yükleniyor" role="status">
+  <!-- ── Yükleniyor ──────────────────────────────────────────── -->
+  <div class="dash-loading" id="dash-loading" role="status" aria-label="Yükleniyor">
     <div class="dash-spinner"></div>
-    <p>Veriler yükleniyor…</p>
+    <span>Yükleniyor…</span>
   </div>
 
-  <!-- Giriş yapılmamış durumu -->
+  <!-- ── Giriş Yapılmamış ────────────────────────────────────── -->
   <div class="dash-unauthenticated" id="dash-unauthenticated" hidden>
     <div class="unauth-card">
       <img src="assets/app-icon.png" alt="Sigara Savar" width="80">
@@ -58,128 +57,123 @@
     </div>
   </div>
 
-  <!-- Dashboard içeriği -->
-  <main class="dashboard-main" id="dashboard-content" hidden>
+  <!-- ── Dashboard İçeriği ───────────────────────────────────── -->
+  <div class="dash-layout" id="dashboard-content" hidden>
 
-    <!-- Profil Hero -->
-    <section class="profile-hero" id="profile-hero">
-      <div class="profile-avatar-wrap">
-        <div class="profile-avatar" id="profile-avatar-display">
-          <span id="profile-avatar-letter">S</span>
-          <img id="profile-avatar-img" src="" alt="" hidden>
+    <!-- ════ Sol Sidebar ════ -->
+    <aside class="dash-sidebar">
+
+      <!-- Profil -->
+      <div class="profile-block">
+        <div class="profile-avatar-wrap">
+          <div class="profile-avatar-letter" id="profile-avatar-letter">S</div>
+          <img id="profile-avatar-img" src="" alt="" class="profile-avatar-img" hidden>
+          <div class="profile-online-dot"></div>
         </div>
-        <div class="profile-badge" id="profile-smoke-badge" title="Sigarasız gün sayısı"></div>
-      </div>
-      <div class="profile-info">
-        <h1 id="profile-name">Yükleniyor…</h1>
-        <p class="profile-email" id="profile-email"></p>
-        <div class="profile-meta">
-          <span id="profile-quit-since"></span>
-          <span class="dot-sep">·</span>
-          <span id="profile-days-label"></span>
+        <div>
+          <p class="profile-name" id="profile-name">Yükleniyor…</p>
+          <p class="profile-email" id="profile-email"></p>
         </div>
       </div>
-    </section>
 
-    <!-- Büyük Sayaç -->
-    <section class="counter-section">
-      <div class="smoke-free-counter" id="smoke-free-counter">
-        <div class="counter-ring">
-          <svg class="ring-svg" viewBox="0 0 200 200" aria-hidden="true">
+      <!-- Bırakma Tarihi Rozeti -->
+      <div class="profile-quit-badge">
+        🎯 <span id="profile-smoke-badge">—</span> Gün Sigarasız
+      </div>
+
+      <!-- Sayaç Ring -->
+      <div class="counter-block">
+        <div class="counter-ring-wrap">
+          <svg class="counter-ring-svg" viewBox="0 0 200 200" aria-hidden="true">
             <circle class="ring-track" cx="100" cy="100" r="86"/>
-            <circle class="ring-fill" id="ring-fill" cx="100" cy="100" r="86"/>
+            <circle id="ring-fill" cx="100" cy="100" r="86"/>
           </svg>
-          <div class="counter-inner">
-            <span class="counter-number" id="counter-days">0</span>
-            <span class="counter-unit">gün</span>
-            <span class="counter-sub" id="counter-time">0s 0d 0s</span>
+          <div class="counter-center">
+            <span id="counter-days">0</span>
+            <span class="counter-days-label">Gün</span>
           </div>
         </div>
-        <p class="counter-caption">Sigarasız geçen süre</p>
+        <div class="counter-time-row" id="counter-time" aria-label="Geçen süre">
+          <span>00</span><span class="counter-time-sep">:</span>
+          <span>00</span><span class="counter-time-sep">:</span>
+          <span>00</span>
+        </div>
       </div>
-    </section>
 
-    <!-- İstatistik Kartları -->
-    <section class="stats-section" aria-label="İstatistikler">
-      <h2 class="section-title">Kazanımlarınız</h2>
-      <div class="stats-grid">
-        <article class="stat-card" id="stat-cigarettes">
-          <div class="stat-icon cig">🚭</div>
-          <div class="stat-body">
-            <strong class="stat-value" id="val-cigarettes">—</strong>
+      <p class="counter-quit-date" id="profile-quit-since"></p>
+
+      <!-- Çıkış (Sidebar'da da) -->
+      <button class="btn-signout" id="btn-signout-sidebar" type="button">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+        Çıkış Yap
+      </button>
+
+    </aside>
+
+    <!-- ════ Ana İçerik ════ -->
+    <main class="dash-content">
+
+      <!-- İstatistikler -->
+      <section aria-label="İstatistikler">
+        <p class="section-heading">Kazanımlarınız</p>
+        <div class="stats-grid">
+          <article class="stat-card">
+            <div class="stat-icon">🚭</div>
             <span class="stat-label">İçilmeyen Sigara</span>
-            <span class="stat-note">hayatınıza geri döndü</span>
-          </div>
-        </article>
-
-        <article class="stat-card" id="stat-money">
-          <div class="stat-icon money">💰</div>
-          <div class="stat-body">
+            <strong class="stat-value" id="val-cigarettes">—</strong>
+          </article>
+          <article class="stat-card">
+            <div class="stat-icon">💰</div>
+            <span class="stat-label">Tasarruf Edilen</span>
             <strong class="stat-value" id="val-money">—</strong>
-            <span class="stat-label">Tasarruf Edilen Para</span>
-            <span class="stat-note" id="note-money">geri cebinizde</span>
-          </div>
-        </article>
-
-        <article class="stat-card" id="stat-life">
-          <div class="stat-icon life">❤️</div>
-          <div class="stat-body">
-            <strong class="stat-value" id="val-life">—</strong>
+          </article>
+          <article class="stat-card">
+            <div class="stat-icon">❤️</div>
             <span class="stat-label">Kazanılan Yaşam</span>
-            <span class="stat-note">hayatınıza eklendi</span>
-          </div>
-        </article>
-
-        <article class="stat-card" id="stat-hours">
-          <div class="stat-icon breath">🌬️</div>
-          <div class="stat-body">
-            <strong class="stat-value" id="val-hours">—</strong>
+            <strong class="stat-value" id="val-life">—</strong>
+          </article>
+          <article class="stat-card">
+            <div class="stat-icon">🌬️</div>
             <span class="stat-label">Sigarasız Saat</span>
-            <span class="stat-note">temiz nefes aldınız</span>
+            <strong class="stat-value" id="val-hours">—</strong>
+          </article>
+        </div>
+      </section>
+
+      <!-- Sağlık Zaman Çizelgesi -->
+      <section aria-label="Sağlık Yolculuğu">
+        <p class="section-heading">Sağlık Yolculuğu</p>
+        <div id="health-timeline"></div>
+      </section>
+
+      <!-- Başarılar -->
+      <section aria-label="Başarılar">
+        <div class="ach-header-row">
+          <p class="section-heading" style="margin:0">Başarılar &amp; Kupalar</p>
+          <div class="ach-progress-wrap">
+            <div class="ach-progress-bar">
+              <div id="ach-progress-fill"></div>
+            </div>
+            <span class="ach-count"><strong id="ach-unlocked-count">0</strong> / <span id="ach-total-count">0</span></span>
           </div>
-        </article>
-      </div>
-    </section>
+        </div>
+        <div class="ach-filters" role="tablist" aria-label="Başarı kategorileri">
+          <button class="ach-filter active" data-cat="all" role="tab" aria-selected="true">Tümü</button>
+          <button class="ach-filter" data-cat="Zaman" role="tab" aria-selected="false">⏱ Zaman</button>
+          <button class="ach-filter" data-cat="Sağlık" role="tab" aria-selected="false">❤️ Sağlık</button>
+          <button class="ach-filter" data-cat="Günlük" role="tab" aria-selected="false">📖 Günlük</button>
+        </div>
+        <div id="achievements-grid" aria-label="Başarı listesi"></div>
+      </section>
 
-    <!-- Sağlık Zaman Çizelgesi -->
-    <section class="health-section" aria-label="Sağlık İyileşme Zaman Çizelgesi">
-      <h2 class="section-title">Sağlık Yolculuğu</h2>
-      <p class="section-desc">Sigara bırakmanızın ardından vücudunuzda gerçekleşen iyileşmeler.</p>
-      <div class="timeline" id="health-timeline" aria-label="Sağlık milestoneları"></div>
-    </section>
+      <!-- Profil Bilgileri -->
+      <section aria-label="Profil Bilgileri">
+        <p class="section-heading">Profil Bilgilerim</p>
+        <div id="info-grid"></div>
+      </section>
 
-    <!-- Başarılar / Kupalar -->
-    <section class="achievements-section" aria-label="Başarılar ve Kupalar">
-      <h2 class="section-title">Başarılar & Kupalar</h2>
-      <p class="section-desc">Sigarasız geçirdiğiniz süreye göre kazanılan başarılar.</p>
-
-      <!-- Kategori filtreleri -->
-      <div class="ach-filters" role="tablist" aria-label="Başarı kategorileri">
-        <button class="ach-filter active" data-cat="all" role="tab" aria-selected="true">Tümü</button>
-        <button class="ach-filter" data-cat="Zaman" role="tab" aria-selected="false">⏱ Zaman</button>
-        <button class="ach-filter" data-cat="Sağlık" role="tab" aria-selected="false">❤️ Sağlık</button>
-        <button class="ach-filter" data-cat="Günlük" role="tab" aria-selected="false">📖 Günlük</button>
-      </div>
-
-      <div class="ach-stats-bar">
-        <span id="ach-unlocked-count">0</span> / <span id="ach-total-count">0</span> başarı kazanıldı
-        <div class="ach-progress-bar"><div class="ach-progress-fill" id="ach-progress-fill"></div></div>
-      </div>
-
-      <div class="achievements-grid" id="achievements-grid" aria-label="Başarı listesi"></div>
-    </section>
-
-    <!-- Kişisel Bilgiler -->
-    <section class="user-info-section" aria-label="Profil Bilgileri">
-      <h2 class="section-title">Profil Bilgilerim</h2>
-      <div class="info-grid" id="info-grid"></div>
-    </section>
-
-  </main>
-
-  <footer class="site-footer dash-footer">
-    <p class="copyright">© 2026 Sigara Savar. Tüm hakları saklıdır.</p>
-  </footer>
+    </main>
+  </div>
 
   <script type="module" src="dashboard.js"></script>
 </body>
