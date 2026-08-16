@@ -333,20 +333,28 @@ function parseQuitDate(raw) {
 }
 
 // ─── UI Yardımcıları ──────────────────────────────────────────────────────────
-function showDashboard() { document.getElementById("dashboard-content").hidden = false; }
+function showDashboard() {
+  document.getElementById("dash-loading").style.display = "none";
+  document.getElementById("dashboard-content").hidden = false;
+}
 function showLoading(v)  { document.getElementById("dash-loading").style.display = v ? "flex" : "none"; }
 function showUnauth()    { document.getElementById("dash-unauthenticated").hidden = false; showLoading(false); }
 
-// ─── Ana Auth State Handler ───────────────────────────────────────────────────
+// ─── Ana Auth State Handler ─────────────────────────────────────────────────────────────────
+let _authResolved = false;
+
 onAuthStateChanged(auth, async (user) => {
-  // Her callback başında UI'yi sıfırla — eski state kalmasın
-  document.getElementById("dash-unauthenticated").hidden = true;
-  document.getElementById("dashboard-content").hidden    = true;
-  showLoading(true);
+  // Firebase başlangıçta null çıkarabilir — 800ms bekle, sonra karar ver
+  if (!user && !_authResolved) {
+    await new Promise(r => setTimeout(r, 800));
+    user = auth.currentUser; // Yeniden kontrol et
+  }
+  _authResolved = true;
 
   if (!user) {
-    showUnauth();
+    // Giriş yapılmamış — auth sayfasına yönlendir
     logSecEvent("dashboard_unauthorized_access");
+    window.location.replace("auth.html");
     return;
   }
 

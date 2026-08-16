@@ -20,16 +20,24 @@ import {
   RateLimitError,
 } from "./security.js";
 
-// ─── Clickjacking koruması ─────────────────────────────────────────────────────
+// ─── Clickjacking ─────────────────────────────────────────────────────────────────
 preventClickjacking();
 
-// ─── Giriş yapılmışsa dashboard'a yönlendir ───────────────────────────────────
-onAuthStateChanged(auth, (user) => {
+// ─── Sayfa başlangıçta gizli — auth state belli olana kadar hiçbir şey görünmez────────────────
+document.documentElement.style.visibility = "hidden";
+
+// ─── Giriş yapılmışsa sessizce dashboard'a yönlendir ────────────────────────────────────
+const _unsubscribeAuthCheck = onAuthStateChanged(auth, (user) => {
+  _unsubscribeAuthCheck(); // Tek seferlik — dinlemeyi hemen bırak
   if (user) {
-    // Güvenli yönlendirme: yalnızca aynı origin
+    // Zaten giriş yapmış — form hiç gösterilmeden dashboard'a geç
     window.location.replace("dashboard.html");
+    return;
   }
+  // Giriş yapılmamış — formu göster
+  document.documentElement.style.visibility = "";
 });
+
 
 // ─── DOM referansları ─────────────────────────────────────────────────────────
 const tabs = document.querySelectorAll(".auth-tab");
