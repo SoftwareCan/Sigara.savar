@@ -10,7 +10,7 @@
     <link rel="icon" type="image/png" href="assets/app-icon.png">
     <link rel="apple-touch-icon" href="assets/app-icon.png">
     <link rel="stylesheet" href="style.css">
-    <script src="lang.js" defer></script>
+    <script src="lang.js?v=20260818" defer></script>
 </head>
 
 <body>
@@ -39,21 +39,42 @@
 
     <main>
         <section>
-            <div class="lang tr">
+            <div class="lang tr policy-content">
                 <h2>Gizlilik Politikası</h2>
-                <p class="muted">Son Güncelleme: 12 Haziran 2026</p>
+                <p class="muted">Son Güncelleme: 18 Ağustos 2026</p>
 
                 <p>Bu Gizlilik Politikası, Sigara Savar mobil uygulamasının, web sayfalarının, topluluk özelliklerinin,
                     nefes egzersizi ve nefes testi araçlarının, etkinlik duyurularının ve destek kanallarının kullanıcı
                     verilerini nasıl topladığını, kullandığını, paylaştığını, sakladığını ve koruduğunu açıklar.</p>
 
-                <h3>1. Veri Sorumlusu ve İletişim</h3>
+                <nav class="policy-toc" aria-label="Gizlilik Politikası içindekiler">
+                    <strong>İçindekiler</strong>
+                    <ol>
+                        <li><a href="#tr-veri-sorumlusu">Veri Sorumlusu ve İletişim</a></li>
+                        <li><a href="#tr-toplanan-bilgiler">Toplanabilecek Bilgiler</a></li>
+                        <li><a href="#tr-kullanim-amaclari">Bilgilerin Kullanım Amaçları</a></li>
+                        <li><a href="#tr-firebase-performance">Firebase Performance Monitoring ve Performans/Tanılama
+                                Verileri</a></li>
+                        <li><a href="#tr-topluluk-gorunurlugu">Topluluk Alanlarında Görünürlük</a></li>
+                        <li><a href="#tr-bilgi-paylasimi">Bilgilerin Paylaşılması</a></li>
+                        <li><a href="#tr-saglik-verileri">Sağlık ve İyi Oluş Verileri</a></li>
+                        <li><a href="#tr-saklama-silme">Veri Saklama ve Silme</a></li>
+                        <li><a href="#tr-guvenlik">Güvenlik</a></li>
+                        <li><a href="#tr-uluslararasi-aktarim">Uluslararası Aktarım</a></li>
+                        <li><a href="#tr-kullanici-haklari">Kullanıcı Hakları</a></li>
+                        <li><a href="#tr-cocuklar">Çocuklar ve Genç Kullanıcılar</a></li>
+                        <li><a href="#tr-politika-degisiklikleri">Politika Değişiklikleri</a></li>
+                        <li><a href="#tr-iletisim">İletişim</a></li>
+                    </ol>
+                </nav>
+
+                <h3 id="tr-veri-sorumlusu">1. Veri Sorumlusu ve İletişim</h3>
                 <p>Sigara Savar uygulamasının geliştiricisi/işletmecisi, bu politikada açıklanan veri işleme
                     faaliyetleri için iletişim noktasıdır. Gizlilik, veri erişimi veya veri silme talepleri için
                     bizimle <a href="mailto:sigarasavardestek@gmail.com">sigarasavardestek@gmail.com</a> adresinden
                     iletişime geçebilirsiniz.</p>
 
-                <h3>2. Toplanabilecek Bilgiler</h3>
+                <h3 id="tr-toplanan-bilgiler">2. Toplanabilecek Bilgiler</h3>
                 <p>Kullandığınız özelliklere göre aşağıdaki bilgiler toplanabilir veya işlenebilir:</p>
                 <ul>
                     <li><strong>Hesap ve kimlik doğrulama bilgileri:</strong> Google ile giriş yaptığınızda ad soyad,
@@ -78,7 +99,7 @@
                         çerezler veya benzeri teknolojiler kullanabilir.</li>
                 </ul>
 
-                <h3>3. Bilgilerin Kullanım Amaçları</h3>
+                <h3 id="tr-kullanim-amaclari">3. Bilgilerin Kullanım Amaçları</h3>
                 <ul>
                     <li>hesap oluşturma, kimlik doğrulama ve hesap güvenliğini sağlama;</li>
                     <li>sigara azaltma/bırakma takibi, nefes egzersizi, nefes testi, hatırlatıcı ve motivasyon
@@ -90,13 +111,70 @@
                     <li>yasal yükümlülükleri yerine getirme, haklarımızı koruma ve uyuşmazlıkları yönetme.</li>
                 </ul>
 
-                <h3>4. Topluluk Alanlarında Görünürlük</h3>
+                <h3 id="tr-firebase-performance">4. Firebase Performance Monitoring ve Performans/Tanılama Verileri
+                </h3>
+                <p>Uygulamanın teknik performansını ölçmek ve sorunları tespit etmek için Google LLC tarafından sunulan
+                    <strong>Firebase Performance Monitoring</strong> hizmetini kullanırız. Google/Firebase bu kapsamda
+                    teknik hizmet sağlayıcı ve veri işleyen olarak kullanılır.</p>
+
+                <h4>İşlenebilecek teknik veri kategorileri</h4>
+                <ul>
+                    <li>Firebase kurulum kimliği (Firebase Installation ID/FID) ve olayları bir oturumla ilişkilendirmek
+                        için rastgele oluşturulan Firebase oturum kimliği;</li>
+                    <li>IP adresi ve IP adresinden yaklaşık olarak belirlenen ülke;</li>
+                    <li>cihaz modeli, işletim sistemi, ekran yönü ve uygulama sürümü;</li>
+                    <li>uygulamanın paket adı veya bundle kimliği;</li>
+                    <li>dil ve bölge ayarları;</li>
+                    <li>mobil operatör ile Wi-Fi, LTE veya 3G gibi bağlantı türü bilgileri;</li>
+                    <li>uygulamanın ön planda veya arka planda olması;</li>
+                    <li>CPU, RAM ve disk kullanımına ilişkin performans göstergeleri;</li>
+                    <li>uygulama açılışı, ekran veya veri yükleme işlemleri ve özel kod trace'lerinin süreleri;</li>
+                    <li>HTTP/S isteklerinin yanıt süresi, yanıt kodu ve aktarılan veri boyutu;</li>
+                    <li>URL query parametreleri ile request/response içeriği çıkarılmış ağ endpoint desenleri.</li>
+                </ul>
+
+                <h4>İşleme amaçları</h4>
+                <ul>
+                    <li>uygulama açılış ve yükleme sürelerini ölçmek;</li>
+                    <li>yavaş ekranları, ağ isteklerini ve iş akışlarını tespit etmek;</li>
+                    <li>sürüm, cihaz ve işletim sistemi kaynaklı performans sorunlarını karşılaştırmak;</li>
+                    <li>teknik kararlılığı, kullanılabilirliği ve hizmet kalitesini geliştirmek;</li>
+                    <li>performans gerilemelerini ve servis kesintilerini erken tespit etmek;</li>
+                    <li>teknik sorunlara ilişkin toplu istatistikler ve uyarılar oluşturmak.</li>
+                </ul>
+
+                <h4>Veri minimizasyonu ve reklam takibi yapılmaması</h4>
+                <p>Firebase Performance için oluşturduğumuz özel trace ve attribute alanlarına kullanıcı adı, e-posta
+                    adresi, kullanıcı UID'si, sohbet mesajı, günlük veya not içeriği, sağlık bilgisi, sigara
+                    azaltma/bırakma bilgisi, erişim tokenı ya da başka bir hassas içerik göndermeyiz. Firebase Performance
+                    raporlarında URL query parametreleri ve HTTP/S request/response payload içerikleri saklanmaz.</p>
+                <p>Bu performans ve tanılama verilerini kullanıcıya reklam göstermek, kişiselleştirilmiş reklam veya
+                    reklam profili oluşturmak, veri brokerlığı yapmak ya da kullanıcının başka uygulama ve web
+                    sitelerindeki hareketleriyle eşleştirmek için kullanmayız. Bu teknik performans faaliyeti, Apple'ın
+                    App Tracking Transparency (ATT) çerçevesinde uygulamalar arası reklam takibi amacı taşımaz. Bu
+                    açıklama yalnızca Firebase Performance Monitoring faaliyeti içindir.</p>
+
+                <h4>Bilgilendirme, kullanıcı hakları ve resmi kaynaklar</h4>
+                <p>Bu aydınlatma metninin sunulması, Gizlilik Politikasının veya Kullanım Koşullarının okunması ya da
+                    zorunlu bir kutunun işaretlenmesi tek başına Firebase Performance Monitoring için açık rıza verildiği
+                    anlamına gelmez. KVKK kapsamındaki taleplerinizi aşağıdaki <a href="#tr-kullanici-haklari">Kullanıcı
+                        Hakları</a> bölümünde açıklanan yöntemle iletebilirsiniz.</p>
+                <ul>
+                    <li><a href="https://firebase.google.com/support/privacy" target="_blank"
+                            rel="noopener noreferrer">Firebase Gizlilik ve Güvenlik bilgileri</a></li>
+                    <li><a href="https://firebase.google.com/docs/perf-mon" target="_blank"
+                            rel="noopener noreferrer">Firebase Performance Monitoring dokümantasyonu</a></li>
+                    <li><a href="https://firebase.google.com/terms/data-processing-terms" target="_blank"
+                            rel="noopener noreferrer">Firebase Veri İşleme ve Güvenlik Şartları</a></li>
+                </ul>
+
+                <h3 id="tr-topluluk-gorunurlugu">5. Topluluk Alanlarında Görünürlük</h3>
                 <p>Ortak sohbet, yorum, profil veya etkinlik alanlarında paylaştığınız bilgiler diğer kullanıcılara
                     görünebilir. Bu alanlarda özel nitelikli kişisel veri, sağlık bilgisi, kimlik/finans bilgisi,
                     adres, telefon, konum veya gizli bilgi paylaşmamanızı öneririz. Şikayet edilen içerikler ve
                     kullanıcı raporları güvenlik ve moderasyon amacıyla incelenebilir.</p>
 
-                <h3>5. Bilgilerin Paylaşılması</h3>
+                <h3 id="tr-bilgi-paylasimi">6. Bilgilerin Paylaşılması</h3>
                 <p>Kişisel verileri satmayız veya kiralamayız. Bilgiler yalnızca aşağıdaki durumlarda sınırlı olarak
                     paylaşılabilir:</p>
                 <ul>
@@ -111,64 +189,93 @@
                     <li>açık rızanız veya talimatınız olduğunda.</li>
                 </ul>
 
-                <h3>6. Sağlık ve İyi Oluş Verileri</h3>
+                <h3 id="tr-saglik-verileri">7. Sağlık ve İyi Oluş Verileri</h3>
                 <p>Sigara Savar tıbbi cihaz değildir ve tıbbi teşhis, tedavi veya klinik ölçüm sunmaz. Nefes
                     egzersizi, nefes testi ve sigara bırakma süreciyle ilgili bilgiler yalnızca uygulama özelliklerini
                     sunmak, kullanıcı deneyimini kişiselleştirmek, güvenliği sağlamak ve destek taleplerini yanıtlamak
                     için işlenir. Bu veriler reklam amacıyla satılmaz.</p>
 
-                <h3>7. Veri Saklama ve Silme</h3>
+                <h3 id="tr-saklama-silme">8. Veri Saklama ve Silme</h3>
                 <p>Veriler, hizmetleri sunmak, güvenliği sağlamak, yasal yükümlülükleri yerine getirmek, uyuşmazlıkları
                     yönetmek veya meşru iş amaçları için gerekli olduğu sürece saklanır. Hesap silme veya veri silme
                     talebinizi <a href="userDataDeletion.html">Veri Silme Talimatları</a> sayfasındaki yöntemlerle
                     iletebilirsiniz. Silme sonrasında bazı kayıtlar sınırlı süreyle yedeklerde, hukuki yükümlülükler,
                     güvenlik, kötüye kullanımın önlenmesi, moderasyon veya uyuşmazlık yönetimi için gerekli olduğu
                     ölçüde saklanabilir.</p>
+                <p>Google/Firebase'in güncel hizmet açıklamasına göre Firebase Performance Monitoring, IP adresiyle
+                    ilişkili performans olaylarını yaklaşık 30 gün; Firebase kurulum kimliğiyle ilişkili ve
+                    kimliksizleştirilmiş performans verilerini yaklaşık 60 gün saklar. Bu sürelerin sonunda veriler canlı
+                    ve yedek sistemlerden kaldırılma sürecine alınır. Bunlar Sigara Savar'ın kendi veri tabanı saklama
+                    süreleri değil, Google/Firebase tarafından açıklanan hizmet süreleridir. Hesap silme işlemi bu
+                    süreler içindeki performans verilerinin anında ve kullanıcı bazında silineceği anlamına gelmez.</p>
 
-                <h3>8. Güvenlik</h3>
+                <h3 id="tr-guvenlik">9. Güvenlik</h3>
                 <p>Kişisel verileri korumak için makul teknik ve idari güvenlik önlemleri kullanırız. Buna rağmen
                     hiçbir internet, mobil uygulama, bulut veya iletişim sistemi yüzde yüz güvenli değildir; yetkisiz
                     erişim veya veri kaybı riskini tamamen ortadan kaldıramayız.</p>
 
-                <h3>9. Uluslararası Aktarım</h3>
-                <p>Kullandığımız hizmet sağlayıcıların sunucuları Türkiye dışında bulunabilir. Bu durumda veriler,
-                    yürürlükteki veri koruma mevzuatının izin verdiği ölçüde ve gerekli güvenlik önlemleriyle
-                    işlenebilir.</p>
+                <h3 id="tr-uluslararasi-aktarim">10. Uluslararası Aktarım</h3>
+                <p>Kullandığımız hizmet sağlayıcıların sunucuları Türkiye dışında bulunabilir. Firebase Performance
+                    Monitoring'in Google'ın global altyapısında çalışması nedeniyle yukarıda açıklanan teknik veriler,
+                    hizmetin sunulması amacıyla Google LLC ve Firebase alt hizmet sağlayıcıları tarafından Türkiye
+                    dışında işlenebilir.</p>
 
-                <h3>10. Kullanıcı Hakları</h3>
+                <h3 id="tr-kullanici-haklari">11. Kullanıcı Hakları</h3>
                 <p>Yürürlükteki mevzuat kapsamında kişisel verilerinize erişme, düzeltme, silme, işleme amaçlarını
                     öğrenme, aktarıldığı taraflar hakkında bilgi alma, işlenmesine itiraz etme, rızayı geri çekme ve
                     ilgili diğer hakları kullanma hakkına sahip olabilirsiniz. Bu hakları kullanmak için bizimle
-                    iletişime geçebilirsiniz.</p>
+                    <a href="mailto:sigarasavardestek@gmail.com">sigarasavardestek@gmail.com</a> adresinden iletişime
+                    geçebilirsiniz.</p>
 
-                <h3>11. Çocuklar ve Genç Kullanıcılar</h3>
+                <h3 id="tr-cocuklar">12. Çocuklar ve Genç Kullanıcılar</h3>
                 <p>Sigara Savar çocuklara yönelik değildir. 18 yaşından küçük kullanıcıların uygulamayı, topluluk
                     özelliklerini veya etkinlikleri ebeveyn/yasal temsilci bilgisi ve gerekli izinler olmadan
                     kullanmaması gerekir.</p>
 
-                <h3>12. Politika Değişiklikleri</h3>
+                <h3 id="tr-politika-degisiklikleri">13. Politika Değişiklikleri</h3>
                 <p>Bu Gizlilik Politikasını uygulamanın gelişimine, yasal gerekliliklere veya hizmet değişikliklerine
                     bağlı olarak güncelleyebiliriz. Güncel sürüm bu sayfada yayınlandığında yürürlüğe girer.</p>
 
-                <h3>13. İletişim</h3>
+                <h3 id="tr-iletisim">14. İletişim</h3>
                 <p>Herhangi bir soru, talep veya veri silme isteği için bizimle iletişime geçebilirsiniz: <a
                         href="mailto:sigarasavardestek@gmail.com">sigarasavardestek@gmail.com</a></p>
             </div>
 
-            <div class="lang en">
+            <div class="lang en policy-content">
                 <h2>Privacy Policy</h2>
-                <p class="muted">Last Updated: June 12, 2026</p>
+                <p class="muted">Last Updated: August 18, 2026</p>
 
                 <p>This Privacy Policy explains how the Sigara Savar mobile application, web pages, community features,
                     breathing exercise and breath test tools, event notices, and support channels collect, use, share,
                     retain, and protect user data.</p>
 
-                <h3>1. Data Controller and Contact</h3>
+                <nav class="policy-toc" aria-label="Privacy Policy table of contents">
+                    <strong>Table of Contents</strong>
+                    <ol>
+                        <li><a href="#en-data-controller">Data Controller and Contact</a></li>
+                        <li><a href="#en-information-collected">Information We May Collect</a></li>
+                        <li><a href="#en-use-of-information">How We Use Information</a></li>
+                        <li><a href="#en-firebase-performance">Firebase Performance Monitoring and Performance/Diagnostic
+                                Data</a></li>
+                        <li><a href="#en-community-visibility">Visibility in Community Areas</a></li>
+                        <li><a href="#en-information-sharing">Sharing of Information</a></li>
+                        <li><a href="#en-health-data">Health and Wellness Data</a></li>
+                        <li><a href="#en-retention-deletion">Data Retention and Deletion</a></li>
+                        <li><a href="#en-security">Security</a></li>
+                        <li><a href="#en-international-transfers">International Data Transfers</a></li>
+                        <li><a href="#en-user-rights">User Rights</a></li>
+                        <li><a href="#en-children">Children and Younger Users</a></li>
+                        <li><a href="#en-policy-changes">Changes to This Policy</a></li>
+                        <li><a href="#en-contact">Contact</a></li>
+                    </ol>
+                </nav>
+
+                <h3 id="en-data-controller">1. Data Controller and Contact</h3>
                 <p>The developer/operator of Sigara Savar is the contact point for the data processing activities
                     described in this policy. For privacy, data access, or data deletion requests, you may contact us at
                     <a href="mailto:sigarasavardestek@gmail.com">sigarasavardestek@gmail.com</a>.</p>
 
-                <h3>2. Information We May Collect</h3>
+                <h3 id="en-information-collected">2. Information We May Collect</h3>
                 <p>Depending on the features you use, the following information may be collected or processed:</p>
                 <ul>
                     <li><strong>Account and authentication information:</strong> when you sign in with Google, full
@@ -193,7 +300,7 @@
                         performance, security, and analytics purposes.</li>
                 </ul>
 
-                <h3>3. How We Use Information</h3>
+                <h3 id="en-use-of-information">3. How We Use Information</h3>
                 <ul>
                     <li>to create accounts, authenticate users, and maintain account security;</li>
                     <li>to provide smoking reduction/quitting tracking, breathing exercise, breath test, reminder, and
@@ -204,14 +311,71 @@
                     <li>to comply with legal obligations, protect our rights, and manage disputes.</li>
                 </ul>
 
-                <h3>4. Visibility in Community Areas</h3>
+                <h3 id="en-firebase-performance">4. Firebase Performance Monitoring and Performance/Diagnostic Data
+                </h3>
+                <p>We use <strong>Firebase Performance Monitoring</strong>, provided by Google LLC, to measure the
+                    app's technical performance and identify problems. Google/Firebase is used in this context as a
+                    technical service provider and data processor.</p>
+
+                <h4>Categories of technical data that may be processed</h4>
+                <ul>
+                    <li>the Firebase installation ID (FID) and a randomly generated Firebase session ID used to associate
+                        events with a session;</li>
+                    <li>the IP address and the country approximately determined from the IP address;</li>
+                    <li>device model, operating system, screen orientation, and app version;</li>
+                    <li>the app package name or bundle identifier;</li>
+                    <li>language and region settings;</li>
+                    <li>mobile carrier and connection type information such as Wi-Fi, LTE, or 3G;</li>
+                    <li>whether the app is in the foreground or background;</li>
+                    <li>performance indicators relating to CPU, RAM, and disk usage;</li>
+                    <li>durations for app startup, screen or data loading operations, and custom code traces;</li>
+                    <li>response time, response code, and transferred data size for HTTP/S requests;</li>
+                    <li>network endpoint patterns with URL query parameters and request/response content removed.</li>
+                </ul>
+
+                <h4>Purposes of processing</h4>
+                <ul>
+                    <li>to measure app startup and loading times;</li>
+                    <li>to identify slow screens, network requests, and workflows;</li>
+                    <li>to compare performance problems associated with app versions, devices, and operating systems;</li>
+                    <li>to improve technical stability, usability, and service quality;</li>
+                    <li>to detect performance regressions and service interruptions early;</li>
+                    <li>to create aggregated statistics and alerts concerning technical problems.</li>
+                </ul>
+
+                <h4>Data minimization and no advertising tracking</h4>
+                <p>We do not send a username, email address, user UID, chat message, journal or note content, health
+                    information, smoking reduction/quitting information, access token, or other sensitive content in
+                    custom trace and attribute fields that we create for Firebase Performance. URL query parameters and
+                    HTTP/S request/response payload content are not retained in Firebase Performance reports.</p>
+                <p>We do not use this performance and diagnostic data to show ads to users, create personalized
+                    advertising or advertising profiles, broker data, or match users with their activity across other
+                    apps and websites. This technical performance activity is not intended for cross-app advertising
+                    tracking under Apple's App Tracking Transparency (ATT) framework. This explanation applies only to
+                    the Firebase Performance Monitoring activity.</p>
+
+                <h4>Notice, user rights, and official resources</h4>
+                <p>Presenting this notice, reading the Privacy Policy or Terms of Service, or selecting a mandatory
+                    checkbox does not by itself constitute explicit consent to Firebase Performance Monitoring. You may
+                    submit requests under the KVKK using the method described in the <a href="#en-user-rights">User
+                        Rights</a> section below.</p>
+                <ul>
+                    <li><a href="https://firebase.google.com/support/privacy" target="_blank"
+                            rel="noopener noreferrer">Firebase Privacy and Security information</a></li>
+                    <li><a href="https://firebase.google.com/docs/perf-mon" target="_blank"
+                            rel="noopener noreferrer">Firebase Performance Monitoring documentation</a></li>
+                    <li><a href="https://firebase.google.com/terms/data-processing-terms" target="_blank"
+                            rel="noopener noreferrer">Firebase Data Processing and Security Terms</a></li>
+                </ul>
+
+                <h3 id="en-community-visibility">5. Visibility in Community Areas</h3>
                 <p>Information you share in shared chat, comments, profile, or event areas may be visible to other
                     users. We recommend that you do not share sensitive personal data, health information,
                     identity/financial information, address, phone number, location, or confidential information in
                     these areas. Reported content and user reports may be reviewed for safety and moderation purposes.
                 </p>
 
-                <h3>5. Sharing of Information</h3>
+                <h3 id="en-information-sharing">6. Sharing of Information</h3>
                 <p>We do not sell or rent personal data. Information may be shared only in limited cases:</p>
                 <ul>
                     <li>with service providers for Google authentication, hosting, databases, analytics, crash
@@ -224,44 +388,53 @@
                     <li>when you provide explicit consent or instructions.</li>
                 </ul>
 
-                <h3>6. Health and Wellness Data</h3>
+                <h3 id="en-health-data">7. Health and Wellness Data</h3>
                 <p>Sigara Savar is not a medical device and does not provide medical diagnosis, treatment, or clinical
                     measurement. Information related to breathing exercises, breath tests, and quitting progress is used
                     only to provide app features, personalize the user experience, maintain safety, and respond to
                     support requests. This data is not sold for advertising purposes.</p>
 
-                <h3>7. Data Retention and Deletion</h3>
+                <h3 id="en-retention-deletion">8. Data Retention and Deletion</h3>
                 <p>Data is retained as long as necessary to provide the services, maintain security, comply with legal
                     obligations, manage disputes, or support legitimate business purposes. You may submit account or
                     data deletion requests using the methods on our <a href="userDataDeletion.html">Data Deletion
                     Instructions</a> page. After deletion, some records may remain for a limited time in backups or may
                     be retained where necessary for legal obligations, security, abuse prevention, moderation, or dispute
                     management.</p>
+                <p>According to Google/Firebase's current service information, Firebase Performance Monitoring retains
+                    performance events associated with an IP address for approximately 30 days and retains performance
+                    data associated with a Firebase installation ID and de-identified performance data for approximately
+                    60 days. After those periods, the data enters the removal process from live and backup systems. These
+                    are service retention periods described by Google/Firebase, not retention periods for Sigara Savar's
+                    own database. Account deletion does not mean that performance data within these periods will be
+                    deleted immediately on an individual-user basis.</p>
 
-                <h3>8. Security</h3>
+                <h3 id="en-security">9. Security</h3>
                 <p>We use reasonable technical and administrative safeguards to protect personal data. However, no
                     internet, mobile app, cloud, or communication system is completely secure; we cannot eliminate all
                     risk of unauthorized access or data loss.</p>
 
-                <h3>9. International Transfers</h3>
-                <p>The servers of the service providers we use may be located outside Türkiye. In that case, data may be
-                    processed to the extent permitted by applicable data protection laws and with appropriate safeguards.
-                </p>
+                <h3 id="en-international-transfers">10. International Data Transfers</h3>
+                <p>The servers of the service providers we use may be located outside Türkiye. Because Firebase
+                    Performance Monitoring operates on Google's global infrastructure, the technical data described
+                    above may be processed outside Türkiye by Google LLC and Firebase subprocessors for the purpose of
+                    providing the service.</p>
 
-                <h3>10. User Rights</h3>
+                <h3 id="en-user-rights">11. User Rights</h3>
                 <p>Under applicable law, you may have the right to access, correct, delete, learn the purposes of
                     processing, obtain information about transferred parties, object to processing, withdraw consent, and
-                    exercise other related rights. You may contact us to exercise these rights.</p>
+                    exercise other related rights. To exercise these rights, you may contact us at <a
+                        href="mailto:sigarasavardestek@gmail.com">sigarasavardestek@gmail.com</a>.</p>
 
-                <h3>11. Children and Younger Users</h3>
+                <h3 id="en-children">12. Children and Younger Users</h3>
                 <p>Sigara Savar is not directed to children. Users under 18 should not use the app, community features,
                     or events without the knowledge of a parent/legal guardian and any required permissions.</p>
 
-                <h3>12. Changes to This Policy</h3>
+                <h3 id="en-policy-changes">13. Changes to This Policy</h3>
                 <p>We may update this Privacy Policy as the app evolves, legal requirements change, or services are
                     modified. The updated version becomes effective when published on this page.</p>
 
-                <h3>13. Contact</h3>
+                <h3 id="en-contact">14. Contact</h3>
                 <p>For any questions, requests, or data deletion inquiries, please contact us at: <a
                         href="mailto:sigarasavardestek@gmail.com">sigarasavardestek@gmail.com</a></p>
             </div>

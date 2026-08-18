@@ -893,6 +893,48 @@ body:not(.home-page) a {
     font-weight: 800;
 }
 
+.policy-toc {
+    display: block;
+    margin: 28px 0 34px;
+    padding: 20px 22px;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    background: var(--green-soft);
+    white-space: normal;
+}
+
+.policy-toc strong {
+    display: block;
+    margin-bottom: 10px;
+    color: var(--ink);
+}
+
+.policy-toc ol {
+    columns: 2;
+    column-gap: 34px;
+    margin: 0;
+    padding-left: 22px;
+}
+
+.policy-toc li {
+    break-inside: avoid;
+    margin: 6px 0;
+}
+
+.policy-toc a {
+    display: inline;
+    padding: 0;
+}
+
+.policy-toc a:hover {
+    background: transparent;
+    text-decoration: underline;
+}
+
+.policy-content h3[id] {
+    scroll-margin-top: 92px;
+}
+
 body:not(.home-page) footer {
     text-align: center;
 }
@@ -1115,5 +1157,13 @@ section.lang.tr {
 
     body:not(.home-page) section {
         padding: 24px 18px;
+    }
+
+    .policy-toc {
+        padding: 18px;
+    }
+
+    .policy-toc ol {
+        columns: 1;
     }
 }

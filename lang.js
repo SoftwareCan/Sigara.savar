@@ -1,4 +1,5 @@
 function setLang(lang) {
+    document.documentElement.lang = lang;
     document.querySelectorAll('.lang').forEach(el => el.style.display = 'none');
     document.querySelectorAll('.lang.' + lang).forEach(el => {
         el.style.display = el.tagName === 'SPAN' ? 'inline' : 'block';
