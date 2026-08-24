@@ -23,10 +23,11 @@ const app = initializeApp(firebaseConfig);
 
 // ─── Firebase App Check (reCAPTCHA v3) ────────────────────────────────────────
 // KURULUM:
-//   1. https://www.google.com/recaptcha/admin → Site ekle → reCAPTCHA v3 → Site Key kopyala
+//   1. https://www.google.com/recaptcha/admin → Site ekle → reCAPTCHA v3
 //      Yetkili alan adları: sigarasavar.com ve softwarecan.github.io
-//   2. Firebase Console → App Check → Web uygulamanızı kaydet → reCAPTCHA site key'i girin
-//   3. Aşağıdaki sabiti kendi site key'inizle değiştirin
+//   2. Firebase Console → App Check → Web uygulamanızı kaydet
+//      Aynı reCAPTCHA anahtar çiftinin SECRET KEY'ini Firebase Console'a girin
+//   3. Aşağıdaki sabite tarayıcıda kullanılacak PUBLIC SITE KEY'i girin
 //   4. Firebase Console → App Check → "Enforce" butonuna tıklayın (zorunlu hale getir)
 //
 const RECAPTCHA_V3_SITE_KEY = "6LdzYIQtAAAAAOdTScU4YVGIJfdrWwq_pt62RGFz";
