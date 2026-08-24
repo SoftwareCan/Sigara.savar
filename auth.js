@@ -26,16 +26,24 @@ preventClickjacking();
 // ─── Sayfa başlangıçta gizli — auth state belli olana kadar hiçbir şey görünmez ─────
 document.body.hidden = true;
 
-// ─── Giriş yapılmışsa sessizce dashboard'a yönlendir ────────────────────────────────────
-const _unsubscribeAuthCheck = onAuthStateChanged(auth, (user) => {
-  _unsubscribeAuthCheck(); // Tek seferlik — dinlemeyi hemen bırak
+// ─── Auth değişikliklerini sürekli dinle; popup sonucu gecikse bile yönlendir ─────────────
+let _redirectingToDashboard = false;
+
+function redirectToDashboard() {
+  if (_redirectingToDashboard) return;
+  _redirectingToDashboard = true;
+  window.location.replace("dashboard.html");
+}
+
+onAuthStateChanged(auth, (user) => {
   if (user) {
-    // Zaten giriş yapmış — form hiç gösterilmeden dashboard'a geç
-    window.location.replace("dashboard.html");
+    redirectToDashboard();
     return;
   }
-  // Giriş yapılmamış — formu göster
   document.body.hidden = false;
+}, (err) => {
+  document.body.hidden = false;
+  console.warn("[Auth] Oturum durumu alınamadı:", err?.code || "unknown");
 });
 
 
@@ -82,6 +90,7 @@ function clearMsg() {
 // ─── Spinner yardımcıları ─────────────────────────────────────────────────────
 function setLoading(btn, loading) {
   btn.disabled = loading;
+  btn.classList.toggle("is-loading", loading);
   const span    = btn.querySelector("span");
   const spinner = btn.querySelector(".btn-spinner");
   if (span)    span.hidden    = loading;
@@ -106,6 +115,7 @@ const TR_ERRORS = {
   "auth/user-disabled":                        "Bu hesap devre dışı bırakılmış.",
   "auth/requires-recent-login":                "Bu işlem için yeniden giriş yapmanız gerekiyor.",
   "auth/app-check-token-error":                "Güvenlik doğrulaması başarısız. Sayfayı yenileyip tekrar deneyin.",
+  "appCheck/recaptcha-error":                   "Güvenlik doğrulaması tamamlanamadı. Lütfen tekrar deneyin.",
 };
 
 function trError(err) {
@@ -126,6 +136,7 @@ document.getElementById("btn-google").addEventListener("click", async () => {
     await signInWithPopup(auth, provider);
     clearRateLimit("social_auth");
     logSecEvent("auth_success", { method: "google" });
+    redirectToDashboard();
   } catch (err) {
     const msg = trError(err);
     if (msg) showMsg(msg);
@@ -148,6 +159,7 @@ document.getElementById("btn-apple").addEventListener("click", async () => {
     await signInWithPopup(auth, provider);
     clearRateLimit("social_auth");
     logSecEvent("auth_success", { method: "apple" });
+    redirectToDashboard();
   } catch (err) {
     const msg = trError(err);
     if (msg) showMsg(msg);
@@ -178,6 +190,7 @@ forms.login.addEventListener("submit", async (e) => {
     await signInWithEmailAndPassword(auth, emailV.value, passwordRaw);
     clearRateLimit("login");
     logSecEvent("auth_success", { method: "email" });
+    redirectToDashboard();
   } catch (err) {
     showMsg(trError(err));
     logSecEvent("auth_failure", { method: "email", code: err.code });
@@ -211,6 +224,7 @@ forms.register.addEventListener("submit", async (e) => {
     await updateProfile(cred.user, { displayName: nameV.value });
     clearRateLimit("register");
     logSecEvent("auth_success", { method: "register" });
+    redirectToDashboard();
   } catch (err) {
     showMsg(trError(err));
     logSecEvent("auth_failure", { method: "register", code: err.code });

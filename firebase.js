@@ -3,7 +3,6 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/11.10.0/fireba
 import { getAuth } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
 import { getFirestore } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js";
 import {
-  getToken,
   initializeAppCheck,
   ReCaptchaV3Provider,
 } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-app-check.js";
@@ -25,6 +24,7 @@ const app = initializeApp(firebaseConfig);
 // ─── Firebase App Check (reCAPTCHA v3) ────────────────────────────────────────
 // KURULUM:
 //   1. https://www.google.com/recaptcha/admin → Site ekle → reCAPTCHA v3 → Site Key kopyala
+//      Yetkili alan adları: sigarasavar.com ve softwarecan.github.io
 //   2. Firebase Console → App Check → Web uygulamanızı kaydet → reCAPTCHA site key'i girin
 //   3. Aşağıdaki sabiti kendi site key'inizle değiştirin
 //   4. Firebase Console → App Check → "Enforce" butonuna tıklayın (zorunlu hale getir)
@@ -38,16 +38,10 @@ const APP_CHECK_HOSTS = new Set([
 
 if (RECAPTCHA_V3_SITE_KEY && APP_CHECK_HOSTS.has(window.location.hostname)) {
   try {
-    const appCheck = initializeAppCheck(app, {
+    initializeAppCheck(app, {
       provider: new ReCaptchaV3Provider(RECAPTCHA_V3_SITE_KEY),
       isTokenAutoRefreshEnabled: true,
     });
-
-    getToken(appCheck)
-      .then(() => console.info("[App Check] reCAPTCHA v3 doğrulaması etkin."))
-      .catch((err) => {
-        console.warn("[App Check] Doğrulama tokenı alınamadı:", err.code || "unknown");
-      });
   } catch (err) {
     console.warn("[App Check] Başlatılamadı:", err.code || "unknown");
   }

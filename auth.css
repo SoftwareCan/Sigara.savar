@@ -404,6 +404,15 @@
   border-radius: 50%;
   animation: spin 0.65s linear infinite;
 }
+
+.social-btn.is-loading > svg {
+  visibility: hidden;
+}
+
+.google-btn .btn-spinner {
+  border-color: rgba(7,17,37,0.16);
+  border-top-color: #1fa86d;
+}
 @keyframes spin { to { transform: rotate(360deg); } }
 
 /* ── Linkler ───────────────────────────────────────────────── */
