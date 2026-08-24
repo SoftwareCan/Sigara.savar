@@ -9,7 +9,7 @@ import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.10.0/f
 // Sayfa yüklenince önce her şeyi gizle — auth state bilinene kadar flash olmasın
 const headerActions = document.querySelector(".header-actions");
 if (headerActions) {
-  headerActions.style.visibility = "hidden";
+  headerActions.hidden = true;
 }
 
 onAuthStateChanged(auth, (user) => {
@@ -25,28 +25,23 @@ onAuthStateChanged(auth, (user) => {
 
   if (user) {
     // ── Giriş yapılmış ──────────────────────────────────────────
-    // "Başla" butonunu gizle
-    if (storeMenu) storeMenu.style.display = "none";
+    if (storeMenu) storeMenu.hidden = true;
 
-    // "Profilim" butonu oluştur
+    // "Profilim" butonu — CSS class'ları ile stilli
     const btn = document.createElement("a");
     btn.id        = "header-auth-btn";
     btn.href      = "dashboard.html";
-    btn.className = "nav-cta";
-    btn.style.cssText = "display:inline-flex;align-items:center;gap:8px;text-decoration:none;";
+    btn.className = "nav-cta header-profile-btn";
 
     // Avatar
     const avatarEl = document.createElement("span");
-    avatarEl.style.cssText =
-      "width:26px;height:26px;border-radius:50%;background:rgba(255,255,255,0.25);" +
-      "display:inline-flex;align-items:center;justify-content:center;" +
-      "font-size:12px;font-weight:900;overflow:hidden;flex-shrink:0;";
+    avatarEl.className = "header-avatar";
 
     if (user.photoURL) {
       const img = document.createElement("img");
-      img.src           = user.photoURL;
-      img.style.cssText = "width:100%;height:100%;object-fit:cover;border-radius:50%;";
-      img.alt           = user.displayName || "";
+      img.src       = user.photoURL;
+      img.alt       = user.displayName || "";
+      img.className = "header-avatar-img";
       avatarEl.appendChild(img);
     } else {
       avatarEl.textContent = (user.displayName || user.email || "U")[0].toUpperCase();
@@ -61,16 +56,14 @@ onAuthStateChanged(auth, (user) => {
 
   } else {
     // ── Giriş yapılmamış ────────────────────────────────────────
-    // "Başla" butonunu göster
-    if (storeMenu) storeMenu.style.display = "";
+    if (storeMenu) storeMenu.hidden = false;
 
     // "Giriş Yap" butonu
     const btn = document.createElement("a");
-    btn.id            = "header-auth-btn";
-    btn.href          = "auth.html";
-    btn.className     = "nav-cta";
-    btn.textContent   = "Giriş Yap";
-    btn.style.cssText = "text-decoration:none;";
+    btn.id          = "header-auth-btn";
+    btn.href        = "auth.html";
+    btn.className   = "nav-cta";
+    btn.textContent = "Giriş Yap";
 
     // "Yasal" linkinden önce ekle
     const legalLink = actions.querySelector("a.nav-link");
@@ -82,5 +75,5 @@ onAuthStateChanged(auth, (user) => {
   }
 
   // Auth state belli oldu — header'ı göster
-  actions.style.visibility = "";
+  actions.hidden = false;
 });

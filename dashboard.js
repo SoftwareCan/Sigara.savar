@@ -334,10 +334,10 @@ function parseQuitDate(raw) {
 
 // ─── UI Yardımcıları ──────────────────────────────────────────────────────────
 function showDashboard() {
-  document.getElementById("dash-loading").style.display = "none";
-  document.getElementById("dashboard-content").style.display = "";
+  document.getElementById("dash-loading").hidden = true;
+  document.getElementById("dashboard-content").hidden = false;
 }
-function showLoading(v)  { document.getElementById("dash-loading").style.display = v ? "flex" : "none"; }
+function showLoading(v)  { document.getElementById("dash-loading").hidden = !v; }
 
 // ─── Ana Auth State Handler ─────────────────────────────────────────────────────────────────
 let _authResolved = false;

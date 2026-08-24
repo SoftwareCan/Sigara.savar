@@ -23,8 +23,8 @@ import {
 // ─── Clickjacking ─────────────────────────────────────────────────────────────────
 preventClickjacking();
 
-// ─── Sayfa başlangıçta gizli — auth state belli olana kadar hiçbir şey görünmez────────────────
-document.documentElement.style.visibility = "hidden";
+// ─── Sayfa başlangıçta gizli — auth state belli olana kadar hiçbir şey görünmez ─────
+document.body.hidden = true;
 
 // ─── Giriş yapılmışsa sessizce dashboard'a yönlendir ────────────────────────────────────
 const _unsubscribeAuthCheck = onAuthStateChanged(auth, (user) => {
@@ -35,7 +35,7 @@ const _unsubscribeAuthCheck = onAuthStateChanged(auth, (user) => {
     return;
   }
   // Giriş yapılmamış — formu göster
-  document.documentElement.style.visibility = "";
+  document.body.hidden = false;
 });
 
 

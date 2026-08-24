@@ -155,6 +155,33 @@ nav a:hover,
     box-shadow: 0 14px 28px rgba(31, 168, 109, 0.26);
 }
 
+/* Header profil butonu (header-auth.js tarafından oluşturulur) */
+.header-profile-btn {
+    gap: 8px;
+    text-decoration: none;
+}
+
+.header-avatar {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.25);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 900;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.header-avatar-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
 .store-menu {
     position: relative;
 }
