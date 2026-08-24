@@ -335,10 +335,9 @@ function parseQuitDate(raw) {
 // ─── UI Yardımcıları ──────────────────────────────────────────────────────────
 function showDashboard() {
   document.getElementById("dash-loading").style.display = "none";
-  document.getElementById("dashboard-content").hidden = false;
+  document.getElementById("dashboard-content").style.display = "";
 }
 function showLoading(v)  { document.getElementById("dash-loading").style.display = v ? "flex" : "none"; }
-function showUnauth()    { document.getElementById("dash-unauthenticated").hidden = false; showLoading(false); }
 
 // ─── Ana Auth State Handler ─────────────────────────────────────────────────────────────────
 let _authResolved = false;
@@ -463,7 +462,3 @@ async function doSignOut() {
 }
 
 document.getElementById("btn-signout").addEventListener("click", doSignOut);
-
-// Sidebar çıkış butonu
-const sidebarSignout = document.getElementById("btn-signout-sidebar");
-if (sidebarSignout) sidebarSignout.addEventListener("click", doSignOut);
