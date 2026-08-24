@@ -333,21 +333,54 @@ function parseQuitDate(raw) {
 }
 
 // ─── UI Yardımcıları ──────────────────────────────────────────────────────────
+const AUTH_INIT_TIMEOUT_MS = 10_000;
+const USER_DATA_TIMEOUT_MS = 12_000;
+
 function showDashboard() {
   document.getElementById("dash-loading").hidden = true;
   document.getElementById("dashboard-content").hidden = false;
 }
-function showLoading(v)  { document.getElementById("dash-loading").hidden = !v; }
+
+function showLoadError(message) {
+  const loading = document.getElementById("dash-loading");
+  loading.hidden = false;
+  loading.classList.add("is-error");
+  document.getElementById("dash-spinner").hidden = true;
+  document.getElementById("dash-loading-message").textContent = message;
+  document.getElementById("btn-retry").hidden = false;
+}
+
+function withTimeout(promise, timeoutMs) {
+  return new Promise((resolve, reject) => {
+    const timeoutId = window.setTimeout(() => {
+      const error = new Error("Dashboard request timed out");
+      error.code = "dashboard/data-timeout";
+      reject(error);
+    }, timeoutMs);
+
+    promise.then(
+      (value) => {
+        window.clearTimeout(timeoutId);
+        resolve(value);
+      },
+      (error) => {
+        window.clearTimeout(timeoutId);
+        reject(error);
+      }
+    );
+  });
+}
 
 // ─── Ana Auth State Handler ─────────────────────────────────────────────────────────────────
 let _authResolved = false;
+const authInitTimer = window.setTimeout(() => {
+  if (_authResolved) return;
+  logSecEvent("auth_init_timeout");
+  showLoadError("Oturum doğrulanamadı. Bağlantınızı kontrol edip yeniden deneyin.");
+}, AUTH_INIT_TIMEOUT_MS);
 
-onAuthStateChanged(auth, async (user) => {
-  // Firebase başlangıçta null çıkarabilir — 800ms bekle, sonra karar ver
-  if (!user && !_authResolved) {
-    await new Promise(r => setTimeout(r, 800));
-    user = auth.currentUser; // Yeniden kontrol et
-  }
+async function handleAuthState(user) {
+  window.clearTimeout(authInitTimer);
   _authResolved = true;
 
   if (!user) {
@@ -357,101 +390,111 @@ onAuthStateChanged(auth, async (user) => {
     return;
   }
 
-  logSecEvent("dashboard_access", { uid: user.uid.slice(0, 8) + "..." });
-
-  // ── 30 dk session timeout ────────────────────────────────────────────────────
-  startIdleTimer(async () => {
-    logSecEvent("session_timeout_signout");
-    await signOut(auth);
-    window.location.replace("auth.html");
-  }, 30 * 60 * 1000);
-
-  // ── Profil ────────────────────────────────────────────────────────────────────
-  const displayName = sanitizeText(user.displayName || "Kullanıcı");
-  document.getElementById("profile-name").textContent  = displayName;
-  document.getElementById("profile-email").textContent = sanitizeText(user.email || "");
-  document.getElementById("profile-avatar-letter").textContent = displayName[0].toUpperCase();
-
-  if (user.photoURL) {
-    const img = document.getElementById("profile-avatar-img");
-    // Güvenlik: yalnızca googleapis.com ve googleusercontent.com'dan avatar kabul et
-    const allowedOrigins = ["https://lh3.googleusercontent.com", "https://googleusercontent.com"];
-    const isAllowedPhoto = allowedOrigins.some((o) => user.photoURL.startsWith(o)) ||
-      user.photoURL.startsWith("https://graph.facebook.com") ||
-      user.photoURL.startsWith("https://platform-lookaside.fbsbx.com");
-
-    if (isAllowedPhoto) {
-      img.src = user.photoURL;
-      img.hidden = false;
-      document.getElementById("profile-avatar-letter").hidden = true;
-    }
-  }
-
-  // ── Firestore verisi ──────────────────────────────────────────────────────────
-  let userData = null;
   try {
-    userData = await loadUserData(user.uid);
-  } catch (err) {
-    // Hata detayını kullanıcıya sızdırma
-    logSecEvent("firestore_read_error", { code: err.code });
-    console.warn("[Dashboard] Veri yükleme hatası.");
-  }
+    logSecEvent("dashboard_access", { uid: user.uid.slice(0, 8) + "..." });
 
-  if (!userData) {
-    showLoading(false);
-    showDashboard();
-    document.getElementById("profile-quit-since").textContent =
-      "Mobil uygulamada henüz veri oluşturulmamış.";
-    return;
-  }
+    // ── 30 dk session timeout ──────────────────────────────────────────────────
+    startIdleTimer(async () => {
+      logSecEvent("session_timeout_signout");
+      await signOut(auth);
+      window.location.replace("auth.html");
+    }, 30 * 60 * 1000);
 
-  const quitDate = parseQuitDate(userData.quitDate);
-  const msQ      = quitDate ? minutesSince(quitDate) : 0;
-  const days     = Math.floor(msQ / 1440);
-  const currency = (typeof userData.currencyCode === "string" && userData.currencyCode.length === 3)
-    ? userData.currencyCode : "TRY";
+    // ── Profil ──────────────────────────────────────────────────────────────────
+    const displayName = sanitizeText(user.displayName || "Kullanıcı");
+    document.getElementById("profile-name").textContent = displayName;
+    document.getElementById("profile-email").textContent = sanitizeText(user.email || "");
+    document.getElementById("profile-avatar-letter").textContent =
+      (displayName[0] || "K").toUpperCase();
 
-  // ── Profil meta ────────────────────────────────────────────────────────────────
-  if (quitDate) {
-    document.getElementById("profile-quit-since").textContent =
-      `Bırakma: ${quitDate.toLocaleDateString("tr-TR", { day: "numeric", month: "long", year: "numeric" })}`;
-    document.getElementById("profile-smoke-badge").textContent = days;
-    startCounter(quitDate);
-  }
+    if (user.photoURL) {
+      const img = document.getElementById("profile-avatar-img");
+      const allowedOrigins = ["https://lh3.googleusercontent.com", "https://googleusercontent.com"];
+      const isAllowedPhoto = allowedOrigins.some((o) => user.photoURL.startsWith(o)) ||
+        user.photoURL.startsWith("https://graph.facebook.com") ||
+        user.photoURL.startsWith("https://platform-lookaside.fbsbx.com");
 
-  // ── İstatistikler ─────────────────────────────────────────────────────────────
-  const daily   = Math.max(0, Math.min(parseInt(userData.dailyCigarettes)  || 0, 200));
-  const perPack = Math.max(1, Math.min(parseInt(userData.cigarettesPerPack) || 20, 100));
-  const price   = Math.max(0, Math.min(parseFloat(userData.packPrice)       || 0, 10000));
+      if (isAllowedPhoto) {
+        img.src = user.photoURL;
+        img.hidden = false;
+        document.getElementById("profile-avatar-letter").hidden = true;
+      }
+    }
 
-  const cigarettesNotSmoked = Math.floor((msQ / 1440) * daily);
-  const moneySaved          = price > 0 ? (cigarettesNotSmoked / perPack) * price : 0;
-  const hoursFree           = Math.floor(msQ / 60);
+    // ── Firestore verisi ────────────────────────────────────────────────────────
+    const userData = await withTimeout(loadUserData(user.uid), USER_DATA_TIMEOUT_MS);
 
-  document.getElementById("val-cigarettes").textContent = cigarettesNotSmoked.toLocaleString("tr-TR");
-  document.getElementById("val-money").textContent      = moneySaved > 0 ? formatMoney(moneySaved, currency) : "—";
-  document.getElementById("val-life").textContent       = formatLifeGained(cigarettesNotSmoked);
-  document.getElementById("val-hours").textContent      = hoursFree.toLocaleString("tr-TR");
+    if (!userData) {
+      document.getElementById("profile-quit-since").textContent =
+        "Mobil uygulamada henüz veri oluşturulmamış.";
+      showDashboard();
+      return;
+    }
 
-  // ── Bölümler ──────────────────────────────────────────────────────────────────
-  renderHealthTimeline(msQ);
-  renderAchievements(msQ);
+    const quitDate = parseQuitDate(userData.quitDate);
+    const msQ      = quitDate ? minutesSince(quitDate) : 0;
+    const days     = Math.floor(msQ / 1440);
+    const currency = (typeof userData.currencyCode === "string" && userData.currencyCode.length === 3)
+      ? userData.currencyCode : "TRY";
 
-  document.querySelectorAll(".ach-filter").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      document.querySelectorAll(".ach-filter").forEach((b) => {
-        b.classList.remove("active"); b.setAttribute("aria-selected", "false");
+    // ── Profil meta ──────────────────────────────────────────────────────────────
+    if (quitDate) {
+      document.getElementById("profile-quit-since").textContent =
+        `Bırakma: ${quitDate.toLocaleDateString("tr-TR", { day: "numeric", month: "long", year: "numeric" })}`;
+      document.getElementById("profile-smoke-badge").textContent = days;
+      startCounter(quitDate);
+    }
+
+    // ── İstatistikler ───────────────────────────────────────────────────────────
+    const daily   = Math.max(0, Math.min(parseInt(userData.dailyCigarettes) || 0, 200));
+    const perPack = Math.max(1, Math.min(parseInt(userData.cigarettesPerPack) || 20, 100));
+    const price   = Math.max(0, Math.min(parseFloat(userData.packPrice) || 0, 10000));
+
+    const cigarettesNotSmoked = Math.floor((msQ / 1440) * daily);
+    const moneySaved = price > 0 ? (cigarettesNotSmoked / perPack) * price : 0;
+    const hoursFree = Math.floor(msQ / 60);
+
+    document.getElementById("val-cigarettes").textContent = cigarettesNotSmoked.toLocaleString("tr-TR");
+    document.getElementById("val-money").textContent =
+      moneySaved > 0 ? formatMoney(moneySaved, currency) : "—";
+    document.getElementById("val-life").textContent = formatLifeGained(cigarettesNotSmoked);
+    document.getElementById("val-hours").textContent = hoursFree.toLocaleString("tr-TR");
+
+    // ── Bölümler ────────────────────────────────────────────────────────────────
+    renderHealthTimeline(msQ);
+    renderAchievements(msQ);
+
+    document.querySelectorAll(".ach-filter").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll(".ach-filter").forEach((b) => {
+          b.classList.remove("active");
+          b.setAttribute("aria-selected", "false");
+        });
+        btn.classList.add("active");
+        btn.setAttribute("aria-selected", "true");
+        renderAchievements(msQ);
       });
-      btn.classList.add("active");
-      btn.setAttribute("aria-selected", "true");
-      renderAchievements(msQ);
     });
-  });
 
-  renderInfoGrid(userData, user);
-  showLoading(false);
-  showDashboard();
-});
+    renderInfoGrid(userData, user);
+    showDashboard();
+  } catch (err) {
+    logSecEvent("dashboard_load_error", { code: err?.code || "unknown" });
+    console.warn("[Dashboard] Veriler yüklenemedi:", err?.code || "unknown");
+    showLoadError("Verileriniz şu anda yüklenemedi. Bağlantınızı kontrol edip yeniden deneyin.");
+  }
+}
+
+onAuthStateChanged(
+  auth,
+  (user) => { void handleAuthState(user); },
+  (err) => {
+    window.clearTimeout(authInitTimer);
+    _authResolved = true;
+    logSecEvent("auth_state_error", { code: err?.code || "unknown" });
+    showLoadError("Oturum doğrulanamadı. Bağlantınızı kontrol edip yeniden deneyin.");
+  }
+);
 
 // ─── Çıkış ───────────────────────────────────────────────────────────────────
 async function doSignOut() {
@@ -462,3 +505,4 @@ async function doSignOut() {
 }
 
 document.getElementById("btn-signout").addEventListener("click", doSignOut);
+document.getElementById("btn-retry").addEventListener("click", () => window.location.reload());

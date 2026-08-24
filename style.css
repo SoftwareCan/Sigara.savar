@@ -876,17 +876,17 @@ footer .muted {
     font-size: 14px;
 }
 
-body:not(.home-page) {
+.policy-page {
     background: #f7fbff;
 }
 
-body:not(.home-page) main {
+.policy-page main {
     max-width: 1060px;
     margin: 34px auto 78px;
     padding: 0 24px;
 }
 
-body:not(.home-page) section {
+.policy-page section {
     padding: 34px;
     border: 1px solid var(--line);
     border-radius: 18px;
@@ -894,28 +894,28 @@ body:not(.home-page) section {
     box-shadow: 0 14px 38px rgba(20, 32, 51, 0.06);
 }
 
-body:not(.home-page) h2 {
+.policy-page h2 {
     margin-top: 0;
     color: var(--ink);
     font-size: clamp(30px, 4vw, 46px);
     line-height: 1.15;
 }
 
-body:not(.home-page) h3 {
+.policy-page h3 {
     margin-top: 30px;
     color: var(--ink);
 }
 
-body:not(.home-page) p,
-body:not(.home-page) li {
+.policy-page p,
+.policy-page li {
     color: #2c394d;
 }
 
-body:not(.home-page) .muted {
+.policy-page .muted {
     color: var(--muted);
 }
 
-body:not(.home-page) a {
+.policy-page a {
     color: var(--green-dark);
     font-weight: 800;
 }
@@ -962,7 +962,7 @@ body:not(.home-page) a {
     scroll-margin-top: 92px;
 }
 
-body:not(.home-page) footer {
+.policy-page footer {
     text-align: center;
 }
 
@@ -1062,12 +1062,12 @@ section.lang.tr {
 }
 
 @media (max-width: 980px) {
-    body:not(.home-page) header {
+    .policy-page header {
         align-items: flex-start;
         flex-wrap: wrap;
     }
 
-    body:not(.home-page) nav {
+    .policy-page nav {
         order: 3;
         width: 100%;
         justify-content: flex-start;
@@ -1177,12 +1177,12 @@ section.lang.tr {
         border-radius: 24px;
     }
 
-    body:not(.home-page) main {
+    .policy-page main {
         margin-top: 22px;
         padding: 0 16px;
     }
 
-    body:not(.home-page) section {
+    .policy-page section {
         padding: 24px 18px;
     }
 

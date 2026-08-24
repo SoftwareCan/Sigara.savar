@@ -3,6 +3,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/11.10.0/fireba
 import { getAuth } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
 import { getFirestore } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js";
 import {
+  getToken,
   initializeAppCheck,
   ReCaptchaV3Provider,
 } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-app-check.js";
@@ -28,26 +29,31 @@ const app = initializeApp(firebaseConfig);
 //   3. Aşağıdaki sabiti kendi site key'inizle değiştirin
 //   4. Firebase Console → App Check → "Enforce" butonuna tıklayın (zorunlu hale getir)
 //
-// NOT: Site key ayarlanana kadar App Check isteğe bağlı modda çalışır (bloklamaz).
-// GEÇİCİ OLARAK DEVRE DIŞI — reCAPTCHA domain ayarı tamamlandıktan sonra tekrar ekleyin
-// const RECAPTCHA_V3_SITE_KEY = "6LdzYIQtAAAAAOdTScU4YVGIJfdrWwq_pt62RGFz";
-const RECAPTCHA_V3_SITE_KEY = ""; // ← App Check 24h throttle geçtikten sonra üstteki satırı geri açın
+const RECAPTCHA_V3_SITE_KEY = "6LdzYIQtAAAAAOdTScU4YVGIJfdrWwq_pt62RGFz";
+const APP_CHECK_HOSTS = new Set([
+  "sigarasavar.com",
+  "www.sigarasavar.com",
+  "softwarecan.github.io",
+]);
 
-if (RECAPTCHA_V3_SITE_KEY) {
+if (RECAPTCHA_V3_SITE_KEY && APP_CHECK_HOSTS.has(window.location.hostname)) {
   try {
-    initializeAppCheck(app, {
+    const appCheck = initializeAppCheck(app, {
       provider: new ReCaptchaV3Provider(RECAPTCHA_V3_SITE_KEY),
       isTokenAutoRefreshEnabled: true,
     });
+
+    getToken(appCheck)
+      .then(() => console.info("[App Check] reCAPTCHA v3 doğrulaması etkin."))
+      .catch((err) => {
+        console.warn("[App Check] Doğrulama tokenı alınamadı:", err.code || "unknown");
+      });
   } catch (err) {
-    console.warn("[App Check] Başlatılamadı:", err.message);
+    console.warn("[App Check] Başlatılamadı:", err.code || "unknown");
   }
 } else {
-  // Geliştirme ortamında debug token kullanılabilir
-  // self.FIREBASE_APPCHECK_DEBUG_TOKEN = true; // Sadece local dev için
   console.info(
-    "[App Check] RECAPTCHA_V3_SITE_KEY tanımlanmamış. " +
-    "Üretim ortamında App Check etkinleştirilmeli: SECURITY.md dosyasına bakın."
+    "[App Check] Yerel veya tanımsız alan adında reCAPTCHA başlatılmadı."
   );
 }
 

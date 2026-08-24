@@ -53,6 +53,8 @@
   color: rgba(255,255,255,0.35);
   font-size: 14px;
   font-weight: 600;
+  padding: 32px 20px;
+  text-align: center;
 }
 
 .dash-spinner {
@@ -66,6 +68,28 @@
 }
 
 @keyframes spin { to { transform: rotate(360deg); } }
+
+.dash-loading.is-error {
+  color: rgba(255,255,255,0.7);
+}
+
+.dash-retry {
+  min-height: 42px;
+  padding: 0 18px;
+  border: 1px solid rgba(31,168,109,0.35);
+  border-radius: 8px;
+  background: #1fa86d;
+  color: #fff;
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.dash-retry:hover {
+  background: #198d5b;
+  transform: translateY(-1px);
+}
 
 /* ── Wrapper ───────────────────────────────────────────────── */
 .dash-wrapper {

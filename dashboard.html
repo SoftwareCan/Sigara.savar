@@ -46,8 +46,9 @@
 
   <!-- ── Yükleniyor ──────────────────────────────────────────── -->
   <div class="dash-loading" id="dash-loading" role="status" aria-label="Yükleniyor">
-    <div class="dash-spinner"></div>
-    <span>Verileriniz yükleniyor…</span>
+    <div class="dash-spinner" id="dash-spinner"></div>
+    <span id="dash-loading-message">Verileriniz yükleniyor…</span>
+    <button class="dash-retry" id="btn-retry" type="button" hidden>Yeniden Dene</button>
   </div>
 
   <!-- ── Dashboard İçeriği ───────────────────────────────────── -->
