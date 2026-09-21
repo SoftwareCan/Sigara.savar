@@ -1,4 +1,11 @@
 function setLang(lang) {
+    // Some pages (e.g. userDataDeletion.html) only have TR/EN content. If the
+    // stored/requested language has no matching elements on this page, fall
+    // back to English instead of hiding everything.
+    if (document.querySelectorAll('.lang.' + lang).length === 0) {
+        lang = 'en';
+    }
+
     document.documentElement.lang = lang;
     document.querySelectorAll('.lang').forEach(el => el.style.display = 'none');
     document.querySelectorAll('.lang.' + lang).forEach(el => {

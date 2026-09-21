@@ -10,7 +10,7 @@
     <link rel="icon" type="image/png" href="assets/app-icon.png">
     <link rel="apple-touch-icon" href="assets/app-icon.png">
     <link rel="stylesheet" href="style.css">
-    <script src="lang.js?v=20260818" defer></script>
+    <script src="lang.js?v=20260921" defer></script>
 </head>
 
 <body class="policy-page">
@@ -20,20 +20,22 @@
             <img src="assets/app-icon.png" class="logo" alt="Sigara Savar Logo">
             <div>
                 <h1>Sigara Savar</h1>
-                <p><span class="lang tr">Gizlilik Politikası</span><span class="lang en">Privacy Policy</span></p>
+                <p><span class="lang tr">Gizlilik Politikası</span><span class="lang en">Privacy Policy</span><span class="lang es">Política de Privacidad</span><span class="lang de">Datenschutzerklärung</span></p>
             </div>
         </div>
 
         <nav aria-label="Site navigation">
-            <a href="index.html"><span class="lang tr">Ana Sayfa</span><span class="lang en">Home</span></a>
+            <a href="index.html"><span class="lang tr">Ana Sayfa</span><span class="lang en">Home</span><span class="lang es">Inicio</span><span class="lang de">Startseite</span></a>
             <a href="userDataDeletion.html"><span class="lang tr">Veri Silme</span><span class="lang en">Data
-                    Deletion</span></a>
-            <a href="terms.html"><span class="lang tr">Hizmet Şartları</span><span class="lang en">Terms</span></a>
+                    Deletion</span><span class="lang es">Eliminar datos</span><span class="lang de">Datenlöschung</span></a>
+            <a href="terms.html"><span class="lang tr">Hizmet Şartları</span><span class="lang en">Terms</span><span class="lang es">Términos</span><span class="lang de">AGB</span></a>
         </nav>
 
         <div class="lang-switch" role="tablist">
             <button data-lang="tr" class="active" onclick="setLang('tr')">TR</button>
             <button data-lang="en" onclick="setLang('en')">EN</button>
+            <button data-lang="es" onclick="setLang('es')">ES</button>
+            <button data-lang="de" onclick="setLang('de')">DE</button>
         </div>
     </header>
 
@@ -41,10 +43,11 @@
         <section>
             <div class="lang tr policy-content">
                 <h2>Gizlilik Politikası</h2>
-                <p class="muted">Son Güncelleme: 18 Ağustos 2026</p>
+                <p class="muted">Son Güncelleme: 21 Eylül 2026</p>
 
                 <p>Bu Gizlilik Politikası, Sigara Savar mobil uygulamasının, web sayfalarının, topluluk özelliklerinin,
-                    nefes egzersizi ve nefes testi araçlarının, etkinlik duyurularının ve destek kanallarının kullanıcı
+                    nefes egzersizi ve nefes testi araçlarının, Premium üyelik ve uygulama içi satın alma sistemlerinin,
+                    reklam gösterimlerinin, etkinlik duyurularının ve destek kanallarının kullanıcı
                     verilerini nasıl topladığını, kullandığını, paylaştığını, sakladığını ve koruduğunu açıklar.</p>
 
                 <nav class="policy-toc" aria-label="Gizlilik Politikası içindekiler">
@@ -53,10 +56,13 @@
                         <li><a href="#tr-veri-sorumlusu">Veri Sorumlusu ve İletişim</a></li>
                         <li><a href="#tr-toplanan-bilgiler">Toplanabilecek Bilgiler</a></li>
                         <li><a href="#tr-kullanim-amaclari">Bilgilerin Kullanım Amaçları</a></li>
-                        <li><a href="#tr-firebase-performance">Firebase Performance Monitoring ve Performans/Tanılama
-                                Verileri</a></li>
+                        <li><a href="#tr-premium">Premium Üyelik ve Abonelikler</a></li>
+                        <li><a href="#tr-tuketilebilir">Uygulama İçi Satın Almalar (Tüketilebilir Ürünler)</a></li>
+                        <li><a href="#tr-satinalma-dogrulama">Satın Alma ve Abonelik Doğrulaması</a></li>
+                        <li><a href="#tr-reklamlar">Reklamlar ve Reklam Teknolojileri</a></li>
+                        <li><a href="#tr-analytics-performans">Analytics, Performans ve Hata Raporlama (Firebase)</a></li>
                         <li><a href="#tr-topluluk-gorunurlugu">Topluluk Alanlarında Görünürlük</a></li>
-                        <li><a href="#tr-bilgi-paylasimi">Bilgilerin Paylaşılması</a></li>
+                        <li><a href="#tr-bilgi-paylasimi">Bilgilerin Paylaşılması ve Üçüncü Taraf Hizmet Sağlayıcılar</a></li>
                         <li><a href="#tr-saglik-verileri">Sağlık ve İyi Oluş Verileri</a></li>
                         <li><a href="#tr-saklama-silme">Veri Saklama ve Silme</a></li>
                         <li><a href="#tr-guvenlik">Güvenlik</a></li>
@@ -77,9 +83,10 @@
                 <h3 id="tr-toplanan-bilgiler">2. Toplanabilecek Bilgiler</h3>
                 <p>Kullandığınız özelliklere göre aşağıdaki bilgiler toplanabilir veya işlenebilir:</p>
                 <ul>
-                    <li><strong>Hesap ve kimlik doğrulama bilgileri:</strong> Google ile giriş yaptığınızda ad soyad,
-                        e-posta adresi, profil fotoğrafı, Google hesap tanımlayıcısı ve benzeri kimlik doğrulama
-                        bilgileri.</li>
+                    <li><strong>Hesap ve kimlik doğrulama bilgileri:</strong> Google veya Apple ile giriş yaptığınızda
+                        ad soyad, e-posta adresi, profil fotoğrafı, ilgili hesap tanımlayıcısı; e-posta/parola ile
+                        kayıt olduğunuzda ise e-posta adresiniz ve şifrelenmiş kimlik bilgileriniz gibi kimlik
+                        doğrulama bilgileri.</li>
                     <li><strong>Profil ve tercih bilgileri:</strong> kullanıcı adı, profil görseli, dil seçimi,
                         bildirim tercihleri ve uygulama ayarları.</li>
                     <li><strong>Sigara azaltma/bırakma süreci bilgileri:</strong> hedefler, takip kayıtları, ilerleme
@@ -89,6 +96,16 @@
                         oluşturduğunuz bilgiler.</li>
                     <li><strong>Topluluk ve sohbet bilgileri:</strong> ortak sohbet mesajları, yorumlar, tepkiler,
                         profil adı, kullanıcı raporları, engelleme/sessize alma bilgileri ve moderasyon kayıtları.</li>
+                    <li><strong>Satın alma ve abonelik bilgileri:</strong> Premium abonelik veya uygulama içi satın alma
+                        (örneğin Bilgi Yarışması joker paketleri) gerçekleştirdiğinizde; ürün kimliği, işlem (transaction)
+                        kimliği, satın alma jetonu (purchase token), abonelik/satın alma durumu, satın alma ve yenilenme
+                        tarihleri, kullanılan platform (Apple App Store / Google Play) ve mağaza doğrulama sonucu gibi
+                        bilgiler işlenir. Kart veya banka bilgileriniz Sigara Savar tarafından alınmaz veya saklanmaz;
+                        ödemeler doğrudan Apple App Store veya Google Play tarafından işlenir.</li>
+                    <li><strong>Reklamla ilgili teknik bilgiler:</strong> uygulamada reklam gösterildiğinde, reklam
+                        teknolojisi sağlayıcımız (Google AdMob) tarafından cihaz bilgileri, reklam tanımlayıcısı, IP
+                        adresi/yaklaşık konum ve reklam görüntüleme/etkileşim verileri gibi teknik bilgiler, aşağıdaki
+                        "Reklamlar ve Reklam Teknolojileri" bölümünde açıklanan kapsamda işlenebilir.</li>
                     <li><strong>Etkinlik ve destek bilgileri:</strong> etkinlik katılım tercihi, kayıt/iletişim
                         bilgileri, destek talepleri, e-posta yazışmaları ve güvenlik/olay incelemesi için gerekli
                         kayıtlar.</li>
@@ -106,18 +123,104 @@
                         özelliklerini sunma;</li>
                     <li>topluluk sohbeti, kullanıcı raporlama, engelleme, moderasyon ve güvenlik özelliklerini
                         çalıştırma;</li>
+                    <li>Premium üyeliği ve abonelik erişimini yönetme, satın almaları doğrulama ve tüketilebilir
+                        ürünleri (joker paketleri gibi) hesabınıza tanımlama;</li>
+                    <li>abonelik durumunu kontrol etme, yenileme durumunu izleme ve sahte veya usulsüz satın almaları
+                        tespit etme/önleme;</li>
+                    <li>ücretsiz kullanıcılara reklam sunma ve reklam performansını ölçme (yalnızca ilgili rıza ve
+                        yürürlükteki kurallara uygun olarak);</li>
                     <li>etkinlik duyuruları, katılım yönetimi, destek talepleri ve kullanıcı iletişimini yürütme;</li>
                     <li>uygulama performansını, hataları, kötüye kullanımı ve güvenlik risklerini analiz etme;</li>
                     <li>yasal yükümlülükleri yerine getirme, haklarımızı koruma ve uyuşmazlıkları yönetme.</li>
                 </ul>
 
-                <h3 id="tr-firebase-performance">4. Firebase Performance Monitoring ve Performans/Tanılama Verileri
-                </h3>
-                <p>Uygulamanın teknik performansını ölçmek ve sorunları tespit etmek için Google LLC tarafından sunulan
-                    <strong>Firebase Performance Monitoring</strong> hizmetini kullanırız. Google/Firebase bu kapsamda
-                    teknik hizmet sağlayıcı ve veri işleyen olarak kullanılır.</p>
+                <h3 id="tr-premium">4. Premium Üyelik ve Abonelikler</h3>
+                <p>Sigara Savar, isteğe bağlı bir Premium üyelik sistemi sunar. Premium üyelik aylık veya yıllık
+                    abonelik seçenekleriyle satın alınabilir; uygun kullanıcılara 7 günlük ücretsiz deneme süresi
+                    sunulabilir. Deneme süresinin uygunluğu ve süresi Apple/Google tarafından yönetilir ve
+                    kullanıcının önceki abonelik geçmişine göre değişebilir.</p>
+                <p>Premium üyelik; reklamsız kullanım deneyimi, Bilgi Yarışması özelliğinde genişletilmiş/sınırsız
+                    kullanım, topluluk sohbetinde tüm mesaj geçmişine erişim ve gelişmiş istatistikler gibi ek
+                    özellikler sunabilir. Sunulan özellikler uygulamanın gelişimine bağlı olarak zaman içinde
+                    değişebilir. Premium erişim durumunuzu yönetmek için hesabınızla ilişkili abonelik/satın alma
+                    bilgileri işlenir; bkz. aşağıdaki "Satın Alma ve Abonelik Doğrulaması" bölümü.</p>
 
-                <h4>İşlenebilecek teknik veri kategorileri</h4>
+                <h3 id="tr-tuketilebilir">5. Uygulama İçi Satın Almalar (Tüketilebilir Ürünler)</h3>
+                <p>Sigara Savar, Bilgi Yarışması özelliğinde kullanılmak üzere tüketilebilir joker paketleri sunar. Bu
+                    paketler 50:50, İkinci Şans ve Soruyu Değiştir joker türlerinden oluşur ve Başlangıç, Avantaj ve
+                    Mega paket seçenekleriyle satın alınabilir. Satın alınan jokerler hesabınıza tanımlanır ve
+                    kullanıldıkça tüketilir; bu ürünlerin nakit karşılığı yoktur ve mümkün olduğu ölçüde başka bir
+                    kullanıcıya devredilemez.</p>
+                <p>Bu satın almalara ilişkin ürün kimliği, işlem kimliği ve satın alma durumu bilgileri, satın almanın
+                    doğrulanması ve joker bakiyenizin hesabınıza doğru şekilde tanımlanması amacıyla işlenir.</p>
+
+                <h3 id="tr-satinalma-dogrulama">6. Satın Alma ve Abonelik Doğrulaması</h3>
+                <p>Premium abonelikler ve uygulama içi satın almalar, Apple App Store veya Google Play üzerinden
+                    gerçekleştirilir. Satın alma tamamlandığında, satın almanın gerçekliğini doğrulamak ve size doğru
+                    hak ve içerikleri tanımlamak amacıyla sunucularımız Apple App Store Server API'si veya Google Play
+                    Developer API'si üzerinden ilgili mağaza ile doğrulama yapar.</p>
+                <p>Bu doğrulama sürecinde; ürün kimliği, işlem/transaction kimliği, satın alma jetonu (Android),
+                    abonelik durumu, satın alma durumu, satın alma ve yenilenme tarihleri, otomatik yenileme durumu,
+                    kullanılan platform (iOS/Android), ortam bilgisi (üretim/test) ve mağazadan dönen doğrulama
+                    sonucu gibi veriler işlenir ve hesabınızla ilişkilendirilmiş güvenli bir tanımlayıcı üzerinden
+                    saklanır. Hesabınızla eşleştirme için ham kullanıcı kimliğiniz yerine tek yönlü olarak türetilmiş
+                    (hash'lenmiş) bir tanımlayıcı kullanılır.</p>
+                <p><strong>Kart veya banka bilgileriniz (kart numarası, son kullanma tarihi, güvenlik kodu vb.)
+                    Sigara Savar tarafından hiçbir şekilde alınmaz, görülmez veya saklanmaz.</strong> Ödeme işlemleri
+                    tamamen Apple App Store veya Google Play tarafından, kendi gizlilik ve güvenlik politikaları
+                    kapsamında yürütülür.</p>
+                <p>Apple veya Google, abonelik durumundaki değişiklikleri (yenileme, iptal, iade gibi) sunucularımıza
+                    bildirim yoluyla iletebilir; bu bildirimler Premium erişiminizin güncel tutulması amacıyla
+                    işlenir.</p>
+
+                <h3 id="tr-reklamlar">7. Reklamlar ve Reklam Teknolojileri</h3>
+                <p>Sigara Savar'ın ücretsiz sürümünde, reklam teknolojisi sağlayıcısı olarak <strong>Google
+                    AdMob</strong> kullanılır. Ödüllü reklamlar (örneğin oyun içi enerji yenileme karşılığında,
+                    yalnızca kullanıcının kendi tercihiyle izlediği reklamlar) ve geçiş (interstitial) reklamları
+                    gösterilebilir. Premium üyelik, uygulamanın reklamsız kullanılmasını sağlar; Premium üyelere
+                    geçiş reklamı gösterilmez.</p>
+                <p>AdMob'un reklam sunumu kapsamında, kullanılan reklam türüne ve onay/izin tercihlerinize bağlı
+                    olarak aşağıdaki veri kategorileri işlenebilir: cihaz bilgileri (model, işletim sistemi), reklam
+                    tanımlayıcısı, IP adresi ve IP adresinden türetilen yaklaşık konum, reklam görüntüleme ve
+                    etkileşim verileri (gösterim, tıklama gibi) ve benzeri teknik tanımlayıcılar.</p>
+                <p>Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre'deki kullanıcılar için, Google'ın <strong>User
+                    Messaging Platform (UMP)</strong> rıza aracı uygulama açılışında devreye girer ve reklam
+                    rızanızı yönetmenize imkân tanır; kullanıcının hangi bölgede olduğu tamamen Google'ın kendi
+                    coğrafi tespiti tarafından belirlenir, kodumuzda ayrı bir bölge/ülke mantığı bulunmaz. iOS
+                    cihazlarda, AdMob gibi reklam tanımlayıcısı kullanabilecek SDK'lar ilk reklam isteğinden önce
+                    Apple'ın <strong>App Tracking Transparency (ATT)</strong> izin istemini tetikler; bu izni
+                    vermemeniz halinde uygulamalar arası reklam takibi yapılmaz ve reklamlar kişiselleştirilmemiş
+                    şekilde sunulmaya devam edebilir. Rıza formunun yüklenememesi gibi durumlarda, Google'ın kendi
+                    varsayılan davranışı gereği o oturumda kişiselleştirilmemiş reklamlara geçilir.</p>
+                <p>Aşağıdaki "Analytics, Performans ve Hata Raporlama" bölümünde yer alan Firebase Performance
+                    Monitoring'in "reklam amacıyla kullanılmama" açıklaması yalnızca o servise özgüdür ve bu bölümde
+                    açıklanan AdMob reklam faaliyetini kapsamaz.</p>
+
+                <h3 id="tr-analytics-performans">8. Analytics, Performans ve Hata Raporlama (Firebase)</h3>
+                <p>Uygulamanın kullanımını anlamak, teknik performansını ölçmek ve hataları tespit etmek için Google
+                    LLC tarafından sunulan <strong>Firebase Analytics</strong>, <strong>Firebase Crashlytics</strong>
+                    ve <strong>Firebase Performance Monitoring</strong> hizmetlerini kullanırız. Google/Firebase bu
+                    kapsamda teknik hizmet sağlayıcı ve veri işleyen olarak kullanılır. Bu üç hizmetin veri toplaması,
+                    uygulama içinde Hizmet Şartları ve Gizlilik Politikasını kabul etmeniz sonrasında etkinleştirilir;
+                    kabul etmeden önce bu servisler veri toplamaz.</p>
+
+                <h4>Firebase Analytics</h4>
+                <p>Uygulama içi kullanım eğilimlerini (örneğin hangi özelliklerin ne sıklıkla kullanıldığını)
+                    anlamak için kullanılır. Bu kapsamda uygulama olayları, ekran görüntüleme bilgileri, cihaz ve
+                    uygulama sürümü bilgileri ile Firebase tarafından oluşturulan cihaz/örnek tanımlayıcıları
+                    işlenebilir. Bu veriler reklam kişiselleştirmesi için kullanılmaz; uygulama, reklamla ilgili rıza
+                    sinyallerini Google'a her zaman reddedilmiş olarak iletir.</p>
+
+                <h4>Firebase Crashlytics</h4>
+                <p>Uygulama çökmelerini ve hatalarını tespit etmek için kullanılır. Bu kapsamda hata/çökme günlükleri,
+                    hatayla ilgili yığın izleri (stack trace), cihaz modeli, işletim sistemi sürümü ve uygulama
+                    sürümü gibi teknik bilgiler işlenebilir. Bu veriler yalnızca teknik kararlılığı artırmak amacıyla
+                    kullanılır.</p>
+
+                <h4>Firebase Performance Monitoring</h4>
+                <p>Uygulamanın teknik performansını ölçmek ve sorunları tespit etmek için kullanılır.</p>
+
+                <h5>İşlenebilecek teknik veri kategorileri</h5>
                 <ul>
                     <li>Firebase kurulum kimliği (Firebase Installation ID/FID) ve olayları bir oturumla ilişkilendirmek
                         için rastgele oluşturulan Firebase oturum kimliği;</li>
@@ -133,7 +236,7 @@
                     <li>URL query parametreleri ile request/response içeriği çıkarılmış ağ endpoint desenleri.</li>
                 </ul>
 
-                <h4>İşleme amaçları</h4>
+                <h5>İşleme amaçları</h5>
                 <ul>
                     <li>uygulama açılış ve yükleme sürelerini ölçmek;</li>
                     <li>yavaş ekranları, ağ isteklerini ve iş akışlarını tespit etmek;</li>
@@ -143,7 +246,7 @@
                     <li>teknik sorunlara ilişkin toplu istatistikler ve uyarılar oluşturmak.</li>
                 </ul>
 
-                <h4>Veri minimizasyonu ve reklam takibi yapılmaması</h4>
+                <h5>Veri minimizasyonu ve reklam takibi yapılmaması</h5>
                 <p>Firebase Performance için oluşturduğumuz özel trace ve attribute alanlarına kullanıcı adı, e-posta
                     adresi, kullanıcı UID'si, sohbet mesajı, günlük veya not içeriği, sağlık bilgisi, sigara
                     azaltma/bırakma bilgisi, erişim tokenı ya da başka bir hassas içerik göndermeyiz. Firebase Performance
@@ -152,9 +255,10 @@
                     reklam profili oluşturmak, veri brokerlığı yapmak ya da kullanıcının başka uygulama ve web
                     sitelerindeki hareketleriyle eşleştirmek için kullanmayız. Bu teknik performans faaliyeti, Apple'ın
                     App Tracking Transparency (ATT) çerçevesinde uygulamalar arası reklam takibi amacı taşımaz. Bu
-                    açıklama yalnızca Firebase Performance Monitoring faaliyeti içindir.</p>
+                    açıklama yalnızca Firebase Performance Monitoring faaliyeti içindir; uygulamada gösterilen AdMob
+                    reklamları bu kapsamda değildir, bkz. yukarıdaki "Reklamlar ve Reklam Teknolojileri" bölümü.</p>
 
-                <h4>Bilgilendirme, kullanıcı hakları ve resmi kaynaklar</h4>
+                <h5>Bilgilendirme, kullanıcı hakları ve resmi kaynaklar</h5>
                 <p>Bu aydınlatma metninin sunulması, Gizlilik Politikasının veya Kullanım Koşullarının okunması ya da
                     zorunlu bir kutunun işaretlenmesi tek başına Firebase Performance Monitoring için açık rıza verildiği
                     anlamına gelmez. KVKK kapsamındaki taleplerinizi aşağıdaki <a href="#tr-kullanici-haklari">Kullanıcı
@@ -168,18 +272,24 @@
                             rel="noopener noreferrer">Firebase Veri İşleme ve Güvenlik Şartları</a></li>
                 </ul>
 
-                <h3 id="tr-topluluk-gorunurlugu">5. Topluluk Alanlarında Görünürlük</h3>
+                <h3 id="tr-topluluk-gorunurlugu">9. Topluluk Alanlarında Görünürlük</h3>
                 <p>Ortak sohbet, yorum, profil veya etkinlik alanlarında paylaştığınız bilgiler diğer kullanıcılara
                     görünebilir. Bu alanlarda özel nitelikli kişisel veri, sağlık bilgisi, kimlik/finans bilgisi,
                     adres, telefon, konum veya gizli bilgi paylaşmamanızı öneririz. Şikayet edilen içerikler ve
                     kullanıcı raporları güvenlik ve moderasyon amacıyla incelenebilir.</p>
 
-                <h3 id="tr-bilgi-paylasimi">6. Bilgilerin Paylaşılması</h3>
+                <h3 id="tr-bilgi-paylasimi">10. Bilgilerin Paylaşılması ve Üçüncü Taraf Hizmet Sağlayıcılar</h3>
                 <p>Kişisel verileri satmayız veya kiralamayız. Bilgiler yalnızca aşağıdaki durumlarda sınırlı olarak
                     paylaşılabilir:</p>
                 <ul>
-                    <li>Google kimlik doğrulama, barındırma, veri tabanı, analiz, hata raporlama, e-posta, uygulama
-                        mağazası, güvenlik ve benzeri hizmet sağlayıcılarla;</li>
+                    <li>Google kimlik doğrulama, barındırma, veri tabanı (Firebase/Firestore), analiz (Firebase
+                        Analytics), hata raporlama (Firebase Crashlytics), performans izleme (Firebase Performance),
+                        e-posta, güvenlik ve benzeri hizmet sağlayıcılarla;</li>
+                    <li>reklam teknolojisi sağlayıcısı Google AdMob ile, yalnızca reklam sunumu ve ölçümlemesi
+                        amacıyla;</li>
+                    <li>Apple App Store ve Google Play ile, Premium abonelik ve uygulama içi satın almaların işlenmesi
+                        ve doğrulanması amacıyla (ödeme bilgileriniz bu mağazalar tarafından işlenir, bizim tarafımızdan
+                        görülmez);</li>
                     <li>topluluk özelliklerinde sizin görünür hale getirdiğiniz içerikler bakımından diğer
                         kullanıcılarla;</li>
                     <li>etkinlik yönetimi, güvenlik veya iletişim için gerekli olduğu ölçüde etkinlik görevlileri veya
@@ -189,19 +299,24 @@
                     <li>açık rızanız veya talimatınız olduğunda.</li>
                 </ul>
 
-                <h3 id="tr-saglik-verileri">7. Sağlık ve İyi Oluş Verileri</h3>
+                <h3 id="tr-saglik-verileri">11. Sağlık ve İyi Oluş Verileri</h3>
                 <p>Sigara Savar tıbbi cihaz değildir ve tıbbi teşhis, tedavi veya klinik ölçüm sunmaz. Nefes
                     egzersizi, nefes testi ve sigara bırakma süreciyle ilgili bilgiler yalnızca uygulama özelliklerini
                     sunmak, kullanıcı deneyimini kişiselleştirmek, güvenliği sağlamak ve destek taleplerini yanıtlamak
                     için işlenir. Bu veriler reklam amacıyla satılmaz.</p>
 
-                <h3 id="tr-saklama-silme">8. Veri Saklama ve Silme</h3>
+                <h3 id="tr-saklama-silme">12. Veri Saklama ve Silme</h3>
                 <p>Veriler, hizmetleri sunmak, güvenliği sağlamak, yasal yükümlülükleri yerine getirmek, uyuşmazlıkları
                     yönetmek veya meşru iş amaçları için gerekli olduğu sürece saklanır. Hesap silme veya veri silme
                     talebinizi <a href="userDataDeletion.html">Veri Silme Talimatları</a> sayfasındaki yöntemlerle
                     iletebilirsiniz. Silme sonrasında bazı kayıtlar sınırlı süreyle yedeklerde, hukuki yükümlülükler,
                     güvenlik, kötüye kullanımın önlenmesi, moderasyon veya uyuşmazlık yönetimi için gerekli olduğu
                     ölçüde saklanabilir.</p>
+                <p>Premium abonelik ve uygulama içi satın almalara ilişkin işlem kayıtları; muhasebe, vergi,
+                    dolandırıcılık önleme ve yasal yükümlülükler nedeniyle hesap silindikten sonra da sınırlı bir süre
+                    saklanabilir. Apple App Store veya Google Play üzerinden gerçekleştirdiğiniz satın almalara
+                    ilişkin kayıtlar ayrıca ilgili mağazanın kendi sistemlerinde de tutulur; bu kayıtlar Sigara
+                    Savar'ın kontrolünde değildir ve ilgili mağazanın kendi gizlilik politikasına tabidir.</p>
                 <p>Google/Firebase'in güncel hizmet açıklamasına göre Firebase Performance Monitoring, IP adresiyle
                     ilişkili performans olaylarını yaklaşık 30 gün; Firebase kurulum kimliğiyle ilişkili ve
                     kimliksizleştirilmiş performans verilerini yaklaşık 60 gün saklar. Bu sürelerin sonunda veriler canlı
@@ -209,45 +324,50 @@
                     süreleri değil, Google/Firebase tarafından açıklanan hizmet süreleridir. Hesap silme işlemi bu
                     süreler içindeki performans verilerinin anında ve kullanıcı bazında silineceği anlamına gelmez.</p>
 
-                <h3 id="tr-guvenlik">9. Güvenlik</h3>
-                <p>Kişisel verileri korumak için makul teknik ve idari güvenlik önlemleri kullanırız. Buna rağmen
-                    hiçbir internet, mobil uygulama, bulut veya iletişim sistemi yüzde yüz güvenli değildir; yetkisiz
-                    erişim veya veri kaybı riskini tamamen ortadan kaldıramayız.</p>
+                <h3 id="tr-guvenlik">13. Güvenlik</h3>
+                <p>Kişisel verileri korumak için makul teknik ve idari güvenlik önlemleri kullanırız. Örneğin,
+                    uygulama içinde tuttuğunuz günlük (journal) kayıtlarınız, sunucularımıza iletilmeden önce
+                    cihazınızda kullanıcıya özel bir anahtarla AES-256 algoritması kullanılarak şifrelenir. Buna
+                    rağmen hiçbir internet, mobil uygulama, bulut veya iletişim sistemi yüzde yüz güvenli değildir;
+                    yetkisiz erişim veya veri kaybı riskini tamamen ortadan kaldıramayız.</p>
 
-                <h3 id="tr-uluslararasi-aktarim">10. Uluslararası Aktarım</h3>
+                <h3 id="tr-uluslararasi-aktarim">14. Uluslararası Aktarım</h3>
                 <p>Kullandığımız hizmet sağlayıcıların sunucuları Türkiye dışında bulunabilir. Firebase Performance
                     Monitoring'in Google'ın global altyapısında çalışması nedeniyle yukarıda açıklanan teknik veriler,
                     hizmetin sunulması amacıyla Google LLC ve Firebase alt hizmet sağlayıcıları tarafından Türkiye
-                    dışında işlenebilir.</p>
+                    dışında işlenebilir. Reklam teknolojisi sağlayıcımız (Google AdMob) ile Apple App Store ve Google
+                    Play de kendi küresel altyapılarında faaliyet gösterir; bu nedenle satın alma doğrulama ve reklam
+                    sunumuyla ilgili veriler de benzer şekilde Türkiye dışında işlenebilir.</p>
 
-                <h3 id="tr-kullanici-haklari">11. Kullanıcı Hakları</h3>
+                <h3 id="tr-kullanici-haklari">15. Kullanıcı Hakları</h3>
                 <p>Yürürlükteki mevzuat kapsamında kişisel verilerinize erişme, düzeltme, silme, işleme amaçlarını
                     öğrenme, aktarıldığı taraflar hakkında bilgi alma, işlenmesine itiraz etme, rızayı geri çekme ve
                     ilgili diğer hakları kullanma hakkına sahip olabilirsiniz. Bu hakları kullanmak için bizimle
                     <a href="mailto:sigarasavardestek@gmail.com">sigarasavardestek@gmail.com</a> adresinden iletişime
                     geçebilirsiniz.</p>
 
-                <h3 id="tr-cocuklar">12. Çocuklar ve Genç Kullanıcılar</h3>
+                <h3 id="tr-cocuklar">16. Çocuklar ve Genç Kullanıcılar</h3>
                 <p>Sigara Savar çocuklara yönelik değildir. 18 yaşından küçük kullanıcıların uygulamayı, topluluk
                     özelliklerini veya etkinlikleri ebeveyn/yasal temsilci bilgisi ve gerekli izinler olmadan
                     kullanmaması gerekir.</p>
 
-                <h3 id="tr-politika-degisiklikleri">13. Politika Değişiklikleri</h3>
+                <h3 id="tr-politika-degisiklikleri">17. Politika Değişiklikleri</h3>
                 <p>Bu Gizlilik Politikasını uygulamanın gelişimine, yasal gerekliliklere veya hizmet değişikliklerine
                     bağlı olarak güncelleyebiliriz. Güncel sürüm bu sayfada yayınlandığında yürürlüğe girer.</p>
 
-                <h3 id="tr-iletisim">14. İletişim</h3>
+                <h3 id="tr-iletisim">18. İletişim</h3>
                 <p>Herhangi bir soru, talep veya veri silme isteği için bizimle iletişime geçebilirsiniz: <a
                         href="mailto:sigarasavardestek@gmail.com">sigarasavardestek@gmail.com</a></p>
             </div>
 
             <div class="lang en policy-content">
                 <h2>Privacy Policy</h2>
-                <p class="muted">Last Updated: August 18, 2026</p>
+                <p class="muted">Last Updated: September 21, 2026</p>
 
                 <p>This Privacy Policy explains how the Sigara Savar mobile application, web pages, community features,
-                    breathing exercise and breath test tools, event notices, and support channels collect, use, share,
-                    retain, and protect user data.</p>
+                    breathing exercise and breath test tools, Premium membership and in-app purchase systems,
+                    advertising, event notices, and support channels collect, use, share, retain, and protect user
+                    data.</p>
 
                 <nav class="policy-toc" aria-label="Privacy Policy table of contents">
                     <strong>Table of Contents</strong>
@@ -255,10 +375,13 @@
                         <li><a href="#en-data-controller">Data Controller and Contact</a></li>
                         <li><a href="#en-information-collected">Information We May Collect</a></li>
                         <li><a href="#en-use-of-information">How We Use Information</a></li>
-                        <li><a href="#en-firebase-performance">Firebase Performance Monitoring and Performance/Diagnostic
-                                Data</a></li>
+                        <li><a href="#en-premium">Premium Membership and Subscriptions</a></li>
+                        <li><a href="#en-consumable-iap">In-App Purchases (Consumable Products)</a></li>
+                        <li><a href="#en-purchase-verification">Purchase and Subscription Verification</a></li>
+                        <li><a href="#en-advertising">Advertising and Advertising Technology</a></li>
+                        <li><a href="#en-analytics-performance">Analytics, Performance, and Crash Reporting (Firebase)</a></li>
                         <li><a href="#en-community-visibility">Visibility in Community Areas</a></li>
-                        <li><a href="#en-information-sharing">Sharing of Information</a></li>
+                        <li><a href="#en-information-sharing">Sharing of Information and Third-Party Service Providers</a></li>
                         <li><a href="#en-health-data">Health and Wellness Data</a></li>
                         <li><a href="#en-retention-deletion">Data Retention and Deletion</a></li>
                         <li><a href="#en-security">Security</a></li>
@@ -278,9 +401,9 @@
                 <h3 id="en-information-collected">2. Information We May Collect</h3>
                 <p>Depending on the features you use, the following information may be collected or processed:</p>
                 <ul>
-                    <li><strong>Account and authentication information:</strong> when you sign in with Google, full
-                        name, email address, profile picture, Google account identifier, and similar authentication
-                        information.</li>
+                    <li><strong>Account and authentication information:</strong> when you sign in with Google or
+                        Apple, full name, email address, profile picture, and the related account identifier; if you
+                        register with email/password, your email address and encrypted credential information.</li>
                     <li><strong>Profile and preference information:</strong> username, profile image, language choice,
                         notification preferences, and app settings.</li>
                     <li><strong>Smoking reduction/quitting progress information:</strong> goals, tracking records,
@@ -290,6 +413,17 @@
                         these features.</li>
                     <li><strong>Community and chat information:</strong> shared chat messages, comments, reactions,
                         profile name, user reports, block/mute information, and moderation records.</li>
+                    <li><strong>Purchase and subscription information:</strong> when you make a Premium subscription or
+                        an in-app purchase (for example, Quiz joker packs), we process information such as the product
+                        identifier, transaction identifier, purchase token, subscription/purchase status, purchase and
+                        renewal dates, the platform used (Apple App Store / Google Play), and the store's verification
+                        result. Your card or bank details are not collected or stored by Sigara Savar; payments are
+                        processed directly by the Apple App Store or Google Play.</li>
+                    <li><strong>Advertising-related technical information:</strong> when an ad is shown in the app,
+                        our advertising technology provider (Google AdMob) may process technical information such as
+                        device information, the advertising identifier, IP address/approximate location, and ad
+                        impression/interaction data, as described in the "Advertising and Advertising Technology"
+                        section below.</li>
                     <li><strong>Event and support information:</strong> event participation preferences,
                         registration/contact information, support requests, email correspondence, and records needed for
                         safety or incident review.</li>
@@ -306,18 +440,101 @@
                     <li>to provide smoking reduction/quitting tracking, breathing exercise, breath test, reminder, and
                         motivational features;</li>
                     <li>to operate community chat, user reporting, blocking, moderation, and safety features;</li>
+                    <li>to manage Premium membership and subscription access, verify purchases, and credit consumable
+                        products (such as joker packs) to your account;</li>
+                    <li>to check subscription status, monitor renewal status, and detect/prevent fraudulent or
+                        unauthorized purchases;</li>
+                    <li>to serve ads to free users and measure ad performance (only in accordance with applicable
+                        consent and rules);</li>
                     <li>to manage event notices, participation, support requests, and user communications;</li>
                     <li>to analyze app performance, errors, misuse, and security risks;</li>
                     <li>to comply with legal obligations, protect our rights, and manage disputes.</li>
                 </ul>
 
-                <h3 id="en-firebase-performance">4. Firebase Performance Monitoring and Performance/Diagnostic Data
-                </h3>
-                <p>We use <strong>Firebase Performance Monitoring</strong>, provided by Google LLC, to measure the
-                    app's technical performance and identify problems. Google/Firebase is used in this context as a
-                    technical service provider and data processor.</p>
+                <h3 id="en-premium">4. Premium Membership and Subscriptions</h3>
+                <p>Sigara Savar offers an optional Premium membership. Premium membership can be purchased as a
+                    monthly or yearly subscription, and eligible users may be offered a 7-day free trial. Trial
+                    eligibility and duration are managed by Apple/Google and may vary based on your prior subscription
+                    history.</p>
+                <p>Premium membership may include additional features such as an ad-free experience, expanded/unlimited
+                    use of the Quiz feature, access to the full community chat history, and advanced statistics. The
+                    features offered may change over time as the app evolves. To manage your Premium access, we
+                    process subscription/purchase information linked to your account; see "Purchase and Subscription
+                    Verification" below.</p>
 
-                <h4>Categories of technical data that may be processed</h4>
+                <h3 id="en-consumable-iap">5. In-App Purchases (Consumable Products)</h3>
+                <p>Sigara Savar offers consumable joker packs for use in the Quiz feature. These packs consist of the
+                    50:50, Second Chance, and Change Question joker types, and can be purchased as Starter, Advantage,
+                    or Mega packs. Purchased jokers are credited to your account and consumed as they are used; these
+                    products have no cash value and, to the extent applicable, cannot be transferred to another user.</p>
+                <p>We process the product identifier, transaction identifier, and purchase status information related
+                    to these purchases to verify the purchase and correctly credit your joker balance to your
+                    account.</p>
+
+                <h3 id="en-purchase-verification">6. Purchase and Subscription Verification</h3>
+                <p>Premium subscriptions and in-app purchases are made through the Apple App Store or Google Play.
+                    When a purchase is completed, our servers verify it with the relevant store using the Apple App
+                    Store Server API or the Google Play Developer API, in order to confirm the purchase is genuine and
+                    grant you the correct entitlements and content.</p>
+                <p>During this verification, we process data such as the product identifier, transaction identifier,
+                    purchase token (Android), subscription status, purchase status, purchase and renewal dates,
+                    auto-renewal status, the platform used (iOS/Android), the environment (production/sandbox), and the
+                    verification result returned by the store; this data is stored linked to a secure identifier
+                    associated with your account. To match a purchase to your account, we use a one-way derived
+                    (hashed) identifier rather than your raw user ID.</p>
+                <p><strong>Your card or bank details (card number, expiration date, security code, etc.) are never
+                    collected, seen, or stored by Sigara Savar.</strong> Payment processing is handled entirely by the
+                    Apple App Store or Google Play under their own privacy and security policies.</p>
+                <p>Apple or Google may notify our servers of changes to your subscription status (such as renewal,
+                    cancellation, or refund); these notifications are processed to keep your Premium access up to
+                    date.</p>
+
+                <h3 id="en-advertising">7. Advertising and Advertising Technology</h3>
+                <p>In the free version of Sigara Savar, we use <strong>Google AdMob</strong> as our advertising
+                    technology provider. Rewarded ads (for example, ads you choose to watch in exchange for in-game
+                    energy) and interstitial ads may be shown. Premium membership provides an ad-free experience;
+                    interstitial ads are not shown to Premium members.</p>
+                <p>Depending on the ad type shown and your consent choices, AdMob's ad delivery may process the
+                    following categories of data: device information (model, operating system), the advertising
+                    identifier, IP address and the approximate location derived from it, ad impression and interaction
+                    data (such as views and clicks), and similar technical identifiers.</p>
+                <p>For users in the European Economic Area, the United Kingdom, and Switzerland, Google's <strong>User
+                    Messaging Platform (UMP)</strong> consent tool runs at app launch and lets you manage your
+                    advertising consent; which region a user is in is determined entirely by Google's own geographic
+                    detection, with no separate region/country logic in our code. On iOS, SDKs that may use an
+                    advertising identifier, such as AdMob, trigger Apple's <strong>App Tracking Transparency
+                    (ATT)</strong> permission prompt before the first ad request; if you do not grant this permission,
+                    no cross-app ad tracking occurs and ads may continue to be shown on a non-personalized basis. If the
+                    consent form fails to load, the session falls back to non-personalized ads, consistent with
+                    Google's own default SDK behavior.</p>
+                <p>The "not used for advertising purposes" statement about Firebase Performance Monitoring in the
+                    "Analytics, Performance, and Crash Reporting" section below applies only to that service and does
+                    not cover the AdMob advertising activity described in this section.</p>
+
+                <h3 id="en-analytics-performance">8. Analytics, Performance, and Crash Reporting (Firebase)</h3>
+                <p>We use <strong>Firebase Analytics</strong>, <strong>Firebase Crashlytics</strong>, and
+                    <strong>Firebase Performance Monitoring</strong>, provided by Google LLC, to understand app usage,
+                    measure the app's technical performance, and identify errors. Google/Firebase is used in this
+                    context as a technical service provider and data processor. Data collection for these three
+                    services is enabled only after you accept the Terms of Service and Privacy Policy within the app;
+                    these services do not collect data before that acceptance.</p>
+
+                <h4>Firebase Analytics</h4>
+                <p>Used to understand in-app usage trends, such as which features are used and how often. This may
+                    involve processing app events, screen view information, device and app version information, and
+                    device/instance identifiers generated by Firebase. This data is not used for advertising
+                    personalization; the app always reports advertising-related consent signals to Google as
+                    denied.</p>
+
+                <h4>Firebase Crashlytics</h4>
+                <p>Used to detect app crashes and errors. This may involve processing crash/error logs, related stack
+                    traces, device model, operating system version, and app version. This data is used solely to
+                    improve technical stability.</p>
+
+                <h4>Firebase Performance Monitoring</h4>
+                <p>Used to measure the app's technical performance and identify problems.</p>
+
+                <h5>Categories of technical data that may be processed</h5>
                 <ul>
                     <li>the Firebase installation ID (FID) and a randomly generated Firebase session ID used to associate
                         events with a session;</li>
@@ -333,7 +550,7 @@
                     <li>network endpoint patterns with URL query parameters and request/response content removed.</li>
                 </ul>
 
-                <h4>Purposes of processing</h4>
+                <h5>Purposes of processing</h5>
                 <ul>
                     <li>to measure app startup and loading times;</li>
                     <li>to identify slow screens, network requests, and workflows;</li>
@@ -343,7 +560,7 @@
                     <li>to create aggregated statistics and alerts concerning technical problems.</li>
                 </ul>
 
-                <h4>Data minimization and no advertising tracking</h4>
+                <h5>Data minimization and no advertising tracking</h5>
                 <p>We do not send a username, email address, user UID, chat message, journal or note content, health
                     information, smoking reduction/quitting information, access token, or other sensitive content in
                     custom trace and attribute fields that we create for Firebase Performance. URL query parameters and
@@ -352,9 +569,10 @@
                     advertising or advertising profiles, broker data, or match users with their activity across other
                     apps and websites. This technical performance activity is not intended for cross-app advertising
                     tracking under Apple's App Tracking Transparency (ATT) framework. This explanation applies only to
-                    the Firebase Performance Monitoring activity.</p>
+                    the Firebase Performance Monitoring activity; it does not cover the AdMob ads shown in the app —
+                    see "Advertising and Advertising Technology" above.</p>
 
-                <h4>Notice, user rights, and official resources</h4>
+                <h5>Notice, user rights, and official resources</h5>
                 <p>Presenting this notice, reading the Privacy Policy or Terms of Service, or selecting a mandatory
                     checkbox does not by itself constitute explicit consent to Firebase Performance Monitoring. You may
                     submit requests under the KVKK using the method described in the <a href="#en-user-rights">User
@@ -368,18 +586,24 @@
                             rel="noopener noreferrer">Firebase Data Processing and Security Terms</a></li>
                 </ul>
 
-                <h3 id="en-community-visibility">5. Visibility in Community Areas</h3>
+                <h3 id="en-community-visibility">9. Visibility in Community Areas</h3>
                 <p>Information you share in shared chat, comments, profile, or event areas may be visible to other
                     users. We recommend that you do not share sensitive personal data, health information,
                     identity/financial information, address, phone number, location, or confidential information in
                     these areas. Reported content and user reports may be reviewed for safety and moderation purposes.
                 </p>
 
-                <h3 id="en-information-sharing">6. Sharing of Information</h3>
+                <h3 id="en-information-sharing">10. Sharing of Information and Third-Party Service Providers</h3>
                 <p>We do not sell or rent personal data. Information may be shared only in limited cases:</p>
                 <ul>
-                    <li>with service providers for Google authentication, hosting, databases, analytics, crash
-                        reporting, email, app stores, security, and similar services;</li>
+                    <li>with service providers for Google authentication, hosting, databases (Firebase/Firestore),
+                        analytics (Firebase Analytics), crash reporting (Firebase Crashlytics), performance monitoring
+                        (Firebase Performance), email, security, and similar services;</li>
+                    <li>with our advertising technology provider, Google AdMob, solely for ad delivery and
+                        measurement;</li>
+                    <li>with the Apple App Store and Google Play, for processing and verifying Premium subscriptions
+                        and in-app purchases (your payment information is processed by these stores and is not seen by
+                        us);</li>
                     <li>with other users for content you make visible through community features;</li>
                     <li>with event staff or relevant service providers where necessary for event management, safety, or
                         communication;</li>
@@ -388,19 +612,24 @@
                     <li>when you provide explicit consent or instructions.</li>
                 </ul>
 
-                <h3 id="en-health-data">7. Health and Wellness Data</h3>
+                <h3 id="en-health-data">11. Health and Wellness Data</h3>
                 <p>Sigara Savar is not a medical device and does not provide medical diagnosis, treatment, or clinical
                     measurement. Information related to breathing exercises, breath tests, and quitting progress is used
                     only to provide app features, personalize the user experience, maintain safety, and respond to
                     support requests. This data is not sold for advertising purposes.</p>
 
-                <h3 id="en-retention-deletion">8. Data Retention and Deletion</h3>
+                <h3 id="en-retention-deletion">12. Data Retention and Deletion</h3>
                 <p>Data is retained as long as necessary to provide the services, maintain security, comply with legal
                     obligations, manage disputes, or support legitimate business purposes. You may submit account or
                     data deletion requests using the methods on our <a href="userDataDeletion.html">Data Deletion
                     Instructions</a> page. After deletion, some records may remain for a limited time in backups or may
                     be retained where necessary for legal obligations, security, abuse prevention, moderation, or dispute
                     management.</p>
+                <p>Transaction records for Premium subscriptions and in-app purchases may be retained for a limited
+                    period even after account deletion, for accounting, tax, fraud prevention, and legal reasons.
+                    Records of purchases you make through the Apple App Store or Google Play are also kept within
+                    those stores' own systems; those records are not under our control and are subject to the
+                    respective store's own privacy policy.</p>
                 <p>According to Google/Firebase's current service information, Firebase Performance Monitoring retains
                     performance events associated with an IP address for approximately 30 days and retains performance
                     data associated with a Firebase installation ID and de-identified performance data for approximately
@@ -409,33 +638,730 @@
                     own database. Account deletion does not mean that performance data within these periods will be
                     deleted immediately on an individual-user basis.</p>
 
-                <h3 id="en-security">9. Security</h3>
-                <p>We use reasonable technical and administrative safeguards to protect personal data. However, no
-                    internet, mobile app, cloud, or communication system is completely secure; we cannot eliminate all
-                    risk of unauthorized access or data loss.</p>
+                <h3 id="en-security">13. Security</h3>
+                <p>We use reasonable technical and administrative safeguards to protect personal data. For example,
+                    journal entries you keep in the app are encrypted on your device using AES-256 with a per-user key
+                    before being sent to our servers. However, no internet, mobile app, cloud, or communication system
+                    is completely secure; we cannot eliminate all risk of unauthorized access or data loss.</p>
 
-                <h3 id="en-international-transfers">10. International Data Transfers</h3>
+                <h3 id="en-international-transfers">14. International Data Transfers</h3>
                 <p>The servers of the service providers we use may be located outside Türkiye. Because Firebase
                     Performance Monitoring operates on Google's global infrastructure, the technical data described
                     above may be processed outside Türkiye by Google LLC and Firebase subprocessors for the purpose of
-                    providing the service.</p>
+                    providing the service. Our advertising technology provider (Google AdMob) as well as the Apple App
+                    Store and Google Play also operate on their own global infrastructure, so data related to purchase
+                    verification and ad delivery may similarly be processed outside Türkiye.</p>
 
-                <h3 id="en-user-rights">11. User Rights</h3>
+                <h3 id="en-user-rights">15. User Rights</h3>
                 <p>Under applicable law, you may have the right to access, correct, delete, learn the purposes of
                     processing, obtain information about transferred parties, object to processing, withdraw consent, and
                     exercise other related rights. To exercise these rights, you may contact us at <a
                         href="mailto:sigarasavardestek@gmail.com">sigarasavardestek@gmail.com</a>.</p>
 
-                <h3 id="en-children">12. Children and Younger Users</h3>
+                <h3 id="en-children">16. Children and Younger Users</h3>
                 <p>Sigara Savar is not directed to children. Users under 18 should not use the app, community features,
                     or events without the knowledge of a parent/legal guardian and any required permissions.</p>
 
-                <h3 id="en-policy-changes">13. Changes to This Policy</h3>
+                <h3 id="en-policy-changes">17. Changes to This Policy</h3>
                 <p>We may update this Privacy Policy as the app evolves, legal requirements change, or services are
                     modified. The updated version becomes effective when published on this page.</p>
 
-                <h3 id="en-contact">14. Contact</h3>
+                <h3 id="en-contact">18. Contact</h3>
                 <p>For any questions, requests, or data deletion inquiries, please contact us at: <a
+                        href="mailto:sigarasavardestek@gmail.com">sigarasavardestek@gmail.com</a></p>
+            </div>
+
+            <div class="lang es policy-content">
+                <h2>Política de Privacidad</h2>
+                <p class="muted">Última actualización: 21 de septiembre de 2026</p>
+
+                <p>Esta Política de Privacidad explica cómo la aplicación móvil Sigara Savar, sus páginas web, las
+                    funciones de comunidad, las herramientas de ejercicios de respiración y test de respiración, los
+                    sistemas de membresía Premium y de compras dentro de la aplicación, la publicidad, los avisos de
+                    eventos y los canales de soporte recopilan, usan, comparten, conservan y protegen los datos de los
+                    usuarios.</p>
+
+                <nav class="policy-toc" aria-label="Índice de la Política de Privacidad">
+                    <strong>Índice</strong>
+                    <ol>
+                        <li><a href="#es-responsable">Responsable del Tratamiento y Contacto</a></li>
+                        <li><a href="#es-informacion-recopilada">Información que Podemos Recopilar</a></li>
+                        <li><a href="#es-uso-informacion">Cómo Usamos la Información</a></li>
+                        <li><a href="#es-premium">Membresía Premium y Suscripciones</a></li>
+                        <li><a href="#es-compras-consumibles">Compras Dentro de la App (Productos Consumibles)</a></li>
+                        <li><a href="#es-verificacion-compras">Verificación de Compras y Suscripciones</a></li>
+                        <li><a href="#es-publicidad">Publicidad y Tecnologías Publicitarias</a></li>
+                        <li><a href="#es-analitica-rendimiento">Analítica, Rendimiento e Informes de Errores (Firebase)</a></li>
+                        <li><a href="#es-visibilidad-comunidad">Visibilidad en Áreas de Comunidad</a></li>
+                        <li><a href="#es-compartir-informacion">Compartición de Información y Proveedores de Terceros</a></li>
+                        <li><a href="#es-datos-salud">Datos de Salud y Bienestar</a></li>
+                        <li><a href="#es-retencion-eliminacion">Conservación y Eliminación de Datos</a></li>
+                        <li><a href="#es-seguridad">Seguridad</a></li>
+                        <li><a href="#es-transferencias-internacionales">Transferencias Internacionales de Datos</a></li>
+                        <li><a href="#es-derechos-usuario">Derechos del Usuario</a></li>
+                        <li><a href="#es-menores">Menores y Usuarios Jóvenes</a></li>
+                        <li><a href="#es-cambios-politica">Cambios en esta Política</a></li>
+                        <li><a href="#es-contacto">Contacto</a></li>
+                    </ol>
+                </nav>
+
+                <h3 id="es-responsable">1. Responsable del Tratamiento y Contacto</h3>
+                <p>El desarrollador/operador de Sigara Savar es el punto de contacto para las actividades de
+                    tratamiento de datos descritas en esta política. Para solicitudes relacionadas con privacidad,
+                    acceso a datos o eliminación de datos, puede contactarnos en
+                    <a href="mailto:sigarasavardestek@gmail.com">sigarasavardestek@gmail.com</a>.</p>
+
+                <h3 id="es-informacion-recopilada">2. Información que Podemos Recopilar</h3>
+                <p>Según las funciones que utilice, podemos recopilar o tratar la siguiente información:</p>
+                <ul>
+                    <li><strong>Información de cuenta y autenticación:</strong> al iniciar sesión con Google o Apple,
+                        nombre completo, dirección de correo electrónico, foto de perfil y el identificador de cuenta
+                        correspondiente; si se registra con correo electrónico/contraseña, su dirección de correo y
+                        credenciales cifradas.</li>
+                    <li><strong>Información de perfil y preferencias:</strong> nombre de usuario, imagen de perfil,
+                        idioma elegido, preferencias de notificación y ajustes de la aplicación.</li>
+                    <li><strong>Información del proceso de reducción/abandono del tabaco:</strong> objetivos, registros
+                        de seguimiento, datos de progreso, estadísticas, recordatorios y notas relacionadas que usted
+                        introduce en la app.</li>
+                    <li><strong>Información de ejercicios de respiración y bienestar:</strong> uso de ejercicios de
+                        respiración, temporizadores, resultados del test de fuerza respiratoria, puntuaciones, marcas
+                        de tiempo e información que usted introduce o genera con estas funciones.</li>
+                    <li><strong>Información de comunidad y chat:</strong> mensajes de chat compartidos, comentarios,
+                        reacciones, nombre de perfil, reportes de usuarios, información de bloqueo/silenciado y
+                        registros de moderación.</li>
+                    <li><strong>Información de compras y suscripciones:</strong> cuando realiza una suscripción Premium
+                        o una compra dentro de la app (por ejemplo, paquetes de comodines del Quiz), procesamos
+                        información como el identificador del producto, el identificador de la transacción, el token
+                        de compra, el estado de la suscripción/compra, las fechas de compra y renovación, la plataforma
+                        utilizada (Apple App Store / Google Play) y el resultado de la verificación de la tienda. Sus
+                        datos de tarjeta o banco no son recopilados ni almacenados por Sigara Savar; los pagos son
+                        procesados directamente por Apple App Store o Google Play.</li>
+                    <li><strong>Información técnica relacionada con publicidad:</strong> cuando se muestra un anuncio
+                        en la app, nuestro proveedor de tecnología publicitaria (Google AdMob) puede procesar
+                        información técnica como datos del dispositivo, el identificador publicitario, la dirección IP
+                        y la ubicación aproximada, y datos de visualización/interacción con anuncios, según se describe
+                        en la sección "Publicidad y Tecnologías Publicitarias" más abajo.</li>
+                    <li><strong>Información de eventos y soporte:</strong> preferencias de participación en eventos,
+                        información de registro/contacto, solicitudes de soporte, correspondencia por correo electrónico
+                        y registros necesarios para la seguridad o la revisión de incidentes.</li>
+                    <li><strong>Información técnica y de uso:</strong> modelo de dispositivo, sistema operativo,
+                        versión de la app, idioma, registros de errores/fallos, dirección IP, ubicación aproximada,
+                        analítica de uso, registros de seguridad e identificadores similares.</li>
+                    <li><strong>Información del sitio web:</strong> nuestras páginas web pueden usar cookies o
+                        tecnologías similares con fines de rendimiento, seguridad y analítica.</li>
+                </ul>
+
+                <h3 id="es-uso-informacion">3. Cómo Usamos la Información</h3>
+                <ul>
+                    <li>para crear cuentas, autenticar usuarios y mantener la seguridad de la cuenta;</li>
+                    <li>para ofrecer el seguimiento de reducción/abandono del tabaco, ejercicios de respiración, test
+                        de respiración, recordatorios y funciones motivacionales;</li>
+                    <li>para operar el chat de comunidad, los reportes de usuarios, el bloqueo, la moderación y las
+                        funciones de seguridad;</li>
+                    <li>para gestionar la membresía Premium y el acceso por suscripción, verificar compras y acreditar
+                        productos consumibles (como los paquetes de comodines) en su cuenta;</li>
+                    <li>para comprobar el estado de la suscripción, supervisar el estado de renovación y detectar/
+                        prevenir compras fraudulentas o no autorizadas;</li>
+                    <li>para mostrar anuncios a los usuarios de la versión gratuita y medir su rendimiento (solo de
+                        acuerdo con el consentimiento aplicable y la normativa vigente);</li>
+                    <li>para gestionar avisos de eventos, la participación, las solicitudes de soporte y las
+                        comunicaciones con los usuarios;</li>
+                    <li>para analizar el rendimiento de la app, errores, usos indebidos y riesgos de seguridad;</li>
+                    <li>para cumplir con obligaciones legales, proteger nuestros derechos y gestionar disputas.</li>
+                </ul>
+
+                <h3 id="es-premium">4. Membresía Premium y Suscripciones</h3>
+                <p>Sigara Savar ofrece una membresía Premium opcional. La membresía Premium puede adquirirse mediante
+                    suscripción mensual o anual, y a los usuarios elegibles se les puede ofrecer una prueba gratuita
+                    de 7 días. La elegibilidad y la duración de la prueba son gestionadas por Apple/Google y pueden
+                    variar según su historial de suscripciones anterior.</p>
+                <p>La membresía Premium puede incluir funciones adicionales como una experiencia sin publicidad, uso
+                    ampliado/ilimitado de la función Quiz, acceso a todo el historial del chat de comunidad y
+                    estadísticas avanzadas. Las funciones ofrecidas pueden cambiar con el tiempo a medida que la app
+                    evoluciona. Para gestionar su acceso Premium, procesamos información de suscripción/compra
+                    vinculada a su cuenta; véase "Verificación de Compras y Suscripciones" más abajo.</p>
+
+                <h3 id="es-compras-consumibles">5. Compras Dentro de la App (Productos Consumibles)</h3>
+                <p>Sigara Savar ofrece paquetes de comodines consumibles para usar en la función Quiz. Estos paquetes
+                    incluyen los comodines 50:50, Segunda Oportunidad y Cambiar Pregunta, y pueden adquirirse como
+                    paquete Inicial, Ventaja o Mega. Los comodines comprados se acreditan en su cuenta y se consumen a
+                    medida que se usan; estos productos no tienen valor en efectivo y, en la medida aplicable, no
+                    pueden transferirse a otro usuario.</p>
+                <p>Procesamos el identificador del producto, el identificador de la transacción y el estado de la
+                    compra relacionados con estas compras para verificar la compra y acreditar correctamente su saldo
+                    de comodines en su cuenta.</p>
+
+                <h3 id="es-verificacion-compras">6. Verificación de Compras y Suscripciones</h3>
+                <p>Las suscripciones Premium y las compras dentro de la app se realizan a través de Apple App Store o
+                    Google Play. Al completarse una compra, nuestros servidores la verifican con la tienda
+                    correspondiente mediante la API de Apple App Store Server o la API de Google Play Developer, con
+                    el fin de confirmar que la compra es auténtica y otorgarle los derechos y contenidos correctos.</p>
+                <p>Durante esta verificación procesamos datos como el identificador del producto, el identificador de
+                    la transacción, el token de compra (Android), el estado de la suscripción, el estado de la compra,
+                    las fechas de compra y renovación, el estado de renovación automática, la plataforma utilizada
+                    (iOS/Android), el entorno (producción/pruebas) y el resultado de verificación devuelto por la
+                    tienda; estos datos se almacenan vinculados a un identificador seguro asociado a su cuenta. Para
+                    vincular una compra con su cuenta utilizamos un identificador derivado de forma unidireccional
+                    (con función hash) en lugar de su identificador de usuario original.</p>
+                <p><strong>Sus datos de tarjeta o banco (número de tarjeta, fecha de caducidad, código de seguridad,
+                    etc.) nunca son recopilados, vistos ni almacenados por Sigara Savar.</strong> El procesamiento de
+                    pagos lo realiza íntegramente Apple App Store o Google Play conforme a sus propias políticas de
+                    privacidad y seguridad.</p>
+                <p>Apple o Google pueden notificar a nuestros servidores cambios en el estado de su suscripción (como
+                    renovación, cancelación o reembolso); estas notificaciones se procesan para mantener actualizado
+                    su acceso Premium.</p>
+
+                <h3 id="es-publicidad">7. Publicidad y Tecnologías Publicitarias</h3>
+                <p>En la versión gratuita de Sigara Savar utilizamos <strong>Google AdMob</strong> como proveedor de
+                    tecnología publicitaria. Pueden mostrarse anuncios recompensados (por ejemplo, anuncios que usted
+                    elige ver a cambio de energía dentro del juego) y anuncios intersticiales. La membresía Premium
+                    ofrece una experiencia sin publicidad; a los miembros Premium no se les muestran anuncios
+                    intersticiales.</p>
+                <p>Según el tipo de anuncio mostrado y sus opciones de consentimiento, la entrega de anuncios de AdMob
+                    puede procesar las siguientes categorías de datos: información del dispositivo (modelo, sistema
+                    operativo), el identificador publicitario, la dirección IP y la ubicación aproximada derivada de
+                    ella, datos de visualización e interacción con anuncios (como impresiones y clics) e
+                    identificadores técnicos similares.</p>
+                <p>Para los usuarios del Espacio Económico Europeo, el Reino Unido y Suiza, la herramienta de
+                    consentimiento <strong>User Messaging Platform (UMP)</strong> de Google se activa al iniciar la
+                    app y le permite gestionar su consentimiento publicitario; la región del usuario la determina
+                    exclusivamente la detección geográfica propia de Google, sin lógica adicional de región/país en
+                    nuestro código. En iOS, los SDK que puedan usar un identificador publicitario, como AdMob,
+                    activan el aviso de permiso de <strong>App Tracking Transparency (ATT)</strong> de Apple antes de
+                    la primera solicitud de anuncio; si no concede este permiso, no se realiza seguimiento publicitario
+                    entre apps y los anuncios pueden seguir mostrándose de forma no personalizada. Si el formulario de
+                    consentimiento no puede cargarse, la sesión pasa a anuncios no personalizados, conforme al
+                    comportamiento predeterminado del propio SDK de Google.</p>
+                <p>La afirmación de que Firebase Performance Monitoring "no se usa con fines publicitarios", incluida
+                    en la sección "Analítica, Rendimiento e Informes de Errores" más abajo, se aplica únicamente a ese
+                    servicio y no cubre la actividad publicitaria de AdMob descrita en esta sección.</p>
+
+                <h3 id="es-analitica-rendimiento">8. Analítica, Rendimiento e Informes de Errores (Firebase)</h3>
+                <p>Utilizamos <strong>Firebase Analytics</strong>, <strong>Firebase Crashlytics</strong> y
+                    <strong>Firebase Performance Monitoring</strong>, proporcionados por Google LLC, para comprender
+                    el uso de la app, medir su rendimiento técnico e identificar errores. Google/Firebase actúa en
+                    este contexto como proveedor de servicios técnicos y encargado del tratamiento. La recopilación de
+                    datos de estos tres servicios se activa únicamente después de que usted acepte los Términos de
+                    Servicio y la Política de Privacidad dentro de la app; antes de esa aceptación, estos servicios no
+                    recopilan datos.</p>
+
+                <h4>Firebase Analytics</h4>
+                <p>Se utiliza para comprender las tendencias de uso dentro de la app (por ejemplo, qué funciones se
+                    usan y con qué frecuencia). Esto puede implicar el procesamiento de eventos de la app, información
+                    de visualización de pantallas, información del dispositivo y de la versión de la app, e
+                    identificadores de dispositivo/instancia generados por Firebase. Estos datos no se usan para
+                    personalización publicitaria; la app siempre notifica a Google que las señales de consentimiento
+                    relacionadas con publicidad están denegadas.</p>
+
+                <h4>Firebase Crashlytics</h4>
+                <p>Se utiliza para detectar fallos y errores de la app. Esto puede implicar el procesamiento de
+                    registros de errores/fallos, las trazas de pila (stack trace) relacionadas, el modelo de
+                    dispositivo, la versión del sistema operativo y la versión de la app. Estos datos se usan
+                    únicamente para mejorar la estabilidad técnica.</p>
+
+                <h4>Firebase Performance Monitoring</h4>
+                <p>Se utiliza para medir el rendimiento técnico de la app e identificar problemas.</p>
+
+                <h5>Categorías de datos técnicos que pueden procesarse</h5>
+                <ul>
+                    <li>el ID de instalación de Firebase (FID) y un ID de sesión de Firebase generado de forma
+                        aleatoria para asociar eventos con una sesión;</li>
+                    <li>la dirección IP y el país determinado de forma aproximada a partir de ella;</li>
+                    <li>modelo del dispositivo, sistema operativo, orientación de la pantalla y versión de la app;</li>
+                    <li>el nombre del paquete o identificador de bundle de la app;</li>
+                    <li>ajustes de idioma y región;</li>
+                    <li>información del operador móvil y del tipo de conexión, como Wi-Fi, LTE o 3G;</li>
+                    <li>si la app está en primer o segundo plano;</li>
+                    <li>indicadores de rendimiento relativos al uso de CPU, RAM y disco;</li>
+                    <li>duraciones del inicio de la app, de la carga de pantallas o datos, y de trazas de código
+                        personalizadas;</li>
+                    <li>tiempo de respuesta, código de respuesta y tamaño de datos transferidos en solicitudes
+                        HTTP/S;</li>
+                    <li>patrones de endpoints de red, sin los parámetros de consulta de la URL ni el contenido de la
+                        solicitud/respuesta.</li>
+                </ul>
+
+                <h5>Finalidades del tratamiento</h5>
+                <ul>
+                    <li>medir los tiempos de inicio y carga de la app;</li>
+                    <li>identificar pantallas, solicitudes de red y flujos de trabajo lentos;</li>
+                    <li>comparar problemas de rendimiento asociados a versiones de la app, dispositivos y sistemas
+                        operativos;</li>
+                    <li>mejorar la estabilidad técnica, la usabilidad y la calidad del servicio;</li>
+                    <li>detectar de forma temprana regresiones de rendimiento e interrupciones del servicio;</li>
+                    <li>generar estadísticas agregadas y alertas relacionadas con problemas técnicos.</li>
+                </ul>
+
+                <h5>Minimización de datos y ausencia de seguimiento publicitario</h5>
+                <p>No enviamos nombre de usuario, dirección de correo electrónico, UID de usuario, mensajes de chat,
+                    contenido de diario o notas, información de salud, información sobre reducción/abandono del
+                    tabaco, tokens de acceso ni otro contenido sensible en los campos de traza y atributos
+                    personalizados que creamos para Firebase Performance. Los parámetros de consulta de la URL y el
+                    contenido de las solicitudes/respuestas HTTP/S no se conservan en los informes de Firebase
+                    Performance.</p>
+                <p>No utilizamos estos datos de rendimiento y diagnóstico para mostrar anuncios a los usuarios, crear
+                    publicidad o perfiles publicitarios personalizados, comerciar con datos, ni para relacionar a los
+                    usuarios con su actividad en otras apps o sitios web. Esta actividad técnica de rendimiento no
+                    tiene fines de seguimiento publicitario entre apps conforme al marco App Tracking Transparency
+                    (ATT) de Apple. Esta explicación se aplica únicamente a la actividad de Firebase Performance
+                    Monitoring; no cubre los anuncios de AdMob mostrados en la app — véase "Publicidad y Tecnologías
+                    Publicitarias" más arriba.</p>
+
+                <h5>Información, derechos del usuario y fuentes oficiales</h5>
+                <p>La presentación de este aviso, la lectura de la Política de Privacidad o los Términos de Servicio,
+                    o la marcación de una casilla obligatoria, no constituyen por sí solas un consentimiento explícito
+                    para Firebase Performance Monitoring. Puede enviar sus solicitudes conforme a la normativa
+                    aplicable utilizando el método descrito en la sección <a href="#es-derechos-usuario">Derechos del
+                        Usuario</a> más abajo.</p>
+                <ul>
+                    <li><a href="https://firebase.google.com/support/privacy" target="_blank"
+                            rel="noopener noreferrer">Información de privacidad y seguridad de Firebase</a></li>
+                    <li><a href="https://firebase.google.com/docs/perf-mon" target="_blank"
+                            rel="noopener noreferrer">Documentación de Firebase Performance Monitoring</a></li>
+                    <li><a href="https://firebase.google.com/terms/data-processing-terms" target="_blank"
+                            rel="noopener noreferrer">Términos de Procesamiento de Datos y Seguridad de Firebase</a></li>
+                </ul>
+
+                <h3 id="es-visibilidad-comunidad">9. Visibilidad en Áreas de Comunidad</h3>
+                <p>La información que comparta en el chat compartido, comentarios, perfil o áreas de eventos puede ser
+                    visible para otros usuarios. Le recomendamos no compartir datos personales sensibles, información
+                    de salud, información de identidad/financiera, dirección, número de teléfono, ubicación o
+                    información confidencial en estas áreas. El contenido reportado y los reportes de usuarios pueden
+                    revisarse con fines de seguridad y moderación.</p>
+
+                <h3 id="es-compartir-informacion">10. Compartición de Información y Proveedores de Terceros</h3>
+                <p>No vendemos ni alquilamos datos personales. La información solo puede compartirse en los siguientes
+                    casos limitados:</p>
+                <ul>
+                    <li>con proveedores de servicios de autenticación de Google, alojamiento, bases de datos
+                        (Firebase/Firestore), analítica (Firebase Analytics), informes de errores (Firebase
+                        Crashlytics), monitorización de rendimiento (Firebase Performance), correo electrónico,
+                        seguridad y servicios similares;</li>
+                    <li>con nuestro proveedor de tecnología publicitaria, Google AdMob, únicamente para la entrega y
+                        medición de anuncios;</li>
+                    <li>con Apple App Store y Google Play, para procesar y verificar las suscripciones Premium y las
+                        compras dentro de la app (su información de pago es procesada por estas tiendas y no es vista
+                        por nosotros);</li>
+                    <li>con otros usuarios, respecto al contenido que usted hace visible mediante las funciones de
+                        comunidad;</li>
+                    <li>con personal de eventos o proveedores de servicios relevantes cuando sea necesario para la
+                        gestión de eventos, la seguridad o la comunicación;</li>
+                    <li>con personas o instituciones autorizadas cuando sea necesario por obligaciones legales,
+                        solicitudes oficiales, seguridad, prevención del fraude, protección de nuestros derechos o
+                        gestión de disputas;</li>
+                    <li>cuando usted otorgue su consentimiento explícito o instrucciones.</li>
+                </ul>
+
+                <h3 id="es-datos-salud">11. Datos de Salud y Bienestar</h3>
+                <p>Sigara Savar no es un dispositivo médico y no proporciona diagnóstico, tratamiento ni mediciones
+                    clínicas. La información relacionada con ejercicios de respiración, tests de respiración y el
+                    progreso en el abandono del tabaco se usa únicamente para ofrecer las funciones de la app,
+                    personalizar la experiencia del usuario, mantener la seguridad y responder a solicitudes de
+                    soporte. Estos datos no se venden con fines publicitarios.</p>
+
+                <h3 id="es-retencion-eliminacion">12. Conservación y Eliminación de Datos</h3>
+                <p>Los datos se conservan durante el tiempo necesario para prestar los servicios, mantener la
+                    seguridad, cumplir con obligaciones legales, gestionar disputas o respaldar fines comerciales
+                    legítimos. Puede enviar solicitudes de eliminación de cuenta o de datos utilizando los métodos de
+                    nuestra página de <a href="userDataDeletion.html">Instrucciones de Eliminación de Datos</a>. Tras
+                    la eliminación, algunos registros pueden permanecer por un tiempo limitado en copias de seguridad o
+                    conservarse cuando sea necesario por obligaciones legales, seguridad, prevención de abusos,
+                    moderación o gestión de disputas.</p>
+                <p>Los registros de transacciones relativos a suscripciones Premium y compras dentro de la app pueden
+                    conservarse por un periodo limitado incluso después de eliminar la cuenta, por motivos contables,
+                    fiscales, de prevención del fraude y legales. Los registros de las compras realizadas a través de
+                    Apple App Store o Google Play también se conservan en los sistemas propios de dichas tiendas;
+                    estos registros no están bajo nuestro control y se rigen por la política de privacidad propia de
+                    cada tienda.</p>
+                <p>Según la información de servicio actual de Google/Firebase, Firebase Performance Monitoring
+                    conserva los eventos de rendimiento asociados a una dirección IP durante aproximadamente 30 días,
+                    y conserva los datos de rendimiento asociados a un ID de instalación de Firebase, así como datos
+                    de rendimiento anonimizados, durante aproximadamente 60 días. Transcurridos estos periodos, los
+                    datos entran en el proceso de eliminación de los sistemas activos y de copia de seguridad. Estos
+                    son plazos de conservación del servicio descritos por Google/Firebase, no plazos de conservación
+                    de la propia base de datos de Sigara Savar. La eliminación de la cuenta no implica que los datos de
+                    rendimiento dentro de estos plazos se eliminen de forma inmediata a nivel de usuario individual.</p>
+
+                <h3 id="es-seguridad">13. Seguridad</h3>
+                <p>Utilizamos medidas de seguridad técnicas y administrativas razonables para proteger los datos
+                    personales. Por ejemplo, las entradas de diario que usted guarda en la app se cifran en su
+                    dispositivo mediante AES-256 con una clave específica por usuario antes de enviarse a nuestros
+                    servidores. No obstante, ningún sistema de internet, aplicación móvil, nube o comunicación es
+                    completamente seguro; no podemos eliminar por completo el riesgo de acceso no autorizado o pérdida
+                    de datos.</p>
+
+                <h3 id="es-transferencias-internacionales">14. Transferencias Internacionales de Datos</h3>
+                <p>Los servidores de los proveedores de servicios que utilizamos pueden estar ubicados fuera de
+                    Turquía. Dado que Firebase Performance Monitoring funciona sobre la infraestructura global de
+                    Google, los datos técnicos descritos anteriormente pueden ser procesados fuera de Turquía por
+                    Google LLC y sus subencargados de Firebase con el fin de prestar el servicio. Nuestro proveedor de
+                    tecnología publicitaria (Google AdMob), así como Apple App Store y Google Play, también operan
+                    sobre su propia infraestructura global, por lo que los datos relacionados con la verificación de
+                    compras y la entrega de anuncios también pueden procesarse fuera de Turquía.</p>
+
+                <h3 id="es-derechos-usuario">15. Derechos del Usuario</h3>
+                <p>Conforme a la normativa aplicable, puede tener derecho a acceder, rectificar, eliminar, conocer las
+                    finalidades del tratamiento, obtener información sobre las partes a las que se transfieren sus
+                    datos, oponerse al tratamiento, retirar su consentimiento y ejercer otros derechos relacionados.
+                    Para ejercer estos derechos, puede contactarnos en
+                    <a href="mailto:sigarasavardestek@gmail.com">sigarasavardestek@gmail.com</a>.</p>
+
+                <h3 id="es-menores">16. Menores y Usuarios Jóvenes</h3>
+                <p>Sigara Savar no está dirigida a menores. Los usuarios menores de 18 años no deben usar la app, las
+                    funciones de comunidad ni los eventos sin el conocimiento de un padre/madre o tutor legal y los
+                    permisos requeridos.</p>
+
+                <h3 id="es-cambios-politica">17. Cambios en esta Política</h3>
+                <p>Podemos actualizar esta Política de Privacidad conforme evolucione la app, cambien los requisitos
+                    legales o se modifiquen los servicios. La versión actualizada entra en vigor cuando se publica en
+                    esta página.</p>
+
+                <h3 id="es-contacto">18. Contacto</h3>
+                <p>Para cualquier pregunta, solicitud o consulta sobre eliminación de datos, puede contactarnos en: <a
+                        href="mailto:sigarasavardestek@gmail.com">sigarasavardestek@gmail.com</a></p>
+            </div>
+
+            <div class="lang de policy-content">
+                <h2>Datenschutzerklärung</h2>
+                <p class="muted">Zuletzt aktualisiert: 21. September 2026</p>
+
+                <p>Diese Datenschutzerklärung erläutert, wie die mobile App Sigara Savar, ihre Webseiten, die
+                    Community-Funktionen, die Atemübungs- und Atemtest-Tools, das Premium-Mitgliedschafts- und
+                    In-App-Kaufsystem, Werbung, Veranstaltungshinweise und Support-Kanäle Nutzerdaten erheben,
+                    verwenden, weitergeben, speichern und schützen.</p>
+
+                <nav class="policy-toc" aria-label="Inhaltsverzeichnis der Datenschutzerklärung">
+                    <strong>Inhaltsverzeichnis</strong>
+                    <ol>
+                        <li><a href="#de-verantwortlicher">Verantwortlicher und Kontakt</a></li>
+                        <li><a href="#de-erhobene-daten">Informationen, die wir erheben können</a></li>
+                        <li><a href="#de-verwendungszweck">Wie wir Informationen verwenden</a></li>
+                        <li><a href="#de-premium">Premium-Mitgliedschaft und Abonnements</a></li>
+                        <li><a href="#de-verbrauchsprodukte">In-App-Käufe (Verbrauchsprodukte)</a></li>
+                        <li><a href="#de-kaufverifizierung">Kauf- und Abonnementverifizierung</a></li>
+                        <li><a href="#de-werbung">Werbung und Werbetechnologien</a></li>
+                        <li><a href="#de-analyse-leistung">Analyse, Leistung und Absturzberichte (Firebase)</a></li>
+                        <li><a href="#de-community-sichtbarkeit">Sichtbarkeit in Community-Bereichen</a></li>
+                        <li><a href="#de-datenweitergabe">Weitergabe von Informationen und Drittanbieter</a></li>
+                        <li><a href="#de-gesundheitsdaten">Gesundheits- und Wellnessdaten</a></li>
+                        <li><a href="#de-aufbewahrung-loeschung">Datenaufbewahrung und -löschung</a></li>
+                        <li><a href="#de-sicherheit">Sicherheit</a></li>
+                        <li><a href="#de-internationale-uebermittlung">Internationale Datenübermittlung</a></li>
+                        <li><a href="#de-nutzerrechte">Nutzerrechte</a></li>
+                        <li><a href="#de-kinder">Kinder und junge Nutzer</a></li>
+                        <li><a href="#de-aenderungen">Änderungen dieser Richtlinie</a></li>
+                        <li><a href="#de-kontakt">Kontakt</a></li>
+                    </ol>
+                </nav>
+
+                <h3 id="de-verantwortlicher">1. Verantwortlicher und Kontakt</h3>
+                <p>Der Entwickler/Betreiber von Sigara Savar ist die Kontaktstelle für die in dieser Richtlinie
+                    beschriebenen Datenverarbeitungstätigkeiten. Für Anfragen zu Datenschutz, Datenzugriff oder
+                    Datenlöschung können Sie uns unter
+                    <a href="mailto:sigarasavardestek@gmail.com">sigarasavardestek@gmail.com</a> kontaktieren.</p>
+
+                <h3 id="de-erhobene-daten">2. Informationen, die wir erheben können</h3>
+                <p>Je nach den von Ihnen genutzten Funktionen können folgende Informationen erhoben oder verarbeitet
+                    werden:</p>
+                <ul>
+                    <li><strong>Konto- und Authentifizierungsdaten:</strong> bei der Anmeldung mit Google oder Apple
+                        Ihr vollständiger Name, Ihre E-Mail-Adresse, Ihr Profilbild und die zugehörige Konto-ID; bei
+                        der Registrierung mit E-Mail/Passwort Ihre E-Mail-Adresse und verschlüsselte
+                        Anmeldedaten.</li>
+                    <li><strong>Profil- und Präferenzdaten:</strong> Benutzername, Profilbild, Sprachauswahl,
+                        Benachrichtigungseinstellungen und App-Einstellungen.</li>
+                    <li><strong>Daten zum Rauchreduktions-/Rauchstoppprozess:</strong> Ziele, Tracking-Einträge,
+                        Fortschrittsdaten, Statistiken, Erinnerungen und zugehörige Notizen, die Sie in der App
+                        eingeben.</li>
+                    <li><strong>Daten zu Atemübungen und Wellness:</strong> Nutzung von Atemübungen, Timer, Ergebnisse
+                        des Atemstärketests, Punktzahlen, Zeitstempel sowie Informationen, die Sie über diese Funktionen
+                        eingeben oder erzeugen.</li>
+                    <li><strong>Community- und Chatdaten:</strong> gemeinsam genutzte Chat-Nachrichten, Kommentare,
+                        Reaktionen, Profilname, Nutzerberichte, Block-/Stummschaltungsinformationen und
+                        Moderationsprotokolle.</li>
+                    <li><strong>Kauf- und Abonnementdaten:</strong> Wenn Sie ein Premium-Abonnement oder einen
+                        In-App-Kauf tätigen (z. B. Joker-Pakete für das Quiz), verarbeiten wir Angaben wie
+                        Produktkennung, Transaktionskennung, Kauf-Token, Abonnement-/Kaufstatus, Kauf- und
+                        Verlängerungsdatum, die genutzte Plattform (Apple App Store / Google Play) sowie das
+                        Verifizierungsergebnis des jeweiligen Stores. Ihre Karten- oder Bankdaten werden von Sigara
+                        Savar nicht erhoben oder gespeichert; Zahlungen werden direkt von Apple App Store oder Google
+                        Play verarbeitet.</li>
+                    <li><strong>Werbebezogene technische Daten:</strong> Wenn in der App eine Anzeige geschaltet wird,
+                        kann unser Werbetechnologie-Anbieter (Google AdMob) technische Daten wie Geräteinformationen,
+                        die Werbe-ID, die IP-Adresse/den ungefähren Standort sowie Anzeigen- und Interaktionsdaten
+                        verarbeiten, wie im Abschnitt „Werbung und Werbetechnologien" unten beschrieben.</li>
+                    <li><strong>Veranstaltungs- und Supportdaten:</strong> Teilnahmepräferenzen für Veranstaltungen,
+                        Anmelde-/Kontaktdaten, Support-Anfragen, E-Mail-Korrespondenz und Aufzeichnungen, die für
+                        Sicherheits- oder Vorfallprüfungen erforderlich sind.</li>
+                    <li><strong>Technische und Nutzungsdaten:</strong> Gerätemodell, Betriebssystem, App-Version,
+                        Sprache, Absturz-/Fehlerprotokolle, IP-Adresse, ungefährer Standort, Nutzungsanalyse,
+                        Sicherheitsprotokolle und ähnliche Kennungen.</li>
+                    <li><strong>Website-Informationen:</strong> Unsere Webseiten können Cookies oder ähnliche
+                        Technologien zu Leistungs-, Sicherheits- und Analysezwecken verwenden.</li>
+                </ul>
+
+                <h3 id="de-verwendungszweck">3. Wie wir Informationen verwenden</h3>
+                <ul>
+                    <li>um Konten zu erstellen, Nutzer zu authentifizieren und die Kontosicherheit zu gewährleisten;</li>
+                    <li>um Funktionen zur Rauchreduktion/Rauchentwöhnung, Atemübungen, Atemtests, Erinnerungen und
+                        motivierende Inhalte bereitzustellen;</li>
+                    <li>um Community-Chat, Nutzerberichte, Blockierungen, Moderation und Sicherheitsfunktionen zu
+                        betreiben;</li>
+                    <li>um die Premium-Mitgliedschaft und den Abonnementzugang zu verwalten, Käufe zu verifizieren und
+                        Verbrauchsprodukte (wie Joker-Pakete) Ihrem Konto gutzuschreiben;</li>
+                    <li>um den Abonnementstatus zu prüfen, den Verlängerungsstatus zu überwachen und betrügerische
+                        oder unautorisierte Käufe zu erkennen/verhindern;</li>
+                    <li>um kostenlosen Nutzern Werbung anzuzeigen und die Werbeleistung zu messen (nur im Einklang mit
+                        der jeweiligen Einwilligung und den geltenden Regeln);</li>
+                    <li>um Veranstaltungshinweise, Teilnahme, Support-Anfragen und Nutzerkommunikation zu verwalten;</li>
+                    <li>um die App-Leistung, Fehler, Missbrauch und Sicherheitsrisiken zu analysieren;</li>
+                    <li>um rechtlichen Verpflichtungen nachzukommen, unsere Rechte zu schützen und Streitigkeiten zu
+                        verwalten.</li>
+                </ul>
+
+                <h3 id="de-premium">4. Premium-Mitgliedschaft und Abonnements</h3>
+                <p>Sigara Savar bietet eine optionale Premium-Mitgliedschaft an. Die Premium-Mitgliedschaft kann als
+                    monatliches oder jährliches Abonnement erworben werden; berechtigten Nutzern kann eine 7-tägige
+                    kostenlose Testphase angeboten werden. Berechtigung und Dauer der Testphase werden von
+                    Apple/Google verwaltet und können je nach Ihrer bisherigen Abonnementhistorie variieren.</p>
+                <p>Die Premium-Mitgliedschaft kann zusätzliche Funktionen umfassen, wie eine werbefreie Nutzung,
+                    erweiterte/unbegrenzte Nutzung der Quiz-Funktion, Zugriff auf den vollständigen Community-Chat-
+                    Verlauf und erweiterte Statistiken. Die angebotenen Funktionen können sich im Zuge der
+                    Weiterentwicklung der App ändern. Zur Verwaltung Ihres Premium-Zugangs verarbeiten wir mit Ihrem
+                    Konto verknüpfte Abonnement-/Kaufdaten; siehe „Kauf- und Abonnementverifizierung" unten.</p>
+
+                <h3 id="de-verbrauchsprodukte">5. In-App-Käufe (Verbrauchsprodukte)</h3>
+                <p>Sigara Savar bietet verbrauchbare Joker-Pakete zur Nutzung in der Quiz-Funktion an. Diese Pakete
+                    bestehen aus den Joker-Arten 50:50, Zweite Chance und Frage Ändern und können als Starter-,
+                    Vorteils- oder Mega-Paket erworben werden. Gekaufte Joker werden Ihrem Konto gutgeschrieben und
+                    bei Nutzung verbraucht; diese Produkte haben keinen Bargeldwert und können, soweit anwendbar,
+                    nicht auf andere Nutzer übertragen werden.</p>
+                <p>Wir verarbeiten die Produktkennung, die Transaktionskennung und den Kaufstatus im Zusammenhang mit
+                    diesen Käufen, um den Kauf zu verifizieren und Ihr Joker-Guthaben korrekt Ihrem Konto
+                    gutzuschreiben.</p>
+
+                <h3 id="de-kaufverifizierung">6. Kauf- und Abonnementverifizierung</h3>
+                <p>Premium-Abonnements und In-App-Käufe werden über den Apple App Store oder Google Play getätigt.
+                    Nach Abschluss eines Kaufs verifizieren unsere Server diesen über die Apple App Store Server API
+                    oder die Google Play Developer API beim jeweiligen Store, um die Echtheit des Kaufs zu bestätigen
+                    und Ihnen die korrekten Berechtigungen und Inhalte zu gewähren.</p>
+                <p>Bei dieser Verifizierung verarbeiten wir Daten wie Produktkennung, Transaktionskennung, Kauf-Token
+                    (Android), Abonnementstatus, Kaufstatus, Kauf- und Verlängerungsdatum, Status der automatischen
+                    Verlängerung, genutzte Plattform (iOS/Android), Umgebung (Produktion/Sandbox) sowie das vom Store
+                    zurückgegebene Verifizierungsergebnis; diese Daten werden verknüpft mit einer sicheren, Ihrem
+                    Konto zugeordneten Kennung gespeichert. Zur Zuordnung eines Kaufs zu Ihrem Konto verwenden wir
+                    eine einseitig abgeleitete (gehashte) Kennung anstelle Ihrer ursprünglichen Nutzer-ID.</p>
+                <p><strong>Ihre Karten- oder Bankdaten (Kartennummer, Ablaufdatum, Sicherheitscode usw.) werden von
+                    Sigara Savar zu keinem Zeitpunkt erhoben, eingesehen oder gespeichert.</strong> Die
+                    Zahlungsabwicklung erfolgt vollständig durch Apple App Store oder Google Play gemäß deren eigenen
+                    Datenschutz- und Sicherheitsrichtlinien.</p>
+                <p>Apple oder Google können unsere Server über Änderungen Ihres Abonnementstatus (z. B. Verlängerung,
+                    Kündigung oder Erstattung) benachrichtigen; diese Benachrichtigungen werden verarbeitet, um Ihren
+                    Premium-Zugang aktuell zu halten.</p>
+
+                <h3 id="de-werbung">7. Werbung und Werbetechnologien</h3>
+                <p>In der kostenlosen Version von Sigara Savar nutzen wir <strong>Google AdMob</strong> als
+                    Werbetechnologie-Anbieter. Es können belohnte Anzeigen (z. B. Anzeigen, die Sie freiwillig gegen
+                    In-Game-Energie ansehen) sowie Interstitial-Anzeigen gezeigt werden. Die Premium-Mitgliedschaft
+                    bietet eine werbefreie Nutzung; Premium-Mitgliedern werden keine Interstitial-Anzeigen
+                    angezeigt.</p>
+                <p>Je nach angezeigtem Anzeigentyp und Ihren Einwilligungsentscheidungen kann die Anzeigenauslieferung
+                    von AdMob folgende Datenkategorien verarbeiten: Geräteinformationen (Modell, Betriebssystem), die
+                    Werbe-ID, die IP-Adresse und den daraus abgeleiteten ungefähren Standort, Anzeigen- und
+                    Interaktionsdaten (z. B. Impressionen und Klicks) sowie ähnliche technische Kennungen.</p>
+                <p>Für Nutzer im Europäischen Wirtschaftsraum, im Vereinigten Königreich und in der Schweiz wird das
+                    <strong>User Messaging Platform (UMP)</strong>-Einwilligungstool von Google beim App-Start
+                    aktiviert und ermöglicht Ihnen die Verwaltung Ihrer Werbeeinwilligung; die Region des Nutzers wird
+                    ausschließlich durch Googles eigene geografische Erkennung bestimmt, ohne zusätzliche Region-/
+                    Länderlogik in unserem Code. Unter iOS lösen SDKs, die eine Werbekennung verwenden können, wie
+                    AdMob, vor der ersten Anzeigenanfrage die Berechtigungsabfrage von Apples <strong>App Tracking
+                    Transparency (ATT)</strong> aus; wenn Sie diese Berechtigung nicht erteilen, erfolgt kein
+                    app-übergreifendes Werbetracking, und Anzeigen können weiterhin nicht personalisiert angezeigt
+                    werden. Kann das Einwilligungsformular nicht geladen werden, wird in dieser Sitzung gemäß dem
+                    Standardverhalten des Google-SDK auf nicht personalisierte Anzeigen zurückgegriffen.</p>
+                <p>Die Aussage zu Firebase Performance Monitoring, dass dieses „nicht zu Werbezwecken verwendet" wird
+                    (siehe Abschnitt „Analyse, Leistung und Absturzberichte" unten), bezieht sich ausschließlich auf
+                    diesen Dienst und umfasst nicht die in diesem Abschnitt beschriebene AdMob-Werbeaktivität.</p>
+
+                <h3 id="de-analyse-leistung">8. Analyse, Leistung und Absturzberichte (Firebase)</h3>
+                <p>Wir nutzen <strong>Firebase Analytics</strong>, <strong>Firebase Crashlytics</strong> und
+                    <strong>Firebase Performance Monitoring</strong>, bereitgestellt von Google LLC, um die
+                    App-Nutzung zu verstehen, die technische Leistung der App zu messen und Fehler zu erkennen.
+                    Google/Firebase fungiert in diesem Zusammenhang als technischer Dienstleister und
+                    Auftragsverarbeiter. Die Datenerhebung dieser drei Dienste wird erst aktiviert, nachdem Sie die
+                    Nutzungsbedingungen und die Datenschutzerklärung in der App akzeptiert haben; vor dieser
+                    Zustimmung erheben diese Dienste keine Daten.</p>
+
+                <h4>Firebase Analytics</h4>
+                <p>Wird verwendet, um Nutzungstrends innerhalb der App zu verstehen (z. B. welche Funktionen wie
+                    häufig genutzt werden). Dies kann die Verarbeitung von App-Ereignissen, Bildschirmaufruf-
+                    Informationen, Geräte- und App-Versionsdaten sowie von Firebase erzeugten Geräte-/
+                    Instanzkennungen umfassen. Diese Daten werden nicht zur Werbepersonalisierung verwendet; die App
+                    meldet werbebezogene Einwilligungssignale gegenüber Google stets als abgelehnt.</p>
+
+                <h4>Firebase Crashlytics</h4>
+                <p>Wird verwendet, um App-Abstürze und Fehler zu erkennen. Dies kann die Verarbeitung von Absturz-/
+                    Fehlerprotokollen, zugehörigen Stack-Traces, Gerätemodell, Betriebssystemversion und App-Version
+                    umfassen. Diese Daten werden ausschließlich zur Verbesserung der technischen Stabilität
+                    verwendet.</p>
+
+                <h4>Firebase Performance Monitoring</h4>
+                <p>Wird verwendet, um die technische Leistung der App zu messen und Probleme zu erkennen.</p>
+
+                <h5>Kategorien technischer Daten, die verarbeitet werden können</h5>
+                <ul>
+                    <li>die Firebase-Installations-ID (FID) und eine zufällig erzeugte Firebase-Sitzungs-ID zur
+                        Zuordnung von Ereignissen zu einer Sitzung;</li>
+                    <li>die IP-Adresse und das daraus näherungsweise bestimmte Land;</li>
+                    <li>Gerätemodell, Betriebssystem, Bildschirmausrichtung und App-Version;</li>
+                    <li>der Paketname bzw. die Bundle-ID der App;</li>
+                    <li>Sprach- und Regionseinstellungen;</li>
+                    <li>Informationen zu Mobilfunkanbieter und Verbindungstyp wie WLAN, LTE oder 3G;</li>
+                    <li>ob sich die App im Vorder- oder Hintergrund befindet;</li>
+                    <li>Leistungskennzahlen zu CPU-, RAM- und Speichernutzung;</li>
+                    <li>Dauer von App-Start, Bildschirm- oder Datenladevorgängen und benutzerdefinierten
+                        Code-Traces;</li>
+                    <li>Antwortzeit, Antwortcode und übertragene Datenmenge bei HTTP/S-Anfragen;</li>
+                    <li>Netzwerk-Endpunktmuster ohne URL-Abfrageparameter und ohne Inhalt von Anfrage/Antwort.</li>
+                </ul>
+
+                <h5>Verarbeitungszwecke</h5>
+                <ul>
+                    <li>Messung der App-Start- und Ladezeiten;</li>
+                    <li>Erkennung langsamer Bildschirme, Netzwerkanfragen und Arbeitsabläufe;</li>
+                    <li>Vergleich von Leistungsproblemen im Zusammenhang mit App-Versionen, Geräten und
+                        Betriebssystemen;</li>
+                    <li>Verbesserung der technischen Stabilität, Nutzbarkeit und Servicequalität;</li>
+                    <li>frühzeitige Erkennung von Leistungsrückgängen und Dienstunterbrechungen;</li>
+                    <li>Erstellung aggregierter Statistiken und Warnmeldungen zu technischen Problemen.</li>
+                </ul>
+
+                <h5>Datenminimierung und kein Werbetracking</h5>
+                <p>Wir senden keinen Benutzernamen, keine E-Mail-Adresse, keine Nutzer-UID, keine Chat-Nachrichten,
+                    keine Tagebuch- oder Notizinhalte, keine Gesundheitsdaten, keine Informationen zur
+                    Rauchreduktion/-entwöhnung, keine Zugriffstoken und keine anderen sensiblen Inhalte in den
+                    benutzerdefinierten Trace- und Attributfeldern, die wir für Firebase Performance erstellen.
+                    URL-Abfrageparameter sowie der Inhalt von HTTP/S-Anfragen/-Antworten werden in Firebase
+                    Performance-Berichten nicht gespeichert.</p>
+                <p>Wir verwenden diese Leistungs- und Diagnosedaten nicht, um Nutzern Werbung anzuzeigen,
+                    personalisierte Werbung oder Werbeprofile zu erstellen, Daten zu handeln oder Nutzer mit ihrer
+                    Aktivität auf anderen Apps und Websites abzugleichen. Diese technische Leistungsaktivität ist
+                    nicht auf app-übergreifendes Werbetracking im Sinne von Apples App Tracking Transparency (ATT)
+                    ausgerichtet. Diese Erläuterung gilt ausschließlich für Firebase Performance Monitoring; sie
+                    umfasst nicht die in der App angezeigten AdMob-Anzeigen — siehe „Werbung und Werbetechnologien"
+                    oben.</p>
+
+                <h5>Hinweise, Nutzerrechte und offizielle Quellen</h5>
+                <p>Die Bereitstellung dieses Hinweises, das Lesen der Datenschutzerklärung oder der
+                    Nutzungsbedingungen oder das Anklicken eines Pflichtfelds stellt für sich genommen keine
+                    ausdrückliche Einwilligung zu Firebase Performance Monitoring dar. Ihre Anliegen im Rahmen
+                    geltender Datenschutzvorschriften können Sie über die im Abschnitt <a
+                        href="#de-nutzerrechte">Nutzerrechte</a> unten beschriebene Methode geltend machen.</p>
+                <ul>
+                    <li><a href="https://firebase.google.com/support/privacy" target="_blank"
+                            rel="noopener noreferrer">Firebase-Datenschutz- und Sicherheitsinformationen</a></li>
+                    <li><a href="https://firebase.google.com/docs/perf-mon" target="_blank"
+                            rel="noopener noreferrer">Firebase Performance Monitoring-Dokumentation</a></li>
+                    <li><a href="https://firebase.google.com/terms/data-processing-terms" target="_blank"
+                            rel="noopener noreferrer">Firebase-Bedingungen zur Datenverarbeitung und Sicherheit</a></li>
+                </ul>
+
+                <h3 id="de-community-sichtbarkeit">9. Sichtbarkeit in Community-Bereichen</h3>
+                <p>Informationen, die Sie im gemeinsamen Chat, in Kommentaren, im Profil oder in Veranstaltungsbereichen
+                    teilen, können für andere Nutzer sichtbar sein. Wir empfehlen, dort keine sensiblen personenbezogenen
+                    Daten, Gesundheitsinformationen, Identitäts-/Finanzinformationen, Adressen, Telefonnummern,
+                    Standortdaten oder vertrauliche Informationen zu teilen. Gemeldete Inhalte und Nutzerberichte können
+                    zu Sicherheits- und Moderationszwecken überprüft werden.</p>
+
+                <h3 id="de-datenweitergabe">10. Weitergabe von Informationen und Drittanbieter</h3>
+                <p>Wir verkaufen oder vermieten keine personenbezogenen Daten. Informationen können nur in folgenden
+                    begrenzten Fällen weitergegeben werden:</p>
+                <ul>
+                    <li>an Dienstleister für Google-Authentifizierung, Hosting, Datenbanken (Firebase/Firestore),
+                        Analyse (Firebase Analytics), Fehlerberichterstattung (Firebase Crashlytics),
+                        Leistungsüberwachung (Firebase Performance), E-Mail, Sicherheit und ähnliche Dienste;</li>
+                    <li>an unseren Werbetechnologie-Anbieter Google AdMob, ausschließlich zur Anzeigenauslieferung und
+                        -messung;</li>
+                    <li>an Apple App Store und Google Play, zur Verarbeitung und Verifizierung von
+                        Premium-Abonnements und In-App-Käufen (Ihre Zahlungsdaten werden von diesen Stores verarbeitet
+                        und sind für uns nicht einsehbar);</li>
+                    <li>an andere Nutzer, hinsichtlich der Inhalte, die Sie über Community-Funktionen sichtbar
+                        machen;</li>
+                    <li>an Veranstaltungspersonal oder relevante Dienstleister, soweit für Veranstaltungsmanagement,
+                        Sicherheit oder Kommunikation erforderlich;</li>
+                    <li>an befugte Personen oder Institutionen, soweit dies für rechtliche Verpflichtungen, behördliche
+                        Anfragen, Sicherheit, Betrugsprävention, den Schutz unserer Rechte oder die Streitbeilegung
+                        erforderlich ist;</li>
+                    <li>wenn Sie ausdrücklich zustimmen oder uns entsprechend anweisen.</li>
+                </ul>
+
+                <h3 id="de-gesundheitsdaten">11. Gesundheits- und Wellnessdaten</h3>
+                <p>Sigara Savar ist kein Medizinprodukt und bietet keine medizinische Diagnose, Behandlung oder
+                    klinische Messung. Informationen zu Atemübungen, Atemtests und dem Fortschritt bei der
+                    Rauchentwöhnung werden ausschließlich verwendet, um App-Funktionen bereitzustellen, die
+                    Nutzererfahrung zu personalisieren, die Sicherheit zu gewährleisten und Support-Anfragen zu
+                    beantworten. Diese Daten werden nicht zu Werbezwecken verkauft.</p>
+
+                <h3 id="de-aufbewahrung-loeschung">12. Datenaufbewahrung und -löschung</h3>
+                <p>Daten werden so lange aufbewahrt, wie es zur Bereitstellung der Dienste, zur Gewährleistung der
+                    Sicherheit, zur Erfüllung rechtlicher Verpflichtungen, zur Verwaltung von Streitigkeiten oder für
+                    berechtigte Geschäftszwecke erforderlich ist. Anträge auf Konto- oder Datenlöschung können Sie über
+                    die auf unserer Seite <a href="userDataDeletion.html">Anleitung zur Datenlöschung</a> beschriebenen
+                    Methoden stellen. Nach der Löschung können einige Datensätze für begrenzte Zeit in
+                    Sicherungskopien verbleiben oder aufbewahrt werden, soweit dies aufgrund rechtlicher
+                    Verpflichtungen, aus Sicherheitsgründen, zur Missbrauchsprävention, Moderation oder Streitbeilegung
+                    erforderlich ist.</p>
+                <p>Transaktionsdatensätze zu Premium-Abonnements und In-App-Käufen können auch nach Löschung des
+                    Kontos für einen begrenzten Zeitraum aus buchhalterischen, steuerlichen, betrugspräventiven und
+                    rechtlichen Gründen aufbewahrt werden. Aufzeichnungen über Käufe, die Sie über den Apple App Store
+                    oder Google Play tätigen, werden zudem in den jeweiligen Systemen dieser Stores geführt; diese
+                    Aufzeichnungen unterliegen nicht unserer Kontrolle, sondern der eigenen Datenschutzerklärung des
+                    jeweiligen Stores.</p>
+                <p>Nach den aktuellen Angaben von Google/Firebase speichert Firebase Performance Monitoring
+                    Leistungsereignisse, die mit einer IP-Adresse verknüpft sind, für etwa 30 Tage und Leistungsdaten,
+                    die mit einer Firebase-Installations-ID verknüpft sind, sowie deidentifizierte Leistungsdaten für
+                    etwa 60 Tage. Nach Ablauf dieser Fristen werden die Daten aus den aktiven Systemen und
+                    Sicherungssystemen entfernt. Hierbei handelt es sich um von Google/Firebase angegebene
+                    Aufbewahrungsfristen des Dienstes, nicht um Aufbewahrungsfristen der eigenen Datenbank von Sigara
+                    Savar. Eine Kontolöschung bedeutet nicht, dass Leistungsdaten innerhalb dieser Fristen sofort und
+                    nutzerbezogen gelöscht werden.</p>
+
+                <h3 id="de-sicherheit">13. Sicherheit</h3>
+                <p>Wir setzen angemessene technische und organisatorische Sicherheitsmaßnahmen zum Schutz
+                    personenbezogener Daten ein. Beispielsweise werden Tagebucheinträge, die Sie in der App führen,
+                    auf Ihrem Gerät mit AES-256 und einem nutzerspezifischen Schlüssel verschlüsselt, bevor sie an
+                    unsere Server übermittelt werden. Dennoch ist kein Internet-, Mobil-App-, Cloud- oder
+                    Kommunikationssystem vollständig sicher; wir können das Risiko eines unbefugten Zugriffs oder
+                    Datenverlusts nicht vollständig ausschließen.</p>
+
+                <h3 id="de-internationale-uebermittlung">14. Internationale Datenübermittlung</h3>
+                <p>Die Server der von uns genutzten Dienstleister können sich außerhalb der Türkei befinden. Da
+                    Firebase Performance Monitoring auf der globalen Infrastruktur von Google läuft, können die oben
+                    beschriebenen technischen Daten zur Erbringung des Dienstes durch Google LLC und
+                    Firebase-Unterauftragsverarbeiter außerhalb der Türkei verarbeitet werden. Auch unser
+                    Werbetechnologie-Anbieter (Google AdMob) sowie Apple App Store und Google Play betreiben ihre
+                    eigene globale Infrastruktur; daher können auch Daten im Zusammenhang mit der Kaufverifizierung
+                    und der Anzeigenauslieferung außerhalb der Türkei verarbeitet werden.</p>
+
+                <h3 id="de-nutzerrechte">15. Nutzerrechte</h3>
+                <p>Nach geltendem Recht können Sie das Recht haben, auf Ihre personenbezogenen Daten zuzugreifen, sie
+                    zu berichtigen, zu löschen, die Verarbeitungszwecke zu erfahren, Informationen über die Empfänger
+                    zu erhalten, der Verarbeitung zu widersprechen, Ihre Einwilligung zu widerrufen und weitere
+                    verwandte Rechte auszuüben. Um diese Rechte auszuüben, können Sie uns unter <a
+                        href="mailto:sigarasavardestek@gmail.com">sigarasavardestek@gmail.com</a> kontaktieren.</p>
+
+                <h3 id="de-kinder">16. Kinder und junge Nutzer</h3>
+                <p>Sigara Savar richtet sich nicht an Kinder. Nutzer unter 18 Jahren sollten die App, die
+                    Community-Funktionen oder Veranstaltungen nicht ohne Wissen eines Elternteils/gesetzlichen
+                    Vertreters und erforderliche Erlaubnisse nutzen.</p>
+
+                <h3 id="de-aenderungen">17. Änderungen dieser Richtlinie</h3>
+                <p>Wir können diese Datenschutzerklärung im Zuge der Weiterentwicklung der App, geänderter
+                    rechtlicher Anforderungen oder veränderter Dienste aktualisieren. Die aktualisierte Fassung tritt
+                    mit der Veröffentlichung auf dieser Seite in Kraft.</p>
+
+                <h3 id="de-kontakt">18. Kontakt</h3>
+                <p>Bei Fragen, Anliegen oder Anfragen zur Datenlöschung können Sie uns kontaktieren unter: <a
                         href="mailto:sigarasavardestek@gmail.com">sigarasavardestek@gmail.com</a></p>
             </div>
         </section>
@@ -447,13 +1373,14 @@
                 metinlerin tam sürümü
                 uygulama içinde veya resmi belgelerde yer alır.</span><span class="lang en">These pages provide
                 information for the app and users — official full legal texts are provided within the app or official
-                documents.</span></p>
+                documents.</span><span class="lang es">Estas páginas ofrecen información para la aplicación y sus
+                usuarios — la versión completa de los textos legales se encuentra dentro de la aplicación o en los
+                documentos oficiales.</span><span class="lang de">Diese Seiten dienen der Information für die App und
+                ihre Nutzer — die vollständige Fassung der Rechtstexte finden Sie in der App oder in den offiziellen
+                Dokumenten.</span></p>
     </footer>
 
 </body>
 
 
 </html>
-
-
-

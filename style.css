@@ -131,6 +131,7 @@ nav a:hover,
 .lang-switch {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 10px;
     min-width: max-content;
     position: relative;
@@ -1123,6 +1124,16 @@ section.lang.tr {
 
     .header-actions {
         margin-left: auto;
+    }
+
+    .lang-switch button {
+        min-height: 32px;
+        padding: 0 9px;
+    }
+
+    .lang-switch button.active {
+        min-height: 34px;
+        padding: 0 12px;
     }
 
     .nav-link {
