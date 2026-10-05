@@ -11,6 +11,49 @@
   max-width: 15ch;
 }
 
+.hero__identity {
+  display: grid;
+  justify-items: center;
+  gap: 2.5rem;
+  width: min(78%, 25rem);
+  margin: 0;
+}
+
+.hero__identity .hero__mark {
+  width: 100%;
+  margin-right: 0;
+}
+
+.hero__caption {
+  position: static;
+  justify-self: stretch;
+  margin: 0;
+  color: var(--forest-deep);
+  text-align: left;
+}
+
+.hero__caption-kicker {
+  display: inline-block;
+  padding: 0.35rem 0.75rem;
+  border-radius: 2px;
+  background: var(--paper);
+  font-family: var(--sans);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.hero__caption-title {
+  display: block;
+  margin-top: var(--space-4);
+  font-family: var(--serif);
+  font-size: clamp(1.75rem, 1.3rem + 1vw, 2.375rem);
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+}
+
 .signature-mark {
   position: relative;
 }
@@ -60,7 +103,7 @@
   }
 
   .hero__caption {
-    animation: signature-final 500ms var(--ease-out) 1200ms both;
+    animation: none;
   }
 }
 
@@ -266,10 +309,16 @@
 
   .hero__panel {
     min-height: 14rem;
+    padding-block: var(--space-6);
   }
 
-  .hero__mark {
+  .hero__identity {
     width: min(78%, 17rem);
+    gap: var(--space-6);
+  }
+
+  .hero__caption-title {
+    font-size: 1.75rem;
   }
 
   .cycle__figure svg {
@@ -311,6 +360,11 @@
 }
 
 @media (min-width: 960px) {
+  .hero__identity {
+    width: min(82%, 26rem);
+    margin-right: max(0px, (100vw - var(--max)) / 2 - var(--gutter));
+  }
+
   .timeline__source {
     grid-column: 2;
   }

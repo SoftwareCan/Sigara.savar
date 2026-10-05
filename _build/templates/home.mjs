@@ -15,14 +15,19 @@ function hero(ctx) {
     </div>
   </div>
   <div class="hero__panel">
-    <div class="hero__mark signature-mark">
-      <svg class="signature-mark__trace" viewBox="0 0 700 362" aria-hidden="true" focusable="false">
-        <path class="signature-mark__path" pathLength="1" d="M310 150 C259 97 228 80 167 82 C89 84 39 137 41 205 C43 268 105 313 165 291 C257 258 441 83 531 85 C609 87 658 145 657 213 C656 281 605 319 540 316 C480 313 422 259 389 230"></path>
-        <path class="signature-mark__break" d="M347 93 L335 53 M375 85 L410 13"></path>
-      </svg>
-      ${markPicture(ctx, { alt: ctx.t.a11y.markAlt, eager: true })}
-    </div>
-    <p class="hero__caption">${h.markCaption}</p>
+    <figure class="hero__identity">
+      <figcaption class="hero__caption">
+        <span class="hero__caption-kicker">${h.markKicker}</span>
+        <span class="hero__caption-title">${h.markCaption}</span>
+      </figcaption>
+      <div class="hero__mark signature-mark">
+        <svg class="signature-mark__trace" viewBox="0 0 700 362" aria-hidden="true" focusable="false">
+          <path class="signature-mark__path" pathLength="1" d="M310 150 C259 97 228 80 167 82 C89 84 39 137 41 205 C43 268 105 313 165 291 C257 258 441 83 531 85 C609 87 658 145 657 213 C656 281 605 319 540 316 C480 313 422 259 389 230"></path>
+          <path class="signature-mark__break" d="M347 93 L335 53 M375 85 L410 13"></path>
+        </svg>
+        ${markPicture(ctx, { alt: ctx.t.a11y.markAlt, eager: true })}
+      </div>
+    </figure>
   </div>
 </section>`;
 }

@@ -90,7 +90,8 @@ export default {
         'Bırakmak bir günlük karar değil; her gün güçlenen bir süreç. Bilgi, takip, kriz araçları ve aynı yolda yürüyen bir toplulukla Sigara Savar yanında.',
       primary: 'Bırakma Rehberini Keşfet',
       secondary: 'Uygulamayı İndir',
-      markCaption: 'Döngünün ötesinde bir hayat.',
+      markKicker: 'Döngüyü kır.',
+      markCaption: 'Sonsuza\u00a0kadar kurtul.',
     },
     recovery: {
       title: 'Son sigaradan sonra vücudunda neler değişir?',
