@@ -1,0 +1,62 @@
+[
+  {
+    "id": "box_breathing",
+    "name": "Box Breathing (4-4-4)",
+    "inhaleSeconds": 4,
+    "holdSeconds": 4,
+    "exhaleSeconds": 4,
+    "benefit": "Reduces stress, improves focus and mental clarity",
+    "area": "Stress Management & Focus",
+    "description": "Used by military personnel and athletes to calm the mind and boost performance."
+  },
+  {
+    "id": "relaxing_breath",
+    "name": "Relaxing Breath (4-7-8)",
+    "inhaleSeconds": 4,
+    "holdSeconds": 7,
+    "exhaleSeconds": 8,
+    "benefit": "Better sleep, less anxiety, and calm",
+    "area": "Sleep & Anxiety Management",
+    "description": "Popularized by Dr. Andrew Weil; activates the parasympathetic nervous system."
+  },
+  {
+    "id": "equal_breathing",
+    "name": "Equal Breathing (5-5)",
+    "inhaleSeconds": 5,
+    "holdSeconds": 0,
+    "exhaleSeconds": 5,
+    "benefit": "Balance, calm, and mental stability",
+    "area": "Balance & Calm",
+    "description": "Simple and effective; an easy balancing breath technique for daily life."
+  },
+  {
+    "id": "deep_breathing",
+    "name": "Deep Breathing (6-2-8)",
+    "inhaleSeconds": 6,
+    "holdSeconds": 2,
+    "exhaleSeconds": 8,
+    "benefit": "More energy, alertness, and oxygenation",
+    "area": "Energy & Vitality",
+    "description": "Delivers more oxygen to the body and helps raise your energy level."
+  },
+  {
+    "id": "triangle_breathing",
+    "name": "Triangle Breathing (3-3-3)",
+    "inhaleSeconds": 3,
+    "holdSeconds": 3,
+    "exhaleSeconds": 3,
+    "benefit": "Less anxiety, panic management, and quick calm",
+    "area": "Anxiety & Panic Management",
+    "description": "Ideal for calming down quickly; effective during anxiety or panic moments."
+  },
+  {
+    "id": "extended_exhale",
+    "name": "Extended Exhale (4-4-6)",
+    "inhaleSeconds": 4,
+    "holdSeconds": 4,
+    "exhaleSeconds": 6,
+    "benefit": "Stress relief, heart-rate regulation, and relaxation",
+    "area": "Stress & Relaxation",
+    "description": "Strengthens the parasympathetic nervous system through a longer exhale."
+  }
+]

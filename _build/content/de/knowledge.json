@@ -1,0 +1,951 @@
+[
+  {
+    "id": "section-1",
+    "order": 1,
+    "title": "Vorbereitung und die ersten Tage",
+    "description": "Das Grundlagenkapitel: verstehe, wie Sucht funktioniert, erkenne, warum du rauchst, und bereite dich auf den Rauchstopp-Tag vor.",
+    "articles": [
+      {
+        "id": "b1-01",
+        "sectionId": "section-1",
+        "order": 1,
+        "title": "Was ist Sucht?",
+        "summary": "Verstehe die biologische, psychologische und soziale Seite der Sucht – über Nikotin, das Belohnungssystem und erlernte Verhaltensweisen.",
+        "estimatedReadMinutes": 2,
+        "icon": "lightbulb",
+        "intro": "Rauchabhängigkeit ist nicht nur eine Frage der Gewohnheit oder des Willens. Die Wirkung von Nikotin im Gehirn, der Alltag und das soziale Umfeld können nach und nach einen Kreislauf aufbauen, der sich selbst verstärkt.",
+        "contentSections": [
+          {
+            "title": "Nikotin und das Belohnungssystem",
+            "body": "Nikotin erreicht das Gehirn schnell und wirkt auf Systeme, die mit Belohnung, Motivation und Lernen verbunden sind. Die Veränderung der Dopaminausschüttung hilft dem Gehirn zu lernen, Rauchen als ein Verhalten zu behandeln, das sich zu wiederholen lohnt.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Was verändert sich mit der Zeit?",
+            "body": "Bei regelmäßigem Konsum passt sich das Gehirn an Nikotin an. Sinkt der Nikotinspiegel, können Entzugszeichen wie Unruhe, Konzentrationsschwierigkeiten oder Rauchverlangen auftreten. Weil Rauchen dieses Unwohlsein kurz lindert, wird der Kreislauf wieder stärker.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Die drei Seiten der Sucht",
+            "body": "Die biologische Seite betrifft Nikotin und Entzug, die psychologische Seite das Gefühl von Erleichterung oder Belohnung, das mit dem Rauchen verknüpft ist, und die soziale und verhaltensbezogene Seite die Verbindungen mit Kaffee, Mahlzeiten, Pausen, Freundeskreis oder Alkohol.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Sucht hat nicht nur eine Ursache. Nikotin, Gedanken und Alltagsgewohnheiten wirken zusammen – alle drei wahrzunehmen, ist beim Aufhören wichtig."
+        ]
+      },
+      {
+        "id": "b1-02",
+        "sectionId": "section-1",
+        "order": 2,
+        "title": "Warum rauchst du – und warum solltest du aufhören?",
+        "summary": "Erkenne deine Auslöser, Gewohnheiten und die Bedeutungen, die du dem Rauchen gegeben hast; kläre deine Gründe für den Rauchstopp.",
+        "estimatedReadMinutes": 2,
+        "icon": "lightbulb",
+        "intro": "Rauchen wird oft von mehr angetrieben als nur vom Nikotinbedarf. Bestimmte Tageszeiten, Gefühle, Menschen und Orte können fest mit dem Akt des Rauchens verknüpft werden.",
+        "contentSections": [
+          {
+            "title": "Erkenne die Momente, die automatisch geworden sind",
+            "body": "Kaffee, nach dem Essen, ein Telefonat, Autofahren, eine Arbeitspause, Stress oder soziale Situationen können mit der Zeit zum Signal „Jetzt rauchen“ werden.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Entspannt Rauchen wirklich?",
+            "body": "Nikotin hat anregende Eigenschaften. Ein Teil der Erleichterung nach dem Rauchen kann damit zusammenhängen, dass der Nikotinentzug, der sich zwischen den Zigaretten aufbaut, kurz nachlässt. Das Gehirn kann diese vorübergehende Erleichterung dann als „Rauchen löst meinen Stress“ deuten.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Kläre deinen eigenen Grund",
+            "body": "Deine persönlichen Gründe für den Rauchstopp aufzuschreiben – Gesundheit, Freiheit, Zeit, Geld, Familie, Atmung oder Lebensqualität – kann es leichter machen, in schwierigen Momenten an deine Entscheidung zu denken.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Wenn du die automatischen Momente hinter deinem Rauchen siehst, wird der Rauchstopp weniger zu einem bloßen Aushalten und mehr zu einer bewussten Veränderung."
+        ]
+      },
+      {
+        "id": "b1-03",
+        "sectionId": "section-1",
+        "order": 3,
+        "title": "Was gewinnst du durch den Rauchstopp?",
+        "summary": "Sieh, welche Gewinne der Rauchstopp für Gesundheit, Atmung, Zeit, Geld und Lebensqualität bringen kann.",
+        "estimatedReadMinutes": 2,
+        "icon": "favorite",
+        "intro": "Die Gewinne nach dem Aufhören passen nicht in einen einzigen Tag. Dein Körper beginnt schon in den ersten Stunden, sich zu verändern; Verbesserungen in verschiedenen Systemen können in den folgenden Wochen, Monaten und Jahren sichtbar werden.",
+        "contentSections": [
+          {
+            "title": "Allgemeiner Zeitverlauf",
+            "body": "In den ersten Minuten können sich Herzfrequenz und Blutdruck in Richtung normaler Werte bewegen. In den ersten Stunden sinkt das Kohlenmonoxid im Blut. Innerhalb der ersten Tage fällt der Nikotinspiegel deutlich, und Geschmack und Geruch können sich wieder erholen. Über Wochen und Monate können sich Durchblutung, Atmung und die Selbstreinigung der Atemwege verbessern.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Langfristige Gewinne",
+            "body": "Je länger du rauchfrei bleibst, desto mehr gehen die Risiken im Zusammenhang mit Herz-Kreislauf-Erkrankungen und bestimmten Krebserkrankungen Berichten zufolge mit der Zeit zurück.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Über die Gesundheit hinaus",
+            "body": "Das Geld und die Zeit zurückzugewinnen, die für Zigaretten draufgingen, zu erleben, dass du ohne Abhängigkeit leben kannst, und ein wachsendes Gefühl der Kontrolle über alltägliche Entscheidungen sind ebenfalls wichtige Gewinne.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Aufhören heißt nicht nur, etwas aus deinem Leben zu entfernen; es ist der Beginn neuer Gewinne bei Gesundheit, Zeit, Geld und Freiheit."
+        ]
+      },
+      {
+        "id": "b1-04",
+        "sectionId": "section-1",
+        "order": 4,
+        "title": "Vorbereitung und Planung",
+        "summary": "Lege deinen Rauchstopp-Tag fest, beobachte dein Rauchmuster, bereite deine Umgebung vor und wähle im Voraus Alternativen für schwierige Momente.",
+        "estimatedReadMinutes": 2,
+        "icon": "flag",
+        "intro": "Am Rauchstopp-Tag selbst noch alles klären zu wollen, kann schwerfallen. Wer sich vorher vorbereitet, trifft Entscheidungen leichter – besonders in den automatischen Rauchmomenten.",
+        "contentSections": [
+          {
+            "title": "Lege deinen Rauchstopp-Tag fest",
+            "body": "Wähle ein klares Datum für dich und schreib auf, welche Vorbereitungen du bis dahin erledigen möchtest.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Beobachte dein Rauchmuster",
+            "body": "Beobachte ein paar Tage lang, zu welcher Zeit, mit welchem Gefühl, mit wem und in welcher Umgebung du rauchst. Dieser Überblick hilft dir, deine stärksten Auslöser zu sehen.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Ordne deine Umgebung",
+            "body": "Entferne Dinge, die dich an das Rauchen erinnern – Schachteln, Aschenbecher, Feuerzeuge – aus Wohnung, Auto und Arbeit. Wähle für starke Verknüpfungen wie Kaffee, nach dem Essen oder Arbeitspausen ein neues Verhalten.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Bitte um Unterstützung",
+            "body": "Menschen in deiner Nähe von deiner Entscheidung zu erzählen und sie zu bitten, dir vor allem in den ersten Tagen keine Zigarette anzubieten, kann den Prozess erleichtern.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Vorbereitung bedeutet nicht, dass Rauchverlangen nie auftritt; sie bedeutet, dass du schon weißt, was du tun wirst, wenn es kommt."
+        ]
+      },
+      {
+        "id": "b1-05",
+        "sectionId": "section-1",
+        "order": 5,
+        "title": "Zeichne deine eigenen Auslöser auf",
+        "summary": "Identifiziere für dich selbst die Zeiten, Gefühle, Orte und Gewohnheiten, die automatisch den Gedanken oder das Rauchverlangen starten.",
+        "estimatedReadMinutes": 2,
+        "icon": "loop",
+        "intro": "Ein Auslöser ist eine Situation, die automatisch den Gedanken oder das Rauchverlangen startet. Das ist nicht bei jeder Person gleich.",
+        "contentSections": [
+          {
+            "title": "Frage dich selbst",
+            "body": "Zu welcher Tageszeit ist mein Rauchverlangen am stärksten? Gibt es einen Zusammenhang mit Kaffee, Mahlzeiten, dem Handy, Autofahren oder einer Arbeitspause? Welche Gefühle – Stress, Wut, Langeweile, Einsamkeit oder Feiern – verstärken das Rauchverlangen? Wie wirken soziale Situationen mit Alkohol oder Rauchen auf mich?",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Was kannst du an seine Stelle setzen?",
+            "body": "Wähle für jeden starken Auslöser das einfachste neue Verhalten, das du kannst. Zum Beispiel ein kurzer Spaziergang nach dem Kaffee, Zähneputzen nach dem Essen, ein paar Minuten Pause nach Stress oder eine unterstützende Nachricht.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Einen Auslöser zu bemerken, öffnet eine kleine, aber wichtige Lücke zwischen automatischem Verhalten und einer bewussten Entscheidung."
+        ]
+      },
+      {
+        "id": "b1-06",
+        "sectionId": "section-1",
+        "order": 6,
+        "title": "Unterstützungsmöglichkeiten",
+        "summary": "Informiere dich in groben Zügen, dass Nikotinpflaster, Kaugummi, Lutschtabletten und bestimmte Medikamente den Rauchstopp unterstützen können.",
+        "estimatedReadMinutes": 2,
+        "icon": "favorite",
+        "intro": "Manche Menschen können beim Aufhören von zusätzlicher Unterstützung profitieren, um Entzug und Rauchverlangen besser zu bewältigen.",
+        "contentSections": [
+          {
+            "title": "Allgemeine Optionen",
+            "body": "Es gibt Produkte wie Nikotinpflaster, Nikotinkaugummi und Lutschtabletten sowie bestimmte Medikamente, die beim Rauchstopp eingesetzt werden. Ziel dieser Optionen ist es, Entzug und Rauchverlangen für manche Menschen besser bewältigbar zu machen.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Mit einer medizinischen Fachkraft abwägen",
+            "body": "Die Anwendung von Medikamenten und Nikotinersatzprodukten kann je nach persönlichem Gesundheitszustand unterschiedlich sein. Sprich bei Bedarf mit einer medizinischen Fachkraft.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Unterstützungsprodukte und Medikamente können für manche Menschen eine Option sein; die persönliche Behandlungsentscheidung liegt bei einer medizinischen Fachkraft."
+        ]
+      },
+      {
+        "id": "b1-07",
+        "sectionId": "section-1",
+        "order": 7,
+        "title": "Rauchstopp-Tag",
+        "summary": "Komm mit einem klareren Plan durch deinen ersten rauchfreien Tag – mit einfachen Schritten wie Wasser, Bewegung, Atmung und dem Ordnen deiner Umgebung.",
+        "estimatedReadMinutes": 2,
+        "icon": "flag",
+        "intro": "Das Ziel des ersten Tages ist nicht, sich makellos zu fühlen. Das Ziel ist, den ersten Tag ohne Rauchen so weit wie möglich im Voraus zu planen.",
+        "contentSections": [
+          {
+            "title": "Verändere deine Morgenroutine",
+            "body": "Verändere das erste Verhalten, das am stärksten mit dem Rauchen verknüpft ist. Schon eine kleine Änderung wie Duschen, ein kurzer Spaziergang oder ein anderes Frühstück kann die automatische Kette unterbrechen.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Bereite einfache Hilfsmittel vor",
+            "body": "Nutze Trinken von Wasser als Erinnerungsroutine; bereite rauchfreie Optionen vor, die Hände und Mund beschäftigen. Wenn Rauchverlangen kommt, kannst du die 4-4-6-Atmung versuchen: 4 Sekunden einatmen, 4 Sekunden halten, 6 Sekunden langsam ausatmen.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Reduziere starke Auslöser",
+            "body": "Vor allem in den ersten Tagen kann es helfen, Situationen, in denen geraucht wird, und Auslöser, die dich fordern, so weit wie möglich zu reduzieren.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Der erste Tag kann herausfordernd sein. Das Ziel ist nicht, dass das Rauchverlangen nie kommt; es ist, es vorbeiziehen zu lassen, ohne zu rauchen, wenn es kommt."
+        ]
+      },
+      {
+        "id": "b1-08",
+        "sectionId": "section-1",
+        "order": 8,
+        "title": "Entzug",
+        "summary": "Verstehe, warum Entzug auftritt, welche Symptome er umfassen kann und dass er Teil eines vorübergehenden Anpassungsprozesses ist.",
+        "estimatedReadMinutes": 2,
+        "icon": "lightbulb",
+        "intro": "Wenn Nikotin abnimmt, versuchen Gehirn und Körper eine Weile, sich an die neue Lage anzupassen. In dieser Phase können einige vorübergehende Symptome auftreten.",
+        "contentSections": [
+          {
+            "title": "Was könntest du spüren?",
+            "body": "Unruhe, Konzentrationsschwierigkeiten, Veränderungen des Appetits, Rauchverlangen und ähnliche Symptome können in der frühen Phase des Aufhörens auftreten.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Was bedeutet das?",
+            "body": "Dass diese Symptome auftreten, heißt nicht „du brauchst eine Zigarette“. Es kann einfach eine Phase sein, in der sich dein Körper an eine nikotinfreie Routine anpasst.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Herangehensweise",
+            "body": "Schlaf, regelmäßiges Trinken von Wasser, kurze Spaziergänge, Atemübungen, das Reduzieren von Auslösern und bei Bedarf professionelle Unterstützung können diese Phase besser bewältigbar machen.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Entzug kann unangenehm sein, aber er ist ein vorübergehender Anpassungsprozess. Wenn die Symptome zu intensiv oder nicht mehr bewältigbar werden, hole dir Unterstützung bei einer medizinischen Fachkraft."
+        ]
+      },
+      {
+        "id": "b1-09",
+        "sectionId": "section-1",
+        "order": 9,
+        "title": "Kapitelzusammenfassung",
+        "summary": "Sammle Sucht, Auslöser, die Vorbereitung auf den Rauchstopp und deinen Basisplan für den ersten Tag an einem Ort.",
+        "estimatedReadMinutes": 1,
+        "icon": "flag",
+        "intro": "In diesem Kapitel hast du gesehen, dass Rauchabhängigkeit nicht nur eine Frage der Willenskraft ist; Gehirn, Gedanken, Routinen und Umgebung wirken gemeinsam.",
+        "contentSections": [
+          {
+            "title": "Im Hinterkopf behalten",
+            "body": "Deine Auslöser vor dem Aufhören zu erkennen, deine Umgebung zu ordnen, neue Routinen im Voraus zu wählen und einen einfachen Plan für den ersten Tag vorzubereiten, macht den Prozess klarer.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Nächster Schritt",
+            "body": "Im nächsten Kapitel geht es um die gelernten Verknüpfungen, die noch da sein können, wenn das Nikotin den Körper verlassen hat, und um Wege, ein rauchfreies Leben dauerhaft zu machen.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Die Vorbereitung steht: Jetzt geht es nicht nur ums Aufhören, sondern darum, eine rauchfreie Routine aufzubauen."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "section-2",
+    "order": 2,
+    "title": "Ein rauchfreies Leben dauerhaft machen",
+    "description": "Hier geht es darum, rauchfreies Leben zu deiner neuen Normalität zu machen: indem du Gewohnheiten, Gedanken und Auslöser neu ausrichtest, die noch da sein können, wenn das Nikotin den Körper bereits verlassen hat.",
+    "articles": [
+      {
+        "id": "b2-01",
+        "sectionId": "section-2",
+        "order": 1,
+        "title": "Das Nikotin ist weg – warum möchtest du trotzdem noch rauchen?",
+        "summary": "Verstehe, dass körperlicher Entzug und erlernte Rauchverknüpfungen nicht dasselbe sind.",
+        "estimatedReadMinutes": 2,
+        "icon": "lightbulb",
+        "intro": "Dass Nikotin den Körper verlässt, ist nicht derselbe Prozess wie das Verlernen von Rauchverhalten, das sich über Jahre aufgebaut hat.",
+        "contentSections": [
+          {
+            "title": "Körperlicher Entzug",
+            "body": "Wenn Nikotin abnimmt, können Unruhe, Konzentrationsschwierigkeiten, Veränderungen des Appetits oder ähnliche Symptome auftreten. Sie hängen mit dem körperlichen Anpassungsprozess zusammen.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Erlernte Verknüpfungen",
+            "body": "Verbindungen wie Kaffee -> Zigarette, Essen -> Zigarette oder Pause -> Zigarette können automatisch werden, wenn sie über Jahre wiederholt werden. Deshalb kann noch Monate später eine bestimmte Umgebung oder ein Gefühl den Gedanken ans Rauchen auslösen.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Der entscheidende Unterschied",
+            "body": "Dass ein solcher Gedanke auftaucht, heißt nicht unbedingt, dass du wieder Nikotin brauchst; es kann einfach eine alte Verknüpfung sein, die in Erinnerung kommt.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Körperlicher Entzug kann nachlassen; alte Gewohnheitsverknüpfungen können aber viel länger in Erinnerung bleiben – und sie werden durch neues Lernen schwächer."
+        ]
+      },
+      {
+        "id": "b2-02",
+        "sectionId": "section-2",
+        "order": 2,
+        "title": "Schreibe deine Auslöser neu",
+        "summary": "Statt alte Auslöser vollständig löschen zu wollen, setze genau hinter dieselben Momente neue Verhaltensweisen.",
+        "estimatedReadMinutes": 2,
+        "icon": "loop",
+        "intro": "Auslöser ganz aus dem Leben zu entfernen, ist nicht immer möglich. Ein realistischeres Ziel ist, nach demselben Auslöser immer wieder ein neues Verhalten zu wählen.",
+        "contentSections": [
+          {
+            "title": "Neue Verknüpfungen schaffen",
+            "body": null,
+            "items": [
+              "Kaffee -> ein paar Minuten an einem anderen Ort, Wasser oder ein kurzer Spaziergang.",
+              "Essen -> Zähneputzen, Tee oder kurze Bewegung.",
+              "Stress -> Atmung, eine kurze Pause oder eine unterstützende Nachricht.",
+              "Arbeitspause -> ein rauchfreier Weg oder ein anderer Freundeskreis."
+            ],
+            "numbered": false
+          },
+          {
+            "title": "Alkohol und soziale Situationen",
+            "body": "Alkohol kann bei manchen Menschen das Rauchverlangen und automatische Verhaltensweisen verstärken. Vor allem in der frühen Phase kann es helfen, Menge, Umgebung oder Plan neu zu ordnen.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Warum Wiederholung zählt",
+            "body": "Jedes Mal, wenn du das neue Verhalten wählst, setzt du eine andere Option an die Stelle der alten automatischen Kette. Das Ziel ist nicht, auf einmal zu vergessen, sondern den neuen Weg zu wiederholen.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Einen alten Auslöser mit einem neuen Verhalten zu verknüpfen, hilft, dass sich ein rauchfreies Leben immer vertrauter anfühlt."
+        ]
+      },
+      {
+        "id": "b2-03",
+        "sectionId": "section-2",
+        "order": 3,
+        "title": "Überdenke deine Gedanken über das Rauchen",
+        "summary": "Betrachte alte Gedanken, die im Rauchstopp sehr überzeugend wirken können, mit einem realistischeren Blick.",
+        "estimatedReadMinutes": 2,
+        "icon": "lightbulb",
+        "intro": "Dass ein Gedanke mächtig wirkt, heißt nicht, dass er stimmt. Einige alte Überzeugungen können im Rauchstopp wieder auftauchen.",
+        "contentSections": [
+          {
+            "title": "„Rauchen beruhigt mich.“",
+            "body": "Ein Teil des Erleichterungsgefühls kann das kurze Nachlassen des Nikotinentzugs sein.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "„Ohne Rauchen kann ich mich nicht konzentrieren.“",
+            "body": "Entzug kann die Aufmerksamkeit vorübergehend stören; Rauchen kann sich dann so anfühlen, als würde es diese Störung beheben.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "„Ich habe so viele Jahre geraucht, jetzt aufzuhören hat keinen Sinn mehr.“",
+            "body": "Der Nutzen des Aufhörens für Gesundheit und Lebensqualität bleibt auch in unterschiedlichen Altersphasen bestehen.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "„Eine wird nicht schaden.“",
+            "body": "Eine einzelne Zigarette kann den alten Verhaltenskreislauf und den Gedanken „nur noch eine“ wieder beleben.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Du musst mit einem alten Gedanken nicht streiten, wenn er kommt; nimm ihn zuerst wahr und rahme ihn dann mit einer realistischeren Erklärung neu."
+        ]
+      },
+      {
+        "id": "b2-04",
+        "sectionId": "section-2",
+        "order": 4,
+        "title": "Womit füllst du die Lücke, die das Rauchen hinterlassen hat?",
+        "summary": "Erkenne, welche Funktion das Rauchen für dich erfüllt hat, und finde eine rauchfreie Antwort auf dasselbe Bedürfnis.",
+        "estimatedReadMinutes": 2,
+        "icon": "auto_awesome",
+        "intro": "Für manche Menschen ist Rauchen nicht nur Nikotin; es kann Pause, Geselligkeit, eine Hand-zum-Mund-Gewohnheit oder „ein paar Minuten, die ich mir selbst nehme“ bedeuten.",
+        "contentSections": [
+          {
+            "title": "Neue Antworten je nach Bedürfnis",
+            "body": null,
+            "items": [
+              "Bedürfnis nach einer Pause: ein 5-minütiger kurzer Spaziergang oder eine Pause an der frischen Luft.",
+              "Stress: langsames Atmen, kurze Entspannung oder ein paar Minuten Abstand von der Situation.",
+              "Hand-zum-Mund-Gewohnheit: Wasser, zuckerfreier Kaugummi oder andere rauchfreie Routinen.",
+              "Bedürfnis nach Belohnung: Lieblingsmusik, ein Hobby, kleine Ziele oder körperliche Aktivität.",
+              "Geselligkeit: rauchfreie Freundschafts- und Pausenroutinen aufbauen."
+            ],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Womit du das Rauchen ersetzt, kann davon abhängen, welches Bedürfnis das Rauchen in deinem Leben erfüllt hat."
+        ]
+      },
+      {
+        "id": "b2-05",
+        "sectionId": "section-2",
+        "order": 5,
+        "title": "Stärke deine natürlichen Belohnungen wieder",
+        "summary": "Baue dein rauchfreies Leben nicht nur ums „Nicht-Rauchen“ herum auf, sondern stütze Belohnung und Motivation mit natürlichen Alltagsroutinen – Bewegung, Schlaf und Atmung.",
+        "estimatedReadMinutes": 2,
+        "icon": "auto_awesome",
+        "intro": "Statt ein rauchfreies Leben allein ums „Nicht-Rauchen“ zu bauen, können mehr natürliche Routinen, die Freude und Entspannung bringen, ein nachhaltigerer Weg sein.",
+        "contentSections": [
+          {
+            "title": "Wähle drei kleine Bereiche",
+            "body": "Bewegung, Schlaf und Freude. Zum Beispiel ein kurzer Spaziergang, ein regelmäßigerer Schlafrhythmus und eine rauchfreie Tätigkeit, die dir Spaß macht.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Keine große Veränderung nötig",
+            "body": "Das Ziel ist nicht, auf einmal ein makelloses Leben aufzubauen. Kleine, aber wiederholbare Verhaltensweisen können nach und nach den Platz füllen, den das Rauchen hinterlassen hat.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Atmung und Entspannung",
+            "body": "Langsames Atmen und kurze Entspannungsübungen können in stressigen Momenten eine andere Option bieten, statt automatisch zur Zigarette zu greifen.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Je alltäglicher und erreichbarer deine neuen Belohnungen sind, desto leichter kann sich rauchfreies Leben wie deine neue Normalität anfühlen."
+        ]
+      },
+      {
+        "id": "b2-06",
+        "sectionId": "section-2",
+        "order": 6,
+        "title": "Von „Ich versuche aufzuhören“ zu „Ich rauche nicht“",
+        "summary": "Baue eine klarere innere und soziale Grenze, die dein rauchfreies Verhalten mit deiner neuen Identität in Einklang bringt.",
+        "estimatedReadMinutes": 2,
+        "icon": "flag",
+        "intro": "Der Satz „Ich versuche mit dem Rauchen aufzuhören“ kann bei manchen Menschen dazu führen, dass die Entscheidung bei jedem Auslöser neu getroffen werden muss.",
+        "contentSections": [
+          {
+            "title": "Der Identitätsansatz",
+            "body": "„Ich rauche nicht“ zielt darauf, dass das Verhalten zu deiner neuen Identität passt. Es ist kein Zaubersatz; es ist eine Grenze, die durch immer wiederholtes Verhalten gestärkt wird.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Beispiel in einer sozialen Situation",
+            "body": "Statt „Nein danke, ich versuche aufzuhören“ zu sagen „Nein danke, ich rauche nicht“ kann für manche Menschen eine klarere, kürzere Grenze schaffen.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Mit Verhalten verstärken",
+            "body": "Identität wird nicht nur durch einen Satz gestärkt, den du sagst, sondern durch die neue Antwort, die du bei jedem Auslöser gibst.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Das Ziel ist, rauchfreies Verhalten zu einem natürlichen Teil deiner alltäglichen Identität zu machen, statt dich ständig im Kampf zu sehen."
+        ]
+      },
+      {
+        "id": "b2-07",
+        "sectionId": "section-2",
+        "order": 7,
+        "title": "Achte auf den Gedanken „Ich habe es jetzt unter Kontrolle“",
+        "summary": "Erkenne, warum der Gedanke „Ich könnte nur eine rauchen“, der auftauchen kann, wenn das Rauchverlangen nachlässt, riskant sein kann.",
+        "estimatedReadMinutes": 2,
+        "icon": "local_fire_department",
+        "intro": "Wenn das Rauchverlangen nach Wochen oder Monaten nachlässt, kann der Gedanke kommen: „Ich habe die Sucht jetzt im Griff, ich könnte nur eine rauchen.“",
+        "contentSections": [
+          {
+            "title": "Wo liegt das Risiko?",
+            "body": "Das Risiko ist nicht nur die einzelne Zigarette selbst. Rauchen kann alte Belohnungs- und Verhaltensverknüpfungen wieder stärken und den Gedanken „nur noch eine“ neu beleben.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Eine einfache Grenze",
+            "body": "Statt zu versuchen, „nur eine zu managen“, ist die einfachste Grenze, die deine Rauchfreiheit schützt, nicht wieder anzufangen.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Erinnere dich selbst",
+            "body": "Wenn das Rauchverlangen nachlässt, ist das ein bedeutsamer Fortschritt; aber der Sinn dieses Fortschritts ist nicht die Rückkehr zum kontrollierten Rauchen – sondern dein rauchfreies Leben zu stärken.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Der Gedanke „Mir geht’s jetzt gut, ich könnte nur eine rauchen“ kann wie ein Beweis für Fortschritt aussehen; tatsächlich kann er eine Tür zurück in den alten Kreislauf sein."
+        ]
+      },
+      {
+        "id": "b2-08",
+        "sectionId": "section-2",
+        "order": 8,
+        "title": "Checkliste fürs rauchfreie Leben",
+        "summary": "Prüfe mit kurzen Fragen, wo deine neue Routine stärker wird und wo sie noch Unterstützung braucht.",
+        "estimatedReadMinutes": 2,
+        "icon": "flag",
+        "intro": "Ein rauchfreies Leben zu halten, heißt nicht nur, auf den gerade vergangenen Tag zu schauen. Es hilft auch, von Zeit zu Zeit zu prüfen, wie gut sich deine neuen Verhaltensweisen gesetzt haben.",
+        "contentSections": [
+          {
+            "title": "Frage dich selbst",
+            "body": null,
+            "items": [
+              "Kann ich mich als jemand beschreiben, der „nicht raucht“?",
+              "Habe ich ein neues Verhalten für starke Auslöser wie Kaffee, nach dem Essen oder Stress?",
+              "Kann ich alte Gedanken wie „Rauchen hat mich früher entspannt“ bemerken und hinterfragen?"
+            ],
+            "numbered": false
+          },
+          {
+            "title": "Prüfe deine Routine",
+            "body": null,
+            "items": [
+              "Baue ich eine rauchfreie Routine in Bezug auf Schlaf, Bewegung, soziales Leben und Tätigkeiten, die mir Freude machen?",
+              "Akzeptiere ich, dass der Gedanke „eine wird nicht schaden“ für mich riskant sein kann?"
+            ],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Die Checkliste dient nicht dazu, deinen Erfolg zu bewerten; sie hilft, den nächsten Bereich zu erkennen, den du stärken kannst."
+        ]
+      },
+      {
+        "id": "b2-09",
+        "sectionId": "section-2",
+        "order": 9,
+        "title": "Kapitelzusammenfassung",
+        "summary": "Sammle die Gewohnheiten, Gedanken und die neue Identität, die den körperlichen Entzug überdauern können, an einem Ort.",
+        "estimatedReadMinutes": 1,
+        "icon": "flag",
+        "intro": "Dass Nikotin den Körper verlässt, heißt nicht, dass alle Gewohnheiten gleichzeitig verschwinden.",
+        "contentSections": [
+          {
+            "title": "Im Hinterkopf behalten",
+            "body": "Wenn du alte Auslöser mit neuen Verhaltensweisen beantwortest, wird das rauchfreie Leben vertrauter. Dauerhafte Veränderung heißt nicht nur, die Zigarette wegzunehmen – sondern den Platz, den sie hinterlassen hat, mit neuen Routinen, neuen Belohnungen und einer neuen Identität zu füllen.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Nächster Schritt",
+            "body": "Im nächsten Kapitel geht es um intensives Rauchverlangen, die Welle des Verlangens, die 4D-Methode und den Umgang mit Ausrutscher und Rückfall.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Ein rauchfreies Leben ist nicht mehr nur ein Ziel, das es zu schützen gilt; es ist deine neue Alltagsroutine."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "section-3",
+    "order": 3,
+    "title": "Rauchverlangen bewältigen und Rückfällen vorbeugen",
+    "description": "Hier erfährst du, wie Rauchverlangen funktioniert, dass es vorübergeht, welche Hilfsmittel du in einem Krisenmoment nutzen kannst – und wie du verhinderst, dass ein Ausrutscher zur Rückkehr ins regelmäßige Rauchen wird.",
+    "articles": [
+      {
+        "id": "b3-01",
+        "sectionId": "section-3",
+        "order": 1,
+        "title": "Was ist Rauchverlangen?",
+        "summary": "Verstehe, dass Rauchverlangen ein starker, aber vorübergehender Drang ist, der durch körperlichen Entzug oder gelernte Reize ausgelöst werden kann.",
+        "estimatedReadMinutes": 2,
+        "icon": "local_fire_department",
+        "intro": "Rauchverlangen ist ein starker Drang zu rauchen, der durch einen Umweltreiz, ein Gefühl, einen Gedanken oder Nikotinentzug ausgelöst werden kann.",
+        "contentSections": [
+          {
+            "title": "Rauchverlangen durch körperlichen Entzug",
+            "body": "Es kann mit biologischen Symptomen zusammenhängen, die auftreten, wenn der Nikotinspiegel sinkt – besonders in der frühen Phase des Aufhörens.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Konditioniertes psychologisches Rauchverlangen",
+            "body": "Es kann auch später auftreten, ausgelöst durch gelernte Reize wie Stress, Kaffee, den Geruch von Rauch, bestimmte Menschen oder Orte.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Die wichtige Botschaft",
+            "body": "Dass Rauchverlangen stark ist, heißt nicht, dass du nachgeben musst. Du kannst es als Drang wahrnehmen und vorbeiziehen lassen, ohne zu rauchen.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Rauchverlangen ist kein Befehl; es ist ein vorübergehender Drang und kann durch unterschiedliche Reize ausgelöst werden."
+        ]
+      },
+      {
+        "id": "b3-02",
+        "sectionId": "section-3",
+        "order": 2,
+        "title": "Rauchverlangen steigt und fällt wie eine Welle",
+        "summary": "Sieh Rauchverlangen nicht als ständigen Bedarf, sondern als Welle, die ansteigt, ihren Höhepunkt erreicht und dann abklingt.",
+        "estimatedReadMinutes": 2,
+        "icon": "local_fire_department",
+        "intro": "Der Drang zu rauchen bleibt meist nicht gleich stark. Er steigt an, wird spürbar und neigt dann dazu, abzuklingen.",
+        "contentSections": [
+          {
+            "title": "Ansteigen",
+            "body": "Der Gedanke ans Rauchen kann spürbar werden und Anspannung kann wachsen. Hier ist der erste Schritt, zu merken: „Gerade hat eine Welle des Rauchverlangens begonnen.“",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Höhepunkt",
+            "body": "Dein Kopf kann sich auf die Zigarette fixiert anfühlen. Hier setzt du eines der Hilfsmittel ein, die du schon gewählt hast – etwa die 4D-Methode oder einen Ortswechsel.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Abklingen",
+            "body": "Wenn die Stärke des Drangs nachlässt, merke dir, dass du ohne Rauchen durchgekommen bist. Diese Erfahrung kann für die nächste Welle Vertrauen aufbauen.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Statt die Welle als endlos zu behandeln, sie als vorübergehenden Prozess zu sehen, der steigt und fällt, kann die Bewältigung erleichtern."
+        ]
+      },
+      {
+        "id": "b3-03",
+        "sectionId": "section-3",
+        "order": 3,
+        "title": "Mit dem Rauchverlangen surfen",
+        "summary": "Statt gegen das Rauchverlangen zu kämpfen oder es wegzudrücken, beobachte kurz die Veränderung in Körper und Geist.",
+        "estimatedReadMinutes": 2,
+        "icon": "loop",
+        "intro": "Mit dem Rauchverlangen zu surfen bedeutet, den Gedanken ans Rauchen nicht wegzudrücken, sondern ihn als vorübergehendes Gefühl und körperlichen Impuls zu beobachten.",
+        "contentSections": [
+          {
+            "title": "Vier Schritte",
+            "body": null,
+            "items": [
+              "Benenne es: „Gerade habe ich Rauchverlangen.“",
+              "Spüre es im Körper: wo merkst du den Drang – im Mund, Hals, Brustkorb, Magen oder woanders?",
+              "Beobachte die Veränderung: versuche nicht sofort, die Welle zu verändern. Sieh eine Weile zu, wie sie steigt und abklingt.",
+              "Bemerke das Ende: wenn der Drang nachlässt, erinnere dich, dass dieser Moment ohne Rauchen vorübergegangen ist."
+            ],
+            "numbered": true
+          }
+        ],
+        "keyTakeaways": [
+          "Das Ziel ist nicht, das Rauchverlangen zu mögen oder zu ignorieren; es ist, direkt zu erleben, dass es vorübergeht."
+        ]
+      },
+      {
+        "id": "b3-04",
+        "sectionId": "section-3",
+        "order": 4,
+        "title": "Die 4D-Methode (Delay - Deep breathe - Drink water - Distract)",
+        "summary": "Aufschieben • Tief atmen • Wasser trinken • Ablenken: wende in einem Krisenmoment vier einfache Schritte der Reihe nach an, um das automatische Rauchverhalten zu unterbrechen.",
+        "estimatedReadMinutes": 2,
+        "icon": "local_fire_department",
+        "intro": "Die 4D-Methode ist ein einfacher Krisenplan, mit dem du bei starkem Rauchverlangen ein paar Minuten Abstand schaffen und das automatische Verhalten unterbrechen kannst.",
+        "contentSections": [
+          {
+            "title": "Das Rauchverlangen in 4 Schritten bewältigen",
+            "body": null,
+            "items": [
+              "Aufschieben: Wenn das Rauchverlangen kommt, handle nicht sofort, sondern schiebe die Entscheidung zu rauchen um ein paar Minuten auf.",
+              "Tief atmen: Konzentriere dich darauf, die körperliche Anspannung mit langsamer, kontrollierter Atmung zu lösen.",
+              "Wasser trinken: Ein paar Schluck Wasser können eine einfache Pause dazwischen setzen und das automatische Rauchverhalten unterbrechen.",
+              "Ablenken: Wechsle den Ort, geh kurz spazieren, ruf jemanden an oder richte deine Gedanken auf etwas anderes."
+            ],
+            "numbered": true
+          }
+        ],
+        "keyTakeaways": [
+          "Das Ziel der 4D-Methode ist nicht, das Rauchverlangen sofort zu „zerstören“; es ist, Zeit zwischen die automatische Reaktion und die Zigarette zu legen, damit die Welle vorbeiziehen kann."
+        ]
+      },
+      {
+        "id": "b3-05",
+        "sectionId": "section-3",
+        "order": 5,
+        "title": "Plane, bevor der Auslöser kommt",
+        "summary": "Entscheide im Voraus mit einem „Wenn X passiert, mache ich Y“-Ansatz, wie du in schwierigen Momenten reagierst.",
+        "estimatedReadMinutes": 2,
+        "icon": "flag",
+        "intro": "In einem Krisenmoment Entscheidungen zu treffen, kann schwerfallen. Ein kurzer, vorbereiteter „Wenn – dann“-Plan kann automatisches Verhalten verringern.",
+        "contentSections": [
+          {
+            "title": "Beispiele",
+            "body": null,
+            "items": [
+              "Wenn ich zum Kaffee eine Zigarette will, trinke ich den Kaffee woanders.",
+              "Wenn mir jemand eine Zigarette anbietet, sage ich „Ich rauche nicht.“",
+              "Wenn ich aus einem stressigen Meeting komme, gehe ich zuerst ein paar Minuten spazieren."
+            ],
+            "numbered": false
+          },
+          {
+            "title": "Alkohol und soziale Situationen",
+            "body": "Wenn Alkohol oder soziale Situationen, in denen geraucht wird, dein Rauchverlangen verstärken, kann es vor allem in der frühen Phase helfen, Umgebung, Dauer oder Plan neu zu ordnen.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Den Plan im Voraus zu wählen, statt ihn in der Krise zu erfinden, bedeutet, in schwierigen Momenten weniger Entscheidungen treffen zu müssen."
+        ]
+      },
+      {
+        "id": "b3-06",
+        "sectionId": "section-3",
+        "order": 6,
+        "title": "Ein Ausrutscher und ein Rückfall sind nicht dasselbe",
+        "summary": "Verstehe den Unterschied zwischen einem kurzen Ausrutscher und der vollständigen Rückkehr zu deinem alten, regelmäßigen Rauchmuster.",
+        "estimatedReadMinutes": 2,
+        "icon": "lightbulb",
+        "intro": "Ein Ausrutscher meint einmaliges oder kurzfristiges Rauchen; ein Rückfall meint die Rückkehr zu deinem alten, regelmäßigen Konsum.",
+        "contentSections": [
+          {
+            "title": "Warum ist die Unterscheidung wichtig?",
+            "body": "Einen Ausrutscher als unwichtig zu behandeln, ist nicht richtig – er kann den alten Kreislauf wiederbeleben. Ihn aber als „jetzt habe ich völlig versagt“ zu deuten, kann auch das Risiko erhöhen, weiterzurauchen.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Balance",
+            "body": "Nimm den Ausrutscher ernst, aber sieh ihn nicht als Ende des ganzen Prozesses. Die wertvollste Information ist, welcher Auslöser in diesem Moment wirksam wurde.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Ein Ausrutscher ist ein Alarm, kein Urteil. Es ist möglich zu verstehen, was passiert ist, und wieder rauchfrei zu werden."
+        ]
+      },
+      {
+        "id": "b3-07",
+        "sectionId": "section-3",
+        "order": 7,
+        "title": "Die Falle „Ein Fehler hat alles ruiniert“",
+        "summary": "Erkenne, warum der Gedanke „es ist sowieso vorbei“, der nach einem Ausrutscher kommen kann, die zweite und dritte Zigarette leichter machen kann.",
+        "estimatedReadMinutes": 2,
+        "icon": "local_fire_department",
+        "intro": "Nach einer gerauchten Zigarette können Gedanken kommen wie „Ich habe keinen Willen“, „Ich habe es sowieso vermasselt“ oder „Heute rauche ich, morgen fange ich neu an“.",
+        "contentSections": [
+          {
+            "title": "Das eigentliche Risiko",
+            "body": "Den ganzen Prozess nach einem einzelnen Ausrutscher als verloren zu behandeln, kann es leichter machen, weiterzurauchen. Deshalb ist es wichtig, einen Fehler schnell zu analysieren, statt ihn aufzublähen.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Drei Fragen",
+            "body": null,
+            "items": [
+              "Was ist passiert?",
+              "Welcher Auslöser ist wirksam geworden?",
+              "Was werde ich beim nächsten Mal in derselben Situation tun?"
+            ],
+            "numbered": false
+          },
+          {
+            "title": "Daten statt Urteil",
+            "body": "Das Ziel ist nicht, das Geschehene zu normalisieren; es ist, daraus Information zu machen, mit der du einen stärkeren Plan baust, wenn dasselbe Szenario sich wiederholt.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Der Gedanke „alles ist vorbei“ ist nicht die Realität selbst – er ist eine mentale Reaktion, die einen Ausrutscher in einen Rückfall verwandeln kann."
+        ]
+      },
+      {
+        "id": "b3-08",
+        "sectionId": "section-3",
+        "order": 8,
+        "title": "Erholungsplan nach einem Ausrutscher",
+        "summary": "Wenn du einen Ausrutscher hast, stoppe, bevor er weitergeht, analysiere den Auslöser, aktualisiere deinen Plan und kehre zum rauchfreien Leben zurück.",
+        "estimatedReadMinutes": 2,
+        "icon": "flag",
+        "intro": "Die ersten Schritte nach einem Ausrutscher sind wichtig, damit das Ereignis nicht wieder zu regelmäßigem Konsum wird.",
+        "contentSections": [
+          {
+            "title": "Schritte zur Erholung",
+            "body": null,
+            "items": [
+              "Mach nicht weiter: geh nicht zur zweiten Zigarette über, indem du dir sagst „es ist sowieso vorbei.“",
+              "Schreib es auf: wo warst du, mit wem, und in welchem Gefühl?",
+              "Benenne den Auslöser: war es Stress, Alkohol, sozialer Druck, fehlender Plan oder eine starke Gewohnheit?",
+              "Aktualisiere deinen Plan: entscheide, welches neue Verhalten du nutzt, wenn dasselbe Szenario sich wiederholt.",
+              "Unterstützung erwägen: wenn Rauchverlangen oder Entzug zu stark sind, um sie allein zu bewältigen, können eine medizinische Fachkraft oder Unterstützung beim Rauchstopp in Betracht kommen.",
+              "Kehr zurück: werde so bald wie möglich wieder rauchfrei."
+            ],
+            "numbered": true
+          }
+        ],
+        "keyTakeaways": [
+          "Der wichtigste Schritt nach einem Ausrutscher ist, ihn zu stoppen statt ihn fortzusetzen, und deinen Plan zu stärken."
+        ]
+      },
+      {
+        "id": "b3-09",
+        "sectionId": "section-3",
+        "order": 9,
+        "title": "Erstelle deinen eigenen Krisenplan",
+        "summary": "Lege im Voraus deine stärksten Auslöser fest, die erste Methode, die du anwendest, und an wen du dich bei Bedarf wendest.",
+        "estimatedReadMinutes": 2,
+        "icon": "flag",
+        "intro": "Ein Krisenplan gibt dir eine fertige Landkarte, statt in einem schwierigen Moment von vorn denken zu müssen.",
+        "contentSections": [
+          {
+            "title": "Fülle deinen Plan aus",
+            "body": null,
+            "items": [
+              "Meine drei stärksten Auslöser: ________",
+              "Der erste Schritt, den ich bei Rauchverlangen gehe: ________",
+              "Eine Option, um den Ort zu wechseln: ________",
+              "Jemand, den ich anrufen oder anschreiben kann: ________",
+              "Der Satz, an den ich mich erinnere: ________"
+            ],
+            "numbered": false
+          },
+          {
+            "title": "Halte ihn kurz",
+            "body": "Je einfacher und erreichbarer dein Plan ist, desto höher ist die Chance, dass du ihn in einer Krise wirklich nutzt.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Ein Krisenplan löscht das Rauchverlangen nicht im Voraus; er macht klar, was du tun wirst, wenn es kommt."
+        ]
+      },
+      {
+        "id": "b3-10",
+        "sectionId": "section-3",
+        "order": 10,
+        "title": "Überprüfe deinen Verlauf regelmäßig",
+        "summary": "Schätze ein, welche Auslöser schwächer geworden sind, welche noch da sind und welche Methode für dich besser wirkt.",
+        "estimatedReadMinutes": 2,
+        "icon": "loop",
+        "intro": "Während du rauchfrei bleibst, muss dieselbe Strategie nicht in jeder Situation gleich gut funktionieren. Es ist normal, den Plan von Zeit zu Zeit zu aktualisieren.",
+        "contentSections": [
+          {
+            "title": "Frage dich selbst",
+            "body": null,
+            "items": [
+              "Welche Auslöser bewältige ich inzwischen ruhiger?",
+              "In welchen Situationen ist das Rauchverlangen noch stark?",
+              "Welche Methode wirkt bei mir am besten?",
+              "Wenn ich einen Ausrutscher habe, was tue ich in den ersten Minuten?"
+            ],
+            "numbered": false
+          },
+          {
+            "title": "Kenne deine Unterstützungsgrenze",
+            "body": "Es hilft, im Voraus zu wissen, an wen du dich für professionelle Unterstützung wendest, wenn du Dinge allein nicht mehr gut bewältigen kannst.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Erinnere dich an deinen Grund",
+            "body": "Erinnere dich von Zeit zu Zeit an deinen stärksten persönlichen Grund, ein rauchfreies Leben weiterzuführen.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Ein guter Plan muss nicht feststehen; er kann sich mit deiner Erfahrung weiterentwickeln."
+        ]
+      },
+      {
+        "id": "b3-11",
+        "sectionId": "section-3",
+        "order": 11,
+        "title": "Kapitelzusammenfassung",
+        "summary": "Sammle Rauchverlangen, die 4D-Methode, die Planung für Auslöser und den Umgang mit Ausrutscher und Rückfall an einem Ort.",
+        "estimatedReadMinutes": 1,
+        "icon": "flag",
+        "intro": "Rauchverlangen ist kein Befehl. Es kann als vorübergehender Drang auftreten, stärker werden und dann abklingen.",
+        "contentSections": [
+          {
+            "title": "Im Hinterkopf behalten",
+            "body": "Das Rauchverlangen wahrzunehmen, mit dem Surfen auf dem Rauchverlangen oder der 4D-Methode zu arbeiten, einen Plan für Auslöser im Voraus vorzubereiten und einen möglichen Ausrutscher nicht zum Gedanken „alles ist vorbei“ werden zu lassen, kann helfen, deine Rauchfreiheit zu schützen.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Die zentralen Fragen",
+            "body": null,
+            "items": [
+              "Was ist passiert?",
+              "Welcher Auslöser ist wirksam geworden?",
+              "Was werde ich beim nächsten Mal tun?"
+            ],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Das Rauchverlangen geht vorbei, der Plan wird stärker. Das Ziel ist nicht, jeden schwierigen Moment perfekt zu bestehen; es ist zu lernen, wie du wieder rauchfrei wirst und es bleibst."
+        ]
+      }
+    ]
+  }
+]

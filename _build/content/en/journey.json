@@ -1,0 +1,108 @@
+[
+  {
+    "level": 1,
+    "title": "Decision",
+    "dayLabel": "Day 0",
+    "minDays": 0,
+    "requiresPremium": false,
+    "developments": "With your decision to quit smoking, your body's healing process begins. You may not feel physical changes yet, but the biggest step has been taken. From here, your body will start clearing nicotine and work more healthily with each passing day.",
+    "attentionPoints": [
+      "Remove all cigarettes, lighters, and ashtrays from your environment.",
+      "Approach quitting not as a farewell or loss, but as a celebration of reclaiming your freedom.",
+      "Try to drink plenty of water in the first few days."
+    ],
+    "traps": [
+      "I'll have one last cigarette.",
+      "I'll quit tomorrow.",
+      "One won't hurt."
+    ]
+  },
+  {
+    "level": 2,
+    "title": "Detox",
+    "dayLabel": "Days 1–3",
+    "minDays": 1,
+    "requiresPremium": false,
+    "developments": "Nicotine and carbon monoxide begin to drop quickly. You may notice early improvements in taste and smell. Your body is working hard to clear the addictive substance.",
+    "attentionPoints": [
+      "Increase your water intake.",
+      "Take light walks.",
+      "Use breathing exercises during craving moments."
+    ],
+    "traps": [
+      "Mistaking irritability and restlessness for a need for cigarettes.",
+      "Thinking cravings will last forever.",
+      "The idea of having one puff and stopping."
+    ]
+  },
+  {
+    "level": 3,
+    "title": "First Victory",
+    "dayLabel": "Days 3–7",
+    "minDays": 3,
+    "requiresPremium": true
+  },
+  {
+    "level": 4,
+    "title": "Fresh Start",
+    "dayLabel": "1 Week",
+    "minDays": 7,
+    "requiresPremium": true
+  },
+  {
+    "level": 5,
+    "title": "Resilience",
+    "dayLabel": "2 Weeks",
+    "minDays": 14,
+    "requiresPremium": true
+  },
+  {
+    "level": 6,
+    "title": "Breaking the Habit",
+    "dayLabel": "1 Month",
+    "minDays": 30,
+    "requiresPremium": true
+  },
+  {
+    "level": 7,
+    "title": "Breathing Again",
+    "dayLabel": "3 Months",
+    "minDays": 90,
+    "requiresPremium": true
+  },
+  {
+    "level": 8,
+    "title": "Growing Stronger",
+    "dayLabel": "6 Months",
+    "minDays": 180,
+    "requiresPremium": true
+  },
+  {
+    "level": 9,
+    "title": "New Identity",
+    "dayLabel": "1 Year",
+    "minDays": 365,
+    "requiresPremium": true
+  },
+  {
+    "level": 10,
+    "title": "Lasting Change",
+    "dayLabel": "5 Years",
+    "minDays": 1825,
+    "requiresPremium": true
+  },
+  {
+    "level": 11,
+    "title": "Major Transformation",
+    "dayLabel": "10 Years",
+    "minDays": 3650,
+    "requiresPremium": true
+  },
+  {
+    "level": 12,
+    "title": "Freedom",
+    "dayLabel": "15 Years",
+    "minDays": 5475,
+    "requiresPremium": true
+  }
+]

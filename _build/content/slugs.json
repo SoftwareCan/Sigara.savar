@@ -1,0 +1,41 @@
+{
+  "_comment": "Kalıcı URL'ler. Uygulamadaki başlık değişse bile bu eşleme değişmemeli; yeni yazı eklenirse buraya yeni satır ekleyin.",
+  "tr": {
+    "sections": {
+      "section-1": "hazirlik-ve-ilk-gunler",
+      "section-2": "kalici-degisim",
+      "section-3": "istek-ve-nuks"
+    },
+    "articles": {
+      "b1-01": "bagimlilik-nedir",
+      "b1-02": "neden-sigara-iciyorsun",
+      "b1-03": "sigarayi-birakmanin-kazanimlari",
+      "b1-04": "birakmaya-hazirlik-ve-plan",
+      "b1-05": "tetikleyici-haritasi",
+      "b1-06": "destek-secenekleri",
+      "b1-07": "birakma-gunu",
+      "b1-08": "nikotin-yoksunlugu",
+      "b1-09": "hazirlik-ve-ilk-gunler-ozet",
+      "b2-01": "nikotin-gitti-istek-neden-surer",
+      "b2-02": "tetikleyicilerini-yeniden-yaz",
+      "b2-03": "sigara-dusuncelerini-yeniden-degerlendir",
+      "b2-04": "sigaranin-biraktigi-bosluk",
+      "b2-05": "dogal-odulleri-guclendir",
+      "b2-06": "ben-sigara-kullanmiyorum",
+      "b2-07": "artik-kontrol-edebilirim-dusuncesi",
+      "b2-08": "sigarasiz-yasam-kontrol-listesi",
+      "b2-09": "kalici-degisim-ozet",
+      "b3-01": "sigara-istegi-nedir",
+      "b3-02": "istek-dalgasi",
+      "b3-03": "istek-dalgasini-izleme",
+      "b3-04": "4d-yontemi",
+      "b3-05": "eger-o-zaman-plani",
+      "b3-06": "kayma-ve-nuks-farki",
+      "b3-07": "bir-hata-her-seyi-bozdu-tuzagi",
+      "b3-08": "kayma-sonrasi-toparlanma",
+      "b3-09": "kriz-plani-olustur",
+      "b3-10": "sureci-gozden-gecir",
+      "b3-11": "istek-ve-nuks-ozet"
+    }
+  }
+}

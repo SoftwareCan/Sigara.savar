@@ -1,0 +1,108 @@
+[
+  {
+    "level": 1,
+    "title": "Entscheidung",
+    "dayLabel": "Tag 0",
+    "minDays": 0,
+    "requiresPremium": false,
+    "developments": "Mit deiner Entscheidung, mit dem Rauchen aufzuhören, beginnt der Heilungsprozess deines Körpers. Du spürst vielleicht noch keine körperlichen Veränderungen, aber der wichtigste Schritt ist getan. Von hier an beginnt dein Körper, Nikotin auszuscheiden, und arbeitet mit jedem Tag gesünder.",
+    "attentionPoints": [
+      "Entferne alle Zigaretten, Feuerzeuge und Aschenbecher aus deiner Umgebung.",
+      "Sieh das Aufhören nicht als Abschied oder Verlust, sondern als Feier, deine Freiheit zurückzugewinnen.",
+      "Versuche, in den ersten Tagen viel Wasser zu trinken."
+    ],
+    "traps": [
+      "Ich rauche noch eine letzte Zigarette.",
+      "Morgen höre ich auf.",
+      "Eine wird nicht schaden."
+    ]
+  },
+  {
+    "level": 2,
+    "title": "Entgiftung",
+    "dayLabel": "Tage 1–3",
+    "minDays": 1,
+    "requiresPremium": false,
+    "developments": "Nikotin und Kohlenmonoxid beginnen schnell zu sinken. Du merkst vielleicht erste Verbesserungen bei Geschmack und Geruch. Dein Körper arbeitet hart daran, den Suchtstoff auszuscheiden.",
+    "attentionPoints": [
+      "Erhöhe deine Wasseraufnahme.",
+      "Mach leichte Spaziergänge.",
+      "Nutze Atemübungen in Momenten mit Rauchverlangen."
+    ],
+    "traps": [
+      "Reizbarkeit und Unruhe mit dem Bedürfnis nach einer Zigarette verwechseln.",
+      "Denken, das Rauchverlangen dauere ewig.",
+      "Die Idee, nur einmal zu ziehen und dann aufzuhören."
+    ]
+  },
+  {
+    "level": 3,
+    "title": "Erster Sieg",
+    "dayLabel": "Tage 3–7",
+    "minDays": 3,
+    "requiresPremium": true
+  },
+  {
+    "level": 4,
+    "title": "Neuanfang",
+    "dayLabel": "1 Woche",
+    "minDays": 7,
+    "requiresPremium": true
+  },
+  {
+    "level": 5,
+    "title": "Widerstandskraft",
+    "dayLabel": "2 Wochen",
+    "minDays": 14,
+    "requiresPremium": true
+  },
+  {
+    "level": 6,
+    "title": "Gewohnheit durchbrechen",
+    "dayLabel": "1 Monat",
+    "minDays": 30,
+    "requiresPremium": true
+  },
+  {
+    "level": 7,
+    "title": "Wieder atmen",
+    "dayLabel": "3 Monate",
+    "minDays": 90,
+    "requiresPremium": true
+  },
+  {
+    "level": 8,
+    "title": "Stärker werden",
+    "dayLabel": "6 Monate",
+    "minDays": 180,
+    "requiresPremium": true
+  },
+  {
+    "level": 9,
+    "title": "Neue Identität",
+    "dayLabel": "1 Jahr",
+    "minDays": 365,
+    "requiresPremium": true
+  },
+  {
+    "level": 10,
+    "title": "Dauerhafte Veränderung",
+    "dayLabel": "5 Jahre",
+    "minDays": 1825,
+    "requiresPremium": true
+  },
+  {
+    "level": 11,
+    "title": "Großer Wandel",
+    "dayLabel": "10 Jahre",
+    "minDays": 3650,
+    "requiresPremium": true
+  },
+  {
+    "level": 12,
+    "title": "Freiheit",
+    "dayLabel": "15 Jahre",
+    "minDays": 5475,
+    "requiresPremium": true
+  }
+]

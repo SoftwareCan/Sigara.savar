@@ -1,0 +1,184 @@
+[
+  {
+    "duration": "3 minutes",
+    "targetMinutes": 3,
+    "summary": "Your autonomic nervous system begins moving beyond smoke stimulation.",
+    "detail": "Acute blood-vessel constriction caused by tobacco smoke begins to pause.\n\nAutonomic balance starts without a new smoke-induced stress signal.\n\nHot-smoke irritation in your airways comes to an end.",
+    "motivation": "You took the first step; your recovery marathon has begun."
+  },
+  {
+    "duration": "10 minutes",
+    "targetMinutes": 10,
+    "summary": "Blood vessels relax and cleaner blood begins reaching your tissues.",
+    "detail": "Sudden nicotine-related blood-vessel constriction begins to ease.\n\nCirculation in your hands and feet improves as peripheral vessels relax.\n\nBlood richer in oxygen begins to reach your tissues.",
+    "motivation": "Your circulation relaxes with every smoke-free minute."
+  },
+  {
+    "duration": "20 minutes",
+    "targetMinutes": 20,
+    "summary": "Blood pressure and pulse move toward healthier levels.",
+    "detail": "Your pulse and blood pressure begin returning toward normal.\n\nMicrocirculation in your fingers and toes improves, helping them feel warmer.\n\nThe immediate strain on your cardiovascular system decreases.",
+    "motivation": "Your heart is returning to its natural rhythm."
+  },
+  {
+    "duration": "30 minutes",
+    "targetMinutes": 30,
+    "summary": "The excessive pumping load on your heart decreases.",
+    "detail": "Circulating stress hormones begin to fall.\n\nYour heart muscle adapts to working more efficiently and with less strain.\n\nYou move through the first wave of acute nicotine cravings.",
+    "motivation": "You are continuing to protect your heart."
+  },
+  {
+    "duration": "1 hour",
+    "targetMinutes": 60,
+    "summary": "Acute nicotine stimulation ends and circulation begins to balance.",
+    "detail": "Nicotine concentration in your blood enters its first clear downward trend.\n\nPeripheral blood-vessel flexibility begins returning toward normal.\n\nAt the cellular level, oxygen shortage gives way to stabilization.",
+    "motivation": "You have been completely smoke-free for a full hour."
+  },
+  {
+    "duration": "2 hours",
+    "targetMinutes": 120,
+    "summary": "Your circulatory system works more efficiently and rhythmically.",
+    "detail": "The nicotine level in your blood falls to roughly half.\n\nYour heart rate settles into a steadier resting rhythm.\n\nWarmth in your hands and feet becomes more noticeable.",
+    "motivation": "Your blood is flowing more cleanly and your body is gaining strength."
+  },
+  {
+    "duration": "4 hours",
+    "targetMinutes": 240,
+    "summary": "Your body begins adapting to a nicotine-free environment.",
+    "detail": "Nicotine concentration in your blood continues to fall quickly.\n\nYour brain seeks its own balance without chemical stimulation.\n\nBreathing deepens, carrying air farther into the lower lungs.",
+    "motivation": "Your determination is renewing your body from within."
+  },
+  {
+    "duration": "6 hours",
+    "targetMinutes": 360,
+    "summary": "Much of the smoke-related chemicals leave your body.",
+    "detail": "A large share of nicotine in your blood is metabolized and cleared.\n\nFree-radical pressure on your heart and blood-vessel walls begins to ease.\n\nRepair starts where smoke dried and irritated your airways.",
+    "motivation": "Your body is clearing harmful substances one by one."
+  },
+  {
+    "duration": "8 hours",
+    "targetMinutes": 480,
+    "summary": "Toxic carbon monoxide in your blood drops by about half.",
+    "detail": "Carbon monoxide levels fall to roughly half.\n\nRed blood cells move closer to their normal oxygen-carrying capacity.\n\nMore usable oxygen reaches your tissues and brain.",
+    "motivation": "Your cells are taking a deeper breath with more oxygen."
+  },
+  {
+    "duration": "12 hours",
+    "targetMinutes": 720,
+    "summary": "Carbon monoxide clears and blood oxygen returns to normal.",
+    "detail": "Carbon monoxide in your blood returns to the nonsmoker range.\n\nRed blood cells carry oxygen to tissues more efficiently again.\n\nOxygen delivery to your brain, heart muscle, and other organs recovers.",
+    "motivation": "In 12 hours, your blood is cleaner and oxygen is balanced again."
+  },
+  {
+    "duration": "24 hours",
+    "targetMinutes": 1440,
+    "summary": "Your heart attack risk begins a measurable decline.",
+    "detail": "Circulating nicotine falls substantially.\n\nConstriction in the coronary arteries eases and heart attack risk begins to drop.\n\nYour lungs prepare to expel early accumulated waste through the cough reflex.",
+    "motivation": "You passed 24 hours and began protecting your heart."
+  },
+  {
+    "duration": "36 hours",
+    "targetMinutes": 2160,
+    "summary": "Harmful chemical waste in your tissues is largely cleared.",
+    "detail": "As carbon monoxide clearance completes, cellular oxygenation stabilizes.\n\nShort-lived harmful compounds taken in with smoke continue leaving your body.\n\nYour respiratory and circulatory systems strengthen their smoke-free rhythm.",
+    "motivation": "Your body is building a cleaner balance every hour."
+  },
+  {
+    "duration": "48 hours",
+    "targetMinutes": 2880,
+    "summary": "Damaged nerve endings renew as taste and smell improve.",
+    "detail": "Nerve endings involved in taste and smell begin to renew.\n\nHealing sensory nerves stimulate your brain’s perception of taste and smell again.\n\nFood flavors and surrounding scents can feel clearer and more vivid.",
+    "motivation": "Your senses of taste and smell are reconnecting you with life."
+  },
+  {
+    "duration": "72 hours (3 days)",
+    "targetMinutes": 4320,
+    "summary": "Nicotine clears and your bronchial tubes relax.",
+    "detail": "Most nicotine and its metabolic waste have cleared from your body.\n\nMuscles in the windpipe and bronchial tubes relax, increasing airflow.\n\nPhysical withdrawal peaks and then begins to break.",
+    "motivation": "Your body is free of nicotine and your breath is freer."
+  },
+  {
+    "duration": "96 hours (4 days)",
+    "targetMinutes": 5760,
+    "summary": "Nerve repair accelerates and ciliary clearing begins.",
+    "detail": "Physical nicotine withdrawal begins easing after its peak.\n\nNeural renewal in taste buds and smell receptors deepens.\n\nTiny airway hairs called cilia become active and start moving accumulated mucus.",
+    "motivation": "Welcome back to a richer world of flavors and scents."
+  },
+  {
+    "duration": "120 hours (5 days)",
+    "targetMinutes": 7200,
+    "summary": "Cellular toxin markers fall and energy rises.",
+    "detail": "Some biomarkers of smoke exposure continue to decline.\n\nAs oxygen use stabilizes, everyday energy may improve.\n\nPhysical withdrawal symptoms become more manageable for many people.",
+    "motivation": "For five days, you have given every cell a cleaner future."
+  },
+  {
+    "duration": "144 hours (6 days)",
+    "targetMinutes": 8640,
+    "summary": "Mental focus improves and craving waves become shorter.",
+    "detail": "Your brain continues adapting to functioning without nicotine.\n\nStrong craving waves may feel shorter and less frequent.\n\nSleep, attention, and energy continue to recover at a pace unique to you.",
+    "motivation": "You are managing the cravings; your mind is freer each day."
+  },
+  {
+    "duration": "1 week",
+    "targetMinutes": 10080,
+    "summary": "Circulation and psychological adaptation become steadier.",
+    "detail": "Your circulatory system works more steadily in its smoke-free rhythm.\n\nPhysical withdrawal symptoms become noticeably milder for many people.\n\nNew routines support adaptation and confidence in staying smoke-free.",
+    "motivation": "A week of effort has laid the foundation of your new routine."
+  },
+  {
+    "duration": "2 weeks",
+    "targetMinutes": 20160,
+    "summary": "Circulation strengthens and physical endurance improves.",
+    "detail": "Circulation and tissue nourishment throughout your body improve noticeably.\n\nBreathlessness while walking, climbing stairs, or exercising decreases.\n\nLung function begins to improve.",
+    "motivation": "Your steps are stronger and your endurance grows every day."
+  },
+  {
+    "duration": "1 month",
+    "targetMinutes": 43200,
+    "summary": "Cough and mucus ease as lung cilia regenerate.",
+    "detail": "Cilia in your lungs become active again and move mucus and particles out.\n\nCoughing, mucus, and shortness of breath may begin to decrease.\n\nYour airways’ natural clearing capacity strengthens.",
+    "motivation": "Your lungs are clearing themselves better with every breath."
+  },
+  {
+    "duration": "3 months",
+    "targetMinutes": 129600,
+    "summary": "Lung function improves and shortness of breath falls noticeably.",
+    "detail": "Lung function and circulation continue to improve.\n\nBreath control becomes easier during daily movement and tasks.\n\nCoughing episodes and early fatigue may continue to decrease.",
+    "motivation": "In three months, your freedom to breathe and move has grown."
+  },
+  {
+    "duration": "6 months",
+    "targetMinutes": 259200,
+    "summary": "Airway inflammation clears and immune defenses strengthen.",
+    "detail": "Chronic airway inflammation and irritation decline substantially.\n\nYour lungs clear mucus and foreign material more easily.\n\nPsychological links that once drove smoking during stress grow weaker.",
+    "motivation": "Half a year is behind you, and your defenses stand stronger."
+  },
+  {
+    "duration": "1 year",
+    "targetMinutes": 525600,
+    "summary": "Coronary heart disease and heart attack risk fall by about half.",
+    "detail": "Coronary heart disease risk falls to about half that of someone who continues smoking.\n\nHeart attack risk continues to decline substantially.\n\nYour circulation and blood-vessel lining keep repairing.",
+    "motivation": "In one year, you made a life-changing difference for your heart."
+  },
+  {
+    "duration": "5 years",
+    "targetMinutes": 2628000,
+    "summary": "Stroke and several cancer risks fall by about half.",
+    "detail": "Stroke risk falls substantially compared with continuing to smoke.\n\nRisks linked to cancers of the mouth, throat, esophagus, and bladder fall by about half.\n\nThe clotting and narrowing burden on your blood vessels keeps declining.",
+    "motivation": "Five years of freedom have powerfully reduced your long-term risks."
+  },
+  {
+    "duration": "10 years",
+    "targetMinutes": 5256000,
+    "summary": "The risk of dying from lung cancer falls by about half.",
+    "detail": "The risk of dying from lung cancer falls to about half that of someone who keeps smoking.\n\nRisks for cancers such as those of the mouth, larynx, and pancreas keep falling.\n\nLung tissue and cellular repair mechanisms continue recovering.",
+    "motivation": "Ten years of determination have rewritten your body’s future."
+  },
+  {
+    "duration": "15 years",
+    "targetMinutes": 7884000,
+    "summary": "Heart and vascular disease risk matches that of a nonsmoker.",
+    "detail": "Coronary heart disease risk approaches that of a person who never smoked.\n\nYour cardiovascular and respiratory systems carry the gains of years of repair.\n\nMost cellular and organ-level traces of tobacco use have substantially receded.",
+    "motivation": "Your body is renewed; it resembles that of someone who never smoked."
+  }
+]

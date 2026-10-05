@@ -1,0 +1,14 @@
+{
+  "name": "sigarasavar-site-build",
+  "private": true,
+  "type": "module",
+  "description": "Build tooling for www.sigarasavar.com. The site build itself has no dependencies.",
+  "scripts": {
+    "sync": "node sync-flutter-content.mjs ../../Sigara_Savar/quitSmoke",
+    "build": "node build.mjs",
+    "og": "node og/generate.mjs"
+  },
+  "devDependencies": {
+    "playwright-core": "^1.55.0"
+  }
+}

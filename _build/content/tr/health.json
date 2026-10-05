@@ -1,0 +1,184 @@
+[
+  {
+    "duration": "3 dakika",
+    "targetMinutes": 3,
+    "summary": "Sinir sistemi duman uyarımından ayrılmaya başlar.",
+    "detail": "Tütün dumanının yol açtığı akut damar büzüşmesi duraklama evresine girer.\n\nKalbe giden ilk stressiz kan akışı uyarısıyla otonom denge başlar.\n\nSolunum yollarındaki sıcak duman tahrişi sona erer.",
+    "motivation": "İlk adımı attın, iyileşme maratonu başladı."
+  },
+  {
+    "duration": "10 dakika",
+    "targetMinutes": 10,
+    "summary": "Damarlar gevşer, temiz kan akışı başlar.",
+    "detail": "Nikotin kaynaklı ani damar büzüşmesi hafiflemeye başlar.\n\nPeriferik damarlar gevşedikçe el ve ayaklardaki dolaşım rahatlar.\n\nDokulara oksijen açısından daha zengin kan ulaşmaya başlar.",
+    "motivation": "Dolaşımın her dumansız dakikada rahatlıyor."
+  },
+  {
+    "duration": "20 dakika",
+    "targetMinutes": 20,
+    "summary": "Kan basıncı ve nabız sağlıklı seviyelere geriler.",
+    "detail": "Nabız ve kan basıncı normale dönmeye başlar.\n\nEl ve ayak parmaklarındaki mikrodolaşım iyileşerek uzuv sıcaklıkları yükselir.\n\nKardiyovasküler sistem üzerindeki anlık baskı azalır.",
+    "motivation": "Kalbin normallik ritmine geri dönüyor."
+  },
+  {
+    "duration": "30 dakika",
+    "targetMinutes": 30,
+    "summary": "Kalbin üzerindeki pompalama yükü azalır.",
+    "detail": "Dolaşımdaki stres hormonları gerilemeye başlar.\n\nKalp kası daha verimli ve yorulmadan çalışmaya adapte olur.\n\nAkut nikotin krizlerinin ilk dalgası zihinsel olarak geçiştirilir.",
+    "motivation": "Kalbini korumaya devam ediyorsun."
+  },
+  {
+    "duration": "1 saat",
+    "targetMinutes": 60,
+    "summary": "Kan dolaşımı dengelenir.",
+    "detail": "Kandaki nikotin yoğunluğu ilk belirgin düşüş trendine girer.\n\nPeriferik kan damarlarının esnekliği normale dönmeye başlar.\n\nHücresel düzeyde oksijen açlığı yerini dengelenmeye bırakır.",
+    "motivation": "Tam 1 saattir tamamen dumansız ve özgürsün."
+  },
+  {
+    "duration": "2 saat",
+    "targetMinutes": 120,
+    "summary": "Dolaşım sistemi daha verimli ve ritmik çalışır.",
+    "detail": "Kandaki nikotin oranı yaklaşık yarı seviyesine geriler.\n\nKalp hızı daha stabil bir dinlenme ritmine ulaşır.\n\nEl ve ayak uçlarındaki ısınma belirginleşir.",
+    "motivation": "Kanın daha temiz akıyor, bedenin güç kazanıyor."
+  },
+  {
+    "duration": "4 saat",
+    "targetMinutes": 240,
+    "summary": "Vücut nikotinsiz ortama uyum sağlamaya başlar.",
+    "detail": "Kandaki nikotin konsantrasyonu hızla düşmeye devam eder.\n\nBeyin, kimyasal uyarım olmadan kendi dengesini aramaya başlar.\n\nSolunum derinleşerek akciğerlerin taban kısımlarına hava ulaşır.",
+    "motivation": "Kararlılığın bedenini baştan aşağı yeniliyor."
+  },
+  {
+    "duration": "6 saat",
+    "targetMinutes": 360,
+    "summary": "Duman kimyasallarının büyük kısmı vücuttan atılır.",
+    "detail": "Kandaki nikotinin büyük bir kısmı metabolize edilir ve temizlenir.\n\nKalp ve damar duvarlarındaki serbest radikal baskısı hafifler.\n\nSolunum yollarında dumanın yarattığı kuruluğun onarımı başlar.",
+    "motivation": "Vücudun zehirli maddeleri birer birer dışarı atıyor."
+  },
+  {
+    "duration": "8 saat",
+    "targetMinutes": 480,
+    "summary": "Kandaki toksik karbonmonoksit yarı yarıya düşer.",
+    "detail": "Karbonmonoksit gazı seviyesi yaklaşık yarı seviyesine geriler.\n\nAlyuvarların oksijen taşıma kapasitesi normale yaklaşır.\n\nDokulara ve beyne giden net oksijen miktarı artar.",
+    "motivation": "Hücrelerin daha bol oksijenle derin bir nefes alıyor."
+  },
+  {
+    "duration": "12 saat",
+    "targetMinutes": 720,
+    "summary": "Karbonmonoksit tamamen temizlenir, oksijen normale döner.",
+    "detail": "Kandaki karbonmonoksit seviyesi sigara içmeyen aralığına döner.\n\nAlyuvarlar oksijeni dokulara yeniden daha verimli taşır.\n\nBeyin, kalp kası ve diğer organların oksijenlenmesi toparlanır.",
+    "motivation": "12 saatte kanın temizlendi, oksijenin yeniden dengede."
+  },
+  {
+    "duration": "24 saat",
+    "targetMinutes": 1440,
+    "summary": "Kalp krizi geçirme riski somut şekilde azalmaya başlar.",
+    "detail": "Dolaşımdaki nikotin seviyesi belirgin biçimde azalır.\n\nKoroner arterlerdeki kasılmalar geriler, kalp krizi riski düşmeye başlar.\n\nAkciğerler biriken ilk atıkları öksürük refleksiyle dışarı atmaya hazırlanır.",
+    "motivation": "İlk 24 saati devirdin, kalbini koruma altına aldın."
+  },
+  {
+    "duration": "36 saat",
+    "targetMinutes": 2160,
+    "summary": "Dokulardaki zararlı kimyasal atıklar büyük ölçüde temizlenir.",
+    "detail": "Karbonmonoksit temizliği tamamlandıkça hücrelerin oksijenlenmesi dengelenir.\n\nDumanla alınan kısa ömürlü zararlı bileşiklerin atılımı sürer.\n\nSolunum ve dolaşım sistemi dumansız düzene uyumunu güçlendirir.",
+    "motivation": "Bedenin her saat daha temiz bir denge kuruyor."
+  },
+  {
+    "duration": "48 saat",
+    "targetMinutes": 2880,
+    "summary": "Hasar gören sinir uçları yenilenir, tat ve koku gelişir.",
+    "detail": "Koku ve tat alma duyularını yöneten yıpranmış sinir uçları yenilenmeye başlar.\n\nDuyu sinirlerindeki iyileşme beynin tat ve koku algısını yeniden uyarır.\n\nYiyeceklerin tadı ve çevredeki kokular daha canlı ve net algılanır.",
+    "motivation": "Tat ve koku alma duyun hayata yeniden bağlanıyor."
+  },
+  {
+    "duration": "72 saat (3 gün)",
+    "targetMinutes": 4320,
+    "summary": "Nikotin tamamen temizlenir, bronşlar gevşer.",
+    "detail": "Nikotin ve metabolit atıklarının büyük bölümü vücuttan temizlenmiş olur.\n\nSoluk borusu ve bronşiyal tüplerdeki kaslar gevşeyerek hava kapasitesi artar.\n\nFiziksel yoksunluk krizleri tepe noktasına ulaşıp ardından kırılmaya başlar.",
+    "motivation": "Vücudun nikotinden arındı, nefesin artık özgür!"
+  },
+  {
+    "duration": "96 saat (4 gün)",
+    "targetMinutes": 5760,
+    "summary": "Sinir ucu onarımı hızlanır, siliyer temizlik başlar.",
+    "detail": "Fiziksel nikotin krizleri tepe noktasını geride bırakarak hafifler.\n\nTat tomurcukları ve koku reseptörlerindeki nöronal yenilenme derinleşir.\n\nSolunum yolundaki titrek tüyler, biriken mukusu temizlemek üzere harekete geçer.",
+    "motivation": "Lezzetlerin ve kokuların dünyasına hoş geldin."
+  },
+  {
+    "duration": "120 saat (5 gün)",
+    "targetMinutes": 7200,
+    "summary": "Hücresel toksin seviyesi düşer, enerji yükselir.",
+    "detail": "Duman maruziyetini gösteren bazı biyobelirteçler düşmeye devam eder.\n\nOksijen kullanımının dengelenmesiyle günlük enerji hissi artabilir.\n\nYoksunluğun fiziksel belirtileri birçok kişide daha yönetilebilir hale gelir.",
+    "motivation": "Beş gündür her hücrene daha temiz bir gelecek veriyorsun."
+  },
+  {
+    "duration": "144 saat (6 gün)",
+    "targetMinutes": 8640,
+    "summary": "Zihinsel odaklanma artar, kriz süreleri kısalır.",
+    "detail": "Beynin nikotinsiz işleyişe uyumu ilerler.\n\nYoğun sigara isteği dalgaları daha kısa ve seyrek hissedilebilir.\n\nUyku, dikkat ve enerji düzeni kişiden kişiye değişmekle birlikte toparlanmayı sürdürür.",
+    "motivation": "Krizleri sen yönetiyorsun; zihnin her gün daha özgür."
+  },
+  {
+    "duration": "1 hafta",
+    "targetMinutes": 10080,
+    "summary": "Dolaşım sistemi ve psikolojik adaptasyon stabil hale gelir.",
+    "detail": "Dolaşım sistemi sigarasız düzende daha kararlı çalışır.\n\nFiziksel yoksunluk belirtilerinin şiddeti çoğu kişide belirgin biçimde azalır.\n\nYeni rutinler psikolojik uyumu ve sigarasız kalma güvenini destekler.",
+    "motivation": "Bir haftalık emeğin yeni düzeninin temelini oluşturdu."
+  },
+  {
+    "duration": "2 hafta",
+    "targetMinutes": 20160,
+    "summary": "Kan dolaşımı güçlenir, fiziksel dayanıklılık artar.",
+    "detail": "Vücut genelindeki kan dolaşımı ve doku beslenmesi belirgin şekilde gelişir.\n\nYürürken, merdiven çıkarken veya egzersiz sırasında tıkanma hissi azalır.\n\nAkciğer fonksiyonları artış göstermeye başlar.",
+    "motivation": "Adımların daha güçlü, dayanıklılığın her gün artıyor."
+  },
+  {
+    "duration": "1 ay",
+    "targetMinutes": 43200,
+    "summary": "Öksürük ve balgam azalır, akciğer siliyaları yenilenir.",
+    "detail": "Akciğerlerdeki siller yeniden etkinleşerek mukus ve parçacıkları uzaklaştırır.\n\nÖksürük, balgam ve nefes darlığı azalmaya başlayabilir.\n\nSolunum yollarının enfeksiyonlara karşı doğal temizleme kapasitesi güçlenir.",
+    "motivation": "Akciğerlerin her nefeste kendini daha iyi temizliyor."
+  },
+  {
+    "duration": "3 ay",
+    "targetMinutes": 129600,
+    "summary": "Akciğer fonksiyonları gelişir, nefes darlığı belirgin biçimde azalır.",
+    "detail": "Akciğer fonksiyonu ve dolaşım gelişmeye devam eder.\n\nYürüyüş, merdiven ve günlük işlerde nefes kontrolü kolaylaşır.\n\nÖksürük nöbetleri ve çabuk yorulma hissi giderek azalabilir.",
+    "motivation": "Üç ayda nefesin ve hareket özgürlüğün belirgin biçimde büyüdü."
+  },
+  {
+    "duration": "6 ay",
+    "targetMinutes": 259200,
+    "summary": "Solunum yolları iltihabı temizlenir, bağışıklık güçlenir.",
+    "detail": "Solunum yollarındaki kronik inflamasyon ve tahriş belirgin biçimde geriler.\n\nAkciğerler balgam ve yabancı maddeleri daha kolay temizler.\n\nStresli anlarda sigaraya yönelten psikolojik bağlar zayıflar.",
+    "motivation": "Yarım seneyi geride bıraktın, bağışıklığın dimdik ayakta."
+  },
+  {
+    "duration": "1 yıl",
+    "targetMinutes": 525600,
+    "summary": "Koroner kalp hastalığı ve kalp krizi riski yarı yarıya düşer.",
+    "detail": "Koroner kalp hastalığı riski, sigara içmeye devam eden birine göre yaklaşık yarıya iner.\n\nKalp krizi riski belirgin biçimde düşmeye devam eder.\n\nDolaşım sistemi ve damar iç yüzeyi onarımını sürdürür.",
+    "motivation": "Bir yılda kalbin için yaşam değiştiren bir fark yarattın."
+  },
+  {
+    "duration": "5 yıl",
+    "targetMinutes": 2628000,
+    "summary": "Felç ve bazı kanser türlerinin gelişme riski yarıya iner.",
+    "detail": "İnme riski, sigara içmeye devam eden birine kıyasla belirgin biçimde geriler.\n\nAğız, boğaz, yemek borusu ve mesane kanserleriyle ilişkili risk yaklaşık yarıya iner.\n\nDamarların pıhtılaşma ve daralma yükü azalmaya devam eder.",
+    "motivation": "Beş yıllık özgürlüğün, uzun vadeli risklerini güçlü biçimde azalttı."
+  },
+  {
+    "duration": "10 yıl",
+    "targetMinutes": 5256000,
+    "summary": "Akciğer kanserinden ölüm riski yarı yarıya geriler.",
+    "detail": "Akciğer kanserinden ölüm riski, sigara içmeye devam eden birine göre yaklaşık yarıya iner.\n\nAğız, gırtlak ve pankreas gibi bazı kanserlere ilişkin risk düşmeyi sürdürür.\n\nAkciğer dokusu ve hücresel onarım mekanizmaları iyileşmeye devam eder.",
+    "motivation": "On yıllık kararlılığın, bedeninin geleceğini yeniden yazdı."
+  },
+  {
+    "duration": "15 yıl",
+    "targetMinutes": 7884000,
+    "summary": "Kalp ve damar hastalığı riski hiç içmemiş biriyle eşitlenir.",
+    "detail": "Koroner kalp hastalığı riski, hiç sigara içmemiş bir kişinin risk seviyesine yaklaşır.\n\nKardiyovasküler ve solunum sistemi yıllar süren onarımın kazanımlarını taşır.\n\nTütün kullanımının hücresel ve organ düzeyindeki izleri büyük ölçüde gerilemiş olur.",
+    "motivation": "Bedenin tamamen arındı; artık hiç sigara içmemiş gibisin."
+  }
+]

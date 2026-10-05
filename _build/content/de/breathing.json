@@ -1,0 +1,62 @@
+[
+  {
+    "id": "box_breathing",
+    "name": "Box-Atmung (4-4-4)",
+    "inhaleSeconds": 4,
+    "holdSeconds": 4,
+    "exhaleSeconds": 4,
+    "benefit": "Weniger Stress, mehr Fokus und klare Gedanken",
+    "area": "Stressabbau & Fokus",
+    "description": "Wird von Militär und Sportlerinnen genutzt, um den Kopf zu beruhigen und die Leistung zu steigern."
+  },
+  {
+    "id": "relaxing_breath",
+    "name": "Entspannungsatmung (4-7-8)",
+    "inhaleSeconds": 4,
+    "holdSeconds": 7,
+    "exhaleSeconds": 8,
+    "benefit": "Besserer Schlaf, weniger Angst, mehr Ruhe",
+    "area": "Schlaf & Angst",
+    "description": "Bekannt geworden durch Dr. Andrew Weil; aktiviert das parasympathische Nervensystem."
+  },
+  {
+    "id": "equal_breathing",
+    "name": "Gleichmäßige Atmung (5-5)",
+    "inhaleSeconds": 5,
+    "holdSeconds": 0,
+    "exhaleSeconds": 5,
+    "benefit": "Balance, Ruhe und innere Stabilität",
+    "area": "Balance & Ruhe",
+    "description": "Einfach und wirksam – eine ausgleichende Atemtechnik für den Alltag."
+  },
+  {
+    "id": "deep_breathing",
+    "name": "Tiefe Atmung (6-2-8)",
+    "inhaleSeconds": 6,
+    "holdSeconds": 2,
+    "exhaleSeconds": 8,
+    "benefit": "Mehr Energie, Wachheit und Sauerstoff",
+    "area": "Energie & Vitalität",
+    "description": "Bringt mehr Sauerstoff in den Körper und hilft, das Energieniveau zu heben."
+  },
+  {
+    "id": "triangle_breathing",
+    "name": "Dreiecksatmung (3-3-3)",
+    "inhaleSeconds": 3,
+    "holdSeconds": 3,
+    "exhaleSeconds": 3,
+    "benefit": "Weniger Angst, Hilfe bei Panik, schnelle Ruhe",
+    "area": "Angst & Panik",
+    "description": "Ideal, um schnell runterzukommen; hilfreich in Angst- oder Panikmomenten."
+  },
+  {
+    "id": "extended_exhale",
+    "name": "Längere Ausatmung (4-4-6)",
+    "inhaleSeconds": 4,
+    "holdSeconds": 4,
+    "exhaleSeconds": 6,
+    "benefit": "Stressabbau, ruhigerer Puls und Entspannung",
+    "area": "Stress & Entspannung",
+    "description": "Stärkt das parasympathische Nervensystem durch eine längere Ausatmung."
+  }
+]

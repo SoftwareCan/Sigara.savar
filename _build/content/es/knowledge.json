@@ -1,0 +1,951 @@
+[
+  {
+    "id": "section-1",
+    "order": 1,
+    "title": "Preparación y primeros días",
+    "description": "El capítulo base: entiende cómo funciona la adicción, identifica por qué fumas y prepárate para tu día de dejarlo.",
+    "articles": [
+      {
+        "id": "b1-01",
+        "sectionId": "section-1",
+        "order": 1,
+        "title": "¿Qué es la adicción?",
+        "summary": "Comprende los aspectos biológicos, psicológicos y sociales de la adicción a través de la nicotina, el sistema de recompensa y las conductas aprendidas.",
+        "estimatedReadMinutes": 2,
+        "icon": "lightbulb",
+        "intro": "La adicción al tabaco no es solo un hábito o una cuestión de fuerza de voluntad. Los efectos de la nicotina en el cerebro, las rutinas diarias y el entorno social pueden ir formando, con el tiempo, un ciclo que se retroalimenta.",
+        "contentSections": [
+          {
+            "title": "La nicotina y el sistema de recompensa",
+            "body": "La nicotina llega rápido al cerebro y afecta a los sistemas relacionados con la recompensa, la motivación y el aprendizaje. El cambio en la liberación de dopamina contribuye a que el cerebro aprenda a repetir el acto de fumar como una conducta que \"vale la pena\".",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "¿Qué cambia con el tiempo?",
+            "body": "A medida que continúa el consumo habitual, el cerebro se adapta a la nicotina. Cuando el nivel de nicotina baja, pueden aparecer síntomas de abstinencia como inquietud, dificultad para concentrarse o ganas de fumar. Como fumar alivia brevemente esta molestia, el ciclo se refuerza de nuevo.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Las tres caras de la adicción",
+            "body": "El lado biológico se relaciona con la nicotina y la abstinencia, el lado psicológico con el alivio o la recompensa que se le atribuye al cigarrillo, y el lado social-conductual con asociaciones como el café, la comida, los descansos, el grupo de amigos o el alcohol.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "La adicción no depende de una sola causa. La nicotina, los pensamientos y los hábitos diarios actúan juntos; darte cuenta de estas tres áreas es importante durante el proceso de dejarlo."
+        ]
+      },
+      {
+        "id": "b1-02",
+        "sectionId": "section-1",
+        "order": 2,
+        "title": "¿Por qué fumas y por qué deberías dejarlo?",
+        "summary": "Identifica tus desencadenantes, tus hábitos y los significados que le has dado al tabaco; aclara tus razones para dejarlo.",
+        "estimatedReadMinutes": 2,
+        "icon": "lightbulb",
+        "intro": "Muchas veces no se fuma solo por necesidad de nicotina. Ciertas horas del día, emociones, personas y ambientes pueden quedar asociados con el gesto de fumar.",
+        "contentSections": [
+          {
+            "title": "Detecta los momentos que se volvieron automáticos",
+            "body": "El café, después de comer, una llamada, conducir, un descanso laboral, el estrés o los ambientes sociales pueden convertirse, con el tiempo, en una señal de \"ahora toca fumar\".",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "¿Fumar realmente relaja?",
+            "body": "La nicotina tiene propiedades estimulantes. Parte del alivio que se siente después de fumar puede estar relacionado con el breve descenso de la abstinencia de nicotina que se acumula entre un cigarrillo y otro. Así, el cerebro puede interpretar ese alivio pasajero como \"fumar resuelve mi estrés\".",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Aclara tu propia razón",
+            "body": "Escribir tus motivos personales para querer dejarlo —salud, libertad, tiempo, dinero, familia, respiración o calidad de vida— puede facilitar recordar tu decisión en los momentos difíciles.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Ver los momentos automáticos detrás de la conducta de fumar convierte el dejarlo en algo más que \"aguantar\": lo transforma en un cambio más consciente."
+        ]
+      },
+      {
+        "id": "b1-03",
+        "sectionId": "section-1",
+        "order": 3,
+        "title": "¿Qué ganarás al dejar de fumar?",
+        "summary": "Descubre los beneficios que puede traer dejarlo en salud, respiración, tiempo, dinero y calidad de vida.",
+        "estimatedReadMinutes": 2,
+        "icon": "favorite",
+        "intro": "Los beneficios de dejarlo no caben en un solo día. El cuerpo empieza a cambiar desde las primeras horas; en las semanas, meses y años siguientes pueden verse mejoras en distintos sistemas.",
+        "contentSections": [
+          {
+            "title": "Cronología general",
+            "body": "En los primeros minutos, la frecuencia cardíaca y la presión arterial pueden empezar a acercarse a valores normales. En las primeras horas disminuye el monóxido de carbono en sangre. En los primeros días el nivel de nicotina baja de forma notable y el sentido del gusto y del olfato puede empezar a recuperarse. En las semanas y meses siguientes pueden observarse mejoras en la circulación, la respiración y la capacidad de las vías respiratorias para limpiarse.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Beneficios a largo plazo",
+            "body": "Cuanto más tiempo pasas sin fumar, más se reportan descensos importantes, con el paso del tiempo, en los riesgos asociados a enfermedades cardiovasculares y a algunos tipos de cáncer.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Más allá de la salud",
+            "body": "Recuperar el dinero y el tiempo dedicados al tabaco, comprobar que puedes vivir sin depender de él y sentir cada vez más control sobre tus decisiones diarias son también beneficios importantes.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Dejarlo no es solo quitar algo de tu vida; es el comienzo de nuevos beneficios en salud, tiempo, dinero y libertad."
+        ]
+      },
+      {
+        "id": "b1-04",
+        "sectionId": "section-1",
+        "order": 4,
+        "title": "Preparación y plan",
+        "summary": "Define tu día para dejarlo, observa tu patrón de consumo, prepara tu entorno y elige de antemano opciones para los momentos difíciles.",
+        "estimatedReadMinutes": 2,
+        "icon": "flag",
+        "intro": "Intentar resolverlo todo el mismo día de dejarlo puede ser difícil. Prepararte con antelación facilita la toma de decisiones, sobre todo en tus momentos automáticos de fumar.",
+        "contentSections": [
+          {
+            "title": "Define tu día para dejarlo",
+            "body": "Elige una fecha concreta y escribe los preparativos que quieres tener listos antes de ese día.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Registra tu patrón de consumo",
+            "body": "Observa durante unos días a qué hora, con qué emoción, con quién y en qué ambiente fumas. Este registro te ayuda a identificar tus desencadenantes más fuertes.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Organiza tu entorno",
+            "body": "Retira de casa, del coche y del trabajo objetos que te recuerden al tabaco, como paquetes, ceniceros y encendedores. Elige una nueva conducta para asociaciones fuertes como el café, después de comer o el descanso laboral.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Pide apoyo",
+            "body": "Contarle tu decisión a las personas cercanas y pedirles que no te ofrezcan cigarrillos, sobre todo en los primeros días, puede facilitar el proceso.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Prepararte no hace que las ganas de fumar dejen de aparecer; hace que ya sepas qué vas a hacer cuando lleguen."
+        ]
+      },
+      {
+        "id": "b1-05",
+        "sectionId": "section-1",
+        "order": 5,
+        "title": "Elabora tu propio mapa de desencadenantes",
+        "summary": "Identifica por ti mismo las horas, emociones, ambientes y hábitos que activan de forma automática el pensamiento o las ganas de fumar.",
+        "estimatedReadMinutes": 2,
+        "icon": "loop",
+        "intro": "Un desencadenante es una situación que activa de forma automática el pensamiento o las ganas de fumar. No es igual para todas las personas.",
+        "contentSections": [
+          {
+            "title": "Pregúntate",
+            "body": "¿A qué hora del día tengo más ganas? ¿Hay relación con el café, la comida, el teléfono, conducir o el descanso laboral? ¿Qué emociones —estrés, enfado, aburrimiento, soledad o celebración— aumentan las ganas? ¿Cómo me afectan los ambientes sociales donde se bebe alcohol o se fuma?",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "¿Con qué puedes sustituirlo?",
+            "body": "Para cada desencadenante fuerte, elige la conducta nueva más simple posible. Por ejemplo, un paseo corto después del café, cepillarte los dientes después de comer, una pausa de unos minutos tras el estrés o un mensaje de apoyo.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Reconocer el desencadenante abre un espacio pequeño pero importante entre la conducta automática y una elección consciente."
+        ]
+      },
+      {
+        "id": "b1-06",
+        "sectionId": "section-1",
+        "order": 6,
+        "title": "Opciones de apoyo",
+        "summary": "Ten en cuenta, de forma general, que los parches de nicotina, los chicles, las pastillas y algunos medicamentos pueden usarse como apoyo durante el proceso de dejarlo.",
+        "estimatedReadMinutes": 2,
+        "icon": "favorite",
+        "intro": "Algunas personas pueden beneficiarse de apoyos adicionales para manejar la abstinencia y las ganas de fumar durante el proceso.",
+        "contentSections": [
+          {
+            "title": "Opciones generales",
+            "body": "Existen productos como parches de nicotina, chicles de nicotina y pastillas, además de algunos medicamentos usados para dejar de fumar. El objetivo de estas opciones es hacer más manejables, en algunas personas, la abstinencia y las ganas de fumar.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Evalúalo con un profesional de la salud",
+            "body": "El uso de medicamentos y productos de apoyo con nicotina puede variar según el estado de salud personal. Consulta a un profesional de la salud cuando sea necesario.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Los productos de apoyo y los medicamentos pueden ser una opción para algunas personas; la decisión de tratamiento personal corresponde a un profesional de la salud."
+        ]
+      },
+      {
+        "id": "b1-07",
+        "sectionId": "section-1",
+        "order": 7,
+        "title": "Día de dejarlo",
+        "summary": "Vive tu primer día sin fumar de forma más organizada, con pasos simples como agua, movimiento, respiración y orden en tu entorno.",
+        "estimatedReadMinutes": 2,
+        "icon": "flag",
+        "intro": "El objetivo del primer día no es sentirte perfecto. El objetivo es planificar con la mayor antelación posible ese primer día sin fumar.",
+        "contentSections": [
+          {
+            "title": "Cambia tu rutina matutina",
+            "body": "Cambia el primer gesto que está fuertemente asociado con fumar. Incluso un pequeño cambio, como una ducha, un paseo corto o un desayuno distinto, puede romper la cadena automática.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Prepara herramientas simples",
+            "body": "Usa el beber agua como rutina para recordarte a ti mismo; prepara opciones sin tabaco que mantengan ocupadas tus manos y tu boca. Cuando lleguen las ganas, puedes probar la respiración 4-4-6: inhala 4 segundos, mantén 4 segundos y suelta despacio en 6 segundos.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Reduce los desencadenantes fuertes",
+            "body": "Sobre todo en los primeros días, reducir los ambientes donde se fuma y los desencadenantes que más te cuestan puede facilitarte las cosas.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "El primer día puede ser difícil. El objetivo no es que las ganas no aparezcan nunca; es poder dejarlas pasar sin fumar cuando lleguen."
+        ]
+      },
+      {
+        "id": "b1-08",
+        "sectionId": "section-1",
+        "order": 8,
+        "title": "Abstinencia",
+        "summary": "Comprende por qué aparece la abstinencia, qué tipo de síntomas puede presentar y que forma parte de un proceso temporal de adaptación.",
+        "estimatedReadMinutes": 2,
+        "icon": "lightbulb",
+        "intro": "Cuando la nicotina disminuye, el cerebro y el cuerpo intentan adaptarse durante un tiempo a la nueva situación. En este período pueden aparecer algunos síntomas temporales.",
+        "contentSections": [
+          {
+            "title": "¿Qué se puede sentir?",
+            "body": "Inquietud, dificultad para concentrarse, cambios en el apetito, ganas de fumar y síntomas similares pueden aparecer en el período inicial de dejarlo.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "¿Qué significa?",
+            "body": "Que aparezcan estos síntomas no significa que \"necesites\" fumar. Puede ser simplemente un período en el que tu cuerpo se adapta a funcionar sin nicotina.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Enfoque",
+            "body": "Dormir bien, tomar agua con regularidad, caminatas cortas, ejercicios de respiración, reducir los desencadenantes y buscar apoyo profesional si es necesario pueden hacer que este período sea más manejable.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "La abstinencia puede ser incómoda, pero es un proceso temporal de adaptación. Si los síntomas se vuelven muy intensos o difíciles de manejar, conviene buscar apoyo de un profesional de la salud."
+        ]
+      },
+      {
+        "id": "b1-09",
+        "sectionId": "section-1",
+        "order": 9,
+        "title": "Resumen del capítulo",
+        "summary": "Reúne en un solo lugar la adicción, los desencadenantes, la preparación para dejarlo y tu plan básico para el primer día.",
+        "estimatedReadMinutes": 1,
+        "icon": "flag",
+        "intro": "En este capítulo viste que la adicción al tabaco no es solo una cuestión de fuerza de voluntad; el cerebro, los pensamientos, las rutinas y el entorno actúan juntos.",
+        "contentSections": [
+          {
+            "title": "Para recordar",
+            "body": "Reconocer los desencadenantes antes de dejarlo, organizar tu entorno, elegir nuevas rutinas de antemano y preparar un plan simple para el primer día hacen que el proceso sea más claro.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Siguiente paso",
+            "body": "En el próximo capítulo veremos las conexiones aprendidas que pueden persistir incluso después de que la nicotina salga del cuerpo, y las formas de hacer permanente una vida sin tabaco.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "La preparación está lista: ahora no solo vas a dejar de fumar, sino a construir una rutina sin tabaco."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "section-2",
+    "order": 2,
+    "title": "Hacer permanente una vida sin tabaco",
+    "description": "Se centra en convertir la vida sin tabaco en tu nueva normalidad, reajustando los hábitos, pensamientos y desencadenantes que pueden persistir incluso después de que la nicotina haya salido del cuerpo.",
+    "articles": [
+      {
+        "id": "b2-01",
+        "sectionId": "section-2",
+        "order": 1,
+        "title": "La nicotina ya no está, ¿por qué puedes seguir teniendo ganas de fumar?",
+        "summary": "Comprende que la abstinencia física y las conexiones aprendidas con el tabaco no son lo mismo.",
+        "estimatedReadMinutes": 2,
+        "icon": "lightbulb",
+        "intro": "Que la nicotina se elimine del cuerpo no es el mismo proceso que desaprender las conductas de fumar construidas a lo largo de los años.",
+        "contentSections": [
+          {
+            "title": "Abstinencia física",
+            "body": "A medida que la nicotina disminuye, pueden aparecer inquietud, dificultad para concentrarse, cambios en el apetito u otros síntomas similares. Están relacionados con el proceso de adaptación física.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Conexiones aprendidas",
+            "body": "Asociaciones como café -> cigarrillo, comida -> cigarrillo o descanso -> cigarrillo pueden volverse automáticas cuando se repiten durante años. Por eso, incluso meses después, un ambiente o una emoción concreta pueden activar el pensamiento de fumar.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "La diferencia importante",
+            "body": "Que aparezca ese pensamiento no significa necesariamente que vuelvas a necesitar nicotina; puede ser solo el recuerdo de una conexión antigua.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "La abstinencia física puede disminuir; pero las conexiones de hábitos antiguos pueden recordarse durante más tiempo y se debilitan a través de un nuevo aprendizaje."
+        ]
+      },
+      {
+        "id": "b2-02",
+        "sectionId": "section-2",
+        "order": 2,
+        "title": "Reescribe tus desencadenantes",
+        "summary": "En lugar de intentar borrar por completo los desencadenantes antiguos, coloca nuevas conductas justo después de esos mismos momentos.",
+        "estimatedReadMinutes": 2,
+        "icon": "loop",
+        "intro": "No siempre es posible eliminar los desencadenantes de tu vida por completo. Un objetivo más realista es elegir, una y otra vez, una nueva conducta después del mismo desencadenante.",
+        "contentSections": [
+          {
+            "title": "Crea nuevas asociaciones",
+            "body": null,
+            "items": [
+              "Café -> unos minutos en un ambiente diferente, agua o un paseo corto.",
+              "Comida -> cepillarte los dientes, un té o un poco de movimiento.",
+              "Estrés -> respiración, una pausa corta o un mensaje de apoyo.",
+              "Descanso laboral -> una ruta sin tabaco o un grupo de amigos distinto."
+            ],
+            "numbered": false
+          },
+          {
+            "title": "Alcohol y ambiente social",
+            "body": "El alcohol puede reforzar en algunas personas las ganas de fumar y las conductas automáticas. Sobre todo en los primeros meses, reorganizar la cantidad, el ambiente o el plan puede ayudar.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "La importancia de la repetición",
+            "body": "Cada vez que eliges la nueva conducta, pones una opción distinta en el lugar de la antigua cadena automática. El objetivo no es olvidarlo de una vez, sino repetir el nuevo camino.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "La combinación de un desencadenante antiguo con una conducta nueva ayuda a que la vida sin tabaco se vuelva cada vez más familiar."
+        ]
+      },
+      {
+        "id": "b2-03",
+        "sectionId": "section-2",
+        "order": 3,
+        "title": "Reevalúa tus pensamientos sobre el tabaco",
+        "summary": "Aborda desde una perspectiva más realista los pensamientos antiguos que pueden resultar muy convincentes durante el proceso de dejarlo.",
+        "estimatedReadMinutes": 2,
+        "icon": "lightbulb",
+        "intro": "Que un pensamiento parezca convincente no significa que sea cierto. Durante el proceso de dejarlo pueden reaparecer algunas creencias antiguas.",
+        "contentSections": [
+          {
+            "title": "\"Fumar me calma.\"",
+            "body": "Parte de esa sensación de alivio puede deberse al breve descenso de la abstinencia de nicotina.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "\"Sin fumar no puedo concentrarme.\"",
+            "body": "La abstinencia puede alterar la atención de forma temporal; el cigarrillo puede dar la sensación de estar corrigiendo esa alteración.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "\"Llevo tantos años fumando que ya no tiene sentido dejarlo.\"",
+            "body": "El beneficio de dejarlo para la salud y la calidad de vida sigue existiendo a distintas edades.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "\"Por uno no pasa nada.\"",
+            "body": "Un solo cigarrillo puede reactivar el antiguo ciclo de conducta y el pensamiento de \"uno más\".",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "No tienes que discutir con el pensamiento antiguo cuando aparece; primero reconócelo, luego repláncalo con una explicación más realista."
+        ]
+      },
+      {
+        "id": "b2-04",
+        "sectionId": "section-2",
+        "order": 4,
+        "title": "¿Con qué llenarás el espacio que dejó el tabaco?",
+        "summary": "Identifica qué función cumplía el tabaco para ti y encuentra una respuesta sin fumar para esa misma necesidad.",
+        "estimatedReadMinutes": 2,
+        "icon": "auto_awesome",
+        "intro": "Para algunas personas, fumar no es solo nicotina; puede significar un descanso, socializar, un hábito de manos y boca, o \"unos minutos que me dedico a mí mismo\".",
+        "contentSections": [
+          {
+            "title": "Nuevas respuestas según la necesidad",
+            "body": null,
+            "items": [
+              "Necesidad de descanso: un paseo corto de 5 minutos o una pausa al aire libre.",
+              "Estrés: respiración lenta, relajación breve o alejarte unos minutos del ambiente.",
+              "Hábito de manos y boca: agua, chicle sin azúcar u otras rutinas sin tabaco.",
+              "Necesidad de recompensa: música que te guste, un hobby, metas pequeñas o actividad física.",
+              "Socializar: crear rutinas de amistad y descanso sin tabaco."
+            ],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Con qué sustituyas el tabaco puede depender de qué necesidad estaba cubriendo el cigarrillo en tu vida."
+        ]
+      },
+      {
+        "id": "b2-05",
+        "sectionId": "section-2",
+        "order": 5,
+        "title": "Fortalece de nuevo tus recompensas naturales",
+        "summary": "En lugar de construir tu vida sin tabaco solo alrededor de \"no fumar\", apoya tu sistema de recompensa y motivación con rutinas naturales de la vida diaria: movimiento, sueño y respiración.",
+        "estimatedReadMinutes": 2,
+        "icon": "auto_awesome",
+        "intro": "En lugar de construir la vida sin tabaco únicamente sobre la base de \"no fumar\", aumentar las rutinas naturales que aportan disfrute y relajación puede ser un enfoque más sostenible.",
+        "contentSections": [
+          {
+            "title": "Elige tres áreas pequeñas",
+            "body": "Movimiento, sueño y disfrute. Por ejemplo, un paseo corto, un horario de sueño más regular y una actividad sin tabaco que te resulte placentera.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "No hace falta un gran cambio",
+            "body": "El objetivo no es construir de golpe una vida perfecta. Conductas pequeñas pero repetibles pueden ir llenando, con el tiempo, el espacio que dejó el tabaco.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Respiración y relajación",
+            "body": "La respiración lenta y los ejercicios breves de relajación pueden ofrecer una opción distinta en los momentos de estrés, en lugar de recurrir automáticamente al cigarrillo.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Cuanto más cotidianas y accesibles sean tus nuevas recompensas, más fácil puede resultar que la vida sin tabaco se convierta en tu nueva normalidad."
+        ]
+      },
+      {
+        "id": "b2-06",
+        "sectionId": "section-2",
+        "order": 6,
+        "title": "De \"estoy intentando dejarlo\" a \"no fumo\"",
+        "summary": "Construye un límite interno y social más claro que haga coherente tu conducta sin tabaco con tu nueva identidad.",
+        "estimatedReadMinutes": 2,
+        "icon": "flag",
+        "intro": "La frase \"estoy intentando dejar de fumar\" puede hacer que, para algunas personas, la decisión se sienta como algo que hay que volver a tomar en cada desencadenante.",
+        "contentSections": [
+          {
+            "title": "El enfoque de identidad",
+            "body": "La frase \"no fumo\" busca hacer que la conducta esté en sintonía con tu nueva identidad. No es una frase mágica; es un límite que se refuerza con la conducta repetida una y otra vez.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Ejemplo en un ambiente social",
+            "body": "Decir \"no, gracias, no fumo\" en lugar de \"no, gracias, estoy intentando dejarlo\" puede crear, para algunas personas, un límite más claro y breve.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Refuérzalo con la conducta",
+            "body": "La identidad no se fortalece solo con una frase que dices, sino con la nueva respuesta que das en cada desencadenante.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "El objetivo es hacer que la conducta sin tabaco sea una parte natural de tu identidad diaria, en lugar de verte a ti mismo en una lucha constante."
+        ]
+      },
+      {
+        "id": "b2-07",
+        "sectionId": "section-2",
+        "order": 7,
+        "title": "Cuidado con el pensamiento \"ya puedo controlarlo\"",
+        "summary": "Reconoce por qué el pensamiento \"podría fumarme uno\" que puede aparecer cuando las ganas disminuyen puede ser arriesgado.",
+        "estimatedReadMinutes": 2,
+        "icon": "local_fire_department",
+        "intro": "Cuando las ganas de fumar disminuyen tras semanas o meses, puede aparecer el pensamiento \"ya puedo controlar la adicción, podría fumarme uno\".",
+        "contentSections": [
+          {
+            "title": "¿Dónde está el riesgo?",
+            "body": "El riesgo no es solo el cigarrillo en sí. Fumar puede reforzar de nuevo las antiguas conexiones de recompensa y conducta, y reactivar el pensamiento de \"uno más\".",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Un límite simple",
+            "body": "En lugar de intentar \"manejar solo uno\", el límite más simple que protege tu vida sin tabaco es no volver a empezar.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Recuérdatelo",
+            "body": "Que disminuyan las ganas es un avance importante; pero el propósito de ese avance no es volver a fumar de forma controlada, sino fortalecer tu vida sin tabaco.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "El pensamiento \"ya estoy bien, podría fumarme uno\" puede parecer una prueba de progreso; en realidad puede ser una puerta de vuelta al ciclo anterior."
+        ]
+      },
+      {
+        "id": "b2-08",
+        "sectionId": "section-2",
+        "order": 8,
+        "title": "Lista de comprobación de la vida sin tabaco",
+        "summary": "Evalúa con preguntas breves en qué áreas se está fortaleciendo tu nueva rutina y dónde todavía necesitas apoyo.",
+        "estimatedReadMinutes": 2,
+        "icon": "flag",
+        "intro": "Mantener una vida sin tabaco no es solo mirar el día que acaba de pasar. También es útil revisar de vez en cuando cuánto se han asentado tus nuevas conductas.",
+        "contentSections": [
+          {
+            "title": "Pregúntate",
+            "body": null,
+            "items": [
+              "¿Puedo describirme como alguien que \"no fuma\"?",
+              "¿Tengo una nueva conducta para desencadenantes fuertes como el café, después de comer o el estrés?",
+              "¿Puedo notar y cuestionar pensamientos antiguos como \"fumar me relajaba\"?"
+            ],
+            "numbered": false
+          },
+          {
+            "title": "Revisa tu rutina",
+            "body": null,
+            "items": [
+              "¿Estoy construyendo una rutina sin tabaco en cuanto a sueño, movimiento, vida social y actividades placenteras?",
+              "¿Acepto que el pensamiento \"por uno no pasa nada\" puede ser arriesgado para mí?"
+            ],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "La lista de comprobación no sirve para juzgar tu éxito, sino para identificar la próxima área que puedes fortalecer."
+        ]
+      },
+      {
+        "id": "b2-09",
+        "sectionId": "section-2",
+        "order": 9,
+        "title": "Resumen del capítulo",
+        "summary": "Reúne en un solo lugar los hábitos, los pensamientos y la nueva identidad que pueden persistir después de que disminuya la abstinencia física.",
+        "estimatedReadMinutes": 1,
+        "icon": "flag",
+        "intro": "Que la nicotina salga del cuerpo no significa que todos los hábitos desaparezcan al mismo tiempo.",
+        "contentSections": [
+          {
+            "title": "Para recordar",
+            "body": "A medida que respondes a los desencadenantes antiguos con conductas nuevas, la vida sin tabaco se vuelve más familiar. El cambio duradero no es solo quitar el cigarrillo; es llenar el espacio que deja con nuevas rutinas, nuevas recompensas y una nueva identidad.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Siguiente paso",
+            "body": "En el próximo capítulo abordaremos las ganas intensas de fumar (craving), la ola del deseo, el método 4D y el manejo del desliz y la recaída.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "La vida sin tabaco ya no es solo un objetivo que proteger; es tu nueva rutina diaria."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "section-3",
+    "order": 3,
+    "title": "Gestionar las ganas de fumar y prevenir la recaída",
+    "description": "Aborda cómo funcionan las ganas de fumar, su naturaleza temporal, las herramientas que puedes usar en un momento de crisis y cómo evitar que un desliz se convierta en un regreso al consumo habitual.",
+    "articles": [
+      {
+        "id": "b3-01",
+        "sectionId": "section-3",
+        "order": 1,
+        "title": "¿Qué son las ganas de fumar (craving)?",
+        "summary": "Comprende que las ganas de fumar son un impulso fuerte pero temporal que puede activarse por la abstinencia física o por desencadenantes aprendidos.",
+        "estimatedReadMinutes": 2,
+        "icon": "local_fire_department",
+        "intro": "Las ganas de fumar (craving) son un impulso fuerte de fumar que puede activarse por una señal del entorno, una emoción, un pensamiento o la abstinencia de nicotina.",
+        "contentSections": [
+          {
+            "title": "Ganas por abstinencia física",
+            "body": "Pueden estar relacionadas con los síntomas biológicos que aparecen cuando baja el nivel de nicotina, sobre todo en el período inicial de dejarlo.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Ganas psicológicas condicionadas",
+            "body": "También pueden aparecer más adelante, activadas por desencadenantes aprendidos como el estrés, el café, el olor a tabaco, ciertas personas o ambientes.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "El mensaje importante",
+            "body": "Que las ganas sean intensas no significa que tengas que ceder a ellas. Se pueden reconocer como un impulso y dejar que pasen sin fumar.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Las ganas de fumar no son una orden; son un impulso temporal y pueden activarse por distintos desencadenantes."
+        ]
+      },
+      {
+        "id": "b3-02",
+        "sectionId": "section-3",
+        "order": 2,
+        "title": "Las ganas suben y bajan como una ola",
+        "summary": "Percibe las ganas de fumar no como una necesidad constante, sino como una ola que sube, llega a su punto máximo y luego disminuye.",
+        "estimatedReadMinutes": 2,
+        "icon": "local_fire_department",
+        "intro": "Las ganas de fumar, la mayoría de las veces, no se mantienen con la misma intensidad. Suben, se hacen notar y después tienden a disminuir.",
+        "contentSections": [
+          {
+            "title": "La subida",
+            "body": "El pensamiento de fumar puede hacerse notar y la tensión puede aumentar. Aquí, el primer paso es reconocer: \"ahora mismo ha empezado una ola de ganas\".",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "El punto máximo",
+            "body": "La mente puede sentirse fijada en el cigarrillo. Aquí es cuando usas una de las herramientas que elegiste de antemano, como el método 4D o cambiar de ambiente.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "La bajada",
+            "body": "Cuando la intensidad del impulso empieza a bajar, date cuenta de que has podido pasar el momento sin fumar. Esta experiencia puede generar confianza para la próxima ola.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "En lugar de tratar la ola como si fuera infinita, verla como un proceso temporal que sube y baja puede facilitar su manejo."
+        ]
+      },
+      {
+        "id": "b3-03",
+        "sectionId": "section-3",
+        "order": 3,
+        "title": "Surfear la ola de las ganas (urge surfing)",
+        "summary": "En lugar de luchar contra las ganas o intentar reprimirlas a la fuerza, observa durante un momento breve el cambio que ocurre en tu cuerpo y tu mente.",
+        "estimatedReadMinutes": 2,
+        "icon": "loop",
+        "intro": "Surfear la ola de las ganas (urge surfing) es un enfoque que, en lugar de intentar eliminar a la fuerza el pensamiento de fumar, propone observarlo como una emoción y un impulso corporal temporal.",
+        "contentSections": [
+          {
+            "title": "Cuatro pasos",
+            "body": null,
+            "items": [
+              "Nómbralo: \"ahora mismo tengo ganas de fumar\".",
+              "Nótalo en el cuerpo: ¿cómo sientes las ganas —en la boca, la garganta, el pecho, el estómago u otra zona?",
+              "Observa cómo cambia: no intentes cambiar la ola de inmediato. Obsérvala subir y bajar durante un rato.",
+              "Reconoce su final: cuando el impulso disminuya, recuérdate que este momento ha podido pasar sin fumar."
+            ],
+            "numbered": true
+          }
+        ],
+        "keyTakeaways": [
+          "El objetivo no es que te gusten las ganas ni ignorarlas; es experimentar directamente que son temporales."
+        ]
+      },
+      {
+        "id": "b3-04",
+        "sectionId": "section-3",
+        "order": 4,
+        "title": "El método 4D (Delay - Deep breathe - Drink water - Distract)",
+        "summary": "Retrasa • Respira hondo • Bebe agua • Distrae tu atención: aplica en orden estos cuatro pasos simples para interrumpir la conducta automática de fumar en un momento de crisis.",
+        "estimatedReadMinutes": 2,
+        "icon": "local_fire_department",
+        "intro": "El método 4D es un plan de crisis simple que puedes usar para ganar unos minutos de margen e interrumpir la conducta automática cuando llegan ganas intensas de fumar.",
+        "contentSections": [
+          {
+            "title": "Gestiona las ganas en 4 pasos",
+            "body": null,
+            "items": [
+              "Retrasa: cuando lleguen las ganas, en lugar de actuar de inmediato, retrasa unos minutos la decisión de fumar.",
+              "Respira hondo: concéntrate en aliviar la tensión corporal con una respiración lenta y controlada.",
+              "Bebe agua: unos sorbos de agua pueden colocar una pausa sencilla en medio de la conducta automática de fumar.",
+              "Distrae tu atención: cambia de ambiente, da un paseo corto, llama a alguien o dirige tu mente hacia otra cosa."
+            ],
+            "numbered": true
+          }
+        ],
+        "keyTakeaways": [
+          "El objetivo del método 4D no es \"eliminar\" las ganas al instante, sino poner tiempo entre el cigarrillo y la reacción automática para que la ola pueda pasar."
+        ]
+      },
+      {
+        "id": "b3-05",
+        "sectionId": "section-3",
+        "order": 5,
+        "title": "Haz un plan antes de que llegue el desencadenante",
+        "summary": "Con un enfoque de \"si pasa X, haré Y\", define de antemano la respuesta que darás en los momentos difíciles.",
+        "estimatedReadMinutes": 2,
+        "icon": "flag",
+        "intro": "Tomar decisiones en un momento de crisis puede ser difícil. Un plan breve de \"si - entonces\", preparado con antelación, puede reducir la conducta automática.",
+        "contentSections": [
+          {
+            "title": "Ejemplos",
+            "body": null,
+            "items": [
+              "Si me dan ganas de fumar con el café, tomaré el café en otro lugar.",
+              "Si alguien me ofrece un cigarrillo, diré \"no fumo\".",
+              "Si salgo de una reunión estresante, primero caminaré unos minutos."
+            ],
+            "numbered": false
+          },
+          {
+            "title": "Alcohol y ambiente social",
+            "body": "Si el alcohol o los ambientes sociales donde se fuma aumentan tus ganas, reorganizar el ambiente, la duración o el plan puede ayudar, sobre todo en el período inicial.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Elegir el plan de antemano, en lugar de crearlo durante la crisis, hace que tengas que tomar menos decisiones en los momentos difíciles."
+        ]
+      },
+      {
+        "id": "b3-06",
+        "sectionId": "section-3",
+        "order": 6,
+        "title": "El desliz (lapse) y la recaída (relapse) no son lo mismo",
+        "summary": "Comprende la diferencia entre un desliz breve y un regreso al patrón de consumo habitual anterior.",
+        "estimatedReadMinutes": 2,
+        "icon": "lightbulb",
+        "intro": "El desliz (lapse) se refiere a fumar de forma puntual o breve; la recaída (relapse) se refiere a volver al patrón de consumo habitual anterior.",
+        "contentSections": [
+          {
+            "title": "¿Por qué importa la distinción?",
+            "body": "No es correcto restarle importancia a un desliz: puede reactivar el ciclo anterior. Pero interpretarlo como \"ya he fracasado por completo\" también puede aumentar el riesgo de seguir fumando.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Equilibrio",
+            "body": "Tómate el desliz en serio, pero no lo veas como el final de todo el proceso. La información más valiosa es qué desencadenante entró en juego en ese momento.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Un desliz es una alarma, no una sentencia. Es posible entender qué ha pasado y volver a la vida sin tabaco."
+        ]
+      },
+      {
+        "id": "b3-07",
+        "sectionId": "section-3",
+        "order": 7,
+        "title": "La trampa de \"un error lo arruinó todo\"",
+        "summary": "Reconoce por qué el pensamiento \"de todos modos ya lo eché a perder\", que puede aparecer tras un desliz, puede facilitar el segundo y el tercer cigarrillo.",
+        "estimatedReadMinutes": 2,
+        "icon": "local_fire_department",
+        "intro": "Después de fumar un cigarrillo, pueden aparecer pensamientos como \"no tengo fuerza de voluntad\", \"ya lo eché a perder\" o \"hoy fumo, mañana empiezo de nuevo\".",
+        "contentSections": [
+          {
+            "title": "El verdadero riesgo",
+            "body": "Dar por perdido todo el proceso después de un solo desliz puede facilitar que la persona siga fumando. Por eso es importante analizar rápido un error en lugar de agrandarlo.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Tres preguntas",
+            "body": null,
+            "items": [
+              "¿Qué ha pasado?",
+              "¿Qué desencadenante ha entrado en juego?",
+              "¿Qué haré la próxima vez en la misma situación?"
+            ],
+            "numbered": false
+          },
+          {
+            "title": "Datos en lugar de juicio",
+            "body": "El objetivo no es normalizar lo ocurrido, sino convertirlo en información que sirva para construir un plan más fuerte si se repite el mismo escenario.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "El pensamiento \"todo se ha acabado\" no es la realidad en sí misma; es una reacción mental que puede convertir un desliz en una recaída."
+        ]
+      },
+      {
+        "id": "b3-08",
+        "sectionId": "section-3",
+        "order": 8,
+        "title": "Plan de recuperación tras un desliz",
+        "summary": "Si tienes un desliz, detente antes de continuar, analiza el desencadenante, actualiza tu plan y vuelve a la vida sin tabaco.",
+        "estimatedReadMinutes": 2,
+        "icon": "flag",
+        "intro": "Los primeros pasos que das después de un desliz son importantes para evitar que el episodio se convierta de nuevo en un consumo habitual.",
+        "contentSections": [
+          {
+            "title": "Pasos para recuperarte",
+            "body": null,
+            "items": [
+              "No continúes: no pases a un segundo cigarrillo diciéndote \"de todos modos ya lo eché a perder\".",
+              "Escribe lo ocurrido: ¿dónde estabas, con quién y en qué estado emocional?",
+              "Identifica el desencadenante: ¿fue estrés, alcohol, presión social, falta de planificación o un hábito muy arraigado?",
+              "Actualiza tu plan: define la nueva conducta que usarás si se repite el mismo escenario.",
+              "Considera pedir apoyo: si las ganas o la abstinencia son demasiado fuertes para manejarlas solo, puedes valorar un profesional de la salud o un apoyo para dejar de fumar.",
+              "Vuelve: regresa a la vida sin tabaco lo antes posible."
+            ],
+            "numbered": true
+          }
+        ],
+        "keyTakeaways": [
+          "El paso más importante después de un desliz es detenerlo en lugar de dejar que continúe, y fortalecer tu plan."
+        ]
+      },
+      {
+        "id": "b3-09",
+        "sectionId": "section-3",
+        "order": 9,
+        "title": "Crea tu propio plan de crisis",
+        "summary": "Define de antemano tus desencadenantes más fuertes, el primer método que aplicarás y a quién recurrirás si lo necesitas.",
+        "estimatedReadMinutes": 2,
+        "icon": "flag",
+        "intro": "Un plan de crisis te ofrece una hoja de ruta lista, en lugar de tener que pensarlo todo desde cero en un momento difícil.",
+        "contentSections": [
+          {
+            "title": "Completa tu plan",
+            "body": null,
+            "items": [
+              "Mis tres desencadenantes más fuertes: ________",
+              "El primer paso que daré cuando lleguen las ganas: ________",
+              "Una opción para cambiar de ambiente: ________",
+              "A quién puedo llamar o escribir: ________",
+              "La frase que me recordaré a mí mismo: ________"
+            ],
+            "numbered": false
+          },
+          {
+            "title": "Mantenlo breve",
+            "body": "Cuanto más simple y accesible sea tu plan, mayor puede ser la probabilidad de que lo apliques en un momento de crisis.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "El plan de crisis no elimina las ganas de antemano; deja claro qué harás cuando lleguen."
+        ]
+      },
+      {
+        "id": "b3-10",
+        "sectionId": "section-3",
+        "order": 10,
+        "title": "Revisa tu proceso con regularidad",
+        "summary": "Evalúa qué desencadenantes se han debilitado, cuáles siguen presentes y qué método te funciona mejor.",
+        "estimatedReadMinutes": 2,
+        "icon": "loop",
+        "intro": "A lo largo del proceso de mantenerte sin fumar, la misma estrategia puede no funcionar igual de bien en todas las situaciones. Es normal actualizar el plan de vez en cuando.",
+        "contentSections": [
+          {
+            "title": "Pregúntate",
+            "body": null,
+            "items": [
+              "¿Qué desencadenantes manejo ahora con más facilidad?",
+              "¿En qué situaciones siguen siendo fuertes las ganas?",
+              "¿Cuál es el método que mejor me funciona?",
+              "Si tengo un desliz, ¿qué haré en los primeros minutos?"
+            ],
+            "numbered": false
+          },
+          {
+            "title": "Conoce tu límite de apoyo",
+            "body": "Es útil saber de antemano a quién recurrir para obtener apoyo profesional en el punto en el que te cueste manejarlo por tu cuenta.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Recuerda tu motivo",
+            "body": "Recuérdate de vez en cuando el motivo personal más fuerte para mantener tu vida sin tabaco.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Un buen plan no tiene por qué ser fijo; puede actualizarse a medida que ganas experiencia."
+        ]
+      },
+      {
+        "id": "b3-11",
+        "sectionId": "section-3",
+        "order": 11,
+        "title": "Resumen del capítulo",
+        "summary": "Reúne en un solo lugar las ganas de fumar, el método 4D, el plan de desencadenantes y el manejo del desliz y la recaída.",
+        "estimatedReadMinutes": 1,
+        "icon": "flag",
+        "intro": "Las ganas de fumar no son una orden. Pueden aparecer como un impulso temporal, hacerse más fuertes y luego disminuir.",
+        "contentSections": [
+          {
+            "title": "Para recordar",
+            "body": "Reconocer las ganas, usar el enfoque de surfear la ola o el método 4D, preparar de antemano un plan para los desencadenantes y no dejar que un posible desliz se convierta en el pensamiento de \"todo se ha acabado\" puede ayudar a proteger tu vida sin tabaco.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Las preguntas clave",
+            "body": null,
+            "items": [
+              "¿Qué ha pasado?",
+              "¿Qué desencadenante ha entrado en juego?",
+              "¿Qué haré la próxima vez?"
+            ],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Las ganas pasan, el plan se fortalece. El objetivo no es superar cada momento difícil a la perfección; es aprender a volver a la vida sin tabaco y mantenerla."
+        ]
+      }
+    ]
+  }
+]

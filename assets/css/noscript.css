@@ -1,0 +1,47 @@
+/* Loaded only inside <noscript>: show static fallbacks for script-driven parts. */
+
+.menu-toggle,
+.menu-panel,
+.wave-tool__live,
+.breath__stage,
+.plan-form__actions,
+.search,
+.share {
+  display: none !important;
+}
+
+.wave-tool__static {
+  display: block;
+}
+
+.nav {
+  display: block;
+}
+
+.site-header__inner {
+  flex-wrap: wrap;
+  height: auto;
+  padding-block: 0.75rem;
+}
+
+.nav__list {
+  flex-wrap: wrap;
+  row-gap: 0.25rem;
+}
+
+.timeline__progress,
+.timeline__head {
+  display: none;
+}
+
+@media (min-width: 960px) {
+  .app-story__stage {
+    display: none;
+  }
+
+  .app-rail .screen {
+    display: block;
+    max-width: 18rem;
+    margin-bottom: 1.5rem;
+  }
+}

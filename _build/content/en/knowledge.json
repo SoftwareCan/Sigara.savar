@@ -1,0 +1,951 @@
+[
+  {
+    "id": "section-1",
+    "order": 1,
+    "title": "Preparation and the First Days",
+    "description": "The foundation chapter: understand how addiction works, notice why you smoke, and prepare for quit day.",
+    "articles": [
+      {
+        "id": "b1-01",
+        "sectionId": "section-1",
+        "order": 1,
+        "title": "What is addiction?",
+        "summary": "Understand the biological, psychological, and social sides of addiction through nicotine, the reward system, and learned behaviors.",
+        "estimatedReadMinutes": 2,
+        "icon": "lightbulb",
+        "intro": "Smoking addiction isn't just a matter of habit or willpower. Nicotine's effects on the brain, daily routines, and social surroundings can gradually build a cycle that feeds itself.",
+        "contentSections": [
+          {
+            "title": "Nicotine and the reward system",
+            "body": "Nicotine reaches the brain quickly and affects systems tied to reward, motivation, and learning. The shift in dopamine release helps the brain learn to treat smoking as a behavior worth repeating.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "What changes over time?",
+            "body": "As regular use continues, the brain adapts to nicotine. When nicotine levels drop, withdrawal signs like restlessness, difficulty concentrating, or craving can appear. Because smoking briefly eases this discomfort, the cycle grows stronger again.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "The three sides of addiction",
+            "body": "The biological side relates to nicotine and withdrawal, the psychological side to the sense of relief or reward attached to smoking, and the social-behavioral side to pairings with coffee, meals, breaks, friend groups, or alcohol.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Addiction doesn't come from a single cause. Nicotine, thoughts, and daily habits work together — noticing all three matters while you quit."
+        ]
+      },
+      {
+        "id": "b1-02",
+        "sectionId": "section-1",
+        "order": 2,
+        "title": "Why do you smoke, and why should you quit?",
+        "summary": "Notice your triggers, habits, and the meanings you've attached to smoking; clarify your reasons for quitting.",
+        "estimatedReadMinutes": 2,
+        "icon": "lightbulb",
+        "intro": "Smoking is often driven by more than just needing nicotine. Certain times of day, emotions, people, and settings can become paired with the act of smoking.",
+        "contentSections": [
+          {
+            "title": "Catch the moments that became automatic",
+            "body": "Coffee, after meals, a phone call, driving, a work break, stress, or social settings can, over time, become a \"smoke now\" signal.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Does smoking really relax you?",
+            "body": "Nicotine has stimulant properties. Part of the relief felt after smoking may be linked to the brief easing of the nicotine withdrawal that builds up between cigarettes. The brain can then interpret this temporary relief as \"smoking solves my stress.\"",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Clarify your own reason",
+            "body": "Writing down your personal reasons for wanting to quit — health, freedom, time, money, family, breathing, or quality of life — can make it easier to remember your decision during hard moments.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Seeing the automatic moments behind your smoking behavior turns quitting from a matter of \"just enduring it\" into a more conscious change."
+        ]
+      },
+      {
+        "id": "b1-03",
+        "sectionId": "section-1",
+        "order": 3,
+        "title": "What will you gain by quitting?",
+        "summary": "See the gains quitting can bring in health, breathing, time, money, and quality of life.",
+        "estimatedReadMinutes": 2,
+        "icon": "favorite",
+        "intro": "The gains from quitting don't fit into a single day. Your body starts changing from the first hours; improvements across different systems can appear over the following weeks, months, and years.",
+        "contentSections": [
+          {
+            "title": "General timeline",
+            "body": "In the first minutes, heart rate and blood pressure can start shifting toward normal values. In the first hours, carbon monoxide in the blood decreases. Within the first days, nicotine levels drop significantly and taste and smell can begin to recover. Over weeks and months, improvements can appear in circulation, breathing, and the airway's ability to clear itself.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Long-term gains",
+            "body": "The longer you stay smoke-free, the more the risks associated with cardiovascular disease and certain cancers are reported to decline over time.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Beyond health",
+            "body": "Getting back the money and time spent on cigarettes, seeing that you can live without being dependent, and a growing sense of control over daily choices are important gains too.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Quitting isn't just removing something from your life; it's the start of new gains in health, time, money, and freedom."
+        ]
+      },
+      {
+        "id": "b1-04",
+        "sectionId": "section-1",
+        "order": 4,
+        "title": "Preparation and planning",
+        "summary": "Set your quit day, observe your smoking pattern, prepare your surroundings, and choose alternatives for hard moments in advance.",
+        "estimatedReadMinutes": 2,
+        "icon": "flag",
+        "intro": "Trying to figure everything out on quit day itself can be hard. Preparing in advance makes decisions easier, especially in your automatic smoking moments.",
+        "contentSections": [
+          {
+            "title": "Set your quit day",
+            "body": "Pick a clear date for yourself and write down the preparations you want to finish before it.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Track your smoking pattern",
+            "body": "Observe for a few days at what time, with what emotion, with whom, and in what setting you smoke. This record helps you see your strongest triggers.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Arrange your surroundings",
+            "body": "Remove objects that remind you of smoking — packs, ashtrays, lighters — from home, car, and work. Choose a new behavior for strong pairings like coffee, after meals, or work breaks.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Ask for support",
+            "body": "Telling people close to you about your decision to quit, and asking them not to offer you cigarettes especially in the first days, can make the process easier.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Preparation doesn't make cravings never show up; it means you already know what you'll do when they do."
+        ]
+      },
+      {
+        "id": "b1-05",
+        "sectionId": "section-1",
+        "order": 5,
+        "title": "Map out your own triggers",
+        "summary": "Identify the times, emotions, settings, and habits that automatically start the thought or urge to smoke, for yourself.",
+        "estimatedReadMinutes": 2,
+        "icon": "loop",
+        "intro": "A trigger is a situation that automatically starts the thought or urge to smoke. It isn't the same for every person.",
+        "contentSections": [
+          {
+            "title": "Ask yourself",
+            "body": "At what time of day is my craving strongest? Is there a connection to coffee, meals, the phone, driving, or a work break? Which emotions — stress, anger, boredom, loneliness, or celebration — increase the craving? How do social settings with alcohol or smoking affect me?",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "What can you put in its place?",
+            "body": "For each strong trigger, choose the simplest new behavior you can. For example, a short walk after coffee, brushing your teeth after a meal, a few minutes' break after stress, or a supportive message.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Noticing a trigger opens up a small but important gap between automatic behavior and a conscious choice."
+        ]
+      },
+      {
+        "id": "b1-06",
+        "sectionId": "section-1",
+        "order": 6,
+        "title": "Support options",
+        "summary": "Know in general terms that nicotine patches, gum, lozenges, and certain medications can be used to support the quitting process.",
+        "estimatedReadMinutes": 2,
+        "icon": "favorite",
+        "intro": "Some people can benefit from extra support to manage withdrawal and cravings while quitting.",
+        "contentSections": [
+          {
+            "title": "General options",
+            "body": "There are products like nicotine patches, nicotine gum, and lozenges, as well as certain medications used in smoking cessation. The purpose of these options is to make withdrawal and cravings more manageable for some people.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Evaluate with a health professional",
+            "body": "Use of medication and nicotine support products can vary based on personal health status. Consult a health professional when needed.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Support products and medications can be an option for some people; the personal treatment decision belongs to a health professional."
+        ]
+      },
+      {
+        "id": "b1-07",
+        "sectionId": "section-1",
+        "order": 7,
+        "title": "Quit Day",
+        "summary": "Get through your first smoke-free day with more of a plan, using simple steps like water, movement, breathing, and arranging your surroundings.",
+        "estimatedReadMinutes": 2,
+        "icon": "flag",
+        "intro": "The goal of the first day isn't to feel flawless. The goal is to plan the first day without smoking as much as possible in advance.",
+        "contentSections": [
+          {
+            "title": "Change your morning routine",
+            "body": "Change the first behavior most strongly paired with smoking. Even a small change like a shower, a short walk, or a different breakfast routine can break the automatic chain.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Prepare simple tools",
+            "body": "Use drinking water as a reminder routine; prepare smoke-free options to keep your hands and mouth busy. When a craving hits, you can try 4-4-6 breathing: breathe in for 4 seconds, hold for 4 seconds, release slowly over 6 seconds.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Reduce strong triggers",
+            "body": "Especially in the first days, reducing settings where people smoke and triggers that challenge you as much as possible can make things easier.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "The first day can be challenging. The goal isn't for the craving to never come; it's being able to let it pass without smoking when it does."
+        ]
+      },
+      {
+        "id": "b1-08",
+        "sectionId": "section-1",
+        "order": 8,
+        "title": "Withdrawal",
+        "summary": "Understand why withdrawal happens, what kinds of symptoms it can involve, and that it's part of a temporary adjustment process.",
+        "estimatedReadMinutes": 2,
+        "icon": "lightbulb",
+        "intro": "When nicotine decreases, the brain and body try to adjust to the new situation for a while. Some temporary symptoms can appear during this period.",
+        "contentSections": [
+          {
+            "title": "What might you feel?",
+            "body": "Restlessness, difficulty concentrating, changes in appetite, cravings, and similar symptoms can appear in the early period of quitting.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "What does it mean?",
+            "body": "These symptoms appearing doesn't mean \"you need a cigarette.\" It can simply be a period where your body is adjusting to a nicotine-free routine.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Approach",
+            "body": "Sleep, regular water intake, short walks, breathing exercises, reducing triggers, and seeking professional support when needed can make this period more manageable.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Withdrawal can be uncomfortable, but it's a temporary adjustment process. If symptoms become too intense or unmanageable, get support from a health professional."
+        ]
+      },
+      {
+        "id": "b1-09",
+        "sectionId": "section-1",
+        "order": 9,
+        "title": "Chapter Summary",
+        "summary": "Gather addiction, triggers, quit preparation, and your basic plan for the first day in one place.",
+        "estimatedReadMinutes": 1,
+        "icon": "flag",
+        "intro": "In this chapter, you saw that smoking addiction isn't just a matter of willpower; the brain, thoughts, routines, and environment all play a role together.",
+        "contentSections": [
+          {
+            "title": "Keep in mind",
+            "body": "Recognizing your triggers before quitting, arranging your surroundings, choosing new routines in advance, and preparing a simple plan for the first day make the process clearer.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Next step",
+            "body": "In the next chapter, we'll cover the learned connections that can outlast nicotine leaving your body, and ways to make a smoke-free life permanent.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Preparation is done: now you're moving on not just to quitting smoking, but to building a smoke-free routine."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "section-2",
+    "order": 2,
+    "title": "Making a Smoke-Free Life Permanent",
+    "description": "Focuses on turning smoke-free living into your new normal by resetting the habits, thoughts, and triggers that can outlast nicotine leaving your body.",
+    "articles": [
+      {
+        "id": "b2-01",
+        "sectionId": "section-2",
+        "order": 1,
+        "title": "Nicotine is gone — why might you still want to smoke?",
+        "summary": "Understand that physical withdrawal and learned smoking connections aren't the same thing.",
+        "estimatedReadMinutes": 2,
+        "icon": "lightbulb",
+        "intro": "Nicotine clearing from the body is not the same process as unlearning smoking behaviors built up over years.",
+        "contentSections": [
+          {
+            "title": "Physical withdrawal",
+            "body": "As nicotine decreases, restlessness, difficulty concentrating, changes in appetite, or similar symptoms can appear. These are related to the physical adjustment process.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Learned connections",
+            "body": "Pairings like coffee -> cigarette, meal -> cigarette, or break -> cigarette can become automatic when repeated for years. Because of this, even months later, a certain setting or emotion can trigger the thought of smoking.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "The key difference",
+            "body": "Such a thought appearing doesn't necessarily mean you need nicotine again; it can just be an old connection being remembered.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Physical withdrawal can fade; but old habit connections can be remembered for much longer, and they weaken through relearning."
+        ]
+      },
+      {
+        "id": "b2-02",
+        "sectionId": "section-2",
+        "order": 2,
+        "title": "Rewrite your triggers",
+        "summary": "Instead of trying to erase old triggers entirely, place new behaviors right behind those same moments.",
+        "estimatedReadMinutes": 2,
+        "icon": "loop",
+        "intro": "It's not always possible to remove triggers from your life completely. A more realistic goal is to repeatedly choose a new behavior after the same trigger, again and again.",
+        "contentSections": [
+          {
+            "title": "Create new pairings",
+            "body": null,
+            "items": [
+              "Coffee -> a few minutes in a different setting, water, or a short walk.",
+              "Meal -> brushing your teeth, tea, or brief movement.",
+              "Stress -> breathing, a short break, or a supportive message.",
+              "Work break -> a smoke-free route or a different group of friends."
+            ],
+            "numbered": false
+          },
+          {
+            "title": "Alcohol and social settings",
+            "body": "Alcohol can strengthen the craving to smoke and automatic behaviors in some people. Especially in the early period, rearranging the amount, the setting, or the plan can help.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Why repetition matters",
+            "body": "Every time you choose the new behavior, you put a different option in place of the old automatic chain. The goal isn't to forget in one go, but to repeat the new path.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Pairing an old trigger with a new behavior helps a smoke-free life feel more and more familiar."
+        ]
+      },
+      {
+        "id": "b2-03",
+        "sectionId": "section-2",
+        "order": 3,
+        "title": "Re-evaluate your thoughts about smoking",
+        "summary": "Look at old thoughts that can feel very convincing during the quitting process through a more realistic lens.",
+        "estimatedReadMinutes": 2,
+        "icon": "lightbulb",
+        "intro": "A thought feeling powerful doesn't mean it's true. Some old beliefs can resurface during the quitting process.",
+        "contentSections": [
+          {
+            "title": "\"Smoking calms me down.\"",
+            "body": "Part of the feeling of relief can be the brief easing of nicotine withdrawal.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "\"I can't focus without smoking.\"",
+            "body": "Withdrawal can temporarily disrupt attention; smoking can feel like it's fixing that disruption.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "\"I've smoked this many years, there's no point quitting now.\"",
+            "body": "The benefit of quitting for health and quality of life continues at different ages too.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "\"One won't hurt.\"",
+            "body": "A single cigarette can revive the old behavior cycle and the \"just one more\" thought.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "You don't have to argue with an old thought when it comes up; first notice it, then reframe it with a more realistic explanation."
+        ]
+      },
+      {
+        "id": "b2-04",
+        "sectionId": "section-2",
+        "order": 4,
+        "title": "What will you fill the gap smoking left with?",
+        "summary": "Notice what function smoking served for you, and find a smoke-free answer to the same need.",
+        "estimatedReadMinutes": 2,
+        "icon": "auto_awesome",
+        "intro": "For some people, smoking isn't just nicotine; it can mean a break, socializing, a hand-to-mouth habit, or \"a few minutes I set aside for myself.\"",
+        "contentSections": [
+          {
+            "title": "New answers based on the need",
+            "body": null,
+            "items": [
+              "Need for a break: a 5-minute short walk or a fresh-air break.",
+              "Stress: slow breathing, brief relaxation, or stepping away from the setting for a few minutes.",
+              "Hand-to-mouth habit: water, sugar-free gum, or other smoke-free routines.",
+              "Need for reward: favorite music, a hobby, small goals, or physical activity.",
+              "Socializing: building smoke-free friendship and break routines."
+            ],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "What you replace smoking with can depend on what need smoking was answering in your life."
+        ]
+      },
+      {
+        "id": "b2-05",
+        "sectionId": "section-2",
+        "order": 5,
+        "title": "Strengthen your natural rewards again",
+        "summary": "Rather than building your smoke-free life only around \"not smoking,\" support your reward and motivation system with natural routines from daily life — movement, sleep, and breathing.",
+        "estimatedReadMinutes": 2,
+        "icon": "auto_awesome",
+        "intro": "Rather than building a smoke-free life solely around \"not smoking,\" increasing natural routines that bring enjoyment and relaxation can be a more sustainable approach.",
+        "contentSections": [
+          {
+            "title": "Choose three small areas",
+            "body": "Movement, sleep, and enjoyment. For example, a short walk, a more regular sleep schedule, and a smoke-free activity you enjoy.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "No need for a big change",
+            "body": "The goal isn't to build a flawless life all at once. Small but repeatable behaviors can gradually fill the space smoking left behind.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Breathing and relaxation",
+            "body": "Slow breathing and brief relaxation exercises can offer a different option during stressful moments, instead of automatically reaching for a cigarette.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "The more daily and accessible your new rewards are, the easier it can become for smoke-free living to feel like your new normal."
+        ]
+      },
+      {
+        "id": "b2-06",
+        "sectionId": "section-2",
+        "order": 6,
+        "title": "From \"I'm trying to quit\" to \"I don't smoke\"",
+        "summary": "Build a clearer inner and social boundary that aligns your smoke-free behavior with your new identity.",
+        "estimatedReadMinutes": 2,
+        "icon": "flag",
+        "intro": "The phrase \"I'm trying to quit smoking\" can, for some people, make the decision feel like something that has to be re-made at every trigger.",
+        "contentSections": [
+          {
+            "title": "The identity approach",
+            "body": "\"I don't smoke\" aims to make the behavior match your new identity. It isn't a magic sentence; it's a boundary reinforced by the behavior repeated again and again.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Example in a social setting",
+            "body": "Saying \"No thanks, I don't smoke\" instead of \"No thanks, I'm trying to quit\" can create a clearer, shorter boundary for some people.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Reinforce it with behavior",
+            "body": "Identity is reinforced not just by a sentence you say, but by the new answer you give at every trigger.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "The goal is to make smoke-free behavior a natural part of your daily identity, rather than seeing yourself as being in a constant struggle."
+        ]
+      },
+      {
+        "id": "b2-07",
+        "sectionId": "section-2",
+        "order": 7,
+        "title": "Watch out for the \"I can control it now\" thought",
+        "summary": "Notice why the \"I could have just one\" thought that can appear once cravings decrease may be risky.",
+        "estimatedReadMinutes": 2,
+        "icon": "local_fire_department",
+        "intro": "When the urge to smoke decreases after weeks or months, the thought \"I can control the addiction now, I could have just one\" can appear.",
+        "contentSections": [
+          {
+            "title": "Where's the risk?",
+            "body": "The risk isn't only the single cigarette itself. Smoking can re-strengthen old reward and behavior connections and revive the \"just one more\" thought.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "A simple boundary",
+            "body": "Rather than trying to \"manage just one,\" the simplest boundary that protects your smoke-free status is not starting again.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Remind yourself",
+            "body": "Cravings decreasing is meaningful progress; but the point of that progress isn't to return to controlled smoking — it's to strengthen your smoke-free life.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "The thought \"I'm fine now, I could have just one\" can look like proof of progress; it can actually be a door back into the old cycle."
+        ]
+      },
+      {
+        "id": "b2-08",
+        "sectionId": "section-2",
+        "order": 8,
+        "title": "Smoke-free life checklist",
+        "summary": "Use short questions to check where your new routine is getting stronger and where it still needs support.",
+        "estimatedReadMinutes": 2,
+        "icon": "flag",
+        "intro": "Maintaining a smoke-free life isn't just about looking at the day that just passed. It also helps to review from time to time how well your new behaviors have settled in.",
+        "contentSections": [
+          {
+            "title": "Ask yourself",
+            "body": null,
+            "items": [
+              "Can I describe myself as someone who \"doesn't smoke\"?",
+              "Do I have a new behavior for strong triggers like coffee, after meals, or stress?",
+              "Can I notice and question old thoughts like \"smoking used to relax me\"?"
+            ],
+            "numbered": false
+          },
+          {
+            "title": "Check your routine",
+            "body": null,
+            "items": [
+              "Am I building a smoke-free routine in terms of sleep, movement, social life, and enjoyable activities?",
+              "Do I accept that the thought \"one won't hurt\" can be risky for me?"
+            ],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "The checklist isn't for judging your success; it's for spotting the next area to strengthen."
+        ]
+      },
+      {
+        "id": "b2-09",
+        "sectionId": "section-2",
+        "order": 9,
+        "title": "Chapter Summary",
+        "summary": "Gather the habits, thoughts, and new identity that can outlast physical withdrawal in one place.",
+        "estimatedReadMinutes": 1,
+        "icon": "flag",
+        "intro": "Nicotine leaving the body doesn't mean all habits disappear at the same time.",
+        "contentSections": [
+          {
+            "title": "Keep in mind",
+            "body": "As you answer old triggers with new behaviors, smoke-free life becomes more familiar. Lasting change isn't just removing the cigarette — it's filling the space it left with new routines, new rewards, and a new identity.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Next step",
+            "body": "In the next chapter, we'll cover intense cravings, the craving wave, the 4D method, and managing lapse and relapse.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "A smoke-free life is no longer just a goal to protect; it's your daily new routine."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "section-3",
+    "order": 3,
+    "title": "Managing Cravings and Preventing Relapse",
+    "description": "Covers how cravings work, their temporary nature, tools you can use in a crisis moment, and how to keep a lapse from turning into a return to regular smoking.",
+    "articles": [
+      {
+        "id": "b3-01",
+        "sectionId": "section-3",
+        "order": 1,
+        "title": "What is a craving?",
+        "summary": "Understand that a craving is a strong but temporary urge that can be triggered by physical withdrawal or learned cues.",
+        "estimatedReadMinutes": 2,
+        "icon": "local_fire_department",
+        "intro": "A craving is a strong urge to smoke that can be triggered by an environmental cue, an emotion, a thought, or nicotine withdrawal.",
+        "contentSections": [
+          {
+            "title": "Physical withdrawal craving",
+            "body": "This can be linked to biological symptoms that appear as nicotine levels drop, especially in the early period of quitting.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Conditioned psychological craving",
+            "body": "It can also appear later, triggered by learned cues like stress, coffee, the smell of smoke, certain people, or settings.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "The important message",
+            "body": "A craving being strong doesn't mean you have to give in to it. It can be noticed as an urge and be allowed to pass without smoking.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "A craving isn't an order; it's a temporary urge, and it can be triggered by different cues."
+        ]
+      },
+      {
+        "id": "b3-02",
+        "sectionId": "section-3",
+        "order": 2,
+        "title": "A craving rises and falls like a wave",
+        "summary": "See a craving not as a constant need, but as a wave that rises, peaks, and then fades.",
+        "estimatedReadMinutes": 2,
+        "icon": "local_fire_department",
+        "intro": "The urge to smoke usually doesn't stay at the same intensity. It rises, becomes noticeable, and then tends to fade.",
+        "contentSections": [
+          {
+            "title": "Rising",
+            "body": "The thought of smoking can become noticeable and tension can build. Noticing \"a craving wave has started right now\" is the first step here.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Peak",
+            "body": "Your mind can feel locked onto the cigarette. This is where you use one of the tools you've already chosen, like the 4D method or changing your setting.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Fading",
+            "body": "When the intensity of the urge starts to drop, notice that you got through it without smoking. This experience can build confidence for the next wave.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Instead of treating the wave as if it's endless, seeing it as a temporary process that rises and falls can make it easier to manage."
+        ]
+      },
+      {
+        "id": "b3-03",
+        "sectionId": "section-3",
+        "order": 3,
+        "title": "Urge surfing",
+        "summary": "Instead of fighting a craving or forcing it down, briefly observe the change happening in your body and mind.",
+        "estimatedReadMinutes": 2,
+        "icon": "loop",
+        "intro": "Urge surfing is an approach where, instead of trying to force away the thought of smoking, you observe it as a temporary feeling and bodily impulse.",
+        "contentSections": [
+          {
+            "title": "Four steps",
+            "body": null,
+            "items": [
+              "Name it: \"Right now I have a craving to smoke.\"",
+              "Notice it in the body: how do you feel the urge — in your mouth, throat, chest, stomach, or somewhere else?",
+              "Watch it change: don't try to change the wave right away. Observe it rise and fade for a while.",
+              "Notice the end: when the urge fades, remind yourself that this moment passed without smoking."
+            ],
+            "numbered": true
+          }
+        ],
+        "keyTakeaways": [
+          "The goal isn't to like the craving or ignore it; it's to directly experience that it's temporary."
+        ]
+      },
+      {
+        "id": "b3-04",
+        "sectionId": "section-3",
+        "order": 4,
+        "title": "The 4D method (Delay - Deep breathe - Drink water - Distract)",
+        "summary": "Delay • Breathe deeply • Drink water • Distract yourself: apply four simple steps in order to interrupt the automatic smoking behavior in a crisis moment.",
+        "estimatedReadMinutes": 2,
+        "icon": "local_fire_department",
+        "intro": "The 4D method is a simple crisis plan you can use to create a few minutes of space and interrupt the automatic behavior when a strong craving hits.",
+        "contentSections": [
+          {
+            "title": "Manage the craving in 4 steps",
+            "body": null,
+            "items": [
+              "Delay: when the craving hits, instead of acting right away, delay the decision to smoke for a few minutes.",
+              "Deep breathe: focus on easing the bodily tension with slow, controlled breathing.",
+              "Drink water: a few sips of water can place a simple pause in between and interrupt the automatic smoking behavior.",
+              "Distract: change your setting, take a short walk, call someone, or shift your mind to something else."
+            ],
+            "numbered": true
+          }
+        ],
+        "keyTakeaways": [
+          "The goal of the 4D method isn't to instantly \"destroy\" the craving; it's to put time between the automatic reaction and the cigarette so the wave can pass."
+        ]
+      },
+      {
+        "id": "b3-05",
+        "sectionId": "section-3",
+        "order": 5,
+        "title": "Plan before the trigger arrives",
+        "summary": "Decide in advance, with an \"if X happens, I'll do Y\" approach, how you'll respond in hard moments.",
+        "estimatedReadMinutes": 2,
+        "icon": "flag",
+        "intro": "Making decisions in a crisis moment can be hard. A short, pre-prepared \"if - then\" plan can reduce automatic behavior.",
+        "contentSections": [
+          {
+            "title": "Examples",
+            "body": null,
+            "items": [
+              "If I want a cigarette with my coffee, I'll drink my coffee somewhere else.",
+              "If someone offers me a cigarette, I'll say \"I don't smoke.\"",
+              "If I leave a stressful meeting, I'll walk for a few minutes first."
+            ],
+            "numbered": false
+          },
+          {
+            "title": "Alcohol and social settings",
+            "body": "If alcohol or social settings where people smoke increase your craving, rearranging the setting, the duration, or the plan can help, especially in the early period.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Choosing the plan in advance instead of coming up with it during a crisis means you have fewer decisions to make in hard moments."
+        ]
+      },
+      {
+        "id": "b3-06",
+        "sectionId": "section-3",
+        "order": 6,
+        "title": "A lapse and a relapse are not the same thing",
+        "summary": "Understand the difference between a brief lapse and a full return to your old, regular smoking pattern.",
+        "estimatedReadMinutes": 2,
+        "icon": "lightbulb",
+        "intro": "A lapse refers to a one-time or short-term instance of smoking; a relapse refers to going back to your old, regular pattern of use.",
+        "contentSections": [
+          {
+            "title": "Why does the distinction matter?",
+            "body": "It's not right to treat a lapse as unimportant — it can revive the old cycle. But interpreting it as \"I've failed completely now\" can also increase the risk of continuing to smoke.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Balance",
+            "body": "Take the lapse seriously, but don't see it as the end of the whole process. The most valuable information is which trigger came into play at that moment.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "A lapse is an alarm, not a verdict. It's possible to understand what happened and return to being smoke-free."
+        ]
+      },
+      {
+        "id": "b3-07",
+        "sectionId": "section-3",
+        "order": 7,
+        "title": "The \"one mistake ruined everything\" trap",
+        "summary": "Notice why the \"it's already ruined\" thought that can appear after a lapse might make the second and third cigarette easier.",
+        "estimatedReadMinutes": 2,
+        "icon": "local_fire_department",
+        "intro": "After smoking one cigarette, thoughts like \"I have no willpower,\" \"I already blew it,\" or \"I'll smoke today, start again tomorrow\" can appear.",
+        "contentSections": [
+          {
+            "title": "The real risk",
+            "body": "Treating the whole process as lost after a single lapse can make it easier for the person to keep smoking. That's why it's important to quickly analyze a mistake instead of blowing it out of proportion.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Three questions",
+            "body": null,
+            "items": [
+              "What happened?",
+              "Which trigger came into play?",
+              "What will I do next time in the same situation?"
+            ],
+            "numbered": false
+          },
+          {
+            "title": "Data instead of judgment",
+            "body": "The goal isn't to normalize what happened; it's to turn it into information that will build a stronger plan if the same scenario repeats.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "The thought \"it's all over\" isn't the reality itself — it's a mental reaction that can turn a lapse into a relapse."
+        ]
+      },
+      {
+        "id": "b3-08",
+        "sectionId": "section-3",
+        "order": 8,
+        "title": "Recovery plan after a lapse",
+        "summary": "If you have a lapse, stop before it continues, analyze the trigger, update your plan, and return to being smoke-free.",
+        "estimatedReadMinutes": 2,
+        "icon": "flag",
+        "intro": "The first steps taken after a lapse matter for preventing the event from turning into regular use again.",
+        "contentSections": [
+          {
+            "title": "Recovery steps",
+            "body": null,
+            "items": [
+              "Don't continue: don't move on to a second cigarette by telling yourself \"it's already ruined anyway.\"",
+              "Write it down: where were you, who were you with, and what emotion were you in?",
+              "Identify the trigger: was it stress, alcohol, social pressure, lack of a plan, or a strong habit?",
+              "Update your plan: decide on the new behavior you'll use if the same scenario repeats.",
+              "Consider support: if the craving or withdrawal is too strong to manage on your own, a health professional or smoking cessation support can be considered.",
+              "Go back: return to being smoke-free as soon as possible."
+            ],
+            "numbered": true
+          }
+        ],
+        "keyTakeaways": [
+          "The most important step after a lapse is to stop it rather than let it continue, and to strengthen your plan."
+        ]
+      },
+      {
+        "id": "b3-09",
+        "sectionId": "section-3",
+        "order": 9,
+        "title": "Build your own crisis plan",
+        "summary": "Decide in advance on your strongest triggers, the first method you'll apply, and who you'll turn to if you need to.",
+        "estimatedReadMinutes": 2,
+        "icon": "flag",
+        "intro": "A crisis plan gives you a ready roadmap instead of having to think from scratch in a hard moment.",
+        "contentSections": [
+          {
+            "title": "Fill in your plan",
+            "body": null,
+            "items": [
+              "My three strongest triggers: ________",
+              "The first step I'll take when a craving hits: ________",
+              "An option for changing my setting: ________",
+              "Someone I can call or message: ________",
+              "The sentence I'll remind myself of: ________"
+            ],
+            "numbered": false
+          },
+          {
+            "title": "Keep it short",
+            "body": "The simpler and more reachable your plan is, the higher the chance you'll actually use it during a crisis.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "A crisis plan doesn't erase the craving in advance; it makes clear what you'll do when it arrives."
+        ]
+      },
+      {
+        "id": "b3-10",
+        "sectionId": "section-3",
+        "order": 10,
+        "title": "Review your process regularly",
+        "summary": "Assess which triggers have weakened, which are still present, and which method works better for you.",
+        "estimatedReadMinutes": 2,
+        "icon": "loop",
+        "intro": "Throughout staying smoke-free, the same strategy may not work equally well in every situation. It's normal to update your plan from time to time.",
+        "contentSections": [
+          {
+            "title": "Ask yourself",
+            "body": null,
+            "items": [
+              "Which triggers am I now managing more comfortably?",
+              "In which situations is the craving still strong?",
+              "Which method works best for me?",
+              "If I have a lapse, what will I do in the first few minutes?"
+            ],
+            "numbered": false
+          },
+          {
+            "title": "Know your support limit",
+            "body": "It helps to know in advance who you'll turn to for professional support at the point where you struggle to manage things on your own.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Remember your reason",
+            "body": "Remind yourself, from time to time, of your strongest personal reason for keeping up a smoke-free life.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "A good plan doesn't have to be fixed; it can be updated as you gain experience."
+        ]
+      },
+      {
+        "id": "b3-11",
+        "sectionId": "section-3",
+        "order": 11,
+        "title": "Chapter Summary",
+        "summary": "Gather cravings, the 4D method, trigger planning, and managing lapse and relapse in one place.",
+        "estimatedReadMinutes": 1,
+        "icon": "flag",
+        "intro": "A craving isn't an order. It can appear as a temporary urge, grow stronger, and then fade.",
+        "contentSections": [
+          {
+            "title": "Keep in mind",
+            "body": "Noticing the craving, using the urge surfing approach or the 4D method, preparing a plan for triggers in advance, and not letting a possible lapse turn into an \"it's all over\" thought can all help protect your smoke-free status.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "The main questions",
+            "body": null,
+            "items": [
+              "What happened?",
+              "Which trigger came into play?",
+              "What will I do next time?"
+            ],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "The craving passes, the plan gets stronger. The goal isn't to get through every hard moment perfectly; it's to learn how to return to being smoke-free and keep it going."
+        ]
+      }
+    ]
+  }
+]

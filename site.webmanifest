@@ -1,0 +1,28 @@
+{
+  "name": "Sigara Savar",
+  "short_name": "Sigara Savar",
+  "description": "Sigara bırakma sürecinde bilgi, takip, destek ve topluluk tek yerde. Ücretsiz Bilgi Merkezi, kriz araçları ve Sigara Savar uygulaması.",
+  "lang": "tr",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#fcfbf8",
+  "theme_color": "#fcfbf8",
+  "icons": [
+    {
+      "src": "/assets/brand/app-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/brand/app-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/brand/app-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

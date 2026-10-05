@@ -1,0 +1,12 @@
+{
+  "project": "Sigara_Savar/quitSmoke",
+  "revision": "51d3c38f",
+  "syncedAt": "2026-10-04",
+  "files": [
+    "lib/features/explore/system_posts/data/knowledge_center_content*.dart",
+    "lib/features/health/presentation/data/health_goals_l10n.dart",
+    "lib/features/games/presentation/data/breathing_exercise_l10n.dart",
+    "lib/features/progress/domain/growth_insights.dart, growth_insights_l10n.dart",
+    "lib/l10n/app_{tr,en,es,de}.arb"
+  ]
+}

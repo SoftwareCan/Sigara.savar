@@ -1,0 +1,62 @@
+[
+  {
+    "id": "box_breathing",
+    "name": "Kutu Nefesi (4-4-4)",
+    "inhaleSeconds": 4,
+    "holdSeconds": 4,
+    "exhaleSeconds": 4,
+    "benefit": "Stres azaltma, odaklanma ve zihinsel berraklık",
+    "area": "Stres Yönetimi & Odaklanma",
+    "description": "Askeri personel ve sporcular tarafından kullanılan, zihni sakinleştiren ve performansı artıran teknik."
+  },
+  {
+    "id": "relaxing_breath",
+    "name": "Rahatlama Nefesi (4-7-8)",
+    "inhaleSeconds": 4,
+    "holdSeconds": 7,
+    "exhaleSeconds": 8,
+    "benefit": "Uyku kalitesi, kaygı azaltma ve sakinleşme",
+    "area": "Uyku & Kaygı Yönetimi",
+    "description": "Dr. Andrew Weil tarafından popülerleştirilen, parasempatik sinir sistemini aktive eden teknik."
+  },
+  {
+    "id": "equal_breathing",
+    "name": "Eşit Nefes (5-5)",
+    "inhaleSeconds": 5,
+    "holdSeconds": 0,
+    "exhaleSeconds": 5,
+    "benefit": "Denge, sakinlik ve zihinsel istikrar",
+    "area": "Denge & Sakinlik",
+    "description": "Basit ve etkili, günlük hayatta kolayca uygulanabilen dengeleyici nefes tekniği."
+  },
+  {
+    "id": "deep_breathing",
+    "name": "Derin Nefes (6-2-8)",
+    "inhaleSeconds": 6,
+    "holdSeconds": 2,
+    "exhaleSeconds": 8,
+    "benefit": "Enerji artışı, canlanma ve oksijenlenme",
+    "area": "Enerji & Canlanma",
+    "description": "Vücuda daha fazla oksijen sağlayarak enerji seviyesini yükselten teknik."
+  },
+  {
+    "id": "triangle_breathing",
+    "name": "Üçgen Nefes (3-3-3)",
+    "inhaleSeconds": 3,
+    "holdSeconds": 3,
+    "exhaleSeconds": 3,
+    "benefit": "Anksiyete azaltma, panik atak yönetimi ve hızlı sakinleşme",
+    "area": "Anksiyete & Panik Yönetimi",
+    "description": "Kısa sürede sakinleşmek için ideal, anksiyete ve panik durumlarında etkili teknik."
+  },
+  {
+    "id": "extended_exhale",
+    "name": "Uzatılmış Nefes (4-4-6)",
+    "inhaleSeconds": 4,
+    "holdSeconds": 4,
+    "exhaleSeconds": 6,
+    "benefit": "Stres azaltma, kalp ritmi düzenleme ve rahatlama",
+    "area": "Stres & Rahatlama",
+    "description": "Uzatılmış nefes verme ile parasempatik sinir sistemini güçlendiren teknik."
+  }
+]

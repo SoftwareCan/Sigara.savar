@@ -1,0 +1,62 @@
+[
+  {
+    "id": "box_breathing",
+    "name": "Respiración cuadrada (4-4-4)",
+    "inhaleSeconds": 4,
+    "holdSeconds": 4,
+    "exhaleSeconds": 4,
+    "benefit": "Reduce el estrés, mejora la concentración y la claridad mental",
+    "area": "Manejo del estrés y concentración",
+    "description": "Técnica usada por militares y deportistas para calmar la mente y mejorar el rendimiento."
+  },
+  {
+    "id": "relaxing_breath",
+    "name": "Respiración relajante (4-7-8)",
+    "inhaleSeconds": 4,
+    "holdSeconds": 7,
+    "exhaleSeconds": 8,
+    "benefit": "Mejor sueño, menos ansiedad y más calma",
+    "area": "Sueño y manejo de la ansiedad",
+    "description": "Técnica popularizada por el Dr. Andrew Weil que activa el sistema nervioso parasimpático."
+  },
+  {
+    "id": "equal_breathing",
+    "name": "Respiración equilibrada (5-5)",
+    "inhaleSeconds": 5,
+    "holdSeconds": 0,
+    "exhaleSeconds": 5,
+    "benefit": "Equilibrio, calma y estabilidad mental",
+    "area": "Equilibrio y calma",
+    "description": "Técnica de respiración equilibrante, sencilla y eficaz, fácil de aplicar en la vida diaria."
+  },
+  {
+    "id": "deep_breathing",
+    "name": "Respiración profunda (6-2-8)",
+    "inhaleSeconds": 6,
+    "holdSeconds": 2,
+    "exhaleSeconds": 8,
+    "benefit": "Más energía, vitalidad y oxigenación",
+    "area": "Energía y vitalidad",
+    "description": "Técnica que eleva tu nivel de energía al aportar más oxígeno al cuerpo."
+  },
+  {
+    "id": "triangle_breathing",
+    "name": "Respiración triangular (3-3-3)",
+    "inhaleSeconds": 3,
+    "holdSeconds": 3,
+    "exhaleSeconds": 3,
+    "benefit": "Menos ansiedad, manejo del pánico y calma rápida",
+    "area": "Manejo de la ansiedad y el pánico",
+    "description": "Ideal para calmarte en poco tiempo; eficaz en situaciones de ansiedad y pánico."
+  },
+  {
+    "id": "extended_exhale",
+    "name": "Exhalación prolongada (4-4-6)",
+    "inhaleSeconds": 4,
+    "holdSeconds": 4,
+    "exhaleSeconds": 6,
+    "benefit": "Menos estrés, regulación del ritmo cardíaco y relajación",
+    "area": "Estrés y relajación",
+    "description": "Técnica que fortalece el sistema nervioso parasimpático mediante una exhalación más larga."
+  }
+]

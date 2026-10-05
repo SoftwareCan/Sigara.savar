@@ -12,13 +12,11 @@ function setLang(lang) {
         el.style.display = el.tagName === 'SPAN' ? 'inline' : 'block';
     });
 
-    document.querySelectorAll('.lang-switch button')
-        .forEach(btn => btn.classList.remove('active'));
-
-    const activeButton = document.querySelector(`.lang-switch button[data-lang="${lang}"]`);
-    if (activeButton) {
-        activeButton.classList.add('active');
-    }
+    document.querySelectorAll('.lang-switch button').forEach(btn => {
+        const active = btn.dataset.lang === lang;
+        btn.classList.toggle('active', active);
+        btn.setAttribute('aria-pressed', active ? 'true' : 'false');
+    });
 }
 
 // Initialize language on page load (default TR)
@@ -29,10 +27,15 @@ document.addEventListener('DOMContentLoaded', () => {
     setLang(lang);
 });
 
-// Persist language choice
+// Switch and persist language (delegated, so no inline handlers are needed under the CSP)
 document.addEventListener('click', (e) => {
     const btn = e.target.closest('.lang-switch button');
     if (btn && btn.dataset && btn.dataset.lang) {
-        localStorage.setItem('sigara-lang', btn.dataset.lang);
+        setLang(btn.dataset.lang);
+        try {
+            localStorage.setItem('sigara-lang', btn.dataset.lang);
+        } catch (err) {
+            // Storage can be unavailable (private mode); the switch still works for this visit.
+        }
     }
 });

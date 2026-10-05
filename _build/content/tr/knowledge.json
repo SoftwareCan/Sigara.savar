@@ -1,0 +1,951 @@
+[
+  {
+    "id": "section-1",
+    "order": 1,
+    "title": "Hazırlık ve İlk Günler",
+    "description": "Bağımlılığın nasıl çalıştığını anlamak, neden sigara içtiğini fark etmek ve bırakma gününü hazırlamak için temel bölüm.",
+    "articles": [
+      {
+        "id": "b1-01",
+        "sectionId": "section-1",
+        "order": 1,
+        "title": "Bağımlılık nedir?",
+        "summary": "Bağımlılığın biyolojik, psikolojik ve sosyal yönlerini; nikotin, ödül sistemi ve öğrenilmiş davranışlar üzerinden anla.",
+        "estimatedReadMinutes": 2,
+        "icon": "lightbulb",
+        "intro": "Sigara bağımlılığı yalnızca bir alışkanlık ya da irade meselesi değildir. Nikotinin beyindeki etkileri, günlük rutinler ve sosyal çevre zamanla birbirini besleyen bir döngü oluşturabilir.",
+        "contentSections": [
+          {
+            "title": "Nikotin ve ödül sistemi",
+            "body": "Nikotin kısa sürede beyne ulaşır ve ödül, motivasyon ve öğrenmeyle ilişkili sistemleri etkiler. Dopamin salınımındaki değişim, beynin sigara içme davranışını tekrar edilmesi gereken bir davranış gibi öğrenmesine katkı sağlar.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Zamanla ne değişir?",
+            "body": "Düzenli kullanım sürdükçe beyin nikotine uyum sağlar. Nikotin seviyesi düştüğünde huzursuzluk, dikkat güçlüğü veya istek gibi yoksunluk belirtileri ortaya çıkabilir. Sigara içildiğinde bu rahatsızlık kısa süreli hafiflediği için döngü yeniden güçlenir.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Bağımlılığın üç tarafı",
+            "body": "Biyolojik taraf nikotin ve yoksunlukla, psikolojik taraf sigaraya yüklenen rahatlama veya ödül anlamıyla, sosyal-davranışsal taraf ise kahve, yemek, mola, arkadaş ortamı veya alkol gibi eşleşmelerle ilgilidir.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Bağımlılık tek bir nedene dayanmaz. Nikotin, düşünceler ve günlük alışkanlıklar birlikte çalışır; bırakma sürecinde bu üç alanı da fark etmek önemlidir."
+        ]
+      },
+      {
+        "id": "b1-02",
+        "sectionId": "section-1",
+        "order": 2,
+        "title": "Neden sigara içiyorsun ve neden bırakmalısın?",
+        "summary": "Tetikleyicilerini, alışkanlıklarını ve sigaraya yüklediğin anlamları fark et; bırakma nedenlerini netleştir.",
+        "estimatedReadMinutes": 2,
+        "icon": "lightbulb",
+        "intro": "Sigara çoğu zaman yalnızca nikotin ihtiyacı yüzünden içilmez. Günün belirli saatleri, duygular, insanlar ve ortamlar sigara davranışıyla eşleşebilir.",
+        "contentSections": [
+          {
+            "title": "Otomatikleşen anları yakala",
+            "body": "Kahve, yemek sonrası, telefon görüşmesi, araç kullanma, iş molası, stres veya sosyal ortamlar zamanla “şimdi sigara” sinyali haline gelebilir.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Sigara gerçekten rahatlatıyor mu?",
+            "body": "Nikotin uyarıcı özelliklere sahiptir. Sigara sonrası hissedilen rahatlamanın bir bölümü, iki sigara arasında oluşan nikotin yoksunluğunun kısa süreli hafiflemesiyle ilişkili olabilir. Böylece beyin bu geçici rahatlamayı “sigara stresimi çözüyor” şeklinde yorumlayabilir.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Kendi nedenini netleştir",
+            "body": "Bırakmak istemenin sağlık, özgürlük, zaman, para, aile, nefes veya yaşam kalitesi gibi kişisel nedenlerini yazmak; zor anlarda kararını hatırlamayı kolaylaştırabilir.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Sigara davranışının arkasındaki otomatik anları görmek, bırakmayı yalnızca “dayanma” meselesi olmaktan çıkarıp daha bilinçli bir değişime dönüştürür."
+        ]
+      },
+      {
+        "id": "b1-03",
+        "sectionId": "section-1",
+        "order": 3,
+        "title": "Sigarayı bırakarak ne kazanacaksın?",
+        "summary": "Bırakmanın sağlık, nefes, zaman, para ve yaşam kalitesi açısından getirebileceği kazanımları gör.",
+        "estimatedReadMinutes": 2,
+        "icon": "favorite",
+        "intro": "Bırakmanın kazanımları tek bir güne sığmaz. Vücut ilk saatlerden itibaren değişmeye başlar; ilerleyen haftalar, aylar ve yıllarda farklı sistemlerde iyileşmeler görülebilir.",
+        "contentSections": [
+          {
+            "title": "Genel zaman çizelgesi",
+            "body": "İlk dakikalarda kalp hızı ve kan basıncı normal değerlere doğru değişmeye başlayabilir. İlk saatlerde kandaki karbonmonoksit azalır. İlk günlerde nikotin düzeyi belirgin biçimde düşer ve tat-koku duyusunda toparlanma başlayabilir. Haftalar ve aylar içinde dolaşım, solunum ve hava yollarının temizleme işlevinde iyileşmeler görülebilir.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Uzun vadeli kazanımlar",
+            "body": "Sigarasız geçirilen süre uzadıkça kalp-damar hastalıkları ve bazı kanserlerle ilişkili risklerde zaman içinde önemli düşüşler bildirilir.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Sağlığın dışında",
+            "body": "Sigaraya ayrılan para ve zamanın geri kazanılması, bağımlı olmadan yaşayabildiğini görmek ve günlük seçimler üzerinde kontrol hissinin artması da önemli kazanımlardır.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Bırakmak yalnızca bir şeyi hayatından çıkarmak değildir; sağlık, zaman, para ve özgürlük alanında yeni kazanımların başlamasıdır."
+        ]
+      },
+      {
+        "id": "b1-04",
+        "sectionId": "section-1",
+        "order": 4,
+        "title": "Hazırlık ve plan",
+        "summary": "Bırakma gününü belirle, sigara düzenini gözlemle, çevreni hazırla ve zor anlar için önceden seçenek oluştur.",
+        "estimatedReadMinutes": 2,
+        "icon": "flag",
+        "intro": "Bırakma günü geldiğinde her şeyi o anda çözmeye çalışmak zor olabilir. Önceden hazırlık yapmak, özellikle otomatik sigara anlarında karar vermeyi kolaylaştırır.",
+        "contentSections": [
+          {
+            "title": "Bırakma gününü belirle",
+            "body": "Kendine net bir tarih seç ve o güne kadar tamamlamak istediğin hazırlıkları yaz.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Sigara düzenini kaydet",
+            "body": "Hangi saatte, hangi duyguyla, kimlerle ve hangi ortamda sigara içtiğini birkaç gün gözlemle. Bu kayıt, en güçlü tetikleyicilerini görmene yardımcı olur.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Çevreyi düzenle",
+            "body": "Ev, araç ve iş yerindeki paket, küllük ve çakmak gibi sigarayı hatırlatan nesneleri kaldır. Kahve, yemek sonrası veya iş molası gibi güçlü eşleşmeler için yeni bir davranış seç.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Destek iste",
+            "body": "Yakın çevrene bırakma kararını söylemek ve özellikle ilk günlerde sigara teklif edilmemesini istemek süreci kolaylaştırabilir.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Hazırlık, sigara isteğinin hiç gelmemesini sağlamaz; geldiğinde ne yapacağını önceden bilmeni sağlar."
+        ]
+      },
+      {
+        "id": "b1-05",
+        "sectionId": "section-1",
+        "order": 5,
+        "title": "Kendi tetikleyici haritanı çıkar",
+        "summary": "Sigara düşüncesini otomatik başlatan saatleri, duyguları, ortamları ve alışkanlıkları kendin için belirle.",
+        "estimatedReadMinutes": 2,
+        "icon": "loop",
+        "intro": "Tetikleyici, sigara düşüncesini veya isteğini otomatik biçimde başlatan durumdur. Her kullanıcı için aynı değildir.",
+        "contentSections": [
+          {
+            "title": "Kendine sor",
+            "body": "Günün hangi saatinde isteğim daha güçlü? Kahve, yemek, telefon, araba veya iş molasıyla bağlantı var mı? Stres, öfke, sıkılma, yalnızlık veya kutlama gibi hangi duygular isteği artırıyor? Alkol veya sigara içilen sosyal ortamlar beni nasıl etkiliyor?",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Yerine ne koyabilirsin?",
+            "body": "Her güçlü tetikleyici için mümkün olan en basit yeni davranışı seç. Örneğin kahve sonrası kısa yürüyüş, yemek sonrası diş fırçalama, stres sonrası birkaç dakikalık mola veya destek mesajı gibi.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Tetikleyiciyi fark etmek, otomatik davranış ile bilinçli seçim arasına küçük ama önemli bir boşluk açar."
+        ]
+      },
+      {
+        "id": "b1-06",
+        "sectionId": "section-1",
+        "order": 6,
+        "title": "Destek seçenekleri",
+        "summary": "Nikotin bandı, sakız, pastil ve bazı ilaçların bırakma sürecinde destek amacıyla kullanılabildiğini genel hatlarıyla bil.",
+        "estimatedReadMinutes": 2,
+        "icon": "favorite",
+        "intro": "Bazı kişiler bırakma sürecinde yoksunluk ve sigara isteğini yönetmek için ek desteklerden yararlanabilir.",
+        "contentSections": [
+          {
+            "title": "Genel seçenekler",
+            "body": "Nikotin bandı, nikotin sakızı ve pastil gibi ürünler ile sigara bırakmada kullanılan bazı ilaçlar bulunur. Bu seçeneklerin amacı, bazı kişilerde yoksunluk ve isteği daha yönetilebilir hale getirmektir.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Sağlık profesyoneliyle değerlendir",
+            "body": "İlaç ve nikotin destek ürünlerinin kullanımı kişisel sağlık durumuna göre değişebilir. Gerektiğinde bir sağlık profesyoneline danışılmalıdır.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Destek ürünleri ve ilaçlar bazı kişiler için seçenek olabilir; kişisel tedavi kararı sağlık profesyoneline aittir."
+        ]
+      },
+      {
+        "id": "b1-07",
+        "sectionId": "section-1",
+        "order": 7,
+        "title": "Bırakma Günü",
+        "summary": "İlk sigarasız günü su, hareket, nefes ve çevre düzeni gibi basit adımlarla daha planlı geçir.",
+        "estimatedReadMinutes": 2,
+        "icon": "flag",
+        "intro": "İlk günün amacı kusursuz hissetmek değildir. Amaç, sigara içmeden geçen ilk günü mümkün olduğunca önceden planlamaktır.",
+        "contentSections": [
+          {
+            "title": "Sabah rutinini değiştir",
+            "body": "Sigarayla güçlü biçimde eşleşen ilk davranışı değiştir. Duş, kısa yürüyüş veya farklı bir kahvaltı düzeni gibi küçük bir değişiklik bile otomatik zinciri kırabilir.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Basit araçlar hazırla",
+            "body": "Su içmeyi hatırlatıcı bir rutin olarak kullan; ellerini ve ağzını meşgul edecek sigarasız seçenekler hazırla. İstek geldiğinde 4-4-6 nefesini deneyebilirsin: 4 saniye nefes al, 4 saniye tut, 6 saniyede yavaşça ver.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Güçlü tetikleyicileri azalt",
+            "body": "Özellikle ilk günlerde sigara içilen ortamları ve seni zorlayan tetikleyicileri mümkün olduğunca azaltmak işini kolaylaştırabilir.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "İlk gün zorlayıcı olabilir. Hedef isteğin hiç gelmemesi değil; geldiğinde sigara içmeden geçmesine izin verebilmektir."
+        ]
+      },
+      {
+        "id": "b1-08",
+        "sectionId": "section-1",
+        "order": 8,
+        "title": "Yoksunluk",
+        "summary": "Yoksunluğun neden oluştuğunu, hangi tür belirtiler gösterebildiğini ve geçici bir uyum sürecinin parçası olduğunu anla.",
+        "estimatedReadMinutes": 2,
+        "icon": "lightbulb",
+        "intro": "Nikotin azaldığında beyin ve beden bir süre yeni duruma uyum sağlamaya çalışır. Bu dönemde bazı geçici belirtiler ortaya çıkabilir.",
+        "contentSections": [
+          {
+            "title": "Neler hissedilebilir?",
+            "body": "Huzursuzluk, dikkat güçlüğü, iştah değişikliği, sigara isteği ve benzeri belirtiler bırakmanın ilk döneminde görülebilir.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Ne anlama gelir?",
+            "body": "Bu belirtilerin ortaya çıkması “sigaraya ihtiyacın olduğu” anlamına gelmez. Bedenin nikotinsiz düzene uyum sağladığı bir dönem olabilir.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Yaklaşım",
+            "body": "Uyku, düzenli su tüketimi, kısa yürüyüşler, nefes uygulamaları, tetikleyicileri azaltmak ve ihtiyaç halinde profesyonel destek almak bu dönemi daha yönetilebilir hale getirebilir.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Yoksunluk rahatsız edici olabilir ama geçici bir uyum sürecidir. Belirtiler çok yoğun veya yönetilemez hale gelirse sağlık profesyonelinden destek alınmalıdır."
+        ]
+      },
+      {
+        "id": "b1-09",
+        "sectionId": "section-1",
+        "order": 9,
+        "title": "Bölüm Özeti",
+        "summary": "Bağımlılığı, tetikleyicileri, bırakma hazırlığını ve ilk gün için temel planını tek yerde toparla.",
+        "estimatedReadMinutes": 1,
+        "icon": "flag",
+        "intro": "Bu bölümde sigara bağımlılığının yalnızca irade meselesi olmadığını; beyin, düşünceler, rutinler ve çevrenin birlikte rol oynadığını gördün.",
+        "contentSections": [
+          {
+            "title": "Aklında kalsın",
+            "body": "Bırakma öncesinde tetikleyicileri tanımak, çevreyi düzenlemek, yeni rutinleri önceden seçmek ve ilk gün için basit bir plan hazırlamak süreci daha anlaşılır hale getirir.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Sonraki adım",
+            "body": "Bir sonraki bölümde nikotin vücuttan çıktıktan sonra da sürebilen öğrenilmiş bağlantıları ve sigarasız yaşamı kalıcı hale getirme yollarını ele alacağız.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Hazırlık tamam: artık yalnızca sigarayı bırakmaya değil, sigarasız bir düzen kurmaya geçiyorsun."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "section-2",
+    "order": 2,
+    "title": "Sigarasız Hayatı Kalıcı Hale Getirmek",
+    "description": "Nikotin vücuttan çıktıktan sonra da sürebilen alışkanlıkları, düşünceleri ve tetikleyicileri yeniden düzenleyerek sigarasız yaşamı yeni normal haline getirmeye odaklanır.",
+    "articles": [
+      {
+        "id": "b2-01",
+        "sectionId": "section-2",
+        "order": 1,
+        "title": "Nikotin gitti; neden hâlâ sigara isteyebilirsin?",
+        "summary": "Fiziksel yoksunluk ile öğrenilmiş sigara bağlantılarının aynı şey olmadığını anla.",
+        "estimatedReadMinutes": 2,
+        "icon": "lightbulb",
+        "intro": "Nikotinin vücuttan temizlenmesi ile yıllar içinde öğrenilmiş sigara davranışlarının çözülmesi aynı süreç değildir.",
+        "contentSections": [
+          {
+            "title": "Fiziksel yoksunluk",
+            "body": "Nikotin azalırken huzursuzluk, dikkat güçlüğü, iştah değişikliği veya benzeri belirtiler ortaya çıkabilir. Bunlar fiziksel uyum süreciyle ilişkilidir.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Öğrenilmiş bağlantılar",
+            "body": "Kahve -> sigara, yemek -> sigara, mola -> sigara gibi eşleşmeler yıllarca tekrarlandığında otomatik hale gelebilir. Bu nedenle aylar sonra bile belirli bir ortam veya duygu sigara düşüncesini tetikleyebilir.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Önemli fark",
+            "body": "Böyle bir düşüncenin ortaya çıkması mutlaka nikotine yeniden ihtiyaç duyduğun anlamına gelmez; eski bir bağlantının hatırlanması olabilir.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Fiziksel yoksunluk azalabilir; fakat eski alışkanlık bağlantıları daha uzun süre hatırlanabilir ve yeniden öğrenmeyle zayıflar."
+        ]
+      },
+      {
+        "id": "b2-02",
+        "sectionId": "section-2",
+        "order": 2,
+        "title": "Tetikleyicilerini yeniden yaz",
+        "summary": "Eski tetikleyicileri tamamen silmeye çalışmak yerine aynı anların arkasına yeni davranışlar yerleştir.",
+        "estimatedReadMinutes": 2,
+        "icon": "loop",
+        "intro": "Tetikleyicileri hayatından tamamen çıkarmak her zaman mümkün değildir. Daha gerçekçi hedef, aynı tetikleyiciden sonra yeni bir davranışı tekrar tekrar seçmektir.",
+        "contentSections": [
+          {
+            "title": "Yeni eşleşmeler oluştur",
+            "body": null,
+            "items": [
+              "Kahve -> birkaç dakika farklı ortam, su veya kısa yürüyüş.",
+              "Yemek -> diş fırçalama, çay veya kısa hareket.",
+              "Stres -> nefes, kısa mola veya destek mesajı.",
+              "İş molası -> sigarasız rota veya farklı arkadaş grubu."
+            ],
+            "numbered": false
+          },
+          {
+            "title": "Alkol ve sosyal ortam",
+            "body": "Alkol bazı kişilerde sigara isteğini ve otomatik davranışları güçlendirebilir. Özellikle ilk dönemlerde miktarı, ortamı veya planı yeniden düzenlemek yardımcı olabilir.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Tekrarın önemi",
+            "body": "Yeni davranış her seçildiğinde eski otomatik zincirin yerine farklı bir seçenek koymuş olursun. Amaç tek seferde unutmak değil, yeni yolu tekrar etmektir.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Eski tetikleyici + yeni davranış eşleşmesi, sigarasız yaşamın giderek daha tanıdık hale gelmesine yardımcı olur."
+        ]
+      },
+      {
+        "id": "b2-03",
+        "sectionId": "section-2",
+        "order": 3,
+        "title": "Sigarayla ilgili düşüncelerini yeniden değerlendir",
+        "summary": "Bırakma sürecinde çok ikna edici gelebilen eski düşünceleri daha gerçekçi bir çerçevede ele al.",
+        "estimatedReadMinutes": 2,
+        "icon": "lightbulb",
+        "intro": "Bir düşüncenin güçlü gelmesi onun doğru olduğu anlamına gelmez. Bırakma sürecinde bazı eski inançlar yeniden ortaya çıkabilir.",
+        "contentSections": [
+          {
+            "title": "“Sigara beni sakinleştiriyor.”",
+            "body": "Rahatlama hissinin bir bölümü nikotin yoksunluğunun kısa süreli hafiflemesi olabilir.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "“Sigara olmadan odaklanamıyorum.”",
+            "body": "Yoksunluk geçici olarak dikkati bozabilir; sigara bu bozulmayı gideriyormuş gibi hissedilebilir.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "“Bunca yıl içtim, artık bırakmanın anlamı yok.”",
+            "body": "Bırakmanın sağlık ve yaşam kalitesi açısından yararı farklı yaşlarda da devam eder.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "“Bir taneden bir şey olmaz.”",
+            "body": "Tek bir sigara eski davranış döngüsünü ve “bir tane daha” düşüncesini yeniden canlandırabilir.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Eski düşünce geldiğinde onunla tartışmak zorunda değilsin; önce fark et, sonra daha gerçekçi bir açıklamayla yeniden çerçevele."
+        ]
+      },
+      {
+        "id": "b2-04",
+        "sectionId": "section-2",
+        "order": 4,
+        "title": "Sigaranın bıraktığı boşluğu neyle dolduracaksın?",
+        "summary": "Sigaranın senin için hangi işlevi gördüğünü fark et ve aynı ihtiyaca sigarasız bir karşılık bul.",
+        "estimatedReadMinutes": 2,
+        "icon": "auto_awesome",
+        "intro": "Sigara bazı kişiler için yalnızca nikotin değildir; mola, sosyalleşme, el-ağız alışkanlığı veya “kendime ayırdığım birkaç dakika” anlamına gelebilir.",
+        "contentSections": [
+          {
+            "title": "İhtiyaca göre yeni karşılıklar",
+            "body": null,
+            "items": [
+              "Mola ihtiyacı: 5 dakikalık kısa yürüyüş veya açık hava molası.",
+              "Stres: Yavaş nefes, kısa gevşeme veya ortamdan birkaç dakika uzaklaşma.",
+              "El-ağız alışkanlığı: Su, şekersiz sakız veya başka sigarasız rutinler.",
+              "Ödül ihtiyacı: Sevilen müzik, hobi, küçük hedefler veya fiziksel aktivite.",
+              "Sosyalleşme: Sigarasız arkadaşlık ve mola düzenleri oluşturmak."
+            ],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Sigaranın yerine ne koyacağın, sigaranın senin hayatında hangi ihtiyaca cevap verdiğine göre değişebilir."
+        ]
+      },
+      {
+        "id": "b2-05",
+        "sectionId": "section-2",
+        "order": 5,
+        "title": "Doğal ödülleri yeniden güçlendir",
+        "summary": "Hareket, uyku, nefes ve keyif veren rutinlerle ödül ve motivasyon sistemini günlük yaşamın doğal kaynaklarıyla destekle.",
+        "estimatedReadMinutes": 2,
+        "icon": "auto_awesome",
+        "intro": "Sigarasız yaşamı yalnızca “sigara içmemek” üzerine kurmak yerine, keyif ve rahatlama sağlayan doğal rutinleri artırmak daha sürdürülebilir bir yaklaşım olabilir.",
+        "contentSections": [
+          {
+            "title": "Üç küçük alan seç",
+            "body": "Hareket, uyku ve keyif. Örneğin kısa bir yürüyüş, daha düzenli bir uyku saati ve sigarasız keyif veren bir etkinlik.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Büyük değişiklik gerekmez",
+            "body": "Amaç aynı anda kusursuz bir hayat kurmak değildir. Küçük ama tekrar edilebilir davranışlar, sigaranın bıraktığı alanı zamanla doldurabilir.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Nefes ve gevşeme",
+            "body": "Yavaş nefes ve kısa gevşeme uygulamaları, stresli anlarda otomatik olarak sigaraya yönelmek yerine farklı bir seçenek sunabilir.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Yeni ödüller ne kadar günlük ve erişilebilir olursa, sigarasız yaşamın yeni normal haline gelmesi o kadar kolaylaşabilir."
+        ]
+      },
+      {
+        "id": "b2-06",
+        "sectionId": "section-2",
+        "order": 6,
+        "title": "“Bırakmaya çalışıyorum”dan “Ben sigara kullanmıyorum”a",
+        "summary": "Sigarasız davranışı yeni kimliğinle uyumlu hale getiren daha net bir iç ve sosyal sınır oluştur.",
+        "estimatedReadMinutes": 2,
+        "icon": "flag",
+        "intro": "“Sigarayı bırakmaya çalışıyorum” ifadesi bazı kişilerde kararın hâlâ her tetikleyicide yeniden verilmesi gereken bir süreç gibi hissedilmesine yol açabilir.",
+        "contentSections": [
+          {
+            "title": "Kimlik yaklaşımı",
+            "body": "“Ben sigara kullanmıyorum” ifadesi, davranışı yeni kimlikle uyumlu hale getirmeyi amaçlar. Bu bir sihirli cümle değildir; tekrar tekrar davranışla desteklenen bir sınırdır.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Sosyal ortam örneği",
+            "body": "“Hayır teşekkürler, bırakmaya çalışıyorum” yerine “Hayır teşekkürler, ben sigara kullanmıyorum” demek bazı kişiler için daha net ve kısa bir sınır oluşturabilir.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Davranışla güçlendir",
+            "body": "Kimlik yalnızca söylenen bir cümleyle değil, her tetikleyicide verilen yeni cevaplarla güçlenir.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Amaç kendini sürekli bir mücadelede görmek yerine, sigarasız davranışı günlük kimliğinin doğal parçası haline getirmektir."
+        ]
+      },
+      {
+        "id": "b2-07",
+        "sectionId": "section-2",
+        "order": 7,
+        "title": "“Artık kontrol edebilirim” düşüncesine dikkat",
+        "summary": "İstekler azaldığında ortaya çıkabilen “bir tane içebilirim” düşüncesinin neden riskli olabileceğini fark et.",
+        "estimatedReadMinutes": 2,
+        "icon": "local_fire_department",
+        "intro": "Haftalar veya aylar sonra sigara isteği azaldığında “Artık bağımlılığı kontrol edebiliyorum, bir tane içebilirim” düşüncesi ortaya çıkabilir.",
+        "contentSections": [
+          {
+            "title": "Risk nerede?",
+            "body": "Risk yalnızca tek sigaranın kendisi değildir. Sigara, eski ödül ve davranış bağlantılarını yeniden güçlendirebilir ve “bir tane daha” düşüncesini canlandırabilir.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Basit sınır",
+            "body": "“Bir taneyi yönetmeye” çalışmak yerine sigarasızlığı koruyan en basit sınır, yeniden başlamamaktır.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Kendine hatırlat",
+            "body": "İsteğin azalması önemli bir ilerlemedir; ama bu ilerlemenin amacı kontrollü sigaraya dönmek değil, sigarasız yaşamı güçlendirmektir.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "“Artık iyiyim, bir tane içebilirim” düşüncesi ilerlemenin kanıtı gibi görünebilir; aslında eski döngüye açılan bir kapı olabilir."
+        ]
+      },
+      {
+        "id": "b2-08",
+        "sectionId": "section-2",
+        "order": 8,
+        "title": "Sigarasız yaşam kontrol listesi",
+        "summary": "Yeni düzeninin hangi alanlarda güçlendiğini ve nerelerde hâlâ desteğe ihtiyacı olduğunu kısa sorularla değerlendir.",
+        "estimatedReadMinutes": 2,
+        "icon": "flag",
+        "intro": "Sigarasız yaşamı sürdürmek yalnızca geçen güne bakmak değildir. Yeni davranışların ne kadar yerleştiğini zaman zaman gözden geçirmek de faydalıdır.",
+        "contentSections": [
+          {
+            "title": "Kendine sor",
+            "body": null,
+            "items": [
+              "Kendimi “sigara kullanmayan” biri olarak tanımlayabiliyor muyum?",
+              "Kahve, yemek sonrası veya stres gibi güçlü tetikleyiciler için yeni bir davranışım var mı?",
+              "“Sigara beni rahatlatıyordu” gibi eski düşünceleri fark edip sorgulayabiliyor muyum?"
+            ],
+            "numbered": false
+          },
+          {
+            "title": "Düzenini kontrol et",
+            "body": null,
+            "items": [
+              "Uyku, hareket, sosyal hayat ve keyif veren aktiviteler açısından sigarasız bir düzen kuruyor muyum?",
+              "“Bir taneden bir şey olmaz” düşüncesinin benim için riskli olabileceğini kabul ediyor muyum?"
+            ],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Kontrol listesi başarını yargılamak için değil, bir sonraki güçlendireceğin alanı görmek için kullanılabilir."
+        ]
+      },
+      {
+        "id": "b2-09",
+        "sectionId": "section-2",
+        "order": 9,
+        "title": "Bölüm Özeti",
+        "summary": "Fiziksel yoksunluk azaldıktan sonra da sürebilen alışkanlıkları, düşünceleri ve yeni kimliği tek yerde toparla.",
+        "estimatedReadMinutes": 1,
+        "icon": "flag",
+        "intro": "Nikotinin vücuttan çıkması bütün alışkanlıkların aynı anda silinmesi anlamına gelmez.",
+        "contentSections": [
+          {
+            "title": "Aklında kalsın",
+            "body": "Eski tetikleyicilere yeni davranışlarla yanıt verdikçe sigarasız yaşam daha tanıdık hale gelir. Kalıcı değişim yalnızca sigarayı çıkarmak değil, onun kapladığı alanı yeni rutinler, yeni ödüller ve yeni bir kimlikle doldurmaktır.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Sonraki adım",
+            "body": "Bir sonraki bölümde güçlü sigara isteği (craving), istek dalgası, 4D yöntemi, kayma ve nüks yönetimi ele alınacak.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Sigarasız yaşam artık yalnızca korunacak bir hedef değil; günlük hayatın yeni düzenidir."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "section-3",
+    "order": 3,
+    "title": "Sigara İsteğini Yönetmek ve Nüksten Korunmak",
+    "description": "Sigara isteğinin nasıl çalıştığını, geçici yapısını, kriz anında kullanılabilecek araçları ve bir kaymayı yeniden düzenli kullanıma dönüşmeden yönetmeyi ele alır.",
+    "articles": [
+      {
+        "id": "b3-01",
+        "sectionId": "section-3",
+        "order": 1,
+        "title": "İstek (craving) nedir?",
+        "summary": "Sigara isteğinin fiziksel yoksunluk veya öğrenilmiş tetikleyicilerle ortaya çıkabilen güçlü ama geçici bir dürtü olduğunu anla.",
+        "estimatedReadMinutes": 2,
+        "icon": "local_fire_department",
+        "intro": "İstek (craving), çevresel bir ipucu, duygu, düşünce veya nikotin yoksunluğuyla tetiklenebilen güçlü bir sigara içme dürtüsüdür.",
+        "contentSections": [
+          {
+            "title": "Fiziksel yoksunluk isteği",
+            "body": "Özellikle bırakmanın ilk döneminde nikotin düzeyinin düşmesiyle ortaya çıkan biyolojik belirtilerle bağlantılı olabilir.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Koşullanmış psikolojik istek",
+            "body": "Stres, kahve, sigara kokusu, belirli kişiler veya ortamlar gibi öğrenilmiş tetikleyicilerle daha sonra da ortaya çıkabilir.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Önemli mesaj",
+            "body": "İsteğin güçlü olması, ona uyman gerektiği anlamına gelmez. Bir dürtü olarak fark edilebilir ve sigara içmeden geçmesine izin verilebilir.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "İstek bir emir değildir; geçici bir dürtüdür ve farklı tetikleyicilerle ortaya çıkabilir."
+        ]
+      },
+      {
+        "id": "b3-02",
+        "sectionId": "section-3",
+        "order": 2,
+        "title": "İstek bir dalga gibi yükselir ve azalır",
+        "summary": "İsteği kesintisiz bir ihtiyaç gibi değil; yükselen, zirveye ulaşan ve sonra azalan bir dalga gibi gör.",
+        "estimatedReadMinutes": 2,
+        "icon": "local_fire_department",
+        "intro": "Sigara isteği çoğu zaman aynı şiddette kalmaz. Yükselir, belirginleşir ve ardından azalma eğilimine girer.",
+        "contentSections": [
+          {
+            "title": "Yükseliş",
+            "body": "Sigara düşüncesi belirginleşebilir ve gerginlik artabilir. Bu anda “şu an bir istek dalgası başladı” diye fark etmek ilk adımdır.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Zirve",
+            "body": "Zihin sigaraya kilitlenmiş gibi hissedebilir. Burada 4D yöntemi veya ortam değiştirme gibi önceden seçtiğin araçlardan birini kullan.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Azalma",
+            "body": "Dürtünün şiddeti düşmeye başladığında sigara içmeden geçebildiğini fark et. Bu deneyim, bir sonraki dalga için güven oluşturabilir.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Dalgayı sonsuzmuş gibi değerlendirmek yerine, yükselip azalabilen geçici bir süreç olarak görmek yönetmeyi kolaylaştırabilir."
+        ]
+      },
+      {
+        "id": "b3-03",
+        "sectionId": "section-3",
+        "order": 3,
+        "title": "İstek dalgasını izleme (urge surfing)",
+        "summary": "İstekle savaşmak veya onu zorla bastırmak yerine, bedendeki ve zihindeki değişimi kısa süre gözlemle.",
+        "estimatedReadMinutes": 2,
+        "icon": "loop",
+        "intro": "İstek dalgasını izleme (urge surfing), sigara düşüncesini zorla yok etmeye çalışmak yerine onu geçici bir duygu ve bedensel dürtü olarak gözlemleme yaklaşımıdır.",
+        "contentSections": [
+          {
+            "title": "Dört adım",
+            "body": null,
+            "items": [
+              "İsimlendir: “Şu anda sigara isteği var.”",
+              "Bedende fark et: İsteği ağızda, boğazda, göğüste, midede veya başka bir bölgede nasıl hissediyorsun?",
+              "Değişimini izle: Dalgayı hemen değiştirmeye çalışma. Bir süre yükselip azalışını gözlemle.",
+              "Sonunu fark et: Dürtü azaldığında, sigara içmeden bu anın geçebildiğini kendine hatırlat."
+            ],
+            "numbered": true
+          }
+        ],
+        "keyTakeaways": [
+          "Amaç isteği sevmek veya yok saymak değildir; onun geçici olduğunu doğrudan deneyimlemektir."
+        ]
+      },
+      {
+        "id": "b3-04",
+        "sectionId": "section-3",
+        "order": 4,
+        "title": "4D yöntemi (Delay - Deep breathe - Drink water - Distract)",
+        "summary": "Ertele • Derin nefes al • Su iç • Dikkatini değiştir: Kriz anında otomatik sigara davranışını kesmek için dört basit adımı sırayla uygula.",
+        "estimatedReadMinutes": 2,
+        "icon": "local_fire_department",
+        "intro": "4D yöntemi, güçlü sigara isteği geldiğinde birkaç dakikalık alan açmak ve otomatik davranışı kesmek için kullanılabilecek basit bir kriz planıdır.",
+        "contentSections": [
+          {
+            "title": "4 Adımda İsteği Yönet",
+            "body": null,
+            "items": [
+              "Ertele: İstek geldiğinde hemen harekete geçmek yerine sigara kararını birkaç dakika ertele.",
+              "Derin nefes al: Yavaş ve kontrollü nefesle bedensel gerginliği azaltmaya odaklan.",
+              "Su iç: Birkaç yudum su, otomatik sigara davranışının arasına basit bir ara hareket koyabilir.",
+              "Dikkatini değiştir: Bulunduğun ortamı değiştir, kısa yürüyüş yap, birini ara veya zihnini başka bir işe yönelt."
+            ],
+            "numbered": true
+          }
+        ],
+        "keyTakeaways": [
+          "4D yönteminin amacı isteği anında “yok etmek” değil, dalganın geçmesi için sigara ile otomatik tepki arasına zaman koymaktır."
+        ]
+      },
+      {
+        "id": "b3-05",
+        "sectionId": "section-3",
+        "order": 5,
+        "title": "Tetikleyiciye gelmeden plan yap",
+        "summary": "“Eğer X olursa Y yapacağım” yaklaşımıyla zor anlarda vereceğin cevabı önceden belirle.",
+        "estimatedReadMinutes": 2,
+        "icon": "flag",
+        "intro": "Kriz anında karar vermek zor olabilir. Önceden hazırlanmış kısa bir “eğer - o zaman” planı otomatik davranışı azaltabilir.",
+        "contentSections": [
+          {
+            "title": "Örnekler",
+            "body": null,
+            "items": [
+              "Eğer kahvenin yanında sigara istersem, kahvemi farklı bir yerde içeceğim.",
+              "Eğer biri sigara teklif ederse, “Ben sigara kullanmıyorum” diyeceğim.",
+              "Eğer stresli bir toplantıdan çıkarsam, önce birkaç dakika yürüyeceğim."
+            ],
+            "numbered": false
+          },
+          {
+            "title": "Alkol ve sosyal ortam",
+            "body": "Alkol veya sigara içilen sosyal ortamlar isteği artırıyorsa özellikle ilk dönemlerde ortamı, süreyi veya planı yeniden düzenlemek yardımcı olabilir.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Planı kriz sırasında üretmek yerine önceden seçmek, zor anlarda daha az karar vermeni sağlar."
+        ]
+      },
+      {
+        "id": "b3-06",
+        "sectionId": "section-3",
+        "order": 6,
+        "title": "Kayma (lapse) ve nüks (relapse) aynı şey değildir",
+        "summary": "Kısa süreli bir kayma ile eski düzenli sigara kullanımına geri dönüş arasındaki farkı anla.",
+        "estimatedReadMinutes": 2,
+        "icon": "lightbulb",
+        "intro": "Kayma (lapse), tek seferlik veya kısa süreli sigara kullanımını; nüks (relapse) ise eski düzenli kullanım biçimine geri dönmeyi anlatır.",
+        "contentSections": [
+          {
+            "title": "Neden ayrım önemli?",
+            "body": "Bir kaymayı önemsiz görmek doğru değildir; eski döngüyü yeniden canlandırabilir. Ancak “artık tamamen başarısız oldum” diye yorumlamak da sigaraya devam etme riskini büyütebilir.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Denge",
+            "body": "Kaymayı ciddiye al, fakat onu bütün sürecin sonu olarak görme. En değerli bilgi, o anda hangi tetikleyicinin devreye girdiğidir.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Bir kayma alarmdır, karar değildir. Ne olduğunu anlayıp sigarasızlığa yeniden dönmek mümkündür."
+        ]
+      },
+      {
+        "id": "b3-07",
+        "sectionId": "section-3",
+        "order": 7,
+        "title": "“Bir hata her şeyi bozdu” tuzağı",
+        "summary": "Bir kaymadan sonra ortaya çıkan “zaten bozuldu” düşüncesinin neden ikinci ve üçüncü sigarayı kolaylaştırabileceğini fark et.",
+        "estimatedReadMinutes": 2,
+        "icon": "local_fire_department",
+        "intro": "Bir sigara içildikten sonra “Bende irade yok”, “Zaten bozdum”, “Bugün içeyim, yarın başlarım” gibi düşünceler ortaya çıkabilir.",
+        "contentSections": [
+          {
+            "title": "Asıl risk",
+            "body": "Tek kaymanın ardından bütün süreci kaybedilmiş saymak, kişinin sigaraya devam etmesini kolaylaştırabilir. Bu yüzden bir hatayı büyütmek yerine hızla analiz etmek önemlidir.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Üç soru",
+            "body": null,
+            "items": [
+              "Ne oldu?",
+              "Hangi tetikleyici devreye girdi?",
+              "Aynı durumda bir dahaki sefere ne yapacağım?"
+            ],
+            "numbered": false
+          },
+          {
+            "title": "Yargı yerine veri",
+            "body": "Amaç yaşananı normalleştirmek değil; aynı senaryonun tekrarında daha güçlü bir plan kuracak bilgiye dönüştürmektir.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "“Her şey bitti” düşüncesi gerçeğin kendisi değil, kaymayı nükse çevirebilecek bir zihinsel tepkidir."
+        ]
+      },
+      {
+        "id": "b3-08",
+        "sectionId": "section-3",
+        "order": 8,
+        "title": "Kayma sonrası toparlanma planı",
+        "summary": "Kayma yaşarsan devam etmeden dur, tetikleyiciyi analiz et, planını güncelle ve sigarasızlığa geri dön.",
+        "estimatedReadMinutes": 2,
+        "icon": "flag",
+        "intro": "Kayma sonrasında atılacak ilk adımlar, olayın yeniden düzenli kullanıma dönüşmesini önlemek açısından önemlidir.",
+        "contentSections": [
+          {
+            "title": "Toparlanma adımları",
+            "body": null,
+            "items": [
+              "Devam etme: “Nasıl olsa bozuldu” diyerek ikinci sigaraya geçme.",
+              "Olayı yaz: Nerede, kiminle ve hangi duygu içindeydin?",
+              "Tetikleyiciyi belirle: Stres, alkol, sosyal baskı, plansızlık veya güçlü bir alışkanlık mıydı?",
+              "Planı güncelle: Aynı senaryo tekrarlandığında kullanacağın yeni davranışı belirle.",
+              "Destek düşün: İstek veya yoksunluk kendi başına yönetilemeyecek kadar güçlüyse sağlık profesyoneli veya sigara bırakma desteği değerlendirilebilir.",
+              "Geri dön: Sigarasızlığa mümkün olan en kısa sürede yeniden dön."
+            ],
+            "numbered": true
+          }
+        ],
+        "keyTakeaways": [
+          "Kayma sonrasında en önemli adım, olayı devam ettirmek yerine durdurup planı güçlendirmektir."
+        ]
+      },
+      {
+        "id": "b3-09",
+        "sectionId": "section-3",
+        "order": 9,
+        "title": "Kendi kriz planını oluştur",
+        "summary": "En güçlü tetikleyicilerini, ilk uygulayacağın yöntemi ve ihtiyaç halinde başvuracağın kişiyi önceden belirle.",
+        "estimatedReadMinutes": 2,
+        "icon": "flag",
+        "intro": "Kriz planı, zor anda sıfırdan düşünmek yerine hazır bir yol haritası sunar.",
+        "contentSections": [
+          {
+            "title": "Planını doldur",
+            "body": null,
+            "items": [
+              "En güçlü üç tetikleyicim: ________",
+              "İstek geldiğinde ilk uygulayacağım adım: ________",
+              "Ortamı değiştirebileceğim seçenek: ________",
+              "Arayabileceğim/yazabileceğim kişi: ________",
+              "Kendime hatırlatacağım cümle: ________"
+            ],
+            "numbered": false
+          },
+          {
+            "title": "Kısa tut",
+            "body": "Planın ne kadar basit ve ulaşılabilir olursa kriz anında uygulama olasılığın o kadar yüksek olabilir.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Kriz planı isteği önceden yok etmez; geldiğinde ne yapacağını netleştirir."
+        ]
+      },
+      {
+        "id": "b3-10",
+        "sectionId": "section-3",
+        "order": 10,
+        "title": "Sürecini düzenli olarak gözden geçir",
+        "summary": "Hangi tetikleyicilerin zayıfladığını, hangilerinin sürdüğünü ve hangi yöntemin sende daha iyi çalıştığını değerlendir.",
+        "estimatedReadMinutes": 2,
+        "icon": "loop",
+        "intro": "Sigarasız kalma süreci boyunca aynı strateji her durumda aynı ölçüde işe yaramayabilir. Zaman zaman planı güncellemek normaldir.",
+        "contentSections": [
+          {
+            "title": "Kendine sor",
+            "body": null,
+            "items": [
+              "Hangi tetikleyicileri artık daha rahat yönetiyorum?",
+              "Hangi durumlarda istek hâlâ güçlü?",
+              "Benim için en iyi çalışan yöntem hangisi?",
+              "Bir kayma yaşarsam ilk dakikalarda ne yapacağım?"
+            ],
+            "numbered": false
+          },
+          {
+            "title": "Destek sınırını bil",
+            "body": "Kendi başına yönetmekte zorlandığın noktada kimden profesyonel destek alacağını önceden bilmek faydalıdır.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Nedenini hatırla",
+            "body": "Sigarasız yaşamı sürdürmek için en güçlü kişisel nedenini zaman zaman yeniden hatırlat.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "İyi bir plan sabit olmak zorunda değildir; deneyim kazandıkça güncellenebilir."
+        ]
+      },
+      {
+        "id": "b3-11",
+        "sectionId": "section-3",
+        "order": 11,
+        "title": "Bölüm Özeti",
+        "summary": "İstek, 4D yöntemi, tetikleyici planı, kayma ve nüks yönetimini tek yerde toparla.",
+        "estimatedReadMinutes": 1,
+        "icon": "flag",
+        "intro": "Sigara isteği bir emir değildir. Geçici bir dürtü olarak ortaya çıkabilir, güçlenebilir ve azalabilir.",
+        "contentSections": [
+          {
+            "title": "Aklında kalsın",
+            "body": "İsteği fark etmek, istek dalgasını izleme yaklaşımını veya 4D yöntemini kullanmak, tetikleyicilere önceden plan hazırlamak ve olası bir kaymayı “her şey bitti” düşüncesine dönüştürmemek sigarasızlığı korumaya yardımcı olabilir.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Ana soru",
+            "body": null,
+            "items": [
+              "Ne oldu?",
+              "Hangi tetikleyici devreye girdi?",
+              "Bir dahaki sefere ne yapacağım?"
+            ],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "İstek geçer, plan güçlenir. Amaç her zor anı kusursuz geçirmek değil; sigarasızlığa dönmeyi ve sürdürmeyi öğrenmektir."
+        ]
+      }
+    ]
+  }
+]

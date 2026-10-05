@@ -1,0 +1,108 @@
+[
+  {
+    "level": 1,
+    "title": "Karar",
+    "dayLabel": "0. Gün",
+    "minDays": 0,
+    "requiresPremium": false,
+    "developments": "Sigarayı bırakma kararıyla birlikte vücudundaki iyileşme süreci başlar. Henüz fiziksel değişimler hissedilmese de en büyük adım atılmıştır. Bundan sonraki süreçte vücudun nikotinden arınmaya başlayacak ve her geçen gün daha sağlıklı çalışacaktır.",
+    "attentionPoints": [
+      "Tüm sigara, çakmak ve küllükleri ortamdan kaldır.",
+      "Sigarayı bırakmayı bir veda ya da kayıp gibi değil özgürlüğüne kavuştuğun bir kutlama gibi karşıla.",
+      "İlk günlerde bol su tüketmeye çalış."
+    ],
+    "traps": [
+      "Son bir sigara içeyim.",
+      "Yarın bırakırım.",
+      "Bir tane içmekten bir şey olmaz."
+    ]
+  },
+  {
+    "level": 2,
+    "title": "Detoks",
+    "dayLabel": "1–3 Gün",
+    "minDays": 1,
+    "requiresPremium": false,
+    "developments": "Nikotin ve karbon monoksit hızla azalmaya başlar. Tat ve koku alma duyularında ilk canlanmalar görülebilir. Vücut bağımlılık maddesini temizlemek için yoğun şekilde çalışır.",
+    "attentionPoints": [
+      "Su tüketimini artır.",
+      "Hafif yürüyüşler yap.",
+      "Kriz anlarında nefes egzersizlerinden faydalan."
+    ],
+    "traps": [
+      "Sinirlilik ve huzursuzluğu sigara ihtiyacı sanmak.",
+      "Krizlerin kalıcı olduğunu düşünmek.",
+      "Bir nefes çekip bırakırım düşüncesi."
+    ]
+  },
+  {
+    "level": 3,
+    "title": "İlk Zafer",
+    "dayLabel": "3–7 Gün",
+    "minDays": 3,
+    "requiresPremium": true
+  },
+  {
+    "level": 4,
+    "title": "Yeniden Başlangıç",
+    "dayLabel": "1 Hafta",
+    "minDays": 7,
+    "requiresPremium": true
+  },
+  {
+    "level": 5,
+    "title": "Dayanıklılık",
+    "dayLabel": "2 Hafta",
+    "minDays": 14,
+    "requiresPremium": true
+  },
+  {
+    "level": 6,
+    "title": "Alışkanlık Kırma",
+    "dayLabel": "1 Ay",
+    "minDays": 30,
+    "requiresPremium": true
+  },
+  {
+    "level": 7,
+    "title": "Nefesi Geri Alma",
+    "dayLabel": "3 Ay",
+    "minDays": 90,
+    "requiresPremium": true
+  },
+  {
+    "level": 8,
+    "title": "Güçlenme",
+    "dayLabel": "6 Ay",
+    "minDays": 180,
+    "requiresPremium": true
+  },
+  {
+    "level": 9,
+    "title": "Yeni Kimlik",
+    "dayLabel": "1 Yıl",
+    "minDays": 365,
+    "requiresPremium": true
+  },
+  {
+    "level": 10,
+    "title": "Kalıcı Değişim",
+    "dayLabel": "5 Yıl",
+    "minDays": 1825,
+    "requiresPremium": true
+  },
+  {
+    "level": 11,
+    "title": "Büyük Dönüşüm",
+    "dayLabel": "10 Yıl",
+    "minDays": 3650,
+    "requiresPremium": true
+  },
+  {
+    "level": 12,
+    "title": "Özgürlük",
+    "dayLabel": "15 Yıl",
+    "minDays": 5475,
+    "requiresPremium": true
+  }
+]
