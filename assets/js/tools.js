@@ -10,7 +10,9 @@
     const toggle = breath.querySelector('[data-breath-toggle]');
     const radios = [...breath.querySelectorAll('input[name="teknik"]')];
     const labels = JSON.parse(breath.dataset.labels || '{}');
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
     const SMALL = 0.45;
+    let scaleTarget = SMALL;
     let timer = 0;
     let running = false;
     let cycle = 0;
@@ -25,8 +27,10 @@
     };
 
     const setScale = (scale, seconds) => {
-      fill.style.transitionDuration = `${seconds}s`;
-      fill.style.transform = `scale(${scale})`;
+      scaleTarget = scale;
+      fill.style.transitionDuration = `${reduce.matches || document.hidden ? 0 : seconds}s`;
+      // The breathing rhythm remains usable through text with a static circle.
+      fill.style.transform = `scale(${reduce.matches ? SMALL : scale})`;
     };
 
     const stop = () => {
@@ -93,6 +97,7 @@
     document.addEventListener('visibilitychange', () => {
       if (document.hidden && running) stop();
     });
+    reduce.addEventListener('change', () => setScale(scaleTarget, 0));
     stop();
   }
 

@@ -19,12 +19,74 @@ import { mainContent, noindexAuthPage, refreshLegalPage } from './templates/lega
 const here = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(here, '..');
 const readJson = (rel) => JSON.parse(fs.readFileSync(path.join(here, rel), 'utf8'));
-const buildDate = new Date().toISOString().slice(0, 10);
+const buildDate = new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/Istanbul' }).format(new Date());
 const written = [];
+const historyFile = 'content/publication-history.json';
+const history = fs.existsSync(path.join(here, historyFile))
+  ? readJson(historyFile)
+  : { version: 1, articles: {}, pages: {} };
+
+// Rebuilding does not make unchanged content new. Keep an auditable content
+// fingerprint for each article and an independent substantive-page fingerprint
+// for sitemap dates. Asset cache hashes and shared site chrome do not count.
+const hash = (value) => crypto.createHash('sha256').update(value).digest('hex');
+const priorSitemapFile = path.join(root, 'sitemap.xml');
+const priorSitemap = fs.existsSync(priorSitemapFile) ? fs.readFileSync(priorSitemapFile, 'utf8') : '';
+const priorDates = new Map([...priorSitemap.matchAll(/<url>\s*<loc>([^<]+)<\/loc>\s*<lastmod>([^<]+)<\/lastmod>/g)]
+  .map(([, loc, date]) => [loc.replace(config.baseUrl, ''), date]));
+
+function substantivePage(source, legal = false) {
+  const main = mainContent(source) || '';
+  const title = legal ? '' : (/<title>([\s\S]*?)<\/title>/.exec(source) || [])[1] || '';
+  const description = legal ? '' : (/<meta name="description"\s+content="([^"]*)"/.exec(source) || [])[1] || '';
+  return hash(`${title}\n${description}\n${main}`
+    .replace(/<!--[^]*?-->/g, '')
+    .replace(/\?v=[a-f0-9]+/g, '')
+    .replace(/\s+/g, ' ')
+    .trim());
+}
+
+function pageLastModified(pagePath, rel, generated, legal = false) {
+  const file = path.join(root, rel);
+  const previous = history.pages[pagePath];
+  const before = previous?.hash || (fs.existsSync(file) ? substantivePage(fs.readFileSync(file, 'utf8'), legal) : null);
+  const after = substantivePage(generated, legal);
+  const lastmod = before === after
+    ? previous?.lastmod || priorDates.get(pagePath) || config.contentPublished || buildDate
+    : buildDate;
+  history.pages[pagePath] = { hash: after, lastmod };
+  return lastmod;
+}
+
+function articleDates(lang, sections) {
+  const initial = !history.articles[lang];
+  const previous = history.articles[lang] || {};
+  const entries = {};
+  for (const section of sections) {
+    for (const article of section.articles) {
+      const fingerprint = hash(JSON.stringify({
+        title: article.title,
+        summary: article.summary,
+        estimatedReadMinutes: article.estimatedReadMinutes,
+        intro: article.intro,
+        contentSections: article.contentSections,
+        keyTakeaways: article.keyTakeaways,
+        section: section.title,
+      }));
+      const prev = previous[article.id];
+      const published = prev?.published || (initial ? config.contentPublished || buildDate : buildDate);
+      const modified = prev?.hash === fingerprint ? prev.modified : prev ? buildDate : published;
+      entries[article.id] = { hash: fingerprint, published, modified };
+    }
+  }
+  history.articles[lang] = entries;
+  return entries;
+}
 
 function write(rel, content) {
   const file = path.join(root, rel);
   fs.mkdirSync(path.dirname(file), { recursive: true });
+  if (fs.existsSync(file) && fs.readFileSync(file, 'utf8') === content) return;
   fs.writeFileSync(file, content);
   written.push(rel);
 }
@@ -72,6 +134,7 @@ async function buildLocale(lang) {
       minutes: s.articles.reduce((n, a) => n + a.estimatedReadMinutes, 0),
     }));
   const allArticles = sections.flatMap((s) => s.articles);
+  const dates = articleDates(lang, sections);
   for (const a of allArticles) {
     if (!slugs.articles[a.id]) throw new Error(`Article ${a.id} has no slug in content/slugs.json`);
   }
@@ -106,14 +169,17 @@ async function buildLocale(lang) {
     sectionById: (id) => sections.find((s) => s.id === id),
     sectionSlug: (id) => slugs.sections[id],
     articleSlug: (id) => slugs.articles[id],
+    articlePublishedAt: (id) => dates[id].published,
+    articleModifiedAt: (id) => dates[id].modified,
     ogFor: (p) => (fs.existsSync(path.join(root, p)) ? p : '/assets/og/default.png'),
   };
 
   const out = (rel) => (localeConfig.prefix ? `${localeConfig.prefix}/${rel}` : rel);
   const pages = [];
   const emit = (rel, page) => {
-    write(out(rel), layout(ctx, page));
-    if (!page.noindex) pages.push({ path: page.path, lastmod: buildDate });
+    const generated = layout(ctx, page).replace(/^[\t ]+$/gm, '');
+    if (!page.noindex) pages.push({ path: page.path, lastmod: pageLastModified(page.path, out(rel), generated) });
+    write(out(rel), generated);
   };
 
   emit('index.html', homePage(ctx));
@@ -145,11 +211,13 @@ async function main() {
   write('robots.txt', robots(ctx));
 
   // Legal pages: chrome refreshed, legal text verified unchanged.
+  const legalEntries = [];
   for (const file of config.legalPages) {
     const full = path.join(root, file);
     const before = fs.readFileSync(full, 'utf8');
     const after = refreshLegalPage(ctx, file, before);
     if (mainContent(before) !== mainContent(after)) throw new Error(`Legal text changed in ${file}; aborting.`);
+    legalEntries.push({ path: `/${file}`, lastmod: pageLastModified(`/${file}`, file, after, true) });
     if (after !== before) write(file, after);
   }
   for (const file of config.authPages) {
@@ -159,8 +227,8 @@ async function main() {
     if (after !== before) write(file, after);
   }
 
-  const legalEntries = config.legalPages.map((f) => ({ path: `/${f}`, lastmod: buildDate }));
   write('sitemap.xml', sitemap(ctx, [...results.flatMap((x) => x.pages), ...legalEntries]));
+  write(`_build/${historyFile}`, JSON.stringify(history, null, 2) + '\n');
 
   console.log(`Built ${written.length} files (${enabled.join(', ')}), AUTH_UI_ENABLED=${config.AUTH_UI_ENABLED}`);
 }

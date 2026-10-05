@@ -6,6 +6,8 @@
   "scripts": {
     "sync": "node sync-flutter-content.mjs ../../Sigara_Savar/quitSmoke",
     "build": "node build.mjs",
+    "verify": "node verify.mjs",
+    "serve": "node serve.mjs",
     "og": "node og/generate.mjs"
   },
   "devDependencies": {

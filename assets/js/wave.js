@@ -36,28 +36,55 @@
     let frame = 0;
     let interval = 0;
     let running = false;
+    let progress = 0;
+    let activePhase = -1;
 
     const format = (ms) => {
       const s = Math.max(0, Math.ceil(ms / 1000));
       return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`;
     };
 
-    const render = (elapsed) => {
+    const setText = (element, value) => {
+      if (element.textContent !== value) element.textContent = value;
+    };
+
+    const stopTimers = () => {
+      cancelAnimationFrame(frame);
+      clearInterval(interval);
+      frame = 0;
+      interval = 0;
+    };
+
+    const renderVisual = (elapsed) => {
       const p = Math.min(1, elapsed / DURATION);
+      progress = elapsed;
+      // Reduced motion keeps the entire diagram still. Only the text timer runs.
+      dot.style.visibility = reduce.matches ? 'hidden' : '';
+      if (reduce.matches) {
+        path.style.strokeDashoffset = '0';
+        return;
+      }
       path.style.strokeDashoffset = `${length * (1 - p)}`;
       const point = path.getPointAtLength(length * p);
       dot.setAttribute('cx', point.x.toFixed(1));
       dot.setAttribute('cy', point.y.toFixed(1));
-      time.textContent = format(DURATION - elapsed);
+    };
+
+    const renderText = (elapsed) => {
+      const p = Math.min(1, elapsed / DURATION);
+      setText(time, format(DURATION - elapsed));
       const active = p < 0.36 ? 0 : p < 0.62 ? 1 : 2;
-      phases.forEach((li, i) => li.classList.toggle('is-active', running && i === active));
+      if (active !== activePhase) {
+        phases.forEach((li, i) => li.classList.toggle('is-active', running && i === active));
+        activePhase = active;
+      }
 
       let t = elapsed % CYCLE;
       for (const phase of BREATH) {
         if (t < phase.ms) {
           const name = labels[phase.key];
-          if (breathName.textContent !== name) breathName.textContent = name;
-          breathCount.textContent = String(Math.ceil((phase.ms - t) / 1000));
+          setText(breathName, name);
+          setText(breathCount, String(Math.ceil((phase.ms - t) / 1000)));
           break;
         }
         t -= phase.ms;
@@ -66,12 +93,10 @@
 
     const reset = () => {
       running = false;
-      cancelAnimationFrame(frame);
-      clearInterval(interval);
-      path.style.strokeDashoffset = `${length}`;
-      const p0 = path.getPointAtLength(0);
-      dot.setAttribute('cx', p0.x.toFixed(1));
-      dot.setAttribute('cy', p0.y.toFixed(1));
+      stopTimers();
+      progress = 0;
+      activePhase = -1;
+      renderVisual(0);
       time.textContent = format(DURATION);
       breathName.textContent = labels.ready;
       breathCount.textContent = '';
@@ -84,9 +109,9 @@
 
     const finish = () => {
       running = false;
-      cancelAnimationFrame(frame);
-      clearInterval(interval);
-      render(DURATION);
+      stopTimers();
+      renderVisual(DURATION);
+      renderText(DURATION);
       phases.forEach((li) => li.classList.remove('is-active'));
       breathName.textContent = labels.done;
       breathCount.textContent = '';
@@ -96,11 +121,33 @@
       questionTitle.focus();
     };
 
-    const tick = () => {
+    const tickVisual = () => {
+      if (!running || document.hidden || reduce.matches) return;
       const elapsed = performance.now() - start;
-      render(elapsed);
+      renderVisual(elapsed);
       if (elapsed >= DURATION) finish();
-      else if (!reduce.matches) frame = requestAnimationFrame(tick);
+      else frame = requestAnimationFrame(tickVisual);
+    };
+
+    const tickText = () => {
+      if (!running || document.hidden) return;
+      const elapsed = performance.now() - start;
+      if (elapsed >= DURATION) finish();
+      else renderText(elapsed);
+    };
+
+    const schedule = () => {
+      stopTimers();
+      const elapsed = running ? performance.now() - start : progress;
+      renderVisual(Math.min(elapsed, DURATION));
+      if (!running || document.hidden) return;
+      if (elapsed >= DURATION) {
+        finish();
+        return;
+      }
+      renderText(elapsed);
+      interval = setInterval(tickText, 1000);
+      if (!reduce.matches) frame = requestAnimationFrame(tickVisual);
     };
 
     startBtn.addEventListener('click', () => {
@@ -111,12 +158,7 @@
       finishBtn.hidden = false;
       live.textContent = labels.started;
       finishBtn.focus();
-      if (reduce.matches) {
-        render(0);
-        interval = setInterval(tick, 1000);
-      } else {
-        frame = requestAnimationFrame(tick);
-      }
+      schedule();
     });
 
     finishBtn.addEventListener('click', finish);
@@ -136,6 +178,12 @@
     restartBtn.addEventListener('click', () => {
       reset();
       startBtn.focus();
+    });
+
+    reduce.addEventListener('change', schedule);
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden) stopTimers();
+      else schedule();
     });
 
     reset();

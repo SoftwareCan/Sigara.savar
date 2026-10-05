@@ -32,7 +32,9 @@ export function manifest(ctx) {
     short_name: config.siteName,
     description: t.meta.siteDescription,
     lang: ctx.localeConfig.htmlLang,
+    id: '/',
     start_url: '/',
+    scope: '/',
     display: 'browser',
     background_color: '#fcfbf8',
     theme_color: '#fcfbf8',
@@ -45,7 +47,8 @@ export function manifest(ctx) {
 }
 
 export function sitemap(ctx, entries) {
-  const urls = entries.map((e) => `  <url>\n    <loc>${ctx.url.abs(e.path)}</loc>\n    <lastmod>${e.lastmod}</lastmod>\n  </url>`);
+  const xml = (value) => String(value).replace(/[&<>"']/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&apos;' }[char]));
+  const urls = entries.map((e) => `  <url>\n    <loc>${xml(ctx.url.abs(e.path))}</loc>\n    <lastmod>${xml(e.lastmod)}</lastmod>\n  </url>`);
   return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.join('\n')}\n</urlset>\n`;
 }
 

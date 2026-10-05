@@ -170,17 +170,24 @@ ${page.noindex ? raw('<meta name="robots" content="noindex, follow">\n') : ''}<m
 <meta property="og:description" content="${page.description}">
 <meta property="og:url" content="${canonical}">
 <meta property="og:image" content="${ogImage}">
+<meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="${page.ogImageAlt || page.ogTitle || page.title}">
+${page.articlePublished ? html`<meta property="article:published_time" content="${page.articlePublished}">\n` : ''}${page.articleModified ? html`<meta property="article:modified_time" content="${page.articleModified}">\n` : ''}
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="${page.ogTitle || page.title}">
+<meta name="twitter:description" content="${page.description}">
+<meta name="twitter:image" content="${ogImage}">
+<meta name="twitter:image:alt" content="${page.ogImageAlt || page.ogTitle || page.title}">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" href="${ctx.asset('/assets/brand/favicon-32.png')}" type="image/png" sizes="32x32">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="${ctx.asset('/apple-touch-icon.png')}" sizes="180x180">
 <link rel="manifest" href="/site.webmanifest">
 <link rel="preload" href="/assets/fonts/source-sans-3.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/newsreader.woff2" as="font" type="font/woff2" crossorigin>
 ${(page.preload || []).map((p) => html`<link rel="preload" href="${p.href}" as="${p.as}"${p.type ? html` type="${p.type}"` : ''}${p.fetchpriority ? html` fetchpriority="${p.fetchpriority}"` : ''}>\n`)}<link rel="stylesheet" href="${ctx.asset('/assets/css/site.css')}">
+${(page.styles || []).map((s) => html`<link rel="stylesheet" href="${ctx.asset(s)}">\n`)}
 <noscript><link rel="stylesheet" href="${ctx.asset('/assets/css/noscript.css')}"></noscript>
 ${(page.jsonLd || []).map((data) => html`${jsonLd(data)}\n`)}<script src="${ctx.asset('/assets/js/site.js')}" defer></script>
 ${(page.scripts || []).map((s) => html`<script src="${ctx.asset(s)}" defer></script>\n`)}${config.AUTH_UI_ENABLED ? raw('<script type="module" src="/header-auth.js"></script>\n') : ''}`;

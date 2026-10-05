@@ -11,6 +11,50 @@ const TOOL_LINKS = {
   'b3-09': { hash: '#kriz-plani', label: 'Kriz planını doldur ve yazdır' },
 };
 
+// Editorial connections use existing app articles. They complement the linear
+// chapter order with a relevant next step in another chapter.
+const RELATED_ARTICLES = {
+  'b1-01': ['b2-01', 'b3-01'],
+  'b1-02': ['b2-03', 'b3-05'],
+  'b1-03': ['b2-05', 'b3-10'],
+  'b1-04': ['b3-09', 'b2-08'],
+  'b1-05': ['b2-02', 'b3-05'],
+  'b1-06': ['b1-08', 'b3-10'],
+  'b1-07': ['b3-04', 'b2-04'],
+  'b1-08': ['b2-01', 'b3-02'],
+  'b1-09': ['b2-01', 'b3-09'],
+  'b2-01': ['b1-01', 'b3-01'],
+  'b2-02': ['b1-05', 'b3-05'],
+  'b2-03': ['b1-02', 'b3-07'],
+  'b2-04': ['b1-07', 'b3-04'],
+  'b2-05': ['b1-03', 'b3-10'],
+  'b2-06': ['b1-02', 'b3-05'],
+  'b2-07': ['b3-06', 'b3-08'],
+  'b2-08': ['b1-04', 'b3-09'],
+  'b2-09': ['b1-05', 'b3-10'],
+  'b3-01': ['b1-08', 'b2-01'],
+  'b3-02': ['b1-07', 'b2-04'],
+  'b3-03': ['b1-08', 'b2-01'],
+  'b3-04': ['b1-07', 'b2-04'],
+  'b3-05': ['b1-05', 'b2-02'],
+  'b3-06': ['b2-07', 'b3-08'],
+  'b3-07': ['b2-03', 'b3-08'],
+  'b3-08': ['b1-06', 'b2-07'],
+  'b3-09': ['b1-04', 'b2-08'],
+  'b3-10': ['b1-02', 'b2-08'],
+  'b3-11': ['b1-04', 'b2-08'],
+};
+
+// Interface labels only: the article content remains in synced app data.
+const EDITORIAL_LABELS = {
+  tr: { all: 'Tüm yazılar', browse: 'Konuna göre keşfet', read: 'Yazıyı oku', onPage: 'Bu yazıda', related: 'Buradan devam edebilirsin' },
+  en: { all: 'All articles', browse: 'Explore by topic', read: 'Read article', onPage: 'In this article', related: 'Keep reading' },
+  es: { all: 'Todos los artículos', browse: 'Explorar por tema', read: 'Leer artículo', onPage: 'En este artículo', related: 'Sigue leyendo' },
+  de: { all: 'Alle Artikel', browse: 'Nach Thema entdecken', read: 'Artikel lesen', onPage: 'In diesem Artikel', related: 'Weiterlesen' },
+};
+
+const editorialLabels = (ctx) => EDITORIAL_LABELS[ctx.lang] || EDITORIAL_LABELS.tr;
+
 const prettify = (text) => String(text).replace(/\s->\s/g, ' → ');
 
 export const displayTitle = (article, section) =>
@@ -32,7 +76,7 @@ function postRow(ctx, article, section) {
     article.contentSections.map((c) => [c.title, c.body, c.items]),
     article.keyTakeaways,
   );
-  return html`<li class="post-row" data-search="${key}">
+  return html`<li class="post-row" data-search="${key}" data-category="${ctx.sectionSlug(section.id)}">
       <a class="post-row__link" href="${url.article(article.id)}">
         <span class="post-row__num" aria-hidden="true">${article.order}</span>
         <span class="post-row__title">${title}</span>
@@ -47,13 +91,17 @@ export function knowledgeIndexPage(ctx) {
   const k = t.knowledge;
   const totalArticles = ctx.sections.reduce((n, s) => n + s.articles.length, 0);
   const totalMinutes = ctx.sections.reduce((n, s) => n + s.minutes, 0);
+  const labels = editorialLabels(ctx);
+  const [featuredEntry, ...otherEntries] = k.entries;
+  const featured = ctx.articleById(featuredEntry.id);
+  const featuredSection = ctx.sectionById(featured.sectionId);
 
   const main = html`<div class="page-head">
   <div class="wrap">
     <h1>${k.title}</h1>
     <p class="lead">${k.lead}</p>
     <p class="page-head__meta">${k.stats(ctx.sections.length, totalArticles, totalMinutes)}</p>
-    <div class="kc-tools">
+    <div class="kc-discovery" id="yazilar">
       <form class="search" role="search" action="${url.knowledge()}" method="get" data-kc-search data-found="${k.search.found}" data-none="${k.search.none}">
         <label for="kc-q">${k.search.label}</label>
         <div class="search__field">
@@ -61,10 +109,29 @@ export function knowledgeIndexPage(ctx) {
           <button class="search__clear" type="button" data-kc-clear hidden aria-label="${k.search.clear}">×</button>
         </div>
         <p class="search__status" data-kc-status role="status" aria-live="polite"></p>
+        <input type="hidden" name="bolum" value="" data-kc-category-input disabled>
         <button class="visually-hidden" type="submit">${k.search.submit}</button>
       </form>
-      <ul class="entry-points" data-kc-entries aria-label="${k.entryTitle}">
-        ${k.entries.map((e) => {
+      <nav class="kc-categories" aria-label="${k.sectionsNav}">
+        <p class="kc-categories__label">${labels.browse}</p>
+        <ul>
+          <li><a href="${url.knowledge()}#yazilar" data-kc-category="" aria-current="true">${labels.all}<span>${totalArticles}</span></a></li>
+          ${ctx.sections.map((s) => html`<li><a href="${url.section(s.id)}" data-kc-category="${ctx.sectionSlug(s.id)}">${s.title}<span>${s.articles.length}</span></a></li>`)}
+        </ul>
+      </nav>
+    </div>
+    <div class="kc-start" data-kc-entries role="group" aria-label="${k.entryTitle}">
+      <article class="kc-featured" aria-labelledby="kc-featured-title">
+        <p class="label">${featuredEntry.label}</p>
+        <h2 id="kc-featured-title"><a href="${url.article(featured.id)}">${displayTitle(featured, featuredSection)}</a></h2>
+        <p class="kc-featured__intro">${featured.intro || featured.summary}</p>
+        <div class="kc-featured__footer">
+          <a class="text-link" href="${url.article(featured.id)}">${labels.read}</a>
+          <span class="meta muted">${t.common.readTime(featured.estimatedReadMinutes)}</span>
+        </div>
+      </article>
+      <ul class="kc-shortcuts">
+        ${otherEntries.map((e) => {
           const a = ctx.articleById(e.id);
           const s = ctx.sectionById(a.sectionId);
           return html`<li class="entry-point">
@@ -80,7 +147,7 @@ export function knowledgeIndexPage(ctx) {
 </div>
 <div class="wrap">
   <div class="no-results" data-kc-empty hidden><p>${k.search.empty}</p></div>
-  ${ctx.sections.map((s) => html`<section class="kc-section" id="${ctx.sectionSlug(s.id)}" aria-labelledby="${ctx.sectionSlug(s.id)}-title">
+  ${ctx.sections.map((s) => html`<section class="kc-section" id="${ctx.sectionSlug(s.id)}" data-kc-section="${ctx.sectionSlug(s.id)}" aria-labelledby="${ctx.sectionSlug(s.id)}-title">
     <div class="kc-section__head">
       <span class="label">${t.common.sectionLabel(s.order)}</span>
       <h2 id="${ctx.sectionSlug(s.id)}-title">${s.title}</h2>
@@ -127,6 +194,7 @@ export function knowledgeIndexPage(ctx) {
     main,
     jsonLd: [breadcrumb, collection],
     scripts: ['/assets/js/knowledge.js'],
+    styles: ['/assets/css/knowledge.css'],
   };
 }
 
@@ -145,8 +213,11 @@ export function articlePage(ctx, article) {
     : t.common.takeaways;
   const tool = TOOL_LINKS[article.id];
   const isCrisisSection = section.order === 3;
+  const labels = editorialLabels(ctx);
+  const related = (RELATED_ARTICLES[article.id] || []).map((id) => ctx.articleById(id)).filter(Boolean);
+  const sectionAnchor = (i) => `yazi-bolum-${i + 1}`;
 
-  const body = article.contentSections.map((c) => html`<h2>${c.title}</h2>
+  const body = article.contentSections.map((c, i) => html`<h2 id="${sectionAnchor(i)}">${c.title}</h2>
       ${c.body ? html`<p>${prettify(c.body)}</p>` : ''}
       ${c.items.length
         ? (c.numbered
@@ -159,6 +230,11 @@ export function articlePage(ctx, article) {
         <h2 id="cta-title">${t.article.crisisCta.title}</h2>
         <p>${t.article.crisisCta.text}</p>
         <a class="btn btn--primary" href="${url.tools(tool ? tool.hash : '#kriz-bekcisi')}">${tool ? tool.label : t.article.crisisCta.link}</a>
+        <div class="article-app-support">
+          <h3>${t.article.appCta.title}</h3>
+          <p>${t.article.appCta.text}</p>
+          ${storeBadges(ctx)}
+        </div>
       </aside>`
     : html`<aside class="context-cta" aria-labelledby="cta-title">
         <h2 id="cta-title">${t.article.appCta.title}</h2>
@@ -191,6 +267,10 @@ export function articlePage(ctx, article) {
           </div>
         </div>
       </header>
+      ${article.contentSections.length > 1 ? html`<nav class="article-section-index" aria-labelledby="article-section-index-title">
+        <h2 id="article-section-index-title">${labels.onPage}</h2>
+        <ol>${article.contentSections.map((c, i) => html`<li><a href="#${sectionAnchor(i)}">${c.title}</a></li>`)}</ol>
+      </nav>` : ''}
       <div class="prose">
         ${article.intro ? html`<p class="intro">${prettify(article.intro)}</p>` : ''}
         ${body}
@@ -201,6 +281,13 @@ export function articlePage(ctx, article) {
       </div>
       ${cta}
       <p class="medical-note">${t.common.medicalNote}</p>
+      ${related.length ? html`<section class="article-related" aria-labelledby="article-related-title">
+        <h2 id="article-related-title">${labels.related}</h2>
+        <ul>${related.map((a) => html`<li>
+          <a href="${url.article(a.id)}">${displayTitle(a, ctx.sectionById(a.sectionId))}</a>
+          <span>${t.common.readTime(a.estimatedReadMinutes)}</span>
+        </li>`)}</ul>
+      </section>` : ''}
       <nav aria-label="${t.article.prev} / ${t.article.next}">
         <ul class="pager">
           ${prev ? html`<li><a href="${url.article(prev.id)}" rel="prev"><span>${t.article.prev}</span><strong>${displayTitle(prev, ctx.sectionById(prev.sectionId))}</strong></a></li>` : ''}
@@ -228,8 +315,8 @@ export function articlePage(ctx, article) {
     url: url.abs(path),
     mainEntityOfPage: url.abs(path),
     image: [url.abs(ogImage)],
-    datePublished: config.contentPublished,
-    dateModified: ctx.source.syncedAt,
+    datePublished: ctx.articlePublishedAt(article.id),
+    dateModified: ctx.articleModifiedAt(article.id),
     articleSection: section.title,
     timeRequired: `PT${article.estimatedReadMinutes}M`,
     author: { '@type': 'Organization', name: config.siteName, url: `${config.baseUrl}/` },
@@ -259,6 +346,9 @@ export function articlePage(ctx, article) {
     ogImage,
     current: 'knowledge',
     bodyClass: 'article-page',
+    styles: ['/assets/css/knowledge.css'],
+    articlePublished: ctx.articlePublishedAt(article.id),
+    articleModified: ctx.articleModifiedAt(article.id),
     main,
     jsonLd: [articleLd, breadcrumb],
   };

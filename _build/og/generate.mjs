@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 // Renders 1200x630 Open Graph images into assets/og/ with a local Chrome.
 // Optional step (needs playwright-core):  cd _build && npm install && node og/generate.mjs
+// Use --only default to refresh only the homepage image after a copy change.
 // Then run node _build/build.mjs so pages reference the new images.
 
 import fs from 'node:fs';
@@ -66,12 +67,28 @@ for (const s of sections) {
   }
 }
 
+const onlyIndex = process.argv.indexOf('--only');
+const requested = onlyIndex >= 0 ? process.argv[onlyIndex + 1] : null;
+if (onlyIndex >= 0 && !requested) throw new Error('--only requires an image name, e.g. default');
+const selectedJobs = requested ? jobs.filter((job) => job.file === `${requested.replace(/\.png$/, '')}.png`) : jobs;
+if (!selectedJobs.length) throw new Error(`Unknown Open Graph image: ${requested}`);
+
+// Export a temporary local preview for the Codex browser workflow. No browser
+// automation is launched in this mode; capture the page at 1200×630, then remove it.
+if (process.argv.includes('--prepare')) {
+  for (const job of selectedJobs) {
+    fs.writeFileSync(path.join(out, `preview-${job.file.replace(/\.png$/, '')}.html`), template({ ...job, size: sizeFor(job.title) }));
+  }
+  console.log(`Prepared ${selectedJobs.length} local Open Graph previews in assets/og/`);
+  process.exit(0);
+}
+
 const browser = await chromium.launch({ executablePath: CHROME });
 const page = await browser.newPage({ viewport: { width: 1200, height: 630 } });
-for (const job of jobs) {
+for (const job of selectedJobs) {
   await page.setContent(template({ ...job, size: sizeFor(job.title) }), { waitUntil: 'load' });
   await page.evaluate(() => document.fonts.ready);
   await page.screenshot({ path: path.join(out, job.file), type: 'png' });
 }
 await browser.close();
-console.log(`Generated ${jobs.length} images in assets/og/`);
+console.log(`Generated ${selectedJobs.length} images in assets/og/`);

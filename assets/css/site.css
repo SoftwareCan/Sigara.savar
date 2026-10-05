@@ -2129,7 +2129,7 @@ button {
 }
 
 .share button {
-  min-height: 40px;
+  min-height: 44px;
   padding: 0.35rem 0.85rem;
   border: 1px solid var(--rule-strong);
   border-radius: 10px;
@@ -3081,7 +3081,7 @@ button {
 
 .lang-switch button {
   min-width: 44px;
-  min-height: 38px;
+  min-height: 44px;
   padding: 0 0.6rem;
   border: 0;
   border-radius: 9px;

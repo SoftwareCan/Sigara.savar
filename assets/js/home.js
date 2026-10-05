@@ -4,8 +4,21 @@
 
   // Recovery timeline — the line fills as the reader moves through time.
   const timeline = document.querySelector('[data-timeline]');
+  const controls = document.querySelector('[data-timeline-controls]');
+  if (timeline && controls) {
+    controls.hidden = false;
+    controls.addEventListener('click', (event) => {
+      const button = event.target.closest('[data-period]');
+      if (!button) return;
+      controls.querySelectorAll('button').forEach((b) => b.setAttribute('aria-pressed', String(b === button)));
+      timeline.querySelectorAll('[data-timeline-period]').forEach((item) => {
+        item.hidden = item.dataset.timelinePeriod !== button.dataset.period;
+      });
+      timeline.dispatchEvent(new Event('periodchange'));
+    });
+  }
   if (timeline && !reduce && 'IntersectionObserver' in window) {
-    const items = [...timeline.querySelectorAll('.timeline__item')];
+    let items = [];
     const head = timeline.querySelector('.timeline__head');
     const nodeY = parseFloat(getComputedStyle(timeline).getPropertyValue('--node-y')) || 16;
     let firstY = 0;
@@ -16,6 +29,7 @@
 
     // Layout is read only here (load, fonts, resize); scrolling reuses the cache.
     const measure = () => {
+      items = [...timeline.querySelectorAll('.timeline__item:not([hidden])')];
       nodes = items.map((item) => item.offsetTop + nodeY);
       firstY = nodes[0];
       span = Math.max(1, nodes[nodes.length - 1] - firstY);
@@ -41,6 +55,7 @@
       measure();
       onScroll();
     };
+    timeline.addEventListener('periodchange', onResize);
 
     timeline.classList.add('is-live');
     measure();

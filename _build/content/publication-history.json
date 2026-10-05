@@ -1,0 +1,298 @@
+{
+  "version": 1,
+  "articles": {
+    "tr": {
+      "b1-01": {
+        "hash": "ac6c0f8ec7b9e0f655faf42c81ed3c01b289bf7f4ba73b6eb22924663c3cf193",
+        "published": "2026-10-04",
+        "modified": "2026-10-04"
+      },
+      "b1-02": {
+        "hash": "d84d29dffec2d907cbb34d6d47b062576d249c1cf3f9a69b6089dae24d2c4388",
+        "published": "2026-10-04",
+        "modified": "2026-10-04"
+      },
+      "b1-03": {
+        "hash": "a3e62a4d6da25be3391764be208e2374ec4b556383a0d4d4237ca6d5b56ab695",
+        "published": "2026-10-04",
+        "modified": "2026-10-04"
+      },
+      "b1-04": {
+        "hash": "b57db9f18a47b1e236cbc71fc6aa45f70ea3546c0bc638e0c7e48ad1a8e962d3",
+        "published": "2026-10-04",
+        "modified": "2026-10-04"
+      },
+      "b1-05": {
+        "hash": "73e5ac441c288deec159ae016c07dd9def3d66b55cd5378b62c13dbbd9888350",
+        "published": "2026-10-04",
+        "modified": "2026-10-04"
+      },
+      "b1-06": {
+        "hash": "935d32fff054386b8f98308c4d78efae58947a5fa86ede64c9c73cc06987fba5",
+        "published": "2026-10-04",
+        "modified": "2026-10-04"
+      },
+      "b1-07": {
+        "hash": "4669682175978a790ec99b103e8aae9948e1f006bc87bcc6affe017eb1c336dc",
+        "published": "2026-10-04",
+        "modified": "2026-10-04"
+      },
+      "b1-08": {
+        "hash": "a4d4944ab5e9eccf1e900daf89ac57b8382a712f940350defa2cf36087761712",
+        "published": "2026-10-04",
+        "modified": "2026-10-04"
+      },
+      "b1-09": {
+        "hash": "23849c232d0940876d3bb06cc62ad3942c725352820fb2bcb9eef72f13f4eaff",
+        "published": "2026-10-04",
+        "modified": "2026-10-04"
+      },
+      "b2-01": {
+        "hash": "6a5c3d8b900b88c9167daa0629be4bdcce2fbe38eaa38e369b6af578945fff14",
+        "published": "2026-10-04",
+        "modified": "2026-10-04"
+      },
+      "b2-02": {
+        "hash": "3dea1ac1350f59711624cccaeb4393147a2805bce31a0c4252062892dee52a29",
+        "published": "2026-10-04",
+        "modified": "2026-10-04"
+      },
+      "b2-03": {
+        "hash": "1760cd3a805f33a7e8d0e7f4ddb258868b2be7faadf06dcff9c06a341c65381a",
+        "published": "2026-10-04",
+        "modified": "2026-10-04"
+      },
+      "b2-04": {
+        "hash": "e9fdc48dc607595ceccf9d6f3f037ae944db6f43a869aafb0ba75f562e59cb49",
+        "published": "2026-10-04",
+        "modified": "2026-10-04"
+      },
+      "b2-05": {
+        "hash": "eb7abdf8af832041eb2f34a7bf06ba4b73f122c4138db076e7386cf639a4d123",
+        "published": "2026-10-04",
+        "modified": "2026-10-04"
+      },
+      "b2-06": {
+        "hash": "e3a2bec773943eceff9fdddc41b7f2c1ea93500166b6583aca275997ff4220a6",
+        "published": "2026-10-04",
+        "modified": "2026-10-04"
+      },
+      "b2-07": {
+        "hash": "bf6c0c67f6218ec42cff9aa827a9cf09ee932d56443ce1377971ca11c5de0196",
+        "published": "2026-10-04",
+        "modified": "2026-10-04"
+      },
+      "b2-08": {
+        "hash": "a67b180d7572f6c68fb3ede915e3da3c05004d3c952c408dc5de396699331239",
+        "published": "2026-10-04",
+        "modified": "2026-10-04"
+      },
+      "b2-09": {
+        "hash": "d1041dffe1a95cfdbc29f38d8133e4e975f436bbc4001ec1c1139a26ef7ed797",
+        "published": "2026-10-04",
+        "modified": "2026-10-04"
+      },
+      "b3-01": {
+        "hash": "34fae162bbb336016d7c6805403d2158769faaef5fa2c6284499d7e75126bd26",
+        "published": "2026-10-04",
+        "modified": "2026-10-04"
+      },
+      "b3-02": {
+        "hash": "08af5050d1f4c183bb5d37e321221eaf23b5ad752d744e2910e3a5f86e96b798",
+        "published": "2026-10-04",
+        "modified": "2026-10-04"
+      },
+      "b3-03": {
+        "hash": "be1634885b69bcd4d2302e59dd925428285b5795ce2476e5191283eba31af03b",
+        "published": "2026-10-04",
+        "modified": "2026-10-04"
+      },
+      "b3-04": {
+        "hash": "9be2e54410bb06b5ca5b09151e1676e299ee8b44ed3b7c24b656eb17d5da983c",
+        "published": "2026-10-04",
+        "modified": "2026-10-04"
+      },
+      "b3-05": {
+        "hash": "99b13e3dbbdae240e49e5a045a18adc7d80e12835c7efa65b0124be38d4ffa97",
+        "published": "2026-10-04",
+        "modified": "2026-10-04"
+      },
+      "b3-06": {
+        "hash": "2af5abb126e9be55036313237d75454d8e1da2d2591933f2ab834b4784e9cf84",
+        "published": "2026-10-04",
+        "modified": "2026-10-04"
+      },
+      "b3-07": {
+        "hash": "c74219d767533fe42cf6bbc93c9570b4a85a67ca49ad6eee9f99994f21228537",
+        "published": "2026-10-04",
+        "modified": "2026-10-04"
+      },
+      "b3-08": {
+        "hash": "a4f8b89140ffaff46fd3d84c5f7c5dda6ccf4d5c092cc4ef0adfb2a7571a599c",
+        "published": "2026-10-04",
+        "modified": "2026-10-04"
+      },
+      "b3-09": {
+        "hash": "bb8654ae6c2c1efe1a38a229998061137274a42a0ed18a8ed70a3f852d82cf9c",
+        "published": "2026-10-04",
+        "modified": "2026-10-04"
+      },
+      "b3-10": {
+        "hash": "d0f39da4ca372c8ce82bc10a797d3dd4f8c648c1693662280cf7f51c5a7abfc4",
+        "published": "2026-10-04",
+        "modified": "2026-10-04"
+      },
+      "b3-11": {
+        "hash": "348c636661f05ca59b6abb21e6db1dd0dd9c44342ba662d12d638339d3ac70f0",
+        "published": "2026-10-04",
+        "modified": "2026-10-04"
+      }
+    }
+  },
+  "pages": {
+    "/": {
+      "hash": "132ffda2dfa40398283145faa18baf1faad9dfa5266dcb1c7efc393b276a0351",
+      "lastmod": "2026-10-05"
+    },
+    "/bilgi-merkezi/": {
+      "hash": "f7cd686fada47ae534caae82b634df3760a32c7f244369b95638a9ef51e01a69",
+      "lastmod": "2026-10-05"
+    },
+    "/bilgi-merkezi/bagimlilik-nedir/": {
+      "hash": "3c3d00aeae86cf3e1fa4665cd1e842a95e83892625f2e9893c2bdd036eeb945c",
+      "lastmod": "2026-10-05"
+    },
+    "/bilgi-merkezi/neden-sigara-iciyorsun/": {
+      "hash": "200b44c30d18d409d3b424122ea8f8b643702e55d7d7034730a0933daab4fe49",
+      "lastmod": "2026-10-05"
+    },
+    "/bilgi-merkezi/sigarayi-birakmanin-kazanimlari/": {
+      "hash": "a087225ef10ef760af1b044711af93fd6297066a50ec29cec6547f6d41bb59e5",
+      "lastmod": "2026-10-05"
+    },
+    "/bilgi-merkezi/birakmaya-hazirlik-ve-plan/": {
+      "hash": "a61c868ed10269c3550abfb818a964a91f71b24fe258ecb771f63ab91313b3ce",
+      "lastmod": "2026-10-05"
+    },
+    "/bilgi-merkezi/tetikleyici-haritasi/": {
+      "hash": "33646be63500430f8717c993e5b66656fbe789bb215bba2c83777573c020dc55",
+      "lastmod": "2026-10-05"
+    },
+    "/bilgi-merkezi/destek-secenekleri/": {
+      "hash": "7a403595a6080e904ed85300d355d552edd5ab313889ff341bef3ef7fd3f0af5",
+      "lastmod": "2026-10-05"
+    },
+    "/bilgi-merkezi/birakma-gunu/": {
+      "hash": "bfe83adb8c884f15f134d15710fe05b86438db5cf446d5399d95ab71d627cd26",
+      "lastmod": "2026-10-05"
+    },
+    "/bilgi-merkezi/nikotin-yoksunlugu/": {
+      "hash": "c703ac431d197ac60da5edd8d659e447a0b0aeec856c9be10d63c6674c425968",
+      "lastmod": "2026-10-05"
+    },
+    "/bilgi-merkezi/hazirlik-ve-ilk-gunler-ozet/": {
+      "hash": "2f5f25a1f3a31b6cf0adb613fe1ae5e1d4faa988a528c184acd1eebe840c8187",
+      "lastmod": "2026-10-05"
+    },
+    "/bilgi-merkezi/nikotin-gitti-istek-neden-surer/": {
+      "hash": "27b5bc59887fbbca197a7f0bb56d28ae533687cbed2684c24615ff3f355f5c19",
+      "lastmod": "2026-10-05"
+    },
+    "/bilgi-merkezi/tetikleyicilerini-yeniden-yaz/": {
+      "hash": "d4193e6973aa520ec67baaf9fad4e6a0ff08c8f24869e54bbaba4d02ba08a370",
+      "lastmod": "2026-10-05"
+    },
+    "/bilgi-merkezi/sigara-dusuncelerini-yeniden-degerlendir/": {
+      "hash": "52a10222dc544ddf7c3083edca97f0e1c1c1c0bd5638c8abd82590230850da69",
+      "lastmod": "2026-10-05"
+    },
+    "/bilgi-merkezi/sigaranin-biraktigi-bosluk/": {
+      "hash": "74457dee8a9cf9bcf437947f058d9b7c1d7e652438b4d13b0d43458a75eca31c",
+      "lastmod": "2026-10-05"
+    },
+    "/bilgi-merkezi/dogal-odulleri-guclendir/": {
+      "hash": "2db281aebe1b0d8e559d650e4f33dce412ec997bc60017dfd3162a3cdfa2adb6",
+      "lastmod": "2026-10-05"
+    },
+    "/bilgi-merkezi/ben-sigara-kullanmiyorum/": {
+      "hash": "4f2634a2e3eb79b72f41d6593264ba8c3048a734869a24cc577565b40db2c74d",
+      "lastmod": "2026-10-05"
+    },
+    "/bilgi-merkezi/artik-kontrol-edebilirim-dusuncesi/": {
+      "hash": "366102da1e8c554349b2941ff257e467f4e49d9fb1a1c113529963b9d23185cb",
+      "lastmod": "2026-10-05"
+    },
+    "/bilgi-merkezi/sigarasiz-yasam-kontrol-listesi/": {
+      "hash": "15a5ef72bf3e224af39b2486ee8cee074e62aeb0b5c1028093010a3f1e8c1092",
+      "lastmod": "2026-10-05"
+    },
+    "/bilgi-merkezi/kalici-degisim-ozet/": {
+      "hash": "2ea32b68f7f0d69aa45cbc37cd80683cd5767142e67a87d260ac2fa34bd26b03",
+      "lastmod": "2026-10-05"
+    },
+    "/bilgi-merkezi/sigara-istegi-nedir/": {
+      "hash": "6ffc9943bf219aee146659ee4672123aa1f25b4373a60dcf7afcca3c09126f92",
+      "lastmod": "2026-10-05"
+    },
+    "/bilgi-merkezi/istek-dalgasi/": {
+      "hash": "4ec641d66a37bfa821c5c8bd1ce6a5bad65df17c9a5931cdad5fd255200a39f6",
+      "lastmod": "2026-10-05"
+    },
+    "/bilgi-merkezi/istek-dalgasini-izleme/": {
+      "hash": "500ca62ccf3978698d2365aa5c570a41a356c1ba724aa1df4783d9aa6ed60b8a",
+      "lastmod": "2026-10-05"
+    },
+    "/bilgi-merkezi/4d-yontemi/": {
+      "hash": "6209ad5e1f9f44bd5196f89269aa53ebe4cbb7c6abedba5a54a8ba79175c3445",
+      "lastmod": "2026-10-05"
+    },
+    "/bilgi-merkezi/eger-o-zaman-plani/": {
+      "hash": "1c82910d3601c070d1ec0bd7e6ade6b297d01a5f2510df8fc02f71e2b8a648d7",
+      "lastmod": "2026-10-05"
+    },
+    "/bilgi-merkezi/kayma-ve-nuks-farki/": {
+      "hash": "bcb9f476e1530aa4619dd74c224a2c91f7e1c4fc6b7cf8d94b817392c410fd69",
+      "lastmod": "2026-10-05"
+    },
+    "/bilgi-merkezi/bir-hata-her-seyi-bozdu-tuzagi/": {
+      "hash": "fe560abfb6397985b086075e39daf0858199249850fea08726479bf372ff268b",
+      "lastmod": "2026-10-05"
+    },
+    "/bilgi-merkezi/kayma-sonrasi-toparlanma/": {
+      "hash": "f035af356a1c37eeb622017f0c9dd3dce8e4172e674b0db363775ef154253608",
+      "lastmod": "2026-10-05"
+    },
+    "/bilgi-merkezi/kriz-plani-olustur/": {
+      "hash": "ab9fea5d5576f4a248b4626fade0d1acced299e20a71f4094f35b2ecc8fd2111",
+      "lastmod": "2026-10-05"
+    },
+    "/bilgi-merkezi/sureci-gozden-gecir/": {
+      "hash": "b444a59440ca39c70421d96ab91ac73036239e68cf91d18e603131887715baeb",
+      "lastmod": "2026-10-05"
+    },
+    "/bilgi-merkezi/istek-ve-nuks-ozet/": {
+      "hash": "d48b300ead469757d03d137a2e24de0fc41639eb701bd9bed5996a3d736d6e8a",
+      "lastmod": "2026-10-05"
+    },
+    "/birakma-rehberi/": {
+      "hash": "c857767fa1e79e04bf5aa5b684784de8921a2240c564abd0fec1446950ef0989",
+      "lastmod": "2026-10-05"
+    },
+    "/araclar/": {
+      "hash": "f6dd4361cf01e9a1a51cbbed5baa53e8c8c16a508fe879fb6e5a81e3eecc17b2",
+      "lastmod": "2026-10-04"
+    },
+    "/privacy.html": {
+      "hash": "4219d366134ce9f17d70b18f86a2532dac2ad8f93f237ed38d931216d3727727",
+      "lastmod": "2026-10-04"
+    },
+    "/terms.html": {
+      "hash": "bfb289d322e067df9860767727927c173f0ed62ed49ca132b7cf1269097f498b",
+      "lastmod": "2026-10-04"
+    },
+    "/userDataDeletion.html": {
+      "hash": "55814bf575d8aeca03734745bfd04c063f451a7aa88caf7bdfb0dae332a6c28d",
+      "lastmod": "2026-10-04"
+    }
+  }
+}

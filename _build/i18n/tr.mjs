@@ -30,7 +30,7 @@ export default {
     tools: 'Araçlar',
     community: 'Topluluk',
     app: 'Uygulama',
-    download: 'Uygulamayı indir',
+    download: 'Uygulamayı İndir',
     menu: 'Menü',
     close: 'Kapat',
     crisisShortcut: 'Şu an zor bir andaysan: 90 saniyelik akış',
@@ -80,27 +80,28 @@ export default {
   },
 
   home: {
-    title: 'Sigara Savar: sigarayı bırakma sürecinde bilgi, takip ve destek',
+    title: 'Sigaradan Sonsuza Kadar Kurtul | Sigara Savar',
     description:
-      'Sigarayı bırakmak tek bir karar değil, her gün güçlenen bir süreç. Ücretsiz Bilgi Merkezi, sağlık zaman çizelgesi, kriz araçları ve Sigara Savar uygulaması.',
+      'Sigarayı bırakma sürecini anla, kendi planını hazırla. Sigara Savar’ın ücretsiz Bilgi Merkezi, bırakma rehberi, kriz araçları ve topluluğuyla tanış.',
     hero: {
-      title: 'Sigarayı bırakmak tek bir karar değil. Her gün yeniden güçlenen bir süreç.',
+      eyebrow: 'SIGARA SAVAR',
+      title: 'Sigaradan Sonsuza Kadar Kurtul.',
       lead:
-        'Bağımlılığın nasıl çalıştığını anlaman, zor anda ne yapacağını bilmen ve ilerlemeni görmen için bilgi, takip, destek ve topluluk tek yerde.',
-      primary: 'Bilgi Merkezini keşfet',
-      secondary: 'Uygulamayı indir',
-      markCaption: 'Bu döngü kırılabilir.',
+        'Bırakmak bir günlük karar değil; her gün güçlenen bir süreç. Bilgi, takip, kriz araçları ve aynı yolda yürüyen bir toplulukla Sigara Savar yanında.',
+      primary: 'Bırakma Rehberini Keşfet',
+      secondary: 'Uygulamayı İndir',
+      markCaption: 'Döngünün ötesinde bir hayat.',
     },
     recovery: {
       title: 'Son sigaradan sonra vücudunda neler değişir?',
       lead:
-        'İyileşme bir anda gelmez; dakikalar, günler ve yıllar içinde adım adım ilerler. Bu zaman çizelgesi Sigara Savar uygulamasındaki sağlık hedeflerinden alındı.',
+        'Değişim ilk dakikalarda başlar; günler, aylar ve yıllar boyunca devam eder. Sigarayı bıraktıktan sonraki genel kazanımlara göz at.',
       note: 'Genel bilgilendirme amaçlıdır; kişiden kişiye değişebilir ve tıbbi tavsiye yerine geçmez.',
-      more: '26 hedefin tamamını gör',
+      more: 'Sağlık zaman çizelgesini keşfet',
       milestones: [20, 720, 1440, 2880, 4320, 20160, 43200, 129600, 525600, 2628000, 5256000, 7884000],
     },
     crisis: {
-      title: 'Kriz geldiğinde',
+      title: 'Kriz geldiğinde yalnızca iradene güvenmek zorunda değilsin.',
       lead:
         'Sigara isteği bir emir değil, geçici bir dürtüdür. Yükselir, zirveye ulaşır ve azalır. Zor anda ne yapacağını önceden bilmek, dalganın sigara içmeden geçmesine alan açar.',
       source: 'Bilgi Merkezi: İstek bir dalga gibi yükselir ve azalır',
@@ -144,21 +145,21 @@ export default {
       cta: 'Bilgi Merkezini keşfet',
     },
     app: {
-      title: 'Okuduklarını her gün uygulamak için',
+      title: 'Bu desteği cebinde taşı.',
       lead:
         'Sigara Savar uygulaması sigarasız geçen süreni, sağlığındaki değişimi ve küçük zaferlerini görünür kılar; zor anlarda araçlarını, her gün topluluğunu yanında tutar.',
       features: [
         {
           id: 'takip',
           title: 'Sigarasız geçen her gün',
-          text: 'Sigarasız geçen süreni, içmediğin sigarayı ve biriktirdiğin parayı takip et. Gelişim ekranı sağlık, günlük ve başarılarını tek yerde toplar.',
+          text: 'Sigarasız geçen süreni, içmediğin sigarayı, biriktirdiğin parayı ve geri kazandığın zamanı takip et. Gelişim ekranı sağlık, günlük ve başarılarını tek yerde toplar.',
           screen: 'gelisim',
           alt: 'Uygulamanın Gelişim ekranı: 5 gündür sigarasız, gelişim puanı ve yolculuk haritası',
         },
         {
           id: 'saglik',
           title: 'Sağlığındaki değişim',
-          text: '26 sağlık hedefi, son sigaradan bu yana vücudunda neler değiştiğini zamanı geldikçe gösterir.',
+          text: 'Uygulamadaki sağlık hedefleri, bırakma sürecindeki genel değişimleri bir zaman çizelgesinde takip etmene yardımcı olur. Kişisel sağlık ölçümü değildir.',
           screen: 'saglik',
           alt: 'Uygulamanın Sağlık ekranı: iyileşme yolculuğu ve dakika dakika sağlık hedefleri',
         },
@@ -187,14 +188,14 @@ export default {
       download: 'Uygulamayı indir',
     },
     community: {
-      title: 'Yalnız bırakmak zorunda değilsin.',
+      title: 'Bu yolculuk yalnız yürünmek zorunda değil.',
       lead:
         'Bırakma kararını paylaşmak ve destek istemek süreci kolaylaştırabilir. Sigara Savar topluluğu, aynı yolda yürüyen insanların birbirini desteklediği bir alan.',
       spacesTitle: 'Toplulukta neler var?',
       spaces: [
-        { title: 'Genel sohbet', text: 'Gün içinde destek istemek, küçük zaferleri paylaşmak, duyuru ve etkinlikleri takip etmek için.' },
-        { title: 'Topluluk Yazıları', text: 'Üyelerin deneyimleri, yazıları ve yorumları. Uygulamanın Keşfet bölümünde.' },
-        { title: 'Rozetler ve çerçeveler', text: 'Toplulukta aktif oldukça kazanılan rozetler ve profili kişiselleştiren çerçeveler.' },
+        { title: 'İlerlemeyi paylaş', text: 'İlk sigarasız gününü, zor bir molayı ya da küçük bir kazanımını aynı süreci yaşayan insanlarla paylaş.' },
+        { title: 'Deneyimlerden öğren', text: 'Keşfet’teki Topluluk Yazıları’nda üyelerin deneyimlerini oku; yazı ve yorumlarla kendi deneyimini ekle.' },
+        { title: 'Zor anda birine yaz', text: 'Uygulamadaki genel sohbette destek iste, başkasına cesaret ver. Topluluk desteği kişisel deneyimlere dayanır; profesyonel destek yerine geçmez.' },
       ],
       rulesTitle: 'Topluluğun kuralları',
       rulesIntro: 'Uygulamada sohbete katılmadan önce herkesin kabul ettiği kurallardan:',
@@ -254,7 +255,7 @@ export default {
     title: 'Bırakma Rehberi',
     metaTitle: 'Sigara bırakma rehberi: karar gününden ilk yıla',
     description:
-      'Sigarayı bırakmaya hazırlık, ilk günler, yoksunluk, sigara isteği ve uzun vade: 12 aşamalı yolculuk haritası ve 26 adımlık sağlık zaman çizelgesi.',
+      'Bırakmaya hazırlık, bırakma günü, ilk hafta, krizler ve bir kaymadan sonra toparlanma için gerçek Bilgi Merkezi yazılarıyla adım adım sigara bırakma rehberi.',
     lead:
       'Karar gününden ilk yıla ve sonrasına: bu süreçte neler olabileceğini, hangi adımların işe yarayabileceğini ve nereden destek alabileceğini bir arada topladık.',
     toc: 'Bu sayfada',
@@ -266,7 +267,7 @@ export default {
     },
     journey: {
       title: 'Yolculuk Haritası',
-      lead: 'Sigara Savar uygulamasındaki Yolculuk Haritası süreci 12 aşamaya ayırır. İlk 2 aşamanın rehberi herkese açık; diğer aşamaların ayrıntıları uygulamada.',
+      lead: 'Uygulamadaki Yolculuk Haritası süreci 12 aşamaya ayırır. Aşağıdaki dizinde bu aşamaları görebilir, ilk günler için herkese açık yazılara geçebilirsin.',
       developments: 'Bu aşamada neler oluyor?',
       attention: 'Dikkat edilmesi gerekenler',
       traps: 'Tuzak düşünceler',
@@ -275,7 +276,7 @@ export default {
     },
     recovery: {
       title: 'Vücudunda neler değişir?',
-      lead: 'Uygulamadaki 26 sağlık hedefi; son sigaradan sonraki dakikalardan on beşinci yıla kadar.',
+      lead: 'Uygulamanın sağlık hedeflerinden, sağlık kurumlarının kaynaklarıyla doğrulanan bir seçki. Süreler kişisel bir takvim ya da sağlık ölçümü değildir.',
     },
     hardMoments: {
       title: 'Zor anlar için',

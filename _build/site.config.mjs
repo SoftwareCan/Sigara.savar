@@ -4,7 +4,7 @@ export default {
   baseUrl: 'https://www.sigarasavar.com',
   siteName: 'Sigara Savar',
   // First web publication of the Bilgi Merkezi articles (Article.datePublished).
-  contentPublished: '2026-10-05',
+  contentPublished: '2026-10-04',
 
   // Website sign-in is paused. Keep false until the auth flow is finished:
   // no login entry points, no header-auth.js, no Firebase origins in the CSP.
