@@ -9,7 +9,7 @@ export function screenPicture(ctx, name, alt, { sizes = '(min-width: 960px) 22re
   const src = (width, ext) => ctx.asset(`/assets/screens/${name}-${width}.${ext}`);
   return html`<picture>
       <source type="image/avif" srcset="${src(360, 'avif')} 360w, ${src(720, 'avif')} 720w" sizes="${sizes}">
-      <img src="${src(720, 'webp')}" srcset="${src(360, 'webp')} 360w, ${src(720, 'webp')} 720w" sizes="${sizes}" width="${w}" height="${h}" alt="${alt}" loading="${eager ? 'eager' : 'lazy'}" decoding="async">
+      <img src="${src(720, 'webp')}" srcset="${src(360, 'webp')} 360w, ${src(720, 'webp')} 720w" sizes="${sizes}" width="${w}" height="${h}" alt="${alt}" loading="${eager ? 'eager' : 'lazy'}" fetchpriority="${eager ? 'high' : 'auto'}" decoding="async">
     </picture>`;
 }
 

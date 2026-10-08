@@ -1,112 +1,50 @@
-// Home page: scroll-linked recovery timeline and the app story screenshot stage.
 (() => {
-  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  'use strict';
+  const showcase = document.querySelector('[data-product]');
+  if (!showcase) return;
+  const controls = showcase.querySelector('[data-product-tabs]');
+  const tabs = [...showcase.querySelectorAll('[data-product-tab]')];
+  const panels = tabs.map((tab) => document.getElementById(tab.getAttribute('aria-controls')));
+  if (!controls || !tabs.length || panels.some((panel) => !panel)) return;
 
-  // Recovery timeline — the line fills as the reader moves through time.
-  const timeline = document.querySelector('[data-timeline]');
-  const controls = document.querySelector('[data-timeline-controls]');
-  if (timeline && controls) {
-    controls.hidden = false;
-    controls.addEventListener('click', (event) => {
-      const button = event.target.closest('[data-period]');
-      if (!button) return;
-      controls.querySelectorAll('button').forEach((b) => b.setAttribute('aria-pressed', String(b === button)));
-      timeline.querySelectorAll('[data-timeline-period]').forEach((item) => {
-        item.hidden = item.dataset.timelinePeriod !== button.dataset.period;
-      });
-      timeline.dispatchEvent(new Event('periodchange'));
+  // All content is readable without JS. Only enhance after all panels resolve.
+  controls.setAttribute('role', 'tablist');
+  tabs.forEach((tab, index) => {
+    tab.setAttribute('role', 'tab');
+    panels[index].setAttribute('role', 'tabpanel');
+    panels[index].setAttribute('aria-labelledby', tab.id);
+  });
+  function select(index, focus = false) {
+    tabs.forEach((tab, i) => {
+      tab.setAttribute('aria-selected', String(i === index));
+      tab.tabIndex = i === index ? 0 : -1;
+      panels[i].hidden = i !== index;
     });
+    if (focus) tabs[index].focus();
   }
-  if (timeline && !reduce && 'IntersectionObserver' in window) {
-    let items = [];
-    const head = timeline.querySelector('.timeline__head');
-    const nodeY = parseFloat(getComputedStyle(timeline).getPropertyValue('--node-y')) || 16;
-    let firstY = 0;
-    let span = 1;
-    let nodes = [];
-    let active = false;
-    let ticking = false;
-
-    // Layout is read only here (load, fonts, resize); scrolling reuses the cache.
-    const measure = () => {
-      items = [...timeline.querySelectorAll('.timeline__item:not([hidden])')];
-      nodes = items.map((item) => item.offsetTop + nodeY);
-      firstY = nodes[0];
-      span = Math.max(1, nodes[nodes.length - 1] - firstY);
-      timeline.style.setProperty('--first-y', `${firstY}px`);
-      timeline.style.setProperty('--span', `${span}px`);
-    };
-
-    const update = () => {
-      ticking = false;
-      const anchor = window.innerHeight * 0.58 - timeline.getBoundingClientRect().top;
-      const p = Math.min(1, Math.max(0, (anchor - firstY) / span));
-      timeline.style.setProperty('--progress', p.toFixed(4));
-      if (head) timeline.style.setProperty('--head-y', `${(firstY + span * p).toFixed(1)}px`);
-      items.forEach((item, i) => item.classList.toggle('is-reached', nodes[i] <= anchor + 1));
-    };
-    const onScroll = () => {
-      if (!ticking) {
-        ticking = true;
-        requestAnimationFrame(update);
-      }
-    };
-    const onResize = () => {
-      measure();
-      onScroll();
-    };
-    timeline.addEventListener('periodchange', onResize);
-
-    timeline.classList.add('is-live');
-    measure();
-    new IntersectionObserver(([entry]) => {
-      if (entry.isIntersecting && !active) {
-        active = true;
-        window.addEventListener('scroll', onScroll, { passive: true });
-        window.addEventListener('resize', onResize, { passive: true });
-        onResize();
-      } else if (!entry.isIntersecting && active) {
-        active = false;
-        window.removeEventListener('scroll', onScroll);
-        window.removeEventListener('resize', onResize);
-        update();
-      }
-    }, { rootMargin: '20% 0px 20% 0px' }).observe(timeline);
-    if (document.fonts) document.fonts.ready.then(onResize);
-    update();
+  function selectHash() {
+    const index = panels.findIndex((panel) => `#${panel.id}` === location.hash || [...panel.querySelectorAll('[id]')].some((el) => `#${el.id}` === location.hash));
+    if (index < 0) return;
+    select(index);
+    // Support existing homepage links to #kriz and #iyilesme.
+    document.getElementById(location.hash.slice(1))?.scrollIntoView({ behavior: 'instant', block: 'start' });
   }
-
-  // The screenshot rail scrolls sideways on phones: make it reachable by keyboard then.
-  const rail = document.querySelector('.app-rail');
-  if (rail) {
-    const sync = () => {
-      if (rail.scrollWidth > rail.clientWidth + 1) rail.setAttribute('tabindex', '0');
-      else rail.removeAttribute('tabindex');
-    };
-    sync();
-    window.addEventListener('resize', sync, { passive: true });
-  }
-
-  // App story — on wide screens the sticky screen follows the feature in view.
-  const stage = document.querySelector('[data-stage]');
-  const features = [...document.querySelectorAll('[data-feature]')];
-  if (stage && features.length && 'IntersectionObserver' in window) {
-    const screens = [...stage.querySelectorAll('[data-stage-screen]')];
-    const activate = (id) => {
-      screens.forEach((s) => s.classList.toggle('is-active', s.dataset.stageScreen === id));
-      features.forEach((f) => f.classList.toggle('is-active', f.dataset.feature === id));
-    };
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) activate(entry.target.dataset.feature);
-      });
-    }, { rootMargin: '-45% 0px -45% 0px' });
-    features.forEach((f) => observer.observe(f));
-    // Screens stay lazy until the stage is close, then the rest are fetched.
-    new IntersectionObserver(([entry], obs) => {
-      if (!entry.isIntersecting) return;
-      stage.querySelectorAll('img[loading="lazy"]').forEach((img) => { img.loading = 'eager'; });
-      obs.disconnect();
-    }, { rootMargin: '400px 0px' }).observe(stage);
-  }
+  tabs.forEach((tab, index) => {
+    tab.addEventListener('click', () => select(index));
+    tab.addEventListener('keydown', (event) => {
+      let next;
+      if (event.key === 'ArrowRight') next = (index + 1) % tabs.length;
+      if (event.key === 'ArrowLeft') next = (index - 1 + tabs.length) % tabs.length;
+      if (event.key === 'Home') next = 0;
+      if (event.key === 'End') next = tabs.length - 1;
+      if (next === undefined) return;
+      event.preventDefault();
+      select(next, true);
+    });
+  });
+  select(0);
+  controls.hidden = false;
+  showcase.classList.add('is-enhanced');
+  selectHash();
+  window.addEventListener('hashchange', selectHash);
 })();

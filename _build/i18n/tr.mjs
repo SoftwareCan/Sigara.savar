@@ -100,129 +100,57 @@ export default {
   home: {
     title: 'Sigaradan Sonsuza Kadar Kurtul | Sigara Savar',
     description:
-      'Sigarayı bırakma sürecini anla, kendi planını hazırla. Sigara Savar’ın ücretsiz Bilgi Merkezi, bırakma rehberi, kriz araçları ve topluluğuyla tanış.',
+      'Sigara Savar, sigarayı bırakma sürecinde ilerlemeni takip edebileceğin mobil uygulama. Kriz araçları, topluluk, ücretsiz bilgi ve bırakma rehberiyle tanış.',
     hero: {
       eyebrow: 'SIGARA SAVAR',
       title: 'Sigaradan Sonsuza Kadar Kurtul.',
-      lead:
-        'Bırakmak bir günlük karar değil; her gün güçlenen bir süreç. Bilgi, takip, kriz araçları ve aynı yolda yürüyen bir toplulukla Sigara Savar yanında.',
-      primary: 'Bırakma Rehberini Keşfet',
-      secondary: 'Uygulamayı İndir',
-      markKicker: 'Döngüyü kır.',
-      markCaption: 'Sonsuza\u00a0kadar kurtul.',
+      lead: 'Sigarayı bırakmak isteyenler için bir mobil uygulama. İlerlemeni takip et; kriz araçlarına ve topluluğa tek yerden ulaş.',
+      primary: 'Uygulamayı İndir',
+      secondary: 'Bırakma Rehberini Keşfet',
+      alt: 'Sigara Savar Gelişim ekranı: sigarasız geçen süre, gelişim puanı, sağlık hedefleri ve başarılar',
     },
-    recovery: {
-      title: 'Son sigaradan sonra vücudunda neler değişir?',
-      lead:
-        'Değişim ilk dakikalarda başlar; günler, aylar ve yıllar boyunca devam eder. Sigarayı bıraktıktan sonraki genel kazanımlara göz at.',
-      note: 'Genel bilgilendirme amaçlıdır; kişiden kişiye değişebilir ve tıbbi tavsiye yerine geçmez.',
-      more: 'Sağlık zaman çizelgesini keşfet',
-      milestones: [20, 720, 1440, 2880, 4320, 20160, 43200, 129600, 525600, 2628000, 5256000, 7884000],
-    },
-    crisis: {
-      title: 'Kriz geldiğinde yalnızca iradene güvenmek zorunda değilsin.',
-      lead:
-        'Sigara isteği bir emir değil, geçici bir dürtüdür. Yükselir, zirveye ulaşır ve azalır. Zor anda ne yapacağını önceden bilmek, dalganın sigara içmeden geçmesine alan açar.',
-      source: 'Bilgi Merkezi: İstek bir dalga gibi yükselir ve azalır',
-      toolsTitle: 'Zor anda başvurabileceklerin',
-      allTools: 'Tüm araçlar',
+    benefits: {
+      title: 'Bırakma sürecinde ihtiyaç duydukların, tek yerde.',
       items: [
+        { title: 'Takip', text: 'Sigarasız geçen zamanını, içmediğin sigaraları ve birikimini gör.' },
+        { title: 'Zor anlar', text: 'Kriz Bekçisi, nefes egzersizleri ve kısa oyunlarla odağını değiştir.' },
+        { title: 'Bilgi', text: 'Ne yaşadığını ve bırakma sürecini kısa yazılarla anla.' },
+        { title: 'Topluluk', text: 'İlerlemeni paylaş, deneyimlerden öğren, birbirinize destek olun.' },
+      ],
+    },
+    app: {
+      title: 'Her gün aynı değil. Desteğin hazır.',
+      features: [
         {
-          title: 'Kriz Bekçisi',
-          text: 'Uygulamadaki 90 saniyelik akış: isteği izle, beyninin seni ikna etmeye çalıştığını fark et, kararı ertele.',
-          href: 'tools#kriz-bekcisi',
-          link: 'Web sürümünü dene',
+          id: 'acil', label: 'Zor anlar', title: 'Kriz geldiğinde hazır ol.',
+          text: 'Kriz Bekçisi, nefes egzersizleri ve dikkatini değiştiren kısa oyunlar. İstek geldiğinde başvurabileceğin araçlar Acil Alan’da bir arada.',
+          screen: 'acil-alan',
+          alt: 'Gerçek Acil Alan ekranı: Kriz Bekçisi, nefes egzersizleri, su hatırlatıcı ve oyunlar',
+          link: 'Kriz araçlarını keşfet',
         },
         {
-          title: 'Nefes egzersizleri',
-          text: 'Uygulamadaki 6 tekniğin tamamı burada da var. Bırakma Günü yazısında önerilen 4-4-6 nefesiyle başlayabilirsin.',
-          href: 'tools#nefes',
-          link: 'Nefes egzersizini başlat',
-        },
-        {
-          title: 'Dikkatini değiştir',
-          text: '4D yöntemi: ertele, derin nefes al, su iç, dikkatini değiştir. Uygulamadaki kısa oyunlar da aynı amaca hizmet eder.',
-          href: 'article:b3-04',
-          link: '4D yöntemini oku',
-        },
-        {
-          title: 'Topluluk',
-          text: 'Genel sohbette aynı yolda yürüyen insanlara yazmak, isteğin geçmesini beklerken yalnız kalmamanı sağlar.',
-          href: '#topluluk',
-          link: 'Topluluğu tanı',
+          id: 'yolculuk', label: 'Yolculuğun', title: 'Bulunduğun adımı tanı.',
+          text: 'Yolculuk Haritası, karar gününden sonraki aşamaları anlamana yardımcı olur. Her adımda neler yaşayabileceğini ve nelere dikkat edebileceğini oku.',
+          screen: 'yolculuk-detoks',
+          alt: 'Gerçek Yolculuk Haritası ekranı: Detoks aşaması ve bu döneme ilişkin bilgiler',
+          link: 'Sağlık yolculuğunu rehberde gör',
         },
       ],
     },
     knowledge: {
-      title: 'Bilgi Merkezi',
-      lead:
-        'Bağımlılığın nasıl çalıştığından bir kaymadan sonra toparlanmaya kadar, 3 bölümde kısa yazılar. Uygulamadaki Bilgi Merkezi ile aynı içerik; burada herkese açık.',
-      startTitle: 'Nereden başlamalı?',
-      startText: 'Bilgi Merkezi baştan sona okunacak şekilde sıralandı. İlk yazı, sigara bağımlılığının üç tarafını anlatıyor.',
+      title: 'Ne yaşadığını anlamak da sürecin bir parçası.',
       featuredId: 'b1-01',
-      sectionMore: (n) => `Bölümün tamamı (${n} yazı)`,
-      cta: 'Bilgi Merkezini keşfet',
-    },
-    app: {
-      title: 'Bu desteği cebinde taşı.',
-      lead:
-        'Sigara Savar uygulaması sigarasız geçen süreni, sağlığındaki değişimi ve küçük zaferlerini görünür kılar; zor anlarda araçlarını, her gün topluluğunu yanında tutar.',
-      features: [
-        {
-          id: 'takip',
-          title: 'Sigarasız geçen her gün',
-          text: 'Sigarasız geçen süreni, içmediğin sigarayı, biriktirdiğin parayı ve geri kazandığın zamanı takip et. Gelişim ekranı sağlık, günlük ve başarılarını tek yerde toplar.',
-          screen: 'gelisim',
-          alt: 'Uygulamanın Gelişim ekranı: 5 gündür sigarasız, gelişim puanı ve yolculuk haritası',
-        },
-        {
-          id: 'saglik',
-          title: 'Sağlığındaki değişim',
-          text: 'Uygulamadaki sağlık hedefleri, bırakma sürecindeki genel değişimleri bir zaman çizelgesinde takip etmene yardımcı olur. Kişisel sağlık ölçümü değildir.',
-          screen: 'saglik',
-          alt: 'Uygulamanın Sağlık ekranı: iyileşme yolculuğu ve dakika dakika sağlık hedefleri',
-        },
-        {
-          id: 'yolculuk',
-          title: 'Yolculuk Haritası',
-          text: 'Karar gününden 15. yıla 12 aşama. Her aşamada neler olduğunu, nelere dikkat etmen gerektiğini ve hangi düşüncelerin tuzak olabileceğini anlatır.',
-          screen: 'yolculuk-detoks',
-          alt: 'Yolculuk Haritası ekranı: Detoks aşaması, bu aşamada neler olduğu ve dikkat edilmesi gerekenler',
-        },
-        {
-          id: 'acil',
-          title: 'Zor anlar için Acil Alan',
-          text: 'Kriz Bekçisi, 6 nefes tekniği, nefes gücü testi, su hatırlatıcı ve odağını değiştiren kısa oyunlar.',
-          screen: 'acil-alan',
-          alt: 'Acil Alan ekranı: Kriz Bekçisi, nefes egzersizleri, nefes gücü testi, su hatırlatıcı ve oyunlar',
-        },
-        {
-          id: 'kupalar',
-          title: 'Kupalar ve Bilgi Yarışması',
-          text: '7 kategorideki kupalar ilerlemeni kutlar. Bilgi Yarışması’nda öğrendiklerini başka kullanıcılarla 10 soruluk yarışmalarda sınarsın.',
-          screen: 'kupalar',
-          alt: 'Kupalar ekranı: kazanılan rozetler ve yedi kategori',
-        },
-      ],
-      download: 'Uygulamayı indir',
+      secondaryIds: ['b3-02', 'b3-08'],
+      cta: 'Tüm Bilgi Merkezini Keşfet',
     },
     community: {
-      title: 'Bu yolculuk yalnız yürünmek zorunda değil.',
-      lead:
-        'Bırakma kararını paylaşmak ve destek istemek süreci kolaylaştırabilir. Sigara Savar topluluğu, aynı yolda yürüyen insanların birbirini desteklediği bir alan.',
-      spacesTitle: 'Toplulukta neler var?',
-      spaces: [
-        { title: 'İlerlemeyi paylaş', text: 'İlk sigarasız gününü, zor bir molayı ya da küçük bir kazanımını aynı süreci yaşayan insanlarla paylaş.' },
-        { title: 'Deneyimlerden öğren', text: 'Keşfet’teki Topluluk Yazıları’nda üyelerin deneyimlerini oku; yazı ve yorumlarla kendi deneyimini ekle.' },
-        { title: 'Zor anda birine yaz', text: 'Uygulamadaki genel sohbette destek iste, başkasına cesaret ver. Topluluk desteği kişisel deneyimlere dayanır; profesyonel destek yerine geçmez.' },
-      ],
-      rulesTitle: 'Topluluğun kuralları',
-      rulesIntro: 'Uygulamada sohbete katılmadan önce herkesin kabul ettiği kurallardan:',
-      ruleKeys: ['Purpose', 'Respect', 'Safety', 'Health', 'Moderation'],
+      title: 'Bu yolu yalnız yürümek zorunda değilsin.',
+      lead: 'İlk sigarasız gününü, zor geçen bir molayı ya da küçük bir kazanımını paylaş. Aynı süreci yaşayan insanlarla konuş, birbirinizden güç alın.',
+      note: 'Topluluk desteği kişisel deneyimlere dayanır.',
     },
     download: {
-      title: 'Sigara Savar’ı indir',
-      lead: 'Takip, sağlık yolculuğu, kriz araçları ve topluluk; iPhone ve Android’de.',
+      title: 'İlerlemeni yanında taşı.',
+      lead: 'Sigara Savar, iPhone ve Android’de.',
     },
   },
 
