@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.sigarasavar.com/</loc>
-    <lastmod>2026-10-05</lastmod>
+    <lastmod>2026-10-08</lastmod>
   </url>
   <url>
     <loc>https://www.sigarasavar.com/bilgi-merkezi/</loc>
@@ -131,6 +131,10 @@
   <url>
     <loc>https://www.sigarasavar.com/araclar/</loc>
     <lastmod>2026-10-04</lastmod>
+  </url>
+  <url>
+    <loc>https://www.sigarasavar.com/indir/</loc>
+    <lastmod>2026-10-08</lastmod>
   </url>
   <url>
     <loc>https://www.sigarasavar.com/privacy.html</loc>

@@ -1,5 +1,5 @@
 import { html, raw, jsonLd } from '../lib/html.mjs';
-import { storeBadges, storeLinkAttrs } from './components.mjs';
+import { storeBadges } from './components.mjs';
 
 const FIREBASE = {
   script: ['https://www.gstatic.com', 'https://www.google.com', 'https://www.recaptcha.net', 'https://apis.google.com'],
@@ -70,7 +70,7 @@ export function siteHeader(ctx, current) {
     </nav>
     <div class="header-actions">
       ${config.AUTH_UI_ENABLED ? html`<div class="header-auth" data-auth-slot hidden></div>` : ''}
-      <a class="btn btn--primary btn--sm header-cta" href="${url.home('#indir')}" ${storeLinkAttrs(ctx)}>${t.nav.download}</a>
+      <a class="btn btn--primary btn--sm header-cta" href="${url.download()}">${t.nav.download}</a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-panel" data-open-label="${t.nav.menu}" data-close-label="${t.nav.close}">
         <span class="menu-toggle__icon" aria-hidden="true"></span>
         <span class="menu-toggle__label">${t.nav.menu}</span>

@@ -119,6 +119,7 @@ Ana sayfa (masaüstü)
 /bilgi-merkezi/<slug>/    Kalıcı, paylaşılabilir makale sayfaları (Article + Breadcrumb JSON-LD)
 /birakma-rehberi/         Yolculuk Haritası (12 aşama), sağlık zaman çizelgesi (26 hedef), okuma yolu
 /araclar/                 Kriz Bekçisi (90 sn), 6 nefes tekniği, 4D, kişisel kriz planı, PDF rehber
+/indir/                   Cihaza göre App Store / Google Play yönlendirmesi + masaüstü QR
 /#topluluk, /#uygulama    Ana sayfa bölümleri
 /privacy.html, /terms.html, /userDataDeletion.html   Korunur (yalnız header/footer yenilenir)
 /auth.html, /dashboard.html                          Korunur, noindex, hiçbir yerden bağlantı yok

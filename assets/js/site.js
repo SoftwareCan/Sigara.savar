@@ -1,4 +1,4 @@
-// Global behaviour: header state, mobile menu, platform store links, sharing.
+// Global behaviour: header state, mobile menu and sharing.
 (() => {
   const root = document.documentElement;
   const header = document.querySelector('.site-header');
@@ -63,17 +63,6 @@
     });
     desktop.addEventListener('change', (event) => {
       if (event.matches && toggle.getAttribute('aria-expanded') === 'true') setOpen(false, { restoreFocus: false });
-    });
-  }
-
-  // Store links: send phones straight to their own store; desktops keep #indir.
-  const ua = navigator.userAgent || '';
-  const isIOS = /iPad|iPhone|iPod/.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
-  const isAndroid = /Android/i.test(ua);
-  if (isIOS || isAndroid) {
-    document.querySelectorAll('[data-store-link]').forEach((link) => {
-      const target = isIOS ? link.dataset.appStore : link.dataset.googlePlay;
-      if (target) link.href = target;
     });
   }
 

@@ -21,6 +21,7 @@ The equivalent commands inside `_build` are `npm run build`, `npm run verify` an
 - `/bilgi-merkezi/` and `/bilgi-merkezi/<readable-slug>/`: 29 real app articles across 3 chapters.
 - `/birakma-rehberi/`: guided reading paths into those articles.
 - `/araclar/`: crisis flow, breathing exercises and a printable personal plan.
+- `/indir/`: device-aware App Store or Google Play hand-off, with manual store buttons and a desktop QR code.
 - Existing `/privacy.html`, `/terms.html` and `/userDataDeletion.html`: preserved multilingual legal documents.
 
 Templates live in `_build/templates`, website copy in `_build/i18n/tr.mjs`, and the design in `assets/css`. Generated HTML is committed in the repository root and route directories; edit its source template and rebuild rather than editing generated pages.

@@ -151,8 +151,8 @@
   },
   "pages": {
     "/": {
-      "hash": "17e59da7688647455d8f04aba9e037e436bcc98267e9a4aa2da04fa2bcbc2a89",
-      "lastmod": "2026-10-05"
+      "hash": "98cc8ee7ef80d7ebaaf174efbbc7707269e031d6d295c263a8c7fdb23d330acc",
+      "lastmod": "2026-10-08"
     },
     "/bilgi-merkezi/": {
       "hash": "f7cd686fada47ae534caae82b634df3760a32c7f244369b95638a9ef51e01a69",
@@ -293,6 +293,10 @@
     "/userDataDeletion.html": {
       "hash": "55814bf575d8aeca03734745bfd04c063f451a7aa88caf7bdfb0dae332a6c28d",
       "lastmod": "2026-10-04"
+    },
+    "/indir/": {
+      "hash": "9c8c854d4c6187ff4661e7dbf53d4a0e06a6e58999857211861e1675d3241991",
+      "lastmod": "2026-10-08"
     }
   }
 }

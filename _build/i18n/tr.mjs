@@ -46,6 +46,24 @@ export default {
     note: 'Uygulama ücretsiz indirilir; bazı özellikler Premium üyelik gerektirir.',
   },
 
+  downloadPage: {
+    title: 'Sigara Savar’ı indir',
+    metaTitle: 'Sigara Savar’ı indir | iPhone ve Android',
+    description: 'Sigara Savar uygulamasını iPhone için App Store’dan veya Android için Google Play’den ücretsiz indir.',
+    eyebrow: 'iPhone ve Android için',
+    lead: 'Telefonundan açtığında cihazına uygun uygulama mağazasına yönlendirir. İstersen aşağıdan mağazanı seçebilirsin.',
+    detecting: 'Cihazın belirleniyor…',
+    ios: 'App Store’a yönlendiriliyorsun…',
+    android: 'Google Play’e yönlendiriliyorsun…',
+    desktop: 'Telefondan devam etmek için QR kodu tara veya mağazanı seç.',
+    other: 'Mağazanı seçerek indirmeye devam edebilirsin.',
+    cancel: 'Otomatik yönlendirmeyi durdur',
+    cancelled: 'Otomatik yönlendirme durduruldu. Mağazanı aşağıdan seçebilirsin.',
+    qrTitle: 'Telefonunla tara',
+    qrText: 'Bu bağlantı telefonuna uygun mağazayı otomatik açar.',
+    privacy: 'Cihaz türü yalnızca bu sayfada, doğru mağazayı açmak için belirlenir.',
+  },
+
   footer: {
     tagline: 'Sigara bırakma sürecinde bilgi, takip, destek ve topluluk.',
     groups: {

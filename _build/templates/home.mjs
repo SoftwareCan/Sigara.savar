@@ -1,6 +1,6 @@
 import { html } from '../lib/html.mjs';
 import { verifiedHealth, healthSourceNote } from '../lib/health.mjs';
-import { markPicture, screenPicture, storeBadges, storeLinkAttrs, waveTool } from './components.mjs';
+import { markPicture, screenPicture, storeBadges, waveTool } from './components.mjs';
 
 function hero(ctx) {
   const h = ctx.t.home.hero;
@@ -11,7 +11,7 @@ function hero(ctx) {
     <p class="lead hero__lead">${h.lead}</p>
     <div class="hero__actions">
       <a class="btn btn--primary" href="${ctx.url.guide()}">${h.primary}</a>
-      <a class="btn btn--ghost" href="#indir" ${storeLinkAttrs(ctx)}>${h.secondary}</a>
+      <a class="btn btn--ghost" href="${ctx.url.download()}">${h.secondary}</a>
     </div>
   </div>
   <div class="hero__panel">

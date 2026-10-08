@@ -13,6 +13,7 @@ import { homePage } from './templates/home.mjs';
 import { articlePage, knowledgeIndexPage } from './templates/knowledge.mjs';
 import { guidePage } from './templates/guide.mjs';
 import { toolsPage } from './templates/tools.mjs';
+import { downloadPage } from './templates/download.mjs';
 import { manifest, notFoundPage, robots, sitemap } from './templates/misc.mjs';
 import { mainContent, noindexAuthPage, refreshLegalPage } from './templates/legal.mjs';
 
@@ -148,6 +149,7 @@ async function buildLocale(lang) {
     section: (id) => `${prefix}/${r.knowledge}/#${slugs.sections[id]}`,
     guide: (hash = '') => `${prefix}/${r.guide}/${hash}`,
     tools: (hash = '') => `${prefix}/${r.tools}/${hash}`,
+    download: () => `${prefix}/${r.download}/`,
     page: (file) => `/${file}`,
     abs: (p) => `${config.baseUrl}${p}`,
   };
@@ -187,6 +189,7 @@ async function buildLocale(lang) {
   for (const a of allArticles) emit(`${r.knowledge}/${slugs.articles[a.id]}/index.html`, articlePage(ctx, a));
   emit(`${r.guide}/index.html`, guidePage(ctx));
   emit(`${r.tools}/index.html`, toolsPage(ctx));
+  emit(`${r.download}/index.html`, downloadPage(ctx));
 
   // Warn about article folders that no longer map to a slug (renamed/removed content).
   const kcDir = path.join(root, out(r.knowledge));

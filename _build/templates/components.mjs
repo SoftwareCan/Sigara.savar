@@ -28,11 +28,6 @@ export function storeBadges(ctx) {
     </div>`;
 }
 
-// Links that should open the visitor's own store on phones (see site.js).
-export function storeLinkAttrs(ctx) {
-  return html`data-store-link data-app-store="${ctx.config.stores.appStore}" data-google-play="${ctx.config.stores.googlePlay}"`;
-}
-
 // Smooth, asymmetric "urge wave": quick rise, short peak, long decline.
 const WAVE_PATH = 'M0 186 C60 186 110 176 150 140 C190 104 205 30 250 26 C300 22 320 70 360 110 C410 158 480 182 600 186';
 
