@@ -2,7 +2,7 @@ function setLang(lang) {
     // Some pages (e.g. userDataDeletion.html) only have TR/EN content. If the
     // stored/requested language has no matching elements on this page, fall
     // back to English instead of hiding everything.
-    if (document.querySelectorAll('.lang.' + lang).length === 0) {
+    if (!['tr', 'en', 'es', 'de', 'fr'].includes(lang) || document.querySelectorAll('.lang.' + lang).length === 0) {
         lang = 'en';
     }
 
@@ -22,8 +22,10 @@ function setLang(lang) {
 // Initialize language on page load (default TR)
 document.addEventListener('DOMContentLoaded', () => {
     // If user has a preferred language stored, use it
-    const stored = localStorage.getItem('sigara-lang');
-    const lang = stored || 'tr';
+    let stored;
+    try { stored = localStorage.getItem('sigara-lang'); } catch {}
+    const requested = new URLSearchParams(location.search).get('lang');
+    const lang = requested || stored || 'tr';
     setLang(lang);
 });
 

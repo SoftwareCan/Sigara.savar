@@ -1,14 +1,14 @@
-const FOLD = { ç: 'c', ğ: 'g', ı: 'i', ö: 'o', ş: 's', ü: 'u', â: 'a', î: 'i', û: 'u' };
-
 // Must match assets/js/knowledge.js so typed queries hit the prebuilt index.
 export function searchKey(...parts) {
   return parts
     .flat()
     .filter(Boolean)
     .join(' ')
-    .toLocaleLowerCase('tr')
-    .replace(/i̇/g, 'i')
-    .replace(/[çğıöşüâîû]/g, (c) => FOLD[c])
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/ı/g, 'i')
+    .replace(/ß/g, 'ss')
     .replace(/\s+/g, ' ')
     .trim();
 }

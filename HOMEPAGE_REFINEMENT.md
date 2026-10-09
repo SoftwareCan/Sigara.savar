@@ -1,3 +1,55 @@
+> Superseded by the 9 October product-design and five-language iteration. See [DESIGN_AND_LANGUAGES.md](DESIGN_AND_LANGUAGES.md).
+
+# Dengeli sürüm — 9 Ekim 2026
+
+Son kullanıcı geri bildirimi üzerine önceki yoğun sürüm ile çok sade sürüm arasında bir düzen kuruldu. Güncel ana sayfa dört alan içeriyor: tek gerçek uygulama ekranlı giriş, üç kısa fayda, rehber ve iki gerçek yazı, indirme.
+
+- Üç açık sütun geri geldi: ilerleme takibi, zor anlara hazırlık, topluluk. Kutulu özellik kataloğu veya yeni bir araç akışı eklenmedi.
+- Bilgi Merkezi’nde `b1-04` (Hazırlık ve plan) ve `b3-02` (İstek bir dalga gibi yükselir ve azalır) başlık, özet ve gerçek okuma süreleriyle gösteriliyor. Kaynak içerik değiştirilmedi.
+- Rehberin kısa tanıtımı, iki maddelik ana menü, tek ürün görseli, sade altbilgi ve hafif giriş animasyonu korundu.
+- Kullanıcının marka tescili beyanı ve isteği doğrultusunda tüm genel sayfaların altbilgisi **© 2026 Sigara Savar® · Tüm hakları saklıdır.** olarak güncellendi. Yasal belge gövdeleri değişmedi.
+
+1440 px genişlikte ana sayfa **2.159 px**, 390 px genişlikte **2.805 px**. Önceki çok sade sürümün değerleri 1.677 / 1.960 px, daha yoğun sürümün değerleri 4.116 / 5.281 px idi. Boşluklar yapay olarak büyütülmedi; ek alan gerçek içerikten geliyor.
+
+360, 390, 430, 768, 860, 1024, 1280, 1440 ve 1920 px genişliklerinde yatay taşma görülmedi. Her iki yazı bağlantısı tarayıcıda açıldı. Marka satırı ana sayfa ve yazı sayfasında doğrulandı. Statik kontroller **38 sayfa, 2.059 yerel referans ve 236 kaynak içerik kontrolü** için geçti.
+
+Bu turda kaynak değişiklikleri `_build/templates/home.mjs`, `_build/i18n/tr.mjs`, `assets/css/home.css` ve bu raporda. Genel HTML sayfaları altbilgi için yeniden üretildi; ana sayfanın yayın kaydı otomatik güncellendi. Yeni rota, bağımlılık veya özel JavaScript eklenmedi. Değişiklikler yerel önizlemede hazır; üretime yayınlama yapılmadı.
+
+Aşağıdaki kayıtlar önceki tasarım aşamalarına aittir.
+
+---
+
+# Minimal sürüm — 8 Ekim 2026, son sadeleştirme
+
+Kullanıcının son geri bildirimi üzerine ana sayfa altı alandan üç alana indirildi: gerçek uygulama ekranlı giriş, Bırakma Rehberi / Bilgi Merkezi bağlantıları ve indirme alanı.
+
+## Son değişiklikler
+
+- Ana sayfadan fayda listesi, döngü anlatımı, ürün sekmeleri, araç tanıtımları, makale önizlemeleri, üç rehber başlangıcı ve ayrı topluluk görseli kaldırıldı.
+- Üst menü iki içerik bağlantısı ve indirme düğmesine indirildi. Araçlar altbilgiden ve ilgili rehber/yazılardan erişilebilir.
+- Ana sayfa başlıkları mevcut Source Sans 3 ile tek hiyerarşide toplandı. Marka logosu, renkleri ve iç sayfaların yazı karakterleri korundu.
+- Tek gerçek ekran görüntüsü kaldı. Mobilde ekranın üst bölümü, masaüstünde tamamı gösteriliyor.
+- Bir defalık 600 ms ekran girişi yalnızca hareket azaltma tercihi kapalıyken çalışıyor. Yeni animasyon kütüphanesi yok.
+- Ana sayfaya özel JavaScript dosyası kaldırıldı. Menüde dışarı dokunma / Escape ile kapanma ve görünür arka plan ayrımı var.
+- Altbilgi açık renkli ve kısa bir düzene alındı. Üç yasal bağlantı ile mevcut bilgilendirme metni korundu.
+
+1440 px genişlikte sayfa yaklaşık **4.116 → 1.677 px**, 390 px genişlikte **5.281 → 1.960 px** oldu. Bu, önceki sürüme göre sırasıyla yaklaşık %59 ve %63 kısalma demek. Ana sayfa HTML dosyası **18.729 → 10.508 bayt**, sayfaya özel CSS **7.738 → 3.793 bayt**; ayrı `home.js` artık yüklenmiyor.
+
+## Kapsam ve doğrulama
+
+- Değişen kaynaklar: `_build/templates/home.mjs`, `_build/templates/layout.mjs`, `_build/i18n/tr.mjs`, `assets/css/home.css`, `assets/css/site.css`, `assets/js/site.js` ve bu rapor.
+- Silinen kullanılmayan dosya: `assets/js/home.js`.
+- `index.html` ile diğer genel sayfalar ortak menü/altbilgi için yeniden üretildi. İç sayfaların eğitim ve yasal metinleri değiştirilmedi. Ana sayfanın içerik özeti `_build/content/publication-history.json` içinde güncellendi.
+- 320, 360, 390, 430, 768, 860, 1024, 1280, 1440 ve 1920 px genişliklerinde yatay taşma görülmedi. Tablet başlığının satır düzeni ayrıca iyileştirildi.
+- Mobil menü, dışarı dokunma, Escape, Bilgi Merkezi, rehber, indirme sayfası ve altbilgide korunan Araçlar bağlantısı tarayıcıda doğrulandı.
+- Statik doğrulama: **38 sayfa, 2.057 yerel referans, 236 kaynak içerik kontrolü** başarılı. Yasal metinler, makale içerikleri, SEO metadatası, sitemap ve gizli auth altyapısı korundu.
+- Yeni bağımlılık, yeni rota veya değiştirilmiş mağaza adresi yok. Ana sayfa meta açıklaması kısaltılan içerikle uyumlu güncellendi.
+- Testler tarayıcı ekran genişliği emülasyonudur; fiziksel cihaz testi veya canlı hız puanı değildir. Üretime yayınlama yapılmadı.
+
+Aşağıdaki kayıt önceki sürüme aittir; güncel uygulama ve ölçümler yukarıdadır.
+
+---
+
 # Ana sayfa sadeleştirmesi — 8 Ekim 2026
 
 ## Uygulama öncesi kısa denetim

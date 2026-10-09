@@ -13,7 +13,12 @@ import { fileURLToPath } from 'node:url';
 const here = path.dirname(fileURLToPath(import.meta.url));
 const flutterRoot = path.resolve(process.argv[2] || path.join(here, '../../Sigara_Savar/quitSmoke'));
 const outRoot = path.join(here, 'content');
-const LANGS = ['tr', 'en', 'es', 'de'];
+const sourceFile = path.join(outRoot, 'SOURCE.json');
+const previousSource = fs.existsSync(sourceFile) ? JSON.parse(fs.readFileSync(sourceFile, 'utf8')) : {};
+const SUPPORTED_LANGS = ['tr', 'en', 'de', 'es', 'fr'];
+// Optional third argument limits a sync to one locale without touching the others.
+const LANGS = process.argv[3] ? process.argv[3].split(',') : SUPPORTED_LANGS;
+if (LANGS.some((lang) => !SUPPORTED_LANGS.includes(lang))) throw new Error('Unsupported content locale');
 
 // ---------------------------------------------------------------------------
 // Minimal parser for the subset of Dart used by const content lists:
@@ -204,8 +209,8 @@ const pick = (obj, keys) => Object.fromEntries(keys.filter((k) => obj[k] !== und
 const src = (rel) => path.join(flutterRoot, rel);
 
 function knowledge(lang) {
-  const suffix = { tr: '', en: '_en', es: '_es', de: '_de' }[lang];
-  const name = { tr: 'kKnowledgeCenterSections', en: 'kKnowledgeCenterSectionsEn', es: 'kKnowledgeCenterSectionsEs', de: 'kKnowledgeCenterSectionsDe' }[lang];
+  const suffix = { tr: '', en: '_en', es: '_es', de: '_de', fr: '_fr' }[lang];
+  const name = { tr: 'kKnowledgeCenterSections', en: 'kKnowledgeCenterSectionsEn', es: 'kKnowledgeCenterSectionsEs', de: 'kKnowledgeCenterSectionsDe', fr: 'kKnowledgeCenterSectionsFr' }[lang];
   const scope = parseConstLists(src(`lib/features/explore/system_posts/data/knowledge_center_content${suffix}.dart`));
   const sections = resolveRefs(scope[name], scope);
   return sections.map((s) => ({
@@ -260,7 +265,7 @@ function appStrings(lang) {
 
 function flutterRevision() {
   try {
-    return execFileSync('git', ['-C', flutterRoot, 'rev-parse', '--short', 'HEAD'], { encoding: 'utf8' }).trim();
+    return execFileSync('git', ['-c', `safe.directory=${path.resolve(flutterRoot, '..').replaceAll('\\', '/')}`, '-C', flutterRoot, 'rev-parse', '--short', 'HEAD'], { encoding: 'utf8' }).trim();
   } catch {
     return null;
   }
@@ -288,16 +293,26 @@ for (const lang of LANGS) {
   summary[lang] = { sections: kc.length, articles: kc.reduce((n, s) => n + s.articles.length, 0) };
 }
 
-fs.writeFileSync(path.join(outRoot, 'SOURCE.json'), JSON.stringify({
+const revision = flutterRevision();
+const syncDate = new Date().toISOString().slice(0, 10);
+fs.writeFileSync(sourceFile, JSON.stringify({
   project: 'Sigara_Savar/quitSmoke',
-  revision: flutterRevision(),
-  syncedAt: new Date().toISOString().slice(0, 10),
+  revision,
+  syncedAt: syncDate,
+  localeSyncedAt: {
+    ...Object.fromEntries(SUPPORTED_LANGS.filter((lang) => fs.existsSync(path.join(outRoot, lang))).map((lang) => [lang, previousSource.localeSyncedAt?.[lang] || previousSource.syncedAt || syncDate])),
+    ...Object.fromEntries(LANGS.map((lang) => [lang, syncDate])),
+  },
+  localeRevisions: {
+    ...Object.fromEntries(SUPPORTED_LANGS.filter((lang) => fs.existsSync(path.join(outRoot, lang))).map((lang) => [lang, previousSource.localeRevisions?.[lang] || previousSource.revision || null])),
+    ...Object.fromEntries(LANGS.map((lang) => [lang, revision])),
+  },
   files: [
     'lib/features/explore/system_posts/data/knowledge_center_content*.dart',
     'lib/features/health/presentation/data/health_goals_l10n.dart',
     'lib/features/games/presentation/data/breathing_exercise_l10n.dart',
     'lib/features/progress/domain/growth_insights.dart, growth_insights_l10n.dart',
-    'lib/l10n/app_{tr,en,es,de}.arb',
+    'lib/l10n/app_{tr,en,de,es,fr}.arb',
   ],
 }, null, 2) + '\n');
 

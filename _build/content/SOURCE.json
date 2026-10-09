@@ -1,12 +1,26 @@
 {
   "project": "Sigara_Savar/quitSmoke",
-  "revision": "51d3c38f",
-  "syncedAt": "2026-10-04",
+  "revision": "eb0c59ae",
+  "syncedAt": "2026-10-09",
+  "localeSyncedAt": {
+    "tr": "2026-10-04",
+    "en": "2026-10-04",
+    "de": "2026-10-04",
+    "es": "2026-10-04",
+    "fr": "2026-10-09"
+  },
+  "localeRevisions": {
+    "tr": "51d3c38f",
+    "en": "51d3c38f",
+    "de": "51d3c38f",
+    "es": "51d3c38f",
+    "fr": "eb0c59ae"
+  },
   "files": [
     "lib/features/explore/system_posts/data/knowledge_center_content*.dart",
     "lib/features/health/presentation/data/health_goals_l10n.dart",
     "lib/features/games/presentation/data/breathing_exercise_l10n.dart",
     "lib/features/progress/domain/growth_insights.dart, growth_insights_l10n.dart",
-    "lib/l10n/app_{tr,en,es,de}.arb"
+    "lib/l10n/app_{tr,en,de,es,fr}.arb"
   ]
 }

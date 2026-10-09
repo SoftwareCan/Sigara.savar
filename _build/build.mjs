@@ -75,7 +75,7 @@ function articleDates(lang, sections) {
         section: section.title,
       }));
       const prev = previous[article.id];
-      const published = prev?.published || (initial ? config.contentPublished || buildDate : buildDate);
+      const published = prev?.published || (initial && lang === config.defaultLocale ? config.contentPublished || buildDate : buildDate);
       const modified = prev?.hash === fingerprint ? prev.modified : prev ? buildDate : published;
       entries[article.id] = { hash: fingerprint, published, modified };
     }
@@ -112,10 +112,53 @@ function brandNbsp(value) {
   return value;
 }
 
+const allSlugs = readJson('content/slugs.json');
+const enabledLocales = Object.entries(config.locales).filter(([, locale]) => locale.enabled).map(([lang]) => lang);
+
+function localeUrls(lang) {
+  const locale = config.locales[lang];
+  const prefix = locale.prefix ? `/${locale.prefix}` : '';
+  const routes = locale.routes;
+  const slugs = allSlugs[lang];
+  return {
+    home: (hash = '') => `${prefix}/${hash}`,
+    knowledge: () => `${prefix}/${routes.knowledge}/`,
+    article: (id) => `${prefix}/${routes.knowledge}/${slugs.articles[id]}/`,
+    section: (id) => `${prefix}/${routes.knowledge}/#${slugs.sections[id]}`,
+    guide: (hash = '') => `${prefix}/${routes.guide}/${hash}`,
+    tools: (hash = '') => `${prefix}/${routes.tools}/${hash}`,
+    download: () => `${prefix}/${routes.download}/`,
+    page: (file) => `/${file}`,
+    abs: (p) => `${config.baseUrl}${p}`,
+  };
+}
+
+// Equivalent pages share a stable content ID even when their readable URLs differ.
+// Legal documents retain their existing translations and therefore have no duplicate
+// localized routes or hreflang claims here.
+function languageLinks(lang, pagePath) {
+  const current = localeUrls(lang);
+  let route;
+  let articleId;
+  for (const key of ['home', 'knowledge', 'guide', 'tools', 'download']) {
+    if (pagePath === current[key]()) { route = key; break; }
+  }
+  if (!route) {
+    articleId = Object.keys(allSlugs[lang].articles).find((id) => pagePath === current.article(id));
+    if (articleId) route = 'article';
+  }
+  if (!route) return [];
+  return enabledLocales.map((locale) => ({
+    lang: locale,
+    path: route === 'article' ? localeUrls(locale).article(articleId) : localeUrls(locale)[route](),
+    ogLocale: config.locales[locale].ogLocale,
+  }));
+}
+
 async function buildLocale(lang) {
   const localeConfig = config.locales[lang];
   const t = brandNbsp((await import(pathToFileURL(path.join(here, 'i18n', `${lang}.mjs`)).href)).default);
-  const slugs = readJson('content/slugs.json')[lang];
+  const slugs = allSlugs[lang];
   if (!slugs) throw new Error(`No slugs for locale ${lang}`);
   const content = {
     knowledge: readJson(`content/${lang}/knowledge.json`),
@@ -140,19 +183,8 @@ async function buildLocale(lang) {
     if (!slugs.articles[a.id]) throw new Error(`Article ${a.id} has no slug in content/slugs.json`);
   }
 
-  const prefix = localeConfig.prefix ? `/${localeConfig.prefix}` : '';
   const r = localeConfig.routes;
-  const url = {
-    home: (hash = '') => `${prefix}/${hash}`,
-    knowledge: () => `${prefix}/${r.knowledge}/`,
-    article: (id) => `${prefix}/${r.knowledge}/${slugs.articles[id]}/`,
-    section: (id) => `${prefix}/${r.knowledge}/#${slugs.sections[id]}`,
-    guide: (hash = '') => `${prefix}/${r.guide}/${hash}`,
-    tools: (hash = '') => `${prefix}/${r.tools}/${hash}`,
-    download: () => `${prefix}/${r.download}/`,
-    page: (file) => `/${file}`,
-    abs: (p) => `${config.baseUrl}${p}`,
-  };
+  const url = localeUrls(lang);
 
   const ctx = {
     config: { ...config, contentPublished: config.contentPublished || buildDate },
@@ -165,6 +197,8 @@ async function buildLocale(lang) {
     sections,
     allArticles,
     url,
+    languageLinks: (pagePath) => languageLinks(lang, pagePath),
+    languageHomes: () => enabledLocales.map((locale) => ({ lang: locale, path: localeUrls(locale).home() })),
     buildDate,
     asset,
     articleById: (id) => allArticles.find((a) => a.id === id),
@@ -202,7 +236,7 @@ async function buildLocale(lang) {
 }
 
 async function main() {
-  const enabled = Object.entries(config.locales).filter(([, l]) => l.enabled).map(([k]) => k);
+  const enabled = enabledLocales;
   const results = [];
   for (const lang of enabled) results.push(await buildLocale(lang));
   const primary = results.find((x) => x.ctx.lang === config.defaultLocale) || results[0];

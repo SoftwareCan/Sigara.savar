@@ -1,4 +1,5 @@
 import { html, jsonAttr } from '../lib/html.mjs';
+import { editorialCopy } from '../i18n/editorial.mjs';
 
 export const SCREEN_SIZES = {
   kupalar: [720, 1561],
@@ -22,6 +23,13 @@ export function markPicture(ctx, { alt, eager = false }) {
 
 export function storeBadges(ctx) {
   const { t, config } = ctx;
+  if (ctx.lang !== 'tr') {
+    const labels = editorialCopy(ctx.lang).stores;
+    return html`<div class="store-badges">
+      <a class="store-badge--text" href="${config.stores.appStore}" rel="noopener" aria-label="${t.stores.appStoreLong}"><span class="store-badge__label">${labels.apple}</span><strong class="store-badge__name" translate="no">App Store</strong></a>
+      <a class="store-badge--text" href="${config.stores.googlePlay}" rel="noopener" aria-label="${t.stores.googlePlayLong}"><span class="store-badge__label">${labels.google}</span><strong class="store-badge__name" translate="no">Google Play</strong></a>
+    </div>`;
+  }
   return html`<div class="store-badges">
       <a href="${config.stores.appStore}" rel="noopener"><img src="${ctx.asset('/assets/badges/app-store-tr.svg')}" width="151" height="40" alt="${t.stores.appStoreLong}" loading="lazy" decoding="async"></a>
       <a href="${config.stores.googlePlay}" rel="noopener"><img src="${ctx.asset('/assets/badges/google-play-tr.png')}" width="404" height="120" alt="${t.stores.googlePlayLong}" loading="lazy" decoding="async"></a>

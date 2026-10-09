@@ -11,7 +11,7 @@
     const update = () => {
       const y = window.scrollY;
       header.classList.toggle('is-scrolled', y > 4);
-      const menuOpen = header.classList.contains('menu-open');
+      const menuOpen = header.classList.contains('menu-open') || Boolean(header.querySelector('[data-language-picker][open]'));
       const focusInside = header.contains(document.activeElement);
       if (!desktop.matches && !menuOpen && !focusInside) {
         if (y > lastY + 6 && y > 160) header.classList.add('is-hidden');
@@ -28,6 +28,7 @@
         requestAnimationFrame(update);
       }
     }, { passive: true });
+    desktop.addEventListener('change', update);
     header.addEventListener('focusin', () => header.classList.remove('is-hidden'));
     update();
   }
@@ -58,6 +59,9 @@
     document.addEventListener('keydown', (event) => {
       if (event.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') setOpen(false);
     });
+    document.addEventListener('click', (event) => {
+      if (toggle.getAttribute('aria-expanded') === 'true' && !header.contains(event.target)) setOpen(false);
+    });
     panel.addEventListener('click', (event) => {
       if (event.target.closest('a')) setOpen(false, { restoreFocus: false });
     });
@@ -65,6 +69,36 @@
       if (event.matches && toggle.getAttribute('aria-expanded') === 'true') setOpen(false, { restoreFocus: false });
     });
   }
+
+  // Language links are ordinary server-rendered routes. Remember an explicit
+  // choice for the existing legal pages, without redirecting bookmarked URLs.
+  const languagePickers = [...document.querySelectorAll('[data-language-picker]')];
+  const closeLanguages = (except = null) => languagePickers.forEach((picker) => {
+    if (picker !== except) picker.open = false;
+  });
+  languagePickers.forEach((picker) => {
+    picker.addEventListener('toggle', () => {
+      if (picker.open) {
+        closeLanguages(picker);
+        header?.classList.remove('is-hidden');
+      }
+    });
+  });
+  document.addEventListener('click', (event) => {
+    const link = event.target.closest('[data-site-language]');
+    if (link) {
+      try { localStorage.setItem('sigara-lang', link.dataset.siteLanguage); } catch {}
+      closeLanguages();
+    } else if (!event.target.closest('[data-language-picker]')) closeLanguages();
+  });
+  document.addEventListener('keydown', (event) => {
+    if (event.key !== 'Escape') return;
+    const openPicker = languagePickers.find((picker) => picker.open);
+    if (openPicker) {
+      openPicker.open = false;
+      openPicker.querySelector('summary')?.focus();
+    }
+  });
 
   // Article sharing: native share sheet where available, clipboard otherwise.
   document.querySelectorAll('[data-share]').forEach((box) => {

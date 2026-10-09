@@ -1,8 +1,10 @@
 import { html } from '../lib/html.mjs';
 import { storeBadges } from './components.mjs';
+import { editorialCopy } from '../i18n/editorial.mjs';
 
 export function downloadPage(ctx) {
   const d = ctx.t.downloadPage;
+  const labels = editorialCopy(ctx.lang).download;
   const main = html`<section class="smart-download" aria-labelledby="download-page-title" data-download-page data-app-store="${ctx.config.stores.appStore}" data-google-play="${ctx.config.stores.googlePlay}" data-status-ios="${d.ios}" data-status-android="${d.android}" data-status-desktop="${d.desktop}" data-status-other="${d.other}" data-status-cancelled="${d.cancelled}">
   <div class="wrap smart-download__layout">
     <div class="smart-download__content">
@@ -26,11 +28,11 @@ export function downloadPage(ctx) {
         <img src="${ctx.asset('/assets/brand/app-icon-512.png')}" width="144" height="144" alt="" fetchpriority="high">
         <div>
           <strong translate="no">Sigara Savar</strong>
-          <span>Her dumansız gün, yeni bir güç.</span>
+          <span>${labels.tagline}</span>
         </div>
       </div>
       <div class="smart-download__qr-card">
-        <img src="${ctx.asset('/assets/qr/indir.svg')}" width="216" height="216" alt="${d.qrTitle}: sigarasavar.com/indir/ bağlantısı">
+        <img src="${ctx.asset('/assets/qr/indir.svg')}" width="216" height="216" alt="${d.qrTitle}: ${labels.qrLink}">
         <div>
           <h2 id="download-qr-title">${d.qrTitle}</h2>
           <p>${d.qrText}</p>

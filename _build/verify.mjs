@@ -6,6 +6,7 @@ import crypto from 'node:crypto';
 import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import config from './site.config.mjs';
+import { searchKey } from './lib/util.mjs';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(here, '..');
@@ -178,6 +179,44 @@ for (const [locale, localeConfig] of Object.entries(config.locales).filter(([, e
   }
 }
 
+// Equivalent language routes must keep the reader on the same content, not
+// silently send article readers back to a translated home page.
+const enabledLanguages = Object.entries(config.locales).filter(([, item]) => item.enabled);
+const localeRoute = (language, kind, id) => {
+  const settings = config.locales[language];
+  const prefix = settings.prefix ? `/${settings.prefix}` : '';
+  if (kind === 'home') return `${prefix}/`;
+  const route = settings.routes[kind === 'article' ? 'knowledge' : kind];
+  return `${prefix}/${route}/${kind === 'article' ? `${slugs[language].articles[id]}/` : ''}`;
+};
+const byRoute = new Map([...pages].map(([file, page]) => [page.route, { file, ...page }]));
+let languageChecks = 0;
+for (const [language] of enabledLanguages) {
+  const identities = ['home', 'knowledge', 'guide', 'tools', 'download'].map(kind => [kind]);
+  identities.push(...Object.keys(slugs[language].articles).map(id => ['article', id]));
+  for (const [kind, id] of identities) {
+    const page = byRoute.get(localeRoute(language, kind, id));
+    if (!page) continue; // Missing pages are also caught by the source checks.
+    const htmlLanguage = page.tags.find(tag => tag.name === 'html')?.attrs.lang;
+    if (htmlLanguage !== language) fail(page.file, `incorrect document language ${htmlLanguage}`);
+    const alternates = page.tags.filter(tag => tag.name === 'link' && tag.attrs.rel === 'alternate' && tag.attrs.hreflang);
+    if (alternates.length !== enabledLanguages.length + 1) fail(page.file, 'missing language alternates');
+    for (const [target] of enabledLanguages) {
+      const expected = localeRoute(target, kind, id);
+      const alternate = alternates.find(tag => tag.attrs.hreflang === target);
+      if (alternate?.attrs.href !== config.baseUrl + expected) fail(page.file, `incorrect ${target} alternate`);
+      const selectorLinks = page.tags.filter(tag => tag.name === 'a' && tag.attrs['data-site-language'] === target);
+      if (selectorLinks.length !== 2 || selectorLinks.some(tag => tag.attrs.href !== expected)) fail(page.file, `${target} picker loses current content`);
+      languageChecks++;
+    }
+    if (alternates.find(tag => tag.attrs.hreflang === 'x-default')?.attrs.href !== config.baseUrl + localeRoute(config.defaultLocale, kind, id)) fail(page.file, 'incorrect default language');
+    if (/\bundefined\b|\[object Object\]/.test(visible(main(page.source)))) fail(page.file, 'unresolved interface copy');
+  }
+}
+for (const [query, expected] of [['İSTEK', 'istek'], ['PRÉPARATION', 'preparation'], ['NICOTÍNICA', 'nicotinica'], ['Größere', 'grossere']]) {
+  if (searchKey(query) !== expected) fail('search index', `accent-insensitive lookup failed for ${query}`);
+}
+
 const sitemap = read('sitemap.xml');
 const sitemapPaths = new Set([...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(([, url]) => decode(url)));
 for (const [file, page] of pages) {
@@ -207,5 +246,5 @@ if (errors.length) {
   console.error(`Static QA failed (${errors.length} findings):\n${errors.map((error) => `- ${error}`).join('\n')}`);
   process.exitCode = 1;
 } else {
-  console.log(`Static QA passed: ${pages.size} public pages, ${references} local references, ${contentChecks} source-content checks; metadata, article dates, sitemap, auth exclusion and legal preservation verified.`);
+  console.log(`Static QA passed: ${pages.size} public pages, ${references} local references, ${contentChecks} source-content checks, ${languageChecks} language-route checks; metadata, article dates, sitemap, auth exclusion and legal preservation verified.`);
 }

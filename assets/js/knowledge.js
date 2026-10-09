@@ -12,8 +12,7 @@
   const entries = document.querySelector('[data-kc-entries]');
   const empty = document.querySelector('[data-kc-empty]');
   const validCategories = new Set(sections.map((section) => section.dataset.kcSection));
-  const fold = { ç: 'c', ğ: 'g', ı: 'i', i̇: 'i', ö: 'o', ş: 's', ü: 'u', â: 'a', î: 'i', û: 'u' };
-  const normalize = (s) => s.toLocaleLowerCase('tr').replace(/[çğıöşüâîû]|i̇/g, (c) => fold[c] || c).trim();
+  const normalize = (s) => s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/ı/g, 'i').replace(/ß/g, 'ss').trim();
   const format = (n) => (n === 0 ? form.dataset.none : form.dataset.found.replace('{n}', n));
 
   let activeCategory = '';

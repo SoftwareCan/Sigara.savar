@@ -1,6 +1,7 @@
 import { html, jsonAttr } from '../lib/html.mjs';
 import { splitLead } from '../lib/util.mjs';
 import { storeBadges, waveTool } from './components.mjs';
+import { editorialCopy } from '../i18n/editorial.mjs';
 
 // Extended exhale first: it is the technique the "Bırakma Günü" article suggests.
 const ORDER = ['extended_exhale', 'box_breathing', 'equal_breathing', 'relaxing_breath', 'triangle_breathing', 'deep_breathing'];
@@ -132,6 +133,7 @@ export function toolsPage(ctx) {
     <div class="tool-block__head">
       <h2 id="pdf-title">${tl.pdf.title}</h2>
       <p class="lead">${tl.pdf.text}</p>
+      <p class="small muted">${editorialCopy(ctx.lang).tools.pdfLanguage}</p>
     </div>
     <div class="tool-block__body">
       <a class="btn btn--ghost" href="${url.page('SigaraSavar.pdf')}" download>${tl.pdf.link}</a>

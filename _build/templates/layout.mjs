@@ -1,5 +1,4 @@
 import { html, raw, jsonLd } from '../lib/html.mjs';
-import { storeBadges } from './components.mjs';
 
 const FIREBASE = {
   script: ['https://www.gstatic.com', 'https://www.google.com', 'https://www.recaptcha.net', 'https://apis.google.com'],
@@ -41,18 +40,40 @@ export function contentSecurityPolicy(config) {
   ].join('; ');
 }
 
+const LANGUAGES = {
+  tr: { name: 'Türkçe', label: 'Dil seçin', current: 'Dil' },
+  en: { name: 'English', label: 'Choose a language', current: 'Language' },
+  de: { name: 'Deutsch', label: 'Sprache wählen', current: 'Sprache' },
+  es: { name: 'Español', label: 'Elige un idioma', current: 'Idioma' },
+  fr: { name: 'Français', label: 'Choisir une langue', current: 'Langue' },
+};
+
+function languages(ctx, pagePath, footer = false) {
+  const label = LANGUAGES[ctx.lang];
+  const equivalents = ctx.languageLinks(pagePath);
+  const options = equivalents.length ? equivalents : ctx.languageHomes();
+  const links = options.map((option) => html`<li><a href="${option.path}" lang="${option.lang}" hreflang="${option.lang}" data-site-language="${option.lang}"${option.lang === ctx.lang ? raw(' aria-current="true"') : ''}>${LANGUAGES[option.lang].name}${option.lang === ctx.lang ? html`<span aria-hidden="true">✓</span>` : ''}</a></li>`);
+  if (footer) return html`<nav class="footer-languages" aria-label="${label.label}"><span class="footer-languages__label">${label.current}</span><ul>${links}</ul></nav>`;
+  return html`<details class="language-picker" data-language-picker>
+        <summary aria-label="${label.current}: ${label.name}">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18-3-3-3-15 0-18Z"/></svg>
+          <span class="language-picker__code">${ctx.lang.toUpperCase()}</span>
+          <svg class="language-picker__chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m3 4.5 3 3 3-3"/></svg>
+        </summary>
+        <nav class="language-picker__panel" aria-label="${label.label}"><ul>${links}</ul></nav>
+      </details>`;
+}
+
 function navItems(ctx) {
   const { t, url } = ctx;
   return [
-    { key: 'knowledge', href: url.knowledge(), label: t.nav.knowledge },
-    { key: 'guide', href: url.guide(), label: t.nav.guide },
-    { key: 'tools', href: url.tools(), label: t.nav.tools },
-    { key: 'community', href: url.home('#topluluk'), label: t.nav.community },
     { key: 'app', href: url.home('#uygulama'), label: t.nav.app },
+    { key: 'guide', href: url.guide(), label: t.nav.guide },
+    { key: 'knowledge', href: url.knowledge(), label: t.nav.knowledge },
   ];
 }
 
-export function siteHeader(ctx, current) {
+export function siteHeader(ctx, current, pagePath) {
   const { t, url, config } = ctx;
   const items = navItems(ctx);
   const currentAttr = (key) => (key === current ? raw(' aria-current="page"') : '');
@@ -69,6 +90,7 @@ export function siteHeader(ctx, current) {
       </ul>
     </nav>
     <div class="header-actions">
+      ${languages(ctx, pagePath)}
       ${config.AUTH_UI_ENABLED ? html`<div class="header-auth" data-auth-slot hidden></div>` : ''}
       <a class="btn btn--primary btn--sm header-cta" href="${url.download()}">${t.nav.download}</a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-panel" data-open-label="${t.nav.menu}" data-close-label="${t.nav.close}">
@@ -84,68 +106,48 @@ export function siteHeader(ctx, current) {
           ${items.map((i) => html`<li><a href="${i.href}"${currentAttr(i.key)}>${i.label}</a></li>`)}
         </ul>
       </nav>
-      <div class="menu-panel__stores">
-        <p>${t.footer.groups.app}</p>
-        ${storeBadges(ctx)}
-      </div>
-      <a class="menu-panel__crisis" href="${url.tools('#kriz-bekcisi')}">${t.nav.crisisShortcut}</a>
+      <a class="btn btn--primary menu-panel__download" href="${url.download()}">${t.nav.download}</a>
     </div>
   </div>
 </header>`;
 }
 
-export function siteFooter(ctx) {
+export function siteFooter(ctx, pagePath) {
   const { t, url, config } = ctx;
   const year = ctx.buildDate.slice(0, 4);
+  const legalHref = (file) => `${url.page(file)}?lang=${ctx.lang}`;
+  const legalSuffix = ctx.lang === 'fr' ? ' (en anglais)' : '';
+  const deletionSuffix = { fr: ' (en anglais)', de: ' (auf Englisch)', es: ' (en inglés)' }[ctx.lang] || '';
   return html`<footer class="site-footer">
   <div class="wrap">
     <div class="footer-top">
-      <div class="footer-brand">
-        <a class="brand" href="${url.home()}">
-          <img src="${ctx.asset('/assets/brand/icon-96.png')}" width="34" height="34" alt="">
-          <span class="brand__name" translate="no">Sigara Savar</span>
-        </a>
-        <p>${t.footer.tagline}</p>
-      </div>
-      <nav class="footer-groups" aria-label="${t.a11y.footerNav}">
-        <div class="footer-group">
-          <h2>${t.footer.groups.site}</h2>
-          <ul>
-            <li><a href="${url.knowledge()}">${t.nav.knowledge}</a></li>
-            <li><a href="${url.guide()}">${t.nav.guide}</a></li>
-            <li><a href="${url.tools()}">${t.nav.tools}</a></li>
-            <li><a href="${url.home('#topluluk')}">${t.nav.community}</a></li>
-            <li><a href="${url.home('#uygulama')}">${t.nav.app}</a></li>
-          </ul>
-        </div>
-        <div class="footer-group">
-          <h2>${t.footer.groups.support}</h2>
-          <ul>
-            <li><a href="mailto:${config.supportEmail}">${t.footer.contact}</a></li>
-            <li><a href="${url.page('userDataDeletion.html')}">${t.footer.dataDeletion}</a></li>
-            <li><a href="${url.page('SigaraSavar.pdf')}">${t.footer.crisisGuide}</a></li>
-          </ul>
-        </div>
-        <div class="footer-group">
-          <h2>${t.footer.groups.legal}</h2>
-          <ul>
-            <li><a href="${url.page('privacy.html')}">${t.footer.privacy}</a></li>
-            <li><a href="${url.page('terms.html')}">${t.footer.terms}</a></li>
-          </ul>
-        </div>
-        <div class="footer-group">
-          <h2>${t.footer.groups.app}</h2>
-          <ul>
-            <li><a href="${config.stores.appStore}" rel="noopener">${t.stores.appStore}</a></li>
-            <li><a href="${config.stores.googlePlay}" rel="noopener">${t.stores.googlePlay}</a></li>
-            <li><a href="${config.social.instagram}" rel="noopener">${t.footer.instagram}</a></li>
-          </ul>
-        </div>
+      <a class="brand" href="${url.home()}">
+        <img src="${ctx.asset('/assets/brand/icon-96.png')}" width="34" height="34" alt="">
+        <span class="brand__name" translate="no">Sigara Savar</span>
+      </a>
+      <nav aria-label="${t.a11y.footerNav}">
+        <ul class="footer-links">
+          <li><a href="${url.guide()}">${t.nav.guide}</a></li>
+          <li><a href="${url.knowledge()}">${t.nav.knowledge}</a></li>
+          <li><a href="${url.tools()}">${t.nav.tools}</a></li>
+          <li><a href="mailto:${config.supportEmail}">${t.footer.contact}</a></li>
+          <li><a href="${config.social.instagram}" rel="noopener">${t.footer.instagram}</a></li>
+        </ul>
       </nav>
     </div>
+    ${languages(ctx, pagePath, true)}
     <div class="footer-bottom">
-      <p>${t.footer.disclaimer}</p>
-      <p>${t.footer.copyright(year)}</p>
+      <div class="footer-meta">
+        <nav aria-label="${t.footer.groups.legal}">
+          <ul class="footer-links footer-links--legal">
+            <li><a href="${legalHref('privacy.html')}">${t.footer.privacy}${legalSuffix}</a></li>
+            <li><a href="${legalHref('terms.html')}">${t.footer.terms}${legalSuffix}</a></li>
+            <li><a href="${legalHref('userDataDeletion.html')}">${t.footer.dataDeletion}${deletionSuffix}</a></li>
+          </ul>
+        </nav>
+        <p class="footer-copyright">${t.footer.copyright(year)}</p>
+      </div>
+      <p class="footer-disclaimer">${t.footer.disclaimer}</p>
     </div>
   </div>
 </footer>`;
@@ -155,17 +157,21 @@ export function headTags(ctx, page) {
   const { t, config, url } = ctx;
   const canonical = url.abs(page.path);
   const ogImage = url.abs(page.ogImage || '/assets/og/default.png');
+  const alternates = page.noindex ? [] : ctx.languageLinks(page.path);
+  const fallback = alternates.find((option) => option.lang === config.defaultLocale);
   return html`<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${page.title}</title>
 <meta name="description" content="${page.description}">
 <link rel="canonical" href="${canonical}">
+${alternates.map((option) => html`<link rel="alternate" hreflang="${option.lang}" href="${url.abs(option.path)}">\n`)}${fallback ? html`<link rel="alternate" hreflang="x-default" href="${url.abs(fallback.path)}">\n` : ''}
 ${page.noindex ? raw('<meta name="robots" content="noindex, follow">\n') : ''}<meta http-equiv="Content-Security-Policy" content="${contentSecurityPolicy(config)}">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="theme-color" content="#fcfbf8">
 <meta property="og:type" content="${page.ogType || 'website'}">
 <meta property="og:site_name" content="${config.siteName}">
 <meta property="og:locale" content="${ctx.localeConfig.ogLocale}">
+${alternates.filter((option) => option.lang !== ctx.lang).map((option) => html`<meta property="og:locale:alternate" content="${option.ogLocale}">\n`)}
 <meta property="og:title" content="${page.ogTitle || page.title}">
 <meta property="og:description" content="${page.description}">
 <meta property="og:url" content="${canonical}">
@@ -187,6 +193,7 @@ ${page.articlePublished ? html`<meta property="article:published_time" content="
 <link rel="preload" href="/assets/fonts/source-sans-3.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/newsreader.woff2" as="font" type="font/woff2" crossorigin>
 ${(page.preload || []).map((p) => html`<link rel="preload" href="${p.href}" as="${p.as}"${p.type ? html` type="${p.type}"` : ''}${p.fetchpriority ? html` fetchpriority="${p.fetchpriority}"` : ''}>\n`)}<link rel="stylesheet" href="${ctx.asset('/assets/css/site.css')}">
+<link rel="stylesheet" href="${ctx.asset('/assets/css/languages.css')}">
 ${(page.styles || []).map((s) => html`<link rel="stylesheet" href="${ctx.asset(s)}">\n`)}
 <noscript><link rel="stylesheet" href="${ctx.asset('/assets/css/noscript.css')}"></noscript>
 ${(page.jsonLd || []).map((data) => html`${jsonLd(data)}\n`)}<script src="${ctx.asset('/assets/js/site.js')}" defer></script>
@@ -200,11 +207,11 @@ export function layout(ctx, page) {
 ${headTags(ctx, page)}
 </head>
 <body${page.bodyClass ? ` class="${page.bodyClass}"` : ''}>
-${siteHeader(ctx, page.current)}
+${siteHeader(ctx, page.current, page.path)}
 <main id="icerik" tabindex="-1">
 ${page.main}
 </main>
-${siteFooter(ctx)}
+${siteFooter(ctx, page.path)}
 </body>
 </html>
 `;

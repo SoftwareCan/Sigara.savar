@@ -147,12 +147,600 @@
         "published": "2026-10-04",
         "modified": "2026-10-04"
       }
+    },
+    "en": {
+      "b1-01": {
+        "hash": "dd714e85ebafc25c576591af62fd60fb0c7fe408da044cd5279d6870ae2485b2",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b1-02": {
+        "hash": "abca5a7f47e643e7414362c63d4d964cdd8d5a0ff70862ea7898e1da3378953a",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b1-03": {
+        "hash": "07ace33aa6ded0962f5ee2ba99a5833124c0efb31fc868eb153cd1465df0efd6",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b1-04": {
+        "hash": "5c7fa8e32c920428d0396d08593d77a22db9733ea5652b6997219453a8bb4af0",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b1-05": {
+        "hash": "dda296154489f611040e91795b240a9d8c80f21107fa54f7fb3e623671f80bcd",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b1-06": {
+        "hash": "ff3652140b4c4cf0c7e7681514b36f489cd7e302a9904fa4d955a5a1d90ac1d1",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b1-07": {
+        "hash": "5df9bcbfe09067ff809334a58cd09485d9ac2de46aa6bebd99449aec92c3a7cb",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b1-08": {
+        "hash": "5f48a31689e3be3efa51e95eb74041e91407a866dd5b6afa994c548334564005",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b1-09": {
+        "hash": "be78e42e1f54f77804dbdfc817e2b8a1b4f563f6e20c085d762750d239d8c632",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b2-01": {
+        "hash": "2184a4a547f5d979e0649f4d7468f31e153dc5652c4069081aa14abe3821925c",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b2-02": {
+        "hash": "48b95870a294442912684ceedfa487d22a5557162bf78756a9219416d71b5a65",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b2-03": {
+        "hash": "380d66913ee5b280c1b57cc7c672284966658237f2000edb972fc85222588c4b",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b2-04": {
+        "hash": "db795514a014ac6692819277ce924724771ddc40cae91cedc9a2bf946d9dc654",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b2-05": {
+        "hash": "b9ca1dfb546982bc2db42c776c14e6682ead4b8458c822d793259a8bee067ff9",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b2-06": {
+        "hash": "749f51ac45bf22ba70983a8bf9aa1c38fcd316156e2184d087fb1f8b7eca4bad",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b2-07": {
+        "hash": "70e79366166460ce638468b0a51c8b0791cdc37787f09d04c960614b7f45c82f",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b2-08": {
+        "hash": "0fa7ec0faf22e61b455e5c0ce92755b55c2e7d95cb543509cf83ea0c65ec4168",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b2-09": {
+        "hash": "5f00d09fb2eda71f7686a634dc763a1db5791d3e5b48356ba375137a35a1096e",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b3-01": {
+        "hash": "f8064306f8c81bea83797b36e5c71f0ab53662ae7764e497b9b5d80013855e40",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b3-02": {
+        "hash": "d3c0945e53c931aaed39782630b6fd03966a0683b82bc724c48e12cbbfe3bff0",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b3-03": {
+        "hash": "58ec3eb8a479ffc01769a3819656c30b994d31be55fbda48bd4ea6e1c7304a1f",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b3-04": {
+        "hash": "e103d855166b9cf33bb7eed23c0352248d760429082af535e5a340801a71face",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b3-05": {
+        "hash": "9d7566d0aca03ad07048683fbaadc676c5061fd014b08d0d7e2546ff0f213901",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b3-06": {
+        "hash": "f48c17b5bc5cebdd8fd4c8401083634408e1e60a9e2c5fb1174d3b1831c2e016",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b3-07": {
+        "hash": "02b3131847b13acd9beb7267667b99602cd1e121e7f3cb352c1bf346b8c2f31c",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b3-08": {
+        "hash": "885bab321106cd34ed9f85946988097ab1ff9a74bda42c53f7248d4a569d281a",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b3-09": {
+        "hash": "e9222abba017db1711f0c99133334acde44b08bac2aca2da4c635b153ff200ca",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b3-10": {
+        "hash": "443a36a8bc5e6e2b018926e5bb3eb8c45eebcad57f6d93b8e017a00c910d5e4a",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b3-11": {
+        "hash": "1471e666800aa2e2fc300fe0726009da721ac875e6d6a202321c898613cd48ef",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      }
+    },
+    "es": {
+      "b1-01": {
+        "hash": "e204c6e7a3e2675f033b510b0c513f8bf8d091ed7fdc768ae95a6d1f7b0cf31a",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b1-02": {
+        "hash": "e7305286e2fbdc4cae61a511b0649639e1b67b56487446ce29723d470609904a",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b1-03": {
+        "hash": "8ab4b2f7ed484f1a2a79ed23da310698ee488408593f7fc3e704d582eaa86a04",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b1-04": {
+        "hash": "7ba8c4cacdbd9471c4f21f0e6d7ffa4405a776d1e8f1c4a66043458c06f7992e",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b1-05": {
+        "hash": "4d0f3242261e29c74f08d2a03c3b4dc74da52894609d7f03d8a3cfe2eee674ec",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b1-06": {
+        "hash": "013f7f3263194dcca2e4c333823616cc66e49d1db874635bc38c7cbf12107e3f",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b1-07": {
+        "hash": "158ac415268c3a23b8e42fbde8af1a3841d66e0d8302565f5cca1dad4b94b845",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b1-08": {
+        "hash": "e00c574c49266598f9e3acdb97aca45de84bb61278ea29236fdbcffc96d5f5e0",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b1-09": {
+        "hash": "a2e436ad67b220fefb1458a12f9b6a5fc38d6c48b961572e9d486c60f2bc2b1c",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b2-01": {
+        "hash": "406b95606ff6f81636350c6c39741c60da12f9497712bc65590b0c3eec21cc38",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b2-02": {
+        "hash": "eee35a038d52444406e78d5f43d592b2bbb585f0b106eeaec08db4a7a9a59d38",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b2-03": {
+        "hash": "deeda2dbbba14f5628f604b7ccdd68248cfb0ce53669aa532161629878d0559b",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b2-04": {
+        "hash": "3c5a283923c8ee380ee350b3a7afdf96e28551cc108f440260bcf27a310b56a1",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b2-05": {
+        "hash": "7ff49bf756781fcb028d69220f2e514f51faa06b451edc6b661dbc0d0281ff73",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b2-06": {
+        "hash": "2932c2e83bee3ee92b1ea12bb0f139d4929100e52b1c72b300098dc3814ab42a",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b2-07": {
+        "hash": "f7ef5a7e5038f09edcd1cd8407e68f8209de10369d53f736e84c414e055d4817",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b2-08": {
+        "hash": "1b3a1ed52a8b932c47b899e032dd970f9cd45435136d50236a005984b8cebb34",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b2-09": {
+        "hash": "24a745cbafebbb2b427dbd895d2ec1982d5aef56900e59df4a3fc7e4cd7ed5b1",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b3-01": {
+        "hash": "a0bfe96f3b4f521b601c68a31400d35977ceaf7087b7cabac13cfa9e4f41a0dc",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b3-02": {
+        "hash": "d545291c24cc1cfbe75d7f51b9a676c6d3060844a19b68083e00c866fab7a56e",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b3-03": {
+        "hash": "73f054d8042e80338c3a3883c5ee6c45de8157545e4ac87560def6fe07eb2e5d",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b3-04": {
+        "hash": "e4a4b02130450f6b50740777b37201f1c068d84c627cf97ed57214556ea90861",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b3-05": {
+        "hash": "fea447d1df59a30c40be832dd213dc08cca487696a739e32831bf0dbb6c7cdd9",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b3-06": {
+        "hash": "302cb193fcdf481553495e4f07a0754b46471ae9357689b1103d1370e50c1c21",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b3-07": {
+        "hash": "afe11b02d46e9e217216db6155509cb3d0643d86f8add9066996bcdab85c976d",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b3-08": {
+        "hash": "b38fa1ae2e8ff9f10817016338ee262c6e2f1fb1d69715c0d5156582a58d557f",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b3-09": {
+        "hash": "5b0d51ac71d89921753f0170e6a117cd53a13741c175f000a98f173a2511f92f",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b3-10": {
+        "hash": "0a88fb6735dd54ec88106b1022e66f36504df8d856b49764ae351eeef8301720",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b3-11": {
+        "hash": "463db4e0ec68ad4bef27d4892cd795af4679676debf9436adb084f275f9fced4",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      }
+    },
+    "de": {
+      "b1-01": {
+        "hash": "f891d5537b348a2eea77e3394d0dcba2a23f2a768027b2bb1ecaa0953bf50a5b",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b1-02": {
+        "hash": "0865d10dbf06ff3fe52736b153e080dd04abd49e10eb6533f751942b0af24a61",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b1-03": {
+        "hash": "cde3a53d5c4c9b3e4b2a8b3eff9fa2b52befcc46349d008c6d63665258cb9928",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b1-04": {
+        "hash": "bb3bc4034fb47d539ac83c39dce63c2a1adce407e8eb0c8d43e36683ecf4cca5",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b1-05": {
+        "hash": "af1871715b99e0baa6052718ee1581a5bc897ee7350499ebd08762363ae61166",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b1-06": {
+        "hash": "ae89609ccebef1177ddf6c9ef2582d44301e43c7cd910082393640a3d4730841",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b1-07": {
+        "hash": "d1c9a59aa25cfc4cc96511788bd0cc9659b320cdd6a2edcfa0eb8dfecec2e502",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b1-08": {
+        "hash": "c199a44ab96214e12a6584f9122794ce959baacdcf45923e7e3026bfe09eba35",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b1-09": {
+        "hash": "ca5c80cd3c39f5f69a198d6e5cb5e70912a6f5ecd9d389ffda399dcab8450812",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b2-01": {
+        "hash": "3fe166743e91fde3a08dbee110f46b5ba6f89aae0e67e83f51e9e93bd3ee7c47",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b2-02": {
+        "hash": "0c086bdf4bff5b30acbd848e7dbe4b230b923a71bee7b83dd31a656a3425f042",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b2-03": {
+        "hash": "820e1d8bda903ac9efa70ebe915aa83b80b0a5199b9b68bf4fc8fb0d4d8dbcac",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b2-04": {
+        "hash": "f5df4217c65b1e17055a99927dbf7144ad836c948fed9d90e622227b659e8fcf",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b2-05": {
+        "hash": "f02ebd53921845c39983ce80d540ddcc1abfb094c4f743367a0027454cd2e168",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b2-06": {
+        "hash": "78231e3071a298ec1220b4be83d66276b400e26c1d094c26462bb853aba1e2f9",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b2-07": {
+        "hash": "0d4204d085498ec22766b2423c2c260a111bd905c396e948b5888a3c49b7c9cf",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b2-08": {
+        "hash": "620d74c1ed714a8768a021c1b5525d21144db177714b910138689251dcff402b",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b2-09": {
+        "hash": "65e71e08f14bd01199fa7728bad0aa94060b49cca44ca109410ba19c54696e1c",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b3-01": {
+        "hash": "9ade0f3869601ab824fb9cc467b675fb5a3d2cf899a4130bb525e1729e82f9d4",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b3-02": {
+        "hash": "104171a69cdfa872ddeac9d4eb373fb69aafe29c935eec15ca0008ed957a7957",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b3-03": {
+        "hash": "a7ff2c11721e32b2736927890f3e086cac3643d3ec1113655ad4425c7e150a06",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b3-04": {
+        "hash": "71e7802640f9f40b32850d7b05a641dfb8ba5cbb1c6c17e26dcf26b72a6ed1ef",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b3-05": {
+        "hash": "420564907e697d8750d2202414f6a7870fa8876ab1cc23e43d0b1cd13a4d4136",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b3-06": {
+        "hash": "e30e508c084c0b45c5e8b3da7fd7e617ee30389b69dbf0283af29712f85d5724",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b3-07": {
+        "hash": "d1d2a1f1b2ff92e7d579de9d654bb19eacfab95e0497cf67cc65fccc40151f1e",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b3-08": {
+        "hash": "19bf38a3745271be5eedc8445e8c4579776b257deb2282c401e4a2d0dab81e92",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b3-09": {
+        "hash": "2dcf5cf4db432d58aefca5d3d8657446a1c25280ae0be50ef433f3938ec105c6",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b3-10": {
+        "hash": "1275b462603490a40244286924db92a4c11b899ed45f6cf9b2789c583e39308a",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b3-11": {
+        "hash": "7ad10135d0d501b42575732d08d371183626914ec92f44be1a77a077d8f9134a",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      }
+    },
+    "fr": {
+      "b1-01": {
+        "hash": "82f1fd5d6cb7a6b77d6be4ed07427c2d077445633aed05401ba3470cc81536ed",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b1-02": {
+        "hash": "955883c7ce2c03f27c8460dad9159a447807512f04a13ce9d636ccf485006af0",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b1-03": {
+        "hash": "952435d0887cd0396d238e43cdfc985d43227678fe88853d43699e5ad673396d",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b1-04": {
+        "hash": "6164e5c422dc36050c21f4ba3689bcb9402605374adeb3f883a1258d6ce25e9a",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b1-05": {
+        "hash": "e97f98540b3a23e09fac2dab6708e7ed0c90b400d48f21cc8adaa2805e7fefe3",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b1-06": {
+        "hash": "2db1f628cb0592bc07ae7541bf72c14a7ca1a37cc770a18f90307b4a26097d34",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b1-07": {
+        "hash": "b446f8bfc11dc6504b2de1681ba632db9e6b59050b0ee72cc1d9673a4f94e906",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b1-08": {
+        "hash": "38c7a076a1ae4063ea3d90057f3f9ec841943b207941352f7d06fc35b1cfea12",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b1-09": {
+        "hash": "00b1cf0dd1d0572961124da63108b8c5d11de149222a7c8e79c11c777aa39fb7",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b2-01": {
+        "hash": "30192b52838f5bec8c73f4de413281e9656bbdd2ecdb99bedf3e1dcbf9ede033",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b2-02": {
+        "hash": "3e8f1d62c8a21c3d6c762dacdb56940f0a7f82426ad2a326ecc3cbb84d54569f",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b2-03": {
+        "hash": "d7b664fb44d9f0b3d9066681dc8c897b4ae275774e89636435cc25253498aa83",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b2-04": {
+        "hash": "34a8285b359e51002163d42f678c09f95bf4f618a4c1fcb50630e287aec19364",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b2-05": {
+        "hash": "4b2edadad479d4f8c6c7960f4a94f4949a352ff305aa6ac749458745b168fc27",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b2-06": {
+        "hash": "9ae87712d29a245d907fa32fd93c3a85031315ca999a9f7e7f2f65da26b977e3",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b2-07": {
+        "hash": "e6ed6670fca55a84c8ffa2bbbb4666b9b4a188ce117f6e721bfde95e450555a5",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b2-08": {
+        "hash": "fe920a90d3afad7d89aea09877f2ec0a172d6b3e530f33d28bc5ffab5b7435a2",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b2-09": {
+        "hash": "132b7dbcc1ac3821084849f5a860137a0f073d8fd16b2346a2cec91b2a8a8b96",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b3-01": {
+        "hash": "9ba11dc2be7f9adfcc326f7514de204e8c5f24a9c198069985888ad3db78dfc9",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b3-02": {
+        "hash": "f6bf313a1cc0bfab71e856eb58c585fea20ddd32e43f78b0ecd5e7b7ca6be354",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b3-03": {
+        "hash": "2c5c1c0899ceac645a3ff80a79c8e3f18ac1dff14229c140debf01680070fa69",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b3-04": {
+        "hash": "22698ae1f87a41507c43d7806f0fb3cc965a945ac9715c9b76e22f8b85272897",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b3-05": {
+        "hash": "f1d34597434d604f679dde89b6f83658f80cf47db493d89f77ed316c3b848134",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b3-06": {
+        "hash": "aa423c6c86a42a28923c8c1ce464e7514bcfd3a40508b7ebed4ec7d027611837",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b3-07": {
+        "hash": "c75ddabd544ece1e1ae0f486525cdd39f970415f97a65bb480dd4dcaaa8376f0",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b3-08": {
+        "hash": "84b3ea49b1165bda4888eb699c6730680707f9a4c483c0d80b0bf69cf236e730",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b3-09": {
+        "hash": "286382c073096d8e4f63ae4c9090b387f22f895c204a32bf60ff76d0d66065b3",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b3-10": {
+        "hash": "dbae18f1f19a30eefe6ad14b76222c995cffc3cfd1a0165175946f334ca26673",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      },
+      "b3-11": {
+        "hash": "21cb45cf848bff477330143ce53accc05e6ff55e848f7f8034af9dd10f1d9ba7",
+        "published": "2026-10-09",
+        "modified": "2026-10-09"
+      }
     }
   },
   "pages": {
     "/": {
-      "hash": "09ecc594c9cd4090cef06d13f0c29792f08a82b432e5acce50d9e282c3c8c65f",
-      "lastmod": "2026-10-08"
+      "hash": "ef71f48715b1cb4a6ccde7902a808ff270602d6dbf15b66df63650cfb3190925",
+      "lastmod": "2026-10-09"
     },
     "/bilgi-merkezi/": {
       "hash": "f7cd686fada47ae534caae82b634df3760a32c7f244369b95638a9ef51e01a69",
@@ -279,8 +867,8 @@
       "lastmod": "2026-10-05"
     },
     "/araclar/": {
-      "hash": "f6dd4361cf01e9a1a51cbbed5baa53e8c8c16a508fe879fb6e5a81e3eecc17b2",
-      "lastmod": "2026-10-04"
+      "hash": "f2b8a983ab235c51cdcdb003d7c50b621fb12c85a6e69ee6391c05f2571ec98e",
+      "lastmod": "2026-10-09"
     },
     "/privacy.html": {
       "hash": "4219d366134ce9f17d70b18f86a2532dac2ad8f93f237ed38d931216d3727727",
@@ -297,6 +885,550 @@
     "/indir/": {
       "hash": "9c8c854d4c6187ff4661e7dbf53d4a0e06a6e58999857211861e1675d3241991",
       "lastmod": "2026-10-08"
+    },
+    "/en/": {
+      "hash": "e3763d37e4e987996b1ab117b45b9422b9ca6915f32433688640ea8aa3281a86",
+      "lastmod": "2026-10-09"
+    },
+    "/en/knowledge-center/": {
+      "hash": "9f37c1e0df2038b7d9f15e67acbf357bea7e6bfb49c0cd0988595b700e6f0acc",
+      "lastmod": "2026-10-09"
+    },
+    "/en/knowledge-center/what-is-addiction/": {
+      "hash": "d9bd7086e9cadc8d93bd0e3a2e403118abe8409af156a227c0db37f58866e098",
+      "lastmod": "2026-10-09"
+    },
+    "/en/knowledge-center/why-do-you-smoke/": {
+      "hash": "cf98a457f3fc406bf5a7e5a5bdd2e3ce305f8a49af2f1a9a6159dff6cb47df63",
+      "lastmod": "2026-10-09"
+    },
+    "/en/knowledge-center/benefits-of-quitting/": {
+      "hash": "70f71cb90874d4ab64d30d54ff787c27b57f62468856bd31c0439bb5df323452",
+      "lastmod": "2026-10-09"
+    },
+    "/en/knowledge-center/prepare-your-quit-plan/": {
+      "hash": "fbd250e81f669f5fae5ad0d1463fdc663ee2212c877bf479fa7dd3cefd9082d3",
+      "lastmod": "2026-10-09"
+    },
+    "/en/knowledge-center/map-your-triggers/": {
+      "hash": "90804f547c272027390481ab48e8a158cadd5f5360fefbfd374e2696825010f2",
+      "lastmod": "2026-10-09"
+    },
+    "/en/knowledge-center/support-options/": {
+      "hash": "3eef3ccddcc59fa2d214d433409e6ba22f0f8279432f3ac73b7893a2b1153a71",
+      "lastmod": "2026-10-09"
+    },
+    "/en/knowledge-center/quit-day/": {
+      "hash": "8621e258c2f087c48663031d4295b3a56faf5e1ca64d4cd41a1dbcdcbfa8cccd",
+      "lastmod": "2026-10-09"
+    },
+    "/en/knowledge-center/nicotine-withdrawal/": {
+      "hash": "5f9a6f14cceea8971fb6a960e23f145e8d8a6daab6fe603159455b922e441aaa",
+      "lastmod": "2026-10-09"
+    },
+    "/en/knowledge-center/preparation-and-first-days-summary/": {
+      "hash": "eab70ddf0e305005c0cc21ed1375f972ffd22f606e1dad6270ffb1c24a8559ee",
+      "lastmod": "2026-10-09"
+    },
+    "/en/knowledge-center/why-cravings-continue/": {
+      "hash": "a31f106ab7c96b681627257182b3c3c5b06c3fd8db9b003ef4e55d179a264e5f",
+      "lastmod": "2026-10-09"
+    },
+    "/en/knowledge-center/rewrite-your-triggers/": {
+      "hash": "41e06548742d85d8d3af8a99c2f1010e79569a5f616557a7a11114bf4075b327",
+      "lastmod": "2026-10-09"
+    },
+    "/en/knowledge-center/rethink-smoking-beliefs/": {
+      "hash": "404f6274da39a8d2c4c3785dd09f924d368d096bb535ba68055d5c5da36b5693",
+      "lastmod": "2026-10-09"
+    },
+    "/en/knowledge-center/fill-the-gap-smoking-leaves/": {
+      "hash": "7273e305ed9d9e3f70267383d1d46dbefe853ddd650edb598c40b05d896f9531",
+      "lastmod": "2026-10-09"
+    },
+    "/en/knowledge-center/strengthen-natural-rewards/": {
+      "hash": "08280a7dfc39bd9e9e4e0572320cedec1fe29966ccbf1b6021ffbe10c8457158",
+      "lastmod": "2026-10-09"
+    },
+    "/en/knowledge-center/i-do-not-smoke/": {
+      "hash": "39326cf4e6f74bfe513a897d6b3b48024567d1b55cc0d6211971f0524a6a1c52",
+      "lastmod": "2026-10-09"
+    },
+    "/en/knowledge-center/i-can-control-it-now/": {
+      "hash": "44fa698a971b73b37ce3a02d51f8e33a840b48b780b585c5785cf4cfc56cea32",
+      "lastmod": "2026-10-09"
+    },
+    "/en/knowledge-center/smoke-free-life-checklist/": {
+      "hash": "39bd0a9030fc812403d9599c2732f76e3b39d3cf9f60a8b7628293c01cf384f3",
+      "lastmod": "2026-10-09"
+    },
+    "/en/knowledge-center/lasting-change-summary/": {
+      "hash": "57e4e0452a7275805a157871afd46df6cb850ad3dce20d3c6d65969779f79ac7",
+      "lastmod": "2026-10-09"
+    },
+    "/en/knowledge-center/what-is-a-craving/": {
+      "hash": "7d242b0f8c9ef1b7a73b1bba58df66935a520d10694715acb0374f204b7a66f4",
+      "lastmod": "2026-10-09"
+    },
+    "/en/knowledge-center/cravings-come-in-waves/": {
+      "hash": "cceb986dc4b2ad8316c72b26ef5f237a3a6dc9e0f0456f80fd76e8b379ea7e8d",
+      "lastmod": "2026-10-09"
+    },
+    "/en/knowledge-center/urge-surfing/": {
+      "hash": "8467a615b3dc0f18a947957ecd629ee3d1b35051c391c63e06a9f2d8236fee14",
+      "lastmod": "2026-10-09"
+    },
+    "/en/knowledge-center/the-4d-method/": {
+      "hash": "92bcea4bcfa445acdbbc150f1d7747c422658de49143921ca899f40dc9c94f37",
+      "lastmod": "2026-10-09"
+    },
+    "/en/knowledge-center/if-then-planning/": {
+      "hash": "b239445b1c4c662b5d645269b8c050badf98cd9548a2f828d29ea6ab60840ddd",
+      "lastmod": "2026-10-09"
+    },
+    "/en/knowledge-center/lapse-and-relapse/": {
+      "hash": "fc1771a57df91595841134adbb0e495db9224cb46e0ce5f26c4eff596bafe6e4",
+      "lastmod": "2026-10-09"
+    },
+    "/en/knowledge-center/one-mistake-does-not-erase-progress/": {
+      "hash": "91e9ad6877c2a76dac0c801b67a181195556fb9e446b8275ec6a7875ff3b5769",
+      "lastmod": "2026-10-09"
+    },
+    "/en/knowledge-center/recover-after-a-lapse/": {
+      "hash": "1045f48c5c592965f918c0734091951c2bd95327e977aa9fc48f645f92ed39cf",
+      "lastmod": "2026-10-09"
+    },
+    "/en/knowledge-center/build-your-crisis-plan/": {
+      "hash": "aa805e580cb56feb161394ec03f7333eb5a910abb9fbc0195d4f50f35a5cad50",
+      "lastmod": "2026-10-09"
+    },
+    "/en/knowledge-center/review-your-progress/": {
+      "hash": "d65e36d990a53aa99cb2530148b4f10cee63d50adf91470a03090c4cf78ab75a",
+      "lastmod": "2026-10-09"
+    },
+    "/en/knowledge-center/cravings-and-relapse-summary/": {
+      "hash": "041761e0b11c3c41990df22408680b2e8ad7ec4dee1a6ad99441bc959f770699",
+      "lastmod": "2026-10-09"
+    },
+    "/en/quit-guide/": {
+      "hash": "d0beceafdcfa7a2e966a6e49d5bb03c6a593a69e7c4bc67e840d0705c98b8fb7",
+      "lastmod": "2026-10-09"
+    },
+    "/en/tools/": {
+      "hash": "ec89f6fded7d494f5c9a89686d6465b63f073acec8d00faf6b17a87017832532",
+      "lastmod": "2026-10-09"
+    },
+    "/en/download/": {
+      "hash": "d8c1d84ccd8310d7d1b661ddbae25821239f506295305c3fe164baadfb6d51be",
+      "lastmod": "2026-10-09"
+    },
+    "/es/": {
+      "hash": "52d83536ac383c982ab7e32de3ade5b191884369087f01da4733b9f230c94c28",
+      "lastmod": "2026-10-09"
+    },
+    "/es/centro-de-informacion/": {
+      "hash": "990d1e36d5835e1d121f3679b70ef4e4e245fb49be61f97add08f74e4388e425",
+      "lastmod": "2026-10-09"
+    },
+    "/es/centro-de-informacion/que-es-la-adiccion/": {
+      "hash": "a91ffda3b951582ddeb8a8e66c4916dedf3b14ffdbf35ea4c7f2e7826d9fc49c",
+      "lastmod": "2026-10-09"
+    },
+    "/es/centro-de-informacion/por-que-fumas/": {
+      "hash": "af4e840e8d9595676df92b95a635d321853551738f3ced7b9cf603ee057af013",
+      "lastmod": "2026-10-09"
+    },
+    "/es/centro-de-informacion/beneficios-de-dejar-de-fumar/": {
+      "hash": "c642f5c242b3559a33985d20d6b637cd5a6300285a01df30961f4b4631c16965",
+      "lastmod": "2026-10-09"
+    },
+    "/es/centro-de-informacion/preparar-tu-plan/": {
+      "hash": "3ee5984d948cd2766b1d712e3278bdda7607322e2a1da48fe0f24d4d9203dbe9",
+      "lastmod": "2026-10-09"
+    },
+    "/es/centro-de-informacion/mapa-de-desencadenantes/": {
+      "hash": "3b7f2639abd5835751ea6feaf14a4e957ae310b0861b814f23eb7c528a83c1af",
+      "lastmod": "2026-10-09"
+    },
+    "/es/centro-de-informacion/opciones-de-apoyo/": {
+      "hash": "a3366c761c6884da525c8d2c27e3df893252b486fa7a2ba12e7e25590cccecd5",
+      "lastmod": "2026-10-09"
+    },
+    "/es/centro-de-informacion/dia-de-dejar-de-fumar/": {
+      "hash": "671a70fb020ba34becdab86eb34b6588bdb1b34754a6cf751e4e61a5e75f3019",
+      "lastmod": "2026-10-09"
+    },
+    "/es/centro-de-informacion/abstinencia-de-nicotina/": {
+      "hash": "42104e96f9f9925b1a51836c45aec09abcf6370e36ea4ee0b87c5dce9a668724",
+      "lastmod": "2026-10-09"
+    },
+    "/es/centro-de-informacion/preparacion-y-primeros-dias-resumen/": {
+      "hash": "6556873571b43a8733ba4ce93164ea5ea0bf444775cd8de9fa97dd7451904f9e",
+      "lastmod": "2026-10-09"
+    },
+    "/es/centro-de-informacion/por-que-persisten-las-ganas/": {
+      "hash": "789c944a0631b53bb08bd86550bc7fb1eeaad93f5e9defa28772a5b9f40575cd",
+      "lastmod": "2026-10-09"
+    },
+    "/es/centro-de-informacion/reescribe-tus-desencadenantes/": {
+      "hash": "d26edd84609bb752c654a4fea1bdd561a8ec13d8b243e1e89bba6f757c69c73f",
+      "lastmod": "2026-10-09"
+    },
+    "/es/centro-de-informacion/reconsidera-tus-pensamientos-sobre-el-tabaco/": {
+      "hash": "67f66475c4b6cfaaa93331d2e1479ed95bfb13cd864b0157195a8832766df269",
+      "lastmod": "2026-10-09"
+    },
+    "/es/centro-de-informacion/llenar-el-vacio-del-tabaco/": {
+      "hash": "8d77b0f3e3c5cd55dad9d8973df1e051a78de15b6992f470cbefd6297fa0de1a",
+      "lastmod": "2026-10-09"
+    },
+    "/es/centro-de-informacion/fortalecer-las-recompensas-naturales/": {
+      "hash": "39dadb2f7dbeb0a4ba250695e494aca5d08657d794a0b3edf149d816f0c01a53",
+      "lastmod": "2026-10-09"
+    },
+    "/es/centro-de-informacion/no-fumo/": {
+      "hash": "dae400c5d01f143cf5b2dae1f1882178cbf912310a1a89f1b9ebb7e7f5dd2e7f",
+      "lastmod": "2026-10-09"
+    },
+    "/es/centro-de-informacion/ya-puedo-controlarlo/": {
+      "hash": "c0aa37df0b7f0e821b9e66085d90d7d359e0307c12d1f9afc606b64ba46b6a17",
+      "lastmod": "2026-10-09"
+    },
+    "/es/centro-de-informacion/lista-para-una-vida-sin-tabaco/": {
+      "hash": "e5b74666c98284e78f2a02891f8012c1666415e1ab75b633725b5d8db277ead1",
+      "lastmod": "2026-10-09"
+    },
+    "/es/centro-de-informacion/cambio-duradero-resumen/": {
+      "hash": "5012b7f13337eda8bf831deabe219e7a04bc6a78ae09539e7e0f084ff2d07818",
+      "lastmod": "2026-10-09"
+    },
+    "/es/centro-de-informacion/que-son-las-ganas-de-fumar/": {
+      "hash": "c639006292c0369c1be4dbfac84ea9f6b4a2f76cc15610b3a12bf06d94bec809",
+      "lastmod": "2026-10-09"
+    },
+    "/es/centro-de-informacion/las-ganas-son-como-una-ola/": {
+      "hash": "580d9f05b9a7486e10fbf698d41ee59d308ade290295e978a7156de53515c455",
+      "lastmod": "2026-10-09"
+    },
+    "/es/centro-de-informacion/surfear-las-ganas/": {
+      "hash": "06169401375a9c7e00b92335e506c6aa42b393322abfebac55b57b25d2cd3f60",
+      "lastmod": "2026-10-09"
+    },
+    "/es/centro-de-informacion/metodo-4d/": {
+      "hash": "338e089da3236f1edf4e9369edab04ca9205dd40b94d9e65c20c3e639ffdd56d",
+      "lastmod": "2026-10-09"
+    },
+    "/es/centro-de-informacion/plan-si-entonces/": {
+      "hash": "6c228ca1af35f9666677375f1ede86ebed9caa3355067eddbd38ce4583b70d03",
+      "lastmod": "2026-10-09"
+    },
+    "/es/centro-de-informacion/desliz-y-recaida/": {
+      "hash": "9ce2e561ef21bbee8de9f518e0686a8cec26207b2ea15bad3dbf8ad3a95307a2",
+      "lastmod": "2026-10-09"
+    },
+    "/es/centro-de-informacion/un-error-no-borra-tu-progreso/": {
+      "hash": "6f015cb29c9d806b97cb2c25cf60ad7cdc0bb2beb16831e7c5de2664c1d93534",
+      "lastmod": "2026-10-09"
+    },
+    "/es/centro-de-informacion/retomar-el-camino-tras-un-desliz/": {
+      "hash": "b9541c315f1072e7ea16e68b25860fb89e851c1dc974b7c08c7dfac5437824b9",
+      "lastmod": "2026-10-09"
+    },
+    "/es/centro-de-informacion/crear-tu-plan-de-crisis/": {
+      "hash": "ecc977e099eff86508066b6693ec33e7567030f30038644c891a39a0bdb4c922",
+      "lastmod": "2026-10-09"
+    },
+    "/es/centro-de-informacion/revisar-tu-progreso/": {
+      "hash": "7b2e3306f6a0374f452df614c153af9f3c7e28834215dda40a33354801ca1d0e",
+      "lastmod": "2026-10-09"
+    },
+    "/es/centro-de-informacion/ganas-de-fumar-y-recaidas-resumen/": {
+      "hash": "92e02033dc9084d180f87d5544564dcc60a406c08b4b72614a980ddb16850767",
+      "lastmod": "2026-10-09"
+    },
+    "/es/guia-para-dejar/": {
+      "hash": "4b31ae842b21ded64ea767bff8f6bd4683a4648eab5639436e7fdc48cba6a94d",
+      "lastmod": "2026-10-09"
+    },
+    "/es/herramientas/": {
+      "hash": "f5d73149d0f79b72b1079bf0353dd226f95045480ec87056a21a0443f052dc05",
+      "lastmod": "2026-10-09"
+    },
+    "/es/descargar/": {
+      "hash": "a9f933ff1ee4c978f1e48eeea7947485f13f58b31b897701c06e586b0c476cbc",
+      "lastmod": "2026-10-09"
+    },
+    "/de/": {
+      "hash": "7890f7d1f1c37c627e1c91b0fd2db337058b5f3ee44e88db3cee36e8640496f7",
+      "lastmod": "2026-10-09"
+    },
+    "/de/wissenszentrum/": {
+      "hash": "a2aa255915c204dbfd3e7953d137d42e90c56d9512a3f21fb063e2cb162cf04e",
+      "lastmod": "2026-10-09"
+    },
+    "/de/wissenszentrum/was-ist-sucht/": {
+      "hash": "0b00082afb23d73ccf0d87abae6ae8380484b618efc727d71a3b34e50a8c18c1",
+      "lastmod": "2026-10-09"
+    },
+    "/de/wissenszentrum/warum-rauchst-du/": {
+      "hash": "06d5e1ebb38bcf13cf97f48ba5dac835d8174f73fc4c686b2c08ae723d353e4d",
+      "lastmod": "2026-10-09"
+    },
+    "/de/wissenszentrum/vorteile-des-rauchstopps/": {
+      "hash": "3f962e9012aa13ac9271b963fa27d75536409371ad2f4ae1d71a91916c644ede",
+      "lastmod": "2026-10-09"
+    },
+    "/de/wissenszentrum/rauchstopp-vorbereiten/": {
+      "hash": "28753108351b9eaed09621e064854bfd32c8235850ab4d16c41bae89a1700446",
+      "lastmod": "2026-10-09"
+    },
+    "/de/wissenszentrum/rauchausloeser-erkennen/": {
+      "hash": "a0ec4864a5b80556c4d05e81f9b74919bb400909293b77a1d6444579b12ed2d6",
+      "lastmod": "2026-10-09"
+    },
+    "/de/wissenszentrum/unterstuetzungsmoeglichkeiten/": {
+      "hash": "1a1bd8bb8fd471fcbce1f0b5e1419e41b62f2f0ecca396b40ae20c1e70832d7c",
+      "lastmod": "2026-10-09"
+    },
+    "/de/wissenszentrum/rauchstopp-tag/": {
+      "hash": "3ec52990465a644ce5e82b6e7d9a2c64c770c0a57b337a5a426fb8f0d9f25536",
+      "lastmod": "2026-10-09"
+    },
+    "/de/wissenszentrum/nikotinentzug/": {
+      "hash": "93bb7c84981c8677c9d4c8816493a2d9f18b7a8c645ab29b592ed5f6c39e5479",
+      "lastmod": "2026-10-09"
+    },
+    "/de/wissenszentrum/vorbereitung-und-erste-tage-zusammenfassung/": {
+      "hash": "3ba689cf919bc08c0a5384fb00517bf7d65e48d25fe06f6edeacefffb697239a",
+      "lastmod": "2026-10-09"
+    },
+    "/de/wissenszentrum/warum-rauchverlangen-bleibt/": {
+      "hash": "8a548a2fcb447a22216e144223f493d31e81881f3d5674e820c4470ece5fbe2f",
+      "lastmod": "2026-10-09"
+    },
+    "/de/wissenszentrum/ausloeser-neu-gestalten/": {
+      "hash": "997f011833f7b221bc8e454a72f220d66cfda5587819ee38bf5e082941f45404",
+      "lastmod": "2026-10-09"
+    },
+    "/de/wissenszentrum/gedanken-ueber-das-rauchen/": {
+      "hash": "70d996d67f670906bd1b1433c47358af325519a4e472d1ce140e8dfaf8d60f27",
+      "lastmod": "2026-10-09"
+    },
+    "/de/wissenszentrum/luecke-nach-dem-rauchen/": {
+      "hash": "c6c8000babaac15638a0063e282263e7e9d8b8fee8e06c03890545465b5a2441",
+      "lastmod": "2026-10-09"
+    },
+    "/de/wissenszentrum/natuerliche-belohnungen-staerken/": {
+      "hash": "db46abcf62a6ec53c8e17cbfc4a19f24c5184c20179073786f51534efe98aeec",
+      "lastmod": "2026-10-09"
+    },
+    "/de/wissenszentrum/ich-rauche-nicht/": {
+      "hash": "aebd2abbb52b736802db43fcf74be307126aa17f7ec25d6e95642dfb5e325bfb",
+      "lastmod": "2026-10-09"
+    },
+    "/de/wissenszentrum/ich-habe-es-unter-kontrolle/": {
+      "hash": "4d64e2018cff0adf5eccc32c64faddcaf62f28c22d77f7e153d62beba00b179b",
+      "lastmod": "2026-10-09"
+    },
+    "/de/wissenszentrum/checkliste-rauchfreies-leben/": {
+      "hash": "b322b29f444cf91c33e1c66ebab11ed4de816e467b82450064463071072351cd",
+      "lastmod": "2026-10-09"
+    },
+    "/de/wissenszentrum/dauerhafte-veraenderung-zusammenfassung/": {
+      "hash": "68ad14f8f5323a7752f9e445d89a9ea02ed6dbc6e9c32e4f703c4e4d20f8d8ae",
+      "lastmod": "2026-10-09"
+    },
+    "/de/wissenszentrum/was-ist-rauchverlangen/": {
+      "hash": "ed9c610d8c7d4b0ac5339d0e12871c6c5ced76214a3262f0a5f5532727ec4fe7",
+      "lastmod": "2026-10-09"
+    },
+    "/de/wissenszentrum/rauchverlangen-als-welle/": {
+      "hash": "df5aff712c58c21d41f456e0f3c299f1aa0b8b2b8300306f31b2204b4f4be0ee",
+      "lastmod": "2026-10-09"
+    },
+    "/de/wissenszentrum/urge-surfing/": {
+      "hash": "dcdb3c7a6e0d485f0018685053e28e9e40726f76632cc61b189429b26be36207",
+      "lastmod": "2026-10-09"
+    },
+    "/de/wissenszentrum/4d-methode/": {
+      "hash": "e97bca78de30e2f29ea2163c4f5cd661953c000a03cc5ef0a6f9ef0dd9aa7b9f",
+      "lastmod": "2026-10-09"
+    },
+    "/de/wissenszentrum/wenn-dann-plan/": {
+      "hash": "6228df69ca3de96172c0385393054123896db3ebab6d6bc0a0bc6e2aaefb7a49",
+      "lastmod": "2026-10-09"
+    },
+    "/de/wissenszentrum/ausrutscher-und-rueckfall/": {
+      "hash": "35d1f9658f121288af76c661b25e31c050061db78d2fa2619f20fef1831e7a0a",
+      "lastmod": "2026-10-09"
+    },
+    "/de/wissenszentrum/ein-fehler-macht-nicht-alles-zunichte/": {
+      "hash": "a9c1bad1214651c8ef6688ea91ceca0c132f86555b4b1c906171c284dee11751",
+      "lastmod": "2026-10-09"
+    },
+    "/de/wissenszentrum/nach-einem-ausrutscher-weitermachen/": {
+      "hash": "91fef061da6b42191b426ccb63ed387ac36179d5061ebeb79e5797b6a4014886",
+      "lastmod": "2026-10-09"
+    },
+    "/de/wissenszentrum/krisenplan-erstellen/": {
+      "hash": "853c6983480b4e570942b0609ac1fe92f91fc5c1faa808b82d58751512130136",
+      "lastmod": "2026-10-09"
+    },
+    "/de/wissenszentrum/fortschritte-ueberpruefen/": {
+      "hash": "ee932a43c715e226806e04dcf7c4ad45b5bf795bf5e413b7a8022e3a2d1f9e8e",
+      "lastmod": "2026-10-09"
+    },
+    "/de/wissenszentrum/rauchverlangen-und-rueckfall-zusammenfassung/": {
+      "hash": "2db1f2166cb8ac489b66e10ff2dd288870e668f79193cbcdc72644a992a656ae",
+      "lastmod": "2026-10-09"
+    },
+    "/de/rauchstopp-leitfaden/": {
+      "hash": "6c9fb50aa253305cda72ee28ae5ede4fc47891689636b0c8884c60f67d3cefe5",
+      "lastmod": "2026-10-09"
+    },
+    "/de/werkzeuge/": {
+      "hash": "3192db78f074913906d8a93cc4f2649a9ff81baaa9f9593d7f141ef6d87467b9",
+      "lastmod": "2026-10-09"
+    },
+    "/de/herunterladen/": {
+      "hash": "da0dae8da087463644667793723560ba19fd94bc40b5022d1d950941920d08db",
+      "lastmod": "2026-10-09"
+    },
+    "/fr/": {
+      "hash": "71eec2332a962f4bed4c01ec5f05318fbcad8627cab2522a49977675c6322cd0",
+      "lastmod": "2026-10-09"
+    },
+    "/fr/centre-de-connaissances/": {
+      "hash": "c9424f37733526a728ef9c1c0e6bbe1069b4df64bd799baed1b4cf1e9487d94d",
+      "lastmod": "2026-10-09"
+    },
+    "/fr/centre-de-connaissances/comprendre-la-dependance/": {
+      "hash": "7d9a823bdf36aa39adb26d8ca43f7922082068a0b024c1a4040478de4f432d3f",
+      "lastmod": "2026-10-09"
+    },
+    "/fr/centre-de-connaissances/pourquoi-fumes-tu/": {
+      "hash": "21d17f4ee3a7ab088088647d4f40de0728bb89202a3fff94419dd6a45d8b7899",
+      "lastmod": "2026-10-09"
+    },
+    "/fr/centre-de-connaissances/bienfaits-de-l-arret-du-tabac/": {
+      "hash": "91b27280a5b7d4021ea1720374a110d4e709f261968666aa6713674f6eb46cf6",
+      "lastmod": "2026-10-09"
+    },
+    "/fr/centre-de-connaissances/preparer-ton-plan-d-arret/": {
+      "hash": "9e5d491573a2b3bf0ddde1e5a197e0611fc3ac71ddfcdb04f2c20d8086f1d4c5",
+      "lastmod": "2026-10-09"
+    },
+    "/fr/centre-de-connaissances/identifier-tes-declencheurs/": {
+      "hash": "cc84dca0ff4736ca8f1117e338065592264d3403e4608df7886cc483d6088aea",
+      "lastmod": "2026-10-09"
+    },
+    "/fr/centre-de-connaissances/options-de-soutien/": {
+      "hash": "fe4afd7173b32642c965793261d58b9bc519fe89a761b6360d44645affd2152a",
+      "lastmod": "2026-10-09"
+    },
+    "/fr/centre-de-connaissances/jour-de-l-arret/": {
+      "hash": "c5522c276723a814d7128498681f443ad35c2630e337291f5b3d356e74ee371a",
+      "lastmod": "2026-10-09"
+    },
+    "/fr/centre-de-connaissances/sevrage-nicotinique/": {
+      "hash": "c7b3ae5ece13ca76fbfbb5847aac345a0323e56870c9b964605214dc5d568d17",
+      "lastmod": "2026-10-09"
+    },
+    "/fr/centre-de-connaissances/preparation-et-premiers-jours-resume/": {
+      "hash": "a95b7ab9723299247450ef97a28f9f5cf4b4d28bb30c2eeaee2c9635b15d443c",
+      "lastmod": "2026-10-09"
+    },
+    "/fr/centre-de-connaissances/pourquoi-les-envies-persistent/": {
+      "hash": "34d4b724de19a29fa3cb93308b9f92b84f008d6a945bbe5d5e93f02e59bf3f0d",
+      "lastmod": "2026-10-09"
+    },
+    "/fr/centre-de-connaissances/transformer-tes-declencheurs/": {
+      "hash": "47f2527718193956c5555751b5d2a03cac5cf8f967311262002846452b227ecd",
+      "lastmod": "2026-10-09"
+    },
+    "/fr/centre-de-connaissances/repenser-tes-croyances-sur-le-tabac/": {
+      "hash": "230465cf6bba7dd3d6c66178242409c7debb08454e71deed16589131ac0d63b9",
+      "lastmod": "2026-10-09"
+    },
+    "/fr/centre-de-connaissances/combler-le-vide-laisse-par-le-tabac/": {
+      "hash": "f806c0592c42e9817bb82d1790bc4906c581a5cf6c2e3f6a05488cd663e9f187",
+      "lastmod": "2026-10-09"
+    },
+    "/fr/centre-de-connaissances/renforcer-les-recompenses-naturelles/": {
+      "hash": "a2aa4d1101b8933327c3dc33a1a7715c758d7a405be4796da016fad4439d6213",
+      "lastmod": "2026-10-09"
+    },
+    "/fr/centre-de-connaissances/je-ne-fume-pas/": {
+      "hash": "c95664702d1327d9dcf808d96be60ed5a63ab857a75157d634e986bb5a20c453",
+      "lastmod": "2026-10-09"
+    },
+    "/fr/centre-de-connaissances/je-peux-le-controler/": {
+      "hash": "8c1f9a237f28c28a5e3352e01c5074e47dd6032f9ff419dea2aefefd09b07bcf",
+      "lastmod": "2026-10-09"
+    },
+    "/fr/centre-de-connaissances/liste-pour-une-vie-sans-tabac/": {
+      "hash": "605570ed0f0fbcebc824f39f9ad92018d012d6cd18b70e8bf835c2acbe559fc4",
+      "lastmod": "2026-10-09"
+    },
+    "/fr/centre-de-connaissances/changement-durable-resume/": {
+      "hash": "b321f547899aae4411706cdd5e92cf62f7807479872af8b2237b6a46fc29bf96",
+      "lastmod": "2026-10-09"
+    },
+    "/fr/centre-de-connaissances/comprendre-l-envie-de-fumer/": {
+      "hash": "d58cddc7a3d70727dd2f822918cf3685f9407412b892eaf4852bbde68a5b3bb6",
+      "lastmod": "2026-10-09"
+    },
+    "/fr/centre-de-connaissances/les-envies-comme-des-vagues/": {
+      "hash": "5489c52d3c55ffe87900c9f05a2ad57d397416ee58422e92cf47ee0991977c46",
+      "lastmod": "2026-10-09"
+    },
+    "/fr/centre-de-connaissances/surfer-sur-l-envie/": {
+      "hash": "8147531e4e738630c7b6b0ad6f7d37540e4694cd469c0294daa2f776cb587aad",
+      "lastmod": "2026-10-09"
+    },
+    "/fr/centre-de-connaissances/methode-4d/": {
+      "hash": "66a0fb756abbc1a4b32aaa192f6f497eda12265516c0b0fe2a2ed9b98ecdd06d",
+      "lastmod": "2026-10-09"
+    },
+    "/fr/centre-de-connaissances/plan-si-alors/": {
+      "hash": "156d9db33e7ec53a3e4a1c9adda042717c18128f7def6a9a7284b4f3f2ca8615",
+      "lastmod": "2026-10-09"
+    },
+    "/fr/centre-de-connaissances/ecart-et-rechute/": {
+      "hash": "da1b0aa08a88506d35031cc4ab4fd325b1d2d84cd6e651c4120b75fca0dcc1c5",
+      "lastmod": "2026-10-09"
+    },
+    "/fr/centre-de-connaissances/une-erreur-n-efface-pas-tes-progres/": {
+      "hash": "e93a3f916b4260676db46b58ecde8a9c9d4938be40eb78ecd784b3ad8e314cc9",
+      "lastmod": "2026-10-09"
+    },
+    "/fr/centre-de-connaissances/reprendre-apres-un-ecart/": {
+      "hash": "9ba929091fb87327de11126d34b56ac43089d1f9866bbb1b1f14daa2f89a7b7d",
+      "lastmod": "2026-10-09"
+    },
+    "/fr/centre-de-connaissances/creer-ton-plan-de-crise/": {
+      "hash": "4f813acec43e7579ae9983fc96becd1a49293b799fa96262e50dcbe552e48c45",
+      "lastmod": "2026-10-09"
+    },
+    "/fr/centre-de-connaissances/faire-le-point-sur-tes-progres/": {
+      "hash": "579711753f58e09accf7cb617d5e8165bd3e65e18d24b23931562e3efed8c8ce",
+      "lastmod": "2026-10-09"
+    },
+    "/fr/centre-de-connaissances/envies-et-rechute-resume/": {
+      "hash": "a8582d4e933dd3bb7751ed113847ddb01a8302cd89486ebb8f5e317a8afece90",
+      "lastmod": "2026-10-09"
+    },
+    "/fr/guide-arret-tabac/": {
+      "hash": "c38794a16e530ad0aa321a95a455cac27b8e868c419046e3ae8211699cdd3f83",
+      "lastmod": "2026-10-09"
+    },
+    "/fr/outils/": {
+      "hash": "f4dabbe28a2b288c2b584d5739d62ac67a435dc4bf910383a3cf3fa3a02099c3",
+      "lastmod": "2026-10-09"
+    },
+    "/fr/telecharger/": {
+      "hash": "c73df5a462116ce6fe8bfc5e8fed894fb49b1fcaa585cf37d9c46e7682cd8b8c",
+      "lastmod": "2026-10-09"
     }
   }
 }

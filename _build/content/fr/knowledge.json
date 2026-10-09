@@ -1,0 +1,951 @@
+[
+  {
+    "id": "section-1",
+    "order": 1,
+    "title": "Préparation et les premiers jours",
+    "description": "Le chapitre de base : comprendre comment fonctionne la dépendance, remarquer pourquoi tu fumes, et te préparer au jour de l'arrêt.",
+    "articles": [
+      {
+        "id": "b1-01",
+        "sectionId": "section-1",
+        "order": 1,
+        "title": "Qu'est-ce que la dépendance ?",
+        "summary": "Comprends les faces biologique, psychologique et sociale de la dépendance à travers la nicotine, le système de récompense et les comportements appris.",
+        "estimatedReadMinutes": 2,
+        "icon": "lightbulb",
+        "intro": "La dépendance au tabac n'est pas seulement une question d'habitude ou de volonté. Les effets de la nicotine sur le cerveau, les routines du quotidien et l'entourage social peuvent, peu à peu, construire un cycle qui s'alimente lui-même.",
+        "contentSections": [
+          {
+            "title": "La nicotine et le système de récompense",
+            "body": "La nicotine atteint rapidement le cerveau et agit sur les systèmes liés à la récompense, à la motivation et à l'apprentissage. La modification de la libération de dopamine aide le cerveau à apprendre à considérer le fait de fumer comme un comportement qui vaut la peine d'être répété.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Qu'est-ce qui change avec le temps ?",
+            "body": "Lorsque la consommation régulière se poursuit, le cerveau s'adapte à la nicotine. Quand le taux de nicotine baisse, des signes de sevrage comme l'agitation, la difficulté à se concentrer ou l'envie de fumer peuvent apparaître. Parce que fumer soulage brièvement ce malaise, le cycle se renforce de nouveau.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Les trois faces de la dépendance",
+            "body": "La face biologique concerne la nicotine et le sevrage, la face psychologique le sentiment de soulagement ou de récompense attaché au fait de fumer, et la face sociale et comportementale les associations avec le café, les repas, les pauses, les groupes d'amis ou l'alcool.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "La dépendance ne vient pas d'une seule cause. La nicotine, les pensées et les habitudes du quotidien agissent ensemble — remarquer les trois compte pendant que tu arrêtes."
+        ]
+      },
+      {
+        "id": "b1-02",
+        "sectionId": "section-1",
+        "order": 2,
+        "title": "Pourquoi fumes-tu, et pourquoi devrais-tu arrêter ?",
+        "summary": "Remarque tes déclencheurs, tes habitudes et les significations que tu as attachées au fait de fumer ; clarifie tes raisons d'arrêter.",
+        "estimatedReadMinutes": 2,
+        "icon": "lightbulb",
+        "intro": "Le fait de fumer est souvent porté par bien plus que le seul besoin de nicotine. Certains moments de la journée, des émotions, des personnes et des contextes peuvent s'associer à l'acte de fumer.",
+        "contentSections": [
+          {
+            "title": "Repère les moments devenus automatiques",
+            "body": "Le café, après les repas, un appel téléphonique, la conduite, une pause au travail, le stress ou les situations sociales peuvent, avec le temps, devenir un signal « fume maintenant ».",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Fumer te détend-il vraiment ?",
+            "body": "La nicotine a des propriétés stimulantes. Une partie du soulagement ressenti après avoir fumé peut être liée au bref apaisement du sevrage nicotinique qui s'accumule entre les cigarettes. Le cerveau peut alors interpréter ce soulagement temporaire comme « fumer résout mon stress ».",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Clarifie ta propre raison",
+            "body": "Écrire tes raisons personnelles de vouloir arrêter — la santé, la liberté, le temps, l'argent, la famille, la respiration ou la qualité de vie — peut rendre plus facile de te souvenir de ta décision dans les moments difficiles.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Voir les moments automatiques derrière ton comportement de fumeur fait passer l'arrêt d'une simple question de « tenir bon » à un changement plus conscient."
+        ]
+      },
+      {
+        "id": "b1-03",
+        "sectionId": "section-1",
+        "order": 3,
+        "title": "Que vas-tu gagner en arrêtant ?",
+        "summary": "Vois les gains que l'arrêt peut apporter pour la santé, la respiration, le temps, l'argent et la qualité de vie.",
+        "estimatedReadMinutes": 2,
+        "icon": "favorite",
+        "intro": "Les gains de l'arrêt ne tiennent pas en une seule journée. Ton corps commence à changer dès les premières heures ; des améliorations dans différents systèmes peuvent apparaître au fil des semaines, des mois et des années qui suivent.",
+        "contentSections": [
+          {
+            "title": "Chronologie générale",
+            "body": "Dans les premières minutes, la fréquence cardiaque et la tension artérielle peuvent commencer à se rapprocher de valeurs normales. Dans les premières heures, le monoxyde de carbone dans le sang diminue. Au cours des premiers jours, le taux de nicotine baisse nettement, et le goût et l'odorat peuvent commencer à se rétablir. Au fil des semaines et des mois, des améliorations peuvent apparaître dans la circulation, la respiration et la capacité des voies respiratoires à se nettoyer elles-mêmes.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Gains à long terme",
+            "body": "Plus tu restes sans tabac, plus on rapporte que les risques associés aux maladies cardiovasculaires et à certains cancers diminuent avec le temps.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Au-delà de la santé",
+            "body": "Récupérer l'argent et le temps consacrés aux cigarettes, constater que tu peux vivre sans être dépendant, et un sentiment croissant de maîtrise sur tes choix du quotidien sont aussi des gains importants.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Arrêter, ce n'est pas seulement retirer quelque chose de ta vie ; c'est le début de nouveaux gains en santé, en temps, en argent et en liberté."
+        ]
+      },
+      {
+        "id": "b1-04",
+        "sectionId": "section-1",
+        "order": 4,
+        "title": "Préparation et planification",
+        "summary": "Fixe ton jour d'arrêt, observe ton schéma de consommation, prépare ton environnement, et choisis à l'avance des alternatives pour les moments difficiles.",
+        "estimatedReadMinutes": 2,
+        "icon": "flag",
+        "intro": "Essayer de tout résoudre le jour de l'arrêt lui-même peut être difficile. Se préparer à l'avance rend les décisions plus faciles, surtout dans tes moments automatiques où tu fumes.",
+        "contentSections": [
+          {
+            "title": "Fixe ton jour d'arrêt",
+            "body": "Choisis une date claire pour toi et note les préparatifs que tu veux terminer avant elle.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Suis ton schéma de consommation",
+            "body": "Observe pendant quelques jours à quelle heure, avec quelle émotion, avec qui et dans quel contexte tu fumes. Ce relevé t'aide à voir tes déclencheurs les plus forts.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Organise ton environnement",
+            "body": "Retire de la maison, de la voiture et du travail les objets qui te rappellent le tabac — paquets, cendriers, briquets. Choisis un nouveau comportement pour les associations fortes comme le café, après les repas ou les pauses au travail.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Demande du soutien",
+            "body": "Dire aux personnes proches de toi que tu as décidé d'arrêter, et leur demander de ne pas t'offrir de cigarettes surtout pendant les premiers jours, peut rendre le processus plus facile.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "La préparation n'empêche pas les envies d'apparaître ; elle signifie que tu sais déjà ce que tu feras lorsqu'elles se présenteront."
+        ]
+      },
+      {
+        "id": "b1-05",
+        "sectionId": "section-1",
+        "order": 5,
+        "title": "Cartographie tes propres déclencheurs",
+        "summary": "Identifie, pour toi, les moments, les émotions, les contextes et les habitudes qui lancent automatiquement la pensée ou l'envie de fumer.",
+        "estimatedReadMinutes": 2,
+        "icon": "loop",
+        "intro": "Un déclencheur est une situation qui lance automatiquement la pensée ou l'envie de fumer. Il n'est pas le même pour chaque personne.",
+        "contentSections": [
+          {
+            "title": "Demande-toi",
+            "body": "À quel moment de la journée mon envie est-elle la plus forte ? Y a-t-il un lien avec le café, les repas, le téléphone, la conduite ou une pause au travail ? Quelles émotions — stress, colère, ennui, solitude ou célébration — augmentent l'envie ? Comment les contextes sociaux avec de l'alcool ou le fait de fumer m'affectent-ils ?",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Que peux-tu mettre à la place ?",
+            "body": "Pour chaque déclencheur fort, choisis le nouveau comportement le plus simple possible. Par exemple, une courte marche après le café, te brosser les dents après un repas, une pause de quelques minutes après un stress, ou un message de soutien.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Remarquer un déclencheur ouvre un petit intervalle, mais important, entre le comportement automatique et un choix conscient."
+        ]
+      },
+      {
+        "id": "b1-06",
+        "sectionId": "section-1",
+        "order": 6,
+        "title": "Options de soutien",
+        "summary": "Sache, dans les grandes lignes, que les patchs de nicotine, les gommes, les pastilles et certains médicaments peuvent être utilisés pour soutenir le processus d'arrêt.",
+        "estimatedReadMinutes": 2,
+        "icon": "favorite",
+        "intro": "Certaines personnes peuvent bénéficier d'un soutien supplémentaire pour gérer le sevrage et les envies pendant l'arrêt.",
+        "contentSections": [
+          {
+            "title": "Options générales",
+            "body": "Il existe des produits comme les patchs de nicotine, les gommes à la nicotine et les pastilles, ainsi que certains médicaments utilisés dans l'arrêt du tabac. Le but de ces options est de rendre le sevrage et les envies plus gérables pour certaines personnes.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Évalue avec un professionnel de santé",
+            "body": "L'usage des médicaments et des produits de soutien à la nicotine peut varier selon l'état de santé de chacun. Consulte un professionnel de santé lorsque c'est nécessaire.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Les produits de soutien et les médicaments peuvent être une option pour certaines personnes ; la décision de traitement personnelle appartient à un professionnel de santé."
+        ]
+      },
+      {
+        "id": "b1-07",
+        "sectionId": "section-1",
+        "order": 7,
+        "title": "Le jour de l'arrêt",
+        "summary": "Traverse ta première journée sans tabac de façon plus planifiée, grâce à des gestes simples comme l'eau, le mouvement, la respiration et l'organisation de ton environnement.",
+        "estimatedReadMinutes": 2,
+        "icon": "flag",
+        "intro": "Le but du premier jour n'est pas de te sentir impeccable. Le but est de planifier autant que possible à l'avance la première journée sans fumer.",
+        "contentSections": [
+          {
+            "title": "Change ta routine du matin",
+            "body": "Change le premier comportement le plus fortement associé au fait de fumer. Même un petit changement, comme une douche, une courte marche ou une routine de petit-déjeuner différente, peut rompre la chaîne automatique.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Prépare des outils simples",
+            "body": "Utilise le fait de boire de l'eau comme routine de rappel ; prépare des options sans tabac pour occuper tes mains et ta bouche. Quand une envie arrive, tu peux essayer la respiration 4-4-6 : inspire pendant 4 secondes, retiens pendant 4 secondes, expire lentement pendant 6 secondes.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Réduis les déclencheurs forts",
+            "body": "Surtout pendant les premiers jours, réduire autant que possible les contextes où des personnes fument et les déclencheurs qui te mettent à l'épreuve peut rendre les choses plus faciles.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Le premier jour peut être difficile. Le but n'est pas que l'envie ne vienne jamais ; c'est de pouvoir la laisser passer sans fumer lorsqu'elle arrive."
+        ]
+      },
+      {
+        "id": "b1-08",
+        "sectionId": "section-1",
+        "order": 8,
+        "title": "Le sevrage",
+        "summary": "Comprends pourquoi le sevrage se produit, quels types de symptômes il peut comporter, et qu'il fait partie d'un processus d'adaptation temporaire.",
+        "estimatedReadMinutes": 2,
+        "icon": "lightbulb",
+        "intro": "Quand la nicotine diminue, le cerveau et le corps essaient pendant un moment de s'ajuster à la nouvelle situation. Certains symptômes temporaires peuvent apparaître pendant cette période.",
+        "contentSections": [
+          {
+            "title": "Que pourrais-tu ressentir ?",
+            "body": "De l'agitation, des difficultés de concentration, des changements d'appétit, des envies de fumer et des symptômes semblables peuvent apparaître au début de l'arrêt.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Qu'est-ce que cela signifie ?",
+            "body": "Le fait que ces symptômes apparaissent ne signifie pas « tu as besoin d'une cigarette ». Cela peut simplement être une période pendant laquelle ton corps s'adapte à une routine sans nicotine.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Approche",
+            "body": "Le sommeil, une hydratation régulière, de courtes marches, des exercices de respiration, la réduction des déclencheurs et le recours à un soutien professionnel lorsque c'est nécessaire peuvent rendre cette période plus gérable.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Le sevrage peut être inconfortable, mais c'est un processus d'adaptation temporaire. Si les symptômes deviennent trop intenses ou trop difficiles à gérer, demande le soutien d'un professionnel de santé."
+        ]
+      },
+      {
+        "id": "b1-09",
+        "sectionId": "section-1",
+        "order": 9,
+        "title": "Résumé du chapitre",
+        "summary": "Rassemble en un seul endroit la dépendance, les déclencheurs, la préparation à l'arrêt et ton plan de base pour le premier jour.",
+        "estimatedReadMinutes": 1,
+        "icon": "flag",
+        "intro": "Dans ce chapitre, tu as vu que la dépendance au tabac n'est pas seulement une question de volonté ; le cerveau, les pensées, les routines et l'environnement jouent tous un rôle ensemble.",
+        "contentSections": [
+          {
+            "title": "À garder en tête",
+            "body": "Reconnaître tes déclencheurs avant d'arrêter, organiser ton environnement, choisir de nouvelles routines à l'avance et préparer un plan simple pour le premier jour rendent le processus plus clair.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Étape suivante",
+            "body": "Dans le chapitre suivant, nous aborderons les associations apprises qui peuvent durer plus longtemps que le départ de la nicotine hors du corps, et les façons de rendre durable une vie sans tabac.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "La préparation est faite : tu passes maintenant non seulement à l'arrêt du tabac, mais à la construction d'une routine sans tabac."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "section-2",
+    "order": 2,
+    "title": "Rendre durable une vie sans tabac",
+    "description": "Porte sur le fait de faire de la vie sans tabac ta nouvelle normalité, en réajustant les habitudes, les pensées et les déclencheurs qui peuvent durer plus longtemps que le départ de la nicotine hors de ton corps.",
+    "articles": [
+      {
+        "id": "b2-01",
+        "sectionId": "section-2",
+        "order": 1,
+        "title": "La nicotine est partie — pourquoi pourrais-tu encore avoir envie de fumer ?",
+        "summary": "Comprends que le sevrage physique et les associations apprises avec le tabac ne sont pas la même chose.",
+        "estimatedReadMinutes": 2,
+        "icon": "lightbulb",
+        "intro": "L'élimination de la nicotine hors du corps n'est pas le même processus que le désapprentissage des comportements de fumeur construits au fil des années.",
+        "contentSections": [
+          {
+            "title": "Le sevrage physique",
+            "body": "Quand la nicotine diminue, de l'agitation, des difficultés de concentration, des changements d'appétit ou des symptômes semblables peuvent apparaître. Ils sont liés au processus d'adaptation physique.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Les associations apprises",
+            "body": "Des associations comme café -> cigarette, repas -> cigarette ou pause -> cigarette peuvent devenir automatiques lorsqu'elles sont répétées pendant des années. Pour cette raison, même des mois plus tard, un certain contexte ou une émotion peut déclencher la pensée de fumer.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "La différence essentielle",
+            "body": "L'apparition d'une telle pensée ne signifie pas forcément que tu as de nouveau besoin de nicotine ; cela peut simplement être une ancienne association qui revient à la mémoire.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Le sevrage physique peut s'estomper ; mais les anciennes associations d'habitude peuvent rester en mémoire bien plus longtemps, et elles s'affaiblissent par un nouvel apprentissage."
+        ]
+      },
+      {
+        "id": "b2-02",
+        "sectionId": "section-2",
+        "order": 2,
+        "title": "Réécris tes déclencheurs",
+        "summary": "Au lieu d'essayer d'effacer entièrement les anciens déclencheurs, place de nouveaux comportements juste après ces mêmes moments.",
+        "estimatedReadMinutes": 2,
+        "icon": "loop",
+        "intro": "Il n'est pas toujours possible de retirer complètement les déclencheurs de ta vie. Un objectif plus réaliste est de choisir, encore et encore, un nouveau comportement après le même déclencheur.",
+        "contentSections": [
+          {
+            "title": "Crée de nouvelles associations",
+            "body": null,
+            "items": [
+              "Café -> quelques minutes dans un autre cadre, de l'eau, ou une courte marche.",
+              "Repas -> te brosser les dents, un thé, ou un bref mouvement.",
+              "Stress -> une respiration, une courte pause, ou un message de soutien.",
+              "Pause au travail -> un trajet sans tabac ou un autre groupe d'amis."
+            ],
+            "numbered": false
+          },
+          {
+            "title": "Alcool et contextes sociaux",
+            "body": "L'alcool peut renforcer l'envie de fumer et les comportements automatiques chez certaines personnes. Surtout au début, réorganiser la quantité, le cadre ou le plan peut aider.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Pourquoi la répétition compte",
+            "body": "Chaque fois que tu choisis le nouveau comportement, tu mets une option différente à la place de l'ancienne chaîne automatique. Le but n'est pas d'oublier d'un seul coup, mais de répéter le nouveau chemin.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Associer un ancien déclencheur à un nouveau comportement aide la vie sans tabac à devenir de plus en plus familière."
+        ]
+      },
+      {
+        "id": "b2-03",
+        "sectionId": "section-2",
+        "order": 3,
+        "title": "Réévalue tes pensées sur le tabac",
+        "summary": "Regarde, à travers un regard plus réaliste, d'anciennes pensées qui peuvent sembler très convaincantes pendant le processus d'arrêt.",
+        "estimatedReadMinutes": 2,
+        "icon": "lightbulb",
+        "intro": "Qu'une pensée paraisse puissante ne signifie pas qu'elle est vraie. Certaines anciennes croyances peuvent ressurgir pendant le processus d'arrêt.",
+        "contentSections": [
+          {
+            "title": "« Fumer me calme. »",
+            "body": "Une partie du sentiment de soulagement peut être le bref apaisement du sevrage nicotinique.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "« Je ne peux pas me concentrer sans fumer. »",
+            "body": "Le sevrage peut perturber temporairement l'attention ; fumer peut donner l'impression de réparer cette perturbation.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "« J'ai fumé pendant toutes ces années, cela ne sert à rien d'arrêter maintenant. »",
+            "body": "Le bénéfice de l'arrêt pour la santé et la qualité de vie se poursuit aussi à différents âges.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "« Une seule ne fera pas de mal. »",
+            "body": "Une seule cigarette peut raviver l'ancien cycle de comportement et la pensée « juste une de plus ».",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Tu n'as pas à débattre avec une ancienne pensée lorsqu'elle apparaît ; remarque-la d'abord, puis reformule-la avec une explication plus réaliste."
+        ]
+      },
+      {
+        "id": "b2-04",
+        "sectionId": "section-2",
+        "order": 4,
+        "title": "Avec quoi vas-tu combler le vide laissé par le tabac ?",
+        "summary": "Repère quelle fonction le tabac remplissait pour toi, et trouve une réponse sans tabac au même besoin.",
+        "estimatedReadMinutes": 2,
+        "icon": "auto_awesome",
+        "intro": "Pour certaines personnes, fumer n'est pas seulement la nicotine ; cela peut signifier une pause, un moment de sociabilité, une habitude main-bouche, ou « quelques minutes que je me réserve ».",
+        "contentSections": [
+          {
+            "title": "De nouvelles réponses selon le besoin",
+            "body": null,
+            "items": [
+              "Besoin d'une pause : une courte marche de 5 minutes ou une pause au grand air.",
+              "Stress : une respiration lente, une brève relaxation, ou s'éloigner du cadre pendant quelques minutes.",
+              "Habitude main-bouche : de l'eau, une gomme à mâcher sans sucre, ou d'autres routines sans tabac.",
+              "Besoin de récompense : une musique que tu aimes, un loisir, de petits objectifs, ou une activité physique.",
+              "Sociabilité : construire des amitiés et des routines de pause sans tabac."
+            ],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Ce par quoi tu remplaces le tabac peut dépendre du besoin auquel fumer répondait dans ta vie."
+        ]
+      },
+      {
+        "id": "b2-05",
+        "sectionId": "section-2",
+        "order": 5,
+        "title": "Renforce à nouveau tes récompenses naturelles",
+        "summary": "Plutôt que de construire ta vie sans tabac uniquement autour du « ne pas fumer », soutiens ton système de récompense et de motivation avec des routines naturelles du quotidien — le mouvement, le sommeil et la respiration.",
+        "estimatedReadMinutes": 2,
+        "icon": "auto_awesome",
+        "intro": "Plutôt que de construire une vie sans tabac uniquement autour du « ne pas fumer », augmenter les routines naturelles qui apportent du plaisir et de la détente peut être une approche plus durable.",
+        "contentSections": [
+          {
+            "title": "Choisis trois petits domaines",
+            "body": "Le mouvement, le sommeil et le plaisir. Par exemple, une courte marche, un rythme de sommeil plus régulier, et une activité sans tabac que tu aimes.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Pas besoin d'un grand changement",
+            "body": "Le but n'est pas de construire d'un seul coup une vie impeccable. Des comportements petits, mais répétables, peuvent peu à peu remplir l'espace que le tabac a laissé derrière lui.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Respiration et relaxation",
+            "body": "Une respiration lente et de brefs exercices de relaxation peuvent offrir une autre option dans les moments de stress, au lieu de tendre automatiquement la main vers une cigarette.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Plus tes nouvelles récompenses sont quotidiennes et accessibles, plus il peut devenir facile que vivre sans tabac te paraisse être ta nouvelle normalité."
+        ]
+      },
+      {
+        "id": "b2-06",
+        "sectionId": "section-2",
+        "order": 6,
+        "title": "De « j'essaie d'arrêter » à « je ne fume pas »",
+        "summary": "Construis une limite intérieure et sociale plus claire, qui aligne ton comportement sans tabac sur ta nouvelle identité.",
+        "estimatedReadMinutes": 2,
+        "icon": "flag",
+        "intro": "La phrase « j'essaie d'arrêter de fumer » peut, pour certaines personnes, donner le sentiment que la décision doit être reprise à chaque déclencheur.",
+        "contentSections": [
+          {
+            "title": "L'approche par l'identité",
+            "body": "« Je ne fume pas » vise à faire correspondre le comportement à ta nouvelle identité. Ce n'est pas une phrase magique ; c'est une limite renforcée par le comportement répété encore et encore.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Exemple en contexte social",
+            "body": "Dire « Non merci, je ne fume pas » au lieu de « Non merci, j'essaie d'arrêter » peut créer, pour certaines personnes, une limite plus claire et plus courte.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Renforce-la par le comportement",
+            "body": "L'identité se renforce non seulement par une phrase que tu prononces, mais par la nouvelle réponse que tu donnes à chaque déclencheur.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Le but est de faire du comportement sans tabac une partie naturelle de ton identité quotidienne, plutôt que de te voir engagé dans une lutte constante."
+        ]
+      },
+      {
+        "id": "b2-07",
+        "sectionId": "section-2",
+        "order": 7,
+        "title": "Attention à la pensée « je peux le contrôler maintenant »",
+        "summary": "Repère pourquoi la pensée « je pourrais en prendre juste une », qui peut apparaître une fois que les envies diminuent, peut être risquée.",
+        "estimatedReadMinutes": 2,
+        "icon": "local_fire_department",
+        "intro": "Quand l'envie de fumer diminue après des semaines ou des mois, la pensée « je peux contrôler la dépendance maintenant, je pourrais en prendre juste une » peut apparaître.",
+        "contentSections": [
+          {
+            "title": "Où est le risque ?",
+            "body": "Le risque ne tient pas seulement à la cigarette unique elle-même. Fumer peut renforcer de nouveau d'anciennes associations de récompense et de comportement, et raviver la pensée « juste une de plus ».",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Une limite simple",
+            "body": "Plutôt que d'essayer de « gérer juste une », la limite la plus simple qui protège ta situation sans tabac est de ne pas recommencer.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Rappelle-toi",
+            "body": "La diminution des envies est un progrès réel ; mais le sens de ce progrès n'est pas de revenir à un tabagisme contrôlé — c'est de renforcer ta vie sans tabac.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "La pensée « je vais bien maintenant, je pourrais en prendre juste une » peut ressembler à une preuve de progrès ; elle peut en réalité être une porte de retour vers l'ancien cycle."
+        ]
+      },
+      {
+        "id": "b2-08",
+        "sectionId": "section-2",
+        "order": 8,
+        "title": "Liste de contrôle d'une vie sans tabac",
+        "summary": "Utilise de courtes questions pour vérifier où ta nouvelle routine se renforce et où elle a encore besoin de soutien.",
+        "estimatedReadMinutes": 2,
+        "icon": "flag",
+        "intro": "Maintenir une vie sans tabac ne consiste pas seulement à regarder la journée qui vient de s'achever. Il est aussi utile de revoir de temps en temps à quel point tes nouveaux comportements se sont installés.",
+        "contentSections": [
+          {
+            "title": "Demande-toi",
+            "body": null,
+            "items": [
+              "Puis-je me décrire comme quelqu'un qui « ne fume pas » ?",
+              "Ai-je un nouveau comportement pour les déclencheurs forts comme le café, après les repas ou le stress ?",
+              "Puis-je remarquer et interroger d'anciennes pensées comme « fumer me détendait autrefois » ?"
+            ],
+            "numbered": false
+          },
+          {
+            "title": "Vérifie ta routine",
+            "body": null,
+            "items": [
+              "Est-ce que je construis une routine sans tabac pour le sommeil, le mouvement, la vie sociale et les activités agréables ?",
+              "Est-ce que j'accepte que la pensée « une seule ne fera pas de mal » puisse être risquée pour moi ?"
+            ],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "La liste de contrôle ne sert pas à juger ta réussite ; elle sert à repérer le prochain domaine à renforcer."
+        ]
+      },
+      {
+        "id": "b2-09",
+        "sectionId": "section-2",
+        "order": 9,
+        "title": "Résumé du chapitre",
+        "summary": "Rassemble en un seul endroit les habitudes, les pensées et la nouvelle identité qui peuvent durer plus longtemps que le sevrage physique.",
+        "estimatedReadMinutes": 1,
+        "icon": "flag",
+        "intro": "Le fait que la nicotine quitte le corps ne signifie pas que toutes les habitudes disparaissent en même temps.",
+        "contentSections": [
+          {
+            "title": "À garder en tête",
+            "body": "À mesure que tu réponds aux anciens déclencheurs par de nouveaux comportements, la vie sans tabac devient plus familière. Un changement durable ne consiste pas seulement à retirer la cigarette — c'est remplir l'espace qu'elle a laissé avec de nouvelles routines, de nouvelles récompenses et une nouvelle identité.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Étape suivante",
+            "body": "Dans le chapitre suivant, nous aborderons les envies intenses, la vague de l'envie, la méthode 4D, et la gestion de l'écart et de la rechute.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Une vie sans tabac n'est plus seulement un objectif à protéger ; c'est ta nouvelle routine quotidienne."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "section-3",
+    "order": 3,
+    "title": "Gérer les envies de fumer et prévenir la rechute",
+    "description": "Explique comment fonctionnent les envies de fumer, leur nature temporaire, les outils que tu peux utiliser dans un moment de crise, et comment empêcher un écart de se transformer en retour au tabagisme régulier.",
+    "articles": [
+      {
+        "id": "b3-01",
+        "sectionId": "section-3",
+        "order": 1,
+        "title": "Qu'est-ce qu'une envie de fumer ?",
+        "summary": "Comprends qu'une envie de fumer est une pulsion forte, mais temporaire, qui peut être déclenchée par le sevrage physique ou par des indices appris.",
+        "estimatedReadMinutes": 2,
+        "icon": "local_fire_department",
+        "intro": "Une envie de fumer est une forte pulsion de fumer, qui peut être déclenchée par un indice de l'environnement, une émotion, une pensée ou le sevrage nicotinique.",
+        "contentSections": [
+          {
+            "title": "Envie liée au sevrage physique",
+            "body": "Elle peut être liée aux symptômes biologiques qui apparaissent lorsque le taux de nicotine baisse, surtout au début de l'arrêt.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Envie psychologique conditionnée",
+            "body": "Elle peut aussi apparaître plus tard, déclenchée par des indices appris comme le stress, le café, l'odeur de la fumée, certaines personnes ou certains contextes.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Le message important",
+            "body": "Qu'une envie soit forte ne signifie pas que tu dois y céder. Tu peux la remarquer comme une pulsion et la laisser passer sans fumer.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Une envie n'est pas un ordre ; c'est une pulsion temporaire, et elle peut être déclenchée par différents indices."
+        ]
+      },
+      {
+        "id": "b3-02",
+        "sectionId": "section-3",
+        "order": 2,
+        "title": "Une envie monte et retombe comme une vague",
+        "summary": "Vois une envie non comme un besoin constant, mais comme une vague qui monte, atteint un pic, puis s'estompe.",
+        "estimatedReadMinutes": 2,
+        "icon": "local_fire_department",
+        "intro": "L'envie de fumer ne reste en général pas à la même intensité. Elle monte, devient perceptible, puis tend à s'estomper.",
+        "contentSections": [
+          {
+            "title": "La montée",
+            "body": "La pensée de fumer peut devenir perceptible et la tension peut monter. Remarquer « une vague d'envie vient de commencer, là, maintenant » est ici la première étape.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Le pic",
+            "body": "Ton esprit peut sembler bloqué sur la cigarette. C'est ici que tu utilises l'un des outils que tu as déjà choisis, comme la méthode 4D ou un changement de cadre.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "La retombée",
+            "body": "Quand l'intensité de la pulsion commence à baisser, remarque que tu l'as traversée sans fumer. Cette expérience peut renforcer ta confiance pour la vague suivante.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Au lieu de traiter la vague comme si elle n'avait pas de fin, la voir comme un processus temporaire qui monte et retombe peut la rendre plus facile à gérer."
+        ]
+      },
+      {
+        "id": "b3-03",
+        "sectionId": "section-3",
+        "order": 3,
+        "title": "Surfer sur l'envie",
+        "summary": "Au lieu de lutter contre une envie ou de la forcer à redescendre, observe brièvement le changement qui se produit dans ton corps et dans ton esprit.",
+        "estimatedReadMinutes": 2,
+        "icon": "loop",
+        "intro": "Surfer sur l'envie est une approche dans laquelle, au lieu d'essayer de chasser de force la pensée de fumer, tu l'observes comme une sensation temporaire et une impulsion du corps.",
+        "contentSections": [
+          {
+            "title": "Quatre étapes",
+            "body": null,
+            "items": [
+              "Nomme-la : « En ce moment, j'ai une envie de fumer. »",
+              "Repère-la dans le corps : comment ressens-tu la pulsion — dans la bouche, la gorge, la poitrine, l'estomac, ou ailleurs ?",
+              "Observe son changement : n'essaie pas de modifier la vague tout de suite. Observe-la monter et s'estomper pendant un moment.",
+              "Remarque la fin : quand la pulsion s'estompe, rappelle-toi que ce moment est passé sans fumer."
+            ],
+            "numbered": true
+          }
+        ],
+        "keyTakeaways": [
+          "Le but n'est pas d'aimer l'envie ni de l'ignorer ; c'est d'expérimenter directement qu'elle est temporaire."
+        ]
+      },
+      {
+        "id": "b3-04",
+        "sectionId": "section-3",
+        "order": 4,
+        "title": "La méthode 4D (Différer - Respirer profondément - Boire de l'eau - Se distraire)",
+        "summary": "Diffère • Respire profondément • Bois de l'eau • Distrais-toi : applique quatre étapes simples, dans l'ordre, pour interrompre le comportement automatique de fumer dans un moment de crise.",
+        "estimatedReadMinutes": 2,
+        "icon": "local_fire_department",
+        "intro": "La méthode 4D est un plan de crise simple que tu peux utiliser pour créer quelques minutes d'espace et interrompre le comportement automatique lorsqu'une forte envie survient.",
+        "contentSections": [
+          {
+            "title": "Gérer l'envie en 4 étapes",
+            "body": null,
+            "items": [
+              "Différer : quand l'envie arrive, au lieu d'agir tout de suite, reporte de quelques minutes la décision de fumer.",
+              "Respirer profondément : concentre-toi pour apaiser la tension du corps avec une respiration lente et contrôlée.",
+              "Boire de l'eau : quelques gorgées d'eau peuvent placer une pause simple au milieu et interrompre le comportement automatique de fumer.",
+              "Se distraire : change de cadre, fais une courte marche, appelle quelqu'un, ou oriente ton esprit vers autre chose."
+            ],
+            "numbered": true
+          }
+        ],
+        "keyTakeaways": [
+          "Le but de la méthode 4D n'est pas de « détruire » instantanément l'envie ; c'est de mettre du temps entre la réaction automatique et la cigarette, pour que la vague puisse passer."
+        ]
+      },
+      {
+        "id": "b3-05",
+        "sectionId": "section-3",
+        "order": 5,
+        "title": "Planifie avant que le déclencheur n'arrive",
+        "summary": "Décide à l'avance, avec une approche « si X se produit, je ferai Y », comment tu répondras dans les moments difficiles.",
+        "estimatedReadMinutes": 2,
+        "icon": "flag",
+        "intro": "Prendre des décisions dans un moment de crise peut être difficile. Un plan court « si - alors », préparé à l'avance, peut réduire le comportement automatique.",
+        "contentSections": [
+          {
+            "title": "Exemples",
+            "body": null,
+            "items": [
+              "Si j'ai envie d'une cigarette avec mon café, je boirai mon café ailleurs.",
+              "Si quelqu'un m'offre une cigarette, je dirai « je ne fume pas ».",
+              "Si je sors d'une réunion stressante, je marcherai d'abord quelques minutes."
+            ],
+            "numbered": false
+          },
+          {
+            "title": "Alcool et contextes sociaux",
+            "body": "Si l'alcool ou les contextes sociaux où des personnes fument augmentent ton envie, réorganiser le cadre, la durée ou le plan peut aider, surtout au début.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Choisir le plan à l'avance, au lieu de l'inventer pendant une crise, signifie que tu as moins de décisions à prendre dans les moments difficiles."
+        ]
+      },
+      {
+        "id": "b3-06",
+        "sectionId": "section-3",
+        "order": 6,
+        "title": "Un écart et une rechute ne sont pas la même chose",
+        "summary": "Comprends la différence entre un bref écart et un retour complet à ton ancien schéma régulier de tabagisme.",
+        "estimatedReadMinutes": 2,
+        "icon": "lightbulb",
+        "intro": "Un écart désigne une occasion unique ou de courte durée où l'on fume ; une rechute désigne le retour à l'ancien schéma régulier de consommation.",
+        "contentSections": [
+          {
+            "title": "Pourquoi cette distinction compte-t-elle ?",
+            "body": "Il n'est pas juste de traiter un écart comme sans importance — il peut raviver l'ancien cycle. Mais l'interpréter comme « j'ai complètement échoué maintenant » peut aussi augmenter le risque de continuer à fumer.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Équilibre",
+            "body": "Prends l'écart au sérieux, mais ne le vois pas comme la fin de tout le processus. L'information la plus précieuse, c'est quel déclencheur est entré en jeu à ce moment-là.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Un écart est une alerte, pas un verdict. Il est possible de comprendre ce qui s'est passé et de revenir à une vie sans tabac."
+        ]
+      },
+      {
+        "id": "b3-07",
+        "sectionId": "section-3",
+        "order": 7,
+        "title": "Le piège « une seule erreur a tout gâché »",
+        "summary": "Repère pourquoi la pensée « c'est déjà fichu », qui peut apparaître après un écart, peut rendre plus faciles la deuxième et la troisième cigarette.",
+        "estimatedReadMinutes": 2,
+        "icon": "local_fire_department",
+        "intro": "Après avoir fumé une cigarette, des pensées comme « je n'ai aucune volonté », « j'ai déjà tout gâché » ou « je fumerai aujourd'hui, je recommencerai demain » peuvent apparaître.",
+        "contentSections": [
+          {
+            "title": "Le vrai risque",
+            "body": "Traiter tout le processus comme perdu après un seul écart peut rendre plus facile, pour la personne, de continuer à fumer. C'est pourquoi il est important d'analyser rapidement une erreur au lieu de la grossir démesurément.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Trois questions",
+            "body": null,
+            "items": [
+              "Que s'est-il passé ?",
+              "Quel déclencheur est entré en jeu ?",
+              "Que ferai-je la prochaine fois dans la même situation ?"
+            ],
+            "numbered": false
+          },
+          {
+            "title": "Des données plutôt qu'un jugement",
+            "body": "Le but n'est pas de normaliser ce qui s'est passé ; c'est d'en faire une information qui construira un plan plus solide si le même scénario se répète.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "La pensée « tout est fini » n'est pas la réalité elle-même — c'est une réaction mentale qui peut transformer un écart en rechute."
+        ]
+      },
+      {
+        "id": "b3-08",
+        "sectionId": "section-3",
+        "order": 8,
+        "title": "Plan de reprise après un écart",
+        "summary": "Si tu as un écart, arrête avant qu'il ne continue, analyse le déclencheur, mets ton plan à jour et reviens à une vie sans tabac.",
+        "estimatedReadMinutes": 2,
+        "icon": "flag",
+        "intro": "Les premiers pas faits après un écart comptent pour empêcher que l'événement ne redevienne une consommation régulière.",
+        "contentSections": [
+          {
+            "title": "Étapes de reprise",
+            "body": null,
+            "items": [
+              "Ne continue pas : ne passe pas à une deuxième cigarette en te disant « c'est déjà fichu de toute façon ».",
+              "Écris-le : où étais-tu, avec qui étais-tu, et dans quelle émotion étais-tu ?",
+              "Identifie le déclencheur : était-ce le stress, l'alcool, la pression sociale, l'absence de plan, ou une forte habitude ?",
+              "Mets ton plan à jour : décide du nouveau comportement que tu utiliseras si le même scénario se répète.",
+              "Envisage un soutien : si l'envie ou le sevrage est trop fort pour le gérer par toi-même, un professionnel de santé ou un soutien à l'arrêt du tabac peut être envisagé.",
+              "Reviens : reviens à une vie sans tabac dès que possible."
+            ],
+            "numbered": true
+          }
+        ],
+        "keyTakeaways": [
+          "L'étape la plus importante après un écart est de l'arrêter plutôt que de le laisser continuer, et de renforcer ton plan."
+        ]
+      },
+      {
+        "id": "b3-09",
+        "sectionId": "section-3",
+        "order": 9,
+        "title": "Construis ton propre plan de crise",
+        "summary": "Décide à l'avance de tes déclencheurs les plus forts, de la première méthode que tu appliqueras, et de la personne vers qui tu te tourneras si tu en as besoin.",
+        "estimatedReadMinutes": 2,
+        "icon": "flag",
+        "intro": "Un plan de crise te donne une feuille de route déjà prête, au lieu d'avoir à réfléchir en partant de zéro dans un moment difficile.",
+        "contentSections": [
+          {
+            "title": "Complète ton plan",
+            "body": null,
+            "items": [
+              "Mes trois déclencheurs les plus forts : ________",
+              "La première étape que je ferai quand une envie arrive : ________",
+              "Une option pour changer de cadre : ________",
+              "Quelqu'un que je peux appeler ou à qui envoyer un message : ________",
+              "La phrase dont je me rappellerai : ________"
+            ],
+            "numbered": false
+          },
+          {
+            "title": "Garde-le court",
+            "body": "Plus ton plan est simple et accessible, plus tu as de chances de vraiment l'utiliser pendant une crise.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Un plan de crise n'efface pas l'envie à l'avance ; il rend clair ce que tu feras lorsqu'elle arrivera."
+        ]
+      },
+      {
+        "id": "b3-10",
+        "sectionId": "section-3",
+        "order": 10,
+        "title": "Revois régulièrement ton processus",
+        "summary": "Évalue quels déclencheurs se sont affaiblis, lesquels sont encore présents, et quelle méthode fonctionne le mieux pour toi.",
+        "estimatedReadMinutes": 2,
+        "icon": "loop",
+        "intro": "Tout au long de la vie sans tabac, la même stratégie peut ne pas fonctionner aussi bien dans chaque situation. Il est normal de mettre ton plan à jour de temps en temps.",
+        "contentSections": [
+          {
+            "title": "Demande-toi",
+            "body": null,
+            "items": [
+              "Quels déclencheurs est-ce que je gère maintenant plus confortablement ?",
+              "Dans quelles situations l'envie est-elle encore forte ?",
+              "Quelle méthode fonctionne le mieux pour moi ?",
+              "Si j'ai un écart, que ferai-je dans les premières minutes ?"
+            ],
+            "numbered": false
+          },
+          {
+            "title": "Connais la limite de ton soutien",
+            "body": "Il est utile de savoir à l'avance vers qui tu te tourneras pour un soutien professionnel, au moment où tu as du mal à gérer les choses par toi-même.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Rappelle-toi ta raison",
+            "body": "Rappelle-toi, de temps en temps, ta raison personnelle la plus forte de maintenir une vie sans tabac.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Un bon plan n'a pas à être figé ; il peut être mis à jour à mesure que tu gagnes de l'expérience."
+        ]
+      },
+      {
+        "id": "b3-11",
+        "sectionId": "section-3",
+        "order": 11,
+        "title": "Résumé du chapitre",
+        "summary": "Rassemble en un seul endroit les envies, la méthode 4D, la planification des déclencheurs, et la gestion de l'écart et de la rechute.",
+        "estimatedReadMinutes": 1,
+        "icon": "flag",
+        "intro": "Une envie n'est pas un ordre. Elle peut apparaître comme une pulsion temporaire, devenir plus forte, puis s'estomper.",
+        "contentSections": [
+          {
+            "title": "À garder en tête",
+            "body": "Remarquer l'envie, utiliser l'approche qui consiste à surfer sur l'envie ou la méthode 4D, préparer à l'avance un plan pour les déclencheurs, et ne pas laisser un éventuel écart se transformer en pensée « tout est fini », tout cela peut aider à protéger ta situation sans tabac.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Les questions principales",
+            "body": null,
+            "items": [
+              "Que s'est-il passé ?",
+              "Quel déclencheur est entré en jeu ?",
+              "Que ferai-je la prochaine fois ?"
+            ],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "L'envie passe, le plan se renforce. Le but n'est pas de traverser chaque moment difficile à la perfection ; c'est d'apprendre comment revenir à une vie sans tabac et la maintenir."
+        ]
+      }
+    ]
+  }
+]

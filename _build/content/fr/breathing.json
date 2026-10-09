@@ -1,0 +1,62 @@
+[
+  {
+    "id": "box_breathing",
+    "name": "Respiration carrée (4-4-4)",
+    "inhaleSeconds": 4,
+    "holdSeconds": 4,
+    "exhaleSeconds": 4,
+    "benefit": "Réduit le stress, améliore la concentration et la clarté mentale",
+    "area": "Gestion du stress et concentration",
+    "description": "Utilisée par les militaires et les sportifs pour calmer l'esprit et améliorer les performances."
+  },
+  {
+    "id": "relaxing_breath",
+    "name": "Respiration relaxante (4-7-8)",
+    "inhaleSeconds": 4,
+    "holdSeconds": 7,
+    "exhaleSeconds": 8,
+    "benefit": "Meilleur sommeil, moins d'anxiété et plus de calme",
+    "area": "Sommeil et gestion de l'anxiété",
+    "description": "Popularisée par le Dr Andrew Weil ; active le système nerveux parasympathique."
+  },
+  {
+    "id": "equal_breathing",
+    "name": "Respiration égale (5-5)",
+    "inhaleSeconds": 5,
+    "holdSeconds": 0,
+    "exhaleSeconds": 5,
+    "benefit": "Équilibre, calme et stabilité mentale",
+    "area": "Équilibre et calme",
+    "description": "Simple et efficace : une respiration d'équilibre facile à pratiquer au quotidien."
+  },
+  {
+    "id": "deep_breathing",
+    "name": "Respiration profonde (6-2-8)",
+    "inhaleSeconds": 6,
+    "holdSeconds": 2,
+    "exhaleSeconds": 8,
+    "benefit": "Plus d'énergie, de vigilance et d'oxygénation",
+    "area": "Énergie et vitalité",
+    "description": "Apporte plus d'oxygène au corps et aide à relever ton niveau d'énergie."
+  },
+  {
+    "id": "triangle_breathing",
+    "name": "Respiration triangulaire (3-3-3)",
+    "inhaleSeconds": 3,
+    "holdSeconds": 3,
+    "exhaleSeconds": 3,
+    "benefit": "Moins d'anxiété, gestion de la panique et calme rapide",
+    "area": "Anxiété et gestion de la panique",
+    "description": "Idéale pour se calmer vite ; efficace pendant les moments d'anxiété ou de panique."
+  },
+  {
+    "id": "extended_exhale",
+    "name": "Expiration prolongée (4-4-6)",
+    "inhaleSeconds": 4,
+    "holdSeconds": 4,
+    "exhaleSeconds": 6,
+    "benefit": "Moins de stress, régulation du rythme cardiaque et détente",
+    "area": "Stress et relaxation",
+    "description": "Renforce le système nerveux parasympathique grâce à une expiration plus longue."
+  }
+]

@@ -80,7 +80,7 @@ export default {
     instagram: 'Instagram',
     disclaimer:
       'Sigara Savar tıbbi cihaz değildir; tıbbi tavsiye, teşhis, tedavi, terapi, acil yardım veya garantili bir sigara bırakma programı sunmaz. Sitedeki içerikler genel bilgilendirme amaçlıdır. Acil durumlarda bulunduğunuz yerdeki acil yardım hizmetlerine başvurun.',
-    copyright: (year) => `© ${year} Sigara Savar`,
+    copyright: (year) => `© ${year} Sigara Savar® · Tüm hakları saklıdır.`,
   },
 
   common: {
@@ -100,57 +100,30 @@ export default {
   home: {
     title: 'Sigaradan Sonsuza Kadar Kurtul | Sigara Savar',
     description:
-      'Sigara Savar, sigarayı bırakma sürecinde ilerlemeni takip edebileceğin mobil uygulama. Kriz araçları, topluluk, ücretsiz bilgi ve bırakma rehberiyle tanış.',
+      'Sigara Savar ile sigarasız geçen günlerini takip et. Ücretsiz bırakma rehberi ve Bilgi Merkezi ile sürecini öğren, uygulamada deneyimlerini paylaş.',
     hero: {
-      eyebrow: 'SIGARA SAVAR',
       title: 'Sigaradan Sonsuza Kadar Kurtul.',
-      lead: 'Sigarayı bırakmak isteyenler için bir mobil uygulama. İlerlemeni takip et; kriz araçlarına ve topluluğa tek yerden ulaş.',
+      lead: 'Sigarasız günlerini ve birikimini takip et. Sigara Savar, sigarayı bırakmak isteyenler için bir mobil uygulama.',
       primary: 'Uygulamayı İndir',
-      secondary: 'Bırakma Rehberini Keşfet',
-      alt: 'Sigara Savar Gelişim ekranı: sigarasız geçen süre, gelişim puanı, sağlık hedefleri ve başarılar',
+      secondary: 'Rehberi keşfet',
+      alt: 'Sigara Savar Gelişim ekranı: sigarasız geçen günler, sağlık hedefleri ve yolculuk haritası',
     },
-    benefits: {
-      title: 'Bırakma sürecinde ihtiyaç duydukların, tek yerde.',
-      items: [
-        { title: 'Takip', text: 'Sigarasız geçen zamanını, içmediğin sigaraları ve birikimini gör.' },
-        { title: 'Zor anlar', text: 'Kriz Bekçisi, nefes egzersizleri ve kısa oyunlarla odağını değiştir.' },
-        { title: 'Bilgi', text: 'Ne yaşadığını ve bırakma sürecini kısa yazılarla anla.' },
-        { title: 'Topluluk', text: 'İlerlemeni paylaş, deneyimlerden öğren, birbirinize destek olun.' },
-      ],
-    },
-    app: {
-      title: 'Her gün aynı değil. Desteğin hazır.',
-      features: [
-        {
-          id: 'acil', label: 'Zor anlar', title: 'Kriz geldiğinde hazır ol.',
-          text: 'Kriz Bekçisi, nefes egzersizleri ve dikkatini değiştiren kısa oyunlar. İstek geldiğinde başvurabileceğin araçlar Acil Alan’da bir arada.',
-          screen: 'acil-alan',
-          alt: 'Gerçek Acil Alan ekranı: Kriz Bekçisi, nefes egzersizleri, su hatırlatıcı ve oyunlar',
-          link: 'Kriz araçlarını keşfet',
-        },
-        {
-          id: 'yolculuk', label: 'Yolculuğun', title: 'Bulunduğun adımı tanı.',
-          text: 'Yolculuk Haritası, karar gününden sonraki aşamaları anlamana yardımcı olur. Her adımda neler yaşayabileceğini ve nelere dikkat edebileceğini oku.',
-          screen: 'yolculuk-detoks',
-          alt: 'Gerçek Yolculuk Haritası ekranı: Detoks aşaması ve bu döneme ilişkin bilgiler',
-          link: 'Sağlık yolculuğunu rehberde gör',
-        },
-      ],
-    },
-    knowledge: {
-      title: 'Ne yaşadığını anlamak da sürecin bir parçası.',
-      featuredId: 'b1-01',
-      secondaryIds: ['b3-02', 'b3-08'],
-      cta: 'Tüm Bilgi Merkezini Keşfet',
-    },
-    community: {
-      title: 'Bu yolu yalnız yürümek zorunda değilsin.',
-      lead: 'İlk sigarasız gününü, zor geçen bir molayı ya da küçük bir kazanımını paylaş. Aynı süreci yaşayan insanlarla konuş, birbirinizden güç alın.',
-      note: 'Topluluk desteği kişisel deneyimlere dayanır.',
+    benefits: [
+      { title: 'İlerlemeni gör.', text: 'Sigarasız geçen günlerini, içmediğin sigaraları ve birikimini takip et.' },
+      { title: 'Zor anlara hazırlan.', text: 'İstek anları için bir plan yap. Nefes egzersizleriyle kendine kısa bir mola ver.' },
+      { title: 'Deneyimlerini paylaş.', text: 'Küçük kazanımlarını paylaş, aynı süreci yaşayan insanlarla iletişimde kal.' },
+    ],
+    learning: {
+      title: 'Bulunduğun yerden başla.',
+      lead: 'Bırakmayı düşünüyor, ilk günleri geçiriyor ya da yeniden deniyor olabilirsin. Rehberde kendi adımını bul.',
+      guide: 'Bırakma Rehberini Keşfet',
+      readingTitle: 'Bilgi Merkezi’nden',
+      articleIds: ['b1-04', 'b3-02'],
+      allArticles: 'Tüm yazıları keşfet',
     },
     download: {
-      title: 'İlerlemeni yanında taşı.',
-      lead: 'Sigara Savar, iPhone ve Android’de.',
+      title: 'Sigara Savar’ı indir.',
+      lead: 'İlerlemeni takip et, toplulukla deneyimlerini paylaş. iPhone ve Android için.',
     },
   },
 

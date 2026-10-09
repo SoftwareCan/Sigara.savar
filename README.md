@@ -24,7 +24,7 @@ The equivalent commands inside `_build` are `npm run build`, `npm run verify` an
 - `/indir/`: device-aware App Store or Google Play hand-off, with manual store buttons and a desktop QR code.
 - Existing `/privacy.html`, `/terms.html` and `/userDataDeletion.html`: preserved multilingual legal documents.
 
-Templates live in `_build/templates`, website copy in `_build/i18n/tr.mjs`, and the design in `assets/css`. Generated HTML is committed in the repository root and route directories; edit its source template and rebuild rather than editing generated pages.
+Templates live in `_build/templates`, website copy in `_build/i18n/`, and the design in `assets/css`. Generated HTML is committed in the repository root and route directories; edit its source template and rebuild rather than editing generated pages.
 
 Knowledge Center, health, breathing and journey data comes from the Flutter project `Sigara_Savar/quitSmoke`. `_build/content/SOURCE.json` records the source revision and paths. With the sibling Flutter checkout available, sync from `_build` with:
 
@@ -43,3 +43,9 @@ The static checker inspects all public pages for broken internal paths and fragm
 The build refreshes legal navigation and metadata while checking that document text inside `<main>` stays unchanged. Authentication remains paused via `AUTH_UI_ENABLED: false` in `_build/site.config.mjs`; existing authentication files are retained and marked `noindex`.
 
 Store URLs, public origin and legal/auth file lists have one source in `_build/site.config.mjs`. Homepage and article sharing images live in `assets/og`. The optional OG generator supports `--only default` when only homepage copy changes; it uses the existing development browser tooling and is separate from the dependency-free website build.
+
+## Five-language website
+
+Turkish is served at `/`; English, German, Spanish and French are under `/en/`, `/de/`, `/es/` and `/fr/`. Each language has its own homepage, 29 real Knowledge Center articles, guide, tools and download page. Header/footer language links preserve the corresponding page, and localized pages include reciprocal hreflang metadata.
+
+See [DESIGN_AND_LANGUAGES.md](DESIGN_AND_LANGUAGES.md) for the current design, complete route map, source files, QA and retained legal-language coverage. Homepage copy lives in `_build/i18n/home.mjs`; shared interface copy lives in each language dictionary. The sync script now supports all five languages and an optional third argument restricting a sync to one language.

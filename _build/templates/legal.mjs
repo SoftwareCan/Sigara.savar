@@ -79,6 +79,7 @@ export function refreshLegalPage(ctx, file, source) {
   out = replaceRegion(out, MARK.head, String(headTags(ctx, meta)).trim());
   out = replaceRegion(out, MARK.header, String(siteHeader(ctx, null)));
   out = replaceRegion(out, MARK.footer, String(siteFooter(ctx)));
+  out = out.replace(/<script src="\/?lang\.js[^"]*" defer><\/script>/, `<script src="${ctx.asset('/lang.js')}" defer></script>`);
   return out;
 }
 

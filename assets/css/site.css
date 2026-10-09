@@ -469,6 +469,15 @@ button {
   transform: translateY(-100%);
 }
 
+.site-header.menu-open::before {
+  content: "";
+  position: fixed;
+  inset: var(--header-h) 0 0;
+  z-index: -1;
+  background: rgba(16, 35, 32, 0.16);
+  pointer-events: none;
+}
+
 .site-header__inner {
   display: flex;
   align-items: center;
@@ -480,6 +489,7 @@ button {
 .brand {
   display: inline-flex;
   align-items: center;
+  min-height: 44px;
   gap: 0.65rem;
   color: var(--ink);
   text-decoration: none;
@@ -516,7 +526,9 @@ button {
 
 .nav__link {
   position: relative;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
   padding: 0.5rem 0;
   color: var(--ink-soft);
   font-size: 1rem;
@@ -610,12 +622,14 @@ button {
 
 .menu-panel {
   position: fixed;
-  inset: var(--header-h) 0 0 0;
+  inset: var(--header-h) 0 auto 0;
   z-index: var(--z-menu);
+  max-height: calc(100dvh - var(--header-h));
   overflow-y: auto;
   background: var(--paper);
   border-top: 1px solid var(--rule);
-  padding-block: var(--space-5) var(--space-7);
+  border-bottom: 1px solid var(--rule);
+  padding-block: var(--space-4) var(--space-5);
   overscroll-behavior: contain;
 }
 
@@ -630,35 +644,6 @@ button {
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .menu-panel.is-open .menu-panel__list li {
-    animation: menu-item-in 340ms var(--ease-out) both;
-  }
-
-  .menu-panel.is-open .menu-panel__list li:nth-child(2) {
-    animation-delay: 35ms;
-  }
-
-  .menu-panel.is-open .menu-panel__list li:nth-child(3) {
-    animation-delay: 70ms;
-  }
-
-  .menu-panel.is-open .menu-panel__list li:nth-child(4) {
-    animation-delay: 105ms;
-  }
-
-  .menu-panel.is-open .menu-panel__list li:nth-child(5) {
-    animation-delay: 140ms;
-  }
-}
-
-@keyframes menu-item-in {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-}
-
 .menu-panel__list {
   list-style: none;
 }
@@ -669,8 +654,8 @@ button {
   min-height: 56px;
   border-bottom: 1px solid var(--rule);
   color: var(--ink);
-  font-family: var(--serif);
-  font-size: 1.625rem;
+  font-size: 1.25rem;
+  font-weight: 500;
   text-decoration: none;
 }
 
@@ -678,20 +663,8 @@ button {
   color: var(--forest);
 }
 
-.menu-panel__stores {
-  margin-top: var(--space-6);
-}
-
-.menu-panel__stores p {
-  margin-bottom: var(--space-3);
-  color: var(--ink-soft);
-  font-size: var(--fs-sm);
-}
-
-.menu-panel__crisis {
-  display: inline-block;
-  margin-top: var(--space-6);
-  font-weight: 600;
+.menu-panel__download {
+  margin-top: var(--space-5);
 }
 
 .header-auth {
@@ -1706,90 +1679,85 @@ button {
 /* --------------------------------------------------------------- footer */
 
 .site-footer {
-  background: var(--forest-deep);
-  color: var(--on-dark);
-  padding-block: clamp(3.5rem, 2.5rem + 4vw, 6rem) var(--space-6);
+  background: var(--paper);
+  border-top: 1px solid var(--rule);
+  color: var(--ink-soft);
+  padding-block: clamp(2rem, 1.5rem + 2vw, 3rem) var(--space-6);
 }
 
 .site-footer a {
-  color: var(--on-dark);
+  color: var(--ink-soft);
   text-decoration: none;
 }
 
 .site-footer a:hover {
+  color: var(--forest);
   text-decoration: underline;
-}
-
-.site-footer :focus-visible {
-  outline-color: var(--brand);
 }
 
 .footer-top {
   display: grid;
-  gap: var(--space-7);
+  gap: var(--space-4);
 }
 
-.footer-brand .brand {
-  color: var(--on-dark);
+.footer-top .brand {
+  color: var(--ink);
+  justify-self: start;
 }
 
-.footer-brand p {
-  margin-top: var(--space-4);
-  color: var(--on-dark-soft);
-  max-width: 22rem;
-}
-
-.footer-groups {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: var(--space-6) var(--space-5);
-}
-
-.footer-group h2 {
-  font-family: var(--sans);
-  font-size: var(--fs-sm);
-  font-weight: 600;
-  letter-spacing: 0.01em;
-  color: var(--on-dark-soft);
-}
-
-.footer-group ul {
-  margin-top: var(--space-3);
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: clamp(1rem, 0.5rem + 1.5vw, 2rem);
   list-style: none;
+  font-size: 1rem;
 }
 
-.footer-group li {
-  margin-top: var(--space-1);
-}
-
-.footer-group a {
-  display: inline-block;
-  padding-block: 0.3rem;
+.footer-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding-block: var(--space-2);
 }
 
 .footer-bottom {
-  margin-top: var(--space-8);
-  padding-top: var(--space-5);
-  border-top: 1px solid var(--on-dark-rule);
+  margin-top: var(--space-5);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--rule);
   display: grid;
-  gap: var(--space-4);
-  color: var(--on-dark-soft);
+  gap: var(--space-3);
+  font-size: var(--fs-xs);
+}
+
+.footer-meta {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.footer-links--legal {
   font-size: var(--fs-sm);
 }
 
-.footer-bottom p {
-  max-width: 62rem;
+.footer-disclaimer {
+  max-width: 110ch;
+  line-height: 1.6;
 }
 
-@media (min-width: 700px) {
-  .footer-groups {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-}
-
-@media (min-width: 1060px) {
+@media (min-width: 860px) {
   .footer-top {
-    grid-template-columns: minmax(0, 4fr) minmax(0, 8fr);
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    column-gap: var(--space-7);
+  }
+
+  .footer-top > nav {
+    justify-self: end;
+  }
+
+  .footer-meta {
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
   }
 }
 
@@ -3235,4 +3203,18 @@ section.lang.tr {
     border-radius: 0;
     resize: none;
   }
+}
+
+/* Localized store labels use the same compact store-button dimensions. */
+.store-badges a.store-badge--text { display: inline-flex; flex-direction: column; align-items: flex-start; justify-content: center; min-width: 150px; height: 48px; padding: 6px 14px; background: #111; color: #fff; border: 1px solid #6d6d6d; line-height: 1.05; text-decoration: none; }
+.store-badge__label { font-size: 10px; }
+.store-badge__name { font-size: 20px; font-weight: 600; }
+
+/* Keep branding, language and menu controls comfortably inside narrow screens. */
+@media (max-width: 540px) {
+  .site-header__inner { gap: .5rem; }
+  .header-actions { gap: .35rem; }
+  .site-header .brand { gap: .5rem; }
+  .site-header .brand__name { font-size: 1.2rem; }
+  .menu-toggle { padding-inline: .6rem; gap: .4rem; }
 }

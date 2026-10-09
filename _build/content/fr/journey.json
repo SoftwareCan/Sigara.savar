@@ -1,0 +1,108 @@
+[
+  {
+    "level": 1,
+    "title": "Décision",
+    "dayLabel": "Jour 0",
+    "minDays": 0,
+    "requiresPremium": false,
+    "developments": "Avec ta décision d'arrêter de fumer, le processus de guérison de ton corps commence. Tu ne sens peut-être pas encore de changements physiques, mais la plus grande étape est faite. Dès maintenant, ton corps va commencer à éliminer la nicotine et fonctionner de plus en plus sainement chaque jour.",
+    "attentionPoints": [
+      "Retire toutes les cigarettes, briquets et cendriers de ton environnement.",
+      "Vois l'arrêt non pas comme un adieu ou une perte, mais comme la célébration de ta liberté retrouvée.",
+      "Essaie de boire beaucoup d'eau durant les premiers jours."
+    ],
+    "traps": [
+      "Je fume une dernière cigarette.",
+      "J'arrête demain.",
+      "Une seule ne fera pas de mal."
+    ]
+  },
+  {
+    "level": 2,
+    "title": "Désintoxication",
+    "dayLabel": "Jours 1–3",
+    "minDays": 1,
+    "requiresPremium": false,
+    "developments": "La nicotine et le monoxyde de carbone commencent à chuter rapidement. Tu peux remarquer les premières améliorations du goût et de l'odorat. Ton corps travaille dur pour éliminer la substance addictive.",
+    "attentionPoints": [
+      "Augmente ta consommation d'eau.",
+      "Fais de courtes marches.",
+      "Utilise les exercices de respiration lors des envies."
+    ],
+    "traps": [
+      "Confondre l'irritabilité et l'agitation avec un besoin de cigarette.",
+      "Penser que les envies dureront pour toujours.",
+      "L'idée de tirer une seule fois et de s'arrêter."
+    ]
+  },
+  {
+    "level": 3,
+    "title": "Première victoire",
+    "dayLabel": "Jours 3–7",
+    "minDays": 3,
+    "requiresPremium": true
+  },
+  {
+    "level": 4,
+    "title": "Nouveau départ",
+    "dayLabel": "1 semaine",
+    "minDays": 7,
+    "requiresPremium": true
+  },
+  {
+    "level": 5,
+    "title": "Résilience",
+    "dayLabel": "2 semaines",
+    "minDays": 14,
+    "requiresPremium": true
+  },
+  {
+    "level": 6,
+    "title": "Briser l'habitude",
+    "dayLabel": "1 mois",
+    "minDays": 30,
+    "requiresPremium": true
+  },
+  {
+    "level": 7,
+    "title": "Respirer à nouveau",
+    "dayLabel": "3 mois",
+    "minDays": 90,
+    "requiresPremium": true
+  },
+  {
+    "level": 8,
+    "title": "Grandir en force",
+    "dayLabel": "6 mois",
+    "minDays": 180,
+    "requiresPremium": true
+  },
+  {
+    "level": 9,
+    "title": "Nouvelle identité",
+    "dayLabel": "1 an",
+    "minDays": 365,
+    "requiresPremium": true
+  },
+  {
+    "level": 10,
+    "title": "Changement durable",
+    "dayLabel": "5 ans",
+    "minDays": 1825,
+    "requiresPremium": true
+  },
+  {
+    "level": 11,
+    "title": "Grande transformation",
+    "dayLabel": "10 ans",
+    "minDays": 3650,
+    "requiresPremium": true
+  },
+  {
+    "level": 12,
+    "title": "Liberté",
+    "dayLabel": "15 ans",
+    "minDays": 5475,
+    "requiresPremium": true
+  }
+]

@@ -1,0 +1,86 @@
+// Website-only labels added after the original dictionaries. Educational article
+// bodies remain in the synced, language-specific Flutter content files.
+const COPY = {
+  tr: {
+    knowledge: { all: 'Tüm yazılar', browse: 'Konuna göre keşfet', read: 'Yazıyı oku', onPage: 'Bu yazıda', related: 'Buradan devam edebilirsin', tools: ['Nefes egzersizini başlat (4-4-6)', '90 saniyelik akışı dene', '4D adımlarını araçlarda aç', 'Kriz planını doldur ve yazdır'] },
+    guide: {
+      phases: ['Bırakmaya hazırlanma', 'Bırakma günü', 'İlk 24 saat', 'İlk hafta', 'İstek geldiğinde', 'Tetikleyicilerini tanı', 'Yeniden sigara içtiysen', 'Rutini değiştirme', 'Destek alma'],
+      related: 'ilgili yazılar', byStage: 'Sürecine göre başla', nextStep: 'Bir sonraki adımın', start: 'Şu an nerede olduğundan başla.',
+      intro: 'Hazırlanıyor, ilk günleri geçiriyor ya da yeniden deniyor olabilirsin. Sana uygun başlığı seç; her adım Bilgi Merkezi’ndeki kısa yazılara açılır.',
+      quick: 'Hızlı başlangıç', quickLinks: ['İlk günüm', 'Şu an sigara istiyorum', 'Yeniden sigara içtim'],
+      recoveryLead: 'İlk dakikalardan uzun vadeye, sigarayı bırakmanın genel sağlık kazanımları.',
+      milestones: (n) => `${n} sağlık dönüm noktasını gör`, sources: 'Kaynaklar', stages: (n) => `Uygulamadaki ${n} aşamayı gör`,
+      earlyArticles: 'İlk günler için herkese açık yazılar', allArticles: 'Bilgi Merkezi’ndeki tüm yazılar', library: (sections, articles) => `${sections} bölümdeki ${articles} yazıyı gör`,
+      appTitle: 'Bu desteği cebinde taşı.', appText: 'Bilgi Merkezi’ne dön, ilerlemeni takip et; zor anlar için araçlarını yanında tut.',
+    },
+    download: { tagline: 'Her dumansız gün, yeni bir güç.', qrLink: 'sigarasavar.com/indir/ bağlantısı' },
+    stores: { apple: 'App Store’dan indir', google: 'Google Play’den indir' },
+    tools: { pdfLanguage: 'Bu PDF Türkçedir.' },
+  },
+  en: {
+    knowledge: { all: 'All articles', browse: 'Explore by topic', read: 'Read article', onPage: 'In this article', related: 'Keep reading', tools: ['Start the breathing exercise (4-4-6)', 'Try the 90-second flow', 'Open the 4D steps in Tools', 'Fill in and print your craving plan'] },
+    guide: {
+      phases: ['Preparing to quit', 'Quit day', 'The first 24 hours', 'The first week', 'When a craving hits', 'Know your triggers', 'If you have smoked again', 'Changing your routine', 'Getting support'],
+      related: 'related articles', byStage: 'Start with your current stage', nextStep: 'Your next step', start: 'Start where you are now.',
+      intro: 'You may be preparing, getting through the first few days or trying again. Choose the topic that fits; each step leads to short articles in the Knowledge Center.',
+      quick: 'Quick start', quickLinks: ['My first day', 'I want to smoke right now', 'I have smoked again'],
+      recoveryLead: 'General health benefits of quitting, from the first minutes to the longer term.',
+      milestones: (n) => `See ${n} health milestones`, sources: 'Sources', stages: (n) => `See the app’s ${n} stages`,
+      earlyArticles: 'Free articles for the first few days', allArticles: 'All Knowledge Center articles', library: (sections, articles) => `See ${articles} articles in ${sections} chapters`,
+      appTitle: 'Keep this support in your pocket.', appText: 'Return to the Knowledge Center, track your progress and keep your tools close for difficult moments.',
+    },
+    download: { tagline: 'Every smoke-free day builds strength.', qrLink: 'link to sigarasavar.com/indir/' },
+    stores: { apple: 'Download on the', google: 'Get it on' },
+    tools: { pdfLanguage: 'This PDF is in Turkish.' },
+  },
+  de: {
+    knowledge: { all: 'Alle Artikel', browse: 'Nach Thema entdecken', read: 'Artikel lesen', onPage: 'In diesem Artikel', related: 'Weiterlesen', tools: ['Atemübung starten (4-4-6)', 'Den 90-Sekunden-Ablauf ausprobieren', 'Die 4D-Schritte unter Werkzeuge öffnen', 'Deinen Plan für Rauchverlangen ausfüllen und drucken'] },
+    guide: {
+      phases: ['Den Rauchstopp vorbereiten', 'Der Tag des Rauchstopps', 'Die ersten 24 Stunden', 'Die erste Woche', 'Wenn Rauchverlangen aufkommt', 'Deine Auslöser erkennen', 'Wenn du wieder geraucht hast', 'Die Routine verändern', 'Unterstützung finden'],
+      related: 'passende Artikel', byStage: 'Bei deiner aktuellen Phase beginnen', nextStep: 'Dein nächster Schritt', start: 'Beginne dort, wo du gerade stehst.',
+      intro: 'Vielleicht bereitest du dich vor, erlebst die ersten Tage oder versuchst es erneut. Wähle das passende Thema; jeder Schritt führt zu kurzen Artikeln im Wissenszentrum.',
+      quick: 'Schnelleinstieg', quickLinks: ['Mein erster Tag', 'Ich möchte gerade rauchen', 'Ich habe wieder geraucht'],
+      recoveryLead: 'Allgemeine gesundheitliche Vorteile des Rauchstopps – von den ersten Minuten bis langfristig.',
+      milestones: (n) => `${n} gesundheitliche Meilensteine ansehen`, sources: 'Quellen', stages: (n) => `Die ${n} Phasen der App ansehen`,
+      earlyArticles: 'Frei zugängliche Artikel für die ersten Tage', allArticles: 'Alle Artikel im Wissenszentrum', library: (sections, articles) => `${articles} Artikel in ${sections} Kapiteln ansehen`,
+      appTitle: 'Diese Unterstützung passt in deine Tasche.', appText: 'Kehre zum Wissenszentrum zurück, verfolge deine Fortschritte und halte deine Werkzeuge für schwierige Momente bereit.',
+    },
+    download: { tagline: 'Jeder rauchfreie Tag gibt dir neue Kraft.', qrLink: 'Link zu sigarasavar.com/indir/' },
+    stores: { apple: 'Laden im', google: 'Jetzt bei' },
+    tools: { pdfLanguage: 'Dieses PDF ist auf Türkisch.' },
+  },
+  es: {
+    knowledge: { all: 'Todos los artículos', browse: 'Explorar por tema', read: 'Leer artículo', onPage: 'En este artículo', related: 'Sigue leyendo', tools: ['Iniciar el ejercicio de respiración (4-4-6)', 'Probar el ejercicio de 90 segundos', 'Abrir los pasos de las 4D en Herramientas', 'Completar e imprimir tu plan para las ganas de fumar'] },
+    guide: {
+      phases: ['Prepararte para dejarlo', 'El día de dejar de fumar', 'Las primeras 24 horas', 'La primera semana', 'Cuando aparecen las ganas', 'Conocer tus desencadenantes', 'Si has vuelto a fumar', 'Cambiar tu rutina', 'Buscar apoyo'],
+      related: 'artículos relacionados', byStage: 'Empieza por tu etapa actual', nextStep: 'Tu siguiente paso', start: 'Empieza donde estás ahora.',
+      intro: 'Puede que te estés preparando, pasando los primeros días o intentándolo de nuevo. Elige el tema que encaje contigo; cada paso lleva a artículos breves del Centro de Información.',
+      quick: 'Inicio rápido', quickLinks: ['Mi primer día', 'Quiero fumar ahora', 'He vuelto a fumar'],
+      recoveryLead: 'Beneficios generales para la salud al dejar de fumar, desde los primeros minutos hasta el largo plazo.',
+      milestones: (n) => `Ver ${n} hitos de salud`, sources: 'Fuentes', stages: (n) => `Ver las ${n} etapas de la aplicación`,
+      earlyArticles: 'Artículos de libre acceso para los primeros días', allArticles: 'Todos los artículos del Centro de Información', library: (sections, articles) => `Ver ${articles} artículos en ${sections} capítulos`,
+      appTitle: 'Lleva este apoyo en el bolsillo.', appText: 'Vuelve al Centro de Información, sigue tu progreso y ten tus herramientas a mano para los momentos difíciles.',
+    },
+    download: { tagline: 'Cada día sin humo te da más fuerza.', qrLink: 'enlace a sigarasavar.com/indir/' },
+    stores: { apple: 'Descárgala en', google: 'Disponible en' },
+    tools: { pdfLanguage: 'Este PDF está en turco.' },
+  },
+  fr: {
+    knowledge: { all: 'Tous les articles', browse: 'Explorer par thème', read: 'Lire l’article', onPage: 'Dans cet article', related: 'Pour continuer', tools: ['Commencer l’exercice de respiration (4-4-6)', 'Essayer l’exercice de 90 secondes', 'Ouvrir les étapes des 4D dans les outils', 'Compléter et imprimer ton plan pour les envies de fumer'] },
+    guide: {
+      phases: ['Préparer l’arrêt', 'Le jour de l’arrêt', 'Les premières 24 heures', 'La première semaine', 'Quand une envie arrive', 'Reconnaître tes déclencheurs', 'Si tu as refumé', 'Changer ta routine', 'Trouver du soutien'],
+      related: 'articles associés', byStage: 'Commencer par ton étape actuelle', nextStep: 'Ta prochaine étape', start: 'Commence là où tu en es.',
+      intro: 'Tu prépares peut-être ton arrêt, tu traverses les premiers jours ou tu réessaies. Choisis le sujet qui te correspond ; chaque étape mène à de courts articles du Centre de connaissances.',
+      quick: 'Accès rapide', quickLinks: ['Mon premier jour', 'J’ai envie de fumer maintenant', 'J’ai refumé'],
+      recoveryLead: 'Les bénéfices généraux de l’arrêt pour la santé, des premières minutes au long terme.',
+      milestones: (n) => `Voir ${n} étapes de récupération`, sources: 'Sources', stages: (n) => `Voir les ${n} étapes de l’application`,
+      earlyArticles: 'Des articles en libre accès pour les premiers jours', allArticles: 'Tous les articles du Centre de connaissances', library: (sections, articles) => `Voir ${articles} articles dans ${sections} chapitres`,
+      appTitle: 'Garde ce soutien dans ta poche.', appText: 'Retrouve le Centre de connaissances, suis tes progrès et garde tes outils à portée de main pour les moments difficiles.',
+    },
+    download: { tagline: 'Chaque jour sans tabac te donne de la force.', qrLink: 'lien vers sigarasavar.com/indir/' },
+    stores: { apple: 'Télécharger sur', google: 'Disponible sur' },
+    tools: { pdfLanguage: 'Ce PDF est en turc.' },
+  },
+};
+
+export const editorialCopy = (lang = 'tr') => COPY[lang] || COPY.tr;

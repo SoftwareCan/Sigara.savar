@@ -1,14 +1,15 @@
 import { html } from '../lib/html.mjs';
 import { searchKey, splitLead } from '../lib/util.mjs';
 import { storeBadges } from './components.mjs';
+import { editorialCopy } from '../i18n/editorial.mjs';
 
 // Web-only links from an article to the matching browser tool.
 const TOOL_LINKS = {
-  'b1-07': { hash: '#nefes', label: 'Nefes egzersizini başlat (4-4-6)' },
-  'b3-02': { hash: '#kriz-bekcisi', label: '90 saniyelik akışı dene' },
-  'b3-03': { hash: '#kriz-bekcisi', label: '90 saniyelik akışı dene' },
-  'b3-04': { hash: '#yontem-4d', label: '4D adımlarını araçlarda aç' },
-  'b3-09': { hash: '#kriz-plani', label: 'Kriz planını doldur ve yazdır' },
+  'b1-07': { hash: '#nefes', labelIndex: 0 },
+  'b3-02': { hash: '#kriz-bekcisi', labelIndex: 1 },
+  'b3-03': { hash: '#kriz-bekcisi', labelIndex: 1 },
+  'b3-04': { hash: '#yontem-4d', labelIndex: 2 },
+  'b3-09': { hash: '#kriz-plani', labelIndex: 3 },
 };
 
 // Editorial connections use existing app articles. They complement the linear
@@ -45,20 +46,12 @@ const RELATED_ARTICLES = {
   'b3-11': ['b1-04', 'b2-08'],
 };
 
-// Interface labels only: the article content remains in synced app data.
-const EDITORIAL_LABELS = {
-  tr: { all: 'Tüm yazılar', browse: 'Konuna göre keşfet', read: 'Yazıyı oku', onPage: 'Bu yazıda', related: 'Buradan devam edebilirsin' },
-  en: { all: 'All articles', browse: 'Explore by topic', read: 'Read article', onPage: 'In this article', related: 'Keep reading' },
-  es: { all: 'Todos los artículos', browse: 'Explorar por tema', read: 'Leer artículo', onPage: 'En este artículo', related: 'Sigue leyendo' },
-  de: { all: 'Alle Artikel', browse: 'Nach Thema entdecken', read: 'Artikel lesen', onPage: 'In diesem Artikel', related: 'Weiterlesen' },
-};
-
-const editorialLabels = (ctx) => EDITORIAL_LABELS[ctx.lang] || EDITORIAL_LABELS.tr;
+const editorialLabels = (ctx) => editorialCopy(ctx.lang).knowledge;
 
 const prettify = (text) => String(text).replace(/\s->\s/g, ' → ');
 
 export const displayTitle = (article, section) =>
-  /^bölüm özeti$/i.test(article.title.trim()) ? `${section.title}: ${article.title}` : article.title;
+  /^(?:bölüm özeti|chapter summary|resumen del capítulo|kapitelzusammenfassung|résumé (?:du chapitre|de la section))$/iu.test(article.title.trim()) ? `${section.title}: ${article.title}` : article.title;
 
 function itemContent(text) {
   const { lead, rest } = splitLead(prettify(text));
@@ -208,12 +201,13 @@ export function articlePage(ctx, article) {
   const prev = flat[flatIndex - 1];
   const next = flat[flatIndex + 1];
   const path = url.article(article.id);
-  const takeawayTitle = article.contentSections.some((c) => c.title.trim().toLocaleLowerCase('tr') === t.common.takeaways.toLocaleLowerCase('tr'))
+  const takeawayTitle = article.contentSections.some((c) => c.title.trim().toLocaleLowerCase(ctx.lang) === t.common.takeaways.toLocaleLowerCase(ctx.lang))
     ? t.common.takeawaysAlt
     : t.common.takeaways;
-  const tool = TOOL_LINKS[article.id];
   const isCrisisSection = section.order === 3;
   const labels = editorialLabels(ctx);
+  const toolInfo = TOOL_LINKS[article.id];
+  const tool = toolInfo ? { ...toolInfo, label: labels.tools[toolInfo.labelIndex] } : null;
   const related = (RELATED_ARTICLES[article.id] || []).map((id) => ctx.articleById(id)).filter(Boolean);
   const sectionAnchor = (i) => `yazi-bolum-${i + 1}`;
 

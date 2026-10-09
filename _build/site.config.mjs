@@ -12,7 +12,7 @@ export default {
   AUTH_UI_ENABLED: false,
 
   defaultLocale: 'tr',
-  // Only enabled locales are built. Content for en/es/de is already synced in
+  // Only enabled locales are built. Source app content is synced in
   // _build/content/<lang>/; enabling one needs _build/i18n/<lang>.mjs and slugs.
   locales: {
     tr: {
@@ -23,25 +23,32 @@ export default {
       routes: { knowledge: 'bilgi-merkezi', guide: 'birakma-rehberi', tools: 'araclar', download: 'indir' },
     },
     en: {
-      enabled: false,
+      enabled: true,
       htmlLang: 'en',
       ogLocale: 'en_US',
       prefix: 'en',
       routes: { knowledge: 'knowledge-center', guide: 'quit-guide', tools: 'tools', download: 'download' },
     },
     es: {
-      enabled: false,
+      enabled: true,
       htmlLang: 'es',
       ogLocale: 'es_ES',
       prefix: 'es',
       routes: { knowledge: 'centro-de-informacion', guide: 'guia-para-dejar', tools: 'herramientas', download: 'descargar' },
     },
     de: {
-      enabled: false,
+      enabled: true,
       htmlLang: 'de',
       ogLocale: 'de_DE',
       prefix: 'de',
       routes: { knowledge: 'wissenszentrum', guide: 'rauchstopp-leitfaden', tools: 'werkzeuge', download: 'herunterladen' },
+    },
+    fr: {
+      enabled: true,
+      htmlLang: 'fr',
+      ogLocale: 'fr_FR',
+      prefix: 'fr',
+      routes: { knowledge: 'centre-de-connaissances', guide: 'guide-arret-tabac', tools: 'outils', download: 'telecharger' },
     },
   },
 
