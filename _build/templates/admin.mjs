@@ -1,0 +1,73 @@
+import { html, raw } from '../lib/html.mjs';
+import { homepageAdminData } from '../lib/admin-home.mjs';
+import { homepageAdminPanel } from './admin-home.mjs';
+
+const icon = (name) => {
+  const paths = {
+    home: '<path d="m3 10 9-7 9 7v11H3Z"/><path d="M9 21v-8h6v8"/>',
+    articles: '<path d="M7 3h10a2 2 0 0 1 2 2v16H5V5a2 2 0 0 1 2-2Z"/><path d="M9 8h6M9 12h6M9 16h4"/>',
+    languages: '<path d="M3 5h12M9 3v2M5 5c0 6 4 10 9 11M13 5c0 6-4 10-9 11M14 21l4-10 4 10M15.5 17h5"/>',
+    media: '<rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8" cy="8" r="1.5"/><path d="m3 17 5-5 4 4 4-7 5 8"/>',
+    search: '<circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/>',
+    drafts: '<path d="M4 5h16v16H4Z"/><path d="M8 3v5h8V3M8 21v-8h8v8"/>',
+    external: '<path d="M14 3h7v7M21 3 11 13M10 5H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5"/>',
+    export: '<path d="M12 3v12m-4-4 4 4 4-4M4 16v5h16v-5"/>',
+    chevron: '<path d="m9 5 7 7-7 7"/>',
+    check: '<path d="m5 12 4 4L19 6"/>',
+    close: '<path d="m6 6 12 12M6 18 18 6"/>',
+  };
+  return html`<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${raw(paths[name] || paths.articles)}</svg>`;
+};
+
+export function adminPage(ctx, data) {
+  const uniqueCount = new Set(data.articles.map((article) => article.id)).size;
+  const nav = [ ['home', 'Ana sayfa', 'home'], ['content', 'İçerikler', 'articles'], ['translations', 'Diller', 'languages'], ['media', 'Medya', 'media'], ['seo', 'SEO kontrolü', 'search'], ['drafts', 'Taslaklar', 'drafts'] ];
+  const trArticles = data.articles.filter((article) => article.locale === 'tr');
+  const main = html`<div class="admin-shell">
+  <aside class="admin-sidebar" aria-label="Yönetim alanı">
+    <a class="admin-brand" href="/admin/"><img src="${ctx.asset('/assets/brand/icon-96.png')}" alt="" width="36" height="36"><span>Sigara Savar<strong>İçerik yönetimi</strong></span></a>
+    <div class="admin-workspace"><span class="admin-status-dot" aria-hidden="true"></span><span>Yerel çalışma alanı</span></div>
+    <nav aria-label="Panel bölümleri"><ul>${nav.map(([id, label, glyph]) => html`<li><a href="#${id}" data-admin-tab="${id}"${id === 'content' ? raw(' aria-current="page"') : ''}>${icon(glyph)}<span>${label}</span>${id === 'drafts' ? html`<span class="admin-nav-count" data-draft-count>0</span>` : ''}</a></li>`)}</ul></nav>
+    <div class="admin-sidebar-bottom"><a href="/" target="_blank" rel="noopener">${icon('external')}<span>Siteyi görüntüle</span></a><p>© ${ctx.buildDate.slice(0, 4)} Sigara Savar®</p></div>
+  </aside>
+  <div class="admin-body">
+    <header class="admin-topbar"><p>Web sitesi <span aria-hidden="true">/</span> <strong data-admin-breadcrumb>İçerikler</strong></p><button class="admin-button admin-button--subtle" type="button" data-export-all>${icon('export')}<span>Taslakları dışa aktar</span></button></header>
+    <div class="admin-main">
+      <div class="admin-heading"><div><h1>İçerik çalışma alanı</h1><p>Yazıları, çevirileri ve site görsellerini tek yerden gözden geçir.</p></div><a class="admin-button admin-button--primary" href="#content" data-admin-tab="content">Yazıları düzenle ${icon('chevron')}</a></div>
+      <div class="admin-local-note"><span class="admin-status-dot" aria-hidden="true"></span><p>Değişiklikler yalnızca bu tarayıcıya kaydedilir. Dışa aktarılan taslaklar incelemeye hazırdır; bu panel siteyi yayına almaz.</p></div>
+      <div class="admin-overview" aria-label="Kaynak içerik özeti"><div><strong>${uniqueCount}</strong><span>Bilgi Merkezi yazısı</span></div><div><strong>${data.locales.length}</strong><span>İçerik dili</span></div><div><strong>${data.articles.length}</strong><span>Dil sürümü</span></div><div><strong data-draft-count>0</strong><span>Yazı taslağı</span></div></div>
+      ${homepageAdminPanel(homepageAdminData(ctx.config))}
+      <section class="admin-panel" id="content" data-admin-view="content" aria-labelledby="content-title">
+        <div class="admin-panel-heading"><div><h2 id="content-title">Bilgi Merkezi</h2><p>Uygulamadaki gerçek yazılar. Düzenlemek için bir yazı seç.</p></div><span class="admin-result-count" data-content-count>${trArticles.length} yazı</span></div>
+        <div class="admin-filters"><label class="admin-search">${icon('search')}<span class="visually-hidden">Yazılarda ara</span><input type="search" id="admin-search" placeholder="Yazı adı, konu veya anahtar kelime" autocomplete="off"></label><label><span class="visually-hidden">İçerik dili</span><select id="admin-locale">${data.locales.map((locale) => html`<option value="${locale.code}">${locale.name}</option>`)}</select></label><label><span class="visually-hidden">İçerik bölümü</span><select id="admin-section"><option value="all">Tüm bölümler</option><option value="section-1">Hazırlık ve ilk günler</option><option value="section-2">Kalıcı değişim</option><option value="section-3">İstek ve nüks</option></select></label></div>
+        <div class="admin-table-wrap"><table class="admin-table"><thead><tr><th scope="col">Yazı</th><th scope="col">Bölüm</th><th scope="col">Süre</th><th scope="col">Durum</th><th scope="col"><span class="visually-hidden">İşlem</span></th></tr></thead><tbody data-article-rows>${trArticles.map((article) => html`<tr><td><button class="admin-article-link" type="button" data-edit-article="${article.locale}:${article.id}">${article.title}</button><span class="admin-row-path">${article.route}</span></td><td>${article.sectionTitle}</td><td>${article.estimatedReadMinutes} dk</td><td><span class="admin-tag">Kaynak içerik</span></td><td><button class="admin-icon-button" type="button" data-edit-article="${article.locale}:${article.id}" aria-label="${article.title} yazısını düzenle">${icon('chevron')}</button></td></tr>`)}</tbody></table></div><div class="admin-empty" data-content-empty hidden><h3>Bu aramayla eşleşen yazı yok.</h3><p>Başka bir kelime dene veya bölüm filtresini kaldır.</p><button class="admin-button" type="button" data-reset-filters>Filtreleri temizle</button></div>
+        <div class="admin-table-footer"><span data-content-footer>${trArticles.length} yazı gösteriliyor</span><span>Kaynak: Sigara Savar uygulaması</span></div>
+      </section>
+      <section class="admin-panel" id="translations" data-admin-view="translations" aria-labelledby="translations-title" hidden><div class="admin-panel-heading"><div><h2 id="translations-title">Diller</h2><p>Her dildeki kaynak yazılar ve yerel taslaklar.</p></div></div><div class="admin-language-list" data-language-rows></div><div class="admin-editorial-note"><h3>İçeriğin kaynağı belli.</h3><p>Bu envanter, uygulamanın beş dildeki Bilgi Merkezi dosyalarından oluşturuldu. Taslaklar kaynak metni değiştirmez; her dil sürümünü ayrı düzenleyebilirsin.</p></div></section>
+      <section class="admin-panel" id="media" data-admin-view="media" aria-labelledby="media-title" hidden><div class="admin-panel-heading"><div><h2 id="media-title">Medya kütüphanesi</h2><p>Sitenin mevcut görselleri, boyutları ve dosya yolları.</p></div><span class="admin-result-count">${data.media.length} dosya</span></div><section class="admin-gallery-plan" aria-labelledby="admin-gallery-title"><div class="admin-gallery-heading"><div><h3 id="admin-gallery-title">Ana sayfa galerisi</h3><p>Görsellerin sırasını ve beş dildeki alternatif metinlerini planla.</p></div><span class="admin-tag" data-gallery-draft-status>Kaynak düzeni</span></div><div class="admin-gallery-list" data-gallery-plan-rows></div><div class="admin-gallery-actions"><p data-gallery-save-state>Değişiklikler siteye otomatik uygulanmaz.</p><div><button class="admin-button" type="button" data-gallery-reset>Kaynağa dön</button><button class="admin-button" type="button" data-gallery-export>Dışa aktar</button><button class="admin-button admin-button--primary" type="button" data-gallery-save>Galeri planını kaydet</button></div></div></section><div class="admin-panel-heading admin-panel-heading--library"><h3>Tüm medya dosyaları</h3></div><div class="admin-filters"><label class="admin-search">${icon('search')}<span class="visually-hidden">Medyada ara</span><input type="search" id="admin-media-search" placeholder="Dosya adıyla ara" autocomplete="off"></label><label><span class="visually-hidden">Medya grubu</span><select id="admin-media-group"><option value="all">Tüm görseller</option>${[...new Set(data.media.map((item) => item.group))].map((group) => html`<option>${group}</option>`)}</select></label></div><div class="admin-media-grid" data-media-grid></div></section>
+      <section class="admin-panel" id="seo" data-admin-view="seo" aria-labelledby="seo-title" hidden><div class="admin-panel-heading"><div><h2 id="seo-title">SEO kontrolü</h2><p>Son oluşturulan sayfaların başlık, açıklama, canonical ve dil bağlantıları.</p></div><span class="admin-result-count" data-seo-count></span></div><div class="admin-seo-summary" data-seo-summary></div><div class="admin-filters"><label><span class="visually-hidden">SEO sonuçları</span><select id="admin-seo-filter"><option value="all">Tüm yazılar</option><option value="issues">Kontrol gerekenler</option></select></label><p>Bu kontrol, kaynak sayfalara aittir. Taslaklar ayrı tutulur.</p></div><div class="admin-table-wrap"><table class="admin-table admin-table--seo"><thead><tr><th scope="col">Sayfa</th><th scope="col">Dil</th><th scope="col">Kontrol sonucu</th><th scope="col">Bağlantı</th></tr></thead><tbody data-seo-rows></tbody></table></div></section>
+      <section class="admin-panel" id="drafts" data-admin-view="drafts" aria-labelledby="drafts-title" hidden><div class="admin-panel-heading"><div><h2 id="drafts-title">Yerel taslaklar</h2><p>Bu tarayıcıda kaydettiğin değişiklikler.</p></div><button class="admin-button" type="button" data-export-all>${icon('export')} JSON olarak indir</button></div><div data-home-draft-summary hidden></div><div data-media-draft-summary hidden></div><div data-draft-list></div><div class="admin-empty" data-drafts-empty><div class="admin-empty-icon">${icon('drafts')}</div><h3>Henüz bir taslağın yok.</h3><p>Bir yazıyı düzenleyip kaydettiğinde burada görünür.</p><a class="admin-button admin-button--primary" href="#content" data-admin-tab="content">Bilgi Merkezi’ne git</a></div></section>
+      <p class="admin-footnote">Envanter, sitede kullanılan kaynak dosyalardan oluşturulur. Hesap ve yayın yönetimi bu çalışma alanına bağlı değildir.</p>
+      <noscript><p class="admin-local-note">Yazı düzenleme, arama ve filtreleme için JavaScript’i etkinleştir. Kaynak yazılara web sitesinin Bilgi Merkezi bölümünden ulaşabilirsin.</p></noscript>
+    </div>
+  </div>
+</div>
+<dialog class="admin-editor" id="admin-editor" aria-labelledby="admin-editor-title">
+  <form id="admin-editor-form" novalidate><div class="admin-editor-head"><div><p data-editor-context></p><h2 id="admin-editor-title">Yazıyı düzenle</h2></div><button class="admin-icon-button" type="button" data-close-editor aria-label="Düzenleyiciyi kapat">${icon('close')}</button></div>
+    <div class="admin-editor-tabs" role="group" aria-label="Düzenleyici görünümü"><button type="button" class="is-active" data-editor-tab="write" aria-pressed="true">İçerik</button><button type="button" data-editor-tab="seo" aria-pressed="false">SEO</button><button type="button" data-editor-tab="preview" aria-pressed="false">Önizleme</button></div>
+    <div class="admin-editor-scroll"><div data-editor-view="write" class="admin-editor-fields"><label>Yazı başlığı<input name="title" required maxlength="240"></label><label>Kısa açıklama<textarea name="summary" rows="3" required maxlength="1000"></textarea></label><label>Giriş<textarea name="intro" rows="5" maxlength="12000"></textarea></label><div data-section-fields></div><label>Akılda kalanlar<span>Her maddeyi ayrı satıra yaz.</span><textarea name="keyTakeaways" rows="5" maxlength="12000"></textarea></label></div>
+    <div data-editor-view="seo" class="admin-editor-fields" hidden><label>Arama sonucu başlığı<input name="seoTitle" maxlength="240"><span data-seo-title-count></span></label><label>Meta açıklaması<textarea name="seoDescription" rows="4" maxlength="1000"></textarea><span data-seo-description-count></span></label><div class="admin-search-preview"><span data-preview-url></span><strong data-preview-seo-title></strong><p data-preview-seo-description></p></div><p class="admin-field-note">URL, dil bağlantıları ve yapılandırılmış veriler kaynak sayfadan korunur. Bu alanlar dışa aktarılan taslağa eklenir.</p></div>
+    <article data-editor-view="preview" class="admin-article-preview" hidden></article></div>
+    <div class="admin-editor-footer"><p data-editor-save-state role="status" aria-live="polite">Kaynak içerik</p><div><button class="admin-button" type="button" data-editor-export>${icon('export')} Dışa aktar</button><button class="admin-button admin-button--primary" type="submit">Taslağı kaydet</button></div></div>
+  </form>
+</dialog>
+<dialog class="admin-media-editor" id="admin-media-editor" aria-labelledby="admin-media-editor-title"><form id="admin-media-form" novalidate><div class="admin-editor-head"><div><p data-media-editor-context></p><h2 id="admin-media-editor-title">Alternatif metinleri düzenle</h2></div><button class="admin-icon-button" type="button" data-close-media-editor aria-label="Görsel düzenleyiciyi kapat">${icon('close')}</button></div><div class="admin-media-editor-body"><img data-media-editor-preview src="${data.gallery[0]?.path || '/assets/brand/icon-96.png'}" alt="" width="1242" height="2688"><div class="admin-editor-fields" data-media-alt-fields></div></div><div class="admin-editor-footer"><p data-media-editor-feedback role="status" aria-live="polite">Ekran okuyucular için görselin içeriğini kısa ve açık anlat.</p><button class="admin-button admin-button--primary" type="submit">Plana ekle</button></div></form></dialog>
+<div class="admin-toast" role="status" aria-live="polite" data-admin-toast hidden></div>
+<script type="application/json" id="admin-inventory">${raw(JSON.stringify(data).replace(/</g, '\\u003c'))}</script>`;
+  return {
+    path: '/admin/', title: 'İçerik çalışma alanı | Sigara Savar',
+    description: 'Sigara Savar web sitesi için yerel içerik, çeviri, medya ve SEO çalışma alanı.',
+    noindex: true, nofollow: true, current: null, bodyClass: 'admin-page',
+    styles: ['/assets/css/admin.css'], scripts: ['/assets/js/admin.js', '/assets/js/admin-media.js', '/assets/js/admin-home.js'], main,
+  };
+}

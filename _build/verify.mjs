@@ -13,9 +13,12 @@ const root = path.resolve(here, '..');
 const base = new URL(config.baseUrl);
 const errors = [];
 const notes = [];
+const today = new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/Istanbul' }).format(new Date());
+const workspaceFiles = new Set(['admin/index.html']);
 let references = 0;
 let contentChecks = 0;
-const fail = (file, message) => errors.push(`${file}: ${message}`);
+const short = (value) => value.length > 160 ? `${value.slice(0, 157)}…` : value;
+const fail = (file, message) => errors.push(`${file}: ${message.replace(/(?:https?:\/\/|data:)[^\s"'<>]+/g, short)}`);
 const read = (file) => fs.readFileSync(path.join(root, file), 'utf8');
 const readJson = (file) => JSON.parse(read(file));
 const slash = (value) => value.split(path.sep).join('/');
@@ -32,6 +35,7 @@ const visible = (source) => decode(source.replace(/<script\b[^>]*>[\s\S]*?<\/scr
 const main = (source) => (/<main\b[^>]*>([\s\S]*?)<\/main>/i.exec(source) || [])[1] || '';
 const hasType = (node, type) => [node['@type']].flat().includes(type);
 const pageRoute = (file) => file === 'index.html' ? '/' : file.endsWith('/index.html') ? `/${file.slice(0, -10)}` : `/${file}`;
+const validDate = (date) => /^\d{4}-\d{2}-\d{2}$/.test(date || '') && !Number.isNaN(Date.parse(date)) && new Date(date).toISOString().slice(0, 10) === date;
 
 function filesIn(directory = '') {
   return fs.readdirSync(path.join(root, directory), { withFileTypes: true }).flatMap((entry) => {
@@ -104,13 +108,25 @@ for (const [file, page] of pages) {
   else if (titles.has(title)) fail(file, `duplicate title also used in ${titles.get(title)}`);
   else titles.set(title, file);
   if (!meta.description?.trim()) fail(file, 'missing meta description');
+  if (tags.filter((tag) => tag.name === 'title').length !== 1) fail(file, 'expected exactly one title element');
+  if (tags.filter((tag) => tag.name === 'meta' && tag.attrs.name === 'description').length !== 1) fail(file, 'expected exactly one meta description');
+  if (tags.filter((tag) => tag.name === 'link' && tag.attrs.rel === 'canonical').length !== 1) fail(file, 'expected exactly one canonical');
   if (canonical !== new URL(route, base).href) fail(file, `canonical does not match route ${route}`);
+  if (canonical) {
+    try { if (new URL(canonical).search || new URL(canonical).hash) fail(file, 'canonical contains a query or fragment'); }
+    catch { fail(file, 'canonical is not an absolute valid URL'); }
+  }
   if (tags.filter((tag) => tag.name === 'h1').length !== 1) fail(file, 'expected exactly one h1');
   if (!ids.has('icerik')) fail(file, 'missing main skip-link target');
   for (const field of ['og:title', 'og:description', 'og:image', 'og:url', 'twitter:card', 'twitter:title', 'twitter:description', 'twitter:image']) {
     if (!meta[field]) fail(file, `missing ${field} metadata`);
   }
   if (meta['og:url'] !== canonical) fail(file, 'Open Graph URL differs from canonical');
+  if (!/noindex/i.test(meta.robots || '') && !/max-image-preview\s*:\s*large/i.test(meta.robots || '')) fail(file, 'indexable page does not permit large image previews');
+  if (workspaceFiles.has(file)) {
+    if (!/\bnoindex\b/i.test(meta.robots || '') || !/\bnofollow\b/i.test(meta.robots || '')) fail(file, 'admin workspace must have noindex, nofollow');
+    if (tags.some((tag) => tag.name === 'link' && tag.attrs.hreflang)) fail(file, 'admin workspace has public language alternates');
+  }
   if (/aggregateRating|ratingValue/i.test(source) || /(?:five[-_ ]stars?|5\s*yıldız|beş\s*yıldız|★★★★★|class=["'][^"']*store[-_]rating)/i.test(source)) {
     fail(file, 'unverified store-rating claim found');
   }
@@ -127,6 +143,7 @@ for (const [file, page] of pages) {
       const target = localTarget(href, file);
       if (!target) continue;
       if (!config.AUTH_UI_ENABLED && config.authPages.some((auth) => auth.toLowerCase() === target.file.toLowerCase())) fail(file, `paused authentication link ${href}`);
+      if (!workspaceFiles.has(file) && workspaceFiles.has(target.file) && tag.name === 'a') fail(file, 'public page exposes an admin workspace link');
       if (target.url.hash && tag.name === 'a') {
         let fragment;
         try { fragment = decodeURIComponent(target.url.hash.slice(1)); }
@@ -145,9 +162,36 @@ for (const [file, page] of pages) {
   localTarget(meta['og:image'] || '', file);
   for (const schema of schemas.filter((node) => hasType(node, 'Article'))) {
     if (schema.url !== canonical || schema.mainEntityOfPage !== canonical) fail(file, 'Article URLs do not match canonical');
-    if (!schema.headline || !schema.description || !schema.image?.length || !schema.author || !schema.publisher) fail(file, 'incomplete Article structured data');
-    for (const field of ['datePublished', 'dateModified']) if (!/^\d{4}-\d{2}-\d{2}$/.test(schema[field] || '') || Number.isNaN(Date.parse(schema[field]))) fail(file, `invalid Article.${field}`);
+    if (!schema.headline || !schema.description || !schema.author || !schema.publisher) fail(file, 'incomplete Article structured data');
+    const h1 = (/<h1\b[^>]*>([\s\S]*?)<\/h1>/i.exec(source) || [])[1] || '';
+    if (visible(schema.headline) !== visible(h1)) fail(file, 'Article headline differs from the visible main heading');
+    for (const field of ['datePublished', 'dateModified']) {
+      if (!validDate(schema[field])) fail(file, `invalid Article.${field}`);
+      else if (schema[field] > today) fail(file, `Article.${field} is in the future`);
+    }
     if (schema.dateModified < schema.datePublished) fail(file, 'Article modification date precedes publication');
+    const author = (/<span\b[^>]*data-article-author[^>]*>([\s\S]*?)<\/span>/i.exec(source) || [])[1] || '';
+    for (const item of [schema.author || []].flat()) {
+      if (!item.name || !visible(author).includes(visible(item.name))) fail(file, 'Article author is not visible in the byline');
+    }
+    const dates = [...source.matchAll(/<time\b([^>]*)>([\s\S]*?)<\/time>/gi)].map(([, attrSource, text]) => ({ attrs: attrs(attrSource), text: visible(text) }));
+    for (const [field, marker] of [['datePublished', 'data-article-published'], ['dateModified', 'data-article-modified']]) {
+      if (field === 'dateModified' && schema.dateModified === schema.datePublished) continue;
+      const time = dates.find((entry) => marker in entry.attrs);
+      if (!time?.text || time.attrs.datetime !== schema[field]) fail(file, `visible ${field} differs from Article markup`);
+      else if (validDate(schema[field])) {
+        const language = tags.find((tag) => tag.name === 'html')?.attrs.lang || config.defaultLocale;
+        const expected = new Intl.DateTimeFormat(language, { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }).format(new Date(`${schema[field]}T00:00:00Z`));
+        if (time.text !== expected) fail(file, `${field} visible date text does not match its datetime`);
+      }
+    }
+    if (meta['article:published_time'] !== schema.datePublished || meta['article:modified_time'] !== schema.dateModified) fail(file, 'Open Graph article dates differ from Article markup');
+    for (const image of schema.image ? [schema.image].flat() : []) {
+      const url = typeof image === 'string' ? image : image.url;
+      if (!url) fail(file, 'Article image has no URL');
+      else if (/\/assets\/(?:og|brand)\//.test(url)) fail(file, 'Article image is a title card or logo, not editorial media');
+      else localTarget(url, file);
+    }
     if (!schemas.some((node) => hasType(node, 'BreadcrumbList'))) fail(file, 'Article missing BreadcrumbList');
   }
 }
@@ -218,7 +262,15 @@ for (const [query, expected] of [['İSTEK', 'istek'], ['PRÉPARATION', 'preparat
 }
 
 const sitemap = read('sitemap.xml');
-const sitemapPaths = new Set([...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(([, url]) => decode(url)));
+const sitemapEntries = [...sitemap.matchAll(/<url>\s*<loc>([^<]+)<\/loc>\s*<lastmod>([^<]+)<\/lastmod>\s*<\/url>/g)].map(([, url, date]) => ({ url: decode(url), date }));
+const sitemapUrls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(([, url]) => decode(url));
+const sitemapPaths = new Set(sitemapUrls);
+if (sitemapPaths.size !== sitemapUrls.length) fail('sitemap.xml', 'duplicate canonical URLs');
+if (sitemapEntries.length !== sitemapUrls.length) fail('sitemap.xml', 'a URL lacks a parseable lastmod date');
+for (const entry of sitemapEntries) {
+  if (!validDate(entry.date)) fail('sitemap.xml', `invalid lastmod for ${entry.url}`);
+  else if (entry.date > today) fail('sitemap.xml', `future lastmod for ${entry.url}`);
+}
 for (const [file, page] of pages) {
   const indexed = !/noindex/i.test(page.meta.robots || '');
   if (indexed && !sitemapPaths.has(page.canonical)) fail(file, 'indexable page missing from sitemap');
@@ -227,8 +279,12 @@ for (const [file, page] of pages) {
 for (const absolute of sitemapPaths) {
   const target = localTarget(absolute, 'index.html');
   if (target && config.authPages.includes(target.file)) fail('sitemap.xml', `paused authentication URL ${absolute}`);
+  if (target && workspaceFiles.has(target.file)) fail('sitemap.xml', 'admin workspace included');
+  if (target && pages.get(target.file)?.canonical !== absolute) fail('sitemap.xml', `noncanonical URL ${absolute}`);
 }
-if (!read('robots.txt').includes(`Sitemap: ${config.baseUrl}/sitemap.xml`)) fail('robots.txt', 'missing canonical sitemap location');
+const robots = read('robots.txt');
+if (!robots.includes(`Sitemap: ${config.baseUrl}/sitemap.xml`)) fail('robots.txt', 'missing canonical sitemap location');
+if (/^Disallow:\s*\/admin(?:\/|\s|$)/im.test(robots)) fail('robots.txt', 'admin noindex must remain crawlable; robots blocking is not access control');
 for (const file of config.authPages) if (!/<meta[^>]+name=["']robots["'][^>]+content=["'][^"']*noindex/i.test(read(file))) fail(file, 'paused auth page missing noindex');
 for (const file of config.legalPages) {
   try {
@@ -246,5 +302,6 @@ if (errors.length) {
   console.error(`Static QA failed (${errors.length} findings):\n${errors.map((error) => `- ${error}`).join('\n')}`);
   process.exitCode = 1;
 } else {
-  console.log(`Static QA passed: ${pages.size} public pages, ${references} local references, ${contentChecks} source-content checks, ${languageChecks} language-route checks; metadata, article dates, sitemap, auth exclusion and legal preservation verified.`);
+  const workspaceCount = [...workspaceFiles].filter((file) => pages.has(file)).length;
+  console.log(`Static QA passed: ${pages.size - workspaceCount} public pages${workspaceCount ? `, ${workspaceCount} noindex workspace` : ''}, ${references} local references, ${contentChecks} source-content checks, ${languageChecks} language-route checks; visible/schema article dates, metadata, sitemap, admin/auth exclusion and legal preservation verified.`);
 }

@@ -49,3 +49,13 @@ Store URLs, public origin and legal/auth file lists have one source in `_build/s
 Turkish is served at `/`; English, German, Spanish and French are under `/en/`, `/de/`, `/es/` and `/fr/`. Each language has its own homepage, 29 real Knowledge Center articles, guide, tools and download page. Header/footer language links preserve the corresponding page, and localized pages include reciprocal hreflang metadata.
 
 See [DESIGN_AND_LANGUAGES.md](DESIGN_AND_LANGUAGES.md) for the current design, complete route map, source files, QA and retained legal-language coverage. Homepage copy lives in `_build/i18n/home.mjs`; shared interface copy lives in each language dictionary. The sync script now supports all five languages and an optional third argument restricting a sync to one language.
+
+## Gallery and local editorial workspace
+
+The hero uses the existing app screens and seven supplied store compositions, with responsive AVIF/WebP variants, pause controls and reduced-motion support. Run `node _build/verify-gallery.mjs` for deterministic carousel behavior checks.
+
+Open [the content workspace](http://127.0.0.1:4173/admin/) to draft homepage copy, Knowledge Center articles, translations, SEO metadata and gallery order/alternative text. Drafts stay in this browser and can be exported as JSON. The workspace has no authentication, server writes or publication endpoint; exports are review documents and are not automatically applied by the build. It contains public source content only and is excluded from indexing and the sitemap. Browser noindex directives are not access control.
+
+See [GALLERY_ADMIN_HANDOFF.md](GALLERY_ADMIN_HANDOFF.md) for files, sources, validation, limits and follow-up work, and [SEO_AUDIT_2026-10.md](SEO_AUDIT_2026-10.md) for the primary-source SEO research and live hosting findings.
+
+In the managed Windows workspace, these equivalent Node flags avoid ancestry-resolution restrictions: `node --preserve-symlinks --preserve-symlinks-main _build/build.mjs` (use the same flags for verification and preview).

@@ -159,13 +159,17 @@ export function headTags(ctx, page) {
   const ogImage = url.abs(page.ogImage || '/assets/og/default.png');
   const alternates = page.noindex ? [] : ctx.languageLinks(page.path);
   const fallback = alternates.find((option) => option.lang === config.defaultLocale);
+  const robots = page.noindex
+    ? `noindex, ${page.nofollow ? 'nofollow' : 'follow'}`
+    : 'max-image-preview:large';
   return html`<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${page.title}</title>
 <meta name="description" content="${page.description}">
 <link rel="canonical" href="${canonical}">
 ${alternates.map((option) => html`<link rel="alternate" hreflang="${option.lang}" href="${url.abs(option.path)}">\n`)}${fallback ? html`<link rel="alternate" hreflang="x-default" href="${url.abs(fallback.path)}">\n` : ''}
-${page.noindex ? raw('<meta name="robots" content="noindex, follow">\n') : ''}<meta http-equiv="Content-Security-Policy" content="${contentSecurityPolicy(config)}">
+<meta name="robots" content="${robots}">
+<meta http-equiv="Content-Security-Policy" content="${contentSecurityPolicy(config)}">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="theme-color" content="#fcfbf8">
 <meta property="og:type" content="${page.ogType || 'website'}">

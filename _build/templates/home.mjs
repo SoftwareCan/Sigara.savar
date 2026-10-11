@@ -2,6 +2,7 @@ import { html } from '../lib/html.mjs';
 import { screenPicture, storeBadges } from './components.mjs';
 import { displayTitle } from './knowledge.mjs';
 import { homeCopy } from '../i18n/home.mjs';
+import { heroGallery } from './gallery.mjs';
 
 const arrow = html`<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
 
@@ -17,13 +18,7 @@ function hero(ctx, h) {
         </div>
         <p class="home-hero__availability">${h.availability}</p>
       </div>
-      <figure class="home-hero__visual">
-        <div class="home-phones">
-          <div class="home-phone home-phone--back">${screenPicture(ctx, 'yolculuk-detoks', h.alts.journey, { sizes: '(min-width: 1000px) 245px, (min-width: 760px) 210px, 172px', eager: true })}</div>
-          <div class="home-phone home-phone--front">${screenPicture(ctx, 'gelisim', h.alts.progress, { sizes: '(min-width: 1000px) 270px, (min-width: 760px) 230px, 184px', eager: true })}</div>
-        </div>
-        <figcaption>${h.screenNote}</figcaption>
-      </figure>
+      ${heroGallery(ctx, h)}
     </div>
   </section>
   <nav class="home-jumps" aria-label="${h.jumpLabel}"><div class="wrap">
@@ -133,5 +128,6 @@ ${download(ctx, h)}`;
     main,
     jsonLd: [organization, website, app],
     styles: ['/assets/css/home.css'],
+    scripts: ['/assets/js/gallery.js'],
   };
 }

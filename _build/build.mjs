@@ -8,7 +8,9 @@ import crypto from 'node:crypto';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 
 import config from './site.config.mjs';
-import { layout } from './templates/layout.mjs';
+import { layout, headTags } from './templates/layout.mjs';
+import { adminInventory } from './lib/admin.mjs';
+import { adminPage } from './templates/admin.mjs';
 import { homePage } from './templates/home.mjs';
 import { articlePage, knowledgeIndexPage } from './templates/knowledge.mjs';
 import { guidePage } from './templates/guide.mjs';
@@ -246,6 +248,12 @@ async function main() {
   write('404.html', layout(ctx, notFoundPage(ctx)));
   write('site.webmanifest', manifest(ctx));
   write('robots.txt', robots(ctx));
+  // A local drafting workspace containing public content only; never in the sitemap.
+  const admin = adminPage(ctx, adminInventory(root, config));
+  write('admin/index.html', `<!DOCTYPE html>
+<html lang="tr"><head>${headTags(ctx, admin)}</head>
+<body class="admin-page"><a class="skip-link" href="#icerik">İçeriğe geç</a>
+<main id="icerik" tabindex="-1">${admin.main}</main></body></html>\n`);
 
   // Legal pages: chrome refreshed, legal text verified unchanged.
   const legalEntries = [];

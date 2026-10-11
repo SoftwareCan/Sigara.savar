@@ -48,6 +48,14 @@ const RELATED_ARTICLES = {
 
 const editorialLabels = (ctx) => editorialCopy(ctx.lang).knowledge;
 
+const ARTICLE_META = {
+  tr: { author: 'Hazırlayan', published: 'Yayınlanma', modified: 'Güncelleme' },
+  en: { author: 'By', published: 'Published', modified: 'Updated' },
+  de: { author: 'Von', published: 'Veröffentlicht', modified: 'Aktualisiert' },
+  es: { author: 'Por', published: 'Publicado', modified: 'Actualizado' },
+  fr: { author: 'Par', published: 'Publié', modified: 'Mis à jour' },
+};
+
 const prettify = (text) => String(text).replace(/\s->\s/g, ' → ');
 
 export const displayTitle = (article, section) =>
@@ -193,6 +201,13 @@ export function knowledgeIndexPage(ctx) {
 
 export function articlePage(ctx, article) {
   const { t, url, config } = ctx;
+  const metaLabels = ARTICLE_META[ctx.lang] || ARTICLE_META.tr;
+  const published = ctx.articlePublishedAt(article.id);
+  const modified = ctx.articleModifiedAt(article.id);
+  // Only calendar dates are recorded. Do not invent a publication time.
+  const formatDate = (date) => new Intl.DateTimeFormat(ctx.localeConfig.htmlLang, {
+    day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC',
+  }).format(new Date(`${date}T00:00:00Z`));
   const section = ctx.sectionById(article.sectionId);
   const title = displayTitle(article, section);
   const index = section.articles.findIndex((a) => a.id === article.id);
@@ -252,6 +267,9 @@ export function articlePage(ctx, article) {
         <h1 id="article-title">${title}</h1>
         <p class="lead dek">${article.summary}</p>
         <div class="article-meta">
+          <span data-article-author>${metaLabels.author} <a href="${url.home()}" translate="no">${config.siteName}</a></span>
+          <span>${metaLabels.published} <time datetime="${published}" data-article-published>${formatDate(published)}</time></span>
+          ${modified !== published ? html`<span>${metaLabels.modified} <time datetime="${modified}" data-article-modified>${formatDate(modified)}</time></span>` : ''}
           <span>${t.common.readTimeLong(article.estimatedReadMinutes)}</span>
           <span>${t.article.position(index + 1, section.articles.length)}</span>
           <div class="share" data-share data-url="${url.abs(path)}" data-title="${title}">
@@ -303,17 +321,19 @@ export function articlePage(ctx, article) {
   const articleLd = {
     '@context': 'https://schema.org',
     '@type': 'Article',
+    '@id': `${url.abs(path)}#article`,
     headline: title,
     description: article.summary,
     inLanguage: ctx.localeConfig.htmlLang,
     url: url.abs(path),
     mainEntityOfPage: url.abs(path),
-    image: [url.abs(ogImage)],
-    datePublished: ctx.articlePublishedAt(article.id),
-    dateModified: ctx.articleModifiedAt(article.id),
+    // The OG artwork is a branded title card, not an editorial illustration.
+    // Article images are optional; do not misrepresent the logo as article media.
+    datePublished: published,
+    dateModified: modified,
     articleSection: section.title,
     timeRequired: `PT${article.estimatedReadMinutes}M`,
-    author: { '@type': 'Organization', name: config.siteName, url: `${config.baseUrl}/` },
+    author: { '@type': 'Organization', name: config.siteName, url: url.abs(url.home()) },
     publisher: {
       '@type': 'Organization',
       name: config.siteName,
@@ -333,7 +353,7 @@ export function articlePage(ctx, article) {
 
   return {
     path,
-    title: `${title} | ${config.siteName} ${t.knowledge.title}`,
+    title: `${title} | ${config.siteName}`,
     ogTitle: title,
     description: article.summary,
     ogType: 'article',
@@ -341,8 +361,8 @@ export function articlePage(ctx, article) {
     current: 'knowledge',
     bodyClass: 'article-page',
     styles: ['/assets/css/knowledge.css'],
-    articlePublished: ctx.articlePublishedAt(article.id),
-    articleModified: ctx.articleModifiedAt(article.id),
+    articlePublished: published,
+    articleModified: modified,
     main,
     jsonLd: [articleLd, breadcrumb],
   };
