@@ -54,12 +54,13 @@ const ARTICLE_META = {
   de: { author: 'Von', published: 'Veröffentlicht', modified: 'Aktualisiert' },
   es: { author: 'Por', published: 'Publicado', modified: 'Actualizado' },
   fr: { author: 'Par', published: 'Publié', modified: 'Mis à jour' },
+  'pt-BR': { author: 'Por', published: 'Publicado', modified: 'Atualizado' },
 };
 
 const prettify = (text) => String(text).replace(/\s->\s/g, ' → ');
 
 export const displayTitle = (article, section) =>
-  /^(?:bölüm özeti|chapter summary|resumen del capítulo|kapitelzusammenfassung|résumé (?:du chapitre|de la section))$/iu.test(article.title.trim()) ? `${section.title}: ${article.title}` : article.title;
+  /^(?:bölüm özeti|chapter summary|resumen del capítulo|kapitelzusammenfassung|résumé (?:du chapitre|de la section)|resumo (?:do capítulo|da seção))$/iu.test(article.title.trim()) ? `${section.title}: ${article.title}` : article.title;
 
 function itemContent(text) {
   const { lead, rest } = splitLead(prettify(text));

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "box_breathing",
+    "name": "Respiração em caixa (4-4-4)",
+    "inhaleSeconds": 4,
+    "holdSeconds": 4,
+    "exhaleSeconds": 4,
+    "benefit": "Reduz o estresse, melhora a concentração e a clareza mental",
+    "area": "Gestão do estresse e concentração",
+    "description": "Usada por militares e atletas para acalmar a mente e melhorar o desempenho."
+  },
+  {
+    "id": "relaxing_breath",
+    "name": "Respiração relaxante (4-7-8)",
+    "inhaleSeconds": 4,
+    "holdSeconds": 7,
+    "exhaleSeconds": 8,
+    "benefit": "Sono melhor, menos ansiedade e mais calma",
+    "area": "Sono e gestão da ansiedade",
+    "description": "Popularizada pelo Dr. Andrew Weil; ativa o sistema nervoso parassimpático."
+  },
+  {
+    "id": "equal_breathing",
+    "name": "Respiração igual (5-5)",
+    "inhaleSeconds": 5,
+    "holdSeconds": 0,
+    "exhaleSeconds": 5,
+    "benefit": "Equilíbrio, calma e estabilidade mental",
+    "area": "Equilíbrio e calma",
+    "description": "Simples e eficaz: uma respiração de equilíbrio fácil de praticar no dia a dia."
+  },
+  {
+    "id": "deep_breathing",
+    "name": "Respiração profunda (6-2-8)",
+    "inhaleSeconds": 6,
+    "holdSeconds": 2,
+    "exhaleSeconds": 8,
+    "benefit": "Mais energia, mais alerta e mais oxigenação",
+    "area": "Energia e vitalidade",
+    "description": "Leva mais oxigênio ao corpo e ajuda a elevar o seu nível de energia."
+  },
+  {
+    "id": "triangle_breathing",
+    "name": "Respiração triangular (3-3-3)",
+    "inhaleSeconds": 3,
+    "holdSeconds": 3,
+    "exhaleSeconds": 3,
+    "benefit": "Menos ansiedade, controle do pânico e calma rápida",
+    "area": "Ansiedade e controle do pânico",
+    "description": "Ideal para se acalmar rápido; eficaz nos momentos de ansiedade ou pânico."
+  },
+  {
+    "id": "extended_exhale",
+    "name": "Expiração prolongada (4-4-6)",
+    "inhaleSeconds": 4,
+    "holdSeconds": 4,
+    "exhaleSeconds": 6,
+    "benefit": "Menos estresse, regulação do ritmo cardíaco e relaxamento",
+    "area": "Estresse e relaxamento",
+    "description": "Fortalece o sistema nervoso parassimpático graças a uma expiração mais longa."
+  }
+]

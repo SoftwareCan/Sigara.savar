@@ -81,6 +81,22 @@ const COPY = {
     stores: { apple: 'Télécharger sur', google: 'Disponible sur' },
     tools: { pdfLanguage: 'Ce PDF est en turc.' },
   },
+  'pt-BR': {
+    knowledge: { all: 'Todos os artigos', browse: 'Explore por assunto', read: 'Ler artigo', onPage: 'Neste artigo', related: 'Continue a leitura', tools: ['Começar o exercício de respiração (4-4-6)', 'Experimentar o exercício de 90 segundos', 'Abrir os passos do método 4D nas ferramentas', 'Preencher e imprimir seu plano para lidar com a vontade'] },
+    guide: {
+      phases: ['Preparação para parar', 'O dia de parar', 'As primeiras 24 horas', 'A primeira semana', 'Quando a vontade chega', 'Conheça seus gatilhos', 'Se você voltou a fumar', 'Mudança de rotina', 'Encontrar apoio'],
+      related: 'artigos relacionados', byStage: 'Comece pela sua etapa atual', nextStep: 'Seu próximo passo', start: 'Comece de onde você está agora.',
+      intro: 'Você pode estar se preparando, passando pelos primeiros dias ou tentando de novo. Escolha o assunto que faz sentido para você; cada etapa leva a artigos curtos da Central de Conhecimento.',
+      quick: 'Começo rápido', quickLinks: ['Meu primeiro dia', 'Quero fumar agora', 'Voltei a fumar'],
+      recoveryLead: 'Benefícios gerais de parar de fumar para a saúde, dos primeiros minutos ao longo prazo.',
+      milestones: (n) => `Veja ${n} marcos de saúde`, sources: 'Fontes', stages: (n) => `Veja as ${n} etapas do app`,
+      earlyArticles: 'Artigos gratuitos para os primeiros dias', allArticles: 'Todos os artigos da Central de Conhecimento', library: (sections, articles) => `Veja ${articles} artigos em ${sections} seções`,
+      appTitle: 'Leve esse apoio no bolso.', appText: 'Volte à Central de Conhecimento, acompanhe seu progresso e mantenha suas ferramentas por perto nos momentos difíceis.',
+    },
+    download: { tagline: 'Cada dia sem cigarro traz uma nova força.', qrLink: 'link para sigarasavar.com/indir/' },
+    stores: { apple: 'Baixar na', google: 'Disponível no' },
+    tools: { pdfLanguage: 'Este PDF está em turco.' },
+  },
 };
 
 export const editorialCopy = (lang = 'tr') => COPY[lang] || COPY.tr;

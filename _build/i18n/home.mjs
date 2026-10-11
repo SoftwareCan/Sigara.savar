@@ -71,6 +71,20 @@ const copy = {
     end: { title: 'Faites place aux jours sans tabac.', text: 'Suivi, connaissances et soutien au quotidien. Sigara Savar vous accompagne.', note: 'À télécharger sur l’App Store et Google Play.' },
     alts: { progress: 'Écran de progression de Sigara Savar avec le temps sans tabac, en turc', journey: 'Écran du parcours de Sigara Savar consacré aux premiers jours sans tabac, en turc' },
   },
+  'pt-BR': {
+    title: 'Pare de fumar de vez | Sigara Savar',
+    description: 'Abra espaço para uma vida sem cigarro. Acompanhe seu progresso, prepare-se para a vontade de fumar e descubra recursos úteis com o Sigara Savar.',
+    hero: 'Pare de fumar. De vez.',
+    lead: 'Veja cada dia sem cigarro. Prepare-se para os momentos difíceis. Troque experiências com quem está no mesmo caminho.',
+    download: 'Baixar o app', guide: 'Explorar o guia para parar', availability: 'Para iOS e Android',
+    jumpLabel: 'Explore o Sigara Savar', jumps: ['Veja seu progresso', 'Prepare-se para a vontade', 'Continue em companhia'],
+    progress: { label: 'Progresso e conquistas', title: 'Cada dia faz diferença.', text: 'Cigarros que você não fumou, dinheiro economizado e tempo sem cigarro. Veja os passos que já deu, tudo em um só lugar.', detail: 'Reconheça as pequenas conquistas. Defina seus próximos objetivos no seu ritmo.', link: 'Explorar o app', alt: 'Conquistas e troféus no app Sigara Savar, exibidos em turco' },
+    craving: { label: 'Quando a vontade chega', title: 'Um momento difícil. Uma nova escolha.', text: 'Ajuda saber o que fazer antes de a vontade chegar. O Guardião da Crise, os exercícios de respiração e as pausas curtas podem ajudar você a mudar o foco.', detail: 'Experimente o primeiro passo agora. As ferramentas do site funcionam sem baixar o app.', link: 'Experimentar as ferramentas', alt: 'Área de crise do Sigara Savar com o Guardião da Crise e exercícios de respiração, em turco' },
+    community: { label: 'Comunidade', title: 'Você não precisa percorrer esse caminho sozinho.', text: 'Compartilhe seu primeiro dia, uma pequena conquista ou um momento difícil. Conheça outras pessoas que também estão tentando parar de fumar.', detail: 'Troquem experiências e apoiem uns aos outros na comunidade do app.', link: 'Conhecer a comunidade no app', alt: 'Tela Explorar do Sigara Savar com a Central de Conhecimento e a comunidade, em turco' },
+    learning: { label: 'Central de Conhecimento', title: 'Entender também é um passo adiante.', text: 'Da preparação aos primeiros dias, dos gatilhos ao recomeço. Respostas curtas e claras para as suas dúvidas.', link: 'Explorar todos os artigos' },
+    end: { title: 'Abra espaço para dias sem cigarro.', text: 'Acompanhamento, informação e apoio no dia a dia. O Sigara Savar está com você.', note: 'Baixe na App Store e no Google Play.' },
+    alts: { progress: 'Tela de progresso do Sigara Savar com tempo sem fumar e acompanhamento, em turco', journey: 'Tela da Jornada do Sigara Savar sobre os primeiros dias sem fumar, em turco' },
+  },
 };
 
 export function homeCopy(lang) { return copy[lang] || copy.tr; }

@@ -189,5 +189,43 @@
       "b3-10": "faire-le-point-sur-tes-progres",
       "b3-11": "envies-et-rechute-resume"
     }
+  },
+  "pt-BR": {
+    "sections": {
+      "section-1": "preparacao-e-primeiros-dias",
+      "section-2": "mudanca-duradoura",
+      "section-3": "fissura-e-recaida"
+    },
+    "articles": {
+      "b1-01": "o-que-e-dependencia",
+      "b1-02": "por-que-voce-fuma",
+      "b1-03": "beneficios-de-parar-de-fumar",
+      "b1-04": "preparar-seu-plano-para-parar",
+      "b1-05": "mapear-seus-gatilhos",
+      "b1-06": "opcoes-de-apoio",
+      "b1-07": "dia-de-parar-de-fumar",
+      "b1-08": "abstinencia-de-nicotina",
+      "b1-09": "preparacao-e-primeiros-dias-resumo",
+      "b2-01": "por-que-a-vontade-de-fumar-persiste",
+      "b2-02": "reescrever-seus-gatilhos",
+      "b2-03": "reavaliar-pensamentos-sobre-fumar",
+      "b2-04": "preencher-o-espaco-do-cigarro",
+      "b2-05": "fortalecer-recompensas-naturais",
+      "b2-06": "eu-nao-fumo",
+      "b2-07": "agora-consigo-controlar",
+      "b2-08": "lista-para-uma-vida-sem-cigarro",
+      "b2-09": "mudanca-duradoura-resumo",
+      "b3-01": "o-que-e-fissura",
+      "b3-02": "a-vontade-de-fumar-como-uma-onda",
+      "b3-03": "surfar-a-onda-da-fissura",
+      "b3-04": "metodo-4d",
+      "b3-05": "plano-se-entao",
+      "b3-06": "deslize-e-recaida",
+      "b3-07": "um-erro-nao-apaga-seu-progresso",
+      "b3-08": "retomar-depois-de-um-deslize",
+      "b3-09": "montar-seu-plano-de-crise",
+      "b3-10": "revisar-seu-processo",
+      "b3-11": "fissura-e-recaida-resumo"
+    }
   }
 }

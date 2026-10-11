@@ -1,0 +1,951 @@
+[
+  {
+    "id": "section-1",
+    "order": 1,
+    "title": "Preparação e os primeiros dias",
+    "description": "O capítulo de base: entenda como a dependência funciona, perceba por que você fuma e prepare-se para o dia de parar de fumar.",
+    "articles": [
+      {
+        "id": "b1-01",
+        "sectionId": "section-1",
+        "order": 1,
+        "title": "O que é a dependência?",
+        "summary": "Entenda os lados biológico, psicológico e social da dependência por meio da nicotina, do sistema de recompensa e dos comportamentos aprendidos.",
+        "estimatedReadMinutes": 2,
+        "icon": "lightbulb",
+        "intro": "A dependência de fumar não é só uma questão de hábito ou de força de vontade. Os efeitos da nicotina no cérebro, as rotinas do dia a dia e o ambiente social podem, aos poucos, formar um ciclo que se alimenta sozinho.",
+        "contentSections": [
+          {
+            "title": "A nicotina e o sistema de recompensa",
+            "body": "A nicotina chega rápido ao cérebro e age sobre sistemas ligados à recompensa, à motivação e à aprendizagem. A mudança na liberação de dopamina ajuda o cérebro a aprender a tratar o ato de fumar como um comportamento que vale a pena repetir.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "O que muda com o tempo?",
+            "body": "À medida que o uso regular continua, o cérebro se adapta à nicotina. Quando o nível de nicotina cai, podem aparecer sinais de abstinência, como inquietação, dificuldade de concentração ou fissura. Como fumar alivia esse desconforto por pouco tempo, o ciclo se fortalece de novo.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Os três lados da dependência",
+            "body": "O lado biológico se relaciona com a nicotina e a abstinência, o lado psicológico com a sensação de alívio ou de recompensa ligada ao cigarro, e o lado social e comportamental com associações como café, refeições, pausas, grupos de amigos ou álcool.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "A dependência não vem de uma única causa. Nicotina, pensamentos e hábitos do dia a dia atuam juntos — perceber os três importa enquanto você para de fumar."
+        ]
+      },
+      {
+        "id": "b1-02",
+        "sectionId": "section-1",
+        "order": 2,
+        "title": "Por que você fuma e por que parar de fumar?",
+        "summary": "Perceba seus gatilhos, seus hábitos e os significados que você associou ao cigarro; deixe claros os seus motivos para parar de fumar.",
+        "estimatedReadMinutes": 2,
+        "icon": "lightbulb",
+        "intro": "Muitas vezes, fumar é movido por mais do que a necessidade de nicotina. Certos horários do dia, emoções, pessoas e ambientes podem ficar associados ao ato de fumar.",
+        "contentSections": [
+          {
+            "title": "Perceba os momentos que viraram automáticos",
+            "body": "O café, o depois das refeições, uma ligação, dirigir, uma pausa no trabalho, o estresse ou ambientes sociais podem, com o tempo, virar um sinal de \"agora é hora de fumar\".",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "O cigarro realmente relaxa você?",
+            "body": "A nicotina tem propriedades estimulantes. Parte do alívio sentido depois de fumar pode estar ligada ao alívio breve da abstinência de nicotina que se acumula entre um cigarro e outro. O cérebro pode, então, interpretar esse alívio temporário como \"fumar resolve o meu estresse\".",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Deixe claro o seu próprio motivo",
+            "body": "Anotar os seus motivos pessoais para querer parar — saúde, liberdade, tempo, dinheiro, família, respiração ou qualidade de vida — pode facilitar lembrar da sua decisão nos momentos difíceis.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Enxergar os momentos automáticos por trás do seu jeito de fumar transforma parar de fumar, de uma questão de \"só aguentar\", em uma mudança mais consciente."
+        ]
+      },
+      {
+        "id": "b1-03",
+        "sectionId": "section-1",
+        "order": 3,
+        "title": "O que você ganha ao parar de fumar?",
+        "summary": "Veja os ganhos que parar de fumar pode trazer para a saúde, a respiração, o tempo, o dinheiro e a qualidade de vida.",
+        "estimatedReadMinutes": 2,
+        "icon": "favorite",
+        "intro": "Os ganhos de parar de fumar não cabem num único dia. O seu corpo começa a mudar desde as primeiras horas; melhoras em sistemas diferentes podem aparecer ao longo das semanas, meses e anos seguintes.",
+        "contentSections": [
+          {
+            "title": "Linha do tempo geral",
+            "body": "Nos primeiros minutos, a frequência cardíaca e a pressão arterial podem começar a se aproximar de valores normais. Nas primeiras horas, o monóxido de carbono no sangue diminui. Nos primeiros dias, os níveis de nicotina caem de forma significativa, e o paladar e o olfato podem começar a se recuperar. Ao longo de semanas e meses, podem aparecer melhoras na circulação, na respiração e na capacidade das vias aéreas de se limparem.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Ganhos de longo prazo",
+            "body": "Quanto mais tempo você permanece sem cigarro, mais se observa que os riscos associados a doenças cardiovasculares e a certos tipos de câncer diminuem ao longo do tempo.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Além da saúde",
+            "body": "Recuperar o dinheiro e o tempo gastos com cigarro, perceber que é possível viver sem depender dele e sentir um controle crescente sobre as escolhas do dia a dia também são ganhos importantes.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Parar de fumar não é só tirar algo da sua vida; é o começo de novos ganhos em saúde, tempo, dinheiro e liberdade."
+        ]
+      },
+      {
+        "id": "b1-04",
+        "sectionId": "section-1",
+        "order": 4,
+        "title": "Preparação e planejamento",
+        "summary": "Defina o seu dia de parar, observe o seu padrão de fumar, prepare o ambiente e escolha com antecedência alternativas para os momentos difíceis.",
+        "estimatedReadMinutes": 2,
+        "icon": "flag",
+        "intro": "Tentar resolver tudo no próprio dia de parar pode ser difícil. Preparar-se antes torna as decisões mais fáceis, especialmente nos seus momentos automáticos de fumar.",
+        "contentSections": [
+          {
+            "title": "Defina o seu dia de parar",
+            "body": "Escolha uma data clara para você e anote os preparativos que quer concluir antes dela.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Acompanhe o seu padrão de fumar",
+            "body": "Observe, por alguns dias, em que horário, com qual emoção, com quem e em que ambiente você fuma. Esse registro ajuda você a enxergar os seus gatilhos mais fortes.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Organize o ambiente",
+            "body": "Tire de casa, do carro e do trabalho os objetos que lembram o cigarro — maços, cinzeiros, isqueiros. Escolha um comportamento novo para associações fortes, como o café, o depois das refeições ou as pausas no trabalho.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Peça apoio",
+            "body": "Contar às pessoas próximas sobre a sua decisão de parar de fumar e pedir que, especialmente nos primeiros dias, não ofereçam cigarro a você pode deixar o processo mais leve.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "A preparação não faz a fissura nunca aparecer; ela significa que você já sabe o que vai fazer quando ela vier."
+        ]
+      },
+      {
+        "id": "b1-05",
+        "sectionId": "section-1",
+        "order": 5,
+        "title": "Mapeie os seus próprios gatilhos",
+        "summary": "Identifique, para você, os horários, as emoções, os ambientes e os hábitos que iniciam automaticamente o pensamento ou a vontade de fumar.",
+        "estimatedReadMinutes": 2,
+        "icon": "loop",
+        "intro": "Um gatilho é uma situação que inicia automaticamente o pensamento ou a vontade de fumar. Ele não é o mesmo para cada pessoa.",
+        "contentSections": [
+          {
+            "title": "Pergunte-se",
+            "body": "Em que horário do dia a minha fissura é mais forte? Existe ligação com o café, as refeições, o telefone, dirigir ou uma pausa no trabalho? Quais emoções — estresse, raiva, tédio, solidão ou comemoração — aumentam a vontade de fumar? Como os ambientes sociais com álcool ou cigarro me afetam?",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "O que você pode colocar no lugar?",
+            "body": "Para cada gatilho forte, escolha o novo comportamento mais simples que você conseguir. Por exemplo, uma caminhada curta depois do café, escovar os dentes depois de uma refeição, alguns minutos de pausa depois do estresse ou uma mensagem de apoio.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Perceber um gatilho abre um espaço pequeno, mas importante, entre o comportamento automático e uma escolha consciente."
+        ]
+      },
+      {
+        "id": "b1-06",
+        "sectionId": "section-1",
+        "order": 6,
+        "title": "Opções de apoio",
+        "summary": "Saiba, em linhas gerais, que adesivos de nicotina, gomas, pastilhas e alguns medicamentos podem ser usados para apoiar o processo de parar de fumar.",
+        "estimatedReadMinutes": 2,
+        "icon": "favorite",
+        "intro": "Algumas pessoas podem se beneficiar de um apoio extra para lidar com a abstinência e a fissura enquanto param de fumar.",
+        "contentSections": [
+          {
+            "title": "Opções gerais",
+            "body": "Existem produtos como adesivos de nicotina, goma de mascar de nicotina e pastilhas, além de alguns medicamentos usados para parar de fumar. O propósito dessas opções é tornar a abstinência e a fissura mais fáceis de manejar para algumas pessoas.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Avalie com um profissional de saúde",
+            "body": "O uso de medicamentos e de produtos de apoio com nicotina pode variar conforme a sua condição de saúde. Consulte um profissional de saúde quando precisar.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Produtos de apoio e medicamentos podem ser uma opção para algumas pessoas; a decisão pessoal de tratamento cabe a um profissional de saúde."
+        ]
+      },
+      {
+        "id": "b1-07",
+        "sectionId": "section-1",
+        "order": 7,
+        "title": "Dia de parar",
+        "summary": "Atravesse o seu primeiro dia sem cigarro com mais planejamento, usando passos simples como água, movimento, respiração e organização do ambiente.",
+        "estimatedReadMinutes": 2,
+        "icon": "flag",
+        "intro": "O objetivo do primeiro dia não é se sentir impecável. O objetivo é planejar, o máximo possível e com antecedência, o primeiro dia sem fumar.",
+        "contentSections": [
+          {
+            "title": "Mude a rotina da manhã",
+            "body": "Mude o primeiro comportamento mais fortemente associado ao cigarro. Até uma mudança pequena, como um banho, uma caminhada curta ou uma rotina diferente no café da manhã, pode interromper a cadeia automática.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Prepare ferramentas simples",
+            "body": "Use o ato de beber água como uma rotina de lembrete; prepare opções sem cigarro para ocupar as mãos e a boca. Quando a fissura chegar, você pode experimentar a respiração 4-4-6: inspire por 4 segundos, segure por 4 segundos e solte devagar ao longo de 6 segundos.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Reduza os gatilhos fortes",
+            "body": "Especialmente nos primeiros dias, reduzir o quanto for possível os ambientes em que as pessoas fumam e os gatilhos que desafiam você pode deixar as coisas mais fáceis.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "O primeiro dia pode ser desafiador. O objetivo não é a fissura nunca chegar; é conseguir deixá-la passar sem fumar quando ela vier."
+        ]
+      },
+      {
+        "id": "b1-08",
+        "sectionId": "section-1",
+        "order": 8,
+        "title": "Abstinência",
+        "summary": "Entenda por que a abstinência acontece, que tipos de sintomas ela pode envolver e que ela faz parte de um processo temporário de adaptação.",
+        "estimatedReadMinutes": 2,
+        "icon": "lightbulb",
+        "intro": "Quando a nicotina diminui, o cérebro e o corpo tentam se ajustar à nova situação por um tempo. Alguns sintomas temporários podem aparecer nesse período.",
+        "contentSections": [
+          {
+            "title": "O que você pode sentir?",
+            "body": "Inquietação, dificuldade de concentração, mudanças no apetite, fissura e sintomas parecidos podem aparecer no período inicial de parar de fumar.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "O que isso significa?",
+            "body": "O aparecimento desses sintomas não significa que \"você precisa de um cigarro\". Pode ser, simplesmente, um período em que o seu corpo está se adaptando a uma rotina sem nicotina.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Abordagem",
+            "body": "Sono, ingestão regular de água, caminhadas curtas, exercícios de respiração, reduzir gatilhos e buscar apoio profissional quando precisar podem tornar esse período mais fácil de manejar.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "A abstinência pode ser desconfortável, mas é um processo temporário de adaptação. Se os sintomas ficarem intensos demais ou difíceis de manejar, busque apoio de um profissional de saúde."
+        ]
+      },
+      {
+        "id": "b1-09",
+        "sectionId": "section-1",
+        "order": 9,
+        "title": "Resumo do capítulo",
+        "summary": "Reúna num só lugar a dependência, os gatilhos, a preparação para parar e o seu plano básico para o primeiro dia.",
+        "estimatedReadMinutes": 1,
+        "icon": "flag",
+        "intro": "Neste capítulo, você viu que a dependência de fumar não é só uma questão de força de vontade; o cérebro, os pensamentos, as rotinas e o ambiente atuam juntos.",
+        "contentSections": [
+          {
+            "title": "Tenha em mente",
+            "body": "Reconhecer os seus gatilhos antes de parar, organizar o ambiente, escolher novas rotinas com antecedência e preparar um plano simples para o primeiro dia deixam o processo mais claro.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Próximo passo",
+            "body": "No próximo capítulo, vamos falar das conexões aprendidas que podem continuar mesmo depois que a nicotina sai do corpo, e de caminhos para tornar permanente uma vida sem cigarro.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "A preparação está feita: agora você segue não só para parar de fumar, mas para construir uma rotina sem cigarro."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "section-2",
+    "order": 2,
+    "title": "Tornar permanente uma vida sem cigarro",
+    "description": "Foca em transformar a vida sem cigarro na sua nova normalidade, reajustando os hábitos, pensamentos e gatilhos que podem permanecer mesmo depois que a nicotina sai do seu corpo.",
+    "articles": [
+      {
+        "id": "b2-01",
+        "sectionId": "section-2",
+        "order": 1,
+        "title": "A nicotina foi embora — por que você ainda pode querer fumar?",
+        "summary": "Entenda que a abstinência física e as conexões aprendidas com o cigarro não são a mesma coisa.",
+        "estimatedReadMinutes": 2,
+        "icon": "lightbulb",
+        "intro": "A nicotina sair do corpo não é o mesmo processo que desaprender comportamentos de fumar construídos ao longo de anos.",
+        "contentSections": [
+          {
+            "title": "Abstinência física",
+            "body": "À medida que a nicotina diminui, podem aparecer inquietação, dificuldade de concentração, mudanças no apetite ou sintomas parecidos. Eles estão ligados ao processo de adaptação física.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Conexões aprendidas",
+            "body": "Associações como café -> cigarro, refeição -> cigarro ou pausa -> cigarro podem ficar automáticas quando são repetidas por anos. Por isso, mesmo meses depois, um certo ambiente ou uma certa emoção pode despertar o pensamento de fumar.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "A diferença principal",
+            "body": "Um pensamento assim aparecer não significa, necessariamente, que você precise de nicotina de novo; pode ser apenas uma conexão antiga sendo lembrada.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "A abstinência física pode passar; já as conexões antigas de hábito podem ser lembradas por muito mais tempo, e elas enfraquecem quando você aprende de novo."
+        ]
+      },
+      {
+        "id": "b2-02",
+        "sectionId": "section-2",
+        "order": 2,
+        "title": "Reescreva os seus gatilhos",
+        "summary": "Em vez de tentar apagar por completo os gatilhos antigos, coloque comportamentos novos logo depois desses mesmos momentos.",
+        "estimatedReadMinutes": 2,
+        "icon": "loop",
+        "intro": "Nem sempre é possível tirar os gatilhos da sua vida por completo. Um objetivo mais realista é escolher, repetidas vezes, um comportamento novo depois do mesmo gatilho.",
+        "contentSections": [
+          {
+            "title": "Crie novas associações",
+            "body": null,
+            "items": [
+              "Café -> alguns minutos num ambiente diferente, água ou uma caminhada curta.",
+              "Refeição -> escovar os dentes, chá ou um movimento breve.",
+              "Estresse -> respiração, uma pausa curta ou uma mensagem de apoio.",
+              "Pausa no trabalho -> um caminho sem cigarro ou um grupo diferente de amigos."
+            ],
+            "numbered": false
+          },
+          {
+            "title": "Álcool e ambientes sociais",
+            "body": "O álcool pode fortalecer a vontade de fumar e os comportamentos automáticos em algumas pessoas. Especialmente no começo, reorganizar a quantidade, o ambiente ou o plano pode ajudar.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Por que a repetição importa",
+            "body": "Cada vez que você escolhe o comportamento novo, coloca uma opção diferente no lugar da cadeia automática antiga. O objetivo não é esquecer de uma vez, e sim repetir o caminho novo.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Associar um gatilho antigo a um comportamento novo ajuda a vida sem cigarro a ficar cada vez mais familiar."
+        ]
+      },
+      {
+        "id": "b2-03",
+        "sectionId": "section-2",
+        "order": 3,
+        "title": "Reavalie os seus pensamentos sobre fumar",
+        "summary": "Olhe com mais realismo para pensamentos antigos que podem parecer muito convincentes durante a sua jornada para parar de fumar.",
+        "estimatedReadMinutes": 2,
+        "icon": "lightbulb",
+        "intro": "Um pensamento parecer forte não significa que ele seja verdadeiro. Algumas crenças antigas podem reaparecer durante a sua jornada para parar de fumar.",
+        "contentSections": [
+          {
+            "title": "\"Fumar me acalma.\"",
+            "body": "Parte da sensação de alívio pode ser o alívio breve da abstinência de nicotina.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "\"Não consigo me concentrar sem fumar.\"",
+            "body": "A abstinência pode atrapalhar a atenção por um tempo; fumar pode parecer que está corrigindo essa interrupção.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "\"Fumei por tantos anos, não adianta parar agora.\"",
+            "body": "O benefício de parar de fumar para a saúde e para a qualidade de vida continua também em idades diferentes.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "\"Um não faz mal.\"",
+            "body": "Um único cigarro pode reativar o ciclo antigo de comportamento e o pensamento de \"só mais um\".",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Você não precisa discutir com um pensamento antigo quando ele aparece; primeiro perceba esse pensamento e depois olhe para ele com uma explicação mais realista."
+        ]
+      },
+      {
+        "id": "b2-04",
+        "sectionId": "section-2",
+        "order": 4,
+        "title": "Com o que você vai preencher o espaço que o cigarro deixou?",
+        "summary": "Perceba qual função o cigarro cumpria para você e encontre uma resposta sem cigarro para a mesma necessidade.",
+        "estimatedReadMinutes": 2,
+        "icon": "auto_awesome",
+        "intro": "Para algumas pessoas, o cigarro não é só nicotina; pode significar uma pausa, um momento de convívio, o hábito de levar a mão à boca ou \"alguns minutos que eu separo para mim\".",
+        "contentSections": [
+          {
+            "title": "Novas respostas conforme a necessidade",
+            "body": null,
+            "items": [
+              "Necessidade de uma pausa: uma caminhada curta de 5 minutos ou uma pausa ao ar livre.",
+              "Estresse: respiração lenta, um relaxamento breve ou se afastar do ambiente por alguns minutos.",
+              "Hábito de levar a mão à boca: água, chiclete sem açúcar ou outras rotinas sem cigarro.",
+              "Necessidade de recompensa: uma música de que você gosta, um passatempo, metas pequenas ou atividade física.",
+              "Convívio: construir amizades e rotinas de pausa sem cigarro."
+            ],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "O que você coloca no lugar do cigarro pode depender de qual necessidade o cigarro atendia na sua vida."
+        ]
+      },
+      {
+        "id": "b2-05",
+        "sectionId": "section-2",
+        "order": 5,
+        "title": "Fortaleça de novo as suas recompensas naturais",
+        "summary": "Em vez de construir a sua vida sem cigarro apenas em torno de \"não fumar\", apoie o seu sistema de recompensa e de motivação com rotinas naturais do dia a dia — movimento, sono e respiração.",
+        "estimatedReadMinutes": 2,
+        "icon": "auto_awesome",
+        "intro": "Em vez de construir uma vida sem cigarro só em torno de \"não fumar\", aumentar rotinas naturais que trazem prazer e relaxamento pode ser um caminho mais sustentável.",
+        "contentSections": [
+          {
+            "title": "Escolha três áreas pequenas",
+            "body": "Movimento, sono e prazer. Por exemplo, uma caminhada curta, um horário de sono mais regular e uma atividade sem cigarro de que você gosta.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Não precisa ser uma grande mudança",
+            "body": "O objetivo não é construir uma vida impecável de uma só vez. Comportamentos pequenos, mas que dá para repetir, podem aos poucos preencher o espaço que o cigarro deixou.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Respiração e relaxamento",
+            "body": "Respirar devagar e fazer exercícios breves de relaxamento podem oferecer uma opção diferente nos momentos de estresse, em vez de recorrer automaticamente ao cigarro.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Quanto mais cotidianas e acessíveis forem as suas novas recompensas, mais fácil pode ficar para a vida sem cigarro parecer a sua nova normalidade."
+        ]
+      },
+      {
+        "id": "b2-06",
+        "sectionId": "section-2",
+        "order": 6,
+        "title": "De \"estou tentando parar\" para \"eu não fumo\"",
+        "summary": "Construa um limite interno e social mais claro, que alinhe o seu comportamento sem cigarro com a sua nova identidade.",
+        "estimatedReadMinutes": 2,
+        "icon": "flag",
+        "intro": "A frase \"estou tentando parar de fumar\" pode, para algumas pessoas, fazer a decisão parecer algo que precisa ser refeito a cada gatilho.",
+        "contentSections": [
+          {
+            "title": "A abordagem da identidade",
+            "body": "\"Eu não fumo\" busca fazer o comportamento combinar com a sua nova identidade. Não é uma frase mágica; é um limite reforçado pelo comportamento repetido muitas vezes.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Exemplo num ambiente social",
+            "body": "Dizer \"Não, obrigado, eu não fumo\" em vez de \"Não, obrigado, estou tentando parar\" pode criar, para algumas pessoas, um limite mais claro e mais curto.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Reforce com o comportamento",
+            "body": "A identidade se reforça não só pela frase que você diz, mas pela nova resposta que você dá a cada gatilho.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "O objetivo é fazer o comportamento sem cigarro virar uma parte natural da sua identidade no dia a dia, em vez de se ver numa luta constante."
+        ]
+      },
+      {
+        "id": "b2-07",
+        "sectionId": "section-2",
+        "order": 7,
+        "title": "Cuidado com o pensamento \"agora eu consigo controlar\"",
+        "summary": "Perceba por que o pensamento \"eu poderia fumar só um\", que pode aparecer quando a fissura diminui, pode ser arriscado.",
+        "estimatedReadMinutes": 2,
+        "icon": "local_fire_department",
+        "intro": "Quando a vontade de fumar diminui depois de semanas ou meses, pode aparecer o pensamento \"agora eu consigo controlar a dependência, eu poderia fumar só um\".",
+        "contentSections": [
+          {
+            "title": "Onde está o risco?",
+            "body": "O risco não está só no cigarro único em si. Fumar pode fortalecer de novo as conexões antigas de recompensa e de comportamento e reavivar o pensamento de \"só mais um\".",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Um limite simples",
+            "body": "Em vez de tentar \"dar conta de só um\", o limite mais simples que protege o seu estado sem cigarro é não recomeçar.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Lembre-se",
+            "body": "A fissura diminuir é um progresso que importa; mas o sentido desse progresso não é voltar a fumar de forma controlada — é fortalecer a sua vida sem cigarro.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "O pensamento \"agora eu estou bem, eu poderia fumar só um\" pode parecer uma prova de progresso; ele também pode ser uma porta de volta ao ciclo antigo."
+        ]
+      },
+      {
+        "id": "b2-08",
+        "sectionId": "section-2",
+        "order": 8,
+        "title": "Lista de verificação da vida sem cigarro",
+        "summary": "Use perguntas curtas para ver onde a sua nova rotina está ficando mais forte e onde ela ainda precisa de apoio.",
+        "estimatedReadMinutes": 2,
+        "icon": "flag",
+        "intro": "Manter uma vida sem cigarro não é só olhar para o dia que acabou de passar. Também ajuda revisar, de tempos em tempos, o quanto os comportamentos novos se acomodaram.",
+        "contentSections": [
+          {
+            "title": "Pergunte-se",
+            "body": null,
+            "items": [
+              "Consigo me descrever como alguém que \"não fuma\"?",
+              "Tenho um comportamento novo para gatilhos fortes, como café, depois das refeições ou estresse?",
+              "Consigo perceber e questionar pensamentos antigos, como \"fumar antes me relaxava\"?"
+            ],
+            "numbered": false
+          },
+          {
+            "title": "Confira a sua rotina",
+            "body": null,
+            "items": [
+              "Estou construindo uma rotina sem cigarro no sono, no movimento, na vida social e nas atividades prazerosas?",
+              "Eu aceito que o pensamento \"um não faz mal\" pode ser arriscado para mim?"
+            ],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "A lista de verificação não serve para julgar o seu sucesso; serve para identificar a próxima área a fortalecer."
+        ]
+      },
+      {
+        "id": "b2-09",
+        "sectionId": "section-2",
+        "order": 9,
+        "title": "Resumo do capítulo",
+        "summary": "Reúna num só lugar os hábitos, os pensamentos e a nova identidade que podem continuar depois da abstinência física.",
+        "estimatedReadMinutes": 1,
+        "icon": "flag",
+        "intro": "A nicotina sair do corpo não significa que todos os hábitos desapareçam ao mesmo tempo.",
+        "contentSections": [
+          {
+            "title": "Tenha em mente",
+            "body": "À medida que você responde aos gatilhos antigos com comportamentos novos, a vida sem cigarro fica mais familiar. Uma mudança que permanece não é só tirar o cigarro — é preencher o espaço que ele deixou com novas rotinas, novas recompensas e uma nova identidade.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Próximo passo",
+            "body": "No próximo capítulo, vamos falar de fissuras intensas, da onda da fissura, do método 4D e de como lidar com o deslize e a recaída.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "A vida sem cigarro já não é só uma meta a proteger; é a sua nova rotina do dia a dia."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "section-3",
+    "order": 3,
+    "title": "Lidar com a fissura e prevenir a recaída",
+    "description": "Aborda como a fissura funciona, a natureza temporária dela, as ferramentas que você pode usar num momento de crise e como impedir que um deslize se transforme numa volta ao cigarro de forma regular.",
+    "articles": [
+      {
+        "id": "b3-01",
+        "sectionId": "section-3",
+        "order": 1,
+        "title": "O que é a fissura?",
+        "summary": "Entenda que a fissura é uma vontade forte, mas temporária, que pode ser disparada pela abstinência física ou por sinais aprendidos.",
+        "estimatedReadMinutes": 2,
+        "icon": "local_fire_department",
+        "intro": "A fissura é uma vontade forte de fumar que pode ser disparada por um sinal do ambiente, uma emoção, um pensamento ou a abstinência de nicotina.",
+        "contentSections": [
+          {
+            "title": "Fissura da abstinência física",
+            "body": "Ela pode estar ligada a sintomas biológicos que aparecem quando o nível de nicotina cai, especialmente no período inicial de parar de fumar.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Fissura psicológica condicionada",
+            "body": "Ela também pode aparecer mais tarde, disparada por sinais aprendidos como estresse, café, cheiro de cigarro, certas pessoas ou certos ambientes.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "A mensagem importante",
+            "body": "A fissura ser forte não significa que você tenha de ceder a ela. Ela pode ser percebida como uma vontade e pode passar sem que você fume.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "A fissura não é uma ordem; é uma vontade temporária, e pode ser disparada por sinais diferentes."
+        ]
+      },
+      {
+        "id": "b3-02",
+        "sectionId": "section-3",
+        "order": 2,
+        "title": "A fissura sobe e desce como uma onda",
+        "summary": "Veja a fissura não como uma necessidade constante, mas como uma onda que sobe, chega ao pico e depois diminui.",
+        "estimatedReadMinutes": 2,
+        "icon": "local_fire_department",
+        "intro": "A vontade de fumar, em geral, não permanece na mesma intensidade. Ela sobe, fica perceptível e depois tende a diminuir.",
+        "contentSections": [
+          {
+            "title": "Subida",
+            "body": "O pensamento de fumar pode ficar perceptível e a tensão pode aumentar. Perceber que \"uma onda de fissura começou agora\" é o primeiro passo aqui.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Pico",
+            "body": "A mente pode parecer presa no cigarro. É aqui que você usa uma das ferramentas que já escolheu, como o método 4D ou mudar de ambiente.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Diminuição",
+            "body": "Quando a intensidade da vontade começa a cair, perceba que você atravessou esse momento sem fumar. Essa experiência pode construir confiança para a próxima onda.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Em vez de tratar a onda como se ela não tivesse fim, vê-la como um processo temporário que sobe e desce pode facilitar lidar com ela."
+        ]
+      },
+      {
+        "id": "b3-03",
+        "sectionId": "section-3",
+        "order": 3,
+        "title": "Surfar a onda da fissura",
+        "summary": "Em vez de lutar contra a fissura ou forçá-la para baixo, observe por um momento a mudança que acontece no seu corpo e na sua mente.",
+        "estimatedReadMinutes": 2,
+        "icon": "loop",
+        "intro": "Surfar a fissura é uma abordagem em que, em vez de tentar afastar à força o pensamento de fumar, você observa esse pensamento como um sentimento temporário e um impulso do corpo.",
+        "contentSections": [
+          {
+            "title": "Quatro passos",
+            "body": null,
+            "items": [
+              "Nomeie: \"Neste momento, eu tenho vontade de fumar.\"",
+              "Perceba no corpo: como você sente a vontade — na boca, na garganta, no peito, no estômago ou em outro lugar?",
+              "Observe a mudança: não tente mudar a onda na hora. Observe, por um tempo, ela subir e diminuir.",
+              "Perceba o fim: quando a vontade diminuir, lembre-se de que esse momento passou sem fumar."
+            ],
+            "numbered": true
+          }
+        ],
+        "keyTakeaways": [
+          "O objetivo não é gostar da fissura nem ignorá-la; é experimentar, de forma direta, que ela é temporária."
+        ]
+      },
+      {
+        "id": "b3-04",
+        "sectionId": "section-3",
+        "order": 4,
+        "title": "O método 4D (Adiar – Respirar fundo – Beber água – Distrair)",
+        "summary": "Adiar • Respirar fundo • Beber água • Distrair-se: aplique quatro passos simples, em ordem, para interromper o comportamento automático de fumar num momento de crise.",
+        "estimatedReadMinutes": 2,
+        "icon": "local_fire_department",
+        "intro": "O método 4D é um plano simples de crise que você pode usar para abrir alguns minutos de espaço e interromper o comportamento automático quando uma fissura forte chega.",
+        "contentSections": [
+          {
+            "title": "Lide com a fissura em 4 passos",
+            "body": null,
+            "items": [
+              "Adiar: quando a fissura chegar, em vez de agir na hora, adie por alguns minutos a decisão de fumar.",
+              "Respirar fundo: concentre-se em aliviar a tensão do corpo com uma respiração lenta e controlada.",
+              "Beber água: alguns goles de água podem colocar uma pausa simples no meio do caminho e interromper o comportamento automático de fumar.",
+              "Distrair: mude de ambiente, faça uma caminhada curta, ligue para alguém ou leve a mente para outra coisa."
+            ],
+            "numbered": true
+          }
+        ],
+        "keyTakeaways": [
+          "O objetivo do método 4D não é \"destruir\" a fissura na hora; é colocar tempo entre a reação automática e o cigarro, para que a onda possa passar."
+        ]
+      },
+      {
+        "id": "b3-05",
+        "sectionId": "section-3",
+        "order": 5,
+        "title": "Planeje antes de o gatilho chegar",
+        "summary": "Decida com antecedência, numa lógica de \"se acontecer X, eu faço Y\", como você vai responder nos momentos difíceis.",
+        "estimatedReadMinutes": 2,
+        "icon": "flag",
+        "intro": "Tomar decisões num momento de crise pode ser difícil. Um plano curto de \"se – então\", preparado antes, pode reduzir o comportamento automático.",
+        "contentSections": [
+          {
+            "title": "Exemplos",
+            "body": null,
+            "items": [
+              "Se eu quiser um cigarro junto com o café, vou tomar o café em outro lugar.",
+              "Se alguém me oferecer um cigarro, vou dizer \"eu não fumo\".",
+              "Se eu sair de uma reunião estressante, primeiro vou caminhar por alguns minutos."
+            ],
+            "numbered": false
+          },
+          {
+            "title": "Álcool e ambientes sociais",
+            "body": "Se o álcool ou os ambientes sociais em que as pessoas fumam aumentam a sua fissura, reorganizar o ambiente, a duração ou o plano pode ajudar, especialmente no começo.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Escolher o plano com antecedência, em vez de criá-lo durante a crise, significa ter menos decisões para tomar nos momentos difíceis."
+        ]
+      },
+      {
+        "id": "b3-06",
+        "sectionId": "section-3",
+        "order": 6,
+        "title": "Deslize e recaída não são a mesma coisa",
+        "summary": "Entenda a diferença entre um deslize breve e uma volta completa ao seu antigo padrão regular de fumar.",
+        "estimatedReadMinutes": 2,
+        "icon": "lightbulb",
+        "intro": "Deslize se refere a fumar uma vez ou por pouco tempo; recaída se refere a voltar ao seu antigo padrão regular de uso.",
+        "contentSections": [
+          {
+            "title": "Por que a distinção importa?",
+            "body": "Não ajuda tratar um deslize como se não tivesse importância — ele pode reativar o ciclo antigo. Mas interpretá-lo como \"agora eu falhei por completo\" também pode aumentar o risco de continuar fumando.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Equilíbrio",
+            "body": "Leve o deslize a sério, mas não o veja como o fim de toda a sua jornada. A informação mais valiosa é qual gatilho entrou em cena naquele momento.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Um deslize é um alerta, não uma sentença. É possível entender o que aconteceu e voltar a ficar sem cigarro."
+        ]
+      },
+      {
+        "id": "b3-07",
+        "sectionId": "section-3",
+        "order": 7,
+        "title": "A armadilha do \"um erro estragou tudo\"",
+        "summary": "Perceba por que o pensamento \"já era\", que pode aparecer depois de um deslize, pode facilitar o segundo e o terceiro cigarro.",
+        "estimatedReadMinutes": 2,
+        "icon": "local_fire_department",
+        "intro": "Depois de fumar um cigarro, podem aparecer pensamentos como \"eu não tenho força de vontade\", \"eu já estraguei tudo\" ou \"vou fumar hoje e recomeço amanhã\".",
+        "contentSections": [
+          {
+            "title": "O risco real",
+            "body": "Tratar toda a jornada como perdida depois de um único deslize pode facilitar que a pessoa continue fumando. Por isso, importa analisar um erro com rapidez, em vez de aumentá-lo além do que ele é.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Três perguntas",
+            "body": null,
+            "items": [
+              "O que aconteceu?",
+              "Qual gatilho entrou em cena?",
+              "O que eu vou fazer da próxima vez na mesma situação?"
+            ],
+            "numbered": false
+          },
+          {
+            "title": "Dados em vez de julgamento",
+            "body": "O objetivo não é normalizar o que aconteceu; é transformar isso em informação que vai construir um plano mais forte se o mesmo cenário se repetir.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "O pensamento \"acabou tudo\" não é a realidade em si — é uma reação mental que pode transformar um deslize em recaída."
+        ]
+      },
+      {
+        "id": "b3-08",
+        "sectionId": "section-3",
+        "order": 8,
+        "title": "Plano de recuperação depois de um deslize",
+        "summary": "Se você tiver um deslize, pare antes que ele continue, analise o gatilho, atualize o seu plano e volte a ficar sem cigarro.",
+        "estimatedReadMinutes": 2,
+        "icon": "flag",
+        "intro": "Os primeiros passos depois de um deslize importam para impedir que o episódio volte a ser um uso regular.",
+        "contentSections": [
+          {
+            "title": "Passos de recuperação",
+            "body": null,
+            "items": [
+              "Não continue: não passe para um segundo cigarro dizendo a si \"de qualquer jeito, já estraguei tudo\".",
+              "Anote: onde você estava, com quem estava e qual emoção você sentia?",
+              "Identifique o gatilho: foi estresse, álcool, pressão social, falta de um plano ou um hábito forte?",
+              "Atualize o seu plano: decida qual comportamento novo você vai usar se o mesmo cenário se repetir.",
+              "Considere apoio: se a fissura ou a abstinência estiver forte demais para manejar por conta própria, vale considerar um profissional de saúde ou um apoio para parar de fumar.",
+              "Volte: retome a vida sem cigarro o quanto antes."
+            ],
+            "numbered": true
+          }
+        ],
+        "keyTakeaways": [
+          "O passo mais importante depois de um deslize é interrompê-lo, em vez de deixá-lo continuar, e fortalecer o seu plano."
+        ]
+      },
+      {
+        "id": "b3-09",
+        "sectionId": "section-3",
+        "order": 9,
+        "title": "Monte o seu próprio plano de crise",
+        "summary": "Decida com antecedência quais são os seus gatilhos mais fortes, o primeiro método que você vai aplicar e a quem vai recorrer se precisar.",
+        "estimatedReadMinutes": 2,
+        "icon": "flag",
+        "intro": "Um plano de crise oferece um caminho pronto, em vez de você ter de pensar do zero num momento difícil.",
+        "contentSections": [
+          {
+            "title": "Preencha o seu plano",
+            "body": null,
+            "items": [
+              "Os meus três gatilhos mais fortes: ________",
+              "O primeiro passo que vou dar quando a fissura chegar: ________",
+              "Uma opção para mudar de ambiente: ________",
+              "Alguém para quem eu posso ligar ou mandar mensagem: ________",
+              "A frase de que vou me lembrar: ________"
+            ],
+            "numbered": false
+          },
+          {
+            "title": "Mantenha curto",
+            "body": "Quanto mais simples e ao alcance estiver o seu plano, maior a chance de você realmente usá-lo durante uma crise.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Um plano de crise não apaga a fissura com antecedência; ele deixa claro o que você vai fazer quando ela chegar."
+        ]
+      },
+      {
+        "id": "b3-10",
+        "sectionId": "section-3",
+        "order": 10,
+        "title": "Revise o seu processo com regularidade",
+        "summary": "Avalie quais gatilhos enfraqueceram, quais ainda estão presentes e qual método funciona melhor para você.",
+        "estimatedReadMinutes": 2,
+        "icon": "loop",
+        "intro": "Ao longo do tempo sem cigarro, a mesma estratégia pode não funcionar igualmente bem em toda situação. É natural atualizar o seu plano de tempos em tempos.",
+        "contentSections": [
+          {
+            "title": "Pergunte-se",
+            "body": null,
+            "items": [
+              "Quais gatilhos eu agora manejo com mais tranquilidade?",
+              "Em quais situações a fissura ainda está forte?",
+              "Qual método funciona melhor para mim?",
+              "Se eu tiver um deslize, o que vou fazer nos primeiros minutos?"
+            ],
+            "numbered": false
+          },
+          {
+            "title": "Conheça o seu limite de apoio",
+            "body": "Ajuda saber com antecedência a quem você vai recorrer para ter apoio profissional no ponto em que ficar difícil manejar as coisas por conta própria.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Lembre o seu motivo",
+            "body": "De tempos em tempos, lembre-se do seu motivo pessoal mais forte para manter uma vida sem cigarro.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Um bom plano não precisa ser fixo; ele pode ser atualizado à medida que você ganha experiência."
+        ]
+      },
+      {
+        "id": "b3-11",
+        "sectionId": "section-3",
+        "order": 11,
+        "title": "Resumo do capítulo",
+        "summary": "Reúna num só lugar a fissura, o método 4D, o planejamento dos gatilhos e o manejo do deslize e da recaída.",
+        "estimatedReadMinutes": 1,
+        "icon": "flag",
+        "intro": "A fissura não é uma ordem. Ela pode aparecer como uma vontade temporária, ficar mais forte e depois diminuir.",
+        "contentSections": [
+          {
+            "title": "Tenha em mente",
+            "body": "Perceber a fissura, usar a abordagem de surfar a onda ou o método 4D, preparar com antecedência um plano para os gatilhos e não deixar que um possível deslize vire o pensamento de \"acabou tudo\" podem ajudar a proteger o seu estado sem cigarro.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "As perguntas principais",
+            "body": null,
+            "items": [
+              "O que aconteceu?",
+              "Qual gatilho entrou em cena?",
+              "O que eu vou fazer da próxima vez?"
+            ],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "A fissura passa, e o plano fica mais forte. O objetivo não é atravessar cada momento difícil com perfeição; é aprender como voltar a ficar sem cigarro e seguir assim."
+        ]
+      }
+    ]
+  }
+]

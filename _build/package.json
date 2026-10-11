@@ -8,7 +8,10 @@
     "build": "node build.mjs",
     "verify": "node verify.mjs",
     "serve": "node serve.mjs",
-    "og": "node og/generate.mjs"
+    "og": "node og/generate.mjs",
+    "setup-admin": "node setup-admin.mjs",
+    "verify:admin": "node verify-admin-auth.mjs",
+    "verify:gallery": "node verify-gallery.mjs"
   },
   "devDependencies": {
     "playwright-core": "^1.55.0"

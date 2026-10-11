@@ -16,7 +16,48 @@ const TITLES = {
   'userDataDeletion.html': 'Veri Silme Talimatları',
 };
 
-const LANG_NAMES = { tr: 'Türkçe', en: 'English', es: 'Español', de: 'Deutsch' };
+const LANG_NAMES = { tr: 'Türkçe', en: 'English', es: 'Español', de: 'Deutsch', fr: 'Français', 'pt-BR': 'Português (Brasil)' };
+const LANGUAGE_UI = {
+  tr: { label: 'Dil', choose: 'Dil seçin', note: 'Not' },
+  en: { label: 'Language', choose: 'Choose a language', note: 'Note' },
+  es: { label: 'Idioma', choose: 'Elige un idioma', note: 'Nota' },
+  de: { label: 'Sprache', choose: 'Sprache wählen', note: 'Hinweis' },
+  fr: { label: 'Langue', choose: 'Choisir une langue', note: 'Note' },
+  'pt-BR': { label: 'Idioma', choose: 'Escolha um idioma', note: 'Nota' },
+};
+
+function chromeTranslations(contexts, file) {
+  const titleKey = { 'privacy.html': 'privacy', 'terms.html': 'terms', 'userDataDeletion.html': 'dataDeletion' }[file];
+  return Object.fromEntries(contexts.map(({ lang, t, url, config, buildDate }) => {
+    const legalLink = (name) => `${url.page(name)}?lang=${lang}`;
+    return [lang, {
+      name: LANG_NAMES[lang], language: LANGUAGE_UI[lang],
+      title: `${t.footer[titleKey]} | ${config.siteName}`,
+      home: url.home(), page: legalLink(file), skip: t.a11y.skip,
+      mainNav: t.a11y.mainNav, mobileNav: t.a11y.mobileNav, footerNav: t.a11y.footerNav,
+      menu: t.nav.menu, close: t.nav.close, download: { text: t.nav.download, href: url.download() },
+      nav: [
+        { text: t.nav.app, href: url.home('#uygulama') },
+        { text: t.nav.guide, href: url.guide() },
+        { text: t.nav.knowledge, href: url.knowledge() },
+      ],
+      footer: [
+        { text: t.nav.guide, href: url.guide() },
+        { text: t.nav.knowledge, href: url.knowledge() },
+        { text: t.nav.tools, href: url.tools() },
+        { text: t.footer.contact, href: `mailto:${config.supportEmail}` },
+        { text: t.footer.instagram, href: config.social.instagram },
+      ],
+      legalLabel: t.footer.groups.legal,
+      legal: [
+        { text: t.footer.privacy, href: legalLink('privacy.html') },
+        { text: t.footer.terms, href: legalLink('terms.html') },
+        { text: t.footer.dataDeletion, href: legalLink('userDataDeletion.html') },
+      ],
+      copyright: t.footer.copyright(buildDate.slice(0, 4)), disclaimer: t.footer.disclaimer,
+    }];
+  }));
+}
 
 function replaceRegion(source, [start, end], content) {
   const a = source.indexOf(start);
@@ -45,7 +86,7 @@ function migrate(source) {
   const links = [...navInner.matchAll(/<a href="([^"]+)">([\s\S]*?)<\/a>/g)]
     .filter(([, href]) => href !== 'index.html')
     .map(([, href, inner]) => `        <li><a href="/${href}">${inner.replace(/\s+/g, ' ').trim()}</a></li>`);
-  const langs = [...header[1].matchAll(/data-lang="([a-z]{2})"/g)].map((m) => m[1]);
+  const langs = [...header[1].matchAll(/data-lang="([a-z]{2}(?:-[A-Z]{2})?)"/g)].map((m) => m[1]);
   const buttons = langs.map((l, i) => `        <button type="button" data-lang="${l}" lang="${l}" aria-label="${LANG_NAMES[l] || l}"${i === 0 ? ' class="active"' : ''}>${l.toUpperCase()}</button>`);
   const notes = [...footer[1].matchAll(/<p class="muted">([\s\S]*?)<\/p>/g)].map((m) => m[1].trim());
 
@@ -73,12 +114,18 @@ ${buttons.join('\n')}
   return out;
 }
 
-export function refreshLegalPage(ctx, file, source) {
+export function refreshLegalPage(ctx, file, source, localeContexts = [ctx]) {
   let out = source.includes(MARK.header[0]) ? source : migrate(source);
   const meta = pageMeta(ctx, file, source);
+  const translations = chromeTranslations(localeContexts, file);
+  const legalCtx = {
+    ...ctx,
+    languageHomes: () => localeContexts.map((locale) => ({ lang: locale.lang, path: `/${file}?lang=${locale.lang}` })),
+  };
+  const data = JSON.stringify(translations).replace(/</g, '\\u003c');
   out = replaceRegion(out, MARK.head, String(headTags(ctx, meta)).trim());
-  out = replaceRegion(out, MARK.header, String(siteHeader(ctx, null)));
-  out = replaceRegion(out, MARK.footer, String(siteFooter(ctx)));
+  out = replaceRegion(out, MARK.header, String(siteHeader(legalCtx, null, meta.path)));
+  out = replaceRegion(out, MARK.footer, `${siteFooter(legalCtx, meta.path)}\n<script id="legal-chrome-translations" type="application/json">${data}</script>`);
   out = out.replace(/<script src="\/?lang\.js[^"]*" defer><\/script>/, `<script src="${ctx.asset('/lang.js')}" defer></script>`);
   return out;
 }

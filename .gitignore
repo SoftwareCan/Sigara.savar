@@ -1,1 +1,3 @@
 _build/node_modules/
+.local/
+_build/private/

@@ -25,6 +25,22 @@ export const healthSourceNote =
   'Uygulamanın sağlık hedeflerinden seçildi; WHO, NHS ve CDC kaynaklarıyla karşılaştırıldı. Süreler genel bir çerçevedir; kişisel sağlık durumuna göre değişebilir.';
 
 const HEALTH_COPY = {
+  'pt-BR': {
+    sources: ['Organização Mundial da Saúde (OMS)', 'NHS · Better Health', 'CDC · Benefícios de parar de fumar'],
+    note: 'Selecionados entre os objetivos de saúde do app e comparados com fontes da OMS, do NHS e dos CDC. Os prazos são uma referência geral e variam de acordo com a saúde de cada pessoa.',
+    milestones: [
+      ['A frequência cardíaca e a pressão arterial começam a voltar ao normal.', 'As primeiras mudanças podem começar poucos minutos após o último cigarro.'],
+      ['O nível de monóxido de carbono no sangue volta à faixa normal.', 'A linha do tempo geral da OMS situa essa mudança em cerca de 12 horas.'],
+      ['O paladar e o olfato podem começar a melhorar.', 'O NHS destaca a recuperação do paladar e do olfato nos primeiros dois dias.'],
+      ['Os brônquios relaxam; respirar pode se tornar mais fácil.', 'O NHS inclui essa mudança entre os benefícios gerais por volta de 72 horas.'],
+      ['A circulação sanguínea pode melhorar.', 'A OMS situa esses benefícios em um período de 2 a 12 semanas.'],
+      ['A tosse e a falta de ar podem diminuir com o tempo.', 'A OMS descreve essas mudanças ao longo de um período de 1 a 9 meses.'],
+      ['A função pulmonar pode melhorar e os sintomas respiratórios podem diminuir.', 'O NHS descreve esses benefícios entre 3 e 9 meses; a mudança não acontece em uma data fixa.'],
+      ['O risco de doença coronariana cai para cerca da metade.', 'A comparação da OMS é com uma pessoa que continua fumando.'],
+      ['O risco de morrer de câncer de pulmão cai para cerca da metade.', 'A comparação na linha do tempo geral do NHS é com uma pessoa que continua fumando.'],
+      ['O risco de doença coronariana se aproxima do risco de uma pessoa que não fuma.', 'Os CDC incluem essa mudança entre os benefícios de longo prazo observados após cerca de 15 anos.'],
+    ],
+  },
   en: {
     sources: ['World Health Organization (WHO)', 'NHS · Better Health', 'CDC · Benefits of quitting smoking'],
     note: 'Selected from the app’s health goals and checked against WHO, NHS and CDC sources. These timings are a general guide; individual health circumstances vary.',

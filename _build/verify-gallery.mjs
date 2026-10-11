@@ -50,24 +50,15 @@ function setup(reduced = false) {
     for (const [id, timer] of [...timers]) if (timer.ms === ms) { timers.delete(id); timer.fn(); }
     await settle();
   };
-  return { scenes, gallery, document, select, motion, intersection: (visible) => intersection([{ isIntersecting: visible }]), run, settle, rotating: () => [...timers.values()].some((t) => t.ms === 6500) };
+  return { scenes, gallery, document, select, motion, intersection: (visible) => intersection([{ isIntersecting: visible }]), run, settle, rotating: () => [...timers.values()].some((t) => t.ms === 4000) };
 }
 
 const normal = setup();
 assert(normal.rotating());
-await normal.run(6500);
+await normal.run(4000);
 assert(normal.scenes[1].classList.contains('is-active'));
 await normal.run(950);
 assert(normal.scenes[0].hidden);
-normal.gallery.emit('mouseenter');
-assert(!normal.rotating());
-normal.gallery.emit('mouseleave');
-assert(normal.rotating());
-normal.gallery.emit('focusin');
-normal.gallery.emit('mouseleave');
-assert(!normal.rotating(), 'Keyboard focus must stop rotation until explicitly started');
-normal.select('[data-gallery-toggle]').emit('click');
-assert(normal.rotating());
 normal.intersection(false);
 assert(!normal.rotating());
 normal.intersection(true);
@@ -78,30 +69,30 @@ assert(!normal.rotating());
 normal.document.hidden = false;
 normal.document.emit('visibilitychange');
 assert(normal.rotating());
-normal.select('[data-gallery-next]').emit('click');
-await normal.settle();
+normal.motion.matches = true;
+normal.motion.emit('change');
 assert(!normal.rotating());
-assert.equal(normal.select('[data-gallery-status]').textContent, '3/5');
-normal.scenes[3].images[0].decode = () => Promise.reject(new Error('Unavailable image'));
-normal.select('[data-gallery-next]').emit('click');
-await normal.settle();
-assert(normal.scenes[2].classList.contains('is-active'), 'A failed image must keep the current scene');
-
-const pointer = setup();
-pointer.select('[data-gallery-toggle]').emit('pointerdown');
-pointer.gallery.emit('focusin');
-pointer.select('[data-gallery-toggle]').emit('click');
-assert(!pointer.rotating(), 'Clicking Pause must not restart after the focus event');
-assert.equal(pointer.select('[data-gallery-toggle]').getAttribute('aria-label'), 'Play');
-assert.equal(pointer.select('[data-pause-icon]').getAttribute('hidden'), '');
-
+normal.motion.matches = false;
+normal.motion.emit('change');
+assert(normal.rotating());
+normal.scenes[2].images[0].decode = () => Promise.reject(new Error('Unavailable image'));
+await normal.run(4000);
+assert(normal.scenes[1].classList.contains('is-active'), 'Image failure must preserve current scene');
+assert(normal.rotating(), 'A failed image retries on the next interval');
 const reduced = setup(true);
 assert(!reduced.rotating());
-reduced.select('[data-gallery-next]').emit('click');
-await reduced.settle();
-await reduced.run(0);
-assert(reduced.scenes[1].classList.contains('is-active'));
-assert(reduced.scenes[0].hidden);
-assert(!reduced.rotating());
-
-console.log('Gallery checks passed: autoplay, manual navigation, hover/focus, reduced motion, visibility, image failure and pointer pause.');
+const loop = setup();
+for (let i = 0; i < 5; i++) { await loop.run(4000); await loop.run(950); }
+assert(loop.scenes[0].classList.contains('is-active'), 'Loop wraps to the first scene');
+const pending = setup();
+let decode;
+pending.scenes[1].images[0].decode = () => new Promise((resolve) => { decode = resolve; });
+await pending.run(4000);
+pending.intersection(false);
+decode();
+await pending.settle();
+assert(pending.scenes[0].classList.contains('is-active'), 'An offscreen gallery must not swap after a late decode');
+assert(!pending.rotating());
+const template = fs.readFileSync(new URL('templates/gallery.mjs', import.meta.url), 'utf8');
+assert(!template.includes('<button'), 'No carousel controls should be rendered');
+console.log('Gallery checks passed: 4-second autoplay, loop, reduced motion, visibility, failed images and pending-decode cancellation; no controls.');

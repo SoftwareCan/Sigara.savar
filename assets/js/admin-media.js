@@ -24,11 +24,24 @@
   const clone = (value) => JSON.parse(JSON.stringify(value));
   const defaults = () => ({ order: data.gallery.map((item) => item.id), items: Object.fromEntries(data.gallery.map((item) => [item.id, { alts: { ...item.alts }, sourceHash: item.sourceHash }])) });
   const signature = (value) => JSON.stringify({ order: value.order, items: value.items });
-  function valid(value) {
+  function valid(value, locales = data.locales) {
     return value && Array.isArray(value.order) && value.order.length === originals.size && new Set(value.order).size === originals.size && value.order.every((id) => originals.has(id)) && value.items && typeof value.items === 'object' && value.order.every((id) => {
       const item = value.items[id];
-      return item && typeof item.sourceHash === 'string' && item.sourceHash.length <= 64 && item.alts && data.locales.every((locale) => typeof item.alts[locale.code] === 'string' && item.alts[locale.code].length <= 600 && item.alts[locale.code].trim().length > 0);
+      return item && typeof item.sourceHash === 'string' && item.sourceHash.length <= 64 && item.alts && locales.every((locale) => typeof item.alts[locale.code] === 'string' && item.alts[locale.code].length <= 600 && item.alts[locale.code].trim().length > 0);
     });
+  }
+  function migratePortugueseAlts(value) {
+    // Older plans predate Brazilian Portuguese. Preserve every edited field,
+    // image order and source hash; supply only the newly introduced alt text.
+    const previousLocales = data.locales.filter((locale) => locale.code !== 'pt-BR');
+    if (previousLocales.length === data.locales.length || !valid(value, previousLocales)) return value;
+    const migrated = clone(value);
+    for (const id of migrated.order) {
+      if (!Object.hasOwn(migrated.items[id].alts, 'pt-BR')) {
+        migrated.items[id].alts['pt-BR'] = originals.get(id).alts['pt-BR'];
+      }
+    }
+    return migrated;
   }
   function clean(value) {
     return { order: [...value.order], items: Object.fromEntries(value.order.map((id) => [id, { sourceHash: value.items[id].sourceHash, alts: Object.fromEntries(data.locales.map((locale) => [locale.code, value.items[id].alts[locale.code]])) }])), ...(value.updatedAt ? { updatedAt: value.updatedAt } : {}) };
@@ -44,8 +57,11 @@
     const raw = localStorage.getItem(KEY);
     if (raw) {
       const stored = JSON.parse(raw);
-      if (stored.version !== 1 || !valid(stored.plan)) throw new Error('Invalid gallery plan');
-      saved = clean(stored.plan);
+      if (stored.version !== 1) throw new Error('Invalid gallery plan version');
+      const migrated = migratePortugueseAlts(stored.plan);
+      if (!valid(migrated)) throw new Error('Invalid gallery plan');
+      // The original browser record stays intact until the next explicit save.
+      saved = clean(migrated);
       plan = clone(saved);
     }
   } catch { storageIssue = true; }
@@ -70,7 +86,7 @@
     if (saved) {
       const row = element('div', 'admin-draft-row');
       const copy = element('div');
-      copy.append(element('h3', '', 'Ana sayfa galerisi planı'), element('p', '', `${plan.order.length} görsel · 5 dilde alternatif metin · Yerel taslak`));
+      copy.append(element('h3', '', 'Ana sayfa galerisi planı'), element('p', '', `${plan.order.length} görsel · ${data.locales.length} dilde alternatif metin · Yerel taslak`));
       const actions = element('div', 'admin-draft-actions');
       const edit = element('a', 'admin-button', 'Galeri planını aç');
       edit.href = '#media';

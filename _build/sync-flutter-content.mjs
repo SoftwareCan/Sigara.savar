@@ -15,7 +15,8 @@ const flutterRoot = path.resolve(process.argv[2] || path.join(here, '../../Sigar
 const outRoot = path.join(here, 'content');
 const sourceFile = path.join(outRoot, 'SOURCE.json');
 const previousSource = fs.existsSync(sourceFile) ? JSON.parse(fs.readFileSync(sourceFile, 'utf8')) : {};
-const SUPPORTED_LANGS = ['tr', 'en', 'de', 'es', 'fr'];
+const SUPPORTED_LANGS = ['tr', 'en', 'de', 'es', 'fr', 'pt-BR'];
+const DART_LOCALE_SUFFIX = { tr: 'Tr', en: 'En', de: 'De', es: 'Es', fr: 'Fr', 'pt-BR': 'PtBr' };
 // Optional third argument limits a sync to one locale without touching the others.
 const LANGS = process.argv[3] ? process.argv[3].split(',') : SUPPORTED_LANGS;
 if (LANGS.some((lang) => !SUPPORTED_LANGS.includes(lang))) throw new Error('Unsupported content locale');
@@ -209,8 +210,8 @@ const pick = (obj, keys) => Object.fromEntries(keys.filter((k) => obj[k] !== und
 const src = (rel) => path.join(flutterRoot, rel);
 
 function knowledge(lang) {
-  const suffix = { tr: '', en: '_en', es: '_es', de: '_de', fr: '_fr' }[lang];
-  const name = { tr: 'kKnowledgeCenterSections', en: 'kKnowledgeCenterSectionsEn', es: 'kKnowledgeCenterSectionsEs', de: 'kKnowledgeCenterSectionsDe', fr: 'kKnowledgeCenterSectionsFr' }[lang];
+  const suffix = { tr: '', en: '_en', es: '_es', de: '_de', fr: '_fr', 'pt-BR': '_pt_br' }[lang];
+  const name = lang === 'tr' ? 'kKnowledgeCenterSections' : `kKnowledgeCenterSections${DART_LOCALE_SUFFIX[lang]}`;
   const scope = parseConstLists(src(`lib/features/explore/system_posts/data/knowledge_center_content${suffix}.dart`));
   const sections = resolveRefs(scope[name], scope);
   return sections.map((s) => ({
@@ -233,13 +234,13 @@ function knowledge(lang) {
 
 function health(lang) {
   const scope = parseConstLists(src('lib/features/health/presentation/data/health_goals_l10n.dart'));
-  const name = `kHealthGoals${lang[0].toUpperCase()}${lang[1]}`;
+  const name = `kHealthGoals${DART_LOCALE_SUFFIX[lang]}`;
   return scope[name].map((g) => pick(g, ['duration', 'targetMinutes', 'summary', 'detail', 'motivation']));
 }
 
 function breathing(lang) {
   const scope = parseConstLists(src('lib/features/games/presentation/data/breathing_exercise_l10n.dart'));
-  const name = `kBreathingTechniques${lang[0].toUpperCase()}${lang[1]}`;
+  const name = `kBreathingTechniques${DART_LOCALE_SUFFIX[lang]}`;
   return scope[name].map((t) => pick(t, ['id', 'name', 'inhaleSeconds', 'holdSeconds', 'exhaleSeconds', 'benefit', 'area', 'description']));
 }
 
@@ -247,7 +248,7 @@ function breathing(lang) {
 function journey(lang) {
   const file = lang === 'tr' ? 'lib/features/progress/domain/growth_insights.dart' : 'lib/features/progress/domain/growth_insights_l10n.dart';
   const scope = parseConstLists(src(file));
-  const name = lang === 'tr' ? 'journeyMapMilestones' : `kJourneyMapMilestones${lang[0].toUpperCase()}${lang[1]}`;
+  const name = lang === 'tr' ? 'journeyMapMilestones' : `kJourneyMapMilestones${DART_LOCALE_SUFFIX[lang]}`;
   return scope[name].map((s) => {
     const base = pick(s, ['level', 'title', 'dayLabel', 'minDays']);
     if (s.level >= 3) return { ...base, requiresPremium: true };
@@ -256,7 +257,8 @@ function journey(lang) {
 }
 
 function appStrings(lang) {
-  const arb = JSON.parse(fs.readFileSync(src(`lib/l10n/app_${lang}.arb`), 'utf8'));
+  const arbLocale = lang === 'pt-BR' ? 'pt_BR' : lang;
+  const arb = JSON.parse(fs.readFileSync(src(`lib/l10n/app_${arbLocale}.arb`), 'utf8'));
   const keys = Object.keys(arb).filter((k) => !k.startsWith('@') && (
     k.startsWith('crisisGuardian') || /^communityRules(Purpose|Respect|Safety|Health|Moderation)(Title|Description)$/.test(k) ||
     k === 'communityRulesTitle' || k === 'communityRulesDisclaimer'));
@@ -312,7 +314,7 @@ fs.writeFileSync(sourceFile, JSON.stringify({
     'lib/features/health/presentation/data/health_goals_l10n.dart',
     'lib/features/games/presentation/data/breathing_exercise_l10n.dart',
     'lib/features/progress/domain/growth_insights.dart, growth_insights_l10n.dart',
-    'lib/l10n/app_{tr,en,de,es,fr}.arb',
+    'lib/l10n/app_{tr,en,de,es,fr,pt_BR}.arb',
   ],
 }, null, 2) + '\n');
 

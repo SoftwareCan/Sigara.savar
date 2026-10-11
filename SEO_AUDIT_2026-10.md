@@ -1,6 +1,6 @@
 # Sigara Savar technical SEO audit
 
-Live audit: **10 October 2026**; final local validation: **11 October 2026**, Europe/Istanbul. Scope: the current five-language static website, its article templates, search metadata, crawl signals and the new local content workspace. No public deployment or search-engine submission was performed.
+Live audit: **10 October 2026**; final local validation: **11 October 2026**, Europe/Istanbul. Scope: the existing static website, its article templates, search metadata, crawl signals and the new local content workspace. The final local implementation supports six languages following the Brazilian Portuguese expansion. No public deployment or search-engine submission was performed.
 
 ## Evidence and limits
 
@@ -72,4 +72,4 @@ The existing tests continue to protect every app-sourced paragraph, item and tak
 
 ## Validation status
 
-The committed baseline passed the full static checker. Modified source files passed syntax and whitespace checks. The integrated build then passed verification for 174 public pages and one separate noindex workspace, including article/source fidelity, visible publication dates, canonical and language relationships, sitemap exclusions, and unchanged legal text. Final integration, including the homepage draft editor, passed 12,975 local-reference checks, 1,180 source-content checks and 850 language-route checks. Browser testing covered the seven requested widths, all five homepage languages, article layout, and draft save/export workflows. This report distinguishes local implementation from unchanged production hosting.
+The committed baseline passed the full static checker. Modified source files passed syntax and whitespace checks. Initial five-language browser testing covered the seven requested widths, homepage languages, article layout, and draft save/export workflows. Following the Brazilian Portuguese expansion and legal translations, final static verification on **11 October 2026** passed for **208 public pages and one separate noindex workspace**, with **16,116 local-reference checks, 1,416 source-content checks and 1,224 language-route checks**. Verification covers article/source fidelity, visible publication dates, canonical and language relationships, sitemap exclusions, and all six legal language versions. Every pre-existing legal language block remained byte-identical during translation; translated section structures, links and numeric dates/durations match English. This report distinguishes local implementation from unchanged production hosting.

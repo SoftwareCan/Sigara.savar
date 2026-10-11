@@ -50,6 +50,13 @@ export default {
       prefix: 'fr',
       routes: { knowledge: 'centre-de-connaissances', guide: 'guide-arret-tabac', tools: 'outils', download: 'telecharger' },
     },
+    'pt-BR': {
+      enabled: true,
+      htmlLang: 'pt-BR',
+      ogLocale: 'pt_BR',
+      prefix: 'pt-br',
+      routes: { knowledge: 'central-de-conhecimento', guide: 'guia-para-parar', tools: 'ferramentas', download: 'baixar' },
+    },
   },
 
   // Official store links from the Flutter app (lib/core/constants/app_constants.dart).

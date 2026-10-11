@@ -21,13 +21,6 @@
 .home-phone--front { width: 250px; left: 4%; top: 30px; transform: rotate(-7deg); z-index: 1; }
 .home-phone--back { width: 230px; right: 3%; top: 12px; transform: rotate(8deg); }
 .home-phone--store { border: 0; border-radius: 14px; }
-.hero-gallery__controls { display: flex; align-items: center; justify-self: center; height: 44px; margin-top: 12px; gap: 4px; color: #123c2c; }
-.hero-gallery__controls button { width: 44px; height: 44px; display: grid; place-items: center; padding: 0; color: inherit; background: transparent; border: 1px solid #123c2c38; border-radius: 50%; cursor: pointer; transition: background .2s ease; }
-.hero-gallery__controls button:hover { background: #ffffff45; }
-.hero-gallery__controls button:focus-visible { outline: 2px solid #123c2c; outline-offset: 3px; }
-.hero-gallery__controls [data-gallery-toggle] { margin-right: 8px; }
-.hero-gallery__count { display: flex; gap: 8px; padding-inline: 10px; font-size: .8125rem; font-weight: 600; font-variant-numeric: tabular-nums; }
-.hero-gallery__count > span:last-child { opacity: .7; }
 .home-jumps { border-bottom: 1px solid #e4eae5; background: #fff; }
 .home-jumps .wrap { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); }
 .home-jumps a { display: flex; align-items: center; justify-content: center; gap: 1.25rem; padding: 1.4rem .75rem; color: var(--ink); font-size: 1.0625rem; font-weight: 600; text-decoration: none; }
@@ -74,9 +67,7 @@
   .hero-gallery__stage { animation: home-product-enter .7s var(--ease-out) both; }
   @keyframes home-product-enter { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: translateY(0); } }
 }
-@media (prefers-reduced-motion: reduce) {
-  .hero-gallery__scene, .hero-gallery__controls button { transition: none; }
-}
+@media (prefers-reduced-motion: reduce) { .hero-gallery__scene { transition: none; } }
 @media (max-width: 1099px) and (min-width: 760px) {
   .home-hero__inner { min-height: 590px; gap: 1.5rem; }
   .home-hero h1 { font-size: clamp(2.6rem, 4.9vw, 3.3rem); }
@@ -102,7 +93,6 @@
   .home-phone--front { width: 160px; left: 6%; top: 20px; }
   .home-phone--back { width: 148px; right: 6%; top: 12px; }
   .home-phone--store { border: 0; border-radius: 10px; }
-  .hero-gallery__controls { margin-top: 4px; }
   .home-jumps .wrap { padding-inline: 0; }
   .home-jumps a { flex-direction: column; text-align: center; font-size: .8125rem; line-height: 1.25; padding: 1rem .5rem; gap: .5rem; }
   .home-jumps a + a { border-left: 1px solid #e4eae5; }

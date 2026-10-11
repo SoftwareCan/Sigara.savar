@@ -95,7 +95,7 @@
     toast([`${items.length} yazı taslağı`, ...(collected.gallery ? ['galeri planı'] : []), ...(homepages.length ? [`${homepages.length} ana sayfa taslağı`] : [])].join(', ') + ' dışa aktarıldı.');
   }
   function showView(id, focus = false) {
-    if (!(id in viewNames)) id = 'content';
+    if (!(Object.hasOwn(viewNames, id))) id = 'content';
     $$('[data-admin-view]').forEach((panel) => { panel.hidden = panel.dataset.adminView !== id; });
     $$('.admin-sidebar [data-admin-tab]').forEach((link) => {
       if (link.dataset.adminTab === id) link.setAttribute('aria-current', 'page'); else link.removeAttribute('aria-current');

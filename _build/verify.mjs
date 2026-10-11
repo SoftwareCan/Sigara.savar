@@ -287,10 +287,60 @@ if (!robots.includes(`Sitemap: ${config.baseUrl}/sitemap.xml`)) fail('robots.txt
 if (/^Disallow:\s*\/admin(?:\/|\s|$)/im.test(robots)) fail('robots.txt', 'admin noindex must remain crawlable; robots blocking is not access control');
 for (const file of config.authPages) if (!/<meta[^>]+name=["']robots["'][^>]+content=["'][^"']*noindex/i.test(read(file))) fail(file, 'paused auth page missing noindex');
 for (const file of config.legalPages) {
+  const legalLanguages = ['tr', 'en', 'de', 'es', 'fr', 'pt-BR'];
+  const languageBlocks = (source) => {
+    const blocks = new Map();
+    const inner = main(source);
+    for (const match of inner.matchAll(/<div\b[^>]*class="lang ([a-z]{2}(?:-[A-Z]{2})?)(?: policy-content)?"[^>]*>/g)) {
+      const tags = /<\/?div\b[^>]*>/g;
+      tags.lastIndex = match.index + match[0].length;
+      let depth = 1;
+      let end = tags.lastIndex;
+      let tag;
+      while (depth && (tag = tags.exec(inner))) {
+        depth += tag[0].startsWith('</') ? -1 : 1;
+        end = tags.lastIndex;
+      }
+      if (depth) fail(file, `unclosed ${match[1]} legal language block`);
+      if (blocks.has(match[1])) fail(file, `duplicate ${match[1]} legal language block`);
+      blocks.set(match[1], inner.slice(match.index, end));
+    }
+    return blocks;
+  };
+  const current = read(file);
+  const blocks = languageBlocks(current);
+  const english = blocks.get('en');
+  const structure = (block) => ['h2', 'h3', 'h4', 'h5', 'p', 'li', 'ul', 'ol', 'a', 'strong', 'nav']
+    .map((tag) => (block.match(new RegExp(`<${tag}(?:\\s|>)`, 'g')) || []).length).join(',');
+  const links = (block) => {
+    const ids = [...block.matchAll(/\bid="([^"]+)"/g)].map((match) => match[1]);
+    return [...block.matchAll(/\bhref="([^"]+)"/g)].map(([, href]) => {
+      if (!href.startsWith('#')) return decode(href);
+      const section = ids.indexOf(href.slice(1));
+      if (section < 0) fail(file, `legal language fragment missing: ${href}`);
+      return `#section-${section}`;
+    }).join('\n');
+  };
+  for (const lang of legalLanguages) {
+    const block = blocks.get(lang);
+    if (!block) { fail(file, `missing full ${lang} legal translation`); continue; }
+    if (!current.includes(`data-lang="${lang}"`)) fail(file, `missing ${lang} legal language control`);
+    if (english && structure(block) !== structure(english)) fail(file, `${lang} legal sections/paragraphs/lists differ in structure from English`);
+    if (english && links(block) !== links(english)) fail(file, `${lang} legal links differ from English`);
+    // Retention, trial, renewal and deletion durations must survive translation.
+    if (english && (lang === 'fr' || lang === 'pt-BR' || (file === 'userDataDeletion.html' && ['de', 'es'].includes(lang)))) {
+      const numbers = (value) => (decode(value.replace(/<[^>]*>/g, ' ')).match(/\b\d+(?::\d+)?\b/g) || []).join(',');
+      if (numbers(block) !== numbers(english)) fail(file, `${lang} legal numeric dates/limits differ from English`);
+    }
+  }
   try {
     const original = execFileSync('git', ['show', `HEAD:${file}`], { cwd: root, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'], maxBuffer: 8 * 1024 * 1024 });
-    const fingerprint = (source) => crypto.createHash('sha256').update(main(source).replace(/\r\n/g, '\n')).digest('hex');
-    if (!main(original) || fingerprint(original) !== fingerprint(read(file))) fail(file, 'legal main content differs from Git HEAD');
+    const fingerprint = (value) => crypto.createHash('sha256').update(value.replace(/\r\n/g, '\n')).digest('hex');
+    const originals = languageBlocks(original);
+    if (!originals.size) fail(file, 'Git HEAD legal language blocks missing');
+    for (const [lang, block] of originals) {
+      if (!blocks.has(lang) || fingerprint(block) !== fingerprint(blocks.get(lang))) fail(file, `existing ${lang} legal text differs from Git HEAD`);
+    }
   } catch { notes.push(`${file}: Git HEAD comparison unavailable; build still enforces legal-main preservation.`); }
 }
 const manifest = readJson('site.webmanifest');

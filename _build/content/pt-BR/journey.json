@@ -1,0 +1,108 @@
+[
+  {
+    "level": 1,
+    "title": "Decisão",
+    "dayLabel": "Dia 0",
+    "minDays": 0,
+    "requiresPremium": false,
+    "developments": "Com a sua decisão de parar de fumar, o processo de recuperação do seu corpo começa. Você ainda pode não sentir mudanças físicas, mas o maior passo já foi dado. A partir de agora, seu corpo começa a eliminar a nicotina e a funcionar de forma mais saudável a cada dia.",
+    "attentionPoints": [
+      "Tire todos os cigarros, isqueiros e cinzeiros do seu ambiente.",
+      "Encare parar de fumar não como uma despedida ou uma perda, mas como a celebração da liberdade que você recupera.",
+      "Tente beber bastante água nos primeiros dias."
+    ],
+    "traps": [
+      "Vou fumar um último cigarro.",
+      "Paro amanhã.",
+      "Um só não faz mal."
+    ]
+  },
+  {
+    "level": 2,
+    "title": "Desintoxicação",
+    "dayLabel": "Dias 1–3",
+    "minDays": 1,
+    "requiresPremium": false,
+    "developments": "A nicotina e o monóxido de carbono começam a cair rápido. Você pode notar as primeiras melhoras no paladar e no olfato. Seu corpo está trabalhando para eliminar a substância que causa dependência.",
+    "attentionPoints": [
+      "Aumente a quantidade de água que você bebe.",
+      "Faça caminhadas curtas.",
+      "Use os exercícios de respiração nos momentos de fissura."
+    ],
+    "traps": [
+      "Confundir irritação e inquietação com vontade de fumar.",
+      "Achar que a fissura vai durar para sempre.",
+      "A ideia de dar só uma tragada e parar."
+    ]
+  },
+  {
+    "level": 3,
+    "title": "Primeira vitória",
+    "dayLabel": "Dias 3–7",
+    "minDays": 3,
+    "requiresPremium": true
+  },
+  {
+    "level": 4,
+    "title": "Novo começo",
+    "dayLabel": "1 semana",
+    "minDays": 7,
+    "requiresPremium": true
+  },
+  {
+    "level": 5,
+    "title": "Resistência",
+    "dayLabel": "2 semanas",
+    "minDays": 14,
+    "requiresPremium": true
+  },
+  {
+    "level": 6,
+    "title": "Quebrando o hábito",
+    "dayLabel": "1 mês",
+    "minDays": 30,
+    "requiresPremium": true
+  },
+  {
+    "level": 7,
+    "title": "Respirando de novo",
+    "dayLabel": "3 meses",
+    "minDays": 90,
+    "requiresPremium": true
+  },
+  {
+    "level": 8,
+    "title": "Ganhando força",
+    "dayLabel": "6 meses",
+    "minDays": 180,
+    "requiresPremium": true
+  },
+  {
+    "level": 9,
+    "title": "Nova identidade",
+    "dayLabel": "1 ano",
+    "minDays": 365,
+    "requiresPremium": true
+  },
+  {
+    "level": 10,
+    "title": "Mudança duradoura",
+    "dayLabel": "5 anos",
+    "minDays": 1825,
+    "requiresPremium": true
+  },
+  {
+    "level": 11,
+    "title": "Grande transformação",
+    "dayLabel": "10 anos",
+    "minDays": 3650,
+    "requiresPremium": true
+  },
+  {
+    "level": 12,
+    "title": "Liberdade",
+    "dayLabel": "15 anos",
+    "minDays": 5475,
+    "requiresPremium": true
+  }
+]

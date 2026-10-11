@@ -2,7 +2,7 @@
 import crypto from 'node:crypto';
 import { homeCopy } from '../i18n/home.mjs';
 
-const LANGUAGE_NAMES = { tr: 'Türkçe', en: 'English', de: 'Deutsch', es: 'Español', fr: 'Français' };
+const LANGUAGE_NAMES = { tr: 'Türkçe', en: 'English', de: 'Deutsch', es: 'Español', fr: 'Français', 'pt-BR': 'Português (Brasil)' };
 const field = (path, label, maxLength = 240, multiline = false) => ({ path, label, maxLength, multiline });
 const sectionFields = (id, detail = true) => [
   field(`${id}.label`, 'Bölüm etiketi', 180),

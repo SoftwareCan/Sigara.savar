@@ -46,6 +46,7 @@ const LANGUAGES = {
   de: { name: 'Deutsch', label: 'Sprache wählen', current: 'Sprache' },
   es: { name: 'Español', label: 'Elige un idioma', current: 'Idioma' },
   fr: { name: 'Français', label: 'Choisir une langue', current: 'Langue' },
+  'pt-BR': { name: 'Português (Brasil)', label: 'Escolha um idioma', current: 'Idioma' },
 };
 
 function languages(ctx, pagePath, footer = false) {
@@ -116,8 +117,6 @@ export function siteFooter(ctx, pagePath) {
   const { t, url, config } = ctx;
   const year = ctx.buildDate.slice(0, 4);
   const legalHref = (file) => `${url.page(file)}?lang=${ctx.lang}`;
-  const legalSuffix = ctx.lang === 'fr' ? ' (en anglais)' : '';
-  const deletionSuffix = { fr: ' (en anglais)', de: ' (auf Englisch)', es: ' (en inglés)' }[ctx.lang] || '';
   return html`<footer class="site-footer">
   <div class="wrap">
     <div class="footer-top">
@@ -140,9 +139,9 @@ export function siteFooter(ctx, pagePath) {
       <div class="footer-meta">
         <nav aria-label="${t.footer.groups.legal}">
           <ul class="footer-links footer-links--legal">
-            <li><a href="${legalHref('privacy.html')}">${t.footer.privacy}${legalSuffix}</a></li>
-            <li><a href="${legalHref('terms.html')}">${t.footer.terms}${legalSuffix}</a></li>
-            <li><a href="${legalHref('userDataDeletion.html')}">${t.footer.dataDeletion}${deletionSuffix}</a></li>
+            <li><a href="${legalHref('privacy.html')}">${t.footer.privacy}</a></li>
+            <li><a href="${legalHref('terms.html')}">${t.footer.terms}</a></li>
+            <li><a href="${legalHref('userDataDeletion.html')}">${t.footer.dataDeletion}</a></li>
           </ul>
         </nav>
         <p class="footer-copyright">${t.footer.copyright(year)}</p>

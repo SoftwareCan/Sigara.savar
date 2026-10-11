@@ -1,0 +1,184 @@
+[
+  {
+    "duration": "3 minutos",
+    "targetMinutes": 3,
+    "summary": "Seu sistema nervoso autônomo começa a sair do estímulo da fumaça.",
+    "detail": "A constrição aguda dos vasos sanguíneos causada pela fumaça do tabaco começa a entrar em pausa.\n\nO equilíbrio autonômico começa sem um novo sinal de estresse provocado pela fumaça.\n\nA irritação da fumaça quente nas suas vias respiratórias chega ao fim.",
+    "motivation": "Você deu o primeiro passo; sua maratona de recuperação começou."
+  },
+  {
+    "duration": "10 minutos",
+    "targetMinutes": 10,
+    "summary": "Os vasos sanguíneos relaxam e um sangue mais limpo começa a chegar aos seus tecidos.",
+    "detail": "A constrição súbita dos vasos ligada à nicotina começa a ceder.\n\nA circulação nas suas mãos e nos seus pés melhora à medida que os vasos periféricos relaxam.\n\nSangue mais rico em oxigênio começa a chegar aos seus tecidos.",
+    "motivation": "Sua circulação relaxa a cada minuto sem fumaça."
+  },
+  {
+    "duration": "20 minutos",
+    "targetMinutes": 20,
+    "summary": "A pressão arterial e o pulso caminham para níveis mais saudáveis.",
+    "detail": "Seu pulso e sua pressão arterial começam a voltar ao normal.\n\nA microcirculação nos seus dedos das mãos e dos pés melhora, ajudando-os a se sentirem mais quentes.\n\nA sobrecarga imediata sobre o seu sistema cardiovascular diminui.",
+    "motivation": "Seu coração está voltando ao ritmo natural."
+  },
+  {
+    "duration": "30 minutos",
+    "targetMinutes": 30,
+    "summary": "A carga excessiva de bombeamento sobre o seu coração diminui.",
+    "detail": "Os hormônios do estresse em circulação começam a cair.\n\nO músculo do seu coração se adapta a trabalhar com mais eficiência e menos tensão.\n\nVocê atravessa a primeira onda de vontade aguda de nicotina.",
+    "motivation": "Você continua protegendo o seu coração."
+  },
+  {
+    "duration": "1 hora",
+    "targetMinutes": 60,
+    "summary": "O estímulo agudo da nicotina termina e a circulação começa a se equilibrar.",
+    "detail": "A concentração de nicotina no seu sangue entra na primeira tendência clara de queda.\n\nA flexibilidade dos vasos sanguíneos periféricos começa a voltar ao normal.\n\nNo nível celular, a falta de oxigênio dá lugar à estabilização.",
+    "motivation": "Você está completamente sem fumaça há uma hora inteira."
+  },
+  {
+    "duration": "2 horas",
+    "targetMinutes": 120,
+    "summary": "Seu sistema circulatório trabalha com mais eficiência e mais ritmo.",
+    "detail": "O nível de nicotina no seu sangue cai para cerca da metade.\n\nSua frequência cardíaca se acomoda em um ritmo de repouso mais estável.\n\nO calor nas suas mãos e nos seus pés fica mais perceptível.",
+    "motivation": "Seu sangue flui de forma mais limpa e seu corpo ganha força."
+  },
+  {
+    "duration": "4 horas",
+    "targetMinutes": 240,
+    "summary": "Seu corpo começa a se adaptar a um ambiente sem nicotina.",
+    "detail": "A concentração de nicotina no seu sangue continua caindo rapidamente.\n\nSeu cérebro busca o próprio equilíbrio sem estímulo químico.\n\nA respiração se aprofunda e leva o ar mais longe, até a base dos pulmões.",
+    "motivation": "Sua determinação está renovando o seu corpo por dentro."
+  },
+  {
+    "duration": "6 horas",
+    "targetMinutes": 360,
+    "summary": "Grande parte das substâncias químicas da fumaça deixa o seu corpo.",
+    "detail": "Uma grande parte da nicotina no seu sangue é metabolizada e eliminada.\n\nA pressão dos radicais livres sobre o seu coração e as paredes dos seus vasos sanguíneos começa a ceder.\n\nO reparo começa onde a fumaça ressecou e irritou as suas vias respiratórias.",
+    "motivation": "Seu corpo está eliminando as substâncias nocivas uma a uma."
+  },
+  {
+    "duration": "8 horas",
+    "targetMinutes": 480,
+    "summary": "O monóxido de carbono tóxico no seu sangue cai aproximadamente pela metade.",
+    "detail": "Os níveis de monóxido de carbono caem para cerca da metade.\n\nOs glóbulos vermelhos se aproximam da capacidade normal de transportar oxigênio.\n\nMais oxigênio utilizável chega aos seus tecidos e ao seu cérebro.",
+    "motivation": "Suas células respiram mais fundo, com mais oxigênio."
+  },
+  {
+    "duration": "12 horas",
+    "targetMinutes": 720,
+    "summary": "O monóxido de carbono é eliminado e o oxigênio do sangue volta ao normal.",
+    "detail": "O monóxido de carbono no seu sangue volta à faixa de uma pessoa não fumante.\n\nOs glóbulos vermelhos voltam a levar oxigênio aos tecidos com mais eficiência.\n\nO fornecimento de oxigênio ao cérebro, ao músculo cardíaco e aos outros órgãos se recupera.",
+    "motivation": "Em 12 horas, seu sangue está mais limpo e o oxigênio está equilibrado de novo."
+  },
+  {
+    "duration": "24 horas",
+    "targetMinutes": 1440,
+    "summary": "Seu risco de infarto começa a diminuir de forma mensurável.",
+    "detail": "A nicotina em circulação cai de forma considerável.\n\nA constrição das artérias coronárias cede e o risco de infarto começa a diminuir.\n\nSeus pulmões se preparam para expulsar os primeiros resíduos acumulados pelo reflexo da tosse.",
+    "motivation": "Você completou 24 horas e começou a proteger o seu coração."
+  },
+  {
+    "duration": "36 horas",
+    "targetMinutes": 2160,
+    "summary": "Os resíduos químicos nocivos nos seus tecidos são em grande parte eliminados.",
+    "detail": "À medida que a eliminação do monóxido de carbono se completa, a oxigenação celular se estabiliza.\n\nCompostos nocivos de curta duração, absorvidos com a fumaça, continuam saindo do seu corpo.\n\nSeus sistemas respiratório e circulatório fortalecem o ritmo sem fumaça.",
+    "motivation": "Seu corpo constrói um equilíbrio mais limpo a cada hora."
+  },
+  {
+    "duration": "48 horas",
+    "targetMinutes": 2880,
+    "summary": "As terminações nervosas danificadas se renovam enquanto o paladar e o olfato melhoram.",
+    "detail": "As terminações nervosas ligadas ao paladar e ao olfato começam a se renovar.\n\nOs nervos sensoriais em recuperação voltam a estimular a percepção de sabor e de cheiro no seu cérebro.\n\nOs sabores dos alimentos e os aromas ao redor podem parecer mais nítidos e mais vivos.",
+    "motivation": "Seu paladar e seu olfato estão reconectando você com a vida."
+  },
+  {
+    "duration": "72 horas (3 dias)",
+    "targetMinutes": 4320,
+    "summary": "A nicotina é eliminada e os seus brônquios relaxam.",
+    "detail": "A maior parte da nicotina e dos seus resíduos metabólicos já saiu do seu corpo.\n\nOs músculos da traqueia e dos brônquios relaxam, aumentando o fluxo de ar.\n\nA abstinência física chega ao pico e depois começa a ceder.",
+    "motivation": "Seu corpo está livre de nicotina e sua respiração está mais livre."
+  },
+  {
+    "duration": "96 horas (4 dias)",
+    "targetMinutes": 5760,
+    "summary": "A reparação dos nervos acelera e a limpeza pelos cílios começa.",
+    "detail": "A abstinência física da nicotina começa a aliviar depois do pico.\n\nA renovação nervosa nas papilas gustativas e nos receptores do olfato se aprofunda.\n\nPequenos fios das vias respiratórias, chamados cílios, ficam ativos e começam a mover o muco acumulado.",
+    "motivation": "Que bom ter você de volta a um mundo mais rico de sabores e aromas."
+  },
+  {
+    "duration": "120 horas (5 dias)",
+    "targetMinutes": 7200,
+    "summary": "Os marcadores celulares de toxinas caem e a energia sobe.",
+    "detail": "Alguns biomarcadores da exposição à fumaça continuam diminuindo.\n\nÀ medida que o uso do oxigênio se estabiliza, a energia do dia a dia pode melhorar.\n\nOs sintomas físicos da abstinência ficam mais fáceis de lidar para muitas pessoas.",
+    "motivation": "Há cinco dias, você vem dando a cada célula um futuro mais limpo."
+  },
+  {
+    "duration": "144 horas (6 dias)",
+    "targetMinutes": 8640,
+    "summary": "O foco mental melhora e as ondas de vontade ficam mais curtas.",
+    "detail": "Seu cérebro continua se adaptando a funcionar sem nicotina.\n\nAs ondas fortes de vontade de fumar podem parecer mais curtas e menos frequentes.\n\nO sono, a atenção e a energia seguem se recuperando no seu próprio ritmo.",
+    "motivation": "Você está lidando com a vontade de fumar; sua mente fica mais livre a cada dia."
+  },
+  {
+    "duration": "1 semana",
+    "targetMinutes": 10080,
+    "summary": "A circulação e a adaptação psicológica ficam mais estáveis.",
+    "detail": "Seu sistema circulatório trabalha de forma mais estável no ritmo sem fumaça.\n\nOs sintomas físicos da abstinência ficam nitidamente mais leves para muitas pessoas.\n\nNovas rotinas apoiam a adaptação e a confiança para seguir sem fumar.",
+    "motivation": "Uma semana de esforço formou a base da sua nova rotina."
+  },
+  {
+    "duration": "2 semanas",
+    "targetMinutes": 20160,
+    "summary": "A circulação se fortalece e a resistência física melhora.",
+    "detail": "A circulação e a nutrição dos tecidos em todo o seu corpo melhoram de forma notável.\n\nA falta de ar ao caminhar, subir escadas ou fazer exercício diminui.\n\nA função pulmonar começa a melhorar.",
+    "motivation": "Seus passos estão mais fortes e sua resistência cresce a cada dia."
+  },
+  {
+    "duration": "1 mês",
+    "targetMinutes": 43200,
+    "summary": "A tosse e o muco diminuem enquanto os cílios dos pulmões se regeneram.",
+    "detail": "Os cílios dos seus pulmões voltam a ficar ativos e levam o muco e as partículas para fora.\n\nA tosse, o muco e a falta de ar podem começar a diminuir.\n\nA capacidade natural de limpeza das suas vias respiratórias se fortalece.",
+    "motivation": "Seus pulmões se limpam melhor a cada respiração."
+  },
+  {
+    "duration": "3 meses",
+    "targetMinutes": 129600,
+    "summary": "A função pulmonar melhora e a falta de ar diminui de forma notável.",
+    "detail": "A função pulmonar e a circulação continuam melhorando.\n\nO controle da respiração fica mais fácil nos movimentos e nas tarefas do dia a dia.\n\nAs crises de tosse e o cansaço precoce podem continuar diminuindo.",
+    "motivation": "Em três meses, sua liberdade de respirar e de se mover cresceu."
+  },
+  {
+    "duration": "6 meses",
+    "targetMinutes": 259200,
+    "summary": "A inflamação das vias respiratórias cede e as defesas imunológicas se fortalecem.",
+    "detail": "A inflamação crônica e a irritação das vias respiratórias diminuem de forma substancial.\n\nSeus pulmões eliminam o muco e os materiais estranhos com mais facilidade.\n\nOs vínculos psicológicos que, no estresse, levavam ao cigarro ficam mais fracos.",
+    "motivation": "Meio ano ficou para trás, e suas defesas estão mais firmes."
+  },
+  {
+    "duration": "1 ano",
+    "targetMinutes": 525600,
+    "summary": "O risco de doença coronariana e de infarto cai aproximadamente pela metade.",
+    "detail": "O risco de doença coronariana cai para cerca da metade do risco de quem continua fumando.\n\nO risco de infarto continua diminuindo de forma substancial.\n\nSua circulação e o revestimento interno dos seus vasos sanguíneos continuam se reparando.",
+    "motivation": "Em um ano, você fez uma diferença que muda a vida do seu coração."
+  },
+  {
+    "duration": "5 anos",
+    "targetMinutes": 2628000,
+    "summary": "Os riscos de AVC e de vários cânceres caem aproximadamente pela metade.",
+    "detail": "O risco de AVC cai de forma substancial em comparação com quem continua fumando.\n\nOs riscos ligados a cânceres de boca, garganta, esôfago e bexiga caem aproximadamente pela metade.\n\nA carga de coagulação e de estreitamento sobre os seus vasos sanguíneos continua diminuindo.",
+    "motivation": "Cinco anos de liberdade reduziram com força os seus riscos de longo prazo."
+  },
+  {
+    "duration": "10 anos",
+    "targetMinutes": 5256000,
+    "summary": "O risco de morte por câncer de pulmão cai aproximadamente pela metade.",
+    "detail": "O risco de morte por câncer de pulmão cai para cerca da metade do risco de quem continua fumando.\n\nOs riscos de cânceres como os de boca, laringe e pâncreas continuam caindo.\n\nO tecido pulmonar e os mecanismos de reparo celular continuam se recuperando.",
+    "motivation": "Dez anos de determinação reescreveram o futuro do seu corpo."
+  },
+  {
+    "duration": "15 anos",
+    "targetMinutes": 7884000,
+    "summary": "O risco de doença cardíaca e vascular se iguala ao de uma pessoa não fumante.",
+    "detail": "O risco de doença coronariana se aproxima do de uma pessoa que nunca fumou.\n\nSeus sistemas cardiovascular e respiratório conservam os ganhos de anos de reparo.\n\nA maior parte dos vestígios do uso de tabaco, no nível das células e dos órgãos, recuou de forma substancial.",
+    "motivation": "Seu corpo está renovado; ele se parece com o de alguém que nunca fumou."
+  }
+]

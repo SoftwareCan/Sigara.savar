@@ -11,6 +11,7 @@ import config from './site.config.mjs';
 import { layout, headTags } from './templates/layout.mjs';
 import { adminInventory } from './lib/admin.mjs';
 import { adminPage } from './templates/admin.mjs';
+import { adminAccessPage } from './templates/admin-access.mjs';
 import { homePage } from './templates/home.mjs';
 import { articlePage, knowledgeIndexPage } from './templates/knowledge.mjs';
 import { guidePage } from './templates/guide.mjs';
@@ -248,19 +249,25 @@ async function main() {
   write('404.html', layout(ctx, notFoundPage(ctx)));
   write('site.webmanifest', manifest(ctx));
   write('robots.txt', robots(ctx));
-  // A local drafting workspace containing public content only; never in the sitemap.
+  // Panel HTML is server-only. The public static route contains the login form.
   const admin = adminPage(ctx, adminInventory(root, config));
-  write('admin/index.html', `<!DOCTYPE html>
+  write('_build/private/admin.html', `<!DOCTYPE html>
 <html lang="tr"><head>${headTags(ctx, admin)}</head>
 <body class="admin-page"><a class="skip-link" href="#icerik">İçeriğe geç</a>
 <main id="icerik" tabindex="-1">${admin.main}</main></body></html>\n`);
+
+  for (const security of [false, true]) {
+    const access = adminAccessPage(ctx, security);
+    write(security ? '_build/private/admin-security.html' : 'admin/index.html', `<!DOCTYPE html>
+<html lang="tr"><head>${headTags(ctx, access)}</head><body class="admin-access-page"><a class="skip-link" href="#icerik">İçeriğe geç</a><main id="icerik" tabindex="-1">${access.main}</main></body></html>\n`);
+  }
 
   // Legal pages: chrome refreshed, legal text verified unchanged.
   const legalEntries = [];
   for (const file of config.legalPages) {
     const full = path.join(root, file);
     const before = fs.readFileSync(full, 'utf8');
-    const after = refreshLegalPage(ctx, file, before);
+    const after = refreshLegalPage(ctx, file, before, results.map((result) => result.ctx));
     if (mainContent(before) !== mainContent(after)) throw new Error(`Legal text changed in ${file}; aborting.`);
     legalEntries.push({ path: `/${file}`, lastmod: pageLastModified(`/${file}`, file, after, true) });
     if (after !== before) write(file, after);

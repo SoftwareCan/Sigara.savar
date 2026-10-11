@@ -38,7 +38,7 @@ Readable slugs are maintained in `_build/content/slugs.json`. Keep `_build/conte
 
 ## Verification and preservation
 
-The static checker inspects all public pages for broken internal paths and fragments, duplicate IDs, exactly one main heading, unique titles, canonical and social metadata, Article dates, source-content completeness, image dimensions, sitemap inclusion, paused-authentication links and unverified rating claims. It also compares legal content inside `<main>` with Git HEAD when available. Browser verification is still needed for responsive layout, keyboard interaction, reduced motion and real tool behavior.
+The static checker inspects all public pages for broken internal paths and fragments, duplicate IDs, exactly one main heading, unique titles, canonical and social metadata, Article dates, source-content completeness, image dimensions, sitemap inclusion, paused-authentication links and unverified rating claims. It also compares each existing legal-language block with Git HEAD, permits additive translations, and checks their section/link structure. Browser verification is still needed for responsive layout, keyboard interaction, reduced motion and real tool behavior.
 
 The build refreshes legal navigation and metadata while checking that document text inside `<main>` stays unchanged. Authentication remains paused via `AUTH_UI_ENABLED: false` in `_build/site.config.mjs`; existing authentication files are retained and marked `noindex`.
 
@@ -48,14 +48,20 @@ Store URLs, public origin and legal/auth file lists have one source in `_build/s
 
 Turkish is served at `/`; English, German, Spanish and French are under `/en/`, `/de/`, `/es/` and `/fr/`. Each language has its own homepage, 29 real Knowledge Center articles, guide, tools and download page. Header/footer language links preserve the corresponding page, and localized pages include reciprocal hreflang metadata.
 
-See [DESIGN_AND_LANGUAGES.md](DESIGN_AND_LANGUAGES.md) for the current design, complete route map, source files, QA and retained legal-language coverage. Homepage copy lives in `_build/i18n/home.mjs`; shared interface copy lives in each language dictionary. The sync script now supports all five languages and an optional third argument restricting a sync to one language.
+See [DESIGN_AND_LANGUAGES.md](DESIGN_AND_LANGUAGES.md) for the current design, complete route map, source files, QA and retained legal-language coverage. Homepage copy lives in `_build/i18n/home.mjs`; shared interface copy lives in each language dictionary. The sync script now supports all six languages and an optional third argument restricting a sync to one language.
 
 ## Gallery and local editorial workspace
 
 The hero uses the existing app screens and seven supplied store compositions, with responsive AVIF/WebP variants, pause controls and reduced-motion support. Run `node _build/verify-gallery.mjs` for deterministic carousel behavior checks.
 
-Open [the content workspace](http://127.0.0.1:4173/admin/) to draft homepage copy, Knowledge Center articles, translations, SEO metadata and gallery order/alternative text. Drafts stay in this browser and can be exported as JSON. The workspace has no authentication, server writes or publication endpoint; exports are review documents and are not automatically applied by the build. It contains public source content only and is excluded from indexing and the sitemap. Browser noindex directives are not access control.
+The admin workspace now requires server authentication. Run `node _build/setup-admin.mjs` once, build, then run `node _build/serve.mjs`. Open [admin login](http://127.0.0.1:4174/admin/). The unique initial credentials are in the ignored `.local/admin-access.txt`; the server uses only `.local/admin-credentials.json` (salted scrypt hash). Never publish or commit `.local/`.
+
+The generated workspace is in ignored `_build/private/`, served only after authentication. The public `admin/index.html` contains only the login screen. Static hosting cannot run this backend: use the included Node server behind HTTPS to enable production admin. Do not deploy private build output as a static directory. See [ADMIN_ACCESS.md](ADMIN_ACCESS.md) for setup and deployment details.
+
+Drafts still stay in the browser and can be exported as JSON; they are not automatically published. Authentication adds real access control to the server workspace but does not introduce a production publishing service.
 
 See [GALLERY_ADMIN_HANDOFF.md](GALLERY_ADMIN_HANDOFF.md) for files, sources, validation, limits and follow-up work, and [SEO_AUDIT_2026-10.md](SEO_AUDIT_2026-10.md) for the primary-source SEO research and live hosting findings.
 
 In the managed Windows workspace, these equivalent Node flags avoid ancestry-resolution restrictions: `node --preserve-symlinks --preserve-symlinks-main _build/build.mjs` (use the same flags for verification and preview).
+
+Current six-language and authenticated-admin handoff: [LANGUAGE_AND_ADMIN_UPDATE.md](LANGUAGE_AND_ADMIN_UPDATE.md).

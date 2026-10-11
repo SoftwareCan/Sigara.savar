@@ -4,7 +4,7 @@ import path from 'node:path';
 import crypto from 'node:crypto';
 import { galleryCopy } from '../i18n/gallery.mjs';
 
-const LANGUAGE_NAMES = { tr: 'Türkçe', en: 'English', de: 'Deutsch', es: 'Español', fr: 'Français' };
+const LANGUAGE_NAMES = { tr: 'Türkçe', en: 'English', de: 'Deutsch', es: 'Español', fr: 'Français', 'pt-BR': 'Português (Brasil)' };
 const readJson = (file) => JSON.parse(fs.readFileSync(file, 'utf8'));
 const text = (value) => value.replace(/<[^>]*>/g, '').replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/\s+/g, ' ').trim();
 
@@ -15,6 +15,7 @@ export function adminInventory(root, config) {
   const history = readJson(path.join(contentRoot, 'publication-history.json'));
   const articles = [];
   const locales = [];
+  const alternateCount = Object.values(config.locales).filter((locale) => locale.enabled).length + 1;
   for (const [locale, localeConfig] of Object.entries(config.locales).filter(([, item]) => item.enabled)) {
     const sections = readJson(path.join(contentRoot, locale, 'knowledge.json'));
     const prefix = localeConfig.prefix ? `/${localeConfig.prefix}` : '';
@@ -31,7 +32,7 @@ export function adminInventory(root, config) {
           title: Boolean(seoTitle && html.includes('<title>')),
           description: Boolean(seoDescription && /<meta name="description"/.test(html)),
           canonical: html.includes(`rel="canonical" href="${config.baseUrl}${route}"`),
-          languages: (html.match(/<link rel="alternate" hreflang=/g) || []).length === 6,
+          languages: (html.match(/<link rel="alternate" hreflang=/g) || []).length === alternateCount,
           article: /"@type":"Article"/.test(html),
           heading: (html.match(/<h1\b/g) || []).length === 1,
         };
