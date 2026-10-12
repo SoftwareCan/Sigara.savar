@@ -136,7 +136,7 @@ export function toolsPage(ctx) {
       <p class="small muted">${editorialCopy(ctx.lang).tools.pdfLanguage}</p>
     </div>
     <div class="tool-block__body">
-      <a class="btn btn--ghost" href="${url.page('SigaraSavar.pdf')}" download>${tl.pdf.link}</a>
+      <a class="btn btn--ghost" href="${ctx.lang === 'it' ? ctx.asset('/assets/guides/guida-desiderio-it.pdf') : url.page('SigaraSavar.pdf')}" download>${tl.pdf.link}</a>
     </div>
   </section>
 

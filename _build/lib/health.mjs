@@ -25,6 +25,22 @@ export const healthSourceNote =
   'Uygulamanın sağlık hedeflerinden seçildi; WHO, NHS ve CDC kaynaklarıyla karşılaştırıldı. Süreler genel bir çerçevedir; kişisel sağlık durumuna göre değişebilir.';
 
 const HEALTH_COPY = {
+  it: {
+    sources: ['Organizzazione mondiale della sanità (OMS)', 'NHS · Better Health', 'CDC · Benefici dello smettere di fumare'],
+    note: 'Selezionati dagli obiettivi di salute dell’app e confrontati con fonti OMS, NHS e CDC. I tempi sono indicativi e variano in base alla salute di ciascuno.',
+    milestones: [
+      ['La frequenza cardiaca e la pressione iniziano a tornare verso valori normali.', 'I primi cambiamenti possono iniziare pochi minuti dopo l’ultima sigaretta.'],
+      ['Il monossido di carbonio nel sangue torna nell’intervallo normale.', 'La cronologia generale dell’OMS colloca questo cambiamento intorno alle 12 ore.'],
+      ['Gusto e olfatto possono iniziare a migliorare.', 'Il NHS evidenzia il recupero di gusto e olfatto nei primi due giorni.'],
+      ['I bronchi si rilassano; respirare può diventare più facile.', 'Il NHS indica questo tra i benefici generali intorno alle 72 ore.'],
+      ['La circolazione sanguigna può migliorare.', 'L’OMS colloca questi benefici in un periodo di 2–12 settimane.'],
+      ['Tosse e affanno possono diminuire nel tempo.', 'L’OMS descrive questi cambiamenti nell’arco di 1–9 mesi.'],
+      ['La funzione polmonare può migliorare e i sintomi respiratori possono attenuarsi.', 'Il NHS descrive questi benefici tra 3 e 9 mesi: il cambiamento non avviene in una data precisa.'],
+      ['Il rischio di malattia coronarica scende a circa la metà.', 'Il confronto dell’OMS è con una persona che continua a fumare.'],
+      ['Il rischio di morire di tumore polmonare scende a circa la metà.', 'Il confronto nella cronologia generale del NHS è con una persona che continua a fumare.'],
+      ['Il rischio di malattia coronarica si avvicina a quello di una persona che non fuma.', 'I CDC includono questo tra i benefici a lungo termine osservati dopo circa 15 anni.'],
+    ],
+  },
   'pt-BR': {
     sources: ['Organização Mundial da Saúde (OMS)', 'NHS · Better Health', 'CDC · Benefícios de parar de fumar'],
     note: 'Selecionados entre os objetivos de saúde do app e comparados com fontes da OMS, do NHS e dos CDC. Os prazos são uma referência geral e variam de acordo com a saúde de cada pessoa.',

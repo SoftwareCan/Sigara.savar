@@ -1,5 +1,18 @@
 // Homepage product copy. Educational articles remain sourced from the app.
 const copy = {
+  it: {
+    title: 'Smetti di fumare. Per sempre. | Sigara Savar',
+    description: 'Fai spazio a una vita senza fumo. Segui i tuoi progressi, preparati al desiderio e scopri risorse utili con Sigara Savar.',
+    hero: 'Smetti di fumare. Per sempre.', lead: 'Ogni giorno senza fumo conta. Preparati ai momenti difficili. Incontra persone che percorrono la stessa strada.',
+    download: 'Scarica l’app', guide: 'Scopri la guida per smettere', availability: 'Per iOS e Android',
+    jumpLabel: 'Scopri Sigara Savar', jumps: ['Guarda i tuoi progressi', 'Preparati al desiderio', 'Continua insieme agli altri'],
+    progress: { label: 'Progressi e traguardi', title: 'Ogni giorno fa la differenza.', text: 'Sigarette non fumate, denaro risparmiato e tempo senza fumo. I passi che hai fatto, tutti in un unico posto.', detail: 'Riconosci le piccole vittorie. Scegli i prossimi obiettivi al tuo ritmo.', link: 'Scopri l’app', alt: 'Progressi nell’app Sigara Savar' },
+    craving: { label: 'Quando arriva il desiderio', title: 'Un momento difficile. Una nuova scelta.', text: 'Sapere prima cosa fare può aiutare. Il Guardiano della crisi, gli esercizi di respirazione e le brevi pause ti aiutano a spostare l’attenzione.', detail: 'Prova subito un primo passo. Gli strumenti web funzionano anche senza scaricare l’app.', link: 'Prova gli strumenti', alt: 'Guardiano della crisi ed esercizi di respirazione in Sigara Savar' },
+    community: { label: 'Comunità', title: 'Non devi percorrere questa strada da solo.', text: 'Condividi il tuo primo giorno, una piccola vittoria o un momento difficile. Conosci altre persone che stanno cercando di smettere.', detail: 'Scambiate esperienze e sostenetevi nella comunità dell’app.', link: 'Scopri la comunità nell’app', alt: 'Comunità di Sigara Savar' },
+    learning: { label: 'Centro informazioni', title: 'Capire è già un passo avanti.', text: 'Dalla preparazione ai primi giorni, dai fattori scatenanti a un nuovo inizio. Risposte brevi e chiare alle tue domande.', link: 'Scopri tutti gli articoli' },
+    end: { title: 'Fai spazio a giorni senza fumo.', text: 'Progressi, informazioni e sostegno quotidiano. Sigara Savar è con te.', note: 'Scarica da App Store e Google Play.' },
+    alts: { progress: 'Progressi e tempo senza fumo in Sigara Savar', journey: 'Il percorso dei primi giorni senza fumo in Sigara Savar' },
+  },
   tr: {
     title: 'Sigaradan Sonsuza Kadar Kurtul | Sigara Savar',
     description: 'Sigarasız hayatına yer aç. Sigara Savar ile ilerlemeni takip et, istek anlarına hazırlan ve bırakma sürecini gerçek içeriklerle keşfet.',

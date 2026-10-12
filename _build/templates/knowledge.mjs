@@ -49,6 +49,7 @@ const RELATED_ARTICLES = {
 const editorialLabels = (ctx) => editorialCopy(ctx.lang).knowledge;
 
 const ARTICLE_META = {
+  it: { author: 'A cura di', published: 'Pubblicato', modified: 'Aggiornato' },
   tr: { author: 'Hazırlayan', published: 'Yayınlanma', modified: 'Güncelleme' },
   en: { author: 'By', published: 'Published', modified: 'Updated' },
   de: { author: 'Von', published: 'Veröffentlicht', modified: 'Aktualisiert' },
@@ -60,7 +61,7 @@ const ARTICLE_META = {
 const prettify = (text) => String(text).replace(/\s->\s/g, ' → ');
 
 export const displayTitle = (article, section) =>
-  /^(?:bölüm özeti|chapter summary|resumen del capítulo|kapitelzusammenfassung|résumé (?:du chapitre|de la section)|resumo (?:do capítulo|da seção))$/iu.test(article.title.trim()) ? `${section.title}: ${article.title}` : article.title;
+  /^(?:sintesi del capitolo|riepilogo del capitolo|riassunto del capitolo|bölüm özeti|chapter summary|resumen del capítulo|kapitelzusammenfassung|résumé (?:du chapitre|de la section)|resumo (?:do capítulo|da seção))$/iu.test(article.title.trim()) ? `${section.title}: ${article.title}` : article.title;
 
 function itemContent(text) {
   const { lead, rest } = splitLead(prettify(text));

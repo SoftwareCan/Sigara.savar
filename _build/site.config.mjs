@@ -57,6 +57,7 @@ export default {
       prefix: 'pt-br',
       routes: { knowledge: 'central-de-conhecimento', guide: 'guia-para-parar', tools: 'ferramentas', download: 'baixar' },
     },
+    it: { enabled: true, htmlLang: 'it', ogLocale: 'it_IT', prefix: 'it', routes: { knowledge: 'centro-informazioni', guide: 'guida-per-smettere', tools: 'strumenti', download: 'scarica' } },
   },
 
   // Official store links from the Flutter app (lib/core/constants/app_constants.dart).

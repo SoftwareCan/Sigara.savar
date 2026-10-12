@@ -2,9 +2,9 @@ import { html } from '../lib/html.mjs';
 import { screenPicture } from './components.mjs';
 import { galleryCopy } from '../i18n/gallery.mjs';
 
-function storePicture(ctx, number, alt, eager = false) {
+export function storePicture(ctx, number, alt, eager = false) {
   const name = `store-${String(number).padStart(2, '0')}`;
-  const localeFolder = ['en', 'de', 'es'].includes(ctx.lang) ? `${ctx.lang}/` : '';
+  const localeFolder = ctx.lang !== 'tr' ? `${ctx.lang}/` : '';
   const path = (size, type) => ctx.asset(`/assets/gallery/${localeFolder}${name}-${size}.${type}`);
   return html`<picture>
     <source type="image/avif" srcset="${path(360, 'avif')} 360w, ${path(720, 'avif')} 720w" sizes="(min-width: 1100px) 250px, (min-width: 760px) 210px, 160px">
@@ -15,7 +15,7 @@ function storePicture(ctx, number, alt, eager = false) {
 export function heroGallery(ctx, h) {
   const g = galleryCopy(ctx.lang);
   const currentScreen = (name, eager) => screenPicture(ctx, name, name === 'gelisim' ? h.alts.progress : h.alts.journey, { sizes: '(min-width: 1100px) 250px, (min-width: 760px) 210px, 160px', eager });
-  const scenes = ['en', 'de', 'es'].includes(ctx.lang) ? [
+  const scenes = ctx.lang !== 'tr' ? [
     [['store', 1], ['store', 2]],
     [['store', 3], ['store', 4]],
     [['store', 5], ['store', 6]],

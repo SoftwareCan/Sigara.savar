@@ -64,7 +64,7 @@ function translateLegalChrome(lang) {
 
 function setLang(lang) {
     // A stale preference or unsupported code must never hide the whole page.
-    if (!['tr', 'en', 'es', 'de', 'fr', 'pt-BR'].includes(lang) || document.querySelectorAll('.lang.' + lang).length === 0) {
+    if (!['tr', 'en', 'es', 'de', 'fr', 'pt-BR', 'it'].includes(lang) || document.querySelectorAll('.lang.' + lang).length === 0) {
         lang = 'en';
     }
 

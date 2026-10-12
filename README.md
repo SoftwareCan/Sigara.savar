@@ -12,7 +12,7 @@ node _build/verify.mjs
 node _build/serve.mjs
 ```
 
-Open [the local preview](http://127.0.0.1:4173/). Stop the server with Ctrl+C. The preview supports readable directory routes, correct content types and the custom 404 page. It binds only to this computer and excludes hidden directories and `_build` source files.
+Open [the local preview](http://127.0.0.1:4174/). Stop the server with Ctrl+C. The preview supports readable directory routes, correct content types and the custom 404 page. It binds only to this computer and excludes hidden directories and `_build` source files.
 
 The equivalent commands inside `_build` are `npm run build`, `npm run verify` and `npm run serve`. The build, checks and preview require no installed packages. If a managed execution sandbox prevents Node from resolving the Windows user-directory ancestry, run the same standard commands in a normal authorized local terminal; this is an execution-environment restriction.
 
@@ -44,9 +44,9 @@ The build refreshes legal navigation and metadata while checking that document t
 
 Store URLs, public origin and legal/auth file lists have one source in `_build/site.config.mjs`. Homepage and article sharing images live in `assets/og`. The optional OG generator supports `--only default` when only homepage copy changes; it uses the existing development browser tooling and is separate from the dependency-free website build.
 
-## Five-language website
+## Seven-language website
 
-Turkish is served at `/`; English, German, Spanish and French are under `/en/`, `/de/`, `/es/` and `/fr/`. Each language has its own homepage, 29 real Knowledge Center articles, guide, tools and download page. Header/footer language links preserve the corresponding page, and localized pages include reciprocal hreflang metadata.
+Turkish is served at `/`; English, German, Spanish, French, Brazilian Portuguese and Italian are under `/en/`, `/de/`, `/es/`, `/fr/`, `/pt-br/` and `/it/`. Each language has its own homepage, 29 real Knowledge Center articles, guide, tools and download page. Header/footer language links preserve the corresponding page, and localized pages include reciprocal hreflang metadata.
 
 See [DESIGN_AND_LANGUAGES.md](DESIGN_AND_LANGUAGES.md) for the current design, complete route map, source files, QA and retained legal-language coverage. Homepage copy lives in `_build/i18n/home.mjs`; shared interface copy lives in each language dictionary. The sync script now supports all six languages and an optional third argument restricting a sync to one language.
 
@@ -64,4 +64,6 @@ See [GALLERY_ADMIN_HANDOFF.md](GALLERY_ADMIN_HANDOFF.md) for files, sources, val
 
 In the managed Windows workspace, these equivalent Node flags avoid ancestry-resolution restrictions: `node --preserve-symlinks --preserve-symlinks-main _build/build.mjs` (use the same flags for verification and preview).
 
-Current six-language and authenticated-admin handoff: [LANGUAGE_AND_ADMIN_UPDATE.md](LANGUAGE_AND_ADMIN_UPDATE.md).
+Previous six-language and authenticated-admin handoff: [LANGUAGE_AND_ADMIN_UPDATE.md](LANGUAGE_AND_ADMIN_UPDATE.md).
+
+Current seven-language and localized-artwork handoff: [ITALIAN_AND_LOCALIZED_IMAGES.md](ITALIAN_AND_LOCALIZED_IMAGES.md). Run `node _build/verify-localization.mjs` to check dictionary completeness and image-language mappings.

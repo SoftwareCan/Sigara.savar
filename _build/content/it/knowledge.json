@@ -1,0 +1,951 @@
+[
+  {
+    "id": "section-1",
+    "order": 1,
+    "title": "Preparazione e primi giorni",
+    "description": "Il capitolo di base: capisci come funziona la dipendenza, osserva perché fumi e preparati al giorno in cui smetti di fumare.",
+    "articles": [
+      {
+        "id": "b1-01",
+        "sectionId": "section-1",
+        "order": 1,
+        "title": "Che cos'è la dipendenza?",
+        "summary": "Capisci i lati biologici, psicologici e sociali della dipendenza attraverso la nicotina, il sistema di ricompensa e i comportamenti appresi.",
+        "estimatedReadMinutes": 2,
+        "icon": "lightbulb",
+        "intro": "La dipendenza dal fumo non è solo una questione di abitudine o di forza di volontà. Gli effetti della nicotina sul cervello, le routine quotidiane e l'ambiente sociale possono costruire, poco a poco, un ciclo che si alimenta da solo.",
+        "contentSections": [
+          {
+            "title": "Nicotina e sistema di ricompensa",
+            "body": "La nicotina arriva in fretta al cervello e agisce sui sistemi legati alla ricompensa, alla motivazione e all'apprendimento. Il cambiamento nel rilascio di dopamina aiuta il cervello a imparare a trattare il fumare come un comportamento che vale la pena ripetere.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Che cosa cambia nel tempo?",
+            "body": "Con l'uso regolare che continua, il cervello si adatta alla nicotina. Quando i livelli di nicotina scendono, possono comparire segni di astinenza come irrequietezza, difficoltà a concentrarsi o voglia di fumare. Poiché fumare allevia brevemente questo disagio, il ciclo si rafforza di nuovo.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "I tre lati della dipendenza",
+            "body": "Il lato biologico riguarda la nicotina e l'astinenza, il lato psicologico il senso di sollievo o di ricompensa legato al fumo, e il lato sociale-comportamentale le associazioni con il caffè, i pasti, le pause, il gruppo di amici o l'alcol.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "La dipendenza non nasce da una sola causa. Nicotina, pensieri e abitudini quotidiane agiscono insieme — notarli tutti e tre conta mentre smetti di fumare."
+        ]
+      },
+      {
+        "id": "b1-02",
+        "sectionId": "section-1",
+        "order": 2,
+        "title": "Perché fumi e perché dovresti smettere di fumare?",
+        "summary": "Nota i tuoi fattori scatenanti, le tue abitudini e i significati che hai dato al fumo; chiarisci le tue ragioni per smettere di fumare.",
+        "estimatedReadMinutes": 2,
+        "icon": "lightbulb",
+        "intro": "Spesso si fuma per qualcosa di più del solo bisogno di nicotina. Certi momenti della giornata, emozioni, persone e contesti possono diventare associati al gesto di fumare.",
+        "contentSections": [
+          {
+            "title": "Cogli i momenti diventati automatici",
+            "body": "Il caffè, dopo i pasti, una telefonata, guidare, una pausa al lavoro, lo stress o i contesti sociali possono, col tempo, diventare un segnale di «adesso tocca fumare».",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Fumare ti rilassa davvero?",
+            "body": "La nicotina ha proprietà stimolanti. Parte del sollievo che senti dopo aver fumato può essere legata alla breve attenuazione dell'astinenza da nicotina che si accumula tra una sigaretta e l'altra. Il cervello può allora interpretare questo sollievo temporaneo come «fumare risolve il mio stress».",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Chiarisci la tua ragione",
+            "body": "Scrivere le tue ragioni personali per cui vuoi smettere di fumare — salute, libertà, tempo, soldi, famiglia, respiro o qualità della vita — può rendere più facile ricordare la tua decisione nei momenti difficili.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Vedere i momenti automatici dietro il tuo modo di fumare trasforma lo smettere di fumare da una questione di «resistere e basta» in un cambiamento più consapevole."
+        ]
+      },
+      {
+        "id": "b1-03",
+        "sectionId": "section-1",
+        "order": 3,
+        "title": "Che cosa guadagni se smetti di fumare?",
+        "summary": "Vedi i guadagni che smettere di fumare può portare in salute, respiro, tempo, soldi e qualità della vita.",
+        "estimatedReadMinutes": 2,
+        "icon": "favorite",
+        "intro": "I guadagni dello smettere di fumare non si esauriscono in un solo giorno. Il corpo inizia a cambiare fin dalle prime ore; i progressi della salute, in sistemi diversi, possono comparire nelle settimane, nei mesi e negli anni che seguono.",
+        "contentSections": [
+          {
+            "title": "Linea del tempo generale",
+            "body": "Nei primi minuti, la frequenza cardiaca e la pressione arteriosa possono iniziare a spostarsi verso valori normali. Nelle prime ore, il monossido di carbonio nel sangue diminuisce. Entro i primi giorni, i livelli di nicotina calano in modo netto e gusto e olfatto possono iniziare a recuperare. Nel corso di settimane e mesi, possono comparire miglioramenti nella circolazione, nel respiro e nella capacità delle vie aeree di ripulirsi.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Guadagni a lungo termine",
+            "body": "Più si allunga il tempo senza fumo, più i rischi associati alle malattie cardiovascolari e ad alcuni tumori vengono descritti come in calo nel tempo.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Oltre la salute",
+            "body": "Recuperare i soldi e il tempo spesi per le sigarette, vedere che puoi vivere senza essere dipendente e un senso crescente di controllo sulle scelte quotidiane sono guadagni importanti anche questi.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Smettere di fumare non è solo togliere qualcosa dalla tua vita; è l'inizio di nuovi guadagni in salute, tempo, soldi e libertà."
+        ]
+      },
+      {
+        "id": "b1-04",
+        "sectionId": "section-1",
+        "order": 4,
+        "title": "Preparazione e pianificazione",
+        "summary": "Fissa il giorno in cui smetti di fumare, osserva il tuo schema di fumo, prepara l'ambiente e scegli in anticipo alternative per i momenti difficili.",
+        "estimatedReadMinutes": 2,
+        "icon": "flag",
+        "intro": "Cercare di capire tutto proprio il giorno in cui smetti può essere difficile. Prepararti in anticipo rende le decisioni più facili, soprattutto nei tuoi momenti automatici di fumo.",
+        "contentSections": [
+          {
+            "title": "Fissa il giorno in cui smetti",
+            "body": "Scegli una data chiara per te e scrivi i preparativi che vuoi completare prima di quel giorno.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Tieni traccia del tuo schema di fumo",
+            "body": "Osserva per qualche giorno a che ora, con quale emozione, con chi e in quale contesto fumi. Questa registrazione ti aiuta a vedere i tuoi fattori scatenanti più forti.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Sistema l'ambiente",
+            "body": "Togli da casa, auto e lavoro gli oggetti che ti ricordano il fumo — pacchetti, posacenere, accendini. Scegli un comportamento nuovo per le associazioni forti come il caffè, dopo i pasti o le pause al lavoro.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Chiedi sostegno",
+            "body": "Dire alle persone a te vicine che hai deciso di smettere di fumare, e chiedere loro di non offrirti sigarette soprattutto nei primi giorni, può rendere il percorso più facile.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "La preparazione non fa sì che la voglia di fumare non arrivi mai; significa che sai già che cosa farai quando arriva."
+        ]
+      },
+      {
+        "id": "b1-05",
+        "sectionId": "section-1",
+        "order": 5,
+        "title": "Mappa i tuoi fattori scatenanti",
+        "summary": "Individua, per te, gli orari, le emozioni, i contesti e le abitudini che fanno partire in automatico il pensiero o la voglia di fumare.",
+        "estimatedReadMinutes": 2,
+        "icon": "loop",
+        "intro": "Un fattore scatenante è una situazione che fa partire in automatico il pensiero o la voglia di fumare. Non è lo stesso per ogni persona.",
+        "contentSections": [
+          {
+            "title": "Chiediti",
+            "body": "In quale momento della giornata la mia voglia di fumare è più forte? C'è un legame con il caffè, i pasti, il telefono, la guida o una pausa al lavoro? Quali emozioni — stress, rabbia, noia, solitudine o voglia di festeggiare — aumentano la voglia di fumare? Come mi influenzano i contesti sociali con alcol o fumo?",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Che cosa puoi mettere al suo posto?",
+            "body": "Per ogni fattore scatenante forte, scegli il nuovo comportamento più semplice che riesci a fare. Per esempio, una breve passeggiata dopo il caffè, lavarti i denti dopo un pasto, qualche minuto di pausa dopo lo stress o un messaggio di sostegno.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Notare un fattore scatenante apre un piccolo ma importante spazio tra il comportamento automatico e una scelta consapevole."
+        ]
+      },
+      {
+        "id": "b1-06",
+        "sectionId": "section-1",
+        "order": 6,
+        "title": "Opzioni di sostegno",
+        "summary": "Sappi, in termini generali, che cerotti alla nicotina, gomme, pastiglie e alcuni farmaci possono essere usati per sostenere il percorso per smettere di fumare.",
+        "estimatedReadMinutes": 2,
+        "icon": "favorite",
+        "intro": "Alcune persone possono trarre beneficio da un sostegno in più per gestire l'astinenza e la voglia di fumare mentre smettono di fumare.",
+        "contentSections": [
+          {
+            "title": "Opzioni generali",
+            "body": "Esistono prodotti come cerotti alla nicotina, gomme alla nicotina e pastiglie, oltre ad alcuni farmaci usati per smettere di fumare. Lo scopo di queste opzioni è rendere l'astinenza e la voglia di fumare più gestibili per alcune persone.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Valuta con un professionista della salute",
+            "body": "L'uso di farmaci e di prodotti di sostegno a base di nicotina può variare in base allo stato di salute personale. Consulta un professionista della salute quando serve.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "I prodotti di sostegno e i farmaci possono essere un'opzione per alcune persone; la decisione personale sul trattamento spetta a un professionista della salute."
+        ]
+      },
+      {
+        "id": "b1-07",
+        "sectionId": "section-1",
+        "order": 7,
+        "title": "Il giorno in cui smetti",
+        "summary": "Affronta il primo giorno senza fumo con un piano più definito, usando passi semplici come acqua, movimento, respiro e il riordino dell'ambiente.",
+        "estimatedReadMinutes": 2,
+        "icon": "flag",
+        "intro": "L'obiettivo del primo giorno non è sentirti impeccabile. L'obiettivo è pianificare il più possibile in anticipo il primo giorno senza fumare.",
+        "contentSections": [
+          {
+            "title": "Cambia la routine del mattino",
+            "body": "Cambia il primo comportamento più fortemente associato al fumo. Anche un piccolo cambiamento, come una doccia, una breve passeggiata o una colazione diversa, può spezzare la catena automatica.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Prepara strumenti semplici",
+            "body": "Usa il bere acqua come routine di promemoria; prepara opzioni senza fumo per tenere occupate mani e bocca. Quando arriva la voglia di fumare, puoi provare la respirazione 4-4-6: inspira per 4 secondi, trattieni per 4 secondi, espira lentamente in 6 secondi.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Riduci i fattori scatenanti forti",
+            "body": "Soprattutto nei primi giorni, ridurre il più possibile i contesti in cui le persone fumano e i fattori scatenanti che ti mettono alla prova può rendere le cose più facili.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Il primo giorno può essere impegnativo. L'obiettivo non è che la voglia di fumare non arrivi mai; è riuscire a lasciarla passare senza fumare quando arriva."
+        ]
+      },
+      {
+        "id": "b1-08",
+        "sectionId": "section-1",
+        "order": 8,
+        "title": "Astinenza",
+        "summary": "Capisci perché arriva l'astinenza, che tipo di sintomi può comportare e che fa parte di un processo di adattamento temporaneo.",
+        "estimatedReadMinutes": 2,
+        "icon": "lightbulb",
+        "intro": "Quando la nicotina diminuisce, il cervello e il corpo provano per un po' ad adattarsi alla nuova situazione. In questo periodo possono comparire alcuni sintomi temporanei.",
+        "contentSections": [
+          {
+            "title": "Che cosa potresti sentire?",
+            "body": "Irrequietezza, difficoltà a concentrarti, cambiamenti dell'appetito, voglia di fumare e sintomi simili possono comparire nel primo periodo in cui smetti di fumare.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Che cosa significa?",
+            "body": "Il fatto che questi sintomi compaiano non significa «ti serve una sigaretta». Può essere semplicemente un periodo in cui il corpo si sta adattando a una routine senza nicotina.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Approccio",
+            "body": "Sonno, assunzione regolare di acqua, brevi passeggiate, esercizi di respirazione, riduzione dei fattori scatenanti e chiedere sostegno a un professionista quando serve possono rendere questo periodo più gestibile.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "L'astinenza può essere scomoda, ma è un processo di adattamento temporaneo. Se i sintomi diventano troppo intensi o non gestibili, chiedi sostegno a un professionista della salute."
+        ]
+      },
+      {
+        "id": "b1-09",
+        "sectionId": "section-1",
+        "order": 9,
+        "title": "Sintesi del capitolo",
+        "summary": "Riunisci in un solo punto dipendenza, fattori scatenanti, preparazione per smettere e il tuo piano di base per il primo giorno.",
+        "estimatedReadMinutes": 1,
+        "icon": "flag",
+        "intro": "In questo capitolo hai visto che la dipendenza dal fumo non è solo una questione di forza di volontà; cervello, pensieri, routine e ambiente hanno tutti un ruolo, insieme.",
+        "contentSections": [
+          {
+            "title": "Tieni a mente",
+            "body": "Riconoscere i tuoi fattori scatenanti prima di smettere di fumare, sistemare l'ambiente, scegliere in anticipo nuove routine e preparare un piano semplice per il primo giorno rende il percorso più chiaro.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Prossimo passo",
+            "body": "Nel prossimo capitolo parleremo dei legami appresi che possono durare anche dopo che la nicotina ha lasciato il corpo, e dei modi per rendere permanente una vita senza fumo.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "La preparazione è fatta: ora passi non solo a smettere di fumare, ma a costruire una routine senza fumo."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "section-2",
+    "order": 2,
+    "title": "Rendere permanente una vita senza fumo",
+    "description": "Si concentra sul trasformare la vita senza fumo nella tua nuova normalità, reimpostando le abitudini, i pensieri e i fattori scatenanti che possono durare anche dopo che la nicotina ha lasciato il corpo.",
+    "articles": [
+      {
+        "id": "b2-01",
+        "sectionId": "section-2",
+        "order": 1,
+        "title": "La nicotina se n'è andata — perché potresti avere ancora voglia di fumare?",
+        "summary": "Capisci che l'astinenza fisica e i legami appresi con il fumo non sono la stessa cosa.",
+        "estimatedReadMinutes": 2,
+        "icon": "lightbulb",
+        "intro": "La nicotina che esce dal corpo non è lo stesso processo del disapprendere i comportamenti di fumo costruiti nel corso degli anni.",
+        "contentSections": [
+          {
+            "title": "Astinenza fisica",
+            "body": "Quando la nicotina diminuisce, possono comparire irrequietezza, difficoltà a concentrarsi, cambiamenti dell'appetito o sintomi simili. Sono legati al processo di adattamento fisico.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Legami appresi",
+            "body": "Associazioni come caffè -> sigaretta, pasto -> sigaretta o pausa -> sigaretta possono diventare automatiche quando si ripetono per anni. Per questo, anche mesi dopo, un certo contesto o una certa emozione possono far scattare il pensiero di fumare.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "La differenza chiave",
+            "body": "Che compaia un pensiero del genere non significa per forza che ti serva di nuovo la nicotina; può essere solo un vecchio legame che si ripresenta.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "L'astinenza fisica può attenuarsi; ma i vecchi legami di abitudine possono essere ricordati molto più a lungo, e si indeboliscono con il riapprendimento."
+        ]
+      },
+      {
+        "id": "b2-02",
+        "sectionId": "section-2",
+        "order": 2,
+        "title": "Riscrivi i tuoi fattori scatenanti",
+        "summary": "Invece di cercare di cancellare del tutto i vecchi fattori scatenanti, metti comportamenti nuovi subito dopo quegli stessi momenti.",
+        "estimatedReadMinutes": 2,
+        "icon": "loop",
+        "intro": "Non è sempre possibile togliere del tutto i fattori scatenanti dalla tua vita. Un obiettivo più realistico è scegliere, ancora e ancora, un comportamento nuovo dopo lo stesso fattore scatenante.",
+        "contentSections": [
+          {
+            "title": "Crea nuove associazioni",
+            "body": null,
+            "items": [
+              "Caffè -> qualche minuto in un contesto diverso, acqua o una breve passeggiata.",
+              "Pasto -> lavarti i denti, un tè o un breve movimento.",
+              "Stress -> respirazione, una breve pausa o un messaggio di sostegno.",
+              "Pausa al lavoro -> un tragitto senza fumo o un gruppo di amici diverso."
+            ],
+            "numbered": false
+          },
+          {
+            "title": "Alcol e contesti sociali",
+            "body": "L'alcol può rafforzare, in alcune persone, la voglia di fumare e i comportamenti automatici. Soprattutto nel primo periodo, riorganizzare la quantità, il contesto o il piano può aiutare.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Perché la ripetizione conta",
+            "body": "Ogni volta che scegli il comportamento nuovo, metti un'opzione diversa al posto della vecchia catena automatica. L'obiettivo non è dimenticare in un colpo solo, ma ripetere il percorso nuovo.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Associare un vecchio fattore scatenante a un comportamento nuovo aiuta la vita senza fumo a diventare sempre più familiare."
+        ]
+      },
+      {
+        "id": "b2-03",
+        "sectionId": "section-2",
+        "order": 3,
+        "title": "Rivaluta i tuoi pensieri sul fumo",
+        "summary": "Guarda, con una lente più realistica, i vecchi pensieri che possono sembrare molto convincenti durante il percorso per smettere di fumare.",
+        "estimatedReadMinutes": 2,
+        "icon": "lightbulb",
+        "intro": "Che un pensiero sembri potente non significa che sia vero. Alcune vecchie convinzioni possono riaffiorare durante il percorso per smettere di fumare.",
+        "contentSections": [
+          {
+            "title": "«Fumare mi calma.»",
+            "body": "Parte della sensazione di sollievo può essere la breve attenuazione dell'astinenza da nicotina.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "«Non riesco a concentrarmi senza fumare.»",
+            "body": "L'astinenza può disturbare temporaneamente l'attenzione; fumare può sembrare che sistemi quel disturbo.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "«Ho fumato per tanti anni, non ha senso smettere adesso.»",
+            "body": "Il beneficio dello smettere di fumare per la salute e la qualità della vita continua anche a età diverse.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "«Una non fa niente.»",
+            "body": "Una sola sigaretta può riattivare il vecchio ciclo di comportamento e il pensiero «ancora solo una».",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Non devi per forza discutere con un vecchio pensiero quando compare; prima notalo, poi riformulalo con una spiegazione più realistica."
+        ]
+      },
+      {
+        "id": "b2-04",
+        "sectionId": "section-2",
+        "order": 4,
+        "title": "Con che cosa riempirai il vuoto lasciato dal fumo?",
+        "summary": "Nota quale funzione aveva per te il fumo e trova una risposta senza fumo allo stesso bisogno.",
+        "estimatedReadMinutes": 2,
+        "icon": "auto_awesome",
+        "intro": "Per alcune persone il fumo non è solo nicotina; può voler dire una pausa, socializzare, un'abitudine mano-bocca o «qualche minuto che mi prendo per me».",
+        "contentSections": [
+          {
+            "title": "Nuove risposte in base al bisogno",
+            "body": null,
+            "items": [
+              "Bisogno di una pausa: una breve passeggiata di 5 minuti o una pausa all'aria aperta.",
+              "Stress: respirazione lenta, un breve rilassamento o allontanarti dal contesto per qualche minuto.",
+              "Abitudine mano-bocca: acqua, gomma senza zucchero o altre routine senza fumo.",
+              "Bisogno di ricompensa: la musica che preferisci, un hobby, piccoli obiettivi o attività fisica.",
+              "Socializzare: costruire amicizie e routine di pausa senza fumo."
+            ],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Con che cosa sostituisci il fumo può dipendere da quale bisogno il fumo stava rispondendo nella tua vita."
+        ]
+      },
+      {
+        "id": "b2-05",
+        "sectionId": "section-2",
+        "order": 5,
+        "title": "Rafforza di nuovo le tue ricompense naturali",
+        "summary": "Invece di costruire la tua vita senza fumo solo intorno al «non fumare», sostieni il tuo sistema di ricompensa e di motivazione con routine naturali della vita quotidiana: movimento, sonno e respiro.",
+        "estimatedReadMinutes": 2,
+        "icon": "auto_awesome",
+        "intro": "Invece di costruire una vita senza fumo soltanto intorno al «non fumare», aumentare le routine naturali che portano piacere e rilassamento può essere un approccio più sostenibile.",
+        "contentSections": [
+          {
+            "title": "Scegli tre piccole aree",
+            "body": "Movimento, sonno e piacere. Per esempio, una breve passeggiata, orari di sonno più regolari e un'attività senza fumo che ti piace.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Non serve un grande cambiamento",
+            "body": "L'obiettivo non è costruire una vita impeccabile tutta in una volta. Comportamenti piccoli ma ripetibili possono riempire, poco a poco, lo spazio che il fumo ha lasciato.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Respirazione e rilassamento",
+            "body": "La respirazione lenta e brevi esercizi di rilassamento possono offrire un'opzione diversa nei momenti di stress, invece di allungare in automatico la mano verso una sigaretta.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Più le tue nuove ricompense sono quotidiane e a portata di mano, più può diventare facile che la vita senza fumo si senta come la tua nuova normalità."
+        ]
+      },
+      {
+        "id": "b2-06",
+        "sectionId": "section-2",
+        "order": 6,
+        "title": "Da «sto cercando di smettere» a «non fumo»",
+        "summary": "Costruisci un confine interno e sociale più chiaro, che allinei il tuo comportamento senza fumo alla tua nuova identità.",
+        "estimatedReadMinutes": 2,
+        "icon": "flag",
+        "intro": "La frase «sto cercando di smettere di fumare» può, per alcune persone, far sentire la decisione come qualcosa da rifare a ogni fattore scatenante.",
+        "contentSections": [
+          {
+            "title": "L'approccio dell'identità",
+            "body": "«Non fumo» punta a far coincidere il comportamento con la tua nuova identità. Non è una frase magica; è un confine rafforzato dal comportamento ripetuto ancora e ancora.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Esempio in un contesto sociale",
+            "body": "Dire «No grazie, non fumo» invece di «No grazie, sto cercando di smettere» può creare, per alcune persone, un confine più chiaro e più breve.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Rafforzala con il comportamento",
+            "body": "L'identità si rafforza non solo con una frase che dici, ma con la risposta nuova che dai a ogni fattore scatenante.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "L'obiettivo è rendere il comportamento senza fumo una parte naturale della tua identità quotidiana, invece di vederti in una lotta continua."
+        ]
+      },
+      {
+        "id": "b2-07",
+        "sectionId": "section-2",
+        "order": 7,
+        "title": "Attenzione al pensiero «adesso lo controllo»",
+        "summary": "Nota perché il pensiero «potrei fumarne solo una», che può comparire quando la voglia di fumare diminuisce, può essere rischioso.",
+        "estimatedReadMinutes": 2,
+        "icon": "local_fire_department",
+        "intro": "Quando la voglia di fumare diminuisce dopo settimane o mesi, può comparire il pensiero «adesso controllo la dipendenza, potrei fumarne solo una».",
+        "contentSections": [
+          {
+            "title": "Dov'è il rischio?",
+            "body": "Il rischio non è solo la singola sigaretta in sé. Fumare può rafforzare di nuovo i vecchi legami di ricompensa e di comportamento e riattivare il pensiero «ancora solo una».",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Un confine semplice",
+            "body": "Invece di cercare di «gestirne solo una», il confine più semplice che protegge il tuo stato senza fumo è non ricominciare.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Ricordatelo",
+            "body": "Il calo della voglia di fumare è un progresso significativo; ma il senso di quel progresso non è tornare a un fumo controllato — è rafforzare la tua vita senza fumo.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Il pensiero «adesso sto bene, potrei fumarne solo una» può sembrare la prova di un progresso; in realtà può essere una porta per tornare nel vecchio ciclo."
+        ]
+      },
+      {
+        "id": "b2-08",
+        "sectionId": "section-2",
+        "order": 8,
+        "title": "Lista di controllo della vita senza fumo",
+        "summary": "Usa domande brevi per controllare dove la tua nuova routine si sta rafforzando e dove ha ancora bisogno di sostegno.",
+        "estimatedReadMinutes": 2,
+        "icon": "flag",
+        "intro": "Mantenere una vita senza fumo non è solo guardare il giorno appena passato. Aiuta anche rivedere, di tanto in tanto, quanto si sono assestati i tuoi nuovi comportamenti.",
+        "contentSections": [
+          {
+            "title": "Chiediti",
+            "body": null,
+            "items": [
+              "Riesco a descrivermi come una persona che «non fuma»?",
+              "Ho un comportamento nuovo per i fattori scatenanti forti come il caffè, dopo i pasti o lo stress?",
+              "Riesco a notare e a mettere in discussione vecchi pensieri come «fumare prima mi rilassava»?"
+            ],
+            "numbered": false
+          },
+          {
+            "title": "Controlla la tua routine",
+            "body": null,
+            "items": [
+              "Sto costruendo una routine senza fumo sul piano del sonno, del movimento, della vita sociale e delle attività che mi piacciono?",
+              "Accetto che il pensiero «una non fa niente» possa essere rischioso per me?"
+            ],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "La lista di controllo non serve a giudicare il tuo successo; serve a individuare la prossima area da rafforzare."
+        ]
+      },
+      {
+        "id": "b2-09",
+        "sectionId": "section-2",
+        "order": 9,
+        "title": "Sintesi del capitolo",
+        "summary": "Riunisci in un solo punto le abitudini, i pensieri e la nuova identità che possono durare oltre l'astinenza fisica.",
+        "estimatedReadMinutes": 1,
+        "icon": "flag",
+        "intro": "Che la nicotina lasci il corpo non significa che tutte le abitudini spariscano nello stesso momento.",
+        "contentSections": [
+          {
+            "title": "Tieni a mente",
+            "body": "Man mano che rispondi ai vecchi fattori scatenanti con comportamenti nuovi, la vita senza fumo diventa più familiare. Un cambiamento duraturo non è solo togliere la sigaretta — è riempire lo spazio che ha lasciato con nuove routine, nuove ricompense e una nuova identità.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Prossimo passo",
+            "body": "Nel prossimo capitolo parleremo della voglia di fumare intensa, dell'onda della voglia, del metodo 4D e di come gestire scivolone e ricaduta.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Una vita senza fumo non è più solo un obiettivo da proteggere; è la tua nuova routine quotidiana."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "section-3",
+    "order": 3,
+    "title": "Gestire la voglia di fumare e prevenire la ricaduta",
+    "description": "Affronta come funziona la voglia di fumare, la sua natura temporanea, gli strumenti che puoi usare in un momento di crisi e come evitare che uno scivolone si trasformi in un ritorno al fumo regolare.",
+    "articles": [
+      {
+        "id": "b3-01",
+        "sectionId": "section-3",
+        "order": 1,
+        "title": "Che cos'è la voglia di fumare?",
+        "summary": "Capisci che la voglia di fumare è un impulso forte ma temporaneo, che può essere innescato dall'astinenza fisica o da segnali appresi.",
+        "estimatedReadMinutes": 2,
+        "icon": "local_fire_department",
+        "intro": "La voglia di fumare è un forte impulso a fumare, che può essere innescato da un segnale dell'ambiente, da un'emozione, da un pensiero o dall'astinenza da nicotina.",
+        "contentSections": [
+          {
+            "title": "Voglia di fumare da astinenza fisica",
+            "body": "Può essere legata a sintomi biologici che compaiono quando i livelli di nicotina scendono, soprattutto nel primo periodo in cui smetti di fumare.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Voglia di fumare psicologica condizionata",
+            "body": "Può comparire anche più avanti, innescata da segnali appresi come lo stress, il caffè, l'odore di fumo, certe persone o certi contesti.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Il messaggio importante",
+            "body": "Che la voglia di fumare sia forte non significa che devi cedere. Può essere notata come un impulso e lasciata passare senza fumare.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "La voglia di fumare non è un ordine; è un impulso temporaneo e può essere innescata da segnali diversi."
+        ]
+      },
+      {
+        "id": "b3-02",
+        "sectionId": "section-3",
+        "order": 2,
+        "title": "La voglia di fumare sale e scende come un'onda",
+        "summary": "Vedi la voglia di fumare non come un bisogno costante, ma come un'onda che sale, tocca il picco e poi si attenua.",
+        "estimatedReadMinutes": 2,
+        "icon": "local_fire_department",
+        "intro": "La voglia di fumare di solito non resta alla stessa intensità. Sale, si fa notare e poi tende ad attenuarsi.",
+        "contentSections": [
+          {
+            "title": "Salita",
+            "body": "Il pensiero di fumare può farsi notare e la tensione può crescere. Notare «proprio adesso è partita un'onda di voglia di fumare» è il primo passo, qui.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Picco",
+            "body": "La mente può sentirsi bloccata sulla sigaretta. È qui che usi uno degli strumenti che hai già scelto, come il metodo 4D o un cambio di contesto.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Attenuazione",
+            "body": "Quando l'intensità dell'impulso inizia a scendere, nota che hai attraversato l'onda senza fumare. Questa esperienza può costruire fiducia per l'onda successiva.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Invece di trattare l'onda come se non finisse mai, vederla come un processo temporaneo che sale e scende può renderla più facile da gestire."
+        ]
+      },
+      {
+        "id": "b3-03",
+        "sectionId": "section-3",
+        "order": 3,
+        "title": "Cavalcare l'onda della voglia",
+        "summary": "Invece di lottare contro una voglia di fumare o di forzarla a scendere, osserva brevemente il cambiamento che avviene nel tuo corpo e nella tua mente.",
+        "estimatedReadMinutes": 2,
+        "icon": "loop",
+        "intro": "Cavalcare l'onda della voglia è un approccio in cui, invece di cercare di scacciare a forza il pensiero di fumare, lo osservi come una sensazione temporanea e un impulso del corpo.",
+        "contentSections": [
+          {
+            "title": "Quattro passi",
+            "body": null,
+            "items": [
+              "Dalle un nome: «In questo momento ho voglia di fumare.»",
+              "Notala nel corpo: come senti l'impulso — in bocca, in gola, nel petto, nello stomaco o da un'altra parte?",
+              "Guardala cambiare: non cercare di modificare l'onda subito. Osservala salire e attenuarsi per un po'.",
+              "Nota la fine: quando l'impulso si attenua, ricordati che questo momento è passato senza fumare."
+            ],
+            "numbered": true
+          }
+        ],
+        "keyTakeaways": [
+          "L'obiettivo non è apprezzare la voglia di fumare né ignorarla; è sperimentare in modo diretto che è temporanea."
+        ]
+      },
+      {
+        "id": "b3-04",
+        "sectionId": "section-3",
+        "order": 4,
+        "title": "Il metodo 4D (Rimanda - Respira a fondo - Bevi acqua - Distraiti)",
+        "summary": "Rimanda • Respira a fondo • Bevi acqua • Distraiti: applica quattro passi semplici, in ordine, per interrompere il comportamento automatico di fumare in un momento di crisi.",
+        "estimatedReadMinutes": 2,
+        "icon": "local_fire_department",
+        "intro": "Il metodo 4D è un piano di crisi semplice che puoi usare per creare qualche minuto di spazio e interrompere il comportamento automatico quando arriva una forte voglia di fumare.",
+        "contentSections": [
+          {
+            "title": "Gestisci la voglia di fumare in 4 passi",
+            "body": null,
+            "items": [
+              "Rimanda: quando arriva la voglia di fumare, invece di agire subito, rimanda di qualche minuto la decisione di fumare.",
+              "Respira a fondo: concentrati ad alleggerire la tensione del corpo con una respirazione lenta e controllata.",
+              "Bevi acqua: qualche sorso d'acqua può inserire una pausa semplice in mezzo e interrompere il comportamento automatico di fumare.",
+              "Distraiti: cambia contesto, fai una breve passeggiata, chiama qualcuno o sposta la mente su qualcos'altro."
+            ],
+            "numbered": true
+          }
+        ],
+        "keyTakeaways": [
+          "L'obiettivo del metodo 4D non è «distruggere» all'istante la voglia di fumare; è mettere del tempo tra la reazione automatica e la sigaretta, così che l'onda possa passare."
+        ]
+      },
+      {
+        "id": "b3-05",
+        "sectionId": "section-3",
+        "order": 5,
+        "title": "Pianifica prima che arrivi il fattore scatenante",
+        "summary": "Decidi in anticipo, con un approccio «se succede X, farò Y», come risponderai nei momenti difficili.",
+        "estimatedReadMinutes": 2,
+        "icon": "flag",
+        "intro": "Prendere decisioni in un momento di crisi può essere difficile. Un piano breve «se - allora», preparato prima, può ridurre il comportamento automatico.",
+        "contentSections": [
+          {
+            "title": "Esempi",
+            "body": null,
+            "items": [
+              "Se voglio una sigaretta con il caffè, berrò il caffè in un altro posto.",
+              "Se qualcuno mi offre una sigaretta, dirò «Non fumo».",
+              "Se esco da una riunione stressante, prima camminerò per qualche minuto."
+            ],
+            "numbered": false
+          },
+          {
+            "title": "Alcol e contesti sociali",
+            "body": "Se l'alcol o i contesti sociali in cui le persone fumano aumentano la tua voglia di fumare, riorganizzare il contesto, la durata o il piano può aiutare, soprattutto nel primo periodo.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Scegliere il piano in anticipo, invece di inventarlo durante la crisi, significa avere meno decisioni da prendere nei momenti difficili."
+        ]
+      },
+      {
+        "id": "b3-06",
+        "sectionId": "section-3",
+        "order": 6,
+        "title": "Uno scivolone e una ricaduta non sono la stessa cosa",
+        "summary": "Capisci la differenza tra un breve scivolone e un ritorno completo al tuo vecchio schema regolare di fumo.",
+        "estimatedReadMinutes": 2,
+        "icon": "lightbulb",
+        "intro": "Uno scivolone indica un episodio di fumo isolato o di breve durata; una ricaduta indica il ritorno al tuo vecchio schema regolare di uso.",
+        "contentSections": [
+          {
+            "title": "Perché la distinzione conta?",
+            "body": "Non è giusto trattare uno scivolone come se non contasse: può riattivare il vecchio ciclo. Ma interpretarlo come «ormai ho fallito del tutto» può anche aumentare il rischio di continuare a fumare.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Equilibrio",
+            "body": "Prendi lo scivolone sul serio, ma non vederlo come la fine di tutto il percorso. L'informazione più preziosa è quale fattore scatenante è entrato in gioco in quel momento.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Uno scivolone è un allarme, non un verdetto. È possibile capire che cosa è successo e tornare a non fumare."
+        ]
+      },
+      {
+        "id": "b3-07",
+        "sectionId": "section-3",
+        "order": 7,
+        "title": "La trappola «un errore ha rovinato tutto»",
+        "summary": "Nota perché il pensiero «ormai è rovinato», che può comparire dopo uno scivolone, può rendere più facili la seconda e la terza sigaretta.",
+        "estimatedReadMinutes": 2,
+        "icon": "local_fire_department",
+        "intro": "Dopo aver fumato una sigaretta, possono comparire pensieri come «non ho forza di volontà», «ho già rovinato tutto» o «oggi fumo, domani ricomincio».",
+        "contentSections": [
+          {
+            "title": "Il rischio vero",
+            "body": "Trattare tutto il percorso come perso dopo un solo scivolone può rendere più facile continuare a fumare. Per questo è importante analizzare in fretta un errore, invece di ingigantirlo.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Tre domande",
+            "body": null,
+            "items": [
+              "Che cosa è successo?",
+              "Quale fattore scatenante è entrato in gioco?",
+              "Che cosa farò la prossima volta nella stessa situazione?"
+            ],
+            "numbered": false
+          },
+          {
+            "title": "Dati invece del giudizio",
+            "body": "L'obiettivo non è normalizzare quello che è successo; è trasformarlo in informazioni che costruiranno un piano più forte se lo stesso scenario si ripete.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Il pensiero «è tutto finito» non è la realtà in sé — è una reazione mentale che può trasformare uno scivolone in una ricaduta."
+        ]
+      },
+      {
+        "id": "b3-08",
+        "sectionId": "section-3",
+        "order": 8,
+        "title": "Piano di recupero dopo uno scivolone",
+        "summary": "Se hai uno scivolone, fermati prima che continui, analizza il fattore scatenante, aggiorna il piano e torna a non fumare.",
+        "estimatedReadMinutes": 2,
+        "icon": "flag",
+        "intro": "I primi passi dopo uno scivolone contano per evitare che l'episodio torni a diventare un uso regolare.",
+        "contentSections": [
+          {
+            "title": "Passi di recupero",
+            "body": null,
+            "items": [
+              "Non continuare: non passare a una seconda sigaretta dicendoti «tanto ormai è rovinato».",
+              "Scrivilo: dove eri, con chi eri e che emozione stavi provando?",
+              "Individua il fattore scatenante: era stress, alcol, pressione sociale, mancanza di un piano o un'abitudine forte?",
+              "Aggiorna il piano: decidi il comportamento nuovo che userai se lo stesso scenario si ripete.",
+              "Valuta il sostegno: se la voglia di fumare o l'astinenza è troppo forte per gestirla da te, si può prendere in considerazione un professionista della salute o un sostegno per smettere di fumare.",
+              "Torna indietro: torna a non fumare il prima possibile."
+            ],
+            "numbered": true
+          }
+        ],
+        "keyTakeaways": [
+          "Il passo più importante dopo uno scivolone è fermarlo, invece di lasciarlo continuare, e rafforzare il piano."
+        ]
+      },
+      {
+        "id": "b3-09",
+        "sectionId": "section-3",
+        "order": 9,
+        "title": "Costruisci il tuo piano di crisi",
+        "summary": "Decidi in anticipo i tuoi fattori scatenanti più forti, il primo metodo che applicherai e a chi ti rivolgerai se ne hai bisogno.",
+        "estimatedReadMinutes": 2,
+        "icon": "flag",
+        "intro": "Un piano di crisi ti dà una mappa già pronta, invece di dover pensare da zero in un momento difficile.",
+        "contentSections": [
+          {
+            "title": "Compila il tuo piano",
+            "body": null,
+            "items": [
+              "I miei tre fattori scatenanti più forti: ________",
+              "Il primo passo che farò quando arriva la voglia di fumare: ________",
+              "Un'opzione per cambiare contesto: ________",
+              "Qualcuno che posso chiamare o a cui posso scrivere: ________",
+              "La frase che mi ricorderò: ________"
+            ],
+            "numbered": false
+          },
+          {
+            "title": "Tienilo breve",
+            "body": "Più il piano è semplice e a portata di mano, più è alta la possibilità che tu lo usi davvero durante una crisi.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Un piano di crisi non cancella in anticipo la voglia di fumare; rende chiaro che cosa farai quando arriva."
+        ]
+      },
+      {
+        "id": "b3-10",
+        "sectionId": "section-3",
+        "order": 10,
+        "title": "Rivedi il percorso con regolarità",
+        "summary": "Valuta quali fattori scatenanti si sono indeboliti, quali sono ancora presenti e quale metodo funziona meglio per te.",
+        "estimatedReadMinutes": 2,
+        "icon": "loop",
+        "intro": "Durante il tempo senza fumo, la stessa strategia può non funzionare altrettanto bene in ogni situazione. È normale aggiornare il piano di tanto in tanto.",
+        "contentSections": [
+          {
+            "title": "Chiediti",
+            "body": null,
+            "items": [
+              "Quali fattori scatenanti adesso gestisco con più agio?",
+              "In quali situazioni la voglia di fumare è ancora forte?",
+              "Quale metodo funziona meglio per me?",
+              "Se ho uno scivolone, che cosa farò nei primi minuti?"
+            ],
+            "numbered": false
+          },
+          {
+            "title": "Conosci il tuo limite di sostegno",
+            "body": "Aiuta sapere in anticipo a chi ti rivolgerai per un sostegno professionale, nel punto in cui fai fatica a gestire le cose da te.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Ricorda la tua ragione",
+            "body": "Ricordati, di tanto in tanto, della tua ragione personale più forte per mantenere una vita senza fumo.",
+            "items": [],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "Un buon piano non deve per forza restare fisso; può essere aggiornato man mano che fai esperienza."
+        ]
+      },
+      {
+        "id": "b3-11",
+        "sectionId": "section-3",
+        "order": 11,
+        "title": "Sintesi del capitolo",
+        "summary": "Riunisci in un solo punto la voglia di fumare, il metodo 4D, la pianificazione dei fattori scatenanti e la gestione di scivolone e ricaduta.",
+        "estimatedReadMinutes": 1,
+        "icon": "flag",
+        "intro": "La voglia di fumare non è un ordine. Può comparire come un impulso temporaneo, farsi più forte e poi attenuarsi.",
+        "contentSections": [
+          {
+            "title": "Tieni a mente",
+            "body": "Notare la voglia di fumare, usare l'approccio di cavalcare l'onda della voglia o il metodo 4D, preparare in anticipo un piano per i fattori scatenanti e non lasciare che un possibile scivolone diventi il pensiero «è tutto finito» possono aiutare a proteggere il tuo stato senza fumo.",
+            "items": [],
+            "numbered": false
+          },
+          {
+            "title": "Le domande principali",
+            "body": null,
+            "items": [
+              "Che cosa è successo?",
+              "Quale fattore scatenante è entrato in gioco?",
+              "Che cosa farò la prossima volta?"
+            ],
+            "numbered": false
+          }
+        ],
+        "keyTakeaways": [
+          "La voglia di fumare passa, il piano si rafforza. L'obiettivo non è superare ogni momento difficile in modo perfetto; è imparare come tornare a non fumare e continuare."
+        ]
+      }
+    ]
+  }
+]

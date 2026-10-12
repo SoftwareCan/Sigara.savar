@@ -16,8 +16,9 @@ const TITLES = {
   'userDataDeletion.html': 'Veri Silme Talimatları',
 };
 
-const LANG_NAMES = { tr: 'Türkçe', en: 'English', es: 'Español', de: 'Deutsch', fr: 'Français', 'pt-BR': 'Português (Brasil)' };
+const LANG_NAMES = { tr: 'Türkçe', en: 'English', es: 'Español', de: 'Deutsch', fr: 'Français', it: 'Italiano', 'pt-BR': 'Português (Brasil)' };
 const LANGUAGE_UI = {
+  it: { label: 'Lingua', choose: 'Scegli una lingua', note: 'Nota' },
   tr: { label: 'Dil', choose: 'Dil seçin', note: 'Not' },
   en: { label: 'Language', choose: 'Choose a language', note: 'Note' },
   es: { label: 'Idioma', choose: 'Elige un idioma', note: 'Nota' },

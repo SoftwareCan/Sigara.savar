@@ -1,8 +1,9 @@
 import { html } from '../lib/html.mjs';
-import { screenPicture, storeBadges } from './components.mjs';
+import { storeBadges } from './components.mjs';
 import { displayTitle } from './knowledge.mjs';
+import { galleryCopy } from '../i18n/gallery.mjs';
 import { homeCopy } from '../i18n/home.mjs';
-import { heroGallery } from './gallery.mjs';
+import { heroGallery, storePicture } from './gallery.mjs';
 
 const arrow = html`<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
 
@@ -37,7 +38,7 @@ function feature(ctx, data, { id, screen, tone, reverse, href }) {
         <a class="home-link" href="${href}">${data.link}${arrow}</a>
       </div>
       <div class="home-feature__visual home-feature__visual--${tone}">
-        <div class="home-feature__screen">${screenPicture(ctx, screen, data.alt, { sizes: '(min-width: 1000px) 270px, (min-width: 760px) 230px, 230px' })}</div>
+        <div class="home-feature__art">${storePicture(ctx, { kupalar: 1, 'acil-alan': 3, kesfet: 4 }[screen], galleryCopy(ctx.lang).alts[{ kupalar: 0, 'acil-alan': 2, kesfet: 3 }[screen]])}</div>
       </div>
     </div>
   </section>`;

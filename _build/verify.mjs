@@ -287,7 +287,7 @@ if (!robots.includes(`Sitemap: ${config.baseUrl}/sitemap.xml`)) fail('robots.txt
 if (/^Disallow:\s*\/admin(?:\/|\s|$)/im.test(robots)) fail('robots.txt', 'admin noindex must remain crawlable; robots blocking is not access control');
 for (const file of config.authPages) if (!/<meta[^>]+name=["']robots["'][^>]+content=["'][^"']*noindex/i.test(read(file))) fail(file, 'paused auth page missing noindex');
 for (const file of config.legalPages) {
-  const legalLanguages = ['tr', 'en', 'de', 'es', 'fr', 'pt-BR'];
+  const legalLanguages = ['tr', 'en', 'de', 'es', 'fr', 'pt-BR', 'it'];
   const languageBlocks = (source) => {
     const blocks = new Map();
     const inner = main(source);
@@ -328,7 +328,7 @@ for (const file of config.legalPages) {
     if (english && structure(block) !== structure(english)) fail(file, `${lang} legal sections/paragraphs/lists differ in structure from English`);
     if (english && links(block) !== links(english)) fail(file, `${lang} legal links differ from English`);
     // Retention, trial, renewal and deletion durations must survive translation.
-    if (english && (lang === 'fr' || lang === 'pt-BR' || (file === 'userDataDeletion.html' && ['de', 'es'].includes(lang)))) {
+    if (english && (lang === 'it' || lang === 'fr' || lang === 'pt-BR' || (file === 'userDataDeletion.html' && ['de', 'es'].includes(lang)))) {
       const numbers = (value) => (decode(value.replace(/<[^>]*>/g, ' ')).match(/\b\d+(?::\d+)?\b/g) || []).join(',');
       if (numbers(block) !== numbers(english)) fail(file, `${lang} legal numeric dates/limits differ from English`);
     }

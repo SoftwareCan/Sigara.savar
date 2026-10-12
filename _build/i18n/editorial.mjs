@@ -1,6 +1,21 @@
 // Website-only labels added after the original dictionaries. Educational article
 // bodies remain in the synced, language-specific Flutter content files.
 const COPY = {
+  it: {
+    knowledge: { all: 'Tutti gli articoli', browse: 'Esplora per argomento', read: 'Leggi l’articolo', onPage: 'In questo articolo', related: 'Continua a leggere', tools: ['Avvia l’esercizio di respirazione (4-4-6)', 'Prova l’esercizio di 90 secondi', 'Apri i passi delle 4D negli strumenti', 'Compila e stampa il tuo piano per il desiderio'] },
+    guide: {
+      phases: ['Prepararsi a smettere', 'Il giorno in cui smetti', 'Le prime 24 ore', 'La prima settimana', 'Quando arriva il desiderio', 'Conoscere i fattori scatenanti', 'Se hai fumato di nuovo', 'Cambiare la routine', 'Trovare sostegno'],
+      related: 'articoli correlati', byStage: 'Parti dalla fase in cui ti trovi', nextStep: 'Il tuo prossimo passo', start: 'Comincia da dove sei ora.',
+      intro: 'Forse ti stai preparando, stai vivendo i primi giorni o ci stai riprovando. Scegli l’argomento adatto: ogni passo porta a brevi articoli del Centro informazioni.',
+      quick: 'Accesso rapido', quickLinks: ['Il mio primo giorno', 'Ho voglia di fumare adesso', 'Ho fumato di nuovo'],
+      recoveryLead: 'I benefici generali per la salute quando smetti di fumare, dai primi minuti al lungo termine.',
+      milestones: (n) => `Scopri ${n} traguardi di salute`, sources: 'Fonti', stages: (n) => `Scopri le ${n} tappe dell’app`,
+      earlyArticles: 'Articoli gratuiti per i primi giorni', allArticles: 'Tutti gli articoli del Centro informazioni', library: (sections, articles) => `Leggi ${articles} articoli in ${sections} sezioni`,
+      appTitle: 'Porta questo sostegno in tasca.', appText: 'Torna al Centro informazioni, segui i tuoi progressi e tieni a portata di mano gli strumenti per i momenti difficili.',
+    },
+    download: { tagline: 'Ogni giorno senza fumo, una forza nuova.', qrLink: 'collegamento a sigarasavar.com/indir/' },
+    stores: { apple: 'Scarica su', google: 'Disponibile su' }, tools: { pdfLanguage: 'Questo PDF è in italiano.' },
+  },
   tr: {
     knowledge: { all: 'Tüm yazılar', browse: 'Konuna göre keşfet', read: 'Yazıyı oku', onPage: 'Bu yazıda', related: 'Buradan devam edebilirsin', tools: ['Nefes egzersizini başlat (4-4-6)', '90 saniyelik akışı dene', '4D adımlarını araçlarda aç', 'Kriz planını doldur ve yazdır'] },
     guide: {

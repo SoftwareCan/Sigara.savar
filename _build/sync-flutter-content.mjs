@@ -15,8 +15,8 @@ const flutterRoot = path.resolve(process.argv[2] || path.join(here, '../../Sigar
 const outRoot = path.join(here, 'content');
 const sourceFile = path.join(outRoot, 'SOURCE.json');
 const previousSource = fs.existsSync(sourceFile) ? JSON.parse(fs.readFileSync(sourceFile, 'utf8')) : {};
-const SUPPORTED_LANGS = ['tr', 'en', 'de', 'es', 'fr', 'pt-BR'];
-const DART_LOCALE_SUFFIX = { tr: 'Tr', en: 'En', de: 'De', es: 'Es', fr: 'Fr', 'pt-BR': 'PtBr' };
+const SUPPORTED_LANGS = ['tr', 'en', 'de', 'es', 'fr', 'pt-BR', 'it'];
+const DART_LOCALE_SUFFIX = { tr: 'Tr', en: 'En', de: 'De', es: 'Es', fr: 'Fr', 'pt-BR': 'PtBr', it: 'It' };
 // Optional third argument limits a sync to one locale without touching the others.
 const LANGS = process.argv[3] ? process.argv[3].split(',') : SUPPORTED_LANGS;
 if (LANGS.some((lang) => !SUPPORTED_LANGS.includes(lang))) throw new Error('Unsupported content locale');
@@ -210,7 +210,7 @@ const pick = (obj, keys) => Object.fromEntries(keys.filter((k) => obj[k] !== und
 const src = (rel) => path.join(flutterRoot, rel);
 
 function knowledge(lang) {
-  const suffix = { tr: '', en: '_en', es: '_es', de: '_de', fr: '_fr', 'pt-BR': '_pt_br' }[lang];
+  const suffix = { tr: '', en: '_en', es: '_es', de: '_de', fr: '_fr', 'pt-BR': '_pt_br', it: '_it' }[lang];
   const name = lang === 'tr' ? 'kKnowledgeCenterSections' : `kKnowledgeCenterSections${DART_LOCALE_SUFFIX[lang]}`;
   const scope = parseConstLists(src(`lib/features/explore/system_posts/data/knowledge_center_content${suffix}.dart`));
   const sections = resolveRefs(scope[name], scope);
@@ -314,7 +314,7 @@ fs.writeFileSync(sourceFile, JSON.stringify({
     'lib/features/health/presentation/data/health_goals_l10n.dart',
     'lib/features/games/presentation/data/breathing_exercise_l10n.dart',
     'lib/features/progress/domain/growth_insights.dart, growth_insights_l10n.dart',
-    'lib/l10n/app_{tr,en,de,es,fr,pt_BR}.arb',
+    'lib/l10n/app_{tr,en,de,es,fr,pt_BR,it}.arb',
   ],
 }, null, 2) + '\n');
 

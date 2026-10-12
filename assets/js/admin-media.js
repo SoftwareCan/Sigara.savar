@@ -30,15 +30,15 @@
       return item && typeof item.sourceHash === 'string' && item.sourceHash.length <= 64 && item.alts && locales.every((locale) => typeof item.alts[locale.code] === 'string' && item.alts[locale.code].length <= 600 && item.alts[locale.code].trim().length > 0);
     });
   }
-  function migratePortugueseAlts(value) {
-    // Older plans predate Brazilian Portuguese. Preserve every edited field,
+  function migrateLocaleAlts(value) {
+    // Older plans predate newly added locales. Preserve every edited field,
     // image order and source hash; supply only the newly introduced alt text.
-    const previousLocales = data.locales.filter((locale) => locale.code !== 'pt-BR');
+    const previousLocales = data.locales.filter((locale) => !['pt-BR', 'it'].includes(locale.code));
     if (previousLocales.length === data.locales.length || !valid(value, previousLocales)) return value;
     const migrated = clone(value);
     for (const id of migrated.order) {
-      if (!Object.hasOwn(migrated.items[id].alts, 'pt-BR')) {
-        migrated.items[id].alts['pt-BR'] = originals.get(id).alts['pt-BR'];
+      for (const { code } of data.locales) {
+        if (!Object.hasOwn(migrated.items[id].alts, code)) migrated.items[id].alts[code] = originals.get(id).alts[code];
       }
     }
     return migrated;
@@ -58,7 +58,7 @@
     if (raw) {
       const stored = JSON.parse(raw);
       if (stored.version !== 1) throw new Error('Invalid gallery plan version');
-      const migrated = migratePortugueseAlts(stored.plan);
+      const migrated = migrateLocaleAlts(stored.plan);
       if (!valid(migrated)) throw new Error('Invalid gallery plan');
       // The original browser record stays intact until the next explicit save.
       saved = clean(migrated);

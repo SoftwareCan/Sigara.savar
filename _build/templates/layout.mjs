@@ -41,6 +41,7 @@ export function contentSecurityPolicy(config) {
 }
 
 const LANGUAGES = {
+  it: { name: 'Italiano', label: 'Scegli una lingua', current: 'Lingua' },
   tr: { name: 'Türkçe', label: 'Dil seçin', current: 'Dil' },
   en: { name: 'English', label: 'Choose a language', current: 'Language' },
   de: { name: 'Deutsch', label: 'Sprache wählen', current: 'Sprache' },

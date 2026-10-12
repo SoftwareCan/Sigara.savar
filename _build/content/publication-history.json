@@ -882,11 +882,158 @@
         "published": "2026-10-11",
         "modified": "2026-10-11"
       }
+    },
+    "it": {
+      "b1-01": {
+        "hash": "0618397eac89d6a33128e9fe236470796b81625edc1c0e6ecced5b2f5076de99",
+        "published": "2026-10-11",
+        "modified": "2026-10-11"
+      },
+      "b1-02": {
+        "hash": "c886929aa722677c29b06dab2ee3753865656194e4f29de0803e2de6bcf20964",
+        "published": "2026-10-11",
+        "modified": "2026-10-11"
+      },
+      "b1-03": {
+        "hash": "15a8c6eaca228a8e52546dfac9014a7447f6f100545da430128796ff78890a63",
+        "published": "2026-10-11",
+        "modified": "2026-10-11"
+      },
+      "b1-04": {
+        "hash": "5f341657c89a850303d18072fed8d08faa3b8725d8ddf3fed7776796636a610e",
+        "published": "2026-10-11",
+        "modified": "2026-10-11"
+      },
+      "b1-05": {
+        "hash": "fe4f17941e009b3ac21152f20d79aa23c9bb614867ae97f3e9d246f71c1a3042",
+        "published": "2026-10-11",
+        "modified": "2026-10-11"
+      },
+      "b1-06": {
+        "hash": "3c5123e3216e8a252be70bfbfc698d3de9bd750620e28daaabf1b18c4804aa28",
+        "published": "2026-10-11",
+        "modified": "2026-10-11"
+      },
+      "b1-07": {
+        "hash": "434a49e8d8b9a8c3b404f3137a7d3e286a741639fc10c2000e8bcb9dc599bc26",
+        "published": "2026-10-11",
+        "modified": "2026-10-11"
+      },
+      "b1-08": {
+        "hash": "1ec975c24ffc4941c9448d5c68f427c06c664c03481f933a11e8c67df7e6b692",
+        "published": "2026-10-11",
+        "modified": "2026-10-11"
+      },
+      "b1-09": {
+        "hash": "c73b5942cc8b324f8264aeb9c3eeb3984efb0e2a8300e69e9f1905154765f875",
+        "published": "2026-10-11",
+        "modified": "2026-10-11"
+      },
+      "b2-01": {
+        "hash": "4e40106686fcd0242d72eff8aa09cded0679929686c2fd22f6388662601d6b99",
+        "published": "2026-10-11",
+        "modified": "2026-10-11"
+      },
+      "b2-02": {
+        "hash": "7c87010cb29c5c1b53661de0d7882a6c779ca5fd2b5fd2abbb4384cef1bf72ef",
+        "published": "2026-10-11",
+        "modified": "2026-10-11"
+      },
+      "b2-03": {
+        "hash": "e776d23ca84b0f684b02866726a6b06e7011f9d3efe7839e3cb4fdfe4ff3f30c",
+        "published": "2026-10-11",
+        "modified": "2026-10-11"
+      },
+      "b2-04": {
+        "hash": "0dd27f72da7628a5d531a1acd6b79bb63c0aec77fbb3bb195faef0a816592130",
+        "published": "2026-10-11",
+        "modified": "2026-10-11"
+      },
+      "b2-05": {
+        "hash": "7ea122803d579b2b1e0f59aad8352b050b86b776ff94eb2d8b8449a483d54702",
+        "published": "2026-10-11",
+        "modified": "2026-10-11"
+      },
+      "b2-06": {
+        "hash": "1b68fb6b25f34084064c88a6cd422cf96d2dcddd29f837cfe26b9b79dbd4dc3b",
+        "published": "2026-10-11",
+        "modified": "2026-10-11"
+      },
+      "b2-07": {
+        "hash": "815ae9fe9ff45b76a5fa4d9e2167e12aad967ced0da099a69c7f7127f7dcbff1",
+        "published": "2026-10-11",
+        "modified": "2026-10-11"
+      },
+      "b2-08": {
+        "hash": "cc833a064dc902c7baaab73f106809947c09381bf8d192b34b3648de894b1e5f",
+        "published": "2026-10-11",
+        "modified": "2026-10-11"
+      },
+      "b2-09": {
+        "hash": "a09d8e5c181f3ac3ae4c49493fb19477497b7e0447f049e18f00b1c38dc84d93",
+        "published": "2026-10-11",
+        "modified": "2026-10-11"
+      },
+      "b3-01": {
+        "hash": "5a7097e9a8fe71ee93733e418663586ce136730b79fcc5efc6278a4d404d108f",
+        "published": "2026-10-11",
+        "modified": "2026-10-11"
+      },
+      "b3-02": {
+        "hash": "02d9a0c884b219b762bc526fcf21432d1c8c5f96bab08ca8c6dabe4658bf29e4",
+        "published": "2026-10-11",
+        "modified": "2026-10-11"
+      },
+      "b3-03": {
+        "hash": "bb372ffe6a253132fe1b277a4d128655b9585dae5b47491b5a7587bea73a914c",
+        "published": "2026-10-11",
+        "modified": "2026-10-11"
+      },
+      "b3-04": {
+        "hash": "f22dd030d900eaada45b2835359203ff3e28417425fbc35f56e72eac91b44e6d",
+        "published": "2026-10-11",
+        "modified": "2026-10-11"
+      },
+      "b3-05": {
+        "hash": "4f2c427443ad8e7d57e5bded4596278649026a7f66ba1d4b0e6ca453569cb850",
+        "published": "2026-10-11",
+        "modified": "2026-10-11"
+      },
+      "b3-06": {
+        "hash": "bebc298669bcb87879106e356f14461c91d213c0e2a71fcd93d75fcc2d6e6013",
+        "published": "2026-10-11",
+        "modified": "2026-10-11"
+      },
+      "b3-07": {
+        "hash": "6d80f5805bf5ca8f3ea7d52e9ffe83a00b6f95784feab8270334862e955a27f0",
+        "published": "2026-10-11",
+        "modified": "2026-10-11"
+      },
+      "b3-08": {
+        "hash": "4db3fed3ab0581463dea5e18dc22da26810c046642c826a6144bd029b11edf3a",
+        "published": "2026-10-11",
+        "modified": "2026-10-11"
+      },
+      "b3-09": {
+        "hash": "0dddd980af1b6051b2d9758d505b33e707a17daa394e36cc02ffb622b881fc54",
+        "published": "2026-10-11",
+        "modified": "2026-10-11"
+      },
+      "b3-10": {
+        "hash": "c2ea91a19b3d816b04e4698f6704604a0a009ea9de4a810932237dbfd5c48438",
+        "published": "2026-10-11",
+        "modified": "2026-10-11"
+      },
+      "b3-11": {
+        "hash": "2e3b8f1e141b5b6bd692486d4868cd6d8a5604e9fce02320c6797baf6dee7cca",
+        "published": "2026-10-11",
+        "modified": "2026-10-11"
+      }
     }
   },
   "pages": {
     "/": {
-      "hash": "07219b16293f9af07cb357ed0e8f3d3cb1c5025fb1d350174048784dc3fc5ffb",
+      "hash": "c092f613c42b26e36f730a0606156fb9bcfa572bff454ca03c11ae3d36a32edd",
       "lastmod": "2026-10-11"
     },
     "/bilgi-merkezi/": {
@@ -1018,15 +1165,15 @@
       "lastmod": "2026-10-09"
     },
     "/privacy.html": {
-      "hash": "27dcf20ac27531142dd8292621cc51a26420a89823e4b3df5bbffc02c39575e7",
+      "hash": "f90a4fc848a81017551e9bd86da6bae5b59a17da72bf6b94ba6fee80bbc803c8",
       "lastmod": "2026-10-11"
     },
     "/terms.html": {
-      "hash": "4476cc0483dc990a087d4c7adab0606f82a5e03b2e5e175ad83513a5c28126f2",
+      "hash": "b564497c05eac50d71861ea82767c4deb96e6e5fb10e09a25a955d7941bc7a0e",
       "lastmod": "2026-10-11"
     },
     "/userDataDeletion.html": {
-      "hash": "bf60b5731c7c0a5ef110e53e38a25a7c0cced013995fb788a867efaa4f7ceccf",
+      "hash": "3a0d0f91ceb292bc8ba1454fd7cb4e843b5029555d897e1a8c673e2ca76e1217",
       "lastmod": "2026-10-11"
     },
     "/indir/": {
@@ -1034,7 +1181,7 @@
       "lastmod": "2026-10-08"
     },
     "/en/": {
-      "hash": "0d4b20e6a746ee4415bfdc6aa175433e7418b67ee4617b2c820632bd8f971092",
+      "hash": "4f4e5279e45548a0c7deb77850a8dc4a1536df483dee899fc53142289ce90515",
       "lastmod": "2026-10-11"
     },
     "/en/knowledge-center/": {
@@ -1170,7 +1317,7 @@
       "lastmod": "2026-10-09"
     },
     "/es/": {
-      "hash": "5d7daa1a8ff2f0f9959b3784cf7543665074642972405e7bcdbba638540e7f1d",
+      "hash": "fc73d775d7eceab4cfdf2c130e003d20623618476a10dc897df250039fb18436",
       "lastmod": "2026-10-11"
     },
     "/es/centro-de-informacion/": {
@@ -1306,7 +1453,7 @@
       "lastmod": "2026-10-09"
     },
     "/de/": {
-      "hash": "760ec52416d7fb53a54898d16afa9fa1930edfd13ac064db5b2f8d013ca6979e",
+      "hash": "02930915d399ffc639575a98b2bdac3e748027d562adc35d3accb379ef3442ec",
       "lastmod": "2026-10-11"
     },
     "/de/wissenszentrum/": {
@@ -1442,7 +1589,7 @@
       "lastmod": "2026-10-09"
     },
     "/fr/": {
-      "hash": "af77d66052f3f88b22ba108e1c6d1806823d49e0bc3ce6a234bac3e529e73269",
+      "hash": "0385f0f3200a534d52b6de02f1b97351642f7d18a16a61768a90b1c267d9b41d",
       "lastmod": "2026-10-11"
     },
     "/fr/centre-de-connaissances/": {
@@ -1578,7 +1725,7 @@
       "lastmod": "2026-10-09"
     },
     "/pt-br/": {
-      "hash": "c6854fb4540fe69c97e3ef097020711c33890672455222aff08178217a5b79f7",
+      "hash": "598828e24bf8e14666ce7f3a0468551cfd976981857c9b142e47e28c51c14d1d",
       "lastmod": "2026-10-11"
     },
     "/pt-br/central-de-conhecimento/": {
@@ -1711,6 +1858,142 @@
     },
     "/pt-br/baixar/": {
       "hash": "f3ce3f18361764f4299af6cece39b235c4baf8e0c58f46d6c5244cd054f4b16a",
+      "lastmod": "2026-10-11"
+    },
+    "/it/": {
+      "hash": "0a3f6db8d56bb0836b418951bd377cd9e694392af3b9bf81e60a8151b20f678d",
+      "lastmod": "2026-10-11"
+    },
+    "/it/centro-informazioni/": {
+      "hash": "6eb6eba369def7ff8d49d3bb5aab1bb3a3e91227875965b5c4c11e58a595f041",
+      "lastmod": "2026-10-11"
+    },
+    "/it/centro-informazioni/che-cos-e-la-dipendenza/": {
+      "hash": "a8075d22bcba037ff11c2369e4770ddb0b474b0e6984f3b7b53ab14e41e4f10a",
+      "lastmod": "2026-10-11"
+    },
+    "/it/centro-informazioni/perche-fumi-e-perche-dovresti-smettere-di-fumare/": {
+      "hash": "8a95468df3787393fee52018193f8e0281821be5417a41fcee8d6648ed0777ca",
+      "lastmod": "2026-10-11"
+    },
+    "/it/centro-informazioni/che-cosa-guadagni-se-smetti-di-fumare/": {
+      "hash": "0845126bbb16ae45ccdc68395f040bb608504bab529ce98f4242e6793bf867cd",
+      "lastmod": "2026-10-11"
+    },
+    "/it/centro-informazioni/preparazione-e-pianificazione/": {
+      "hash": "c4aa33158cb0e13e01aec1dad7b46b68549cf237a8ed6fcfd1559e2b8b2d5ae5",
+      "lastmod": "2026-10-11"
+    },
+    "/it/centro-informazioni/mappa-i-tuoi-fattori-scatenanti/": {
+      "hash": "812998cd42f3edfec34860477df687241b8e7730e0b1e68c04bda6ef5bc2a48b",
+      "lastmod": "2026-10-11"
+    },
+    "/it/centro-informazioni/opzioni-di-sostegno/": {
+      "hash": "11bbc437a5627e969d3070cd9a05a5229ac28110677a9fc156c25dc3569067d3",
+      "lastmod": "2026-10-11"
+    },
+    "/it/centro-informazioni/il-giorno-in-cui-smetti/": {
+      "hash": "40a08ef423c59cbb3c559608c8102831861fe180902ecdd23803bb0107e73262",
+      "lastmod": "2026-10-11"
+    },
+    "/it/centro-informazioni/astinenza/": {
+      "hash": "be0a3c27f4361856f15d527b5024d019fefc825cb07f6334731c058128e6d7e0",
+      "lastmod": "2026-10-11"
+    },
+    "/it/centro-informazioni/preparazione-e-primi-giorni-sintesi-del-capitolo/": {
+      "hash": "2b1496f531f1b65e0c5ba971a632ad04ae333a8d980737da10a4ba7e1bbd55b5",
+      "lastmod": "2026-10-11"
+    },
+    "/it/centro-informazioni/la-nicotina-se-n-e-andata-perche-potresti-avere-ancora-voglia-di-fumare/": {
+      "hash": "6c68c316f5d362d94ff03360f4eebc89910966ef4e6db36a059939409ef53017",
+      "lastmod": "2026-10-11"
+    },
+    "/it/centro-informazioni/riscrivi-i-tuoi-fattori-scatenanti/": {
+      "hash": "eab0cbb629132f6214d26cb3a1144ef71ed7f9bd466c457cbe56ee537c237d96",
+      "lastmod": "2026-10-11"
+    },
+    "/it/centro-informazioni/rivaluta-i-tuoi-pensieri-sul-fumo/": {
+      "hash": "ec05ec884ef95bd6aeb7eb6ba5c4aa6fc6dfcef702294b3231335450e2c1c80c",
+      "lastmod": "2026-10-11"
+    },
+    "/it/centro-informazioni/con-che-cosa-riempirai-il-vuoto-lasciato-dal-fumo/": {
+      "hash": "95be01ffb255a349ca1f191edfc6d7ef8a9b4fc45c29e6d03a1a572c911a4d7b",
+      "lastmod": "2026-10-11"
+    },
+    "/it/centro-informazioni/rafforza-di-nuovo-le-tue-ricompense-naturali/": {
+      "hash": "347f98a27a2c89bfa1b9d10c61df5cb9b4c9af55dd8f2d21b20abdaa70787459",
+      "lastmod": "2026-10-11"
+    },
+    "/it/centro-informazioni/da-sto-cercando-di-smettere-a-non-fumo/": {
+      "hash": "1cc5b8b531a5dd970d2da10897a05970d38d4b2c158cc38652dd05089ba1c2a6",
+      "lastmod": "2026-10-11"
+    },
+    "/it/centro-informazioni/attenzione-al-pensiero-adesso-lo-controllo/": {
+      "hash": "f56dea90a5cd061e16a28323d8f8652f8d553fa9239c024850e4a3ad11049383",
+      "lastmod": "2026-10-11"
+    },
+    "/it/centro-informazioni/lista-di-controllo-della-vita-senza-fumo/": {
+      "hash": "f1b945828a3a03c32e8f32d94f89f9a2d6a1834a63888341da111dcfefec2158",
+      "lastmod": "2026-10-11"
+    },
+    "/it/centro-informazioni/rendere-permanente-una-vita-senza-fumo-sintesi-del-capitolo/": {
+      "hash": "2129b3a5cb8d46babc8f32276998d758b44faca6ceab32284e6c65216cf85285",
+      "lastmod": "2026-10-11"
+    },
+    "/it/centro-informazioni/che-cos-e-la-voglia-di-fumare/": {
+      "hash": "2543602b4b10db36f3a6cc090e2cd8da6f6ac1cd34085836f8befdf56d999a86",
+      "lastmod": "2026-10-11"
+    },
+    "/it/centro-informazioni/la-voglia-di-fumare-sale-e-scende-come-un-onda/": {
+      "hash": "26730291051703c405ceccd42739de2a2545bda1065592d7f954162974b9ff65",
+      "lastmod": "2026-10-11"
+    },
+    "/it/centro-informazioni/cavalcare-l-onda-della-voglia/": {
+      "hash": "d15b0085a5c434b66c9291d7a648edcaaf6b158d98746c6e90a1af2a613d9bed",
+      "lastmod": "2026-10-11"
+    },
+    "/it/centro-informazioni/il-metodo-4d-rimanda-respira-a-fondo-bevi-acqua-distraiti/": {
+      "hash": "98c03ed605e39315009574e8c04949d0af69217a279ddc3da1beb4f729c8eec1",
+      "lastmod": "2026-10-11"
+    },
+    "/it/centro-informazioni/pianifica-prima-che-arrivi-il-fattore-scatenante/": {
+      "hash": "ecf733cf44d80e064a4ba170414798e9ac6b91677f83146d85926005f3a4dcd3",
+      "lastmod": "2026-10-11"
+    },
+    "/it/centro-informazioni/uno-scivolone-e-una-ricaduta-non-sono-la-stessa-cosa/": {
+      "hash": "d7a0e6629e707ee151c5b2d318fd5e1926ba988fc703a2d304a1a6edd6e12063",
+      "lastmod": "2026-10-11"
+    },
+    "/it/centro-informazioni/la-trappola-un-errore-ha-rovinato-tutto/": {
+      "hash": "304da5a1ca1a8d1b7517eb77ef35299c9099017cb1dd718714b8a9e771ed86cf",
+      "lastmod": "2026-10-11"
+    },
+    "/it/centro-informazioni/piano-di-recupero-dopo-uno-scivolone/": {
+      "hash": "a76a11477f7e2d7d3d8766bfa326d03570e2c932cbe387c3e554a632d3dacdb4",
+      "lastmod": "2026-10-11"
+    },
+    "/it/centro-informazioni/costruisci-il-tuo-piano-di-crisi/": {
+      "hash": "03739718c8b95874e6047b142fa6caa80f876bfd680eeabd8fbfadf66be28ccc",
+      "lastmod": "2026-10-11"
+    },
+    "/it/centro-informazioni/rivedi-il-percorso-con-regolarita/": {
+      "hash": "4a15745a45c9ca0fa58f0e5cdc774ad39edb43928fe68002a3da1b6596700610",
+      "lastmod": "2026-10-11"
+    },
+    "/it/centro-informazioni/gestire-la-voglia-di-fumare-e-prevenire-la-ricaduta-sintesi-del-capitolo/": {
+      "hash": "0cf66606c656487b802c6c8e6efaa277e0d51025a3ae2218627d898607728117",
+      "lastmod": "2026-10-11"
+    },
+    "/it/guida-per-smettere/": {
+      "hash": "85bd1fcc2c141002fcdad365de330c1595a45d26721e9e495e450f7283e6192a",
+      "lastmod": "2026-10-11"
+    },
+    "/it/strumenti/": {
+      "hash": "759af43cfc9257dac93e0f81f0a56df5d8460bb9a5b76be1cc6050d610e26cf0",
+      "lastmod": "2026-10-11"
+    },
+    "/it/scarica/": {
+      "hash": "76320341f19661d9cfa9d273efed84fda67360201961c2f8ea578cb6c53c3929",
       "lastmod": "2026-10-11"
     }
   }

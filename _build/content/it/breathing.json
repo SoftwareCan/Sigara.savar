@@ -1,0 +1,62 @@
+[
+  {
+    "id": "box_breathing",
+    "name": "Respirazione quadrata (4-4-4)",
+    "inhaleSeconds": 4,
+    "holdSeconds": 4,
+    "exhaleSeconds": 4,
+    "benefit": "Riduce lo stress, migliora la concentrazione e la chiarezza mentale",
+    "area": "Gestione dello stress e concentrazione",
+    "description": "Usata da militari e atleti per calmare la mente e migliorare la prestazione."
+  },
+  {
+    "id": "relaxing_breath",
+    "name": "Respiro rilassante (4-7-8)",
+    "inhaleSeconds": 4,
+    "holdSeconds": 7,
+    "exhaleSeconds": 8,
+    "benefit": "Sonno migliore, meno ansia e più calma",
+    "area": "Sonno e gestione dell'ansia",
+    "description": "Resa popolare dal Dr. Andrew Weil; attiva il sistema nervoso parasimpatico."
+  },
+  {
+    "id": "equal_breathing",
+    "name": "Respirazione uguale (5-5)",
+    "inhaleSeconds": 5,
+    "holdSeconds": 0,
+    "exhaleSeconds": 5,
+    "benefit": "Equilibrio, calma e stabilità mentale",
+    "area": "Equilibrio e calma",
+    "description": "Semplice ed efficace: una tecnica di respiro equilibrante, facile da praticare ogni giorno."
+  },
+  {
+    "id": "deep_breathing",
+    "name": "Respirazione profonda (6-2-8)",
+    "inhaleSeconds": 6,
+    "holdSeconds": 2,
+    "exhaleSeconds": 8,
+    "benefit": "Più energia, più lucidità e più ossigenazione",
+    "area": "Energia e vitalità",
+    "description": "Porta più ossigeno al corpo e aiuta ad alzare il tuo livello di energia."
+  },
+  {
+    "id": "triangle_breathing",
+    "name": "Respirazione triangolare (3-3-3)",
+    "inhaleSeconds": 3,
+    "holdSeconds": 3,
+    "exhaleSeconds": 3,
+    "benefit": "Meno ansia, gestione del panico e calma rapida",
+    "area": "Ansia e gestione del panico",
+    "description": "Ideale per calmarti in fretta; efficace nei momenti di ansia o di panico."
+  },
+  {
+    "id": "extended_exhale",
+    "name": "Espirazione prolungata (4-4-6)",
+    "inhaleSeconds": 4,
+    "holdSeconds": 4,
+    "exhaleSeconds": 6,
+    "benefit": "Meno stress, regolazione del ritmo cardiaco e rilassamento",
+    "area": "Stress e rilassamento",
+    "description": "Rinforza il sistema nervoso parasimpatico grazie a un'espirazione più lunga."
+  }
+]

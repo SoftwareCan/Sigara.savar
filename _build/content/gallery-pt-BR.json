@@ -1,0 +1,233 @@
+[
+  {
+    "id": "store-01",
+    "originalName": "1.png",
+    "originalSha256": "11de5d8770887b40b451727372ffe4dee44a72afbc34680fb3440517697bb344",
+    "width": 1242,
+    "height": 2688,
+    "variants": [
+      {
+        "path": "/assets/gallery/pt-BR/store-01-360.webp",
+        "width": 360,
+        "height": 779,
+        "bytes": 30712
+      },
+      {
+        "path": "/assets/gallery/pt-BR/store-01-360.avif",
+        "width": 360,
+        "height": 779,
+        "bytes": 23482
+      },
+      {
+        "path": "/assets/gallery/pt-BR/store-01-720.webp",
+        "width": 720,
+        "height": 1558,
+        "bytes": 74196
+      },
+      {
+        "path": "/assets/gallery/pt-BR/store-01-720.avif",
+        "width": 720,
+        "height": 1558,
+        "bytes": 56079
+      }
+    ]
+  },
+  {
+    "id": "store-02",
+    "originalName": "2.png",
+    "originalSha256": "7ab924f24222be526af8b51db0741b2307a764e327d778f105544d1e5b32a6f0",
+    "width": 1242,
+    "height": 2688,
+    "variants": [
+      {
+        "path": "/assets/gallery/pt-BR/store-02-360.webp",
+        "width": 360,
+        "height": 779,
+        "bytes": 29608
+      },
+      {
+        "path": "/assets/gallery/pt-BR/store-02-360.avif",
+        "width": 360,
+        "height": 779,
+        "bytes": 22816
+      },
+      {
+        "path": "/assets/gallery/pt-BR/store-02-720.webp",
+        "width": 720,
+        "height": 1558,
+        "bytes": 75404
+      },
+      {
+        "path": "/assets/gallery/pt-BR/store-02-720.avif",
+        "width": 720,
+        "height": 1558,
+        "bytes": 54656
+      }
+    ]
+  },
+  {
+    "id": "store-03",
+    "originalName": "3.png",
+    "originalSha256": "dc371323483c9680235de99df0bb92426c74c60b8c3b694441b2c021efff765f",
+    "width": 1242,
+    "height": 2688,
+    "variants": [
+      {
+        "path": "/assets/gallery/pt-BR/store-03-360.webp",
+        "width": 360,
+        "height": 779,
+        "bytes": 36114
+      },
+      {
+        "path": "/assets/gallery/pt-BR/store-03-360.avif",
+        "width": 360,
+        "height": 779,
+        "bytes": 27330
+      },
+      {
+        "path": "/assets/gallery/pt-BR/store-03-720.webp",
+        "width": 720,
+        "height": 1558,
+        "bytes": 89502
+      },
+      {
+        "path": "/assets/gallery/pt-BR/store-03-720.avif",
+        "width": 720,
+        "height": 1558,
+        "bytes": 69043
+      }
+    ]
+  },
+  {
+    "id": "store-04",
+    "originalName": "4.png",
+    "originalSha256": "0682f8611fc520330d571fc38e7942d9c8fa573cf0566391ba4c63944e06ffee",
+    "width": 1242,
+    "height": 2688,
+    "variants": [
+      {
+        "path": "/assets/gallery/pt-BR/store-04-360.webp",
+        "width": 360,
+        "height": 779,
+        "bytes": 26176
+      },
+      {
+        "path": "/assets/gallery/pt-BR/store-04-360.avif",
+        "width": 360,
+        "height": 779,
+        "bytes": 20658
+      },
+      {
+        "path": "/assets/gallery/pt-BR/store-04-720.webp",
+        "width": 720,
+        "height": 1558,
+        "bytes": 65826
+      },
+      {
+        "path": "/assets/gallery/pt-BR/store-04-720.avif",
+        "width": 720,
+        "height": 1558,
+        "bytes": 52119
+      }
+    ]
+  },
+  {
+    "id": "store-05",
+    "originalName": "5.png",
+    "originalSha256": "c16f859d150c785f457bb59566c5d15335e2eed9d7db950a7725334960e093f0",
+    "width": 1242,
+    "height": 2688,
+    "variants": [
+      {
+        "path": "/assets/gallery/pt-BR/store-05-360.webp",
+        "width": 360,
+        "height": 779,
+        "bytes": 28764
+      },
+      {
+        "path": "/assets/gallery/pt-BR/store-05-360.avif",
+        "width": 360,
+        "height": 779,
+        "bytes": 21287
+      },
+      {
+        "path": "/assets/gallery/pt-BR/store-05-720.webp",
+        "width": 720,
+        "height": 1558,
+        "bytes": 69642
+      },
+      {
+        "path": "/assets/gallery/pt-BR/store-05-720.avif",
+        "width": 720,
+        "height": 1558,
+        "bytes": 50290
+      }
+    ]
+  },
+  {
+    "id": "store-06",
+    "originalName": "6.png",
+    "originalSha256": "87a9e9b6860bfc916c6851e8a3a21de9a0a6bfd76bab1b9ce190935b5fbfca9f",
+    "width": 1242,
+    "height": 2688,
+    "variants": [
+      {
+        "path": "/assets/gallery/pt-BR/store-06-360.webp",
+        "width": 360,
+        "height": 779,
+        "bytes": 32502
+      },
+      {
+        "path": "/assets/gallery/pt-BR/store-06-360.avif",
+        "width": 360,
+        "height": 779,
+        "bytes": 25190
+      },
+      {
+        "path": "/assets/gallery/pt-BR/store-06-720.webp",
+        "width": 720,
+        "height": 1558,
+        "bytes": 79822
+      },
+      {
+        "path": "/assets/gallery/pt-BR/store-06-720.avif",
+        "width": 720,
+        "height": 1558,
+        "bytes": 61851
+      }
+    ]
+  },
+  {
+    "id": "store-07",
+    "originalName": "7.png",
+    "originalSha256": "eecc165da73524b55a735b4f6291548d0b9bf8628993a6e5577b44262856cbfd",
+    "width": 1242,
+    "height": 2688,
+    "variants": [
+      {
+        "path": "/assets/gallery/pt-BR/store-07-360.webp",
+        "width": 360,
+        "height": 779,
+        "bytes": 23468
+      },
+      {
+        "path": "/assets/gallery/pt-BR/store-07-360.avif",
+        "width": 360,
+        "height": 779,
+        "bytes": 17443
+      },
+      {
+        "path": "/assets/gallery/pt-BR/store-07-720.webp",
+        "width": 720,
+        "height": 1558,
+        "bytes": 55560
+      },
+      {
+        "path": "/assets/gallery/pt-BR/store-07-720.avif",
+        "width": 720,
+        "height": 1558,
+        "bytes": 40999
+      }
+    ]
+  }
+]

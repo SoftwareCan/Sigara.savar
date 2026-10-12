@@ -4,7 +4,7 @@ import path from 'node:path';
 import crypto from 'node:crypto';
 import { galleryCopy } from '../i18n/gallery.mjs';
 
-const LANGUAGE_NAMES = { tr: 'Türkçe', en: 'English', de: 'Deutsch', es: 'Español', fr: 'Français', 'pt-BR': 'Português (Brasil)' };
+const LANGUAGE_NAMES = { tr: 'Türkçe', en: 'English', de: 'Deutsch', es: 'Español', fr: 'Français', it: 'Italiano', 'pt-BR': 'Português (Brasil)' };
 const readJson = (file) => JSON.parse(fs.readFileSync(file, 'utf8'));
 const text = (value) => value.replace(/<[^>]*>/g, '').replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/\s+/g, ' ').trim();
 
@@ -57,12 +57,17 @@ export function adminInventory(root, config) {
     path: item.variants.find((variant) => variant.path.endsWith('-360.webp'))?.path || item.variants[0]?.path,
     alts: Object.fromEntries(locales.map((locale) => [locale.code, galleryCopy(locale.code).alts[index]])),
   }));
-  const dimensions = new Map(galleryManifest.flatMap((item) => item.variants.map((variant) => [variant.path, { width: variant.width, height: variant.height }])));
+  const allGalleryItems = locales.flatMap(({ code }) => {
+    const file = path.join(contentRoot, code === 'tr' ? 'gallery.json' : `gallery-${code}.json`);
+    return fs.existsSync(file) ? readJson(file) : [];
+  });
+  const dimensions = new Map(allGalleryItems.flatMap((item) => item.variants.map((variant) => [variant.path, { width: variant.width, height: variant.height }])));
   const mediaGroups = { gallery: 'Mağaza görselleri', screens: 'Uygulama ekranları', brand: 'Marka', og: 'Sosyal paylaşım' };
   for (const [directory, group] of Object.entries(mediaGroups)) {
     const full = path.join(root, 'assets', directory);
     if (!fs.existsSync(full)) continue;
-    for (const file of fs.readdirSync(full).sort()) {
+    for (const entry of fs.readdirSync(full, { recursive: true }).sort()) {
+      const file = entry.split(path.sep).join('/');
       if (!/\.(avif|webp|png|jpe?g|svg)$/i.test(file)) continue;
       const assetPath = `/assets/${directory}/${file}`;
       media.push({ name: file, path: assetPath, group, bytes: fs.statSync(path.join(full, file)).size, format: path.extname(file).slice(1).toUpperCase(), ...(dimensions.get(assetPath) || {}) });

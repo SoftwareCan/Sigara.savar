@@ -227,5 +227,43 @@
       "b3-10": "revisar-seu-processo",
       "b3-11": "fissura-e-recaida-resumo"
     }
+  },
+  "it": {
+    "sections": {
+      "section-1": "preparazione-e-primi-giorni",
+      "section-2": "rendere-permanente-una-vita-senza-fumo",
+      "section-3": "gestire-la-voglia-di-fumare-e-prevenire-la-ricaduta"
+    },
+    "articles": {
+      "b1-01": "che-cos-e-la-dipendenza",
+      "b1-02": "perche-fumi-e-perche-dovresti-smettere-di-fumare",
+      "b1-03": "che-cosa-guadagni-se-smetti-di-fumare",
+      "b1-04": "preparazione-e-pianificazione",
+      "b1-05": "mappa-i-tuoi-fattori-scatenanti",
+      "b1-06": "opzioni-di-sostegno",
+      "b1-07": "il-giorno-in-cui-smetti",
+      "b1-08": "astinenza",
+      "b1-09": "preparazione-e-primi-giorni-sintesi-del-capitolo",
+      "b2-01": "la-nicotina-se-n-e-andata-perche-potresti-avere-ancora-voglia-di-fumare",
+      "b2-02": "riscrivi-i-tuoi-fattori-scatenanti",
+      "b2-03": "rivaluta-i-tuoi-pensieri-sul-fumo",
+      "b2-04": "con-che-cosa-riempirai-il-vuoto-lasciato-dal-fumo",
+      "b2-05": "rafforza-di-nuovo-le-tue-ricompense-naturali",
+      "b2-06": "da-sto-cercando-di-smettere-a-non-fumo",
+      "b2-07": "attenzione-al-pensiero-adesso-lo-controllo",
+      "b2-08": "lista-di-controllo-della-vita-senza-fumo",
+      "b2-09": "rendere-permanente-una-vita-senza-fumo-sintesi-del-capitolo",
+      "b3-01": "che-cos-e-la-voglia-di-fumare",
+      "b3-02": "la-voglia-di-fumare-sale-e-scende-come-un-onda",
+      "b3-03": "cavalcare-l-onda-della-voglia",
+      "b3-04": "il-metodo-4d-rimanda-respira-a-fondo-bevi-acqua-distraiti",
+      "b3-05": "pianifica-prima-che-arrivi-il-fattore-scatenante",
+      "b3-06": "uno-scivolone-e-una-ricaduta-non-sono-la-stessa-cosa",
+      "b3-07": "la-trappola-un-errore-ha-rovinato-tutto",
+      "b3-08": "piano-di-recupero-dopo-uno-scivolone",
+      "b3-09": "costruisci-il-tuo-piano-di-crisi",
+      "b3-10": "rivedi-il-percorso-con-regolarita",
+      "b3-11": "gestire-la-voglia-di-fumare-e-prevenire-la-ricaduta-sintesi-del-capitolo"
+    }
   }
 }
