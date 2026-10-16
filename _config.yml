@@ -1,0 +1,5 @@
+# GitHub Pages (Jekyll) nokta ile başlayan klasörleri yayınlamaz.
+# Android App Links (assetlinks.json) ve iOS Universal Links (AASA) için
+# yalnızca .well-known dahil edilir; .agents/.claude gibi klasörler dışarıda kalır.
+include:
+  - .well-known

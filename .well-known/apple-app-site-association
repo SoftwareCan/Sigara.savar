@@ -1,0 +1,15 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "MG8ULPVXNX.com.quitsmoke.quitSmoke",
+        "paths": [
+          "/p/community/*",
+          "/p/event/*",
+          "/p/knowledge/*"
+        ]
+      }
+    ]
+  }
+}

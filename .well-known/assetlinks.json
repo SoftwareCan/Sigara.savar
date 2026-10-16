@@ -1,0 +1,16 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.quitsmoke.quit_smoke",
+      "sha256_cert_fingerprints": [
+        "31:86:0A:9E:AD:99:3F:12:5F:37:5B:C0:AD:B1:71:27:90:92:07:33:E1:92:F3:E6:81:1D:6A:59:69:02:DE:08",
+        "29:54:45:C5:11:59:77:4D:3E:07:06:41:70:54:FA:42:E7:F6:01:27:3A:4C:94:DB:5B:4E:E5:1C:2B:A8:D7:99",
+        "9F:3A:D5:DD:D1:42:BB:7B:B6:27:52:2F:92:9F:F5:31:9B:9A:82:C9:DF:F8:C7:1C:D2:30:9E:FA:17:DE:0E:CC"
+      ]
+    }
+  }
+]
