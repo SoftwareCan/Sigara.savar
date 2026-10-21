@@ -11,5 +11,10 @@
         ]
       }
     ]
+  },
+  "webcredentials": {
+    "apps": [
+      "MG8ULPVXNX.com.quitsmoke.quitSmoke"
+    ]
   }
 }
